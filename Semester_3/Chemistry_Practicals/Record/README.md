@@ -1,14 +1,15 @@
 INTRODUCTION
 --
 
-This is my CHM211 lab record. I have used a template created by Andr\'e Miede (http://www.miede.de) and customized/modified it in accordance with my needs.
+This is my CHM211 lab record. I have used a template created by Andre Miede (http://www.miede.de) and customized/modified it in accordance with my needs.
 
 TODO: Complete this section
 
 DOWNLOAD
 --
 
-TODO: Add a link here.
+Here's the latest version:
+https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Chemistry_Practicals/Record/Chemistry_Lab.pdf?raw=true
 
 LICENSE:
 --
