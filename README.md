@@ -7,12 +7,21 @@ I hope to make all the information accessable for assisting, in whichever way, a
 
 Although this repository was created on August 10, 2012, I would gradually upload all the usable information from the previous years for completion.
 
+DOWNLOAD LINKS FOR 3rd SEM
+--
+Chemistry Lab Record
+https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Chemistry_Practicals/Record/Chemistry_Lab.pdf?raw=true
+
+
+Biology Lab Record
+https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Biology_Practicals/Record/Biology_Record.pdf?raw=true
+
 
 TIME-LINE
 --
 
 August 10, 2012
-* Working on finding and customizing a template Chemistry Lab Record
+* Working on finding and customizing a template for the Chemistry Lab Record
 
 August 11, 2012
 * Working on the Biology Lab Record
