@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  10 AUG 2012 15:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  11 AUG 2012 13:54
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -81,12 +81,12 @@ Package typearea, 2012/07/29 v3.11b KOMA-Script package (type area)
 \ta@temp=\skip44
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = 10
-(typearea)             BCOR = 14.22636pt
+(typearea)             BCOR = 8.53581pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 408.2971pt
-(typearea)              DIV departure   = -3%
-(typearea)              \evensidemargin = 44.38632pt
-(typearea)              \oddsidemargin  = 0.28453pt
+(typearea)              \textwidth      = 412.28052pt
+(typearea)              DIV departure   = -5%
+(typearea)              \evensidemargin = 45.52441pt
+(typearea)              \oddsidemargin  = -4.83698pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 514.20023pt
 (typearea)              \topmargin      = 12.2347pt
@@ -113,6 +113,10 @@ Package typearea Info: These are the values describing the layout:
 )
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\classicthesis-config.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
+icals\Record\simpsons.sty"
+Package: simpsons 
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
@@ -550,11 +554,11 @@ File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
 Package classicthesis Info: A4 paper, Palatino or other on input line 256.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
-(typearea)             BCOR = 14.22636pt
+(typearea)             BCOR = 8.53581pt
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 336.0pt
-(typearea)              \evensidemargin = 92.58438pt
-(typearea)              \oddsidemargin  = 24.38356pt
+(typearea)              \evensidemargin = 96.37808pt
+(typearea)              \oddsidemargin  = 20.58986pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 666.04997pt
 (typearea)              \topmargin      = -40.58768pt
@@ -683,44 +687,30 @@ icals\Record\FrontBackmatter/Titlepage.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titleback.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Dedication.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Abstract.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Publication.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Acknowledgments.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter02.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter03.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter0A.aux")
+icals\Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Declaration.aux"))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 60.
+icals\Record\FrontBackmatter/Colophon.aux"))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pplj.fd"
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
@@ -732,7 +722,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count138
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 60.
+Package hyperref Info: Link coloring ON on input line 32.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -742,9 +732,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Chemistry_Lab.out")
@@ -766,7 +756,7 @@ icals\Record\Chemistry_Lab.out")
 \makeMPintoPDFobject=\count145
 \everyMPtoPDFconversion=\toks29
 )
-LaTeX Info: Redefining \microtypecontext on input line 60.
+LaTeX Info: Redefining \microtypecontext on input line 32.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -780,7 +770,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=151, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=71, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -795,52 +785,7 @@ Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
 nts/IISER 2012/IISER_repo/Semester_3/Chemistry_Practicals/Record/gfx/iiserlogo.
 jpg>])
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titleback.tex"
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 8.
-LaTeX Font Info:    No file OMSpplj.fd. on input line 8.
-
-
-LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead on input line 8.
-
-) [2
-
-
-]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Dedication.tex") [3
-
-
-
-
-] [4
-
-
-
-]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Abstract.tex") [5
-
-] [6
-
-
-
-]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Publication.tex"
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 10.
-) [7
-
-
-
-] [8
-
+icals\Record\FrontBackmatter/Titleback.tex") [2
 
 
 ]
@@ -848,57 +793,23 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 icals\Record\FrontBackmatter/Acknowledgments.tex"
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 11.
 
-
-Package natbib Warning: Citation `knuth:1974' on page ix undefined on input lin
-e 11.
-
-
-Package natbib Warning: Citation `knuth:1974' on page ix undefined on input lin
-e 11.
-
-LaTeX Font Info:    Try loading font information for U+zeur on input line 29.
-("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
-File: uzeur.fd 2005/01/11 v4.0 (WaS)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
-File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeus on input line 29.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
-File: uzeus.fd 2005/01/11 v4.0 (WaS)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
-File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
-)
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 29.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
-File: uzeuex.fd 2005/01/11 v4.0 (WaS)
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 29.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Overfull \hbox (2.84056pt too wide) in paragraph at lines 27--36
-[]\T1/pplj/m/n/10.95 Regarding the ty-pog-ra-phy and other help, many thanks go
- to Marco
+Overfull \hbox (3.12549pt too wide) in paragraph at lines 23--27
+\T1/pplj/m/n/10.95 I ex-press my sin-cere grat-i-tude to our in-struc-tors, Dr.
+ K. S. Viswanathan
  []
 
 
-Overfull \hbox (8.78125pt too wide) in paragraph at lines 27--36
-\T1/pplj/m/n/10.95 Repp, Hin-rich Harms, Roland Win-kler, and the whole L[]T[]X
--community
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+
  []
 
-) [9
+) [3
 
-] [10
+
+
+
+] [4
 
 
 
@@ -915,7 +826,33 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 )
 \tf@toc=\write4
- [11
+LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeus on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
+File: uzeus.fd 2005/01/11 v4.0 (WaS)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
+File: uzeuex.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 18.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [5
 
 
 
@@ -936,11 +873,13 @@ icals\Record\Chemistry_Lab.lot")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Chemistry_Lab.lol")
 \tf@lol=\write7
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 66.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [12
+) [6
 
 ]) [1
 
@@ -952,7 +891,7 @@ File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 ] [2]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter01.tex"
+icals\Record\Experiments/Experiment01.tex"
 Chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -961,287 +900,65 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-
-Package natbib Warning: Citation `bringhurst:2002' on page 3 undefined on input
- line 12.
-
-
-Package natbib Warning: Citation `bringhurst:2002' on page 3 undefined on input
- line 13.
-
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 12.
+("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 12.
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 14.
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 20.
-[3
-
-
-
-] [4]
-Overfull \hbox (2.23529pt too wide) in paragraph at lines 114--118
-[]\T1/fvm/m/n/10.95 classicthesis-config.tex\T1/pplj/m/n/10.95 : a cen-tral pla
-ce to load all nifty pack-
- []
-
-[5]
-Overfull \hbox (9.23082pt too wide) in paragraph at lines 171--173
-[]\T1/fvm/m/n/10.95 eulermath\T1/pplj/m/n/10.95 : loads the awe-some Eu-ler fon
-ts for math. (Palatino
- []
-
-
-Overfull \hbox (25.95596pt too wide) in paragraph at lines 180--184
-\T1/pplj/m/n/10.95 cally en-ables the \T1/fvm/m/n/10.95 minionpro \T1/pplj/m/n/
-10.95 op-tion and over-rides the \T1/fvm/m/n/10.95 pdfspacing
- []
-
-
-Overfull \hbox (7.53156pt too wide) in paragraph at lines 232--235
-[]\T1/pplj/m/n/10.95 In or-der to make things eas-ier in gen-eral, \T1/fvm/m/n/
-10.95 classicthesis-config.tex
- []
-
-
-Overfull \hbox (11.02849pt too wide) in paragraph at lines 240--242
-\T1/pplj/m/n/10.95 This sec-tion will give you some hints about how to adapt \T
-1/fvm/m/n/10.95 classicthesis
- []
-
-[6]
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 7.65005pt on input line 252.
+(Font)              scaled to size 7.65005pt on input line 23.
 
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 252--252
- \T1/fvm/m/sl/9 thesis-config.tex
- []
-
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 252--252
-\T1/fvm/m/sl/9 thesis-config.tex  
- []
-
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 254.
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 286--286
+Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
  \T1/fvm/m/sl/9 classicthesis.sty
  []
 
 
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 286--286
+Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
 \T1/fvm/m/sl/9 classicthesis.sty  
  []
 
 
-Overfull \hbox (5.48045pt too wide) in paragraph at lines 295--297
-[]\T1/pplj/m/n/10.95 Beta ver-sions of \T1/fvm/m/n/10.95 classicthesis \T1/pplj
-/m/n/10.95 can be found at the fol-low-ing Google
- []
+LaTeX Warning: Marginpar on page 3 moved.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 302.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 31.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 302.
-[7]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Examples/classicthesis-article.tex" [8])
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Examples/classicthesis-book.tex" [9])
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Examples/classicthesis-cv.tex" [10])
-Overfull \hbox (7.80904pt too wide) in paragraph at lines 371--376
-\T1/pplj/m/it/10.95 with-out any war-ranty\T1/pplj/m/n/10.95 ; with-out even th
-e im-plied war-ranty of \T1/pplj/m/it/10.95 mer-chantabil-
- []
-
-) [11] [12
+(Font)              scaled to size 9.30756pt on input line 31.
+[3
 
 
 
-] [13
-
-
-] [14]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter02.tex"
-Chapter 2.
-
-Package natbib Warning: Citation `dueck:trio' on page 15 undefined on input lin
-e 7.
-
-
-Package natbib Warning: Citation `dueck:trio' on page 15 undefined on input lin
-e 7.
-
-
-Overfull \hbox (1.02399pt too wide) in paragraph at lines 24--29
-\T1/pplj/m/n/10.95 clu-daturque. Al-bu-cius ap-pel-lan-tur de-ter-ruis-set id e
-am, viven-dum par-
- []
-
-Package acronym Info: Label `acro:UML' newly defined as it shall be overridden
-although it is yet undefined on input line 30.
-
-Overfull \hbox (9.1717pt too wide) in paragraph at lines 30--37
-[]\T1/pplj/m/n/10.95 Errem om-nium ea per, pro [][][]Unified Mod-el-ing Lan-gua
-ge ([])[] congue
- []
-
-Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 45.
-[15
-
-
-
-]
-
-Package natbib Warning: Citation `bentley:1999' on page 16 undefined on input l
-ine 65.
-
-
-Package natbib Warning: Citation `bentley:1999' on page 16 undefined on input l
-ine 66.
-
-
-Package natbib Warning: Citation `cormen:2001' on page 16 undefined on input li
-ne 82.
-
-
-Package natbib Warning: Citation `cormen:2001' on page 16 undefined on input li
-ne 82.
-
-
-Package natbib Warning: Citation `knuth:1976' on page 16 undefined on input lin
-e 98.
-
-
-Package natbib Warning: Citation `knuth:1976' on page 16 undefined on input lin
-e 99.
-
-
-Package natbib Warning: Citation `sommerville:1992' on page 16 undefined on inp
-ut line 110.
-
-
-Package natbib Warning: Citation `sommerville:1992' on page 16 undefined on inp
-ut line 111.
-
-[16]
-
-Package natbib Warning: Citation `knuth:1976' on page 17 undefined on input lin
-e 140.
-
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 142.
-
-Package natbib Warning: Citation `knuth:1976' on page 17 undefined on input lin
-e 142.
-
-
-Package natbib Warning: Citation `knuth:1976' on page 17 undefined on input lin
-e 142.
-
-<gfx/example_1.jpg, id=478, 240.9pt x 180.675pt>
-File: gfx/example_1.jpg Graphic file (type jpg)
- <use gfx/example_1.jpg>
-Package pdftex.def Info: gfx/example_1.jpg used on input line 160.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
-
-<gfx/example_2.jpg, id=479, 240.9pt x 180.675pt>
-File: gfx/example_2.jpg Graphic file (type jpg)
- <use gfx/example_2.jpg>
-Package pdftex.def Info: gfx/example_2.jpg used on input line 163.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
-
-<gfx/example_3.jpg, id=480, 240.9pt x 180.675pt>
-File: gfx/example_3.jpg Graphic file (type jpg)
- <use gfx/example_3.jpg>
-Package pdftex.def Info: gfx/example_3.jpg used on input line 165.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
-
-<gfx/example_4.jpg, id=481, 240.9pt x 180.675pt>
-File: gfx/example_4.jpg Graphic file (type jpg)
- <use gfx/example_4.jpg>
-Package pdftex.def Info: gfx/example_4.jpg used on input line 167.
-(pdftex.def)             Requested size: 151.19897pt x 113.40128pt.
-)
-[17 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemistry_Pr
-acticals/Record/gfx/example_1.jpg> <C:/Users/A.S.Arora/Documents/IISER 2012/IIS
-ER_repo/Semester_3/Chemistry_Practicals/Record/gfx/example_2.jpg> <C:/Users/A.S
-.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemistry_Practicals/Record/g
-fx/example_3.jpg> <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_
-3/Chemistry_Practicals/Record/gfx/example_4.jpg>]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter03.tex" [18
-
-
-
-
-]
-Chapter 3.
-
-Overfull \hbox (1.89992pt too wide) in paragraph at lines 4--7
-\T1/pplj/m/n/10.95 Ei choro aeterno an-tiopam mea, labitur bono-rum pri no. His
- no decore
- []
-
-[19]) [20] [21
+]) [4] [5
 
 
 
 
 
-] [22]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter0A.tex"
-Appendix A.
-
-Overfull \hbox (1.02399pt too wide) in paragraph at lines 7--12
-\T1/pplj/m/n/10.95 clu-daturque. Al-bu-cius ap-pel-lan-tur de-ter-ruis-set id e
-am, viven-dum par-
- []
-
-
-Overfull \hbox (1.89992pt too wide) in paragraph at lines 22--25
-\T1/pplj/m/n/10.95 Ei choro aeterno an-tiopam mea, labitur bono-rum pri no. His
- no decore
- []
-
-[23
-
-
-
-]) [24]
+] [6]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
 )
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.tex") [25
+icals\Record\FrontBackmatter/Colophon.tex"
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+) [7
 
 
 
 
-
-
-
-
-] [26
 
 
 
 ]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Declaration.tex") [27
-
-
-
-]
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Chemistry_Lab.aux"
@@ -1250,30 +967,16 @@ icals\Record\FrontBackmatter/Titlepage.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titleback.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Dedication.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Abstract.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Publication.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Acknowledgments.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter02.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter03.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chapters/Chapter0A.aux")
+icals\Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Declaration.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+icals\Record\FrontBackmatter/Colophon.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 
 
  *File List*
@@ -1288,6 +991,7 @@ tocbasic.sty    2012/04/04 v3.10b KOMA-Script package (handling toc-files)
 scrsize11pt.clo    2012/07/29 v3.11b KOMA-Script font size class option (11pt)
 typearea.sty    2012/07/29 v3.11b KOMA-Script package (type area)
 classicthesis-config.tex
+simpsons.sty    
   ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 inputenc.sty    2008/03/30 v1.1d Input encoding file
   latin9.def    2008/03/30 v1.1d Input encoding file
@@ -1393,68 +1097,45 @@ supp-pdf.mkii
 FrontBackmatter/Titlepage.tex
 gfx/iiserlogo.jpg
 FrontBackmatter/Titleback.tex
-FrontBackmatter/Dedication.tex
-FrontBackmatter/Abstract.tex
-FrontBackmatter/Publication.tex
-   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
 FrontBackmatter/Acknowledgments.tex
+FrontBackmatter/Contents.tex
    uzeur.fd    2005/01/11 v4.0 (WaS)
   mt-eur.cfg    2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
    uzeus.fd    2005/01/11 v4.0 (WaS)
   mt-eus.cfg    2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
   uzeuex.fd    2005/01/11 v4.0 (WaS)
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-FrontBackmatter/Contents.tex
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
-Chapters/Chapter01.tex
-Examples/classicthesis-article.tex
-Examples/classicthesis-book.tex
-Examples/classicthesis-cv.tex
-Chapters/Chapter02.tex
-gfx/example_1.jpg
-gfx/example_2.jpg
-gfx/example_3.jpg
-gfx/example_4.jpg
-Chapters/Chapter03.tex
-Chapters/Chapter0A.tex
+Experiments/Experiment01.tex
+   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
-FrontBackmatter/Declaration.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: E747DC3B43EFB640D14EA4977015F1E9;2234.
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
+(rerunfilecheck)             Checksum: 7EC4800796FE2A4F849F01C79FEE1C8C;920.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 16244 strings out of 494045
- 255368 string characters out of 3148376
- 612766 words of memory out of 3000000
- 18842 multiletter control sequences out of 15000+200000
- 90100 words of font info for 138 fonts, out of 3000000 for 9000
+ 14234 strings out of 494045
+ 223839 string characters out of 3148376
+ 393016 words of memory out of 3000000
+ 17139 multiletter control sequences out of 15000+200000
+ 65863 words of font info for 85 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 51i,14n,67p,435b,2288s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/bera/fvmro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatin
-o/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (39 pages, 298928 bytes).
+ 45i,13n,67p,535b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
+rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
+k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmro8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Chemistry_Lab.pdf (13 pages, 108939 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 18754 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 198 PDF objects out of 1000 (max. 8388607)
+ 42 named destinations out of 1000 (max. 500000)
+ 13966 words of extra memory for PDF output out of 14400 (max. 10000000)
 

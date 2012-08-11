@@ -12,4 +12,7 @@ TIME-LINE
 --
 
 August 10, 2012
-* Working on Chemistry Lab Record
+* Working on finding and customizing a template Chemistry Lab Record
+
+August 11, 2012
+* Working on the Biology Lab Record

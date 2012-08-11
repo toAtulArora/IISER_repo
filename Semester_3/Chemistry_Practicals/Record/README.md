@@ -11,6 +11,9 @@ DOWNLOAD
 Here's the latest version:
 https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Chemistry_Practicals/Record/Chemistry_Lab.pdf?raw=true
 
+For the template, follow this link
+http://code.google.com/p/classicthesis/
+
 LICENSE:
 --
 This program is free software; you can redistribute it and/or modify
