@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  11 AUG 2012 14:00
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  11 AUG 2012 14:28
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Biology_Practic
 als/Record/Biology_Record.tex
@@ -1114,11 +1114,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
 Here is how much of TeX's memory you used:
  14234 strings out of 494045
  223728 string characters out of 3148376
- 393030 words of memory out of 3000000
+ 394032 words of memory out of 3000000
  17139 multiletter control sequences out of 15000+200000
  65863 words of font info for 85 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,534b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,67p,675b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
 k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:
@@ -1127,7 +1127,7 @@ MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmro8a.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Biology_Record.pdf (13 pages, 109167 bytes).
+Output written on Biology_Record.pdf (13 pages, 109261 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
