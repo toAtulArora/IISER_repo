@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  11 AUG 2012 13:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  12 AUG 2012 20:56
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -824,11 +824,16 @@ icals\Record\Chemistry_Lab.toc"
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (1.4103pt too wide) in paragraph at lines 5--5
+ [][] []\T1/pplj/m/sc/10.95/80ls introduction to in-fra red and ul-tra vi-o-let
+ - vis- 
+ []
+
 )
 \tf@toc=\write4
 LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
@@ -900,38 +905,49 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 12.
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 13.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--14
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 21.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 12.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 7.65005pt on input line 23.
+(Font)              scaled to size 9.30756pt on input line 21.
+ [3
 
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
+
+
+]
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 7.65005pt on input line 32.
+
+Overfull \hbox (2.07549pt too wide) in paragraph at lines 32--32
  \T1/fvm/m/sl/9 classicthesis.sty
  []
 
 
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
+Overfull \hbox (2.07549pt too wide) in paragraph at lines 32--32
 \T1/fvm/m/sl/9 classicthesis.sty  
  []
 
 
-LaTeX Warning: Marginpar on page 3 moved.
+LaTeX Warning: Marginpar on page 4 moved.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 31.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 31.
-[3
+(Font)              scaled to size 9.30756pt on input line 40.
+)
+Overfull \hbox (30.0654pt too wide) has occurred while \output is active
+[]|[]|  
+ []
 
-
-
-]) [4] [5
+[4] [5
 
 
 
@@ -1114,28 +1130,31 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 7EC4800796FE2A4F849F01C79FEE1C8C;920.
+(rerunfilecheck)             Checksum: DFBD098925DD192E9C5B67E22BABD428;974.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 14234 strings out of 494045
- 223839 string characters out of 3148376
- 393016 words of memory out of 3000000
- 17139 multiletter control sequences out of 15000+200000
- 65863 words of font info for 85 fonts, out of 3000000 for 9000
+ 14253 strings out of 494045
+ 223981 string characters out of 3148376
+ 395016 words of memory out of 3000000
+ 17142 multiletter control sequences out of 15000+200000
+ 69864 words of font info for 100 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,535b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
-rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
-k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmro8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (13 pages, 108939 bytes).
+ 45i,13n,67p,1078b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/bera/fvmro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
+ino/uplri8a.pfb>
+Output written on Chemistry_Lab.pdf (13 pages, 122956 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
+ 210 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  13966 words of extra memory for PDF output out of 14400 (max. 10000000)
 
