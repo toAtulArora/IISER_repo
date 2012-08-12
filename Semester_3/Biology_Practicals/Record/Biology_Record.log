@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  11 AUG 2012 14:28
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  13 AUG 2012 03:17
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Biology_Practic
 als/Record/Biology_Record.tex
@@ -770,7 +770,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practic
 als\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=71, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=95, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -894,55 +894,80 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 12.
-("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
-File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
-)
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 12.
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 15.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 7.65005pt on input line 23.
-
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
- \T1/fvm/m/sl/9 classicthesis.sty
- []
+<gfx/drosophila.jpg, id=165, 401.5pt x 537.00626pt>
+File: gfx/drosophila.jpg Graphic file (type jpg)
+ <use gfx/drosophila.jpg>
+Package pdftex.def Info: gfx/drosophila.jpg used on input line 15.
+(pdftex.def)             Requested size: 168.0pt x 224.70529pt.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 17.
 
 
-Overfull \hbox (2.07549pt too wide) in paragraph at lines 23--23
-\T1/fvm/m/sl/9 classicthesis.sty  
- []
+Package natbib Warning: Citation `drosophila:lifecycle' on page 3 undefined on 
+input line 17.
 
 
-LaTeX Warning: Marginpar on page 3 moved.
+Package natbib Warning: Citation `drosophila:lifecycle' on page 3 undefined on 
+input line 17.
 
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 31.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 31.
 [3
 
 
 
-]) [4] [5
+ <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Biology_Practic
+als/Record/gfx/drosophila.jpg>]
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 27.
+
+Overfull \hbox (11.12326pt too wide) in paragraph at lines 27--27
+ [][][]\T1/pplj/m/it/9 Holometabolism:
+ []
+
+
+Overfull \hbox (11.12326pt too wide) in paragraph at lines 27--27
+[][][]\T1/pplj/m/it/9 Holometabolism: 
+ []
+
+<gfx/Male_Female_drosophila.png, id=175, 501.875pt x 222.8325pt>
+File: gfx/Male_Female_drosophila.png Graphic file (type png)
+
+<use gfx/Male_Female_drosophila.png>
+Package pdftex.def Info: gfx/Male_Female_drosophila.png used on input line 31.
+(pdftex.def)             Requested size: 201.60205pt x 89.51224pt.
+ [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Biology_Prac
+ticals/Record/gfx/Male_Female_drosophila.png>]
+Overfull \hbox (15.14842pt too wide) in paragraph at lines 46--47
+[]\T1/pplj/m/n/10.95 My team con-sisted of Vivek Sagar (MS11017), Bi-plob Nandy
+ (MS11004)
+ []
+
+[5] [6]) [7] [8
 
 
 
+] [9
 
 
-] [6]
+] [10]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practic
 als\Record\FrontBackmatter/Bibliography.tex"
 No file Biology_Record.bbl.
 )
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practic
 als\Record\FrontBackmatter/Colophon.tex"
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 10.
+
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [7
+) [11
 
 
 
@@ -951,6 +976,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
 
 ]
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
@@ -1101,35 +1129,39 @@ FrontBackmatter/Contents.tex
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
-   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
+gfx/drosophila.jpg
+gfx/Male_Female_drosophila.png
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
+   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Biology_Record.out' has not changed.
-(rerunfilecheck)             Checksum: 7EC4800796FE2A4F849F01C79FEE1C8C;920.
+(rerunfilecheck)             Checksum: 82D7F81B0BF2200DF1BE2FCBB7435C90;1390.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 14234 strings out of 494045
- 223728 string characters out of 3148376
- 394032 words of memory out of 3000000
- 17139 multiletter control sequences out of 15000+200000
- 65863 words of font info for 85 fonts, out of 3000000 for 9000
+ 14321 strings out of 494045
+ 224726 string characters out of 3148376
+ 397032 words of memory out of 3000000
+ 17158 multiletter control sequences out of 15000+200000
+ 69585 words of font info for 93 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,675b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,67p,675b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
-k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmro8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Biology_Record.pdf (13 pages, 109261 bytes).
+k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/
+fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Biology_Record.pdf (17 pages, 228842 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 13966 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 13512 words of extra memory for PDF output out of 14400 (max. 10000000)
 

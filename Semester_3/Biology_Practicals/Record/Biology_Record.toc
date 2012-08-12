@@ -3,13 +3,18 @@
 \select@language {american}
 \contentsline {part}{i\hspace {1em}\spacedlowsmallcaps {Experiments}}{1}{part.1}
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Introductory Session}}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Organization}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Style Options}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Issues}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Future Work}{4}{section.1.4}
-\contentsline {section}{\numberline {1.5}Beyond a Thesis}{4}{section.1.5}
-\contentsline {section}{\numberline {1.6}License}{4}{section.1.6}
-\contentsline {paragraph}{GNU General Public License:}{4}{section.1.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{5}{part.2}
+\contentsline {section}{\numberline {1.1}Objective}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Theory}{3}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Morphology}{3}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Life Cycle}{3}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Difference between Males and Females}{4}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Experiment}{5}{section.1.3}
+\contentsline {section}{\numberline {1.4}Observations}{6}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Coarse Focus}{6}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Fine Focus}{6}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}High Power Microscope}{7}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}Mutants}{7}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Acknowledgements}{7}{section.1.5}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{9}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{7}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{11}{dummy.6}

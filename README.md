@@ -31,3 +31,6 @@ August 11, 2012
 
 August 12, 2012
 * Working on Chemistry record, experiment 1
+
+August 13, 2012
+* Working on Biology record, experiment 1
