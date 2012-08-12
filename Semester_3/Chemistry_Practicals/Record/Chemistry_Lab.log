@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  12 AUG 2012 23:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  13 AUG 2012 00:18
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -770,7 +770,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=63, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=83, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -824,16 +824,11 @@ icals\Record\Chemistry_Lab.toc"
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (1.4103pt too wide) in paragraph at lines 5--5
- [][] []\T1/pplj/m/sc/10.95/80ls introduction to in-fra red and ul-tra vi-o-let
- - vis- 
- []
-
 )
 \tf@toc=\write4
 LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
@@ -906,40 +901,45 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              `scrreprt' soon .
 
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 14.
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 19.
 [3
 
 
 
-] <gfx/michel.jpg, id=134, 450.68375pt x 200.75pt>
+] <gfx/michel.jpg, id=157, 450.68375pt x 200.75pt>
 File: gfx/michel.jpg Graphic file (type jpg)
  <use gfx/michel.jpg>
-Package pdftex.def Info: gfx/michel.jpg used on input line 27.
+Package pdftex.def Info: gfx/michel.jpg used on input line 33.
 (pdftex.def)             Requested size: 268.80103pt x 119.7372pt.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 29.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 35.
 
 
 Package natbib Warning: Citation `michel:img' on page 4 undefined on input line
- 29.
+ 35.
 
 
 Package natbib Warning: Citation `michel:img' on page 4 undefined on input line
- 29.
+ 35.
 
-)
-Overfull \hbox (30.0654pt too wide) has occurred while \output is active
+
+Overfull \hbox (26.18259pt too wide) has occurred while \output is active
 []|[]|  
  []
 
 [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemistry_Pra
-cticals/Record/gfx/michel.jpg>] [5
+cticals/Record/gfx/michel.jpg>] [5])
+Overfull \hbox (26.18259pt too wide) has occurred while \output is active
+[]|[]|  
+ []
+
+[6] [7
 
 
 
 
 
-] [6]
+] [8]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
@@ -958,7 +958,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [7
+) [9
 
 
 
@@ -1128,17 +1128,17 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 64D4C092F0CF08E6C3CBDC579360024C;898.
+(rerunfilecheck)             Checksum: 4057B6FB3C34D4C5073CB37D13D52338;1233.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 14250 strings out of 494045
- 223978 string characters out of 3148376
- 396016 words of memory out of 3000000
- 17139 multiletter control sequences out of 15000+200000
+ 14285 strings out of 494045
+ 224348 string characters out of 3148376
+ 397016 words of memory out of 3000000
+ 17152 multiletter control sequences out of 15000+200000
  71479 words of font info for 100 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,1084b,418s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,14n,67p,1084b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
 k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:
@@ -1151,9 +1151,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (13 pages, 172640 bytes).
+Output written on Chemistry_Lab.pdf (15 pages, 186383 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 13443 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 13483 words of extra memory for PDF output out of 14400 (max. 10000000)
 

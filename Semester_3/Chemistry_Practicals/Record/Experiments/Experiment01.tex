@@ -1,11 +1,16 @@
 %************************************************
-\chapter{Introduction to Infra Red and Ultra Violet - Visible Spectroscopy}
+\chapter{Introduction to Infra Red and Ultraviolet - Visible Spectroscopy}
 %************************************************
 \begin{flushright}
 August 9, 2012
 \end{flushright}
-
-For this session, both IR and UV-visible spectroscopy techniques were demonstrated to us in groups of two.
+\section{Objective}
+To
+\begin{enumerate}
+	\item understand the method of Fourier Transformed Infrared and Ultraviolet spectroscopy
+	\item understand the preparation substances for analysis
+	\item handle and operate the Spectroscopes provided
+\end{enumerate}
 
 \section{Theory}
 \subsection {Basic Concept}
@@ -18,8 +23,9 @@ T=\frac{I}{I_{0}}=10^{-\alpha l}=10^{- \epsilon l c}
 \end{equation}
 where $I$ is intensity of incident light, $I_{0}$ is intensity of transmitted light, $\epsilon$ is molar absorbtivity, $l$ is the optical path length, and $c$ is molar concentration.
 
+
 \subsection{Infra Red Spectroscopy}
-Infra Red spectroscopy usually deals with energies of the level that cause change in vibrational energies. The wavelength ranges from $4000 cm^{-1}$ to $400 cm^{-1}$. These energies are characteristic for different bonds which is how, using the spectrum, we can identify (and quantify) the bonds present and thus the compound.
+Infra Red spectroscopy usually deals with energies of the level that cause change in vibrational energies. The wavelength ranges from $2.5 \mu m$ to $25 \mu m$ ($4000 cm^{-1}$ to $400 cm^{-1}$). These energies are characteristic for different bonds which is how, using the spectrum, we can identify (and quantify) the bonds present and thus the compound.
 \par
 The way the spectroscope works for Infra Red, is rather interesting and ingenious. The setup uses a Michelson interferometer. \\
 \begin{figure}[bth]
@@ -34,4 +40,46 @@ Before complicating things, let us assume that the source of light is coherent a
 Now let us crank it up a notch. Let us consider the light to still be coherent, but not monochromatic. Let the source of light contain all the transmitted frequencies. \marginpar{\Lisa Note the fact that here, the measurement is simultaneous!} Now if the intensity is plotted against the displacement of the moveable mirror, we will get a superposition of sine waves, and we already know how to decompose them to find individual frequencies using \emph{Fourier Transformation}. This essentially gives us the spectrum, with wavenumber (dimensions of one over distance) on one axis, and intensity on the other.
 \par
 The source of infra-red light is a Silicon Carbide rod, that is heated to produce the desired radiations. \marginpar{\Bart How is SiC coherent?} The detector is capacitive, or so we were told. 
-\subsection{Ultra Violet-Visible Spectroscopy}
+
+
+\subsection{Ultraviolet-Visible Spectroscopy}
+Here the wavelengths range from $200 nm$ to $900 nm$. This range is often in the range of differences of electronic energy levels. The light source is a Tungsten-Neon lamp. In this technique, usually movable diffraction grating is used to split the transmitted light into its component frequencies, ``one'' of which goes to an intensity detector. Which component is detected depends on the orientation of the diffraction grating. Using this information, an intensity vs. frequency plot is generated which is the desired spectrum.
+\par
+It must be noted here that the process of moving the orientation of the grating, requires time, which means that the measurement for various frequencies' intensities is not simultaneous, which in certain cases might not be suitable. One solution to such a problem is the use of multiple (arrayed) detectors. Yet it doesn't explain why a Michelson interferometer can't be used in this case. \marginpar{\Bart Wouldn't the ordinary mirrors for ``visible light'' suffice?} The answer to this comes from the fact that the wavelength in this case is much smaller, thereby complicating the task for preparing reflectors.
+
+\section{Experimental Details}
+For this session, both IR and UV-visible spectroscopy techniques were demonstrated to us in groups of two.
+For IR spectroscopy, we used $KBr$ as the base and Benzoic Acid as the analyte. For UV-vis, we used water as the base and $KMnO_{4}$ as the analyte.
+\subsection{Infrared}
+	\subsubsection*{Procedure}
+		The general procedure is as follows:
+		\begin{aenumerate}
+			\item Weighed $100mg$ of $KBr$ and ground it well.
+			\item Transferred it the dye (palletizing module). \label{procedure:dye}
+			\item Converted it into a pellet using the Hydraulic Press (about 8 tons of pressure).
+			\item Did IR spectroscopy.
+			\item Weighed $100mg$ of $KBr$ and with it, $2mg$ of sample (in this case Benzoid Acid) and repeated from \autoref{procedure:dye}.
+		\end{aenumerate}
+		Details about the IR spectroscopy are as follows:
+		\begin{aenumerate}		
+			\item Ran the background to get rid of noise.
+			\item Did the accumulation 16 times (set the option).
+			\item Subtracted the first spectroscope from the second
+		\end{aenumerate}
+
+	\subsubsection*{Observation}
+		Detected the carboxylic group (peaks for $OH$ and $C=O$)
+\subsection{UV-Vis}
+	\subsubsection*{Procedure}
+		The general procedure is as follows:
+		\begin{aenumerate}
+			\item Took a suitable amount of water.
+			\item Did UV-Vis spectroscopy.
+			\item Again took water and added a suitable amount of $KMnO_{4}$ and mixed it well.
+			\item Did UV-Vis spectroscopy.
+		\end{aenumerate}
+		Details about the UV-vis spectroscopy is corresponding to the previous section.
+	\subsubsection*{Observation}
+		Peaks were detected in the range $520nm$-$550nm$, complimentary to Purple as expected.
+\section{Acknowledgements}
+I thank the PhD students, Ms. Shruti and Ms. Shilpa, who helped us with the session and performed the experiment. They also walked us through the procedure for using the apparatus.
