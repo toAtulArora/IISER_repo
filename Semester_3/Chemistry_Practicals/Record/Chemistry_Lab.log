@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  13 AUG 2012 00:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 06:00
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -693,6 +693,8 @@ icals\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
+icals\Record\Experiments/Experiment01A.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Colophon.aux"))
@@ -770,7 +772,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=83, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=99, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -906,7 +908,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 
 
-] <gfx/michel.jpg, id=157, 450.68375pt x 200.75pt>
+] <gfx/michel.jpg, id=177, 450.68375pt x 200.75pt>
 File: gfx/michel.jpg Graphic file (type jpg)
  <use gfx/michel.jpg>
 Package pdftex.def Info: gfx/michel.jpg used on input line 33.
@@ -933,13 +935,23 @@ Overfull \hbox (26.18259pt too wide) has occurred while \output is active
 []|[]|  
  []
 
-[6] [7
+[6]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
+icals\Record\Experiments/Experiment01A.tex"
+Chapter 2.
+) [7
 
 
 
 
+] [8
 
-] [8]
+
+
+] [9
+
+
+] [10]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
@@ -958,7 +970,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [9
+) [11
 
 
 
@@ -970,8 +982,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
 
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Chemistry_Lab.aux"
@@ -986,10 +998,12 @@ icals\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
+icals\Record\Experiments/Experiment01A.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 
 
  *File List*
@@ -1121,21 +1135,22 @@ FrontBackmatter/Contents.tex
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
 gfx/michel.jpg
+Experiments/Experiment01A.tex
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 4057B6FB3C34D4C5073CB37D13D52338;1233.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
+(rerunfilecheck)             Checksum: 095A75723E9D4139546D845A775B8D3B;1495.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 14285 strings out of 494045
- 224348 string characters out of 3148376
+ 14312 strings out of 494045
+ 225388 string characters out of 3148376
  397016 words of memory out of 3000000
- 17152 multiletter control sequences out of 15000+200000
+ 17163 multiletter control sequences out of 15000+200000
  71479 words of font info for 100 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  45i,14n,67p,1084b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1151,9 +1166,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (15 pages, 186383 bytes).
+Output written on Chemistry_Lab.pdf (17 pages, 191064 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 13483 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 298 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 13515 words of extra memory for PDF output out of 14400 (max. 10000000)
 

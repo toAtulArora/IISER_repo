@@ -12,6 +12,10 @@
 \contentsline {subsection}{\numberline {1.3.1}Infrared}{5}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}UV-Vis}{6}{subsection.1.3.2}
 \contentsline {section}{\numberline {1.4}Acknowledgements}{6}{section.1.4}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{7}{part.2}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Experiment 1A: UV-Visible Spectroscopy}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objective}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Theory}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Procedure}{7}{section.2.3}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{9}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{9}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{11}{dummy.6}

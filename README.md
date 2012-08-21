@@ -30,7 +30,10 @@ August 11, 2012
 * Working on the Biology Lab Record (not well)
 
 August 12, 2012
-* Working on Chemistry record, experiment 1
+* Working on the Chemistry record, Experiment 1
 
 August 13, 2012
-* Working on Biology record, experiment 1
+* Working on the Biology record, Experiment 1
+
+August 21, 2012
+* Working on the Chemistry Record, Experiment 1A
