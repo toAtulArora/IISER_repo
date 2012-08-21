@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 07:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 08:25
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -908,7 +908,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 
 
-] <gfx/michel.jpg, id=200, 450.68375pt x 200.75pt>
+] <gfx/michel.jpg, id=202, 450.68375pt x 200.75pt>
 File: gfx/michel.jpg Graphic file (type jpg)
  <use gfx/michel.jpg>
 Package pdftex.def Info: gfx/michel.jpg used on input line 33.
@@ -944,14 +944,21 @@ Chapter 2.
 
 
 
-] [8]) [9] [10
+] [8] <gfx/1A_bestfit.pdf, id=268, 614.295pt x 794.97pt>
+File: gfx/1A_bestfit.pdf Graphic file (type pdf)
+
+<use gfx/1A_bestfit.pdf>
+Package pdftex.def Info: gfx/1A_bestfit.pdf used on input line 113.
+(pdftex.def)             Requested size: 336.0pt x 434.82094pt.
+) [9] [10 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemis
+try_Practicals/Record/gfx/1A_bestfit.pdf>] [11
 
 
 
-] [11
 
 
-] [12]
+]
+[12]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
@@ -1136,6 +1143,7 @@ FrontBackmatter/Contents.tex
 Experiments/Experiment01.tex
 gfx/michel.jpg
 Experiments/Experiment01A.tex
+gfx/1A_bestfit.pdf
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
@@ -1147,28 +1155,29 @@ Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 14396 strings out of 494045
- 226489 string characters out of 3148376
+ 14405 strings out of 494045
+ 226649 string characters out of 3148376
  401016 words of memory out of 3000000
- 17213 multiletter control sequences out of 15000+200000
+ 17220 multiletter control sequences out of 15000+200000
  84616 words of font info for 126 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  45i,14n,67p,1084b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
-k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (19 pages, 206895 bytes).
+k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/palatino/uplri8a.pfb>
+Output written on Chemistry_Lab.pdf (19 pages, 259403 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 16611 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 95 named destinations out of 1000 (max. 500000)
+ 16616 words of extra memory for PDF output out of 17280 (max. 10000000)
 
