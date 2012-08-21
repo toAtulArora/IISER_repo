@@ -8,9 +8,8 @@ stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
 set label "Experiment: UV-visible Spectroscopy" font "Calibri,20" at screen 0.5,0.98 center
 
 set label sprintf("\
-Standard Deviation of Best Fit  : %4.2f\n\
-Slope of Best Fit Line          : %+4.2f\n\
-Intercept of Best Fit Line      : %+4.2f\n\
+Slope of Best Fit Line          : %+4.4f\n\
+Intercept of Best Fit Line      : %+4.4f\n\
 ",stddev_y,m,c) font "Lucida Console,12" at screen 0.02,0.25
 
 set label "\
@@ -19,8 +18,8 @@ Performed by: Athira, Arpit and Atul"\
 font "Lucida Console,10" at screen 0.02,0.05
 
 set title "Manifestation of Linear Relation" font "Calibri,14"
-set xlabel "Input Voltage (V)" font "Calibri,12"
-set ylabel "Output Voltage (V)" font "Calibri,12"
+set xlabel "Concentration (ppm)" font "Calibri,12"
+set ylabel "Absorbance" font "Calibri,12"
 set bmargin 25
 set tmargin 10
 #the number of minor divisions, for x & y

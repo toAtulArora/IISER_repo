@@ -526,11 +526,11 @@
 	</g>
 	<path  d='M59.8,150.1 L59.8,649.0 L747.2,649.0 L747.2,150.1 L59.8,150.1 Z '></path>
 	<g transform="translate(14.6,399.6) rotate(270)" style="stroke:none; fill:black; font-family:Calibri; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Output Voltage (V)</tspan>
+		<text><tspan>Absorbance</tspan>
 		</text>
 	</g>
 	<g transform="translate(403.5,690.2)" style="stroke:none; fill:black; font-family:Calibri; font-size:12.00pt; text-anchor:middle">
-		<text><tspan>Input Voltage (V)</tspan>
+		<text><tspan>Concentration (ppm)</tspan>
 		</text>
 	</g>
 	<g transform="translate(403.5,131.3)" style="stroke:none; fill:black; font-family:Calibri; font-size:14.00pt; text-anchor:middle">
@@ -542,18 +542,14 @@
 		</text>
 	</g>
 	<g transform="translate(15.4,771.7)" style="stroke:none; fill:black; font-family:Lucida Console; font-size:12.00pt; text-anchor:start">
-		<text xml:space="preserve"><tspan xml:space="preserve">Standard Deviation of Best Fit  : 0.17</tspan>
+		<text xml:space="preserve"><tspan xml:space="preserve">Slope of Best Fit Line          : +0.1663</tspan>
 		</text>
 	</g>
 	<g transform="translate(15.4,786.7)" style="stroke:none; fill:black; font-family:Lucida Console; font-size:12.00pt; text-anchor:start">
-		<text xml:space="preserve"><tspan xml:space="preserve">Slope of Best Fit Line          : +0.02</tspan>
+		<text xml:space="preserve"><tspan xml:space="preserve">Intercept of Best Fit Line      : +0.0249</tspan>
 		</text>
 	</g>
 	<g transform="translate(15.4,801.7)" style="stroke:none; fill:black; font-family:Lucida Console; font-size:12.00pt; text-anchor:start">
-		<text xml:space="preserve"><tspan xml:space="preserve">Intercept of Best Fit Line      : -0.09</tspan>
-		</text>
-	</g>
-	<g transform="translate(15.4,816.7)" style="stroke:none; fill:black; font-family:Lucida Console; font-size:12.00pt; text-anchor:start">
 		<text></text>
 	</g>
 	<g transform="translate(15.4,976.5)" style="stroke:none; fill:black; font-family:Lucida Console; font-size:10.00pt; text-anchor:start">
