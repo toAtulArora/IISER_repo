@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 06:00
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 07:56
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -772,7 +772,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=99, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=111, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -908,7 +908,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 
 
-] <gfx/michel.jpg, id=177, 450.68375pt x 200.75pt>
+] <gfx/michel.jpg, id=200, 450.68375pt x 200.75pt>
 File: gfx/michel.jpg Graphic file (type jpg)
  <use gfx/michel.jpg>
 Package pdftex.def Info: gfx/michel.jpg used on input line 33.
@@ -939,19 +939,19 @@ Overfull \hbox (26.18259pt too wide) has occurred while \output is active
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\Experiments/Experiment01A.tex"
 Chapter 2.
-) [7
+[7
 
 
 
 
-] [8
+] [8]) [9] [10
 
 
 
-] [9
+] [11
 
 
-] [10]
+] [12]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
@@ -970,7 +970,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [11
+) [13
 
 
 
@@ -1143,17 +1143,17 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 095A75723E9D4139546D845A775B8D3B;1495.
+(rerunfilecheck)             Checksum: E8A045E3A696DBE26302771F754448E2;1735.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 14312 strings out of 494045
- 225388 string characters out of 3148376
- 397016 words of memory out of 3000000
- 17163 multiletter control sequences out of 15000+200000
- 71479 words of font info for 100 fonts, out of 3000000 for 9000
+ 14396 strings out of 494045
+ 226489 string characters out of 3148376
+ 401016 words of memory out of 3000000
+ 17213 multiletter control sequences out of 15000+200000
+ 84616 words of font info for 126 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,14n,67p,1084b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,14n,67p,1084b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
 k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:
@@ -1166,9 +1166,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (17 pages, 191064 bytes).
+Output written on Chemistry_Lab.pdf (19 pages, 206895 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 13515 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 353 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 16611 words of extra memory for PDF output out of 17280 (max. 10000000)
 

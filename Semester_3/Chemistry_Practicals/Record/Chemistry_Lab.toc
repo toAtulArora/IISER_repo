@@ -16,6 +16,9 @@
 \contentsline {section}{\numberline {2.1}Objective}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Theory}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}Procedure}{7}{section.2.3}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{9}{part.2}
+\contentsline {section}{\numberline {2.4}Calculations and Measurements}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}Spectroscopic Observations and Analysis}{9}{section.2.5}
+\contentsline {section}{\numberline {2.6}Acknowledgements}{9}{section.2.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{11}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{11}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{13}{dummy.6}
