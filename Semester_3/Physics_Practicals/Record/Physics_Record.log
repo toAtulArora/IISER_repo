@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 08:29
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 11:55
 entering extended mode
-**C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
-icals/Record/Chemistry_Lab.tex
+**C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Physics_Practic
+als/Record/Physics_Record.tex
 
-("C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemistry_Pract
-icals/Record/Chemistry_Lab.tex"
+("C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Physics_Practic
+als/Record/Physics_Record.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -111,10 +111,10 @@ Package typearea Info: These are the values describing the layout:
 \c@table=\count88
 \bibindent=\dimen102
 )
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\classicthesis-config.tex"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\simpsons.sty"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\classicthesis-config.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\simpsons.sty"
 Package: simpsons 
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
@@ -501,8 +501,8 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 198.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 198.
 Package hyperref Info: Option `hypertexnames' set `true' on input line 198.
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\classicthesis.sty"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\classicthesis.sty"
 Package: classicthesis 2011/12/17 v4.0 Typographic style for a classic-looking 
 thesis
 
@@ -680,24 +680,22 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty")))
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.aux"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titlepage.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titleback.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Acknowledgments.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Contents.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01A.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Bibliography.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.aux"))
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.aux"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titlepage.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titleback.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Acknowledgments.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Contents.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment01.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Bibliography.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
@@ -738,10 +736,10 @@ LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.out")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.out")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.out")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.out")
 \@outlinefile=\write3
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
@@ -770,9 +768,9 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=111, 65.33208pt x 69.3792pt>
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titlepage.tex"
+<gfx/iiserlogo.jpg, id=67, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -784,23 +782,17 @@ Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/A.S.Arora/Docume
-nts/IISER 2012/IISER_repo/Semester_3/Chemistry_Practicals/Record/gfx/iiserlogo.
-jpg>])
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titleback.tex") [2
+nts/IISER 2012/IISER_repo/Semester_3/Physics_Practicals/Record/gfx/iiserlogo.jp
+g>])
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titleback.tex") [2
 
 
 ]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Acknowledgments.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Acknowledgments.tex"
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
-
-Overfull \hbox (3.12549pt too wide) in paragraph at lines 23--27
-\T1/pplj/m/n/10.95 I ex-press my sin-cere grat-i-tude to our in-struc-tors, Dr.
- K. S. Viswanathan
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
@@ -816,13 +808,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--27
 
 
 ]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Contents.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Contents.tex"
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.toc"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.toc"
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -862,18 +854,18 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.lof")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.lof")
 \tf@lof=\write5
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.lot")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.lot")
 \tf@lot=\write6
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.lol")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.lol")
 \tf@lol=\write7
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 66.
@@ -892,8 +884,8 @@ File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 
 ] [2]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment01.tex"
 Chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -902,69 +894,45 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 19.
-[3
 
+Underfull \hbox (badness 10000) in paragraph at lines 15--22
 
-
-] <gfx/michel.jpg, id=202, 450.68375pt x 200.75pt>
-File: gfx/michel.jpg Graphic file (type jpg)
- <use gfx/michel.jpg>
-Package pdftex.def Info: gfx/michel.jpg used on input line 33.
-(pdftex.def)             Requested size: 268.80103pt x 119.7372pt.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 35.
-
-
-Package natbib Warning: Citation `michel:img' on page 4 undefined on input line
- 35.
-
-
-Package natbib Warning: Citation `michel:img' on page 4 undefined on input line
- 35.
-
-
-Overfull \hbox (26.18259pt too wide) has occurred while \output is active
-[]|[]|  
  []
 
-[4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemistry_Pra
-cticals/Record/gfx/michel.jpg>] [5])
-Overfull \hbox (26.18259pt too wide) has occurred while \output is active
-[]|[]|  
+
+Overfull \hbox (7.61165pt too wide) in alignment at lines 64--64
+[][][][]
  []
 
-[6]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01A.tex"
-Chapter 2.
-[7
+<gfx/1_linear.pdf, id=136, 614.295pt x 794.97pt>
+File: gfx/1_linear.pdf Graphic file (type pdf)
+ <use gfx/1_linear.pdf>
+Package pdftex.def Info: gfx/1_linear.pdf used on input line 71.
+(pdftex.def)             Requested size: 436.80103pt x 565.28177pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 71--72
+ [] 
+ []
+
+) [3
 
 
 
-
-] [8] <gfx/1A_bestfit.pdf, id=268, 614.295pt x 794.97pt>
-File: gfx/1A_bestfit.pdf Graphic file (type pdf)
-
-<use gfx/1A_bestfit.pdf>
-Package pdftex.def Info: gfx/1A_bestfit.pdf used on input line 113.
-(pdftex.def)             Requested size: 336.0pt x 434.82094pt.
-) [9] [10 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemis
-try_Practicals/Record/gfx/1A_bestfit.pdf>] [11
+] [4] [5 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Physics
+_Practicals/Record/gfx/1_linear.pdf>] [6
 
 
 
+] [7
 
 
-]
-[12]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Bibliography.tex"
-No file Chemistry_Lab.bbl.
+] [8]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Bibliography.tex"
+No file Physics_Record.bbl.
 )
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.tex"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
@@ -977,7 +945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [13
+) [9
 
 
 
@@ -986,31 +954,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
 
 ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
-
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Chemistry_Lab.aux"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titlepage.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Titleback.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Acknowledgments.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Contents.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\Experiments/Experiment01A.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Bibliography.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
-icals\Record\FrontBackmatter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Physics_Record.aux"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titlepage.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Titleback.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Acknowledgments.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Contents.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment01.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Bibliography.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\FrontBackmatter/Colophon.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 
 
  *File List*
@@ -1124,8 +1087,8 @@ remreset.sty
   t1pplj.fd    2004/09/06 font definitions for T1/pplj.
  nameref.sty    2010/04/30 v2.40 Cross-referencing by name of section
 gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
-Chemistry_Lab.out
-Chemistry_Lab.out
+Physics_Record.out
+Physics_Record.out
 supp-pdf.mkii
   mt-ppl.cfg    2005/11/16 v1.6 microtype config. file: Palatino (RS)
 FrontBackmatter/Titlepage.tex
@@ -1141,43 +1104,39 @@ FrontBackmatter/Contents.tex
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
-gfx/michel.jpg
-Experiments/Experiment01A.tex
-gfx/1A_bestfit.pdf
+gfx/1_linear.pdf
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
-Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: E8A045E3A696DBE26302771F754448E2;1735.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package rerunfilecheck Info: File `Physics_Record.out' has not changed.
+(rerunfilecheck)             Checksum: CB6A830F433030B4F8BC065AF067C66E;850.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 14405 strings out of 494045
- 226649 string characters out of 3148376
- 401016 words of memory out of 3000000
- 17220 multiletter control sequences out of 15000+200000
- 84616 words of font info for 126 fonts, out of 3000000 for 9000
+ 14248 strings out of 494045
+ 223730 string characters out of 3148376
+ 398998 words of memory out of 3000000
+ 17131 multiletter control sequences out of 15000+200000
+ 67929 words of font info for 99 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,14n,67p,1084b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
-rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
-k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (19 pages, 259416 bytes).
+ 45i,13n,67p,449b,414s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl
+/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on Physics_Record.pdf (15 pages, 169817 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 16616 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 12427 words of extra memory for PDF output out of 14400 (max. 10000000)
 
