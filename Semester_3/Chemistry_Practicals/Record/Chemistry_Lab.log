@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  21 AUG 2012 16:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  22 AUG 2012 11:53
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Chemistry_Pract
 icals/Record/Chemistry_Lab.tex
@@ -772,7 +772,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=111, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=115, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -908,7 +908,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 
 
-] <gfx/michel.jpg, id=202, 450.68375pt x 200.75pt>
+] <gfx/michel.jpg, id=207, 450.68375pt x 200.75pt>
 File: gfx/michel.jpg Graphic file (type jpg)
  <use gfx/michel.jpg>
 Package pdftex.def Info: gfx/michel.jpg used on input line 33.
@@ -944,7 +944,7 @@ Chapter 2.
 
 
 
-] [8] <gfx/1A_bestfit.pdf, id=268, 614.295pt x 794.97pt>
+] [8] <gfx/1A_bestfit.pdf, id=273, 614.295pt x 794.97pt>
 File: gfx/1A_bestfit.pdf Graphic file (type pdf)
 
 <use gfx/1A_bestfit.pdf>
@@ -955,14 +955,15 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 113--114
  [] 
  []
 
-) [9] [10 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Chemis
-try_Practicals/Record/gfx/1A_bestfit.pdf>] [11
+[9]) [10] [11 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Ch
+emistry_Practicals/Record/gfx/1A_bestfit.pdf>] [12
 
 
 
+] [13
 
 
-] [12]
+] [14]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Chemistry_Pract
 icals\Record\FrontBackmatter/Bibliography.tex"
 No file Chemistry_Lab.bbl.
@@ -981,7 +982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [13
+) [15
 
 
 
@@ -1155,17 +1156,17 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `Chemistry_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: E8A045E3A696DBE26302771F754448E2;1735.
+(rerunfilecheck)             Checksum: F60E9AC25BA6F28588E0C653F5F1CF35;1797.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
- 14405 strings out of 494045
- 226649 string characters out of 3148376
+ 14430 strings out of 494045
+ 226857 string characters out of 3148376
  401016 words of memory out of 3000000
- 17220 multiletter control sequences out of 15000+200000
+ 17225 multiletter control sequences out of 15000+200000
  84616 words of font info for 126 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,14n,67p,1084b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,14n,67p,1084b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A.S.A
 rora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpsons.p
 k><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pr
@@ -1179,9 +1180,9 @@ fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Lab.pdf (19 pages, 258204 bytes).
+Output written on Chemistry_Lab.pdf (21 pages, 263940 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 95 named destinations out of 1000 (max. 500000)
- 16616 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 409 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 16624 words of extra memory for PDF output out of 17280 (max. 10000000)
 
