@@ -38,3 +38,6 @@ August 13, 2012
 August 21, 2012
 * Working on the Chemistry Record, Experiment 1A
 * Working on the Physics Record, Experiment 1
+
+August 25, 2012
+* Working on the Electrical Lab's Record, Experiment 1
