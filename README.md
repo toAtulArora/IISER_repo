@@ -41,3 +41,6 @@ August 21, 2012
 
 August 25, 2012
 * Working on the Electrical Lab's Record, Experiment 1
+
+August 29, 2012
+* Chemistry record, Experiment 1B completed
