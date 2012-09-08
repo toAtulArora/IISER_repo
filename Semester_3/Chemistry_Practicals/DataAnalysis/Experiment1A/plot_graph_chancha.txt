@@ -1,6 +1,6 @@
 #set yrange[0:10]
 y(x)=m*x + c
-fit y(x) "ConcVsAbs.txt" via m,c
+fit y(x) "ConcVsAbs_chancha.txt" via m,c
 stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
 
 
@@ -10,11 +10,12 @@ set label "Experiment: UV-visible Spectroscopy" font "Calibri,20" at screen 0.5,
 set label sprintf("\
 Slope of Best Fit Line          : %+4.4f\n\
 Intercept of Best Fit Line      : %+4.4f\n\
-",m,c) font "Lucida Console,12" at screen 0.02,0.25
+Standard Deviation		: %+4.4f\n\
+",m,c,stddev_y) font "Lucida Console,12" at screen 0.02,0.25
 
 set label "\
-Performed on: August 16, 2012\n\
-Performed by: Athira, Arpit and Atul"\
+Performed on: August 23, 2012\n\
+Performed by: Prashansa, Diksha and Shiven"\
 font "Lucida Console,10" at screen 0.02,0.05
 
 set title "Manifestation of Linear Relation" font "Calibri,14"
@@ -31,10 +32,10 @@ set grid  xtics ytics mxtics mytics
 set pointsize 2
 #lw is linewidth, lt is linetype
 
-plot [0:] y(x),"ConcVsAbs.txt" using ($1):($2):(stddev_y) with yerrorbars
+plot [0:] y(x),"ConcVsAbs_chancha.txt" using ($1):($2):(stddev_y) with yerrorbars
 
 set term svg enhanced font "Lucida Console,10" enhanced size 768, 1024
-set output "AtulsGraph.svg"
+set output "Chancha.svg"
 replot 
 
 

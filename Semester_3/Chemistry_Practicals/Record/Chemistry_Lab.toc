@@ -27,6 +27,13 @@
 \contentsline {section}{\numberline {3.4}Analysis}{13}{section.3.4}
 \contentsline {section}{\numberline {3.5}Discussion}{14}{section.3.5}
 \contentsline {section}{\numberline {3.6}Acknowledgements}{15}{section.3.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{17}{part.2}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Experiment 2A: Job's Method of Continuous Variation (UV-Vis)}}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Objective}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Theory}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Procedure}{17}{section.4.3}
+\contentsline {section}{\numberline {4.4}Observations and Analysis}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Discussion}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Acknowledgements}{19}{section.4.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{21}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{19}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{23}{dummy.6}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  25 AUG 2012 12:01
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  8 SEP 2012 05:59
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Electrical_Lab/
 Record/Electrical_Lab.tex
@@ -691,6 +691,8 @@ Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment02.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Colophon.aux"))
@@ -713,4 +715,467 @@ LaTeX Font Info:    Try loading font information for T1+pplj on input line 32.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pplj.fd"
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
-Package caption Info: Begin \AtBeginDocumen
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count138
+\AtBeginShipoutBox=\box32
+Package hyperref Info: Link coloring ON on input line 32.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count139
+)
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.out")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.out")
+\@outlinefile=\write3
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count140
+\scratchdimen=\dimen155
+\scratchbox=\box33
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen156
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks29
+)
+LaTeX Info: Redefining \microtypecontext on input line 32.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No font expansion.
+Package microtype Info: No tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-ppl.cfg"
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+ABD: EveryShipout initializing macros
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Titlepage.tex"
+<gfx/iiserlogo.jpg, id=107, 65.33208pt x 69.3792pt>
+File: gfx/iiserlogo.jpg Graphic file (type jpg)
+ <use gfx/iiserlogo.jpg>
+Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
+(pdftex.def)             Requested size: 56.9055pt x 60.4335pt.
+
+[1
+
+
+
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/A.S.Arora/Docume
+nts/IISER 2012/IISER_repo/Semester_3/Electrical_Lab/Record/gfx/iiserlogo.jpg>])
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Titleback.tex") [2
+
+
+]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Acknowledgments.tex"
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
+
+Overfull \hbox (3.12549pt too wide) in paragraph at lines 23--27
+\T1/pplj/m/n/10.95 I ex-press my sin-cere grat-i-tude to our in-struc-tors, Dr.
+ K. S. Viswanathan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--27
+
+ []
+
+) [3
+
+
+
+
+] [4
+
+
+
+]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Contents.tex"
+Package tocbasic Info: character protrusion at toc deactivated on input line 11
+.
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.toc"
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (0.4739pt too wide) in paragraph at lines 5--5
+ [][] []\T1/pplj/m/sc/10.95/80ls to con-trol a lamp with a sin-gle way switch [
+]  
+ []
+
+
+Overfull \hbox (10.29305pt too wide) in paragraph at lines 13--13
+ [][] []\T1/pplj/m/sc/10.95/80ls to con-trol a lamp from two dif-fer-ent places
+ []  
+ []
+
+)
+\tf@toc=\write4
+LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+File: uzeur.fd 2005/01/11 v4.0 (WaS)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeus on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
+File: uzeus.fd 2005/01/11 v4.0 (WaS)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
+File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+)
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 18.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
+File: uzeuex.fd 2005/01/11 v4.0 (WaS)
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 18.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+) [5
+
+
+
+]
+Package tocbasic Info: character protrusion at lof deactivated on input line 31
+.
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.lof")
+\tf@lof=\write5
+Package tocbasic Info: character protrusion at lot deactivated on input line 42
+.
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.lot")
+\tf@lot=\write6
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.lol")
+\tf@lol=\write7
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 66.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [6
+
+]) [1
+
+
+
+
+
+
+
+] [2]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment01.tex"
+Chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              You should use the features of package `tocbasic'
+(scrreprt)              instead of \float@addtolists.
+(scrreprt)              Support for \float@addtolists may be removed from
+(scrreprt)              `scrreprt' soon .
+
+<gfx/circuit1.png, id=183, 417.81094pt x 319.94531pt>
+File: gfx/circuit1.png Graphic file (type png)
+ <use gfx/circuit1.png>
+Package pdftex.def Info: gfx/circuit1.png used on input line 37.
+(pdftex.def)             Requested size: 268.80103pt x 205.84808pt.
+
+[3
+
+
+
+]
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 50--51
+[]\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
+pulled. 
+ []
+
+) [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
+Lab/Record/gfx/circuit1.png>]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment02.tex"
+Chapter 2.
+<gfx/circuit2_A.png, id=216, 462.22687pt x 283.81032pt>
+File: gfx/circuit2_A.png Graphic file (type png)
+
+<use gfx/circuit2_A.png>
+Package pdftex.def Info: gfx/circuit2_A.png used on input line 37.
+(pdftex.def)             Requested size: 268.80103pt x 165.04749pt.
+
+<gfx/circuit2_B.png, id=217, 407.27156pt x 288.3272pt>
+File: gfx/circuit2_B.png Graphic file (type png)
+
+<use gfx/circuit2_B.png>
+Package pdftex.def Info: gfx/circuit2_B.png used on input line 44.
+(pdftex.def)             Requested size: 268.80103pt x 190.30533pt.
+ [5
+
+
+
+
+]
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 57--58
+[]\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
+pulled. 
+ []
+
+[6 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_La
+b/Record/gfx/circuit2_A.png> <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_rep
+o/Semester_3/Electrical_Lab/Record/gfx/circuit2_B.png>]) [7] [8
+
+
+
+] [9
+
+
+] [10]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Bibliography.tex"
+No file Electrical_Lab.bbl.
+)
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Colophon.tex"
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
+File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
+)
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 9.30756pt on input line 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+
+ []
+
+) [11
+
+
+
+
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Electrical_Lab.aux"
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Titlepage.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Titleback.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Acknowledgments.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Contents.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment01.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment02.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Bibliography.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\FrontBackmatter/Colophon.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+
+
+ *File List*
+scrreprt.cls    2012/07/29 v3.11b KOMA-Script document class (report)
+scrkbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent ba
+sics and keyval usage)
+ scrbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+scrlfile.sty    2012/06/15 v3.12 KOMA-Script package (loading files)
+tocbasic.sty    2012/04/04 v3.10b KOMA-Script package (handling toc-files)
+scrsize11pt.clo    2012/07/29 v3.11b KOMA-Script font size class option (11pt)
+typearea.sty    2012/07/29 v3.11b KOMA-Script package (type area)
+classicthesis-config.tex
+simpsons.sty    
+  ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+inputenc.sty    2008/03/30 v1.1d Input encoding file
+  latin9.def    2008/03/30 v1.1d Input encoding file
+   babel.sty    2008/07/08 v3.8m The Babel package
+ bblopts.cfg    2006/07/31 v1.0 MiKTeX 'babel' configuration
+ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
+ english.ldf    2005/03/30 v3.3o English support from the babel system
+  natbib.sty    2010/09/13 8.31b (PWD, AO)
+ amsmath.sty    2000/07/18 v2.13 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+  xspace.sty    2009/10/20 v1.13 Space after command names (DPC,MH)
+mparhack.sty    2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
+fixltx2e.sty    2006/09/13 v1.1m fixes to LaTeX
+ acronym.sty    2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
+  suffix.sty    2006/07/15 1.5 Variant command support
+ relsize.sty    2003/07/04 ver 3.1
+tabularx.sty    1999/01/07 v2.07 `tabularx' package (DPC)
+   array.sty    2008/09/09 v2.4c Tabular extension package (FMi)
+ caption.sty    2012/02/19 v3.2f Customizing captions (AR)
+caption3.sty    2012/01/12 v1.4b caption3 kernel (AR)
+  subfig.sty    2005/06/28 ver: 1.3 subfig package
+listings.sty    2007/02/22 1.4 (Carsten Heinz)
+ lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
+listings.cfg    2007/02/22 1.4 listings configuration
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+ lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
+hyperref.sty    2012/05/13 v6.82q Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/04/25 v1.12 Construct package bundles (HO)
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2011/06/24 v1.1 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2006/04/12  ver 3.3  Verb mode for urls, etc.
+ hpdftex.def    2012/05/13 v6.82q Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+classicthesis.sty    2011/12/17 v4.0 Typographic style for a classic-looking th
+esis
+  xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+dvipsnam.def    1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+mathpazo.sty    2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+beramono.sty    2004/01/31 (WaS)
+ eulervm.sty    2005/01/11 v4.0 (WaS)
+microtype.sty    2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
+microtype.cfg    2010/01/10 v2.4 microtype main configuration file (RS)
+booktabs.sty    2005/04/14 v1.61803 publication quality tables
+textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+scrpage2.sty    2010/04/22 v2.5 LaTeX2e KOMA-Script package
+titlesec.sty    2011/12/15 v2.10.0 Sectioning titles
+ tocloft.sty    2010/10/13 v2.3e parameterised ToC, etc., typesetting
+ scrtime.sty    2012/07/29 v3.11b KOMA-Script package (time of LaTeX run)
+prelim2e.sty    2009/05/29 v1.3 prelim2e Package (MS)
+everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
+remreset.sty    
+  t1pplj.fd    2004/09/06 font definitions for T1/pplj.
+ nameref.sty    2010/04/30 v2.40 Cross-referencing by name of section
+gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
+Electrical_Lab.out
+Electrical_Lab.out
+supp-pdf.mkii
+  mt-ppl.cfg    2005/11/16 v1.6 microtype config. file: Palatino (RS)
+FrontBackmatter/Titlepage.tex
+gfx/iiserlogo.jpg
+FrontBackmatter/Titleback.tex
+FrontBackmatter/Acknowledgments.tex
+FrontBackmatter/Contents.tex
+   uzeur.fd    2005/01/11 v4.0 (WaS)
+  mt-eur.cfg    2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+   uzeus.fd    2005/01/11 v4.0 (WaS)
+  mt-eus.cfg    2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+  uzeuex.fd    2005/01/11 v4.0 (WaS)
+ ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+  t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
+Experiments/Experiment01.tex
+gfx/circuit1.png
+Experiments/Experiment02.tex
+gfx/circuit2_A.png
+gfx/circuit2_B.png
+FrontBackmatter/Bibliography.tex
+FrontBackmatter/Colophon.tex
+   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
+ ***********
+
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package rerunfilecheck Info: File `Electrical_Lab.out' has not changed.
+(rerunfilecheck)             Checksum: 1C01C92F63BFAB7FFC214A941B0014D2;1531.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+ ) 
+Here is how much of TeX's memory you used:
+ 14321 strings out of 494045
+ 225101 string characters out of 3148376
+ 396017 words of memory out of 3000000
+ 17164 multiletter control sequences out of 15000+200000
+ 61828 words of font info for 77 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 45i,13n,67p,530b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Electrical_Lab.pdf (17 pages, 142731 bytes).
+PDF statistics:
+ 314 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 12517 words of extra memory for PDF output out of 14400 (max. 10000000)
+
