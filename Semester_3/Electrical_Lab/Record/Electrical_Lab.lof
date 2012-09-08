@@ -2,7 +2,9 @@
 \deactivateaddvspace 
 \select@language {american}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Lamp - Single Way Switch}}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1}{\ignorespaces Lamp - Single Way Switch}}{2}{figure.caption.6}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2}{\ignorespaces Lamp - 2 Two Way Switch - Method 1}}{6}{figure.caption.8}
-\contentsline {figure}{\numberline {3}{\ignorespaces Lamp - 2 Two Way Switch - Method 2}}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {2}{\ignorespaces Lamp - 2 Two Way Switch - Method 1}}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {3}{\ignorespaces Lamp - 2 Two Way Switch - Method 2}}{4}{figure.caption.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4}{\ignorespaces Redistribution Board}}{8}{figure.caption.9}

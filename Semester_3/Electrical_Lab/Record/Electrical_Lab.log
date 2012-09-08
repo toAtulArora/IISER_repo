@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  8 SEP 2012 05:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  8 SEP 2012 07:34
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Electrical_Lab/
 Record/Electrical_Lab.tex
@@ -685,15 +685,13 @@ Record\FrontBackmatter/Titlepage.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Titleback.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Acknowledgments.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment02.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Bibliography.aux")
+Record\Experiments/Experiment03.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -770,7 +768,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=107, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=123, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -790,31 +788,6 @@ Record\FrontBackmatter/Titleback.tex") [2
 
 ]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Acknowledgments.tex"
-LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
-
-Overfull \hbox (3.12549pt too wide) in paragraph at lines 23--27
-\T1/pplj/m/n/10.95 I ex-press my sin-cere grat-i-tude to our in-struc-tors, Dr.
- K. S. Viswanathan
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--27
-
- []
-
-) [3
-
-
-
-
-] [4
-
-
-
-]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Contents.tex"
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
 .
@@ -825,13 +798,13 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (0.4739pt too wide) in paragraph at lines 5--5
+Overfull \hbox (0.4739pt too wide) in paragraph at lines 4--4
  [][] []\T1/pplj/m/sc/10.95/80ls to con-trol a lamp with a sin-gle way switch [
 ]  
  []
 
 
-Overfull \hbox (10.29305pt too wide) in paragraph at lines 13--13
+Overfull \hbox (10.29305pt too wide) in paragraph at lines 12--12
  [][] []\T1/pplj/m/sc/10.95/80ls to con-trol a lamp from two dif-fer-ent places
  []  
  []
@@ -863,7 +836,10 @@ LaTeX Font Info:    Try loading font information for OT1+zplm on input line 18.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-) [5
+) [3
+
+
+
 
 
 
@@ -890,17 +866,9 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [6
+) [4
 
-]) [1
-
-
-
-
-
-
-
-] [2]
+])
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment01.tex"
 Chapter 1.
@@ -911,65 +879,85 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-<gfx/circuit1.png, id=183, 417.81094pt x 319.94531pt>
+<gfx/circuit1.png, id=187, 417.81094pt x 319.94531pt>
 File: gfx/circuit1.png Graphic file (type png)
  <use gfx/circuit1.png>
-Package pdftex.def Info: gfx/circuit1.png used on input line 37.
+Package pdftex.def Info: gfx/circuit1.png used on input line 38.
 (pdftex.def)             Requested size: 268.80103pt x 205.84808pt.
 
-[3
+[1
+
+
+
+
+
 
 
 
 ]
-Overfull \hbox (9.19273pt too wide) in paragraph at lines 50--51
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 52--53
 []\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
 pulled. 
  []
 
-) [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
+) [2 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
 Lab/Record/gfx/circuit1.png>]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment02.tex"
 Chapter 2.
-<gfx/circuit2_A.png, id=216, 462.22687pt x 283.81032pt>
+[3
+
+
+
+
+] <gfx/circuit2_A.png, id=238, 462.22687pt x 283.81032pt>
 File: gfx/circuit2_A.png Graphic file (type png)
 
 <use gfx/circuit2_A.png>
-Package pdftex.def Info: gfx/circuit2_A.png used on input line 37.
+Package pdftex.def Info: gfx/circuit2_A.png used on input line 43.
 (pdftex.def)             Requested size: 268.80103pt x 165.04749pt.
 
-<gfx/circuit2_B.png, id=217, 407.27156pt x 288.3272pt>
+<gfx/circuit2_B.png, id=239, 407.27156pt x 288.3272pt>
 File: gfx/circuit2_B.png Graphic file (type png)
 
 <use gfx/circuit2_B.png>
-Package pdftex.def Info: gfx/circuit2_B.png used on input line 44.
+Package pdftex.def Info: gfx/circuit2_B.png used on input line 50.
 (pdftex.def)             Requested size: 268.80103pt x 190.30533pt.
- [5
+ [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_L
+ab/Record/gfx/circuit2_A.png> <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_re
+po/Semester_3/Electrical_Lab/Record/gfx/circuit2_B.png>]
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 64--65
+[]\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
+pulled. 
+ []
+
+) [5]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
+Record\Experiments/Experiment03.tex" [6
 
 
 
 
 ]
-Overfull \hbox (9.19273pt too wide) in paragraph at lines 57--58
+Chapter 3.
+[7] <gfx/circuit3.png, id=283, 713.66624pt x 301.125pt>
+File: gfx/circuit3.png Graphic file (type png)
+ <use gfx/circuit3.png>
+Package pdftex.def Info: gfx/circuit3.png used on input line 40.
+(pdftex.def)             Requested size: 403.19897pt x 170.12674pt.
+
+Overfull \hbox (67.19897pt too wide) in paragraph at lines 40--41
+ [] 
+ []
+
+
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 55--56
 []\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
 pulled. 
  []
 
-[6 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_La
-b/Record/gfx/circuit2_A.png> <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_rep
-o/Semester_3/Electrical_Lab/Record/gfx/circuit2_B.png>]) [7] [8
-
-
-
-] [9
-
-
-] [10]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Bibliography.tex"
-No file Electrical_Lab.bbl.
-)
+) [8 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
+Lab/Record/gfx/circuit3.png>]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
@@ -984,17 +972,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [11
-
-
-
+) [9
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 93.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 93.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
 
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Electrical_Lab.aux"
@@ -1003,18 +988,16 @@ Record\FrontBackmatter/Titlepage.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Titleback.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Acknowledgments.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\Experiments/Experiment02.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Bibliography.aux")
+Record\Experiments/Experiment03.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
 Record\FrontBackmatter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
 
 
  *File List*
@@ -1135,7 +1118,6 @@ supp-pdf.mkii
 FrontBackmatter/Titlepage.tex
 gfx/iiserlogo.jpg
 FrontBackmatter/Titleback.tex
-FrontBackmatter/Acknowledgments.tex
 FrontBackmatter/Contents.tex
    uzeur.fd    2005/01/11 v4.0 (WaS)
   mt-eur.cfg    2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
@@ -1149,33 +1131,33 @@ gfx/circuit1.png
 Experiments/Experiment02.tex
 gfx/circuit2_A.png
 gfx/circuit2_B.png
-FrontBackmatter/Bibliography.tex
+Experiments/Experiment03.tex
+gfx/circuit3.png
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Electrical_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 1C01C92F63BFAB7FFC214A941B0014D2;1531.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
+(rerunfilecheck)             Checksum: 0538ED2A2DD889FBE385B01563931374;1819.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 14321 strings out of 494045
- 225101 string characters out of 3148376
- 396017 words of memory out of 3000000
- 17164 multiletter control sequences out of 15000+200000
+ 14334 strings out of 494045
+ 224362 string characters out of 3148376
+ 394988 words of memory out of 3000000
+ 17156 multiletter control sequences out of 15000+200000
  61828 words of font info for 77 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,530b,552s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,67p,469b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr
-8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Electrical_Lab.pdf (17 pages, 142731 bytes).
+ype1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Electrical_Lab.pdf (13 pages, 155378 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 12517 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 12554 words of extra memory for PDF output out of 14400 (max. 10000000)
 
