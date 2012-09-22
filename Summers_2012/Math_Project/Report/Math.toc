@@ -1,0 +1,47 @@
+\select@language {american}
+\vspace {-\cftbeforepartskip }
+\select@language {american}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Brief Outline}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Summary}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Subgroups of the Rotation Group}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}\textsc {Pole of Group Element: }}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}\textsc {G-Orbits and Poles: }}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}\textsc {Spin: }}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}\textsc {Deriving a Famous Formula: }}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}\textsc {Application of the Famous Formula: }}{10}{section.2.5}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {More Group Theory}}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}\textsc {Corollary 5.1.28 }}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}\textbf {\textsc {7.4 The Class Equation of the Icosahedral Group}}}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}\textsc {Simple Groups}}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}\textsc {Lemma 7.4.2 }}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}\textsc {Theorem 7.4.3 }}{20}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}\textsc {post Theorem 7.5.4 (statement) }}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}\textsc {Lemma 7.5.5}}{21}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}\textsc {Theorem 7.5.4 }}{21}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}\textbf {\textsc {7.6 Normalizers }}}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}\textsc {Proposition 7.6.3 }}{22}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}\textbf { \textsc {7.7 The Sylow Theorems}}}{22}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}\textsc {Sylow $p$-subgroups}}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}\textbf {\textsc {The Theorems}}}{23}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}\textsc {{\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \add@extra@listi {sml}Theorem 7.7.2} First Sylow Theorem }}{23}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}\textsc {{\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \add@extra@listi {sml}Theorem 7.7.4} Second Sylow Theorem } }{23}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}\textsc {{\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \add@extra@listi {sml}Theorem 7.7.6} Third Sylow Theorem }}{23}{subsubsection.3.4.2.3}
+\contentsline {subsubsection}{\numberline {3.4.2.4}\textsc {Corollary 7.7.3 {\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \add@extra@listi {sml}of the First Sylow Theorem }}}{23}{subsubsection.3.4.2.4}
+\contentsline {subsubsection}{\numberline {3.4.2.5}\textsc {Corollary 7.7.5 {\relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \add@extra@listi {sml}of the Second Sylow Theorem }}}{23}{subsubsection.3.4.2.5}
+\contentsline {subsection}{\numberline {3.4.3}\textsc {Proofs}}{23}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}\textbf {\textsc {7.9 The Free Group}}}{28}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}\textsc {Proposition 7.9.2}}{28}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}\textsc {Proposition 7.9.3}}{28}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}\textsc {Definitions}}{29}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}\textsc {Proposition 7.9.4}}{29}{subsection.3.5.4}
+\contentsline {section}{\numberline {3.6}\textbf {\textsc {7.10 Generators and Relations}}}{29}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}\textsc {Definition 7.10.1}}{29}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}\textsc {Lemma 7.10.3}}{30}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}\textsc {Definition 7.10.4}}{30}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}\textsc {Example 7.10.7}}{31}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}\textsc {Example 7.10.11}}{32}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}\textsc {Proposition 7.10.12} Mapping Property of the Free Group}{32}{subsection.3.6.6}
+\contentsline {subsection}{\numberline {3.6.7}\textsc {Proposition 7.10.13} Mapping Property of Quotient Groups}{32}{subsection.3.6.7}
+\contentsline {section}{\numberline {3.7}\textbf {\textsc {7.11 The Todd-Coxter Algorithm}}}{34}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}\textsc {Rules 7.11.3}}{34}{subsection.3.7.1}

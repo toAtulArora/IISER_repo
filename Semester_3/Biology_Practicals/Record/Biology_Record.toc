@@ -15,6 +15,15 @@
 \contentsline {subsection}{\numberline {1.4.3}High Power Microscope}{7}{subsection.1.4.3}
 \contentsline {subsection}{\numberline {1.4.4}Mutants}{7}{subsection.1.4.4}
 \contentsline {section}{\numberline {1.5}Acknowledgements}{7}{section.1.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{9}{part.2}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Understanding Genetics Using Drosophila Melanogaster}}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Objective}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Material Required}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Idea}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Procedure Essentials}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Observations and Analysis}{11}{section.2.5}
+\contentsline {section}{\numberline {2.6}Discussion}{12}{section.2.6}
+\contentsline {section}{\numberline {2.7}Reference}{14}{section.2.7}
+\contentsline {section}{\numberline {2.8}Acknowledgement}{14}{section.2.8}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{15}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{11}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{17}{dummy.6}

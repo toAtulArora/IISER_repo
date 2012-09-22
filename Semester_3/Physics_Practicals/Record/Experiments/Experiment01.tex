@@ -10,7 +10,31 @@ August 14 and 21, 2012
 	Sodium vapour lamp, travelling microscope, lens assembly consisting of a plane glass plate and a planoconvex lens, spherometer, magnifying glass, vernier callipers and a tiltable  glass plate assembly.
 
 \section{Theory}
-		
+	Light when shone on a plano-convex lens in contact with a flat glass plate, produces circular successive dark and bright interference fringes, called Newton's rings. The radius of these fringes depends on both the wavelength and the radius of curvature of the lens. The objective of the experiment is to determine the wavelength of light, by experimentally determining the radius of curvature and analysing the fringes.\\
+	To derive the basic relationship, let's first consider the geometry of the problem (refer to \autoref{1_fig1}). For a spherical lens of radius of curvature $R$, consider a circle at a distance $d$ from the bottom plane, with radius $r$. Invoking Pythagoras Theorem, we have
+	\begin{equation}
+		d=R- (R^{2} - r^{2})^{1/2}
+	\end{equation}
+	Now let's consider a thin film problem (refer to \autoref{1_fig2}). Optical path distance can be evaluated as $n_{2}(AB + BC) - n_{1}(AD)$. Also, from geometry, we have $AB=BC=\frac{d}{\cos{\theta _{2}}}$. Plus, $AD=2d(\tan{\theta_{2}}\sin{\theta_{1}})$. Therefore from Snell's Law, we can further simplify the optical path difference to $2n_{2}d(\frac{1-\sin^{2}{\theta_{2}}}{\cos{\theta_{2}}})$ which can be rewritten as:
+	\begin{equation}	
+		2n_{2}d\cos{\theta_{2}}=m\lambda
+	\end{equation}
+	for constructive interference. \\
+
+	For newton's ring, we can approximate $\cos{\theta_{2}}$ to be $1$. Thus we have $2nt=(m+\frac{1}{2})\lambda$ where $n=1$ for air. We therefore get
+	\begin{equation}
+		2nt=(m+\frac{1}{2})\lambda
+	\end{equation}
+	for the bright interference, m=0,1, etc. \\
+	We also have $r_{m}=(R\lambda m)^{1/2}$ from which we obtain directly a linear  relation
+	\begin{equation}
+		(D_{m})^{2}=4R\lambda m
+	\end{equation}
+	Further, we can use the difference to evaluation $\lambda$ as follows:
+	\begin{equation}
+		\frac{(D_{m+n})^{2} - (D_{m})^{2}}{4Rn}=\lambda
+	\end{equation}
+
 \section{Observations and Calculations}
 	$h$ was found out to be 0.25 mm = 0.025 cm. \\
 	$l$ was found out to be $\frac{4.668+3.874}{2}=4.271$ cm. (For details, refer to \autoref{1_l}) \\
@@ -22,7 +46,7 @@ August 14 and 21, 2012
 	\begin{equation}
 		(D_{m})^{2}=4R\lambda m
 	\end{equation}
-	$\lambda=598.16\pm 3.25\%$ (where the error is calculated from the standard deviation of the slope).
+	$\lambda=598.16\pm 3.25\%$ nm (where the error is calculated from the standard deviation of the slope).
 	\begin{table}
 		\myfloatalign
 		\begin{tabularx}{\textwidth}{Xlll}
@@ -74,8 +98,24 @@ August 14 and 21, 2012
 	\label{1_graph}
 	\end{figure}
 
+	\begin{figure}[bth]
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{gfx/E1_A.jpg}
+		\end{center}
+	\caption[Spherical Lens]{Spherical Lens}
+	\label{1_fig1}
+	\end{figure}
+
+	\begin{figure}[bth]
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{gfx/E1_B.jpg}
+		\end{center}
+	\caption[Thin Film Interference]{Thin Film Interference}
+	\label{1_fig2}
+	\end{figure}
+
 \section{Result}
 	The expected wavelength of sodium vapour lamp is $589.5$ nm. \\
 	Experimentally, the wavelength, $\lambda$ was found to be \\
-	$598.16\pm 3.25\%$ (standard deviation of the slope).\\
+	$598.16\pm 3.25\%$ nm (standard deviation of the slope).\\
 	Accuracy error is $1.5\%$, within the precision.

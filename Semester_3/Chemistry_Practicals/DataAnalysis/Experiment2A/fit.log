@@ -1,0 +1,638 @@
+
+
+*******************************************************************************
+Sun Sep 16 21:56:46 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 296800            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+d               = 1
+z               = 1
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Sun Sep 16 21:57:05 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 9.605e-030        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = -2.41158
+b               = 2.16158
+c               = -0.656667
+d               = 0.0636667
+z               = 1.0935
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Sun Sep 16 21:57:46 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 9.605e-030        delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = -2.41158
+b               = 2.16158
+c               = -0.656667
+d               = 0.0636667
+z               = 1.0935
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Sun Sep 16 21:59:17 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 296800            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+d               = 1
+z               = 1
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Sun Sep 16 22:02:02 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 296800            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+d               = 1
+z               = 1
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Sun Sep 16 22:03:11 2012
+
+
+FIT:    data read from "ConcVsAbs.txt"
+        format = z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 296800            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 86.3542
+
+initial set of free parameter values
+
+a               = 1
+b               = 1
+c               = 1
+d               = 1
+z               = 1
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 9.605e-030
+rel. change during last iteration : 0
+
+
+Exactly as many data points as there are parameters.
+In this degenerate case, all errors are zero by definition.
+
+Final set of parameters 
+======================= 
+
+a               = -2.41158       
+b               = 2.16158        
+c               = -0.656667      
+d               = 0.0636667      
+z               = 1.0935         
+
+
+*******************************************************************************
+Mon Sep 17 18:17:01 2012
+
+
+FIT:    data read from "ConcVsAbs1.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 13.9802           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 1.5
+
+initial set of free parameter values
+
+a               = 1
+z               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.40385e-005
+rel. change during last iteration : -5.89261e-007
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0049029
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.40385e-005
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.224538         +/- 0.003331     (1.483%)
+z               = 0.236769         +/- 0.006231     (2.632%)
+
+
+correlation matrix of the fit parameters:
+
+               a      z      
+a               1.000 
+z              -0.891  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:17:01 2012
+
+
+FIT:    data read from "ConcVsAbs2.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: j(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 45.1397           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 2.53311
+
+initial set of free parameter values
+
+b               = 1
+k               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00290865
+rel. change during last iteration : -5.6509e-014
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0539319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00290865
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = -0.270077        +/- 0.03664      (13.57%)
+k               = 1.50792          +/- 0.126        (8.358%)
+
+
+correlation matrix of the fit parameters:
+
+               b      k      
+b               1.000 
+k              -0.969  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:18:46 2012
+
+
+FIT:    data read from "ConcVsAbs1.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 13.9802           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 1.5
+
+initial set of free parameter values
+
+a               = 1
+z               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.40385e-005
+rel. change during last iteration : -5.89261e-007
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0049029
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.40385e-005
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.224538         +/- 0.003331     (1.483%)
+z               = 0.236769         +/- 0.006231     (2.632%)
+
+
+correlation matrix of the fit parameters:
+
+               a      z      
+a               1.000 
+z              -0.891  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:18:46 2012
+
+
+FIT:    data read from "ConcVsAbs2.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: j(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 45.1397           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 2.53311
+
+initial set of free parameter values
+
+b               = 1
+k               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00290865
+rel. change during last iteration : -5.6509e-014
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0539319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00290865
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = -0.270077        +/- 0.03664      (13.57%)
+k               = 1.50792          +/- 0.126        (8.358%)
+
+
+correlation matrix of the fit parameters:
+
+               b      k      
+b               1.000 
+k              -0.969  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:21:30 2012
+
+
+FIT:    data read from "ConcVsAbs1.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 13.9802           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 1.5
+
+initial set of free parameter values
+
+a               = 1
+z               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.40385e-005
+rel. change during last iteration : -5.89261e-007
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0049029
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.40385e-005
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.224538         +/- 0.003331     (1.483%)
+z               = 0.236769         +/- 0.006231     (2.632%)
+
+
+correlation matrix of the fit parameters:
+
+               a      z      
+a               1.000 
+z              -0.891  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:21:30 2012
+
+
+FIT:    data read from "ConcVsAbs2.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: j(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 45.1397           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 2.53311
+
+initial set of free parameter values
+
+b               = 1
+k               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00290865
+rel. change during last iteration : -5.6509e-014
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0539319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00290865
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = -0.270077        +/- 0.03664      (13.57%)
+k               = 1.50792          +/- 0.126        (8.358%)
+
+
+correlation matrix of the fit parameters:
+
+               b      k      
+b               1.000 
+k              -0.969  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:22:28 2012
+
+
+FIT:    data read from "ConcVsAbs1.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 13.9802           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 1.5
+
+initial set of free parameter values
+
+a               = 1
+z               = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.40385e-005
+rel. change during last iteration : -5.89261e-007
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0049029
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.40385e-005
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a               = 0.224538         +/- 0.003331     (1.483%)
+z               = 0.236769         +/- 0.006231     (2.632%)
+
+
+correlation matrix of the fit parameters:
+
+               a      z      
+a               1.000 
+z              -0.891  1.000 
+
+
+*******************************************************************************
+Mon Sep 17 18:22:28 2012
+
+
+FIT:    data read from "ConcVsAbs2.txt"
+        format = z
+        #datapoints = 3
+        residuals are weighted equally (unit weight)
+
+function used for fitting: j(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 45.1397           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-005
+ lambda	  : 2.53311
+
+initial set of free parameter values
+
+b               = 1
+k               = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00290865
+rel. change during last iteration : -5.6509e-014
+
+degrees of freedom    (FIT_NDF)                        : 1
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0539319
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00290865
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b               = -0.270077        +/- 0.03664      (13.57%)
+k               = 1.50792          +/- 0.126        (8.358%)
+
+
+correlation matrix of the fit parameters:
+
+               b      k      
+b               1.000 
+k              -0.969  1.000 

@@ -1,0 +1,47 @@
+#set yrange[0:10]
+y(x)=a*x + z
+fit y(x) "ConcVsAbs1.txt" via a,z
+stddev_y = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
+
+j(x)=b*x + k
+fit j(x) "ConcVsAbs2.txt" via b,k
+stddev_j = sqrt(FIT_WSSR / (FIT_NDF + 1 ))
+
+
+#the centre refers to the pivot of the text
+set label "Experiment: Job's Method" font "Calibri,20" at screen 0.5,0.98 center
+
+set label sprintf("\
+Slope of Best Fit Line 1  : %+4.4f\n\
+Standard Deviation     1  : %+4.4f\n\
+Slope of Best Fit Line 2  : %+4.4f\n\
+Standard Deviation     2  : %+4.4f\n\
+",a,stddev_y,b,stddev_j) font "Lucida Console,12" at screen 0.02,0.25
+
+set label "\
+Performed on: September 3, 2012\n\
+Performed by: Athira, Arpit and Atul"\
+font "Lucida Console,10" at screen 0.02,0.05
+
+#set title "Manifestation of Linear Relation" font "Calibri,14"
+set xlabel "Volume (mL)" font "Calibri,12"
+set ylabel "Absorbance" font "Calibri,12"
+set bmargin 25
+set tmargin 10
+#the number of minor divisions, for x & y
+set mxtics 5
+set mytics 5
+set nokey
+set grid  xtics ytics mxtics mytics
+
+set pointsize 2
+#lw is linewidth, lt is linetype
+
+plot [0:] y(x), "ConcVsAbs1.txt" using ($1):($2):(stddev_y) with yerrorbars, j(x), "ConcVsAbs2.txt" using ($1):($2):(stddev_j) with yerrorbars
+
+set term svg enhanced font "Lucida Console,10" enhanced size 768, 1024
+set output "AtulsGraph.svg"
+replot 
+
+
+pause -1

@@ -32,8 +32,15 @@
 \contentsline {section}{\numberline {4.2}Theory}{17}{section.4.2}
 \contentsline {section}{\numberline {4.3}Procedure}{17}{section.4.3}
 \contentsline {section}{\numberline {4.4}Observations and Analysis}{18}{section.4.4}
-\contentsline {section}{\numberline {4.5}Discussion}{18}{section.4.5}
+\contentsline {section}{\numberline {4.5}Discussion}{19}{section.4.5}
 \contentsline {section}{\numberline {4.6}Acknowledgements}{19}{section.4.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{21}{part.2}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Experiment 2B: Infra Red Spectroscopy}}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Objective}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Theory}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Procedure}{22}{section.5.3}
+\contentsline {section}{\numberline {5.4}Analysis}{22}{section.5.4}
+\contentsline {section}{\numberline {5.5}Reference}{23}{section.5.5}
+\contentsline {section}{\numberline {5.6}Acknowledgements}{23}{section.5.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{25}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{23}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{27}{dummy.6}
