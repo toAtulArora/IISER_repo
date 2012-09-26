@@ -1,0 +1,187 @@
+%************************************************
+\chapter{Quest for Symmetry: IR vs. Raman Spectroscopy}
+%************************************************
+\begin{flushright}
+September 20, 2012
+\end{flushright}
+\section{Objective}
+To gain an insight into the structure of the following chemicals by analysing their Raman and IR spectra:
+\begin{enumerate}
+	\item Pthalic Acid
+	\item Pthalic Anhydrate	
+	\item Napthalene
+\end{enumerate}
+
+\section{Theory}
+\subsection {Raman Spectroscopy}
+	\subsubsection*{Idea Behind it}
+	What's so cool about Raman Spectroscopy? Well the fact that it uses scattering of light instead of absorption. This has a remarkable consequence. Let's start from the beginning. There are various numbers of molecules in any given quantum state, frequency of which depends on Temperature amongst various other factors (ambiguity is necessary for generality). Now, when an incident beam, of a given frequency, say $\nu_{i}$, strikes a molecule, it is excited from whichever allowed quantum state it was in, to an energy state, called a \emph{virtual state}, (which in this case is higher in energy). Now the speciality of a virtual state is that it can exist anywhere in the energy scale, however its lifetime tends to zero. They are not `physical', whatever that's supposed to mean! So immediately after jumping to the virtual state, the molecule drops to an allowed energy state, where by allowed, I mean the states allowed by the selection rules.
+	
+	\subsubsection*{Stokes and Anti-Stokes}
+	Now say the energy difference between the two energy states, viz. final minus initial, is represented by $\nu_{\text{absorbed}}$. Energy of the scattered photon is given by 
+	\begin{equation}
+		\nu_{s} = \nu_{i} - \nu_{\text{absorbed}}
+		\label{spectra}
+	\end{equation}
+	It's then obvious to note that if $\nu_{\text{absorbed}}$ is positive, then the scattered photon will have a lower energy, and when $\nu_{\text{absorbed}}$ is negative, the energy is higher. But here's something which is not immediately obvious. When the resultant energy is lower, corresponding spectroscopic lines are called stokes lines and in vibrational-raman spectroscopy, they are brighter than their counterpart, the anti-stokes lines (definition of which is implied). However in case of rotational-raman, the intensities of both the anti-stokes and stokes lines are comparable.
+	
+	\subsubsection*{Vibrational Raman Spectra}
+	Let us lose the generality and talk about, Vibrational-Raman Spectroscopy. We can borrow the expression for energy levels (expressed in wavenumbers) from the prior discussions as:
+	\begin{equation}
+		\epsilon = \overline{\omega} (v + \frac{1}{2}) - \overline{\omega}_{e}x_{e}(v + \frac{1}{2})^{2} \,\, \text{cm}^{-1}
+	\end{equation}
+	where the symbols have the usual meanings. The selection rule for this reads
+	\begin{equation}
+		\Delta v = 0,\pm 1,\pm 2,...
+	\end{equation}
+	Transitions from $v=0 \Rightarrow v=1$ are fundamental and are clearly visible on the spectra due to high population of molecules in the state defined by $v=0$. Transitions from $v=1 \Rightarrow v=2$ (Hot Bands) and $v=0 \Rightarrow v=2$ (overtones) are not observable in most cases. This can be attributed to low populations. \marginpar{\Bart What about the overtones then?}
+	Thus, since $\nu_{\text{absorbed}}=\nu_{\text{fundamental}}$, we can expect a spectra determined by \autoref{spectra}, with Stoke's lines showing up with a frequency less than $\nu_{i}$ and Anti-Stokes' mirrored about $\nu_{i}$ with a much lower intensity.
+
+	\subsubsection*{What does Raman `see'?}
+	As Raman spectroscopy is essentially based on scattering of light, whether the scattered light will be scattered `elastically' or `inelastically' would depend on whether change in molecular configuration results in a change in polarisability. \marginpar{\Lisa Note polarisability is distinct from the dipole moment IR is sensitive to} This is best understood by considering a two simple examples. 
+	\begin{enumerate}
+		\item Consider a Carbon Dioxide molecule and imagine it executing a symmetric stretch. Now the polarisability of the molecule will increase as the oxygen atoms move away from the equilibrium position. Contrary to this, the polarisability will drop when the oxygen atoms congest with the carbon. This essentially means if we plot polarisability, $\alpha$ against displacement from equilibrium position of the oxygen atom, $\zeta$, the slope at $\zeta=0$ is positive. Note this. Also note, the dipole moment doesn't change in this case.
+		\item Again consider a Carbon Dioxide molecule but this time, imagine its bending, with the Carbon in the centre and Oxygens oscillating up and down. In this case, its easy to observe that the polarisability will be least when the molecule is its equilibrium condition. Thus, in this case, slope of the $\alpha$ vs $\zeta$ graph, at $\zeta=0$ will be zero. \marginpar{\Bart Wait, what is $\zeta$ supposed to be here?}  \marginpar{\Lisa It's the angle of Carbon Oxygen bond from the equilibrium position} Also observe, the dipole moment changes as a function of $\zeta$.
+	\end{enumerate}
+	Thus, Raman will `see', in this example, only the first, viz. Symmetric Stretch, which doesn't show up in IR. And as you would've guessed by now, IR will `see' the second, but Raman won't.
+
+	\subsubsection*{Consequences of Symmetry}
+	Clearly symmetry has a major role to play in deciding what characteristic of the molecule shows up where. Discussing that at length is not in the scope of this report. Yet the following must be stated, for the analysis relies on understanding of the principle.
+	\par
+	``\emph{Rule of mutual exclusion} \footnote{Fundamentals of Molecular Spectroscopy, 4$^{\text{th}}$ Edition, Banwell and McCash}: If a molecule has a \emph{centre of symmetry}, then Raman active vibrations are infra-red inactive and vice versa. If there is no centre of symmetry then some (but not necessarily all) vibrations may be both Raman and infra-red active.''
+	\par
+	The converse of the statement is also true, viz. if the molecule shows no common lines in Raman and infra-red, then the molecule has a centre of symmetry (although concluding this might be tricky as the peaks can be diminishingly small).
+
+\section{Procedure}
+	For ATR, please refer to \autoref{ATR_exp}. For Raman, we performed two calibration follow these simple steps
+	\begin{enumerate}
+		\item The sample was taken in a glass slide
+		\item The glass slide was placed inside the Raman apparatus
+		\item Using the attached computer, the point for analysis was fixed
+		\item Spectrum was recorded
+	\end{enumerate}
+
+
+\section{Observations}
+
+	\begin{enumerate}
+		\item Pthalic Acid - For Raman, refer to \autoref{Pthalic_Acid_r} and for IR, refer to \autoref{Pthalic_Acid_i}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{Xlll}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ Out of plane bending								& 	$690-900$ 	&	$773$ \\
+					$C-O$ stretching											& 	$1000-1300$	& 	$1047$, $1177$\\
+					$C=C$ stretching										&	$1475-1600$ & 	$1644$\\
+					$C-H$ stretching										&	$3050-3150$ &	$3092$\\					
+					\hline%
+				\end{tabularx}
+				\caption{Pthalic Acid Raman Spectra}
+				\label{Pthalic_Acid_r}
+			\end{table}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{Xlll}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ Out of plane bending								& 	$690-900$ 	&	$794.16$, $739.58$ \\
+					$C-O$ stretching										& 	$1000-1300$	& 	$11071.27$, $1279.40$\\
+					$C=C$ stretching										&	$1475-1600$ & 	(aprox) $1530$\\
+					$C-H$ stretching (overlaps with $O-H$)					&	$2400-3400$ &	$2871.26$\\					
+					\hline%
+				\end{tabularx}
+				\caption{Pthalic Acid IR Spectra}
+				\label{Pthalic_Acid_i}
+			\end{table}
+
+		\item Pthalic Anhydride - For Raman, refer to \autoref{Pthalic_Anhydride_r} and for IR, refer to \autoref{Pthalic_Anhydride_i}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{Xlll}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ Out of plane bending								& 	$690-900$ 	&	$773$, $737$ \\
+					$C-O$ stretching											& 	$1000-1300$	& 	$1047$, $1009$ (only strong listed)\\
+					$C=C$ stretching										&	$1475-1600$ & 	$1600$\\
+					$C-H$ stretching										&	$3050-3150$ &	$3081$\\				
+					$C=O$ stretching										&	$1800-1830$,$1740-1775$ &	$1848$, $1766$\\				
+					\hline%
+				\end{tabularx}
+				\caption{Pthalic Anydride Raman Spectra}
+				\label{Pthalic_Anhydride_r}
+			\end{table}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{Xlll}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ Out of plane bending								& 	$690-900$ 	&	$712$ \\
+					$C-O$ stretching										& 	$1000-1300$	& 	$1282$\\
+					$C=C$ stretching										&	$1475-1600$ & 	(absent)\\
+					$C-H$ stretching										&	$3050-3150$ &	$3023$ (slightly out)\\
+					$C=O$ stretching										&	$1800-1830$,$1740-1775$ &	$1820$, $1764$\\				
+					\hline%
+				\end{tabularx}
+				\caption{Pthalic Anydride IR Spectra}
+				\label{Pthalic_Anhydride_i}
+			\end{table}
+
+		\item Napthalene - For Raman, refer to \autoref{Napthalene_r} and for IR, refer to \autoref{Napthalene_i}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{XllXl}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ bend 		&	$690-900$ 	& 	$764$ \\
+					$C=C$ stretch 	& 	$1475-1600$	&	$1578$ \\
+					$C=H$ stretch 	&	$3050-3150$	&	$3062$ \\
+					\hline%
+				\end{tabularx}
+				\caption{Napthalene Raman Spectra}
+				\label{Napthalene_r}
+			\end{table}
+			\begin{table}
+				\myfloatalign
+				\begin{tabularx}{\textwidth}{XllXl}
+					\hline
+					\tableheadline{Phenomenon} 	&	\tableheadline{Expected ($\text{cm}^{-1}$)} & \tableheadline{Observed ($\text{cm}^{-1}$)}\\				
+					\hline%
+					$C-H$ bend 		&	$690-900$ 	& 	$776$ \\
+					$C=C$ stretch 	& 	$1475-1600$	&	$1505$, $1590$ \\
+					$C=H$ stretch 	&	$3050-3150$	&	$3049$ \\
+					\hline%
+				\end{tabularx}
+				\caption{Napthalene IR Spectra}
+				\label{Napthalene_i}
+			\end{table}
+
+	\end{enumerate}
+
+\section{Conclusions}
+	\begin{enumerate}
+		\item Acid and Anhydride
+			\begin{enumerate}
+				\item The energy levels split in case of Anhydride because the $C-OH$ get very close compared to their position in the Acid. The split can be attributed to in phase and out of phase motion. Further the motions get coupled in case of Anhydride.
+				\item The peaks obtained were not complimentary, therefore we could conclude both molecules lack a centre of symmetry. \marginpar{\Lisa This however can be asserted confidently only if neighbouring molecules don't disturb}
+			\end{enumerate}
+		\item Naphthalene
+			\begin{enumerate}
+				\item It should be silent in IR, however we observed peaks. Reason is that the region is not isotropic. The crystal structure distorts the molecule and perturbations are induced, which makes the molecule visible in IR, despite having a centre of symmetry.
+			\end{enumerate}
+	\end{enumerate}
+
+\section{Acknowledgements}
+I thank our PhD student guide, Ms. Shruti, who helped us with the performance of the Raman experiments. I thank Ritu Roy Chaudhury, Prashansa Gupta, Athira T John and Vivek Sagar for discussing their analysis.
+
+\section{References}
+\begin{enumerate}
+	\item Modern Spectroscopy, Fourth Edition, J. Michael Hollas
+	\item Fundamentals of Molecular Spectroscopy, 4$^{\text{th}}$ Edition, Banwell and McCash
+	\item Spectroscopy, Kris Bybyan
+\end{enumerate}

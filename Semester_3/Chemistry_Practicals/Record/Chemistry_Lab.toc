@@ -46,8 +46,10 @@
 \contentsline {section}{\numberline {6.2}Theory}{25}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Raman Spectroscopy}{25}{subsection.6.2.1}
 \contentsline {section}{\numberline {6.3}Procedure}{27}{section.6.3}
-\contentsline {section}{\numberline {6.4}Observations and Analysis}{27}{section.6.4}
-\contentsline {section}{\numberline {6.5}Acknowledgements}{28}{section.6.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{29}{part.2}
+\contentsline {section}{\numberline {6.4}Observations}{27}{section.6.4}
+\contentsline {section}{\numberline {6.5}Conclusions}{29}{section.6.5}
+\contentsline {section}{\numberline {6.6}Acknowledgements}{30}{section.6.6}
+\contentsline {section}{\numberline {6.7}References}{30}{section.6.7}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{31}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{31}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.6}
