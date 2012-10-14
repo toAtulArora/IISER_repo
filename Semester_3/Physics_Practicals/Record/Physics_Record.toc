@@ -8,6 +8,14 @@
 \contentsline {section}{\numberline {1.3}Theory}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Observations and Calculations}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Result}{4}{section.1.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{9}{part.2}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Frenel's Biprism}}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aim}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Apparatus}{9}{section.2.2}
+\contentsline {section}{\numberline {2.3}Theory}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Procedure}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Observations and Calculations}{10}{section.2.5}
+\contentsline {section}{\numberline {2.6}Result}{10}{section.2.6}
+\contentsline {section}{\numberline {2.7}Precautions}{12}{section.2.7}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{13}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{11}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{15}{dummy.6}

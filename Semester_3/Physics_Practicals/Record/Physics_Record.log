@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  18 SEP 2012 10:02
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  9 OCT 2012 10:18
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Physics_Practic
 als/Record/Physics_Record.tex
@@ -693,6 +693,12 @@ als\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\Experiments/Experiment01.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment02.aux"
+
+LaTeX Warning: Label `E2_cal' multiply defined.
+
+)
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\FrontBackmatter/Colophon.aux"))
@@ -770,7 +776,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=67, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=99, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -919,7 +925,7 @@ Overfull \hbox (7.61165pt too wide) in alignment at lines 88--88
 [][][][]
  []
 
-<gfx/1_linear.pdf, id=152, 614.295pt x 794.97pt>
+<gfx/1_linear.pdf, id=196, 614.295pt x 794.97pt>
 File: gfx/1_linear.pdf Graphic file (type pdf)
  <use gfx/1_linear.pdf>
 Package pdftex.def Info: gfx/1_linear.pdf used on input line 95.
@@ -929,13 +935,13 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 95--96
  [] 
  []
 
-<gfx/E1_A.jpg, id=153, 260.8947pt x 185.2521pt>
+<gfx/E1_A.jpg, id=197, 260.8947pt x 185.2521pt>
 File: gfx/E1_A.jpg Graphic file (type jpg)
  <use gfx/E1_A.jpg>
 Package pdftex.def Info: gfx/E1_A.jpg used on input line 103.
 (pdftex.def)             Requested size: 268.80103pt x 190.87964pt.
 
-<gfx/E1_B.jpg, id=154, 293.898pt x 211.992pt>
+<gfx/E1_B.jpg, id=198, 293.898pt x 211.992pt>
 File: gfx/E1_B.jpg Graphic file (type jpg)
  <use gfx/E1_B.jpg>
 Package pdftex.def Info: gfx/E1_B.jpg used on input line 111.
@@ -945,14 +951,53 @@ Package pdftex.def Info: gfx/E1_B.jpg used on input line 111.
 icals/Record/gfx/1_linear.pdf>] [7 <C:/Users/A.S.Arora/Documents/IISER 2012/IIS
 ER_repo/Semester_3/Physics_Practicals/Record/gfx/E1_A.jpg> <C:/Users/A.S.Arora/
 Documents/IISER 2012/IISER_repo/Semester_3/Physics_Practicals/Record/gfx/E1_B.j
-pg>] [8
+pg>]
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment02.tex" [8
 
 
 
-] [9
+
+]
+Chapter 2.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
 
 
-] [10]
+Overfull \hbox (66.36266pt too wide) in alignment at lines 44--44
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Overfull \hbox (4.53352pt too wide) in paragraph at lines 60--61
+\T1/pplj/m/n/10.95 Wavelength of Sodium light ($\U/zeur/m/n/10.95 $\T1/pplj/m/
+n/10.95 ) was ex-per-i-men-tally found to be ($\U/zeur/m/n/10.95 d=D$\T1/pplj/
+m/n/10.95 )
+ []
+
+
+Package tabularx Warning: X Columns too narrow (table too wide)
+(tabularx)                 on input line 88.
+
+
+Overfull \hbox (87.81924pt too wide) in alignment at lines 88--88
+[][][][][]
+ []
+
+[10] [11]) [12] [13
+
+
+
+
+
+] [14]
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\FrontBackmatter/Bibliography.tex"
 No file Physics_Record.bbl.
@@ -971,7 +1016,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [11
+) [15
 
 
 
@@ -995,6 +1040,8 @@ als\Record\FrontBackmatter/Acknowledgments.aux")
 als\Record\FrontBackmatter/Contents.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\Experiments/Experiment01.aux")
+("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
+als\Record\Experiments/Experiment02.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
 als\Record\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Physics_Practic
@@ -1133,6 +1180,7 @@ Experiments/Experiment01.tex
 gfx/1_linear.pdf
 gfx/E1_A.jpg
 gfx/E1_B.jpg
+Experiments/Experiment02.tex
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
@@ -1140,31 +1188,35 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `Physics_Record.out' has not changed.
-(rerunfilecheck)             Checksum: CB6A830F433030B4F8BC065AF067C66E;850.
+(rerunfilecheck)             Checksum: 19D86DBDD04E1F8916B64300155C29BB;1347.
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 14275 strings out of 494045
- 224082 string characters out of 3148376
- 399998 words of memory out of 3000000
- 17147 multiletter control sequences out of 15000+200000
- 67929 words of font info for 99 fonts, out of 3000000 for 9000
+ 14375 strings out of 494045
+ 226010 string characters out of 3148376
+ 401998 words of memory out of 3000000
+ 17202 multiletter control sequences out of 15000+200000
+ 81018 words of font info for 124 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,587b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,67p,724b,479s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl
-/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/urw/palatino/uplri8a.pfb>
-Output written on Physics_Record.pdf (17 pages, 1449099 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/p
+alatino/uplri8a.pfb>
+Output written on Physics_Record.pdf (21 pages, 1472423 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 12437 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 15573 words of extra memory for PDF output out of 17280 (max. 10000000)
 

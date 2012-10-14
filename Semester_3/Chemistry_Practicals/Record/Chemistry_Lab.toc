@@ -59,6 +59,14 @@
 \contentsline {section}{\numberline {7.4}Observations}{32}{section.7.4}
 \contentsline {section}{\numberline {7.5}Acknowledgements}{32}{section.7.5}
 \contentsline {section}{\numberline {7.6}References}{32}{section.7.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{33}{part.2}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Hydrogen Bonding in Alcohol}}{33}{chapter.8}
+\contentsline {section}{\numberline {8.1}Objective}{33}{section.8.1}
+\contentsline {section}{\numberline {8.2}Theory}{33}{section.8.2}
+\contentsline {subsubsection}{\numberline {8.2.0.1}A Little Deeper}{33}{subsubsection.8.2.0.1}
+\contentsline {section}{\numberline {8.3}Procedure}{33}{section.8.3}
+\contentsline {section}{\numberline {8.4}Observations/Discussion}{34}{section.8.4}
+\contentsline {section}{\numberline {8.5}Acknowledgements}{34}{section.8.5}
+\contentsline {section}{\numberline {8.6}References}{34}{section.8.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{35}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{35}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{37}{dummy.6}
