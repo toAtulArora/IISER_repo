@@ -50,3 +50,18 @@ September 6, 2012
 
 September 8, 2012
 * Electrical Lab's record
+
+September 20, 2012
+* Chemistry Experiment 3
+
+September 27, 2012
+* Chemistry Experiment 4A
+
+October 4, 2012
+* Chemistry Lab Experiment 4B
+
+October 8, 2012
+* Physics Record (Frene Biprism) | Poor Quality work
+
+October 15, 2012
+* Math Curve
