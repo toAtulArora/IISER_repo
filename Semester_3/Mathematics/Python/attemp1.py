@@ -76,15 +76,15 @@ yt = [ Gamma_n_Y(t,1,alpha,k) + Gamma_n_Y(t,2,alpha,k) + Gamma_n_Y(t,3,alpha,k) 
 #yt = [ Gamma_n_Y(t,1,alpha,k) + Gamma_n_Y(t,2,alpha,k) + Gamma_n_Y(t,3,alpha,k) for t in tt]
 
 
-#xt= [t for t in tt]
-#yt= [C(t,0,alpha) for t in tt]
+xt= [t for t in tt]
+yt= [math.sin(2*t)*math.cos(t/5) for t in tt]
 
-plot.plot(xt, yt,marker='o', linestyle='--', color='r')
-#plot.plot(xt,yt)
+#plot.plot(xt, yt,marker='o', linestyle='--', color='r')
+plot.plot(xt,yt)
 
 #plot.xlim([-8,8])
 #plot.ylim([-8,8])
 plot.grid(True)
 #plot.savefig("arjit_galaxy2_floor_test.png")
-plot.savefig("spiral_lessdense2_clone.png")
+#plot.savefig("spiral_lessdense2_clone.png")
 plot.show()

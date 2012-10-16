@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  16 OCT 2012 01:23
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  16 OCT 2012 02:41
 entering extended mode
 **C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Mathematics/Rep
 ort/Math_Report.tex
@@ -842,32 +842,29 @@ File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 
 
 ] [2]
-<img/sin_clone.png, id=102, 578.16pt x 433.62pt>
-File: img/sin_clone.png Graphic file (type png)
- <use img/sin_clone.png>
-Package pdftex.def Info: img/sin_clone.png used on input line 102.
-(pdftex.def)             Requested size: 302.39795pt x 226.79376pt.
+Underfull \hbox (badness 10000) in paragraph at lines 95--98
 
-<img/spiral_lessdense_clone.png, id=104, 578.16pt x 433.62pt>
+ []
+
+<img/spiral_lessdense_clone.png, id=101, 578.16pt x 433.62pt>
 File: img/spiral_lessdense_clone.png Graphic file (type png)
 
 <use img/spiral_lessdense_clone.png>
-Package pdftex.def Info: img/spiral_lessdense_clone.png used on input line 110.
+Package pdftex.def Info: img/spiral_lessdense_clone.png used on input line 109.
 
 (pdftex.def)             Requested size: 302.39795pt x 226.79376pt.
 
-<img/spiral_lessdense2_clone.png, id=105, 578.16pt x 433.62pt>
+<img/spiral_lessdense2_clone.png, id=103, 578.16pt x 433.62pt>
 File: img/spiral_lessdense2_clone.png Graphic file (type png)
 
 <use img/spiral_lessdense2_clone.png>
-Package pdftex.def Info: img/spiral_lessdense2_clone.png used on input line 118
+Package pdftex.def Info: img/spiral_lessdense2_clone.png used on input line 117
 .
 (pdftex.def)             Requested size: 302.39795pt x 226.79376pt.
  [3]) [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Mathema
-tics/Report/img/sin_clone.png>] [5 <C:/Users/A.S.Arora/Documents/IISER 2012/IIS
-ER_repo/Semester_3/Mathematics/Report/img/spiral_lessdense_clone.png> <C:/Users
-/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Mathematics/Report/img/sp
-iral_lessdense2_clone.png>] [6
+tics/Report/img/spiral_lessdense_clone.png>] [5 <C:/Users/A.S.Arora/Documents/I
+ISER 2012/IISER_repo/Semester_3/Mathematics/Report/img/spiral_lessdense2_clone.
+png>] [6
 
 
 
@@ -1031,7 +1028,6 @@ Experiments/Experiment01.tex
   uzeuex.fd    2005/01/11 v4.0 (WaS)
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
  ufplmbb.fd    2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-img/sin_clone.png
 img/spiral_lessdense_clone.png
 img/spiral_lessdense2_clone.png
 FrontBackmatter/Colophon.tex
@@ -1047,30 +1043,33 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 14124 strings out of 494045
- 218423 string characters out of 3148376
- 398013 words of memory out of 3000000
- 17044 multiletter control sequences out of 15000+200000
+ 14117 strings out of 494045
+ 218301 string characters out of 3148376
+ 397013 words of memory out of 3000000
+ 17038 multiletter control sequences out of 15000+200000
  55982 words of font info for 87 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  45i,8n,67p,725b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplm
-bb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pa
-latino/uplri8a.pfb>
-Output written on Math_Report.pdf (9 pages, 257221 bytes).
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does no
+t exist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/e
+uler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pala
+tino/uplri8a.pfb>
+Output written on Math_Report.pdf (9 pages, 224341 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 205 PDF objects out of 1000 (max. 8388607)
  45 named destinations out of 1000 (max. 500000)
- 9365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9360 words of extra memory for PDF output out of 10000 (max. 10000000)
 
