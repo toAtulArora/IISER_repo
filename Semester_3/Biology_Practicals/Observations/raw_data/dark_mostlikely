@@ -1,0 +1,299 @@
+White (Male:1, Female:0)
+--
+Red (Male:3, Female:1)
+White (Male:1, Female:0)
+--
+Red (Male:3, Female:1)
+White (Male:2, Female:0)
+--
+Red (Male:4, Female:1)
+White (Male:2, Female:0)
+--
+Red (Male:4, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:5, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:6, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:6, Female:2)
+White (Male:3, Female:0)
+--
+Red (Male:7, Female:2)
+White (Male:3, Female:0)
+--
+Red (Male:7, Female:2)
+White (Male:4, Female:0)
+--
+Red (Male:8, Female:2)
+White (Male:4, Female:0)
+--
+Red (Male:9, Female:2)
+White (Male:4, Female:0)
+--
+Red (Male:10, Female:2)
+White (Male:4, Female:0)
+--
+
+C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practicals
+\Python>python flycount.py
+Red (Male:0, Female:0)
+White (Male:0, Female:0)
+--
+Red (Male:0, Female:0)
+White (Male:1, Female:0)
+--
+Red (Male:0, Female:0)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:0)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:0)
+White (Male:3, Female:0)
+--
+Red (Male:1, Female:0)
+White (Male:4, Female:0)
+--
+Red (Male:2, Female:0)
+White (Male:4, Female:0)
+--
+Red (Male:2, Female:0)
+White (Male:5, Female:0)
+--
+Red (Male:2, Female:1)
+White (Male:5, Female:0)
+--
+Red (Male:2, Female:1)
+White (Male:6, Female:0)
+--
+Red (Male:2, Female:2)
+White (Male:6, Female:0)
+--
+Red (Male:3, Female:2)
+White (Male:6, Female:0)
+--
+Red (Male:4, Female:2)
+White (Male:6, Female:0)
+--
+Red (Male:5, Female:2)
+White (Male:6, Female:0)
+--
+Red (Male:5, Female:2)
+White (Male:7, Female:0)
+--
+Red (Male:5, Female:3)
+White (Male:7, Female:0)
+--
+Red (Male:5, Female:3)
+White (Male:7, Female:1)
+--
+Red (Male:5, Female:3)
+White (Male:8, Female:1)
+--
+Red (Male:6, Female:3)
+White (Male:8, Female:1)
+--
+Red (Male:6, Female:4)
+White (Male:8, Female:1)
+--
+Red (Male:6, Female:5)
+White (Male:8, Female:1)
+--
+Red (Male:6, Female:5)
+White (Male:8, Female:2)
+--
+Red (Male:6, Female:5)
+White (Male:6, Female:1)
+--
+Red (Male:6, Female:5)
+White (Male:6, Female:2)
+--
+Red (Male:6, Female:5)
+White (Male:6, Female:1)
+--
+Red (Male:6, Female:5)
+White (Male:7, Female:1)
+--
+Red (Male:7, Female:5)
+White (Male:7, Female:1)
+--
+Red (Male:8, Female:5)
+White (Male:7, Female:1)
+--
+Red (Male:8, Female:6)
+White (Male:7, Female:1)
+--
+Red (Male:9, Female:6)
+White (Male:7, Female:1)
+--
+Red (Male:9, Female:6)
+White (Male:8, Female:1)
+--
+Red (Male:10, Female:6)
+White (Male:8, Female:1)
+--
+Red (Male:10, Female:7)
+White (Male:8, Female:1)
+--
+Red (Male:10, Female:8)
+White (Male:8, Female:1)
+--
+
+C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practicals
+\Python>python flycount.py
+Red (Male:1, Female:0)
+White (Male:0, Female:0)
+--
+Red (Male:1, Female:0)
+White (Male:1, Female:0)
+--
+Red (Male:2, Female:0)
+White (Male:1, Female:0)
+--
+Red (Male:2, Female:1)
+White (Male:1, Female:0)
+--
+Red (Male:2, Female:1)
+White (Male:2, Female:0)
+--
+Red (Male:3, Female:1)
+White (Male:2, Female:0)
+--
+Red (Male:3, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:4, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:5, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:6, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:6, Female:3)
+White (Male:2, Female:0)
+--
+Red (Male:7, Female:3)
+White (Male:2, Female:0)
+--
+Red (Male:7, Female:3)
+White (Male:3, Female:0)
+--
+Red (Male:8, Female:3)
+White (Male:3, Female:0)
+--
+Red (Male:8, Female:4)
+White (Male:3, Female:0)
+--
+Red (Male:8, Female:5)
+White (Male:3, Female:0)
+--
+Red (Male:8, Female:5)
+White (Male:4, Female:0)
+--
+Red (Male:9, Female:5)
+White (Male:4, Female:0)
+--
+Red (Male:10, Female:5)
+White (Male:4, Female:0)
+--
+Red (Male:11, Female:5)
+White (Male:4, Female:0)
+--
+Red (Male:12, Female:5)
+White (Male:4, Female:0)
+--
+
+C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Biology_Practicals
+\Python>python flycount.py
+Red (Male:0, Female:1)
+White (Male:0, Female:0)
+--
+Red (Male:0, Female:1)
+White (Male:0, Female:1)
+--
+Red (Male:0, Female:1)
+White (Male:0, Female:0)
+--
+Red (Male:0, Female:1)
+White (Male:1, Female:0)
+--
+Red (Male:0, Female:2)
+White (Male:1, Female:0)
+--
+Red (Male:0, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:2)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:3)
+White (Male:2, Female:0)
+--
+Red (Male:2, Female:3)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:3)
+White (Male:1, Female:0)
+--
+Red (Male:1, Female:4)
+White (Male:1, Female:0)
+--
+Red (Male:1, Female:4)
+White (Male:2, Female:0)
+--
+Red (Male:1, Female:4)
+White (Male:3, Female:0)
+--
+Red (Male:1, Female:4)
+White (Male:4, Female:0)
+--
+Red (Male:1, Female:4)
+White (Male:5, Female:0)
+--
+Red (Male:2, Female:4)
+White (Male:5, Female:0)
+--
+Red (Male:2, Female:5)
+White (Male:5, Female:0)
+--
+Red (Male:3, Female:5)
+White (Male:5, Female:0)
+--
+Red (Male:3, Female:5)
+White (Male:6, Female:0)
+--
+Red (Male:4, Female:5)
+White (Male:6, Female:0)
+--
+Red (Male:4, Female:6)
+White (Male:6, Female:0)
+--
+Red (Male:5, Female:6)
+White (Male:6, Female:0)
+--
+Red (Male:5, Female:6)
+White (Male:7, Female:0)
+--
+Red (Male:6, Female:6)
+White (Male:7, Female:0)
+--
+Red (Male:7, Female:6)
+White (Male:7, Female:0)
+--
+Red (Male:8, Female:6)
+White (Male:7, Female:0)
+--
+Red (Male:8, Female:6)
+White (Male:8, Female:0)
+--
+Red (Male:8, Female:6)
+White (Male:9, Female:0)
+--
+Red (Male:9, Female:6)
+White (Male:9, Female:0)
+--
