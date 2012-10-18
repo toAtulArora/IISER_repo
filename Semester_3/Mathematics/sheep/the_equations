@@ -1,0 +1,72 @@
+ \gamma(t) = C_C(*t,(*n-1)\alpha,*n\alpha)( \cos((*n-1)2\pi/*k)GX(*t-(*n-1)\alpha)) - \sin((*n-1)2\pi/*k)GY(*t-(*n-1)\alpha)
+
+
+C_C = (\lceil m(*t - c_1) \rceil)(\lfloor m(-*t + c_2) \rfloor + 1)
+
+C_C = (\lceil m(*t - ((*n-1)\alpha)) \rceil)(\lfloor m(-*t + (*n\alpha)) \rfloor + 1)
+
+ \gamma(t) = (\lceil m(*t - ((*n-1)\alpha)) \rceil)(\lfloor m(-*t + (*n\alpha)) \rfloor + 1)( \cos((*n-1)2\pi/*k)GX(*t-(*n-1)\alpha)) - \sin((*n-1)2\pi/*k)GY(*t-(*n-1)\alpha)
+
+GX=(*t(1.2^*t)cos(*t))
+
+GX=((*t-(*n-1)\alpha))(1.2^(*t-(*n-1)\alpha)))cos((*t-(*n-1)\alpha))))
+
+GY=(*t(1.2^*t)sin(*t))
+
+GY=((*t-(*n-1)\alpha)(1.2^(*t-(*n-1)\alpha))sin((*t-(*n-1)\alpha)))
+
+
+\gamma(t) = (\lceil m(*t - ((*n-1)\alpha)) \rceil)(\lfloor m(-*t + (*n\alpha)) \rfloor + 1)( \cos((*n-1)2\pi/*k)((*t-(*n-1)\alpha))(1.2^(*t-(*n-1)\alpha)))cos((*t-(*n-1)\alpha)))) - \sin((*n-1)2\pi/*k)((*t-(*n-1)\alpha)(1.2^(*t-(*n-1)\alpha))sin((*t-(*n-1)\alpha)))
+
+
+
+&(\lceil m(*t - ((0)\alpha)) \rceil)(\lfloor m(-*t + (1\alpha)) \rfloor + 1) \\
+			&( \cos((0)2\pi/*k)\\
+			&((*t-(0)\alpha))\\
+			&(1.2^(*t-(0)\alpha)))cos((*t-(0)\alpha))))\\ 
+			&- \sin((0)2\pi/*k)\\
+			&((*t-(0)\alpha)\\
+			&(1.2^(*t-(0)\alpha))sin((*t-(0)\alpha)))\\
+
+&(\lceil m(*t - ((1)\alpha)) \rceil)(\lfloor m(-*t + (2\alpha)) \rfloor + 1) \\
+			&( \cos((1)2\pi/*k)\\
+			&((*t-(1)\alpha))\\
+			&(1.2^(*t-(1)\alpha)))cos((*t-(1)\alpha))))\\ 
+			&- \sin((1)2\pi/*k)\\
+			&((*t-(1)\alpha)\\
+			&(1.2^(*t-(1)\alpha))sin((*t-(1)\alpha)))\\						
+
+&(\lceil m(*t - ((2)\alpha)) \rceil)(\lfloor m(-*t + (3\alpha)) \rfloor + 1) \\
+			&( \cos((2)2\pi/*k)\\
+			&((*t-(2)\alpha))\\
+			&(1.2^(*t-(2)\alpha)))cos((*t-(2)\alpha))))\\ 
+			&- \sin((2)2\pi/*k)\\
+			&((*t-(2)\alpha)\\
+			&(1.2^(*t-(2)\alpha))sin((*t-(2)\alpha)))\\			
+
+&(\lceil m(*t - ((3)\alpha)) \rceil)(\lfloor m(-*t + (*4\alpha)) \rfloor + 1) \\
+			&( \cos((3)2\pi/*k)\\
+			&((*t-(3)\alpha))\\
+			&(1.2^(*t-(3)\alpha)))cos((*t-(3)\alpha))))\\ 
+			&- \sin((3)2\pi/*k)\\
+			&((*t-(3)\alpha)\\
+			&(1.2^(*t-(3)\alpha))sin((*t-(3)\alpha)))\\			
+
+&(\lceil m(*t - ((4)\alpha)) \rceil)(\lfloor m(-*t + (5\alpha)) \rfloor + 1) \\
+			&( \cos((4)2\pi/*k)\\
+			&((*t-(4)\alpha))\\
+			&(1.2^(*t-(4)\alpha)))cos((*t-(4)\alpha))))\\ 
+			&- \sin((4)2\pi/*k)\\
+			&((*t-(4)\alpha)\\
+			&(1.2^(*t-(4)\alpha))sin((*t-(4)\alpha)))\\			
+
+
+
+
+\gamma(t) = &(\lceil m(*t - ((*n-1)\alpha)) \rceil)(\lfloor m(-*t + (*n\alpha)) \rfloor + 1) \\
+			&( \cos((*n-1)2\pi/*k)\\
+			&((*t-(*n-1)\alpha))\\
+			&(1.2^(*t-(*n-1)\alpha)))cos((*t-(*n-1)\alpha))))\\ 
+			&- \sin((*n-1)2\pi/*k)\\
+			&((*t-(*n-1)\alpha)\\
+			&(1.2^(*t-(*n-1)\alpha))sin((*t-(*n-1)\alpha)))\\

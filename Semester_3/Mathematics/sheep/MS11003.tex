@@ -1,0 +1,129 @@
+% Assignment 2 (MTH201), To be submitted by October 16 2012.
+
+% Change the file name to YourRollNumber.tex (with MS in capitals), for example MS10420.tex
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{amssymb,amsmath}
+\begin{document}
+%\begin{redbox}
+% Write a parametric equation of the curve (edit the text within $ $ only)
+%\hfill
+
+% Write a popular name of the curve, if any
+\begin{center} 
+\textsc{Simple Galaxoid} \footnote{This term has been coined by me.}
+\end{center}
+
+%\par
+\begin{equation}
+\gamma(t)=(\gamma_x(t),\gamma_y(t))
+\end{equation}
+
+where $\gamma_x$ and $\gamma_y$ are defined after the following discussion.
+
+%\end{redbox}
+\begin{itemize}
+% Mention if the curve is planar (Planar/Space)
+\item Planar or Space?: Planar
+% Write the formula of the curvature function (edit the text within $ $ only)
+% \item Curvature function: $$\kappa(t) = -\frac{t^n}{a}.$$
+% Write the formula of the torsion function (edit the text within $ $ only)
+\\
+	Since the curve is planar, its torsion = 0 %Since it's a planar curve, its torsion = 0
+\item  This curve, despite having a fairly complicated equation, can be understood as a combination of 5 clones of a single spiral curve. I find it interesting because, well of its beauty. Further, I devised a method (algorithm) to combine various curves into a single curve, using what I call a cropping function, which may result in large equations, but it achieves its objective without much difficulty. This was the first curve I created using the said algorithm, thus the interest.
+
+%\begin{itemize}
+% Remark 1 about the curve
+\item For any given t, only one of the summation terms is non-zero.
+% Remark 2 about the curve
+\item The curvature is the same as that of the `base' curve, provided it's defined at that point.
+% Remark 3 about the curve
+\item The cropping function is the one that uses Ceiling and Floor functions, and it essentially `selects' which curve to plot.
+\end{itemize}
+% Write your Name (Roll No.)
+\vspace{30pt}
+\hfill {\it Submitted by:} Atul Singh Arora (MS11003)
+
+
+\begin{equation}
+\begin{split}
+\gamma_x(t) = &(\lceil m(t - ((0)\alpha)) \rceil)(\lfloor m(-t + (1\alpha)) \rfloor + 1) \\
+			&( \cos((0)2\pi/5)\\
+			&((t-(0)\alpha))\\
+			&(1.2^{(t-(0)\alpha)}))\cos((t-(0)\alpha))))\\ 
+			&- \sin((0)2\pi/5)\\
+			&((t-(0)\alpha)\\
+			&(1.2^{(t-(0)\alpha)})\sin((t-(0)\alpha)))\\
+		+	&(\lceil m(t - ((1)\alpha)) \rceil)(\lfloor m(-t + (2\alpha)) \rfloor + 1) \\
+			&( \cos((1)2\pi/5)\\
+			&((t-(1)\alpha))\\
+			&(1.2^{(t-(1)\alpha)}))\cos((t-(1)\alpha))))\\ 
+			&- \sin((1)2\pi/5)\\
+			&((t-(1)\alpha)\\
+			&(1.2^{(t-(1)\alpha)})\sin((t-(1)\alpha)))\\						
+		+	&(\lceil m(t - ((2)\alpha)) \rceil)(\lfloor m(-t + (3\alpha)) \rfloor + 1) \\
+			&( \cos((2)2\pi/5)\\
+			&((t-(2)\alpha))\\
+			&(1.2^{(t-(2)\alpha)}))\cos((t-(2)\alpha))))\\ 
+			&- \sin((2)2\pi/5)\\
+			&((t-(2)\alpha)\\
+			&(1.2^{(t-(2)\alpha)})\sin((t-(2)\alpha)))\\			
+		+	&(\lceil m(t - ((3)\alpha)) \rceil)(\lfloor m(-t + (4\alpha)) \rfloor + 1) \\
+			&( \cos((3)2\pi/5)\\
+			&((t-(3)\alpha))\\
+			&(1.2^{(t-(3)\alpha)}))\cos((t-(3)\alpha))))\\ 
+			&- \sin((3)2\pi/5)\\
+			&((t-(3)\alpha)\\
+			&(1.2^{(t-(3)\alpha)})\sin((t-(3)\alpha)))\\			
+		+	&(\lceil m(t - ((4)\alpha)) \rceil)(\lfloor m(-t + (5\alpha)) \rfloor + 1) \\
+			&( \cos((4)2\pi/5)\\
+			&((t-(4)\alpha))\\
+			&(1.2^{(t-(4)\alpha)}))\cos((t-(4)\alpha))))\\ 
+			&- \sin((4)2\pi/5)\\
+			&((t-(4)\alpha)\\
+			&(1.2^{(t-(4)\alpha)})\sin((t-(4)\alpha)))\\			
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\gamma_y(t) = &(\lceil m(t - ((0)\alpha)) \rceil)(\lfloor m(-t + (1\alpha)) \rfloor + 1) \\
+			&( \sin((0)2\pi/5)\\
+			&((t-(0)\alpha))\\
+			&(1.2^{(t-(0)\alpha)}))\cos((t-(0)\alpha))))\\ 
+			&+ \cos((0)2\pi/5)\\
+			&((t-(0)\alpha)\\
+			&(1.2^{(t-(0)\alpha)})\sin((t-(0)\alpha)))\\
+		+	&(\lceil m(t - ((1)\alpha)) \rceil)(\lfloor m(-t + (2\alpha)) \rfloor + 1) \\
+			&( \sin((1)2\pi/5)\\
+			&((t-(1)\alpha))\\
+			&(1.2^{(t-(1)\alpha)}))\cos((t-(1)\alpha))))\\ 
+			&+ \cos((1)2\pi/5)\\
+			&((t-(1)\alpha)\\
+			&(1.2^{(t-(1)\alpha)})\sin((t-(1)\alpha)))\\						
+		+	&(\lceil m(t - ((2)\alpha)) \rceil)(\lfloor m(-t + (3\alpha)) \rfloor + 1) \\
+			&( \sin((2)2\pi/5)\\
+			&((t-(2)\alpha))\\
+			&(1.2^{(t-(2)\alpha)}))\cos((t-(2)\alpha))))\\ 
+			&+ \cos((2)2\pi/5)\\
+			&((t-(2)\alpha)\\
+			&(1.2^{(t-(2)\alpha)})\sin((t-(2)\alpha)))\\			
+		+	&(\lceil m(t - ((3)\alpha)) \rceil)(\lfloor m(-t + (4\alpha)) \rfloor + 1) \\
+			&( \sin((3)2\pi/5)\\
+			&((t-(3)\alpha))\\
+			&(1.2^{(t-(3)\alpha)}))\cos((t-(3)\alpha))))\\ 
+			&+ \cos((3)2\pi/5)\\
+			&((t-(3)\alpha)\\
+			&(1.2^{(t-(3)\alpha)})\sin((t-(3)\alpha)))\\			
+		+	&(\lceil m(t - ((4)\alpha)) \rceil)(\lfloor m(-t + (5\alpha)) \rfloor + 1) \\
+			&( \sin((4)2\pi/5)\\
+			&((t-(4)\alpha))\\
+			&(1.2^{(t-(4)\alpha)}))\cos((t-(4)\alpha))))\\ 
+			&+ \cos((4)2\pi/5)\\
+			&((t-(4)\alpha)\\
+			&(1.2^{(t-(4)\alpha)})\sin((t-(4)\alpha)))\\			
+\end{split}
+\end{equation}
+
+
+\end{document}
