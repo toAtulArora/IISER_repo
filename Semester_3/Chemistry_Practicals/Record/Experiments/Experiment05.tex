@@ -1,0 +1,49 @@
+%************************************************
+\chapter{NMR Spectroscopy}
+%************************************************
+\begin{flushright}
+October 11, 2012
+\end{flushright}
+\section{Objective}
+To obtain and analyse an NMR spectrum of the following compounds:
+	\begin{enumerate}
+		\item Benzaldehyde
+		\item Ethyl Acetate
+	\end{enumerate}
+
+\section{Inspiration}
+	Writing the record for this experiment was a rather unique experience as NMR spectroscopy is amongst the first that we've done practically without having studied the theory, and it doesn't use the conventional methods of absorption of light.
+
+\section{Theory}
+	Let's start by talking about the magnetic spins, not of electrons, but of protons instead. We take for granted the fact that the quantization of projection of magnetic spin of a proton is conceptually the same as that of an electron. We note that magnetic moment of the `spinning' charge, would be proportional to the angular spin. We also observe that there's no way to distinguish between a $+\frac{1}{2}$ and $-\frac{1}{2}$ spin in an isolated nucleus, however if we apply an external constant magnetic field, something interesting happens. The energy of the two spin states, splits into two. To understand how and why this happens, observe that the external magnetic field, will cause the magnetic field of the proton to align along it. However, since the projection of the magnetic field can only be $+\frac{1}{2}$ or $-\frac{1}{2}$ \marginpar{\Lisa {The projection is along some fixed arbitrary axis, which here is implicitly assumed to be along the magnetic field for reasons which will become clear soon}} and not zero, thus the magnetic field can't point along the external field, and instead it precesses such that the projection is $+\frac{1}{2}$ along the direction of the external magnetic field.\footnote{This is an intuitive argument, but the end result is consistent with precise calculations} Consequently, the only other possibility is $-\frac{1}{2}$, where the proton's magnetic field vector opposes the external magnetic field. Thus, in accordance with our nomenclature, the $+\frac{1}{2}$ state is lowered in energy, and is thus distinguishable from the $-\frac{1}{2}$ energy state.
+	\subsection{Chemical Shift}
+		As was previously mentioned, the energy difference $\Delta E$ in the two states, depends on the Magnetic Field. Now here's where things get further interesting. Protons sit inside the nucleus, with electrons around. Electrons also have their own magnetic field which \emph{shields} the external field from the proton. \marginpar{\Bart Shouldn't electrons also talk in NMR? You've after all assumed them to be identical to protons, except for the charge of course. \Lisa If they're paired (true for electrons and protons), they're silent. In fact, $\exists$ something called Electron Spin Resonance}
+		Thus, assuming we keep the magnetic field constant, the value $\Delta E$ \emph{grossly} depends on the electron density around it. Thus we already know a little about the environment of the proton. This phenomenon, viz. change in $\Delta E$ for the same nucleus, because of electron distribution, is referred to as \emph{Chemical Shift}. For instance, if we have a $CH_3CH_2-OH$, then the $H$ of $OH$ will have a higher $\Delta E$ compared to the $H$ of $CH_3$. This is because oxygen is a highly electronegative atom, which would cause the electron density to be lower in the vicinity of the Hydrogen atom, thereby exposing it to a higher Magnetic field and thus, a higher $\Delta E$.
+	\subsection{Splitting of Peaks, Integrals}
+		Now let's us take a finer look at what could affect the magnetic field of a proton. To proceed with this section, let us again consider the example of $CH_3CH_2-OH$. Consider the proton of the methyl group first. Which proton, well they're indistinguishable. So we would expect to see just one peak corresponding to them (where by peak I mean the peak corresponding to $\Delta E$, how the peak is obtained will be discussed in the next section). However, note that on the adjacent carbon, two more protons are sitting. They can either both be plus half spin, or both be minus half spin, or one plus one minus. Since a proton is roughly equally likely to be either in the plus half state or in a minus half state, we will have molecules in + +, - +, - - proton spin states, in the ratio 1:2:1 respectively (the order of plus minus doesn't matter, viz. + - is the same as - +, which is why the second term is 2 in the ratio). Now here's why this discussion is even worthwhile; the molecules with protons (protons of $CH_2$ are being referred to) in + - spin state, will have zero net magnetic moment, and thus will not affect the $\Delta E$ of the protons on the methyl in any way. However, molecules that have protons in + + state will add to the external magnetic field experienced by the protons of the methyl group, thereby increasing their $\Delta E$ value. Symmetrically, the - - state will decrease their $\Delta E$ value. So, the number of molecules with $\Delta E$ unchanged to those with $\Delta E$ greater or smaller will be 2:1, in accordance with the ratio obtained earlier. Consequently the peaks would have an area ratio of 1:2:1 as is apparent in the graph. By the same line of arguments, we conclude that the protons in $CH_2$, will have 1:3:3:1 \footnote{The concept can be easily generalized to n spin-spin coupling and that gives n+1 as multiplicity, with ratios in accordance with the pascal's triangle.} ratio of area of peaks, affected by the three protons in the methyl group. Please carefully note that we've assumed the energy level of the neighbouring proton fixed in our analysis and this is a valid approximation since the effect of this split is negligible compared to $\Delta E$ of both, the neighbour and affected protons.
+	% \subsection{So which light do you shine?}
+	% 	This is my favourite part. We now talk about how we, in principle detect the $\Delta E$. We first apply a very strong external magnetic field, of say around 9 Tesla. Why strong? To have a higher $\Delta E$, which is important not only for resolution, but also for maintaining a sizeable population difference. So far so good. Now how do you probe the nucleus? To answer that, let us first understand what we're attempting to observe. We want to find the 
+
+\section{Experimental Details}
+	\subsection{Locking and Shimming}
+		Since the value of $\Delta E$ is highly dependent on the magnetic field, there mustn't be any gradient in the field. To attain this, two processes are used. Shimming reduces the width of the peak, which is achieved by dropping the gradient using various small electromagnets. To keep the position of the peek fixed, a process known as locking is employed, which also, essentially requires stabilization of the magnetic field.
+	\subsection{Solvent}
+		The solvent used here is $CDCl_3$ and it has a deuterium instead of a proton which doesn't talk in the NMR region we're interested in, in this case. Also, the solvent is volatile, which is very helpful since after the experiment, it helps itself out, leaving the sample intact.
+	\subsection{The NMR Jargon}
+		Since the value of $\Delta E$ depends on the Magnetic Field used, results from different machines become difficult to compare. For this, a simple normalization of sorts is done. From the $\Delta E$ of the sample, $\Delta E$ of a standard is substracted, which is TMS. It's used for a variety of reasons; one it has only one kind of hydrogen (you don't want your standard to have multiple peaks), two it's peak lies far away from the molecules we usually take interest in, since Silicon is electropositive. So, after subtraction, we divide by the Magnetic Field strength. The number we get comes in the order of $10^6$ and this we express as $jx10^6$ so that $j$ becomes a part in a million. It is this number that we see on the graph as ppm! 
+
+\section{Observations/Discussion}
+	The spectrum obtained has been appended to this experiment, with the peaks assigned in accordance with the theory and literature, for Ethyl Acetate and Benzaldehyde respectively.
+
+
+\section{Acknowledgements}
+I thank the folks at the NMR lab who assisted us with the experiment. I also acknowledge the contribution of Prof. K.R. Shamsundar.
+
+\section{References}
+	\begin{enumerate}
+		\item \url{http://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/nmr/nmr1.htm}
+		\item \url{http://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy}
+		\item \url{http://en.wikipedia.org/wiki/Nuclear_magnetic_resonance}
+		\item Fundamentals of NMR, by Thomas L. James
+		\item Long discussion with Prof. K.S. Viswanathan
+	\end{enumerate}
