@@ -75,3 +75,6 @@ October 16 onwards, 2012
 November 2-4, 2012
 * Readings for Sonometer
 * NMR and Fluorescence
+
+November 4-5, 2012
+* Biology analysis over
