@@ -1,9 +1,9 @@
 INTRODUCTION
 --
 
-This respository contains all Recorded Academic Progress made by me for completion of courses @ IISER M, that I've shared.
+This repository contains all Recorded Academic Progress made by me for completion of courses @ IISER M, that I've shared.
 
-I hope to make all the information accessable for assisting, in whichever way, anyone who's interested.
+I hope to make all the information accessible for assisting, in whichever way, anyone who's interested.
 
 Although this repository was created on August 10, 2012, I would gradually upload all the usable information from the previous years for completion.
 
