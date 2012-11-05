@@ -61,7 +61,17 @@ October 4, 2012
 * Chemistry Lab Experiment 4B
 
 October 8, 2012
-* Physics Record (Frene Biprism) | Poor Quality work
+* Physics Record (Frenel Biprism) | Poor Quality work
 
 October 15, 2012
 * Math Curve
+
+October 16 onwards, 2012
+* Python program for helping counting of flies
+* Data for the fly counting
+* More data for Single Slit diffraction
+* Physics Single Slit diffraction experiment
+
+November 2-4, 2012
+* Readings for Sonometer
+* NMR and Fluorescence
