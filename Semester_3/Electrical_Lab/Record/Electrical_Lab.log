@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.8)  8 SEP 2012 07:34
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  17 NOV 2012 02:55
 entering extended mode
-**C:/Users/A.S.Arora/Documents/IISER*2012/IISER_repo/Semester_3/Electrical_Lab/
-Record/Electrical_Lab.tex
+**C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/Record/E
+lectrical_Lab.tex
 
-("C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_Lab/
-Record/Electrical_Lab.tex"
+("C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/Record/E
+lectrical_Lab.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -111,16 +111,17 @@ Package typearea Info: These are the values describing the layout:
 \c@table=\count88
 \bibindent=\dimen102
 )
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\classicthesis-config.tex"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\simpsons.sty"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\c
+lassicthesis-config.tex"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\s
+impsons.sty"
 Package: simpsons 
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@dummy=\count89
 \abcd=\skip47
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks15
@@ -241,7 +242,7 @@ LaTeX Info: The control sequence `\[' is already robust on input line 471.
 LaTeX Info: The control sequence `\]' is already robust on input line 472.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
-Package: acronym 2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
+Package: acronym 2012/09/04 v1.37 Support for acronyms (Tobias Oetiker)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
 Package: suffix 2006/07/15 1.5 Variant command support
@@ -499,12 +500,11 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 198.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 198.
 Package hyperref Info: Option `hypertexnames' set `true' on input line 198.
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\classicthesis.sty"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\c
+lassicthesis.sty"
 Package: classicthesis 2011/12/17 v4.0 Typographic style for a classic-looking 
 thesis
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
@@ -678,22 +678,24 @@ Package: prelim2e 2009/05/29 v1.3 prelim2e Package (MS)
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty")))
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.aux"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titlepage.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titleback.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Contents.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment02.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment03.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Colophon.aux"))
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.aux"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titlepage.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titleback.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Contents.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment01.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment02.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment04.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment03.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
@@ -734,13 +736,12 @@ LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
 LaTeX Info: Redefining \nameref on input line 32.
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.out")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.out")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.out")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.out")
 \@outlinefile=\write3
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count140
 \scratchdimen=\dimen155
@@ -766,9 +767,9 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=123, 65.33208pt x 69.3792pt>
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titlepage.tex"
+<gfx/iiserlogo.jpg, id=151, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -779,21 +780,20 @@ Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/A.S.Arora/Docume
-nts/IISER 2012/IISER_repo/Semester_3/Electrical_Lab/Record/gfx/iiserlogo.jpg>])
-
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titleback.tex") [2
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/A. S. Aurora/Doc
+uments/IISER_repo/Semester_3/Electrical_Lab/Record/gfx/iiserlogo.jpg>])
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titleback.tex") [2
 
 
 ]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Contents.tex"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Contents.tex"
 Package tocbasic Info: character protrusion at toc deactivated on input line 11
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.toc"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.toc"
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -847,30 +847,30 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.lof")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.lof")
 \tf@lof=\write5
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.lot")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.lot")
 \tf@lot=\write6
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.lol")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.lol")
 \tf@lol=\write7
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 66.
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [4
+)
+[4
 
 ])
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment01.tex"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment01.tex"
 Chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -879,7 +879,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-<gfx/circuit1.png, id=187, 417.81094pt x 319.94531pt>
+<gfx/circuit1.png, id=224, 417.81094pt x 319.94531pt>
 File: gfx/circuit1.png Graphic file (type png)
  <use gfx/circuit1.png>
 Package pdftex.def Info: gfx/circuit1.png used on input line 38.
@@ -900,47 +900,73 @@ Overfull \hbox (9.19273pt too wide) in paragraph at lines 52--53
 pulled. 
  []
 
-) [2 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
-Lab/Record/gfx/circuit1.png>]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment02.tex"
+) [2 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/Reco
+rd/gfx/circuit1.png>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment02.tex"
 Chapter 2.
 [3
 
 
 
 
-] <gfx/circuit2_A.png, id=238, 462.22687pt x 283.81032pt>
+] <gfx/circuit2_A.png, id=275, 462.22687pt x 283.81032pt>
 File: gfx/circuit2_A.png Graphic file (type png)
 
 <use gfx/circuit2_A.png>
 Package pdftex.def Info: gfx/circuit2_A.png used on input line 43.
 (pdftex.def)             Requested size: 268.80103pt x 165.04749pt.
 
-<gfx/circuit2_B.png, id=239, 407.27156pt x 288.3272pt>
+<gfx/circuit2_B.png, id=276, 407.27156pt x 288.3272pt>
 File: gfx/circuit2_B.png Graphic file (type png)
 
 <use gfx/circuit2_B.png>
 Package pdftex.def Info: gfx/circuit2_B.png used on input line 50.
 (pdftex.def)             Requested size: 268.80103pt x 190.30533pt.
- [4 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_L
-ab/Record/gfx/circuit2_A.png> <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_re
-po/Semester_3/Electrical_Lab/Record/gfx/circuit2_B.png>]
+ [4 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/Recor
+d/gfx/circuit2_A.png> <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/El
+ectrical_Lab/Record/gfx/circuit2_B.png>]
 Overfull \hbox (9.19273pt too wide) in paragraph at lines 64--65
 []\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
 pulled. 
  []
 
 ) [5]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment03.tex" [6
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment04.tex" [6
 
 
 
 
 ]
 Chapter 3.
-[7] <gfx/circuit3.png, id=283, 713.66624pt x 301.125pt>
+<gfx/circuit4.png, id=304, 522.45187pt x 201.00093pt>
+File: gfx/circuit4.png Graphic file (type png)
+ <use gfx/circuit4.png>
+Package pdftex.def Info: gfx/circuit4.png used on input line 36.
+(pdftex.def)             Requested size: 403.19897pt x 155.12389pt.
+
+Overfull \hbox (67.19897pt too wide) in paragraph at lines 36--37
+ [] 
+ []
+
+
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 43--44
+[]\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
+pulled. 
+ []
+
+[7]) [8 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/R
+ecord/gfx/circuit4.png>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment03.tex"
+Chapter 4.
+[9
+
+
+
+
+] <gfx/circuit3.png, id=349, 713.66624pt x 301.125pt>
 File: gfx/circuit3.png Graphic file (type png)
  <use gfx/circuit3.png>
 Package pdftex.def Info: gfx/circuit3.png used on input line 40.
@@ -951,15 +977,15 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 40--41
  []
 
 
-Overfull \hbox (9.19273pt too wide) in paragraph at lines 55--56
+Overfull \hbox (9.19273pt too wide) in paragraph at lines 54--55
 []\T1/pplj/m/n/10.95 Connections should be tight, viz. shouldn't come out when 
 pulled. 
  []
 
-) [8 <C:/Users/A.S.Arora/Documents/IISER 2012/IISER_repo/Semester_3/Electrical_
-Lab/Record/gfx/circuit3.png>]
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Colophon.tex"
+) [10 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Electrical_Lab/Rec
+ord/gfx/circuit3.png>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
@@ -972,32 +998,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [9
+) [11
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
 
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Electrical_Lab.aux"
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titlepage.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Titleback.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Contents.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment01.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment02.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\Experiments/Experiment03.aux")
-("C:\Users\A.S.Arora\Documents\IISER 2012\IISER_repo\Semester_3\Electrical_Lab\
-Record\FrontBackmatter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+lectrical_Lab.aux"
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titlepage.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Titleback.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Contents.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment01.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment02.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment04.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\E
+xperiments/Experiment03.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Electrical_Lab\Record\F
+rontBackmatter/Colophon.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 
 
  *File List*
@@ -1031,7 +1059,7 @@ ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
   xspace.sty    2009/10/20 v1.13 Space after command names (DPC,MH)
 mparhack.sty    2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
 fixltx2e.sty    2006/09/13 v1.1m fixes to LaTeX
- acronym.sty    2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
+ acronym.sty    2012/09/04 v1.37 Support for acronyms (Tobias Oetiker)
   suffix.sty    2006/07/15 1.5 Variant command support
  relsize.sty    2003/07/04 ver 3.1
 tabularx.sty    1999/01/07 v2.07 `tabularx' package (DPC)
@@ -1131,33 +1159,35 @@ gfx/circuit1.png
 Experiments/Experiment02.tex
 gfx/circuit2_A.png
 gfx/circuit2_B.png
+Experiments/Experiment04.tex
+gfx/circuit4.png
 Experiments/Experiment03.tex
 gfx/circuit3.png
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `Electrical_Lab.out' has not changed.
-(rerunfilecheck)             Checksum: 0538ED2A2DD889FBE385B01563931374;1819.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
+(rerunfilecheck)             Checksum: C66BCF582F17FA9C270C12A84184A7F4;2260.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 14334 strings out of 494045
- 224362 string characters out of 3148376
- 394988 words of memory out of 3000000
- 17156 multiletter control sequences out of 15000+200000
+ 14391 strings out of 494045
+ 225077 string characters out of 3148366
+ 395999 words of memory out of 3000000
+ 17177 multiletter control sequences out of 15000+200000
  61828 words of font info for 77 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,469b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,13n,67p,461b,550s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr
 8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Electrical_Lab.pdf (13 pages, 155378 bytes).
+Output written on Electrical_Lab.pdf (15 pages, 171516 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 12554 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 12615 words of extra memory for PDF output out of 14400 (max. 10000000)
 

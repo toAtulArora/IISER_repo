@@ -17,11 +17,18 @@
 \contentsline {section}{\numberline {2.3}Procedure}{4}{section.2.3}
 \contentsline {section}{\numberline {2.4}Precaution}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Acknowledgements}{5}{section.2.5}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {To make a sub distribution board}}{7}{chapter.3}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {To make a fluorescent tube light circuit}}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Aim}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Theory}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Tools}{7}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Material}{7}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Procedure}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Precaution}{8}{section.3.4}
-\contentsline {section}{\numberline {3.5}Acknowledgements}{8}{section.3.5}
+\contentsline {section}{\numberline {3.2}Tools}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Material}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}Procedure}{7}{section.3.4}
+\contentsline {section}{\numberline {3.5}Precaution}{8}{section.3.5}
+\contentsline {section}{\numberline {3.6}Acknowledgements}{8}{section.3.6}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {To make a sub distribution board}}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aim}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Theory}{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Tools}{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Material}{9}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Procedure}{10}{section.4.3}
+\contentsline {section}{\numberline {4.4}Precaution}{10}{section.4.4}
+\contentsline {section}{\numberline {4.5}Acknowledgements}{10}{section.4.5}

@@ -5,47 +5,40 @@
 November 8, 2012
 \end{flushright}
 \section{Objective}
-To observe and understand X-ray diffraction
+To
 	\begin{enumerate}
-		\item Constant incident frequency, varying detection frequency vs. Intensity detected
-		\item Constant detection frequency (maxima), varying incident frequency vs. Intensity detected
-		\item Varying concentration of solution, with both incident and detection frequencies fixed vs. Intensity detected
+		\item observe and understand the X-ray diffraction technique
+		\item use optical activity of a substance for concentration estimation
 	\end{enumerate}
 
 \section{Theory}
-	Absorption works well when the concentration of the substance to be measured is high. When concentration gets smaller, the absorption gets noise prone and ceases to be reliable. With absorption we can get ppm, but with fluorescence, ppb is a routine affair. However it works IF the molecule fluoresces.
-	\par
-	Let's take a look at the fluorescence experiment. We start with a source of light which passes through a diffraction grating, excitation monochromater. Using this, a particular frequency of light is passed through the sample. Now perpendicular to it, there a detector, which comprises of a grating, viz. emission monochromater, and a photomultiplier. \marginpar{\Lisa The fluorescence is much smaller in intensity compared to the incident beam, thus perpendicular}
-	\par
-	Now before we continue, lets take a deeper look at what's happening. When an incident beam of light strikes a molecule, it goes from the ground electronic state to an excited electronic state. Now depending upon the frequency of the incident beam, the molecule will get into a vibrational state, while it's in the excited electronic state. The vibrational state quickly (within pico seconds typically) drops to the lowest vibrational state, since the molecule is in the liquid state. Consequently, regardless of the incident frequency (granted it's greater than the minimum required to excite the molecule to the first excited electronic state and less then the following electronic state), the molecule will drop from the lowest vibrational energy level in the excited electronic state, to the ground electronic state, at some vibrational state. Thus, if we obtain a graph between the frequency of light received and intensity, for a fixed incident frequency of light, we'll get a maxima corresponding to the ground vibrational state.
-	Now if use the frequency for which we got the maximum intensity as constant, and change the incident beam's frequency, then again we'll get a maxima.
-	If we use both these maxima values for the incident and emitted beam respectively, and change the concentration, we can use the obtained graph to find unknown concentrations.
-	\par
-	We must here realise that there's a phenomenon called Quenching that can kill the emission in fluorescence. Thus, we must perform a time resolved experiment, if a sample were to be analysed for further use.
+	\subsection{X-ray diffraction}
+		The very fist condition for X-ray diffraction analysis of a substance is that it must crystallize. To check the quality of the crystal, a polarized beam of light is passed through it and using a microscope and an analyser (another polariser), the crystal is viewed. The colour must be the same for any given orientation of the analyser, if the crystal formed is good in terms of being analysed by this technique.
+		For holding the crystal, nylon thread loops are used, with super-glue to fix them in place. This is then placed into the single crystal x-ray diffraction machine. There are various degrees of freedom in this device. $\kappa$ can range from $-90 ^o$ to $+90 ^o$ using an arm. The base can rotate $360 ^o$. The detector can move $2 \theta$, where $\theta$ depends on the detector being used. Also, the detector can move forward and backwards. Intenisty falls rapidly with distance. However, if the diffracted beams are at a very small angular difference, then distance helps resolve these. An optimal condition must be met to improve resolution at the cost of intensity. 
+		The anode is required to be cooled constantly to create the X-ray. To produce higher intensities of X-rays, moving anodes are used, that helps dissipate the heat and thereby allows for higher power.
+		The spots that are obtained, are first matched with a unit cell that's specified by the user. The unit cells can be mathematically shown to be limited.
+		X-ray diffraction is a very strong tool as this is amongst the few analytic techniques that can be used to resolve the chirality of the molecule, which is essentially known if you can resolve the exact 3D-structure of the molecule, which is what is obtained after calculations using this technique. Once the spatial arrangement is known, the R and S classification can be done easily.
+		The temperature is normally kept to the room temperature, but for more accurate results, the temperature can be dropped to avoid thermal energy induced errors.
+		The machine also has a $CO_2$ laser which is used to analyse substances that crystallize at low temperatures only. The experimental setup is such that the laser is reflected and targeted using a combination of mirrors, atleast one of which is movable. Now the substance to be analysed is put in a thin high quality capillary tube which is sealed using a super-glue. Now the capillary is placed in the machine and cooled. The laser heats a small part of the wall of the capillary, which in turn heats the now frozen liquid inside back into a liquid. The laser moves upwards gradually, as slow as $3 cm$ in $2$ hours. This is similar to zone melting and it results in formation of a crystal. After the process is over, a single transparent frozen area is usually obtained, which is used for analysis. The rest of the area is also solid, but not transparent.
+	\subsection{Polarimetry}
+		Specific rotation is given by $\alpha=\theta/lc$, where $\theta$ is the angle by which the light is rotated, $l$ is the path length, and $c$ is the concentration given in moles per Litre.
+		Optically active substances are those that rotate the plane of polarization of plane-polarized light. Before we get into understanding what that means, it's important to realise that refractive index of a medium, which essentially dictates the speed of light through the medium, is a function of the material's dipole properties. Having made that clear, let us now decompose our plane polarized light into two components, each consisting of a circularly polarised light, with one going clockwise and the other going anti-clockwise, suitably chosen to produce the plane polarized light, when added vectorially. Now if the molecule's environment is chiral, viz. the molecule is not a super-imposable  mirror image of itself, on itself\footnote {which more precisely may be stated as, only if it does not posess an axis of improper rotation, $S_n$}, and in a given mixture, there exists only one kind of molecule (say right handed using some arbitrary definition), then one of the circularly polarised light (say clockwise) will travel at a different rate than the anti-clockwise circularly polarised light and thereby when it leaves the medium, their superposition would result in a plane wave with a plane that's at an angle with the incident plane of the wave. An important question to address at this stage is that we're talking about molecules which are randomly oriented and what effect will this have on the discussion so far. A little thought reveals that the molecules with the chiral axis at some angle $\phi$ wrt the plane of light, are equally likely to be found as the molecules at an angle $-\phi$. Since the molecules are chiral, their contribution to the phase difference of the circularly polarised decomposition of the plane polarised light, will not average out to zero. It's the cumulative effect that we see. From this it's natural to consequence that the optical activity depends directly on the concentration of the molecule. Also, the phase difference will be larger if the light travels a longer distance inside the chiral medium, and thus optical activity depends on the 
+		\par
+		What we're doing in the experiment is essentially keeping the length constant and changing the concentration. If we plot the $\theta$ against the concentration, we will get $l\alpha$, which is constant for the given experiment.
+
 
 \section{Observations/Discussion}
-	The spectrum was not made available. The emission maxima was obtained at 512 nm, and the excitation maxima was obtained at 491 nm. Values for Concentration vs. Intenisty are given in \autoref{E6_int}. The graph is given in \autoref{E6_graph}
-	\begin{table}
-		\myfloatalign
-		\begin{tabularx}{\textwidth}{Xll}
-			\hline
-			\tableheadline{Concentration (nano Molar)} 	&	\tableheadline{CPS} & \tableheadline{}\\				
-			\hline%
-			10.0 & 11070 & 0.2675\\
-			5.0 & 39355 & 0.302\\
-			2.5 & 14884 & 0.635\\		
-			\hline%
-		\end{tabularx}
-		\caption{Concentration vs. Intensity}
-		\label{E6_int}
-	\end{table}
+	\subsection{X-ray diffraction}
+		There aren't any `observations' to report for this experiment as this experiment was demonstrated to us.
+	\subsection{Polarimetry}
+		Values and the graph for Relative Concentration vs. $\theta$ are given in \autoref{E11_optical}.
 
-	\begin{figure}[bth]
-		\begin{center}
-			\includegraphics[width=1.15\linewidth]{gfx/6}
-		\end{center}
-	\caption[Concentration vs. Intensity]{\label{E6_graph}}
-	\end{figure}
+		\begin{figure}[bth]
+			\begin{center}
+				\includegraphics[width=1.15\linewidth]{gfx/11_optical}
+			\end{center}
+		\caption[Optical Rotation]{\label{E11_optical}}
+		\end{figure}
 
 \section{Acknowledgements}
 I thank our PhD assistant who performed the experiment for us, and of course Prof. KS Viswanathan for the rest.

@@ -58,34 +58,44 @@
 \contentsline {section}{\numberline {7.3}Procedure}{32}{section.7.3}
 \contentsline {section}{\numberline {7.4}Observations}{32}{section.7.4}
 \contentsline {section}{\numberline {7.5}Acknowledgements}{32}{section.7.5}
-\contentsline {section}{\numberline {7.6}References}{32}{section.7.6}
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Hydrogen Bonding in Alcohol}}{33}{chapter.8}
-\contentsline {section}{\numberline {8.1}Objective}{33}{section.8.1}
-\contentsline {section}{\numberline {8.2}Theory}{33}{section.8.2}
-\contentsline {subsubsection}{\numberline {8.2.0.1}A Little Deeper}{33}{subsubsection.8.2.0.1}
-\contentsline {section}{\numberline {8.3}Procedure}{33}{section.8.3}
-\contentsline {section}{\numberline {8.4}Observations/Discussion}{34}{section.8.4}
-\contentsline {section}{\numberline {8.5}Acknowledgements}{34}{section.8.5}
-\contentsline {section}{\numberline {8.6}References}{34}{section.8.6}
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {NMR Spectroscopy}}{35}{chapter.9}
-\contentsline {section}{\numberline {9.1}Objective}{35}{section.9.1}
-\contentsline {section}{\numberline {9.2}Inspiration}{35}{section.9.2}
-\contentsline {section}{\numberline {9.3}Theory}{35}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Chemical Shift}{36}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Splitting of Peaks, Integrals}{36}{subsection.9.3.2}
-\contentsline {section}{\numberline {9.4}Experimental Details}{37}{section.9.4}
-\contentsline {subsection}{\numberline {9.4.1}Locking and Shimming}{37}{subsection.9.4.1}
-\contentsline {subsection}{\numberline {9.4.2}Solvent}{37}{subsection.9.4.2}
-\contentsline {subsection}{\numberline {9.4.3}The NMR Jargon}{37}{subsection.9.4.3}
-\contentsline {section}{\numberline {9.5}Observations/Discussion}{37}{section.9.5}
-\contentsline {section}{\numberline {9.6}Acknowledgements}{38}{section.9.6}
-\contentsline {section}{\numberline {9.7}References}{38}{section.9.7}
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Flourescence}}{39}{chapter.10}
-\contentsline {section}{\numberline {10.1}Objective}{39}{section.10.1}
-\contentsline {section}{\numberline {10.2}Theory}{39}{section.10.2}
-\contentsline {section}{\numberline {10.3}Observations/Discussion}{40}{section.10.3}
-\contentsline {section}{\numberline {10.4}Acknowledgements}{40}{section.10.4}
-\contentsline {section}{\numberline {10.5}References}{40}{section.10.5}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{43}{part.2}
+\contentsline {section}{\numberline {7.6}References}{33}{section.7.6}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Hydrogen Bonding in Alcohol}}{35}{chapter.8}
+\contentsline {section}{\numberline {8.1}Objective}{35}{section.8.1}
+\contentsline {section}{\numberline {8.2}Theory}{35}{section.8.2}
+\contentsline {subsubsection}{\numberline {8.2.0.1}A Little Deeper}{35}{subsubsection.8.2.0.1}
+\contentsline {section}{\numberline {8.3}Procedure}{35}{section.8.3}
+\contentsline {section}{\numberline {8.4}Observations/Discussion}{36}{section.8.4}
+\contentsline {section}{\numberline {8.5}Acknowledgements}{36}{section.8.5}
+\contentsline {section}{\numberline {8.6}References}{36}{section.8.6}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {NMR Spectroscopy}}{37}{chapter.9}
+\contentsline {section}{\numberline {9.1}Objective}{37}{section.9.1}
+\contentsline {section}{\numberline {9.2}Inspiration}{37}{section.9.2}
+\contentsline {section}{\numberline {9.3}Theory}{37}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Chemical Shift}{38}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Splitting of Peaks, Integrals}{38}{subsection.9.3.2}
+\contentsline {section}{\numberline {9.4}Experimental Details}{39}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Locking and Shimming}{39}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}Solvent}{39}{subsection.9.4.2}
+\contentsline {subsection}{\numberline {9.4.3}The NMR Jargon}{39}{subsection.9.4.3}
+\contentsline {section}{\numberline {9.5}Observations/Discussion}{39}{section.9.5}
+\contentsline {section}{\numberline {9.6}Acknowledgements}{40}{section.9.6}
+\contentsline {section}{\numberline {9.7}References}{40}{section.9.7}
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Flourescence}}{41}{chapter.10}
+\contentsline {section}{\numberline {10.1}Objective}{41}{section.10.1}
+\contentsline {section}{\numberline {10.2}Theory}{41}{section.10.2}
+\contentsline {section}{\numberline {10.3}Observations/Discussion}{42}{section.10.3}
+\contentsline {section}{\numberline {10.4}Acknowledgements}{42}{section.10.4}
+\contentsline {section}{\numberline {10.5}References}{42}{section.10.5}
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {X-ray diffraction and Polarimetry}}{45}{chapter.11}
+\contentsline {section}{\numberline {11.1}Objective}{45}{section.11.1}
+\contentsline {section}{\numberline {11.2}Theory}{45}{section.11.2}
+\contentsline {subsection}{\numberline {11.2.1}X-ray diffraction}{45}{subsection.11.2.1}
+\contentsline {subsection}{\numberline {11.2.2}Polarimetry}{46}{subsection.11.2.2}
+\contentsline {section}{\numberline {11.3}Observations/Discussion}{47}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}X-ray diffraction}{47}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Polarimetry}{47}{subsection.11.3.2}
+\contentsline {section}{\numberline {11.4}Acknowledgements}{47}{section.11.4}
+\contentsline {section}{\numberline {11.5}References}{47}{section.11.5}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{49}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{45}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{51}{dummy.6}
