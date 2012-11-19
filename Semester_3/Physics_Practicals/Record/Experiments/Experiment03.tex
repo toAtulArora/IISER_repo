@@ -1,5 +1,5 @@
 %************************************************
-\chapter{Single Slite Diffraction}
+\chapter{Single Slit Diffraction}
 %************************************************
 \begin{flushright}
 October 9, 16 2012
@@ -10,15 +10,60 @@ October 9, 16 2012
 	Optical Bench, Red Laser, Photodiode, multimeter, screen, adjustable slit, thin wire, wire holder and mounts
 
 \section{Theory}
-	In optics, the \emph{Fraunhofer diffraction} equation is used to model the diffraction of waves when the diffraction pattern is viewed at a long distance form the diffracting object (and also when it's viewed at the focal plane of an imaging lens) \footnote{Taken from Wikipedia}
-	\par
-	TODO: Complete this section	
+	\subsection{Introduction}
+	To start with, we assume that the meaning of geometric shadow is intuitively clear. The spreding-out of light into the geometric shadow when it passes through a narrow opening, is referred to as \emph{diffraction} and the spatial intensity distribution on the screen is called the \emph{diffraction pattern}. Diffraction is classified as
+	\begin{enumerate}
+		\item Fresnel diffraction
+		\item Fraunhofer diffraction
+	\end{enumerate}
+
+	In the Fresnel class of diffraction, the source of light and the screen are, in general, at a finite distance form the diffracting aperture. In the Fraunhofer class of diffraction, the source and the screen at an infinite distance from the aperture. The latter can be easily achieved by using a laser (or a point source with a lens) and keeping the screen much farther compared to the dimensions of the aperture (or using a lens and a focal plane).
+	
+	\subsection{Fraunhofer Diffraction}
+	Assume a narrow slit of width $b$ as the aperture on which a parallel beam of light is incident. We further assume that the slit consists of a large number of equally spaced point sources, which behave like Huygens' secondary wavelets. Let the distance between consecutive points be $\Delta$ and number of points be $n$, thus we have by simple geometrical considerations, 
+	\begin{equation}
+		b=(n-1)\Delta
+	\end{equation}
+	Now let's consider the resultant field at a point $P$ on the screen, where $P$ is arbitrary and the rays received make an angle of $\theta$ with respect to the normal of the slit.\marginpar{\Lisa All the rays make an equal angle because they're at an infinite distance from the screen; think of parallel rays being focussed at a point using a lens} Let the points $A_1$, $A_2$, ... be the said points and the path difference of say $A2$ will be $\Delta \sin{\theta}$ as is clear from the geometry. The corresponding phase difference, $\phi$ will be given by
+	\begin{equation}
+		\phi = \frac{2\pi}{\lambda}\Delta \sin{\theta}
+	\end{equation}
+	So if the field at the point $P$ due to the point $A_1$ is $a\cos{\omega t}$, then the field from all can be written as
+	\begin{equation}
+		E=a[\cos{\omega} + \cos{[\omega - \phi]} + ... + \cos{[\omega - (n-1)\phi]}]		
+		\label{equ_sum}
+	\end{equation}
+	where $\phi = \frac{2\pi}{\lambda}\Delta \sin{\theta}$.
+	Also, \autoref{equ_sum} is mathematically the same as
+	\begin{equation}
+		\frac{\sin{n\phi /2} }  {\sin {\phi/2}} \cos{[\omega t - (1/2)(n-1)\phi]}
+	\end{equation}
+	Applying the limits as $n \rightarrow \infty$ and $\Delta \rightarrow 0$ in such a way that $n\Delta \rightarrow b$, we have
+	\begin{equation}
+		E=A\frac{\sin \beta}{\beta} \cos{(\omega t - \beta)}
+	\end{equation}
+	where $A=na$ and $\beta=\frac{\pi b\sin{\theta}}{\lambda}$. So the intensity follows from this to be
+	\begin{equation}
+		I=I_o \frac{\sin^2{\beta}}{\beta^2}
+		\label{E3_1}
+	\end{equation}
+
+	For the second part of the experiment, viz. measurement of thickness of a thin wire, we make a very simplified model which works to a substantial level in terms of accuracy. We assume the intensity distribution to be given by a standard Young's Double Slit Experiment. The usual calculations use 
+	\begin{equation}
+		d \sin{\theta}=n\lambda
+	\end{equation}
+	where $\theta$ is the same as before, $d$ is the thickness we need to find, and $n$ is an integer, while $\lambda$ is the wavelength. Now we express $\sin{\theta}$ as a ratio and obtain 
+	\begin{equation}
+		\Delta y = \lambda D /d
+		\label{E3_2}
+	\end{equation}
+	where $\Delta y$ is the distance on the screen, between two minima (or maxima) and $D$ is the distance between the screen and the wire. 
 
 \section{Procedure}
 	\begin{enumerate}
 		\item The laser was left switched on for 15 minutes so that light intensity from laser did not flicker.
 		\item The slit was mounted on the bench so that the diffraction pattern could be seen on the white screen.
-		\item The slit size and distance from laser were varied and observations were noted.
+		\item The slit size and distance from laser were varied and observations noted.
 		\item The photocell was mounted onto the stand between the slit and the white screen.
 		\item A graph between the photo-current and position of the diode was plotted.
 		\item The distance D between the slit and photocell was measured.
@@ -29,48 +74,21 @@ October 9, 16 2012
 
 \section{Observations and Calculations}	
 	\subsection{Thin Slit}
-	The readings were taken and are appended to the experiment. The first column is relative position of the sensor with respect to the observed maximum peak, given in millimetres. The second column shows the value of current through the sensor, in $10^-3 \mu A$. The last column contains the theoretically expected intensity of light (which should be proportional to the current in the previous column) calculated for each relative position in the first column. The theoretical value was evaluated using
-	\begin{equation}
-		I(\theta) = I_0(\frac{\sin{\frac{\beta}{2}}}{\frac{\beta}{2}})^2
-	\end{equation}
+	The readings were taken and are appended to the experiment. The first column is relative position of the sensor with respect to the observed maximum peak, given in millimetres. The second column shows the value of current through the sensor, in $10^{-3} \mu A$. The last column contains the theoretically expected intensity of light (which should be proportional to the current in the previous column) calculated for each relative position in the first column. The theoretical value was evaluated using \autoref{E3_1}.
+	
+	\subsection{Thin Wire}
+	For the second experiment, we used a Young's Double Slit model and found the average of distance (on the screen) between consecutive minima and plugged it into \autoref{E3_2}.
+
+	% \begin{equation}
+	% 	I(\theta) = I_0(\frac{\sin{\frac{\beta}{2}}}{\frac{\beta}{2}})^2
+	% \end{equation}
+
 \section{Result}
-	Wavelength of Sodium light ($\lambda$) was experimentally found to be ($d\beta /D$) = $617.3 nm \pm 0.85\% = 617.3 \pm 5.2 nm$
-
-	\begin{table}
-		\myfloatalign
-		\begin{tabularx}{\textwidth}{Xllll}
-			\hline
-			\tableheadline{Serial} 	&	\tableheadline{Initial Screw Position} & \tableheadline{Final Screw Position} & \tableheadline{Fringe Width}\\
-			\hline
-				1	&	0.17	&	0.32	&	0.15\\
-				2	&	0.32	&	0.32	&	0.15\\
-				3	&	0.47	&	0.63	&	0.16\\
-				4	&	0.63	&	0.84	&	0.21\\
-				5	&	0.84	&	0.97	&	0.13\\
-				6	&	0.97	&	1.15	&	0.18\\
-				7	&	1.15	&	1.29	&	0.14\\
-				8	&	1.29	&	1.42	&	0.13\\
-				9	&	1.42	&	1.60	&	0.18\\
-				10	&	1.60	&	1.71	&	0.11\\
-				11	&	1.71	&	1.80	&	0.09\\
-				12	&	1.80	&	2.02	&	0.22\\
-				13	&	2.02	&	2.16	&	0.14\\
-				14	&	2.16	&	2.31	&	0.15\\
-				15	&	2.31	&	2.43	&	0.12\\
-				16	&	2.43	&	2.57	&	0.14\\
-				17	&	2.57	&	2.71	&	0.14\\
-				18	&	2.71	&	2.89	&	0.18\\
-				19	&	2.89	&	3.04	&	0.15\\
-			\hline
-		\end{tabularx}
-		\caption{Fringe Width Observations}
-		\label{E2_observations}
-	\end{table}
-
+	The slit width was found out to be
+	The width of the wire was calculated to be 
 \section{Precautions}
-	\begin{enumerate}
-		\item The surfaces of the optical parts should be wiped properly to obtain clear images with good contrast.
+	\begin{enumerate}		
 		\item Micrometer should be moved only in one direction to avoid errors due to backlash.
-		\item The brightness of the source and width of the mean can be adjusted separately using aperture and slit width
-		\item Do not make the distance between the lens and slit too high, else the two positions of sharp images using the lens will not be obtained.
+		\item Ensure the table isn't disturbed while taking one particular round of measurements.
+		\item Be sure to use the ammeter in the right range for best results.
 	\end{enumerate}
