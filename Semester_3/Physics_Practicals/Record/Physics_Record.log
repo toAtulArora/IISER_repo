@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  22 NOV 2012 02:46
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  22 NOV 2012 03:04
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Physics_Practicals/Reco
 rd/Physics_Record.tex
@@ -1047,12 +1047,6 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 66--67
  [] 
  []
 
-
-Overfull \hbox (6.48273pt too wide) in paragraph at lines 76--77
-[]\T1/pplj/m/n/10.95 Ensure the ta-ble isn't dis-turbed while tak-ing one par-t
-ic-u-lar round
- []
-
 ) [18] [19 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Physics_Pract
 icals/Record/gfx/brass.pdf>] [20 <C:/Users/A. S. Aurora/Documents/IISER_repo/Se
 mester_3/Physics_Practicals/Record/gfx/steel.pdf>] [21 <C:/Users/A. S. Aurora/D
@@ -1301,8 +1295,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 14619 strings out of 494045
- 230296 string characters out of 3148366
+ 14623 strings out of 494045
+ 230324 string characters out of 3148366
  402009 words of memory out of 3000000
  17304 multiletter control sequences out of 15000+200000
  84145 words of font info for 130 fonts, out of 3000000 for 9000
@@ -1323,9 +1317,9 @@ fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on Physics_Record.pdf (37 pages, 2083318 bytes).
+Output written on Physics_Record.pdf (37 pages, 2084139 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 195 named destinations out of 1000 (max. 500000)
+ 719 PDF objects out of 1000 (max. 8388607)
+ 199 named destinations out of 1000 (max. 500000)
  16348 words of extra memory for PDF output out of 17280 (max. 10000000)
 
