@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  21 NOV 2012 19:22
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  22 NOV 2012 02:46
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Physics_Practicals/Reco
 rd/Physics_Record.tex
@@ -1020,35 +1020,35 @@ Chapter 4.
 ] <gfx/brass.pdf, id=501, 597.432pt x 844.95674pt>
 File: gfx/brass.pdf Graphic file (type pdf)
  <use gfx/brass.pdf>
-Package pdftex.def Info: gfx/brass.pdf used on input line 45.
+Package pdftex.def Info: gfx/brass.pdf used on input line 50.
 (pdftex.def)             Requested size: 436.80103pt x 617.79317pt.
 
-Overfull \hbox (100.80103pt too wide) in paragraph at lines 45--46
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 50--51
  [] 
  []
 
 <gfx/steel.pdf, id=502, 597.432pt x 844.95674pt>
 File: gfx/steel.pdf Graphic file (type pdf)
  <use gfx/steel.pdf>
-Package pdftex.def Info: gfx/steel.pdf used on input line 53.
+Package pdftex.def Info: gfx/steel.pdf used on input line 58.
 (pdftex.def)             Requested size: 436.80103pt x 617.79317pt.
 
-Overfull \hbox (100.80103pt too wide) in paragraph at lines 53--54
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 58--59
  [] 
  []
 
 <gfx/steel_2.pdf, id=503, 597.432pt x 844.95674pt>
 File: gfx/steel_2.pdf Graphic file (type pdf)
  <use gfx/steel_2.pdf>
-Package pdftex.def Info: gfx/steel_2.pdf used on input line 61.
+Package pdftex.def Info: gfx/steel_2.pdf used on input line 66.
 (pdftex.def)             Requested size: 436.80103pt x 617.79317pt.
 
-Overfull \hbox (100.80103pt too wide) in paragraph at lines 61--62
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 66--67
  [] 
  []
 
 
-Overfull \hbox (6.48273pt too wide) in paragraph at lines 71--72
+Overfull \hbox (6.48273pt too wide) in paragraph at lines 76--77
 []\T1/pplj/m/n/10.95 Ensure the ta-ble isn't dis-turbed while tak-ing one par-t
 ic-u-lar round
  []
@@ -1072,20 +1072,20 @@ ce (sodium
  []
 
 [23] [24]
-Overfull \hbox (19.12735pt too wide) in paragraph at lines 76--99
+Overfull \hbox (19.12735pt too wide) in paragraph at lines 86--109
 \T1/pplj/m/n/10.95 The av-er-age sep-a-ra-tion $\U/zeur/m/n/10.95 D$ \T1/pplj/
 m/n/10.95 was found to be equal to $\U/zeur/m/n/10.95 0\T1/pplj/m/n/10.95 .\U/z
 eur/m/n/10.95 00283 \U/zeus/m/n/10.95  \U/zeur/m/n/10.95 0\T1/pplj/m/n/10.95 .
 \U/zeur/m/n/10.95 00014mm$
  []
 
-
-Overfull \hbox (5.6066pt too wide) in paragraph at lines 105--106
+[25]
+Overfull \hbox (5.6066pt too wide) in paragraph at lines 115--116
 \T1/pplj/m/n/10.95 This ex-per-i-ment doesn't quite re-quire the com-pen-sator 
 since the source
  []
 
-[25]) [26] [27
+) [26] [27
 
 
 
@@ -1301,8 +1301,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 14607 strings out of 494045
- 230212 string characters out of 3148366
+ 14619 strings out of 494045
+ 230296 string characters out of 3148366
  402009 words of memory out of 3000000
  17304 multiletter control sequences out of 15000+200000
  84145 words of font info for 130 fonts, out of 3000000 for 9000
@@ -1323,9 +1323,9 @@ fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on Physics_Record.pdf (37 pages, 2080241 bytes).
+Output written on Physics_Record.pdf (37 pages, 2083318 bytes).
 PDF statistics:
- 700 PDF objects out of 1000 (max. 8388607)
- 183 named destinations out of 1000 (max. 500000)
+ 714 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
  16348 words of extra memory for PDF output out of 17280 (max. 10000000)
 

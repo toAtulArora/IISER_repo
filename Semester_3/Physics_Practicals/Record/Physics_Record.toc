@@ -44,8 +44,8 @@
 \contentsline {subsection}{\numberline {5.3.3}Resolving the D-Lines}{24}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}Procedure}{25}{section.5.4}
 \contentsline {section}{\numberline {5.5}Observations and Calculations}{25}{section.5.5}
-\contentsline {section}{\numberline {5.6}Result}{25}{section.5.6}
-\contentsline {section}{\numberline {5.7}Remarks}{25}{section.5.7}
+\contentsline {section}{\numberline {5.6}Result}{26}{section.5.6}
+\contentsline {section}{\numberline {5.7}Remarks}{26}{section.5.7}
 \contentsline {section}{\numberline {5.8}Precautions}{26}{section.5.8}
 \contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{27}{part.2}
 \vspace {\beforebibskip }
