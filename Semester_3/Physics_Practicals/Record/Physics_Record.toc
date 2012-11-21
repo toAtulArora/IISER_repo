@@ -25,7 +25,7 @@
 \contentsline {section}{\numberline {3.4}Procedure}{15}{section.3.4}
 \contentsline {section}{\numberline {3.5}Observations and Calculations}{15}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Thin Slit}{15}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Thin Wire}{15}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}Thin Wire}{16}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Result}{16}{section.3.6}
 \contentsline {section}{\numberline {3.7}Precautions}{16}{section.3.7}
 \contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Sonometer}}{17}{chapter.4}
@@ -33,21 +33,20 @@
 \contentsline {section}{\numberline {4.2}Apparatus}{17}{section.4.2}
 \contentsline {section}{\numberline {4.3}Theory}{17}{section.4.3}
 \contentsline {section}{\numberline {4.4}Procedure}{18}{section.4.4}
-\contentsline {section}{\numberline {4.5}Observations and Calculations}{18}{section.4.5}
-\contentsline {section}{\numberline {4.6}Result}{18}{section.4.6}
-\contentsline {section}{\numberline {4.7}Precautions}{18}{section.4.7}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Michelson Interferometer}}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Aim}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Apparatus}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}Theory}{19}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Introduction}{19}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Determining Wavelength}{19}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Resolving the D-Lines}{20}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Procedure}{21}{section.5.4}
-\contentsline {section}{\numberline {5.5}Observations and Calculations}{21}{section.5.5}
-\contentsline {section}{\numberline {5.6}Result}{21}{section.5.6}
-\contentsline {section}{\numberline {5.7}Remarks}{21}{section.5.7}
-\contentsline {section}{\numberline {5.8}Precautions}{21}{section.5.8}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{23}{part.2}
+\contentsline {section}{\numberline {4.5}Result and Observations}{18}{section.4.5}
+\contentsline {section}{\numberline {4.6}Precautions}{18}{section.4.6}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Michelson Interferometer}}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aim}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Apparatus}{23}{section.5.2}
+\contentsline {section}{\numberline {5.3}Theory}{23}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Introduction}{23}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Determining Wavelength}{23}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Resolving the D-Lines}{24}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Procedure}{25}{section.5.4}
+\contentsline {section}{\numberline {5.5}Observations and Calculations}{25}{section.5.5}
+\contentsline {section}{\numberline {5.6}Result}{25}{section.5.6}
+\contentsline {section}{\numberline {5.7}Remarks}{25}{section.5.7}
+\contentsline {section}{\numberline {5.8}Precautions}{26}{section.5.8}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{27}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{29}{dummy.6}

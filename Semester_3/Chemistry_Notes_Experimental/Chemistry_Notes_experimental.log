@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  8 NOV 2012 14:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  21 NOV 2012 14:44
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Chemistry_Notes_Experim
 ental/Chemistry_Notes_experimental.tex
@@ -771,7 +771,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Chemistry_Notes_Experim
 ental\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=67, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=71, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -913,7 +913,10 @@ Chapter 3.
 
 
 
-]) [6]
+] [6]
+LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
+(Font)              Font shape `T1/pplj/m/it' tried instead on input line 53.
+ [7]) [8]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Chemistry_Notes_Experim
 ental\FrontBackmatter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
@@ -928,7 +931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [7
+) [9
 
 
 
@@ -1095,33 +1098,34 @@ FrontBackmatter/Colophon.tex
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `Chemistry_Notes_experimental.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 447619541AB36304E00291F75E65AAEA;928.
+(rerunfilecheck)             Checksum: 91D8E948A926A73726B4B1811F0BE9C0;996.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 14242 strings out of 494045
- 224048 string characters out of 3148366
+ 14258 strings out of 494045
+ 224233 string characters out of 3148366
  400015 words of memory out of 3000000
- 17123 multiletter control sequences out of 15000+200000
- 67740 words of font info for 99 fonts, out of 3000000 for 9000
+ 17131 multiletter control sequences out of 15000+200000
+ 70465 words of font info for 103 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,1013b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/eu
-ler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplri8a.pfb>
-Output written on Chemistry_Notes_experimental.pdf (13 pages, 155035 bytes).
+ 45i,14n,67p,1263b,419s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A. S.
+ Aurora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpson
+s.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Chemistry_Notes_experimental.pdf (15 pages, 169630 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 12422 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 238 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 12942 words of extra memory for PDF output out of 14400 (max. 10000000)
 
