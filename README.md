@@ -87,3 +87,4 @@ November 25, 2012
 
 November 26, 2012
 * Killing myself in attempt to complete the Biology Record!
+* And it's now over :)
