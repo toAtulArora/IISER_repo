@@ -36,7 +36,9 @@
 \contentsline {section}{\numberline {4.3}Background Theory}{19}{section.4.3}
 \contentsline {section}{\numberline {4.4}Statistical Analysis}{20}{section.4.4}
 \contentsline {section}{\numberline {4.5}Procedure}{20}{section.4.5}
-\contentsline {section}{\numberline {4.6}Acknowledgement}{20}{section.4.6}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{23}{part.2}
+\contentsline {section}{\numberline {4.6}Observations and Results}{21}{section.4.6}
+\contentsline {section}{\numberline {4.7}Acknowledgement}{21}{section.4.7}
+\contentsline {section}{\numberline {4.8}References}{21}{section.4.8}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{25}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{27}{dummy.6}

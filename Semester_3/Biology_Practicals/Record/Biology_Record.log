@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 00:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 00:56
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals/Reco
 rd/Biology_Record.tex
@@ -779,7 +779,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=183, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=191, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -912,7 +912,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-<gfx/drosophila.jpg, id=309, 401.5pt x 537.00626pt>
+<gfx/drosophila.jpg, id=323, 401.5pt x 537.00626pt>
 File: gfx/drosophila.jpg Graphic file (type jpg)
  <use gfx/drosophila.jpg>
 Package pdftex.def Info: gfx/drosophila.jpg used on input line 15.
@@ -946,7 +946,7 @@ Overfull \hbox (11.12326pt too wide) in paragraph at lines 27--27
 [][][]\T1/pplj/m/it/9 Holometabolism: 
  []
 
-<gfx/Male_Female_drosophila.png, id=319, 501.875pt x 222.8325pt>
+<gfx/Male_Female_drosophila.png, id=333, 501.875pt x 222.8325pt>
 File: gfx/Male_Female_drosophila.png Graphic file (type png)
 
 <use gfx/Male_Female_drosophila.png>
@@ -1046,7 +1046,7 @@ Overfull \hbox (27.15503pt too wide) in alignment at lines 228--228
 [][][][][] 
  []
 
-[12] [13] <gfx/eyecolor.jpg, id=465, 569.62813pt x 232.87pt>
+[12] [13] <gfx/eyecolor.jpg, id=479, 569.62813pt x 232.87pt>
 File: gfx/eyecolor.jpg Graphic file (type jpg)
 
 <use gfx/eyecolor.jpg>
@@ -1091,7 +1091,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 [16]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 63.
- <gfx/clustal.png, id=517, 760.34062pt x 480.29437pt>
+ <gfx/clustal.png, id=531, 760.34062pt x 480.29437pt>
 File: gfx/clustal.png Graphic file (type png)
 
 <use gfx/clustal.png>
@@ -1102,7 +1102,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 78--79
  [] 
  []
 
-<gfx/tree.png, id=518, 916.92563pt x 581.17125pt>
+<gfx/tree.png, id=532, 916.92563pt x 581.17125pt>
 File: gfx/tree.png Graphic file (type png)
  <use gfx/tree.png>
 Package pdftex.def Info: gfx/tree.png used on input line 86.
@@ -1124,19 +1124,45 @@ Chapter 4.
 
 
 ]
-Overfull \hbox (36.25359pt too wide) in paragraph at lines 42--43
-[]\T1/pplj/m/n/10.95 This prac-ti-cal was orig-i-nally taken from Mc-Mo-han, K.
-A. 2008. Supertasters-
+Overfull \hbox (6.87694pt too wide) in paragraph at lines 41--42
+[]\T1/pplj/m/n/10.95 Dabbed some food colour on a tooth-pick and swabbed the to
+ngue
  []
 
-[20]) [21] [22
+[20] <gfx/final_taste.pdf, id=574, 597.432pt x 844.95674pt>
+File: gfx/final_taste.pdf Graphic file (type pdf)
+
+<use gfx/final_taste.pdf>
+Package pdftex.def Info: gfx/final_taste.pdf used on input line 53.
+(pdftex.def)             Requested size: 504.0pt x 712.84026pt.
+
+Overfull \hbox (168.0pt too wide) in paragraph at lines 53--54
+ [] 
+ []
+
+
+LaTeX Warning: Float too large for page by 82.3903pt on input line 57.
+
+<gfx/t-table.jpg, id=575, 578.16pt x 857.2025pt>
+File: gfx/t-table.jpg Graphic file (type jpg)
+ <use gfx/t-table.jpg>
+Package pdftex.def Info: gfx/t-table.jpg used on input line 61.
+(pdftex.def)             Requested size: 369.60205pt x 547.9799pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 61--62
+ [] 
+ []
+
+) [21] [22 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Pract
+icals/Record/gfx/final_taste.pdf>] [23 <C:/Users/A. S. Aurora/Documents/IISER_r
+epo/Semester_3/Biology_Practicals/Record/gfx/t-table.jpg>] [24
 
 
 
-] [23
+] [25
 
 
-] [24]
+] [26]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.tex"
 No file Biology_Record.bbl.
@@ -1147,7 +1173,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [25
+) [27
 
 
 
@@ -1325,23 +1351,25 @@ Experiments/ExperimentTree.tex
 gfx/clustal.png
 gfx/tree.png
 Experiments/ExperimentTaste.tex
+gfx/final_taste.pdf
+gfx/t-table.jpg
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Biology_Record.out' has not changed.
-(rerunfilecheck)             Checksum: 46A5387BFCA82F4866599B03C46AFE0B;2847.
+(rerunfilecheck)             Checksum: 671B94EA2CC323149288FDB2B9229A69;2985.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 16350 strings out of 494045
- 250554 string characters out of 3148366
- 414789 words of memory out of 3000000
- 18991 multiletter control sequences out of 15000+200000
+ 16384 strings out of 494045
+ 251008 string characters out of 3148366
+ 415789 words of memory out of 3000000
+ 19009 multiletter control sequences out of 15000+200000
  87767 words of font info for 137 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  45i,13n,67p,1565b,2336s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1350,18 +1378,19 @@ Here is how much of TeX's memory you used:
 s.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/palatino/uplri8a.pfb>
-Output written on Biology_Record.pdf (33 pages, 626524 bytes).
+/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fp
+lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/urw/palatino/uplri8a.pfb>
+Output written on Biology_Record.pdf (35 pages, 932516 bytes).
 PDF statistics:
- 681 PDF objects out of 1000 (max. 8388607)
- 239 named destinations out of 1000 (max. 500000)
- 17799 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 736 PDF objects out of 1000 (max. 8388607)
+ 253 named destinations out of 1000 (max. 500000)
+ 17825 words of extra memory for PDF output out of 20736 (max. 10000000)
 
