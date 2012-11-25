@@ -14,3 +14,5 @@
 \contentsline {section}{\numberline {3.1}Introduction}{5}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Splitting the degeneracy}{5}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Amazing examples}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}I came late}{8}{section.3.3}
+\contentsline {section}{\numberline {3.4}ESR}{8}{section.3.4}

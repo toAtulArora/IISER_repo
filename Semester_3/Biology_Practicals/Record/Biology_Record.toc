@@ -24,6 +24,19 @@
 \contentsline {section}{\numberline {2.6}Discussion}{12}{section.2.6}
 \contentsline {section}{\numberline {2.7}Reference}{14}{section.2.7}
 \contentsline {section}{\numberline {2.8}Acknowledgement}{14}{section.2.8}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{15}{part.2}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Phylogenetic Tree}}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Objective}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Requirements}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Brief Theory}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}Procedure}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}Acknowledgement}{17}{section.3.5}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {The Taste Experiment}}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Objective}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Requirements}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Background Theory}{19}{section.4.3}
+\contentsline {section}{\numberline {4.4}Statistical Analysis}{20}{section.4.4}
+\contentsline {section}{\numberline {4.5}Procedure}{20}{section.4.5}
+\contentsline {section}{\numberline {4.6}Acknowledgement}{20}{section.4.6}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{23}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{17}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{25}{dummy.6}

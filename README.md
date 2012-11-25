@@ -78,3 +78,9 @@ November 2-4, 2012
 
 November 4-5, 2012
 * Biology analysis over
+
+November 6-24, 2012
+* All records except Biology have been completed
+
+November 25, 2012
+* Working on the Biology Record
