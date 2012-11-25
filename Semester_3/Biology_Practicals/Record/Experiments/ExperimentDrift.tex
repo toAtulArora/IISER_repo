@@ -1,0 +1,162 @@
+%************************************************
+\chapter{Selection and Genetic Drift}
+%************************************************
+\section{Objective}
+To study selection and Genetic Drift using 10 small drosophila populations.
+
+\section{Requirements}
+	\begin{enumerate}
+		\item Vials with 15 flies each:
+		\begin{enumerate}
+			\item 2 Vials of White Males
+			\item 2 Vials of Red Males
+			\item 4 Vials of +/w Red Females		
+		\end{enumerate}
+		\item 10 Food Vials each week (3 weeks)
+		\item Black Chart Paper
+	\end{enumerate}
+	Rest of the apparatus is same as in \autoref{exp2}, 
+
+\section{Theory: Basics}
+	Let us start with discussing a few terms.
+	\begin{enumerate}
+		\item Evolution: Change in allelic frequencies over generations, within a Population and Species is called Evolution.
+		\par
+		It's driven by four major forces: Mutation, Selection, Gene Flow and Random Genetic Drift
+		\item Mutation: This brings new variation into the population. Generally the rates of mutation are extremely small, and they're usually deleterious.
+		\item Recombination: This is responsible for creating new variation over short periods of time, using existing genetic material.
+		\item Selection: Differential survival of different individuals in a populations, such that the variation is heritable.
+		\par
+		Consequently, the frequency of certain alleles increases over time at the expense of others. \emph{Natural Selection} refers to survival differences owing to the environment. \emph{Sexual Selection} is caused by difference in fertility (or mating success) of one sex, affected by the other.
+		\item Gene Flow: Individuals from one population migrate to another population and interbeed to create a flow gene.
+		\par
+		In our experiment, we don't have any Gene Flow (unless the experiment's performed in a novel faulty manner!)
+		\item Genetic Drift: Random variation in allelic frequencies caused by sampling error.
+		\par
+		Smaller populations are more adversely affected by genetic drift as sampling variation is higher in such cases.
+	\end{enumerate}
+	For this experiment, we have no gene flow, and mutations are ignored (which is justified, as the rates are much smaller compare to the population size and number of generations this experiment deals with). For a locus, the change in allelic frequency will depend on the following factors:
+	\begin{enumerate}
+		\item Selection (strength of selection, for or against an allele)
+		\item Population Size (smaller the size, larger the drift, as explained earlier)
+	\end{enumerate}
+
+	An important thing to know here, apart from the learning based on the previous experiments, is that the white eyed individuals can't see (this is what we'll use for selection). Also, the white mutation has pleiotropic effects.
+
+\section{Procedure}
+	Complete details of the experiment have been omitted since they're very similar to those in \autoref{exp2}. The essential steps have been listed below.\\
+	\begin{enumerate}
+	\item Week 1
+		\begin{enumerate}
+			\item Transferred 6 +/w Red Females into each of the 10 food vials.
+			\item Transferred 3 Red and 3 White Males, into each of the 10 vials.
+			\item Randomly selected 5 vials and covered them with black chart paper.
+			\item Labelled all the vials uniquely
+			\item Adults were discarded after 24 hours.
+		\end{enumerate}
+		Vials were tested every 2-3 days and instructor informed once the progeny started eclosing.\\
+	\item Week 2
+		\begin{enumerate}
+			\item Anaesthetised an old vial and transferred at random, six females to a corresponding food vial with yeast granules and noted their phenotypes.
+			\item The vial was labelled and covered with black paper, in accordance with the source vial.
+			\item The rest of the flies were counted, noting their sex and eye colour, and details noted.
+			\item Repeated the previous steps for all vials, maintaining proper labels and ensuring none of them get mixed.
+			\item After a day (when the flies have laid enough eggs), discarded the females.
+		\end{enumerate}
+	\item Week 3
+		\par
+		Flies from the last generation were counted.
+	\end{enumerate}
+
+\section{Theory: Calculations}
+	\subsection{Computing Allele Frequencies}
+		Let the frequency of Red eye Allele (wild type) = $p$\\
+		Let the frequency of the White eye Allele = $q$\\
+		Let the phenotypic frequency of Red = $P$\\
+		and that of White = $Q$\\
+		Further, let $_m$ represent these values for males and $_f$ represent the same for females.
+		\subsubsection{Male Allele Frequencies}
+			Since the eye colour allele is X chromosome linked, we have
+			\begin{equation}
+				p_m=P_m
+			\end{equation}
+			\begin{equation}
+				q_m=(1-p_m)=Q_m=(1-P_m)
+			\end{equation}
+
+		\subsubsection{Female Allele Frequency}
+			Since Red is dominant, heterozygotes and homozygotes can't be distinguished. However, a white female must carry two copies of the white eye allele. Thus we have $Q_f=q_f^2$. Consequently we have,
+			\begin{equation}
+				q_f=\sqrt{Q_f}
+			\end{equation}
+			\begin{equation}
+				p_f=(1-q_f)
+			\end{equation}
+		\subsubsection{Population Allele Frequency}
+			Females carry two copies of the Eye colour allels. Males carry only one. Thus we have a weighted average as
+			\begin{equation}
+				p_\text{pop}=\frac{2p_f + 1p_m}{3}
+			\end{equation}
+
+			\begin{equation}
+				q_\text{pop}=1-p_\text{pop}
+			\end{equation}
+	\subsection{Male Mating Success}
+		Recall the fact that in the parent generation, all females were taken to be of +/w type. Amongst the males, half were \_/w type and the other half were \_/+ type.
+		\par
+		Now sons are quite useless for this purpose because think about it, they get their X chromosome from their mothers, and there's a $50\%$ expectancy for both Red and White eye colour. The Y chromosome which is inherited from the father, doesn't play any role here. Which essentially means, the eye colour of the sons is independent of which type of male their mother mated with.
+		\par
+		We thus use the daughters to estimate the male mating success. We consider two cases:
+		\begin{enumerate}
+			\item If a female (+/w) mates with (\_/w) male:
+				\begin{enumerate}
+					\item $50\%$ daughters (+/w) Red eyed.
+					\item $50\%$ daughters (w/w) White eyed.
+				\end{enumerate}
+			\item If a female (+/w) mates with (\_/+) male:
+				\begin{enumerate}
+					\item $50\%$ daughters (+/+) Red eyed.
+					\item $50\%$ daughters (w/+) Red eyed.
+				\end{enumerate}
+		\end{enumerate}
+		Assuming equal mating success of red and white eyed males, we conclude that the expected frequency of white eyed daughters is 0.25
+		\par
+		Thus, $Q_f=q_f^2 = 0.25$ which evaluates to, Expected $q_f$ = 0.5
+		\par
+		\begin{equation}
+			\text{Mating Success of White} = \frac{\text{Observed frequency of white allele} (q_f)}{\text{Expected frequency of white allele} (0.5)}
+		\end{equation}
+	\subsection{Egg to Adult Survivorship}
+		Now we bring back the sons of the first generation. In the parent generation, the females are expected to produce an equal number of red eyed and white eyed males. Thus, if survivorship of the two types were equal, we would expect half the males in the first generation to be red and half to be white. Thus for each vial we have
+		\begin{equation}
+			\text{Relative Survivorship (red)}=\frac{\text{Observed frequency of Red Males } (P_m)}{\text{Expected frequency of Red males} (0.5)}
+		\end{equation}
+		and similarly,
+		\begin{equation}
+			\text{Relative Survivorship (white)}=\frac{\text{Observed frequency of White Males } (Q_m)}{\text{Expected frequency of White males} (0.5)}
+		\end{equation}
+		Note however, that the final value must be an average across the ten vials, which is essentially the same as taking the average $P_m$ and $Q_m$ values for calculation.
+\section{Results}
+The results obtained are as follows:
+\par
+LIGHT\\
+Mating Success of White Males				0.601840564\\
+Egg to Adult Survivorship (Red)				1.075768196\\
+Egg to Adult Survivorship (White)			0.924231804\\
+\par
+DARK\\
+Mating Success of White Males				0.47819326\\			
+Egg to Adult Survivorship (Red)				1.27307654\\
+Egg to Adult Survivorship (White)			0.72692346\\
+\par
+It was expected that the White Males will have a higher mating success in the Dark compared to in the Light, but that doesn't seem to have happened. Also what is strange is the fact that the Egg to Adult Survivorship is almost the same for both Eye colours in the Light Vials whereas in the Dark vials, the result is just the opposite.
+\par
+Further, there was no monotonic trend in the frequency of the white allele over generations, in neither the Dark nor the Light vials.
+
+\section{Acknowledgement}
+	I would like to sincerely thank Mr. Biplob Nandy, who helped us perform the experiment as a team member. I also acknowledge Vivek Sagar for his contribution to the project, as a team member. I thank our instructor, Dr. N. G. Prasad for his invaluable teaching and guidance all along.
+
+\section{References}
+	\begin{enumerate}
+		\item Let's see
+	\end{enumerate}

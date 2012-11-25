@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 00:56
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 04:08
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals/Reco
 rd/Biology_Record.tex
@@ -692,15 +692,13 @@ rd\FrontBackmatter/Contents.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/Experiment01.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Experiments/Experiment02.aux"
-
-LaTeX Warning: Label `ch:introduction' multiply defined.
-
-)
+rd\Experiments/Experiment02.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTree.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTaste.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentDrift.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
@@ -779,7 +777,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=191, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=239, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -832,16 +830,14 @@ Overfull \hbox (80.9113pt too wide) in paragraph at lines 18--18
 anogaster []  
  []
 
-)
-\tf@toc=\write4
-LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+LaTeX Font Info:    Try loading font information for U+zeur on input line 46.
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 18.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -849,12 +845,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 18.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 18.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 46.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -863,7 +859,9 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 
 
-]
+])
+\tf@toc=\write4
+ [6]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
@@ -890,12 +888,11 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [6
+) [7
 
-] [7] [8
+] [8]) [1
 
 
-]) [1
 
 
 
@@ -912,7 +909,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-<gfx/drosophila.jpg, id=323, 401.5pt x 537.00626pt>
+<gfx/drosophila.jpg, id=383, 401.5pt x 537.00626pt>
 File: gfx/drosophila.jpg Graphic file (type jpg)
  <use gfx/drosophila.jpg>
 Package pdftex.def Info: gfx/drosophila.jpg used on input line 15.
@@ -946,7 +943,7 @@ Overfull \hbox (11.12326pt too wide) in paragraph at lines 27--27
 [][][]\T1/pplj/m/it/9 Holometabolism: 
  []
 
-<gfx/Male_Female_drosophila.png, id=333, 501.875pt x 222.8325pt>
+<gfx/Male_Female_drosophila.png, id=393, 501.875pt x 222.8325pt>
 File: gfx/Male_Female_drosophila.png Graphic file (type png)
 
 <use gfx/Male_Female_drosophila.png>
@@ -1046,7 +1043,7 @@ Overfull \hbox (27.15503pt too wide) in alignment at lines 228--228
 [][][][][] 
  []
 
-[12] [13] <gfx/eyecolor.jpg, id=479, 569.62813pt x 232.87pt>
+[12] [13] <gfx/eyecolor.jpg, id=539, 569.62813pt x 232.87pt>
 File: gfx/eyecolor.jpg Graphic file (type jpg)
 
 <use gfx/eyecolor.jpg>
@@ -1091,7 +1088,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 [16]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 63.
- <gfx/clustal.png, id=531, 760.34062pt x 480.29437pt>
+ <gfx/clustal.png, id=591, 760.34062pt x 480.29437pt>
 File: gfx/clustal.png Graphic file (type png)
 
 <use gfx/clustal.png>
@@ -1102,7 +1099,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 78--79
  [] 
  []
 
-<gfx/tree.png, id=532, 916.92563pt x 581.17125pt>
+<gfx/tree.png, id=592, 916.92563pt x 581.17125pt>
 File: gfx/tree.png Graphic file (type png)
  <use gfx/tree.png>
 Package pdftex.def Info: gfx/tree.png used on input line 86.
@@ -1129,7 +1126,7 @@ Overfull \hbox (6.87694pt too wide) in paragraph at lines 41--42
 ngue
  []
 
-[20] <gfx/final_taste.pdf, id=574, 597.432pt x 844.95674pt>
+[20] <gfx/final_taste.pdf, id=634, 597.432pt x 844.95674pt>
 File: gfx/final_taste.pdf Graphic file (type pdf)
 
 <use gfx/final_taste.pdf>
@@ -1143,7 +1140,7 @@ Overfull \hbox (168.0pt too wide) in paragraph at lines 53--54
 
 LaTeX Warning: Float too large for page by 82.3903pt on input line 57.
 
-<gfx/t-table.jpg, id=575, 578.16pt x 857.2025pt>
+<gfx/t-table.jpg, id=635, 578.16pt x 857.2025pt>
 File: gfx/t-table.jpg Graphic file (type jpg)
  <use gfx/t-table.jpg>
 Package pdftex.def Info: gfx/t-table.jpg used on input line 61.
@@ -1155,14 +1152,64 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 61--62
 
 ) [21] [22 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Pract
 icals/Record/gfx/final_taste.pdf>] [23 <C:/Users/A. S. Aurora/Documents/IISER_r
-epo/Semester_3/Biology_Practicals/Record/gfx/t-table.jpg>] [24
+epo/Semester_3/Biology_Practicals/Record/gfx/t-table.jpg>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentDrift.tex" [24
 
 
 
-] [25
+
+]
+Chapter 5.
+
+Overfull \hbox (1.06554pt too wide) in paragraph at lines 23--24
+[]\T1/pplj/m/n/10.95 Evolution: Change in al-lelic fre-quen-cies over gen-er-a-
+tions, within
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
 
 
-] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
+
+ []
+
+[26]
+Overfull \hbox (5.50896pt too wide) in paragraph at lines 63--64
+[]\T1/pplj/m/n/10.95 Repeated the pre-vi-ous steps for all vials, main-tain-ing
+ proper
+ []
+
+[27]
+Overfull \hbox (5.67352pt too wide) detected at line 133
+ $[] \U/zeus/m/n/10.95 ½ []$  
+ []
+
+[28]
+Overfull \hbox (29.81825pt too wide) detected at line 137
+ $[] \U/zeus/m/n/10.95 ½ []$  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
+
+ []
+
+[29]) [30] [31
+
+
+
+
+
+] [32]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.tex"
 No file Biology_Record.bbl.
@@ -1173,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [27
+) [33
 
 
 
@@ -1206,6 +1253,8 @@ rd\Experiments/Experiment02.aux")
 rd\Experiments/ExperimentTree.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTaste.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentDrift.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
@@ -1353,26 +1402,24 @@ gfx/tree.png
 Experiments/ExperimentTaste.tex
 gfx/final_taste.pdf
 gfx/t-table.jpg
+Experiments/ExperimentDrift.tex
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `Biology_Record.out' has not changed.
-(rerunfilecheck)             Checksum: 671B94EA2CC323149288FDB2B9229A69;2985.
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: C70B857BF04651EA5DD4A8C1FC165227;3823.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 16384 strings out of 494045
- 251008 string characters out of 3148366
+ 16484 strings out of 494045
+ 252852 string characters out of 3148366
  415789 words of memory out of 3000000
- 19009 multiletter control sequences out of 15000+200000
+ 19038 multiletter control sequences out of 15000+200000
  87767 words of font info for 137 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,1565b,2336s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,14n,67p,1565b,2336s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A. S.
  Aurora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpson
 s.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
@@ -1388,9 +1435,9 @@ lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Biology_Record.pdf (35 pages, 932516 bytes).
+Output written on Biology_Record.pdf (41 pages, 960115 bytes).
 PDF statistics:
- 736 PDF objects out of 1000 (max. 8388607)
- 253 named destinations out of 1000 (max. 500000)
- 17825 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 317 named destinations out of 1000 (max. 500000)
+ 17921 words of extra memory for PDF output out of 20736 (max. 10000000)
 
