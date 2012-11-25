@@ -84,3 +84,6 @@ November 6-24, 2012
 
 November 25, 2012
 * Working on the Biology Record
+
+November 26, 2012
+* Killing myself in attempt to complete the Biology Record!
