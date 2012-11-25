@@ -24,36 +24,42 @@
 \contentsline {section}{\numberline {2.6}Discussion}{12}{section.2.6}
 \contentsline {section}{\numberline {2.7}Reference}{14}{section.2.7}
 \contentsline {section}{\numberline {2.8}Acknowledgement}{14}{section.2.8}
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Phylogenetic Tree}}{15}{chapter.3}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {The Taste Experiment}}{15}{chapter.3}
 \contentsline {section}{\numberline {3.1}Objective}{15}{section.3.1}
 \contentsline {section}{\numberline {3.2}Requirements}{15}{section.3.2}
-\contentsline {section}{\numberline {3.3}Brief Theory}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Procedure}{16}{section.3.4}
-\contentsline {section}{\numberline {3.5}Acknowledgement}{17}{section.3.5}
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {The Taste Experiment}}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Objective}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Requirements}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}Background Theory}{19}{section.4.3}
-\contentsline {section}{\numberline {4.4}Statistical Analysis}{20}{section.4.4}
-\contentsline {section}{\numberline {4.5}Procedure}{20}{section.4.5}
-\contentsline {section}{\numberline {4.6}Observations and Results}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Acknowledgement}{21}{section.4.7}
-\contentsline {section}{\numberline {4.8}References}{21}{section.4.8}
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Selection and Genetic Drift}}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Objective}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Requirements}{25}{section.5.2}
-\contentsline {section}{\numberline {5.3}Theory: Basics}{25}{section.5.3}
-\contentsline {section}{\numberline {5.4}Procedure}{26}{section.5.4}
-\contentsline {section}{\numberline {5.5}Theory: Calculations}{27}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Computing Allele Frequencies}{27}{subsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.1.1}Male Allele Frequencies}{27}{subsubsection.5.5.1.1}
-\contentsline {subsubsection}{\numberline {5.5.1.2}Female Allele Frequency}{27}{subsubsection.5.5.1.2}
-\contentsline {subsubsection}{\numberline {5.5.1.3}Population Allele Frequency}{28}{subsubsection.5.5.1.3}
-\contentsline {subsection}{\numberline {5.5.2}Male Mating Success}{28}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Egg to Adult Survivorship}{28}{subsection.5.5.3}
-\contentsline {section}{\numberline {5.6}Results}{29}{section.5.6}
-\contentsline {section}{\numberline {5.7}Acknowledgement}{29}{section.5.7}
-\contentsline {section}{\numberline {5.8}References}{30}{section.5.8}
-\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{31}{part.2}
+\contentsline {section}{\numberline {3.3}Background Theory}{15}{section.3.3}
+\contentsline {section}{\numberline {3.4}Statistical Analysis}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}Procedure}{16}{section.3.5}
+\contentsline {section}{\numberline {3.6}Observations and Results}{17}{section.3.6}
+\contentsline {section}{\numberline {3.7}Acknowledgement}{17}{section.3.7}
+\contentsline {section}{\numberline {3.8}References}{17}{section.3.8}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Selection and Genetic Drift}}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Objective}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}Requirements}{21}{section.4.2}
+\contentsline {section}{\numberline {4.3}Theory: Basics}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Procedure}{22}{section.4.4}
+\contentsline {section}{\numberline {4.5}Theory: Calculations}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Computing Allele Frequencies}{23}{subsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.1.1}Male Allele Frequencies}{23}{subsubsection.4.5.1.1}
+\contentsline {subsubsection}{\numberline {4.5.1.2}Female Allele Frequency}{23}{subsubsection.4.5.1.2}
+\contentsline {subsubsection}{\numberline {4.5.1.3}Population Allele Frequency}{24}{subsubsection.4.5.1.3}
+\contentsline {subsection}{\numberline {4.5.2}Male Mating Success}{24}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Egg to Adult Survivorship}{24}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Results}{25}{section.4.6}
+\contentsline {section}{\numberline {4.7}Acknowledgement}{25}{section.4.7}
+\contentsline {section}{\numberline {4.8}References}{26}{section.4.8}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Phylogenetic Tree}}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Objective}{27}{section.5.1}
+\contentsline {section}{\numberline {5.2}Requirements}{27}{section.5.2}
+\contentsline {section}{\numberline {5.3}Brief Theory}{27}{section.5.3}
+\contentsline {section}{\numberline {5.4}Procedure}{28}{section.5.4}
+\contentsline {section}{\numberline {5.5}Acknowledgement}{29}{section.5.5}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Are Humans Evolving}}{31}{chapter.6}
+\contentsline {section}{\numberline {6.1}Objective}{31}{section.6.1}
+\contentsline {section}{\numberline {6.2}Requirements}{31}{section.6.2}
+\contentsline {section}{\numberline {6.3}Procedure}{31}{section.6.3}
+\contentsline {section}{\numberline {6.4}Observations and Results}{31}{section.6.4}
+\contentsline {section}{\numberline {6.5}Acknowledgement}{32}{section.6.5}
+\contentsline {part}{ii\hspace {1em}\spacedlowsmallcaps {The Showcase}}{35}{part.2}
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{33}{dummy.6}
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{37}{dummy.6}

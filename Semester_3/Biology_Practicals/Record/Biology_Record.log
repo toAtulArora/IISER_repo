@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 04:18
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  26 NOV 2012 05:19
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals/Reco
 rd/Biology_Record.tex
@@ -694,11 +694,13 @@ rd\Experiments/Experiment01.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/Experiment02.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Experiments/ExperimentTree.aux")
-("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTaste.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentDrift.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentTree.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentHuman.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
@@ -777,7 +779,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Titlepage.tex"
-<gfx/iiserlogo.jpg, id=239, 65.33208pt x 69.3792pt>
+<gfx/iiserlogo.jpg, id=263, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
  <use gfx/iiserlogo.jpg>
 Package pdftex.def Info: gfx/iiserlogo.jpg used on input line 22.
@@ -830,14 +832,14 @@ Overfull \hbox (80.9113pt too wide) in paragraph at lines 18--18
 anogaster []  
  []
 
-LaTeX Font Info:    Try loading font information for U+zeur on input line 46.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 49.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 46.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 49.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -845,12 +847,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 46.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 49.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 46.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 49.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -866,7 +868,12 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Biology_Record.lof")
+rd\Biology_Record.lof"
+Overfull \hbox (4.55943pt too wide) in paragraph at lines 19--19
+ [][] []\T1/pplj/m/n/10.95 Number of Off-spring vs Mother's Height []  
+ []
+
+)
 \tf@lof=\write5
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
@@ -909,7 +916,7 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
-<gfx/drosophila.jpg, id=383, 401.5pt x 537.00626pt>
+<gfx/drosophila.jpg, id=421, 401.5pt x 537.00626pt>
 File: gfx/drosophila.jpg Graphic file (type jpg)
  <use gfx/drosophila.jpg>
 Package pdftex.def Info: gfx/drosophila.jpg used on input line 15.
@@ -943,7 +950,7 @@ Overfull \hbox (11.12326pt too wide) in paragraph at lines 27--27
 [][][]\T1/pplj/m/it/9 Holometabolism: 
  []
 
-<gfx/Male_Female_drosophila.png, id=393, 501.875pt x 222.8325pt>
+<gfx/Male_Female_drosophila.png, id=431, 501.875pt x 222.8325pt>
 File: gfx/Male_Female_drosophila.png Graphic file (type png)
 
 <use gfx/Male_Female_drosophila.png>
@@ -1043,7 +1050,7 @@ Overfull \hbox (27.15503pt too wide) in alignment at lines 228--228
 [][][][][] 
  []
 
-[12] [13] <gfx/eyecolor.jpg, id=539, 569.62813pt x 232.87pt>
+[12] [13] <gfx/eyecolor.jpg, id=577, 569.62813pt x 232.87pt>
 File: gfx/eyecolor.jpg Graphic file (type jpg)
 
 <use gfx/eyecolor.jpg>
@@ -1058,64 +1065,9 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 ) [14 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals
 /Record/gfx/eyecolor.jpg>]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Experiments/ExperimentTree.tex"
-Chapter 3.
-
-Overfull \hbox (16.79689pt too wide) in paragraph at lines 11--12
-[]\T1/pplj/m/n/10.95 Phylip from [][]$\T1/fvm/m/n/10.95 http : / / evolution . 
-gs . washington . edu / phylip / getme .$
- []
-
-
-Overfull \hbox (23.14014pt too wide) in paragraph at lines 12--13
-[]\T1/pplj/m/n/10.95 Treeview from [][]$\T1/fvm/m/n/10.95 http : / / taxonomy .
- zoology . gla . ac . uk / rod / treeview .$
- []
-
-[15
-
-
-
-
-]
-Overfull \hbox (9.73177pt too wide) in paragraph at lines 35--36
-[]\T1/fvm/m/n/10.95 Selected Alignment -> Output Format\T1/pplj/m/n/10.95 , and
- in the di-a-logue
- []
-
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 43.
-[16]
-LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 63.
- <gfx/clustal.png, id=591, 760.34062pt x 480.29437pt>
-File: gfx/clustal.png Graphic file (type png)
-
-<use gfx/clustal.png>
-Package pdftex.def Info: gfx/clustal.png used on input line 78.
-(pdftex.def)             Requested size: 369.60205pt x 233.47748pt.
-
-Overfull \hbox (33.60205pt too wide) in paragraph at lines 78--79
- [] 
- []
-
-<gfx/tree.png, id=592, 916.92563pt x 581.17125pt>
-File: gfx/tree.png Graphic file (type png)
- <use gfx/tree.png>
-Package pdftex.def Info: gfx/tree.png used on input line 86.
-(pdftex.def)             Requested size: 403.19897pt x 255.55652pt.
-
-Overfull \hbox (67.19897pt too wide) in paragraph at lines 86--87
- [] 
- []
-
-) [17 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals
-/Record/gfx/clustal.png>] [18 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semes
-ter_3/Biology_Practicals/Record/gfx/tree.png>]
-("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTaste.tex"
-Chapter 4.
-[19
+Chapter 3.
+[15
 
 
 
@@ -1126,7 +1078,7 @@ Overfull \hbox (6.87694pt too wide) in paragraph at lines 41--42
 ngue
  []
 
-[20] <gfx/final_taste.pdf, id=634, 597.432pt x 844.95674pt>
+[16] <gfx/final_taste.pdf, id=603, 597.432pt x 844.95674pt>
 File: gfx/final_taste.pdf Graphic file (type pdf)
 
 <use gfx/final_taste.pdf>
@@ -1140,7 +1092,7 @@ Overfull \hbox (168.0pt too wide) in paragraph at lines 53--54
 
 LaTeX Warning: Float too large for page by 82.3903pt on input line 57.
 
-<gfx/t-table.jpg, id=635, 578.16pt x 857.2025pt>
+<gfx/t-table.jpg, id=604, 578.16pt x 857.2025pt>
 File: gfx/t-table.jpg Graphic file (type jpg)
  <use gfx/t-table.jpg>
 Package pdftex.def Info: gfx/t-table.jpg used on input line 61.
@@ -1150,24 +1102,24 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 61--62
  [] 
  []
 
-) [21] [22 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Pract
-icals/Record/gfx/final_taste.pdf>] [23 <C:/Users/A. S. Aurora/Documents/IISER_r
+) [17] [18 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Pract
+icals/Record/gfx/final_taste.pdf>] [19 <C:/Users/A. S. Aurora/Documents/IISER_r
 epo/Semester_3/Biology_Practicals/Record/gfx/t-table.jpg>]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Experiments/ExperimentDrift.tex" [24
+rd\Experiments/ExperimentDrift.tex" [20
 
 
 
 
 ]
-Chapter 5.
+Chapter 4.
 
 Overfull \hbox (1.06554pt too wide) in paragraph at lines 23--24
 []\T1/pplj/m/n/10.95 Evolution: Change in al-lelic fre-quen-cies over gen-er-a-
 tions, within
  []
 
-[25]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
@@ -1177,18 +1129,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[26]
+[22]
 Overfull \hbox (5.50896pt too wide) in paragraph at lines 63--64
 []\T1/pplj/m/n/10.95 Repeated the pre-vi-ous steps for all vials, main-tain-ing
  proper
  []
 
-[27]
+[23]
 Overfull \hbox (5.67352pt too wide) detected at line 133
  $[] \U/zeus/m/n/10.95 ½ []$  
  []
 
-[28]
+[24]
 Overfull \hbox (29.81825pt too wide) detected at line 137
  $[] \U/zeus/m/n/10.95 ½ []$  
  []
@@ -1203,13 +1155,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--151
 
  []
 
-[29]) [30] [31
+[25]) [26]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentTree.tex"
+Chapter 5.
+
+Overfull \hbox (16.79689pt too wide) in paragraph at lines 11--12
+[]\T1/pplj/m/n/10.95 Phylip from [][]$\T1/fvm/m/n/10.95 http : / / evolution . 
+gs . washington . edu / phylip / getme .$
+ []
+
+
+Overfull \hbox (23.14014pt too wide) in paragraph at lines 12--13
+[]\T1/pplj/m/n/10.95 Treeview from [][]$\T1/fvm/m/n/10.95 http : / / taxonomy .
+ zoology . gla . ac . uk / rod / treeview .$
+ []
+
+[27
+
+
+
+
+]
+Overfull \hbox (9.73177pt too wide) in paragraph at lines 35--36
+[]\T1/fvm/m/n/10.95 Selected Alignment -> Output Format\T1/pplj/m/n/10.95 , and
+ in the di-a-logue
+ []
+
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 7.65005pt on input line 43.
+[28]
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 8.50006pt on input line 63.
+ <gfx/clustal.png, id=761, 760.34062pt x 480.29437pt>
+File: gfx/clustal.png Graphic file (type png)
+
+<use gfx/clustal.png>
+Package pdftex.def Info: gfx/clustal.png used on input line 78.
+(pdftex.def)             Requested size: 369.60205pt x 233.47748pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 78--79
+ [] 
+ []
+
+<gfx/tree.png, id=762, 916.92563pt x 581.17125pt>
+File: gfx/tree.png Graphic file (type png)
+ <use gfx/tree.png>
+Package pdftex.def Info: gfx/tree.png used on input line 86.
+(pdftex.def)             Requested size: 403.19897pt x 255.55652pt.
+
+Overfull \hbox (67.19897pt too wide) in paragraph at lines 86--87
+ [] 
+ []
+
+) [29 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals
+/Record/gfx/clustal.png>] [30 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semes
+ter_3/Biology_Practicals/Record/gfx/tree.png>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentHuman.tex"
+Chapter 6.
+[31
+
+
+
+
+] <gfx/Heritability_of_height.jpg, id=802, 658.71094pt x 396.7322pt>
+File: gfx/Heritability_of_height.jpg Graphic file (type jpg)
+
+<use gfx/Heritability_of_height.jpg>
+Package pdftex.def Info: gfx/Heritability_of_height.jpg used on input line 48.
+(pdftex.def)             Requested size: 369.60205pt x 222.61043pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 48--49
+ [] 
+ []
+
+<gfx/Fitness_father.jpg, id=803, 666.99188pt x 400.49625pt>
+File: gfx/Fitness_father.jpg Graphic file (type jpg)
+
+<use gfx/Fitness_father.jpg>
+Package pdftex.def Info: gfx/Fitness_father.jpg used on input line 56.
+(pdftex.def)             Requested size: 369.60205pt x 221.92972pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 56--57
+ [] 
+ []
+
+<gfx/Fitness_mother.jpg, id=804, 663.98062pt x 398.99063pt>
+File: gfx/Fitness_mother.jpg Graphic file (type jpg)
+
+<use gfx/Fitness_mother.jpg>
+Package pdftex.def Info: gfx/Fitness_mother.jpg used on input line 64.
+(pdftex.def)             Requested size: 369.60205pt x 222.09384pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
+<gfx/Monthofbirth_first_offspring.jpg, id=805, 622.57594pt x 416.30531pt>
+File: gfx/Monthofbirth_first_offspring.jpg Graphic file (type jpg)
+
+<use gfx/Monthofbirth_first_offspring.jpg>
+Package pdftex.def Info: gfx/Monthofbirth_first_offspring.jpg used on input lin
+e 72.
+(pdftex.def)             Requested size: 369.60205pt x 247.14891pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 72--73
+ [] 
+ []
+
+) [32 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals
+/Record/gfx/Heritability_of_height.jpg>] [33 <C:/Users/A. S. Aurora/Documents/I
+ISER_repo/Semester_3/Biology_Practicals/Record/gfx/Fitness_father.jpg> <C:/User
+s/A. S. Aurora/Documents/IISER_repo/Semester_3/Biology_Practicals/Record/gfx/Fi
+tness_mother.jpg>] [34 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_3/B
+iology_Practicals/Record/gfx/Monthofbirth_first_offspring.jpg>] [35
 
 
 
 
 
-] [32]
+] [36]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.tex"
 No file Biology_Record.bbl.
@@ -1220,7 +1286,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [33
+) [37
 
 
 
@@ -1232,8 +1298,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 95.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Biology_Record.aux"
@@ -1250,16 +1316,18 @@ rd\Experiments/Experiment01.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/Experiment02.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
-rd\Experiments/ExperimentTree.aux")
-("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentTaste.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\Experiments/ExperimentDrift.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentTree.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
+rd\Experiments/ExperimentHuman.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Bibliography.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_3\Biology_Practicals\Reco
 rd\FrontBackmatter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
 
 
  *File List*
@@ -1396,27 +1464,32 @@ gfx/Male_Female_drosophila.png
 Experiments/Experiment02.tex
 gfx/eyecolor.jpg
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
-Experiments/ExperimentTree.tex
-gfx/clustal.png
-gfx/tree.png
 Experiments/ExperimentTaste.tex
 gfx/final_taste.pdf
 gfx/t-table.jpg
 Experiments/ExperimentDrift.tex
+Experiments/ExperimentTree.tex
+gfx/clustal.png
+gfx/tree.png
+Experiments/ExperimentHuman.tex
+gfx/Heritability_of_height.jpg
+gfx/Fitness_father.jpg
+gfx/Fitness_mother.jpg
+gfx/Monthofbirth_first_offspring.jpg
 FrontBackmatter/Bibliography.tex
 FrontBackmatter/Colophon.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `Biology_Record.out' has not changed.
-(rerunfilecheck)             Checksum: C70B857BF04651EA5DD4A8C1FC165227;3823.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
+(rerunfilecheck)             Checksum: 3CA9255A5CE2E5CEA47F795086D388DF;4215.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 16484 strings out of 494045
- 252852 string characters out of 3148366
- 415789 words of memory out of 3000000
- 19038 multiletter control sequences out of 15000+200000
+ 16562 strings out of 494045
+ 254907 string characters out of 3148366
+ 414789 words of memory out of 3000000
+ 19081 multiletter control sequences out of 15000+200000
  87767 words of font info for 137 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  48i,14n,67p,1565b,2336s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1435,9 +1508,9 @@ lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on Biology_Record.pdf (41 pages, 960131 bytes).
+Output written on Biology_Record.pdf (45 pages, 1188726 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 317 named destinations out of 1000 (max. 500000)
- 17921 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 960 PDF objects out of 1000 (max. 8388607)
+ 341 named destinations out of 1000 (max. 500000)
+ 17989 words of extra memory for PDF output out of 20736 (max. 10000000)
 
