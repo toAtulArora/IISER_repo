@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  23 NOV 2012 01:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  29 NOV 2012 14:17
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_3/Chemistry_Notes_Experim
 ental/Chemistry_Notes_experimental.tex
@@ -916,7 +916,7 @@ Chapter 3.
 ] [6]
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 53.
- [7]) [8] [9] [10
+ [7] [8]) [9] [10
 
 
 
@@ -1103,8 +1103,8 @@ anged.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 14267 strings out of 494045
- 224337 string characters out of 3148366
+ 14268 strings out of 494045
+ 224351 string characters out of 3148366
  400015 words of memory out of 3000000
  17135 multiletter control sequences out of 15000+200000
  70465 words of font info for 103 fonts, out of 3000000 for 9000
@@ -1124,9 +1124,9 @@ blic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij
 8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chemistry_Notes_experimental.pdf (17 pages, 173718 bytes).
+Output written on Chemistry_Notes_experimental.pdf (17 pages, 175726 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
  12958 words of extra memory for PDF output out of 14400 (max. 10000000)
 

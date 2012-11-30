@@ -1,0 +1,451 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{IISER M} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Astronomy Assignment \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Atul Singh Arora} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+\everymath{\displaystyle}
+
+% QUESTION 1
+
+\section{Question}
+	The molecular weight $\mu$ is defined as the average mass of a molecule when multiple species are present. If the fraction of Hydrogen by mass is given by X and that of Helium is denoted by Y, then write an expression for $\mu$ assuming that both the species are fully ionized. How does this change if Helium is singly ionized instead?\\
+	\par
+	We know that
+	\begin{align}
+		\mu=\frac{\overline{m}}{m_H}
+	\end{align}
+	where $\overline{m}$ is the weighted average of mass of individual species of molecules present. Thus, we have, for fully ionized Helium and Hydrogen,
+	\begin{equation}
+	\begin{split}
+		\overline{m} & =\frac{XM + YM}{X'+Y'} \\
+		\text{where}\\
+		X' & = \frac{2XM}{m_H} \\
+		& \text{as Hydrogen gets split into a proton and an electron} \\
+		Y' & =\frac{3YM}{m_{He}} \\
+		& \text{as Helium gets split into a proton and two electrons} \\
+		\text{M} &= \text{Total Mass}
+	\end{split}
+	\end{equation}
+
+	\begin{equation}
+	\begin{split}
+		\Rightarrow \overline{m} & = \frac{M}{\frac{2XM}{m_H} + \frac{3YM}{m_{He}}} \\
+		\Rightarrow \overline{m} & = \frac{1}{\frac{2X}{m_H} + \frac{3Y}{m_{He}}} \\
+		\Rightarrow \overline{m} & = \frac{m_p}{2X + \frac{3Y}{4}}	
+	\end{split}
+	\end{equation}
+
+	For singly ionized Helium, then, we just change $Y'$ to $\frac{2YM}{m_{He}}$, which gives
+
+	\begin{equation}
+		\overline{m} = \frac{m_p}{2X + \frac{Y}{2}}
+	\end{equation}
+
+\section{Question}
+	The virial theorem states that $2<E_{th}> + <E_{gr}> = 0$ for gravitating systems. Here $E_{th}$ is the thermal energy and can be written as $3NkT/2$, where $N$ is the total number of particles, $k$ is the Boltzmann constant and $T$ is the temperature. $E_{gr}$ is the gravitational binding energy and equals $3GM^2/5R$ for an object with constant density. Use this to express the \emph{virial} temperature in terms of the mass and radius of the object. Calculate the temperature for the Sun $T_\text{sun}$.\\
+	\par
+	On subsituting the values for $<E_{th}>$ and $<E_{gr}>$, we get
+	\begin{equation}
+		NkT = \frac{GM^2}{5R}
+		\label{2_virial}
+	\end{equation}
+	We must now express $N$, the number of particles, in terms of Mass and $\mu$. We already know that 
+	\begin{equation}
+	\begin{split}
+		\mu & =\frac{M}{N m_H} \\
+		\text{where}\\
+		& M=\text{Total Mass} \\
+		& N=\text{Number of Particles} \\
+		& m_H=\text{Mass of Hydrogen}
+	\end{split}
+	\end{equation}
+	On rearranging, we get
+	\begin{equation}
+		N=\frac{M}{\mu m_H}
+	\end{equation}
+	Substituting this value in Equation \ref{2_virial} and rearranging yields:
+	\begin{equation}
+		T = \frac{GM \mu m_H}{5Rk}
+	\end{equation}
+	In SI units, we have $G=6.67 \times 10^{-11}$, $k=1.38 \times 10^{-23}$. Also, for the sun, $M=2\times 10^{30}$ Kg, $R=6.96\times 10^8$ m. Using these, we get 
+	\begin{equation}
+		T=4.6\times10^6 \quad \text{Kelvins}
+	\end{equation}
+
+
+\section{Question}
+	Use the Virial theorem and show that the average pressure
+	\begin{equation}
+		\overline{P} = - \frac{1}{3}\frac{<E_{gr}>}{V}
+	\end{equation}
+	where $V$ is the volume of the star. Use values of $M_\odot$ and $R_\odot$ and assume that the Su nis made up purely ionized Hydrogen. Estimate $\overline{P_\odot}$.\\
+	\par
+	We start with the Virial theorem, viz. $2<E_{th}> + <E_{gr}> = 0$, and substitute $<E_{th}>$ as $3NkT/2$, to get
+	\begin{equation}
+		\begin{split}
+			3NkT & = - E_{gr}\\
+			NkT & = - E_{gr}/3			
+		\end{split}
+	\end{equation}
+	We can write $N=nN_a$, where $n$ is the number of moles and $N_a$ is the Avogadro number, to get
+	\begin{equation}
+		\begin{split}
+			n\mathbf{R}T & = - E_{gr}/3\\
+			& \text{(as $N_ak=\mathbf{R}$)}
+		\end{split}
+	\end{equation}
+	and using the ideal gas equation, we can substitute $n\mathbf{R}T$ with $PV$ to get the required result, viz.
+	\begin{equation}
+		\overline{P} = - \frac{1}{3}\frac{<E_{gr}>}{V}
+	\end{equation}
+	To calculate pressure for the Sun, we substitute for $<E_{gr}>$, $\frac{-3GM^2}{5R}$, to get
+	\begin{equation}
+	\begin{split}
+		\overline{P} 	& = \frac{GM^2}{5RV} \\
+		 				& = \frac{3GM^{2}}{20 \pi R^4}
+	\end{split} 			
+	\end{equation}
+	For the sun, we know $M_\odot = 2 \times 10^{30}$ and $R_\odot=6.96 \times 10^8$.
+	\par 
+	This gives us $\overline{P}=5.43 \times 10^{13}$
+
+\section{Question}
+	Use the definition of magnitudes to find the ratio of flux received from sources where the magnitudes for these sources differ by 5.\\
+	\par
+	We have the apparent magnitude as follows, where $f$ is the flux received from the object of interest, and $f_0$ is the flux received from a known constant brightness star.
+	\begin{equation}
+		m=-2.5\log_{10}{\frac{f}{f_0}}
+	\end{equation}
+	Using these, we have
+	\begin{equation}
+	\begin{split}
+		m_1= & -2.5\log{\frac{f_1}{f_0}} \\
+		\Rightarrow m_2= & -2.5\log{\frac{f_2}{f_0}} \\
+		\Rightarrow 5 = & -2.5\log{\frac{f_2}{f_1}} \\
+		\Rightarrow -2 = & \log{\frac{f_2}{f_1}} \\
+		\Rightarrow \frac{f_2}{f_1}= & 10^{-2} \\
+		\Rightarrow f_1= & 100f_2
+	\end{split}
+	\end{equation}
+
+
+\section{Question}
+	Consider a `material' radial arm extending from the galatic radius of 4 kpc, to 10 kpc, at some initial time. Due to differential rotation, this hypothetical radial line winds up into a `material' spiral arm. Assuming a flat rotation curve, estimate the pitch angel of the spiral arm, after $10^{10}$ years.\\
+	\par
+	Assuming the speed for all particles to be $v$, we start with, without explaining, stating the following parametrization of a curve
+	\begin{equation}
+	\begin{split}
+		\gamma(r,t) = & (r\cos{\omega_r t}, r\sin{\omega_r t}) \\
+		\text{where}\\
+		& \omega_r = \frac{v}{r}
+	\end{split}
+	\end{equation}
+	In this equation, if we keep $r$ constant, then we're talking about a particular object's trajectory as $t$ changes. If we keep $t$ fixed, then the curve describes the positions of the objects, as a function of $r$, at some time $t$.
+	\par
+	That said, our objective here is simple. We've to find the pitch of the spiral arm, which is simple once we know the tangent of both curves, for the same point, as pitch is the smallest angle between these tangents.
+	\par
+	Differentiation of $\gamma$ with respect to $t$, keeping $r$ constant, is given by $\dot \gamma$ and with respect to $r$, keeping $t$ constant, is given by $\gamma'$.
+	\par
+	Thus we have,
+	\begin{equation}
+		\dot \gamma = (-r\omega_r\sin(\omega_rt), r\omega_r\cos(\omega_rt))
+	\end{equation}
+	and
+	\begin{equation}	
+	\begin{split}
+		\gamma' = (r ( -\sin(\omega_rt)\frac{-v}{r^2}t) + \cos(\omega_r t), r (\cos(\omega_rt)\frac{-v}{r^2}t) + \sin(\omega_rt)) \\	
+		\gamma' = ( \frac{vt}{r} \sin(\omega_r t) + \cos(\omega_rt), \frac{-vt}{r} \cos(\omega_rt) + \sin(\omega_rt) )
+	\end{split}
+	\end{equation}
+	Also, we note
+	\begin{equation}
+		\left|{\dot \gamma}\right| = v
+	\end{equation}
+	and, 
+	\begin{equation}
+		\left|{\gamma'}\right| = \frac{\sqrt{v^2t^2 + r^2}}{r}
+	\end{equation}
+	Now we take the dot product
+	\begin{equation}
+	\begin{split}
+		\dot\gamma\gamma' & = \\
+		&(-r\omega_r)(vt/r) \sin^2 (\omega_r t) +(-r\omega_r)\sin(\omega_rt)\cos(\omega_rt) \\
+		&- (vt/r)(r\omega_r)\cos^2(\omega_rt) + (r\omega_r)\cos(\omega_rt)\sin(\omega_rt) \\
+		&= \frac{-v^2t}{r}
+	\end{split}
+	\end{equation}
+	 and normalize it to get
+	 \begin{equation}
+	 	\cos\phi = \frac{v}{\sqrt{v^2t^2 + r^2}}
+	 \end{equation}
+	 thus, we finally have
+	 \begin{equation}
+	 	\phi = \cos^{-1} \left( \frac{-vt}{\sqrt{v^2t^2 + r^2}} \right)
+	 	\label{5_final}
+	 \end{equation}
+	 Now we substitute $v=250$ Km per second, $r=7$ kpc and $t=10^{10}$ years into Equation \ref{5_final} to get the pitch angle as
+	 \begin{equation}
+	 \begin{split}
+	 	\phi & =\cos^{-1} \left( \frac{-10^{10}\times 3600\times 24\times365\times250000}{\sqrt{10^{20}(3600\times 24\times365\times250000)^2 + (7\times 3.08\times 10^{19})^2}} \right)\\
+	 	&=\cos^{-1}(-0.9999626) \\
+	 	&=179.84^o
+	 \end{split}
+	 \end{equation}
+
+
+\section{Question}
+	Given that the sun is at a distance of 8.5 kpc form the Galactic centre, and its circular speed is 240 km/s, estimate the mass of dark matter within the solar circle (assume that the dark matter distribution is spherically symmetric)\\
+	\par
+	Using the Shell theorem, we need only concern ourselves with the gravitational matter within the sphere of radius $r$, where $r$ is the distance of sun from the Galactic centre. Neglecting contribution from the stars in the disk of radius $r$, we simply have
+	\begin{equation}
+	\begin{split}
+		\frac{GM_\odot M_{DM}}{r^2} = &\frac{M_\odot v^2}{r} \\
+		\Rightarrow M_{DM}= &\frac{rv^2}{G}
+	\end{split}
+	\end{equation}
+	where $v$ is the magnitude of orbital velocity of the sun around the Galactic centre.
+	\par
+	Substituting\\
+	$r=8.5$ kpc $=2.62\times 10^{20}$ m\\
+	$v=240$ km/s $=2.4 \times 10^5$ m/s\\
+	we get\\
+	$M_{DM}= 2.26 \times 10^{41}$ Kg\\
+	$=1.13\times10^{11} M_\odot$
+
+\section{Question}
+	For an eclipsing binary the observed maximum radial velocities for the two stars are 20 km/s and 5 km/s respectively. The period is 5 years. Aftger the eclipse starts, it takes 0.3 days for intensity to fall to its minimum. The duration of the eclipse is 1.3 days. (Note: The minimum intensity will persist ntil the eclipsing star is fully blocking the eclipsed star.) Assume that orbits are circular and also that the orbit is seen edge on.
+	\begin{itemize}
+		\item Find the mass of each star
+		\item FInd the radius of each star
+	\end{itemize}
+	\par
+	We can assume we're sitting on the star with mass $m_2$ and the star with mass $m_1$ is moving with speed $20 + 5 = 25$ km/s. Now the duration for the intensity to fall to its minimum is 0.3 days. Thus we have
+	\begin{equation}
+	\begin{split}
+		\frac{2r_1}{25}& =0.3\times 3600 \\
+		\Rightarrow r_1 &=\frac{25\times 0.3 \times 24 \times 3600}{2}\\
+		&=324,000 \text{ km}
+	\end{split}
+	\end{equation}
+	Similarly, duration of the eclipse is $1.3$ days. Thus, we also have
+	\begin{equation}
+	\begin{split}
+		\frac{2(r_1+r_2)}{25}& =1.3\times 3600 \\
+		\Rightarrow r_1+r_2 &=1,404,000 \text{ km} \\
+		\Rightarrow r_2 &=1,080,000 \text{ km}
+	\end{split}
+	\end{equation}	
+	We already know that the time period is 5 years. Since the orbitals are circular, we have
+	\begin{equation}
+	\begin{split}
+		20 &= \frac{2\pi R_1}{5\times 365\times 24\times 3600} \\
+		\Rightarrow R_1 &=\frac{20\times 15768 \times 10^4}{2\pi} \\
+		&=501,911,028.5 \text{ km}
+	\end{split}
+	\end{equation}
+	Similarly we have for $R_2$,
+	\begin{equation}
+	\begin{split}
+		5 &= \frac{2\pi R_2}{5\times 365\times 24\times 3600} \\
+		\Rightarrow R_2 &=125,477,757.1 \text{ km}
+	\end{split}
+	\end{equation}
+	Thus, $d=R_1 + R_2 = 627,388,785.6$ km.
+	\par
+	For finding the masses, we use the relation
+	\begin{equation}
+	\begin{split}
+		\omega &=\sqrt{\frac{(m_1+m_2)G}{d^3}}
+	\end{split}
+	\end{equation}
+	We also, know that 
+	\begin{equation}
+		m_1v_1=m_2v_2 \text{ using centre of mass}
+	\end{equation}
+	Thus we have
+	\begin{equation}
+	\begin{split}
+		m_1 & = \frac{ \left( \frac{2\pi}{T} \right)^2 \frac{d^3}{G}}{1 + \frac{v_1}{v_2}} \\
+		& = 1.1757\times 10^{30} \text{ kg} \\
+		\Rightarrow m_2=\frac{v_1}{v_2}m_1&=4.703\times10^{30} \text{ kg}
+	\end{split}
+	\end{equation}
+	Now we have both the mass and the radius of the stars.
+
+\section{Question}
+	We believe that the main source of energy in stars in nuclear fusion. In main sequence stars this is due to conversion of Hydrogen into Helium. Conversion of four Hydrogen nuclei into a Helium nucleus in the p-p chain in low mass stars results in the release of 26.2 MeV into components other than neutrinos. In stars more massive than 4 $M_\odot$ the primary channel for conversion is the C-N-O cycle and here around 25 MeV is release into components other than neutrinos.
+	\begin{itemize}
+		\item Assuming that each star converts a fixed fraction, say $15\%$ of its mass from Hydrogen to Helium, write an expression for the life time of stars as a function of the mass nad Luminosity. You may assume that the luminosity does not change with time during the Hydrogen burning phase.
+		\item Use the known parameters of the Sun to estimate its lifetime. You may assume that Helium fraction in the Sun is 0.26 and that the rest of it's in the form of Hydrogen.
+		\item If the luminosity of the star scales in proportion with the mass as $M^{3.5}$ then find out the dependence of the life time of stars on the mass.
+	\end{itemize}
+
+	\begin{equation}
+	\begin{array}{lcr}
+		4H \rightarrow He & 26.2 MeV + \nu_e & M_*<4M_\odot \\
+		\text{CNO Cycle} & 25 MeV + \nu_e & M_*>4M_\odot \\
+	\end{array}
+	\end{equation}
+	\par	
+	For each proton then, the energy release will be given by
+	\begin{equation}
+	\begin{array}{ccc}
+		E_\text{per proton} = &6.55 & M_*<4M_\odot \\
+		& 6.25 & M_*>4M_\odot \\
+	\end{array}
+	\end{equation}
+	Now the number of protons in the star can be evaluated as 
+	\begin{equation}
+		N_\text{proton}=\frac{M_\text{Hydrogen}\times 0.15}{M_p}
+	\end{equation}
+	Therefore the total energy released by the star in it's lifetime will be given by 
+	\begin{equation}
+		E_\text{per proton}N_\text{proton}
+	\end{equation}
+	Luminosity is required to find the lifetime. We can use the relation $L \alpha M^3$, to find the Luminosity of a star, given it's mass, using the parameters of the sun, as
+	\begin{equation}
+	\begin{split}
+		\frac{L_*}{L_\odot}&=\frac{M_*^3}{M_\odot^3} \\
+		\Rightarrow L_*&=\frac{M_*^3L_\odot}{M_\odot^3}
+	\end{split}
+	\end{equation}
+	So lifetime is given by 
+	\begin{equation}
+	\begin{split}
+		\tau &= \frac{\text{Energy}}{\text{Luminosity}} \\
+		&=  \frac{N_\text{proton}E_\text{per proton} M_\odot^n}{L_\odot M_*^n}
+	\end{split}
+	\end{equation}
+	
+	\begin{itemize}
+		\item With $n=3$ for this case, Substituting values, we get\\
+	$\tau = 1.8816\times 10^{78} M_*^{-2}$ seconds, for $M_*<4M_\odot$ and $\tau = 1.7954 \times 10^{78} M_*^{-2}$ seconds, for $M_*>4M_\odot$.
+		\item Putting $M_*=M_\odot$, $M_\text{Hydrogen}=0.74M_\odot$, we get $\tau=1.1044 \times 10^{10}$ years.
+		\item For $n=3.5$, we have $\tau = 2.66098 \times 10^{106} M_*^{-2.5}$ seconds, when $M_*<4M_\odot$ and $\tau=2.5391\times 10^{106} M_*^{-2.5}$ seconds, when $M_*<4M_\odot$.
+	\end{itemize}
+
+\section{Question}
+	What is the mean number density of dust in the inter-stellar medium?
+	\par
+	The volume consumed by the dust can be evaluated as
+	\begin{equation}	
+	\begin{split}
+		V&=\pi ([25^2 - 15^2]0.3 + [15^2]1) \text{ kpc}^3\\
+		&=3.166803507\times10^{61} \text{ m}^3
+	\end{split}
+	\end{equation}
+
+	Number of protons in the gas can be estimated as
+	\begin{equation}	
+	\begin{split}
+		\text{Number of Protons} &=\frac{10^{10}\times M_\odot}{M_\text{proton}} \\
+		&=1.19760479\times10^{67}
+	\end{split}
+	\end{equation}
+
+	Thus, the density is
+	\begin{equation}
+	\begin{split}
+		\rho&=\frac{\text{Number of Protons}}{V}\\
+		&=378174.6443 \text{ m}^{-3}\\
+		&=0.378 \text{ cc}^{-1}
+	\end{split}
+	\end{equation}
+
+\section{Question}
+	Compute the critical density of the universe $\rho_c=3H_o^2/8\pi G$, where $H_o=70$ km/s/Mpc\\
+	\par
+	Now $H_o=\frac{70 \times 10^3}{6.67\times10^{-11}}$ per second and $G=6.67\times 10^{-11}$ in SI units.\\
+	Substituting these values in the formula, we get $2.847\times10^{-4}$ kg/m$^3$.
+\section{Question}
+	Find out the energy density in CMBR if the radiation has a temperature of 2.726 K. Assume a black body spectrum for the radiation. Use the answer to find out density parameter $\Omega_\text{CMBR}$. Also find out the number density of photons in CMBR.
+	\par
+	Energy Density = $aT^4$, where $a$ is the Radiation Constant, which equals $\frac{4\sigma}{c}=7.5657\times 10^{-16}$ in SI units. Putting T=2.726 K, we get\\
+	\begin{equation}
+		\text{Energy Density} = 2.06240982 \times 10^{-15} \text{ J/m}^3 \\
+	\end{equation}
+	Also, we have
+	\begin{equation}
+		\Omega = \frac{\text{Mass Density}}{\rho_\text{critical}} =  \frac{\text{Energy Density}}{c^2 \rho_\text{critical}}
+	\end{equation}
+	On substituting these numbers, we get
+	\begin{equation}
+		\Omega = 1.63789\times10^{-27}
+	\end{equation}
+	Now to find the Number Density of photons, we know that
+	\begin{equation}
+		<E_\text{photon}>=kT
+	\end{equation}
+	where $k=1.380\times10^{-23}$ in SI units. Also, we know the Energy Density, as calculated before, thus
+	\begin{equation}
+		\text{<Number Density>} = \frac{\text{Energy Density}}{<E_\text{photon}>} = 1.1156 \times 10^9 \text{ m}^{-3}
+	\end{equation}
+	\par	
+\section*{Acknowledgement}
+	I thank Ms. Prashansa Gupta (MS11021) and Arjit Kant Gupta (MS11073) for their contribution in discussing the assignment questions.
+\end{document}
