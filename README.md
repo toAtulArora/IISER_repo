@@ -7,6 +7,11 @@ I hope to make all the information accessible for assisting, in whichever way, a
 
 Although this repository was created on August 10, 2012, I would gradually upload all the usable information from the previous years for completion.
 
+CV
+--
+https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/cv.pdf?raw=true
+
+
 DOWNLOAD LINKS FOR 3rd SEM
 --
 
