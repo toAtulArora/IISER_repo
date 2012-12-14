@@ -1,0 +1,261 @@
+\vspace{12pt}
+\documentclass[12pt]{article}
+% version = 1.00 of latexdemo.tex 2011 Feb 01
+
+% Atul Singh Arora
+% BS-MS 2016 | IISER Mohali
+% Winters, 2012
+% Physics Project
+
+%I did not add this
+\usepackage{html}
+%for making the real number R symbol to work
+\usepackage{amsfonts}
+%for getting a pipe symbol to work
+\usepackage[T1]{fontenc}
+%for increasing usable page area
+\usepackage[margin=0.5in]{geometry}
+%for automatically skipping a line after each paragraph
+\usepackage[parfill]{parskip}
+%for using text within formulae
+\usepackage{amstext}
+%for inserting images
+\usepackage{graphicx}
+
+%for proper enumeration
+\usepackage{enumerate}
+%for math theorem stuff!
+\usepackage{amsmath, amsthm, amssymb}
+%for cancelling things!
+\usepackage{cancel}	
+
+%for a double sided arrow
+\usepackage{mathtools}
+\rmfamily
+%for changing the way the title in the section appears
+\usepackage{sectsty}
+%this is to make the rest of the section titles go SC
+\allsectionsfont{\mdseries\scshape}
+%This is to make the main sections' titles go SC but smaller than default
+\sectionfont{\mdseries\scshape\fontsize{13.5}{1}\selectfont}
+\subsectionfont{\mdseries\scshape\fontsize{13}{1}\selectfont}
+\subsubsectionfont{\mdseries\scshape\fontsize{12}{1}\selectfont}
+
+%for using system fonts
+% \usepackage[xetex]{graphicx}
+% \usepackage{fontspec,xunicode}
+% \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+% \setmainfont[Scale=.95]{Times}
+% \setmonofont{Lucida Sans Typewriter}
+% \usepackage{Antiqua}
+
+%for making things bold easily, as we're working with a lot of vectors here
+\def\*#1{\boldsymbol{#1}}
+%for making unit vectors
+\let\oldhat\hat
+\renewcommand{\hat}[1]{\oldhat{\*{#1}}}
+
+%for writing dual correspondance easily
+\def\dc{\,\,\xleftrightarrow[\text{DC}]{}\,\,}
+%for writing bras and kets
+\def\bra#1{\langle#1|}
+\def\ket#1{|#1 \rangle}
+%inner product
+\def\inpr#1#2{\langle #1|#2 \rangle}
+%bracket
+\def\braket#1#2#3{\langle#1|#2|#3\rangle}
+%hermitian adjoint
+\def\ha#1{#1^\dagger}
+
+%Theorems one can use
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+
+\begin{document}
+
+\bibliographystyle{unsrt}  % define bibliography style
+
+
+
+\begin{center}
+
+% \title{Quantum Mechanics}
+% \author{Atul Singh Arora}
+% \maketitle
+
+\textsc{{\huge Quantum Mechanics\\}
+Introduction\\
+\small WP Status\\}
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} Atul Singh Arora \end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} {\small December 9-12, 2012} \end{flushright}
+\end{minipage}
+\\
+\end{center}
+\hrule
+\vspace{12pt}
+
+This document contains record of my understanding of Chapter 1 Fundamental Concepts, from J.J. Sakurai.
+\par
+Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely clear about. Perhaps reiterating later would help.\\
+\hrule
+\section{Introduction}
+	\subsection{Stern Gerlach}
+		Silver atom has $47$ electrons, of which $46$ are paired. The $47^{th}$ has a spin, but no orbital-angular momentum (because it's an s electron). {\bf Doubt} In accordance with the book, and I quote `The $47$ electrons are attached to the nucleus, which is $~2\times 10^5$ times heavier than the electron; as a result, the heavy atom as a whole possesses a magnetic moment equal to the spin magnetic moment of the $47^{th}$ electron'. Does that mean that if the electrons were comparable in mass with the nucleus, we would couldn't have claimed that the magnetic moment of the atom is same as that of the electron? I can not see the co-relation between spin angular moment and mass. Also, why is the nuclear spin ignored and how is it justified?
+		\par
+		Force on a magnetic dipole is given by $\*F=\nabla(\*\mu. \*B)$. For a Magnetic field varying along z only, we therefore have
+		\begin{equation}
+			F_z = \mu_z \frac{\partial{B_z}}{\partial{z}}
+		\end{equation}
+		So we would expect the Stern Gerlach experiment to split the two beams into two, along the $z$ axis. And this is what was observed. However things get interesting when we cascade these experiments. The beam from the $\hat z +$ from the SG $\hat z$ apparatus is allowed to go through the SG $\hat z$ again, and we observe only the S $\hat z +$ component. Which is again as expected. However, if the $\hat z +$ beam is passed through an SG $\hat x$ apparatus, we get both $\hat x + $ and $\hat x -$ beams. Now also, one may be able to rationalize the result by saying the incident beam had both $\hat z \pm$ and $\hat x \pm$ and after blocking $\hat z -$, we had $\hat z +$ and $\hat x \pm$. Then on splitting by SG $\hat x$, we got $\hat x \pm$. However, this gets into trouble with the final blow. Here's the setup. SG $\hat z$, blocked $\hat z -$, SG $\hat x$, blocked $\hat x -$, SG $\hat z$, and we get $\hat x \pm$!
+		\par
+		The book at this stage, points out the following
+		\begin{itemize}
+			\item Spin components along $\hat z$ and $\hat y$ can't be measured simultaneously
+			\item This more \emph{precisely} means that selection of the $\hat x$ component by the SG $\hat x$ apparatus, removes any information about the $\hat z$ component.
+		\end{itemize}
+		The book then gives an analogy with the book, which by itself is substantially clear, though long and has been omitted from the discussion.
+		\subsection{Kets Bras and Operators}
+			\subsubsection{Ket Space}
+				State of a system is represented by a \emph{state vector}, which is known as \emph{ket}, and is denoted by $|\alpha>$. The state vector is postulated to contains all information retrievable about the system. Following are properties of kets, arbitrarily defined to be true at this stage
+				\begin{enumerate}
+					\item $|\alpha> + |\beta> = |\gamma>$
+					\item $c|\alpha> = |\alpha> c$, where $c$ is complex and if $c=0$, the resultant is a \emph{null ket}.
+					\item \emph{Observables} are represented by \emph{operators} which act on kets as $A.(|\alpha>) = A|\alpha>$
+						\begin{enumerate}
+							\item in general, $A|\alpha>$ is not of the type $c|\alpha>$ (where c is complex)
+							\item for \emph{eigenkets} of $A$, the operation is always a scalar multiple of the eigenket and the scalar is called the \emph{eigenvalue}
+							\item nomenclature: it is typical to represent eigenkets with eigenvalues ${a',a'',a''',...}$ by ${|a'>,|a''>,|a'''>,...}$ respectively.
+							\item familiar rules related to vector spaces: An N-dimensional vector space is spanned by the N eigenkets of the observable A.
+						\end{enumerate}
+				\end{enumerate}
+			\subsubsection{Bra Space and Inner Products}
+				Bra space is `dual to' the ket space. Why this must be introduced is a mystery as of now, but it should become clear soon enough.
+				\begin{enumerate}
+					\item Postulate: For every ket, $|\alpha>$ in the ket space, $\exists$ a bra $<\alpha|$ in the bra space.
+						\begin{enumerate}
+							\item $|\alpha> \dc <\alpha|$
+							\item $|\alpha> + |\beta> \dc <\alpha| + <\beta|$
+							\item $c_\alpha|\alpha> + c_\beta|\beta> \dc c_\alpha^*<\alpha| + c_\beta^*<\beta|$
+						\end{enumerate}
+					\item The bra space is spanned by \emph{eigenbras}, the bras dual to the eigenkets			
+					\item \emph{Inner product} is defined as $\inpr{\beta}{\alpha} = (\bra\beta)(\ket\alpha)$, bra(c)ket! The answer is a complex number.
+						\begin{enumerate}
+							\item Postulate: $\inpr{\beta}{\alpha}=\inpr{\alpha}{\beta}^*$ \\
+							Easy deduction: $\Rightarrow \inpr{\alpha}{\alpha}$ is a real number.
+							\item Postulate of \emph{Positive Definite Metric}: $\inpr{\alpha}{\alpha} \ge 0$, where equality holds iff $\ket \alpha$ is a null ket.
+						\end{enumerate}
+					\item Iff $\inpr{\alpha}{\beta}=0$, then $\ket \alpha$ and $\ket \beta$ are \emph{orthogonal}.
+					\item \emph{Norm} of a ket $\ket \alpha$ is given by $\sqrt{\inpr{\alpha}{\alpha}}$
+					\item A \emph{Normalized ket} is given by 
+					\begin{equation*}
+						\ket{\tilde{\alpha}} = \frac{1}{\sqrt{\inpr{\alpha}{\alpha}}} \ket{\alpha}
+					\end{equation*}
+						so that for a normalized ket, we get $\inpr{\tilde{\alpha}}{\tilde{\alpha}} = 1$
+				\end{enumerate}
+			\subsubsection{Operators}				
+				\begin{enumerate}
+					\item An operator (represented by X, Y etc.) act on kets from the left to result in another ket. They act on bras from the right.
+					\begin{enumerate}
+						\item Two operators X and Y are equal iff $\forall \; \; \ket \alpha$, we have $X\ket \alpha = Y\ket \alpha$
+						\item X is a \emph{null operator} iff $X\ket \alpha = 0 \; \forall \;\; \ket \alpha$
+					\end{enumerate}
+					\item Addition of Operators
+					\begin{enumerate}
+						\item For operators, addition operations are commutative and associative
+						\item Operators are also linear, viz. $X(c_\alpha \ket\alpha + c_\beta \ket \beta) = c_\alpha X \ket \alpha + c_\beta X \ket \beta$, except for an exception of the time-reversal operator
+					\end{enumerate}
+					\item Relations between Operation on Bras and Kets
+					\begin{enumerate}
+						\item $X \ket \alpha \cancel \dc \bra \alpha X$ in general
+						\item The \emph{Hermitian adjoint}, $X^\dagger$ is defined as $X \ket \alpha \dc \bra \alpha X^\dagger$
+						\item An operator is \emph{Hermitian} iff $X=X^\dagger$
+					\end{enumerate}
+					\item Multiplication of Operators
+						\begin{enumerate}
+							\item Multiplication of operators is not commutative, but it is associative\\
+							Associativity holds good for all legal multiplications, viz. the ones defined here
+							\item $X(Y \ket \alpha) = (XY) \ket \alpha = XY \ket \alpha$ and similarly $(\bra \beta X)Y = \bra \beta (XY) = \bra \beta XY$
+							\item $\ha{(XY)}=\ha Y \ha X$
+							\begin{proof}
+							\begin{multline*}
+								\text{We know}\;
+								 		(XY)\ket \alpha \dc \bra \alpha \ha{(XY)} \\
+								\shoveleft{\text{We also know}\;
+								 	(Y\ket \alpha) \dc (\bra \alpha \ha Y)} \\
+								\shoveleft{\text{Let}\;
+												Y\ket\alpha = \ket \beta } \\
+								\shoveleft{\Rightarrow			Y\ket\alpha = \ket \beta \dc \bra \beta = \bra \alpha \ha Y} \\
+								\shoveleft{\text{Then}\;
+											X\ket \beta \dc \bra \beta \ha X }\\
+								\shoveleft{\Rightarrow			XY \ket \alpha \dc \bra \alpha \ha Y \ha X}\\
+							\end{multline*}
+							\end{proof}
+						\end{enumerate}
+					\item \emph{Outer Product} is defined as $(\ket \beta) (\bra \alpha) = \ket \beta \bra \alpha$.
+						\begin{enumerate}
+							\item This is not a number, it's an operator.
+							\begin{proof}
+							Consider $(\ket \beta \bra \alpha) \ket \gamma $ which by associativity, we can write as\\
+							 $\ket \beta (\bra \alpha \ket \gamma) = \ket \beta (\inpr{\alpha}{\gamma})$
+							\end{proof}
+							\item If $X=\ket \beta \bra \alpha$, then $\ha X = \ket \alpha \bra \beta$
+							\begin{proof}
+								$X=\ket \beta \bra \alpha$, so\\
+								$X\ket \gamma = (\ket \beta \bra \alpha).\ket \gamma = \ket \beta (\inpr{\alpha}{\gamma}) \dc \bra \beta (\inpr{\alpha}{\gamma})^* = (\inpr{\gamma}{\alpha})\bra \beta = \bra \gamma (\ket \alpha \bra \beta) = \bra \gamma \ha X$
+							\end{proof}
+
+						\end{enumerate}
+					\item Since $(\bra \beta ) (X \ket \alpha ) = (\bra \beta X ) (\ket \alpha)$, we denote it by a simpler notation $\braket \beta X \alpha$.\\
+					Now we claim $\braket \beta X \alpha = \braket \alpha {\ha X} \beta ^*$
+					\begin{proof}
+						We know that $\inpr a b \dc \inpr b a$ and that $X \ket \alpha \dc \bra \alpha \ha X$. Let $X \ket \alpha = \ket \gamma$ thus
+						\begin{align*}
+							\braket \beta X \alpha & = (\bra \beta) (\ket \gamma) \\
+													& = \inpr \beta \gamma \\
+													& = \inpr \gamma \beta ^* \\
+													&= (\bra \alpha \ha X) (\ket \beta) ^* \\
+													&= \braket \alpha {\ha X} \beta ^*
+						\end{align*}
+					\end{proof}
+					And when $X$ is hermitian, viz. $X=\ha X$, we have $\braket \beta X \alpha = \braket \alpha X \beta ^*$
+				\end{enumerate}
+		\subsection {Base Kets and Matrix Representations}	
+			\subsubsection{Eigenkets of an Observable}
+				Let us first talk about Hermitian Operators and we will then justify the use of the word observable.\\
+				\begin{theorem*}
+					The eigenvalues of a Hermitian operator $A$ are real
+				\end{theorem*}
+				\begin{proof}
+					Consider a Hermitian operator $A$. We have, following from the previous sections,
+					\begin{equation}
+						A\ket {a'} = a'\ket{a'}
+					\end{equation}
+					where $a', a'', a''', ...$ are eigenvalues for $A$, and $\ket{a'}, \ket {a''}, \ket {a'''},...$ are the corresponding eigenkets.\\
+					Now since $A$ is hermitian, we know
+					\begin{align*}
+						A\ket{a'} &\dc \bra{a'}A \\
+						\Rightarrow a'\ket{a'} &\dc a'^*\bra{a'} = \bra{a'}A
+					\end{align*}
+					So in general, we also have
+					\begin{equation}
+						\bra {a''} A = a''^* \bra{a''}
+					\end{equation}
+					Now we simply multiply the first relation with $\ket{a''}$ from the left and the other with $\ket{a'}$ from the right to obtain
+					\begin{align}
+						\braket {a''}A{a'} &= a'\inpr{a''}{a'} \\
+						\braket {a''} A {a'} &= a''^* \inpr{a''}{a'}
+					\end{align}
+					On subtraction we get 
+					\begin{equation}
+						(a' - a''^*)\inpr{a''}{a'} = 0
+					\end{equation}
+					We are almost there. Now consider the case when $a' \ne a''$, so that $a'-a''^* \ne 0$ in general. Then for the LHS to be zero, we must have $\inpr {a''}{a'}=0$. So this proves that all eigenkets of $A$ are mutually orthogonal. Next, if $a' = a''$, then since $\inpr {a'}{a'} \ge 0$, and the equality holds only if $\ket {a'}$ is a null ket, which it is not, therefore we must have $a'-a'^* = 0 \Rightarrow a'$ is real.
+				\end{proof}
+			
+\vspace{12pt}
+\hrule
+
+\end{document}

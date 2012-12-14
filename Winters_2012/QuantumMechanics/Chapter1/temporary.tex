@@ -1,0 +1,311 @@
+\documentclass[12pt]{article}
+% version = 1.00 of latexdemo.tex 2011 Feb 01
+
+% Atul Singh Arora
+% BS-MS 2016 | IISER Mohali
+% Summers, 2012
+% Math Project
+
+%I did not add this
+\usepackage{html}
+%for making the real number R symbol to work
+\usepackage{amsfonts}
+%for getting a pipe symbol to work
+\usepackage[T1]{fontenc}
+%for increasing usable page area
+\usepackage[margin=0.5in]{geometry}
+%for automatically skipping a line after each paragraph
+\usepackage[parfill]{parskip}
+%for using text within formulae
+\usepackage{amstext}
+%for inserting images
+\usepackage{graphicx}
+%for proper enumeration
+\usepackage{enumerate}
+%for math theorem stuff!
+\usepackage{amsmath, amsthm, amssymb}
+\rmfamily
+\begin{document}
+
+
+
+\bibliographystyle{unsrt}  % define bibliography style
+
+
+
+\begin{center}
+\textsc{{\huge Quantum Mechanics\\}
+Introduction\\
+\small WP Status\\}
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} Atul Singh Arora \end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} {\small December 9-12, 2012} \end{flushright}
+\end{minipage}
+\\
+\end{center}
+\hrule
+\vspace{12pt}
+% \textbf{The concept of poles:}
+This document contains record of my understanding of Chapter 1 Fundamental Concepts, from J.J. Sakurai.
+\par
+Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely clear about. Perhaps reiterating later would help.\\
+\hrule
+\vspace{12pt}
+\begin{flushright} {\small July 8, 2012} \end{flushright}
+\par
+\textsc{Corollary 5.1.28 } Let $M$ be the matrix in $SO_{3}$ that represents the rotation $\rho _{(u,\alpha)}$ with spin $(u,\alpha)$. Now let $B$ be another element of $SO_{3}$, and let $u' = Bu$. The conjugate $M'=BMB^{T}$ represents the rotation $\rho _{(u',\alpha)}$.\\
+\par
+\textbf {\textsc{7.4 The Class Equation of the Icosahedral Group}}
+\par
+Let $\theta=2\pi / 3$. Rotation by $\theta$ about a vertex $v$, represented by $\rho_{(v,\theta)}$, $\in I$, the icosahedral group (the group of rotational symmetries of a dodecahedron). If $v'$ is another vector, then rotation about this vector, represented by $\rho_{(v',\theta)}$ can be related to the rotation $\rho_{(v,\theta)}$ if in accordance with corollary 5.1.28, we could find a suitable $B$. But the vertices form different orbits under a given rotation. To transform $v$ to $v'$, both simply need to be in the same orbit for some rotation $\rho$ and this indeed happens, as can be seen geometrically (and can also be derived with mathematical rigour). However, it's easier to note that the 20 vertices of a dodecahedron, form a single orbit under the action of I. So always, $\exists$ a $B \in I$ s.t. $v'=Bv$.\\
+The interest in this discussion arises form the conjugation relation between rotations. The existence of $B$ makes $\rho{(v,\theta)}$ and $\rho{(v',\theta)}$ conjugate elements. So if we take a rotation $\rho{(v,\theta)}$ and conjugate it with any element $B \in I$, then the result is also a rotation. Similarly if we take a vertex $v$ and operate it with all $B$, it generates the orbit of order 20. Since the only spins that can represent the same rotation as $(v,\theta)$ must be $(-v,-\theta)$ and since $-\theta \neq \theta$, therefore the number of elements in the conjugacy class of $\rho{(v,\theta)}$ is same as the number of elements in the orbit of $v$ under action of $I$, viz. $20$.
+\par
+Using the same analysis, we can take $\theta = 2\pi / 5$ for faces and conclude with the same reasoning, the number of elements in its conjugacy class to be $12$. When $\theta = \pi$ for centre of edges, we can use the same reasoning, but taking caution to account for the fact that rotation by $\pi$ is the same as rotation by $-\pi (=-\pi + 2 \pi =\pi)$. So the number of distinct rotation elements will be half the number of edges, viz. $15$.
+\par
+{\bf Find out: } Why do we have $\theta = 4\pi / 5$ included without which the count goes wrong. And why don't we have other angles, since $4\pi/5$ is a multiple of $2\pi/5$.
+\par
+The class equation of the icosahedral group then becomes\\
+\begin{equation}
+60 = 1 + 20 + 12 + 12 + 15
+\label{IcosahedralClass}
+\end{equation}
+\par
+\textsc {Simple Groups}
+\par
+Groups that do NOT contain proper normal subgroups, i.e. no normal subgroup other than $<1>$ and $G$.\\
+Cyclic groups of prime order don't contain any proper subgroup and are hence simple.
+\par
+\textsc {Lemma 7.4.2 } Let $N$ be a normal subgroup of a group $G$.
+\begin{enumerate}
+\item If $x \in N$ then, $C(x) \in N$ (by definition of normal subgroup and conjugacy class)
+\item $N$ is a union of conjugacy classes (for each element, there would be a conjugacy class)
+\item The order of $N$ is sum of order of the constituent conjugacy classes. (summing the number of elements)
+\end{enumerate}
+\par
+\textsc {Theorem 7.4.3 } The icosahedral group I is a simple group.
+\par
+Let's assume there exists a proper normal subgroup of $I$. It's order must be a proper divisor of $60$. Further, as follows from the lemma, the order of the subgroup must equal the sum of some of the terms on the RHS of \ref{IcosahedralClass}, but necessarily including the term $1$ (order of conjugacy class of the identity element). A look at the elements reveals that the sum can't be made divisible. Thus the assumption was wrong, the group must be simple.\\
+\par
+\begin{flushright} {\small July 9, 2012} \end{flushright}
+<I have skipped a big chunk for I didn't have computer access when I studied it>\\
+\textsc {post Theorem 7.5.4 (statement) } $A_{2}$ is trivial, $A_{3}$ is cyclic with prime order, only elements being $({\bf 1\,2\,3})$ and $({\bf 1\,3\,2})$ apart from identity, so it contains no subgroup, let alone a normal subgroup. $A_{4}$ has a kernel for homomorphism from $S_{4} \rightarrow S_{3}$ which lies in the alternating group, and is hence a proper normal subgroup (see 2.5.13). This makes $A_{4}$ a non-simple group.
+\par
+\textsc {Lemma 7.5.5}
+\begin{enumerate}
+\item For $n \geq 3$, $A_{n}$ is generated by 3-cycles.
+\item For $n \geq 5$, the three cycles form a single conjugacy class in $A_{n}$
+\end{enumerate}
+\begin{proof}
+The first is supposed to be anologous to the method of row reduction. Given any even permutation $p$, not the identity, that fixes $m$ of the indices, we can left multiply a suitable 3-cycle $q$, so that the product $qp$ fixes atleast $m+1$ indices. Don't worry we haven't yet shown this. It can be easily understood by considering the following. 
+\par
+Let $p$ be a permutation, other than identity. Now it will either contain a k-cycle with $k \geq 3$ or a product of atleast two 2-cycles. Since numbering the indices doesn't change anything, we suppose $p=({\bf 1\,2\,3\,...\,k})...$ or $p=({\bf1\,2})({\bf3\,4})...$. Now let $q=({\bf 3\,2\,1})$. Calculate $qp$ and you'll see something startling. The product fixes the index {\bf 1}. Why that works can be observed from the simple fact that whatever {\bf1} is mapped to in $p$, gets mapped back to {\bf 1} in $q$. That simple!
+\par
+Now for the second, more interesting part. Suppose $n \geq 5$. Now we've to show that for a given $q$ say $({\bf1\,2\,3})$, the conjugacy class is contained in $A_{n}$. What we already know is that $C(q) \in S_{n}$. So for some other 3-cycle, $q'$, $\exists\,\,p$, s.t. $q'=pqp^{-1}$. Now $p$ can either be even or be odd. If it's even, then $p \in A_{n}$. However if $p$ is odd, then we need to come up with some element $p' \in A_{n}$ (basically p' is even) such that $p'qp'^{-1} = q'$.\\ Let $\tau =({\bf 4\,5})$ which $\in S_{n}$ since $n\geq 5$. It's clear that $\tau q \tau^{-1} = q$. Replace $q$ in the conjugation with the aforesaid equation and you'll get $q'=pqp^{-1}=p\tau q \tau ^{-1} p^{-1} = (p\tau) q (p\tau)^{-1}$. Since (and quite cleverly so), $p\tau$ is now even, we have shown that the entire conjugacy class $\in A_{n}$.
+\end{proof}
+\par
+
+% \theoremstyle{definition}
+% \newtheorem{sect}{Section}
+% \newtheorem{mydef}{Definition} 
+% \newtheorem{thm}{Theorem}[sect]
+% \begin{sect}{The Class Equation of the Icosahedral Group}
+% \end{sect}
+
+% \begin{thm}{Interesting Lemma}
+% For every $n \geq 5$, $A_{n}$ is a simple group.
+% \end{thm}
+
+\textsc {Theorem 7.5.4 } For every $n \geq 5$, $A_{n}$ is a simple group.
+\par
+\begin{proof}
+The proof is the perfect balance between interesting and simple. Look it in the book and there's really nothing much to explain, but its strategy is fairly interesting. <TODO: Complete this section should time permit>
+\end{proof}
+\begin{flushright} {\small July 10, 2012} \end{flushright}
+\textbf {\textsc {7.6 Normalizers }} The stabilizer of orbit of a subgroup $H$ of a group $G$ for the operation of conjugation by $G$ is called the normalizer of $H$, denoted by $N(H)$.
+\par
+$N(H) = {g\in G | gHg^{-1} = H}$
+\par
+\textsc {Proposition 7.6.3 } Let $H$ be a subgroup of $G$, and let $N$ be the normalizer of $H$. Then
+\begin{enumerate}[(a)]
+\item $H$ is a normal subgroup of $N$.
+\begin{proof} $gHg^{-1}=H\,\, \forall \,\,g \in N(H)$. And this follows from the definition of $ N(H) = \{ g \in G \,\,|\,\, gHg^{-1}=H $ \}
+\end{proof}
+\item $H$ is a normal subgroup of $G$ if and noly if $N=G$
+\begin{proof} For $H$ to be a normal subgroup, $gHg^{-1}=H\,\, \forall \,\,g \in G$. So obviously, for that $N(H)=G$
+\end{proof}
+\item $|H|$ divides $|N|$
+\begin{proof}follows from (a)\end{proof}
+$|N|$ divides $|G|$
+\begin{proof}follows from the fact that $N(H)$ is a stabilizer of $H$, and the counting formula\end{proof}
+\end{enumerate}
+
+\textbf { \textsc {7.7 The Sylow Theorems}}
+\par
+{\small Notation used: $a \mid b$ means $a$ divides $b$. $a \nmid b$ means the negative of the statement.}
+\par
+\textsc {Sylow $p$-subgroups}
+\par
+Let $G$ be a group of order $n$, and let $p \mid n$ where $p$ is prime. Let $p^{e}$ be the largest power of $p$ that divides n, i.e.
+\begin{equation*}
+n=p^{e}m
+\end{equation*}
+where $m$ is an integer and $p \nmid m$. Subgroups $H$ of $G$ with order $p^{e}$ are called \emph {Sylow $p$-subgroups of G}. Invoking the counting formula for the Sylow $p$-subgroup shows that these subgroups are $p$-groups whose index in the group is not divisible by $p$.
+\par
+\textbf {\textsc {The Theorems}}
+\par
+Let $G$ be a finite group whose order is $n$. For a given prime $p$ if $p \mid n$, then
+\par
+\textsc {{\small Theorem 7.7.2} First Sylow Theorem } $G$ contains a Sylow $p$-subgroup.
+\par
+\textsc {{\small Theorem 7.7.4} Second Sylow Theorem } 
+\begin{enumerate}[(a)]
+\item The Sylow $p$-subgroups of $G$ are conjugate subgroups.
+\item Every subgroup of $G$ that is a $p$-group is contained in a Sylow $p$-subgroup.
+\end{enumerate}
+\par
+\textsc {{\small Theorem 7.7.6} Third Sylow Theorem } say $n=p^{e}m$, where $p \nmid m$ and let $s$ denote the number of Sylow $p$-subgroups. Then $s \mid m$ and $s \equiv 1 \mod{p}$, i.e. $s = kp + 1$, for some integer $k$.\\
+\par
+Before getting into their proofs, let us look at some corollaries.
+\par
+\textsc {Corollary 7.7.3 {\small of the First Sylow Theorem }}
+$G$ contains an element of order $p$.
+\begin{proof}
+Let $H$ be a Sylow $p$-subgroup. Consider an element $x \neq 1 \in H$. Since $G$ is finite, the subgroup $<x>$ (of $H$) will be finite. Also, the order of $x=|<x>|$. Invoking the counting formula, we know $|<x>|$ divides $|H|$. This means that order $x$ must also divide $|H|$. So order of $x$ must be a positive power of $p$, say $p^{k}$.\\
+Then $x^{p^{k}}=1$, which means $x^{p^{k-1}\times p}=1$ $\Rightarrow x^{p^{k-1}}$ has order $p$.
+\end{proof}
+\par
+\textsc {Corollary 7.7.5 {\small of the Second Sylow Theorem }} $G$ has exactly one Sylow $p$-subgroup if and only if that subgroup is normal.
+\begin{proof}
+Using the Second Sylow Theorem, its clear that since the $p$-subgroups are conjugates, if the conjugates are equal, i.e. $p$-subgroup is normal, then all $p$-subgroups would be the same. Hence exactly one $p$-subgroup would exist.
+\end{proof}
+\par
+Now we begin with two lemmas required for the proof of the first Sylow Theorem.
+\par
+\begin{flushright} {\small July 11, 2012} \end{flushright}
+\textsc {Lemma 7.7.9} Let $U$ be a subset of a group $G$. The order of the stabilizer Stab($[U]$) of $[U]$ for the operation of left multiplication by $G$ on the set of its subsets divides both of the orders, $|U|$ and $|G|$.
+\par
+Supplementary Explanation of the statement: Carefully understand section 6.10 (Operations on Subsets), everything used here, including notation makes perfect sense. If it doesn't, read section 6.8 (The operation on Cosets). I got stuck here for a while until clarity was recovered or to be accurate attained.
+\begin{proof}
+If $H$ is a subgroup of $G$, the $H$-orbit of an element $u$ of $G$ for left multiplication by $H$ is the right coset $Hu$. Let $H$ be the stabilizer of $[U]$. [{\bf Doubt |} What is the bracket notation supposed to mean? Is this the set of subsets? {\bf Clarification} The bracket notation implies $U$ is considered an element of the set of subsets.] Then multiplication by $H$ permutes the elements of $U$, so $U$ is partitioned into $H$-orbits, which are right cosets (why that happens is because if an element say $u_{1} \in U$ can be changed into another, say $u_{2} \in U$ by left multiplication by some $h \in H$, both would belong to the same orbit. If for no $h \in H$ this happens, then, they, despite being in the same set, would lie in different orbits). Now since each coset has order $|H|$, thus each orbit has order $|H|$. Now since orbits partition the set, and since each orbit is of the same size, $|U|=|$orbit$|\times ($number of orbits$)=|H|\times($number of orbits$)$, we know $|H|$ divides $|U|$. And since $H$ is a subgroup, by the counting formula (or more specifically, by Lagrange's Theorem) $|H|$ divides $|G|$.
+\end{proof}
+\textsc {Lemma 7.7.10} Let $n$ be an integer of the form $p^{e}m$, where $e>0$ and $p$ doesn't divide $m$. The number $N$ of subsets of order $p^{e}$ in a set of order n is not divisible by $p$.
+\begin{proof}
+$N$ is basically $^{n}C_{p^{e}}$ which is \\
+\begin{equation*}
+\left( \begin{array}{c}
+n\\
+p^{e} \end{array} \right) = \frac{n \, (n-1) \, ... \, (n-k) \, ... \, (n-p^{e}+1)}{p^{e}(p^{e}-1)\, ... \, (p^{e}-k)\, ... \, 1 }
+\end{equation*}
+$N \not \equiv 0 \mod{p}$ simply because every time $p$ divides a term $(n-k)$ in the numerator of $N$, it divides the term $(p^{e}-k)$ of the denominator just as many times (proved in just a moment).
+\par
+So for those who still don't understand why it makes any difference, consider $q$, $f_{1}$ and $f_{2}$ s.t. $p \nmid f_{1}$, $(n-k)=p^{q}f_{1}$ and $(p^{e}-k)=p^{q}f_{2}$ since the second term is divisible by $p$ as many times as the first. Now when you divide these, viz. first over the second, the result no longer has $p$ in the numerator and is hence not divisible by $p$ and since this happens for all possible numerator terms divisible by $p$, $p \nmid N$.
+\par
+Now for the proof of the statement, write $k$ as $p^{i}l$, where $p \nmid l$, then $i<e$. Replace this for $k$ and it makes both terms divisible by $p^{i}$ but not by $p^{i+1}$ [{\bf Find Out } Why the second assertion and how?]
+\end{proof}
+\begin{flushright} {\small July 12, 2012} \end{flushright}
+We are now ready to prove the first Sylow theorem. Lets start.
+\begin{proof}[Proof of the First Sylow Theorem]
+What is given in Artin, is straight forward, yet for confirming I have understood, I am redoing the proof.
+\par
+\textsc {Strategy } We start by considering the set $\mathcal S$ of all subsets of $G$ of order $p^{e}$. If the theorem were assumed true, then one of these subsets will be the Sylow's $p$-subgroup. However, instead of finding this explicitly directly, we show that for some element of $\mathcal S$, say $[U]$, the stabilizer would have order $p^{e}$ and gotchya, that would be the Sylow's $p$-subgroup we intended to find.
+\par
+First thing we note here is that according to Lemma 7.7.9, we know that p will not divide the order of $\mathcal S$. Now we split the set $\mathcal S$ into orbits for the group action of left multiplication by $G$. Since orbits partition the set, we have
+\begin{equation*}
+N \text{ (as in the lemma) } = |S| = \sum\limits_{\text{orbits } O} |O|
+\end{equation*}
+Now obviously, at least one orbit must have an order which is not divisible by $p$. Let that orbit be $O_{[U]}$ of the element $[U] \in \mathcal S$. Let $H$ be the stabilizer of $[U]$. Now using the counting formula for orbit and stabilizer, we have $|G|=p^{e}m=|H|.|O_{[U]}|$. Since $|O_{[U]}|$ is not divisible by $p$, it must equal $m$ according to the equation. Thus, $|H|$ must be equal to $p^{e}$ and therefore $H$ my friend is the Sylow's $p$-subgroup.
+\end{proof}
+
+Before moving to the proof of the second Sylow's theorem, there's a `pseudo' lemma which is elementary, but must be proven for avoiding any confusion. It's as follows.
+\par
+\textsc {{\small Theorem 7.3.2} The Fixed Point Theorem } Let $G$ be a $p$-group and let $S$ be a finite set on which $G$ operates. If the order of $S$ is not divisible by $p$, there is a fixed point for the operation of $G$ on $S$ viz. $\exists$ a point $s$ whose stabilizer is the whole group.
+\begin{proof}
+Basically the proof requires the use of both counting formulae. The first says $|G|=$|stabilizer||orbit|. Now $|G|=p^{e}$ for some $p$ and $e$. The order of an orbit must be a number and therefore |stabilizer| would be a power of prime, and consequently, |orbit| would be $p^{k}$ for some $k\leq e$. So |orbit| is either 1 or a multiple of $p$.\\
+Using the next formula, we break the set $S$ into orbits. We have
+\begin{equation*}
+\begin{array}{c}
+|S|=|O_{1}|\,+\,|O_{2}|\,+\,|O_{3}|\,+\,...\\
+\\
+=\sum{\text{(orbits whose orders are multiples of }p)} + \sum{\text{(orbits with order 1)}}
+\end{array}
+\end{equation*}
+Now since $|S|$ is not divisible by $p$, there must be at least one orbit with order 1. The stabilizer of this orbit will have order $p^{e}$ and must thus be the whole group. Therefore there must be at least one element in $S$ that is fixed under the action of $G$.
+\end{proof}
+Now we are good to go.
+\begin{proof}[Proof of the Second Sylow Theorem] Basically same proof as Artin's, with different language and the `obvious' unsaid part explained
+\par
+\textsc {Strategy } For a given $p$-subgroup, say $K$ and Sylow $p$-subgroup, say $H$, both of $G$, we'll show that $K$ is contained in a conjugate $H'$ of $H$. That would prove part (b). For part (a), if $K$ is a Sylow $p$-subgroup, then $K$ equals $H'$ since $H'$ contains $K$ and both have the same order.
+\par
+We start with listing 3 desired properties of a subset of $G$, say $\mathcal C$. 
+\begin{enumerate}[(a)]
+\item $\mathcal |C|$ should not be divisible by $p$
+\item Operation of $G$ on $\mathcal C$ should be transitive
+\item $\mathcal C$ should contain an element, say $c$, whose stabilizer is $H$
+\end{enumerate}
+Now we must show that such a set exists. Well, the \emph{set} of left cosets of $H$, possesses all 3 properties. We better confirm that.
+\begin{enumerate}[(a)]
+\item The counting formula says $|G|=|H|$|number of cosets of $H$|\\
+And by definition of $\mathcal C$, we have |number of cosets of $H$|=$| \mathcal C|$\\
+Since by definition of Sylow $p$-subgroup, if we let $|G|=p^{e}m$, where $p \nmid m$, then $|H|=p^{e}$, therefore $| \mathcal C|$ is $m$ which means its not divisible by $p$.
+\item Any coset of $H$ can be written as $gH$ for some $g \in G$. Thus for the action of $G$, all cosets of $H \in$ the same orbit. Thus, the action is transitive.
+\item Every element of $h \in H$ is stabilized by $H$ because $H$ is a group. So the element $c \in \mathcal C$ which is fixed by $H$ is $[H]$.
+\end{enumerate}
+\par
+Now the magic. Restrict the group action of $G$ to the $p$-subgroup $K$. Since $K$ is a $p$-subgroup, and $p$ doesn't divide $| \mathcal C|$ (property (a)), we can invoke the fixed point theorem to conclude that under the action of $K$, $\exists\,c' \in \mathcal C$ which remains fixed. \\
+Also, the operation of $G$ is transitive on $\mathcal C$ (property (b)), therefore, $c'=gc$ for some $g \in G$. We also know that $H$ is the stabilizer of $c$ (property (c)), therefore $gHg^{-1}=H'$ (say) stabilizes $gc$ which is $c'$ itself (you can quickly verify this by seeing $gHg^{-1}gc=gHc=gc=c'$). Therefore, $H'$ contains $K$!
+\end{proof}
+
+\begin{proof}[Proof of the Third Sylow Theorem] This theorem has become very close to my heart, at least temporarily. Reason is a confusion which initiated because of my foolish assumption, viz. cosets are subgroups. Don't make that mistake and the proof would appear natural.
+\par
+As before, let $|G|=p^{e}m$ where $p \nmid m$. Let $H$ be a Sylow $p$-subgroup. From the counting formula, we can see that $m$ is the number of cosets of $H$, which is the same as the index $|G:H|$. So we have,
+\begin{equation}
+m=[G:H]=\frac{|G|}{|H|}
+\label{third_1}
+\end{equation}
+Let $S$ denote the set of Sylow $p$-subgroups and let $s=|S|$, the number of Sylow $p$-subgroups. Now the stabilizer of a particular Sylow $p$-subgroup, say $[H]$ would be the normalizer $N(H)$, since according to the second Sylow theorem, the Sylow $p$-subgroups are conjugates. Also, $H$ is a normal subgroup of $N(H)$. This means $|H|$ divides $|N(H)|$, viz. 
+\begin{equation}
+|N(H)| \equiv 0 \mod{|H|}
+\label{third_2}
+\end{equation}
+Now the number of Sylow $p$-subgroups, say $s$, would equal the number of elements in the conjugacy class of $H$. The stabilizer of $H$ under conjugation is $N(H)$ by definition. Using the orbit-stabilizer counting formula, we have,
+\begin{equation}
+s=[G:N(G)]=\frac{|G|}{|N(H)|}
+\label{third_3}
+\end{equation}
+Using equations \ref{third_1}, \ref{third_2} and \ref{third_3}, we have
+\begin{equation*}
+m \equiv 0 \mod{s}
+\end{equation*}
+So this proves the first part, viz. $s$ divides $m$. The next part requires us to show that $s \equiv 1 \mod{p}$. We proceed by breaking $S$, the set of all Sylow $p$-subgroups, into $H$-orbits, for the action of conjugation by $H$. Now since $H$ is p-group, the order of any $H$-orbit should be a power of $p$. When the power is zero, the order will be 1, implying $H$ fixes the element. One such element is $[H]$. If we are able to show that it is the only element, then we'll have
+\begin{equation*}
+s=\sum (\text {multiples of } p) + 1
+\end{equation*}
+and therefore
+\begin{equation*}
+s \equiv 1 \mod{p}
+\end{equation*}
+Say $H$ stabilizes another element of $S$, namely $[H']$. Then $H \in N(H')$. Also, $H' \in N(H')$. Using the second theorem for Sylow-$p$-subgroups $H$ and $H'$ in $N(H')$ (whose order is greater than $p^{e}$ since it contains $H$, and is also divisible by $p$ as follows from the counting formula), $H$ must be expressible as a conjugate of $H'$, viz. $H=nH'n^{-1}$ for some $n \in N(H')$. However, $H'$ is normal in $N(H')$, hence $H=nn^{-1}H'=H'$. Thus $[H]$ is the only element stabilized by $H$. And that concludes the proof.
+\end{proof}
+\begin{flushright} {\small July 13, 2012} \end{flushright}
+\textbf {\textsc {7.9 The Free Group}}
+\vspace{500pt}
+\hrule
+\vspace{12pt}
+\begin{center}
+{\textsc {Remarks}}
+\end{center}
+
+\begin{flushright} {\small July 11, 2012} \end{flushright}
+Lemma 7.7.9 and 7.7.10 despite being fairly elementary, did help me clearly understand the basics from the previous chapter, till the very last moment of documenting them.
+\par
+Why can't I see the obvious easily?\\
+<TODO: Quote instances>
+\begin{enumerate}
+\item The main argument of Lemma 7.7.10
+\end{enumerate}
+\vspace{12pt}
+\hrule
+
+\end{document}
