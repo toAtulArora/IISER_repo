@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  14 DEC 2012 19:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  14 DEC 2012 19:49
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Winters_2012/QuantumMechanics/Chap
 ter1/chapter1.tex
@@ -461,28 +461,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 298.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 298.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+[5] [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Winters_2012\QuantumMechanics\Chap
 ter1\chapter1.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 298.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 298.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: D2DA6D5EA49C868CB0FEF3784540FCC7;664.
+(rerunfilecheck)             Checksum: AEF0D7C441033B7F012493D049D2D1AC;747.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 298.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 305.
  ) 
 Here is how much of TeX's memory you used:
- 7464 strings out of 494045
- 105915 string characters out of 3148366
+ 7468 strings out of 494045
+ 105974 string characters out of 3148366
  204697 words of memory out of 3000000
- 10591 multiletter control sequences out of 15000+200000
+ 10592 multiletter control sequences out of 15000+200000
  22688 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,18n,32p,1034b,519s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -506,9 +506,9 @@ lic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 sy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on chapter1.pdf (5 pages, 187597 bytes).
+Output written on chapter1.pdf (6 pages, 189784 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
