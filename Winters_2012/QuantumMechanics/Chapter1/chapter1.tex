@@ -254,7 +254,44 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 					\end{equation}
 					We are almost there. Now consider the case when $a' \ne a''$, so that $a'-a''^* \ne 0$ in general. Then for the LHS to be zero, we must have $\inpr {a''}{a'}=0$. So this proves that all eigenkets of $A$ are mutually orthogonal. Next, if $a' = a''$, then since $\inpr {a'}{a'} \ge 0$, and the equality holds only if $\ket {a'}$ is a null ket, which it is not, therefore we must have $a'-a'^* = 0 \Rightarrow a'$ is real.
 				\end{proof}
-			
+				It is conventional to normalize the eigenkets to make them into an \emph{orthonormal} set as 
+				\begin{equation}
+					\inpr {a''} {a'} = \delta_{a'',a'}
+				\end{equation}
+				where $\delta_{a'',a'}$ represents the Kronecker Delta function.\\
+				Further, from our assumption, the eigenkets span the eigenspace for a given operator $A$.\\
+			\subsubsection{Eigenkets as Base Kets}
+				Since the entire ket space can be represented by the eigenkets of $A$, we thus have
+				\begin{equation}
+					\ket \alpha = \sum_{a'} c_{a'}\ket{a'}
+				\end{equation}
+				To find the co-efficient $c_{a''}$, we just left multiply, both sides of the equation with $\bra {a''}$ to get
+				\begin{equation}
+					\inpr {a''}{\alpha} = c_{a''}
+				\end{equation}
+				(we've used the orthonormality of the eigenkets here)\\
+				We thus also have
+				\begin{align}
+					\ket \alpha &= \sum_{a'} \ket {a'} \inpr {a'}{\alpha} \\
+								&= \sum_{a'} (\ket {a'} \bra {a'}) \ket{\alpha} \\					
+					\Rightarrow \sum_{a'} {\ket {a'} \bra{a'}} &= 1 &\text{(as $\ket \alpha$ is arbitrary)} \label{1_3_closure}
+				\end{align}
+				Equation \ref{1_3_closure} is known as the \emph{completeness relation} or \emph{closure}.\\
+				Consider the following application of the completeness relation;
+				\begin{align}
+					\inpr \alpha \alpha &= \ket \alpha \left( \sum_{a'} \bra {a'} \ket {a'} \right) \bra \alpha \\
+					 					&= \sum_{a'} (\inpr{a'}{\alpha}^2) = \sum_{a'} c_{a'}^2\\
+					 					&= 1 								&\text{(if $\ket \alpha$ is normalized)}
+				\end{align}
+				Which easily proves a remarkable relation, with a smell of similarity with probabilities.\\
+				We now declare the outer product $\ket {a'} \bra {a'}$ as the \emph{projection operator} along the ket $\ket {a'}$ and denote it by $\Lambda_{a'}$. Equation \ref{1_3_closure} can now be expressed as
+				\begin{equation}
+					\sum_{a'} \Lambda_{a'} = 1
+				\end{equation}
+				We now justify the word projection;
+				\begin{equation}
+					\Lambda_{a'} \ket \alpha = \ket {a'} \inpr{a'}{\alpha} = c_{a'}\ket {a'}
+				\end{equation}
 \vspace{12pt}
 \hrule
 
