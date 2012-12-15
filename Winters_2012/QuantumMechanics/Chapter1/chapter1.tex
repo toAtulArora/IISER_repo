@@ -62,6 +62,8 @@
 \def\ket#1{|#1 \rangle}
 %inner product
 \def\inpr#1#2{\langle #1|#2 \rangle}
+%outer product
+\def\oupr#1#2{| #1 \rangle \langle #2 |}
 %bracket
 \def\braket#1#2#3{\langle#1|#2|#3\rangle}
 %hermitian adjoint
@@ -209,7 +211,11 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 
 						\end{enumerate}
 					\item Since $(\bra \beta ) (X \ket \alpha ) = (\bra \beta X ) (\ket \alpha)$, we denote it by a simpler notation $\braket \beta X \alpha$.\\
-					Now we claim $\braket \beta X \alpha = \braket \alpha {\ha X} \beta ^*$
+					Now we claim 
+					\begin{equation}
+						\braket \beta X \alpha = \braket \alpha {\ha X} \beta ^*
+						\label{hermitian_adjoint_operator}
+					\end{equation}
 					\begin{proof}
 						We know that $\inpr a b \dc \inpr b a$ and that $X \ket \alpha \dc \bra \alpha \ha X$. Let $X \ket \alpha = \ket \gamma$ thus
 						\begin{align*}
@@ -296,9 +302,138 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				We can write the operator $X$ as 
 				\begin{equation}
 					X=\sum_{a''} \sum_{a'} \ket {a''} \bra {a''} X \ket {a'} \bra {a'}
-				\end{equation}			
+				\end{equation}
+				by invoking the closure property as described earlier.
 			\begin{flushright} {\small December 15, 2012} \end{flushright}
-				If there're $N$ eigenkets for the space of $X$, thus there would be $N^2$ $\bra{a''} X \ket {a'}$ elements. 
+				If there're $N$ eigenkets for the ketspace of $X$, thus there would be $N^2$ $\bra{a''} X \ket {a'}$ elements. These terms can be written explicitly in an $N\times N$ matrix, which \emph{represents} the operator.
+				\begin{equation}
+				X \doteq
+				\left(
+				\begin{array}{ccccc}
+					\braket{a^{(1)}}X{a^{(1)}} & \braket{a^{(1)}}X{a^{(2)}} & \braket{a^{(1)}}X{a^{(3)}}  & .. & ..\\
+					\braket{a^{(2)}}X{a^{(1)}} & \braket{a^{(2)}}X{a^{(2)}} & \braket{a^{(2)}}X{a^{(3)}}  & .. & ..\\
+					\braket{a^{(3)}}X{a^{(1)}} & \braket{a^{(3)}}X{a^{(2)}} & \braket{a^{(3)}}X{a^{(3)}}  & .. & ..\\
+					.. & .. & .. & . \\
+					.. & .. & .. &  & . \\
+				\end{array}
+				\right)
+				\end{equation}
+				We already know from Equation \ref{hermitian_adjoint_operator} then, that 
+				\begin{equation}
+					\braket{a''}X{a'} = \braket{a'}{\ha X}{a''}^*
+				\end{equation}
+				{\bf Uncertain} (not the uncertainty principle) [ Given the matrix form of an operator, we can write the matrix for it's Hermitian adjoint by taking the complex conjugated transpose of the given matrix, with $\ha X$ instead of $X$, as described by the equation. ] \\
+				Interestingly enough, the definition conforms with the laws of matrix multiplication to yield the corresponding operator multiplication. Take for instance
+				\begin{equation}
+					Z = XY
+				\end{equation}
+				Each element in the matrix representation of $Z$ can then be written as
+				\begin{equation}				
+					\braket{a^{\text{row}}}{XY}{a^{\text{column}}}
+				\end{equation}
+				We can introduce using closure the following without affecting equality
+				\begin{equation}
+					=\sum_{a'} \braket{a^{\text{row}}}{X \oupr{a'}{a'} Y}{a^{\text{column}}}				
+				\end{equation}
+				Which is precisely the matrix multiplication operation.
+				\par
+				Let us now talk about the matrix represenation of a ket $\ket \alpha$, begin acted upon by an operator like so
+				\begin{equation}
+					\ket \gamma = X \ket \alpha
+				\end{equation}
+				Now to find the co-efficients of $\ket \gamma$ with respect to the eigenkets, we simply need to multiply the equation on the left by $\bra {a'}$ to obtain
+				\begin{equation}
+					\inpr {a'}\gamma = \braket {a'} X  \alpha
+				\end{equation}
+				We again use the same trick of closure, and rewrite the equation as
+				\begin{equation}
+					\inpr {a'}\gamma = \sum_{a'} \braket {a'} {A \ket {a''} \bra {a''}}  \alpha
+				\end{equation}
+				A closer look confirms the hunch that this is a square matrix multiplied by a row matrix. If we define the following representations
+				\begin{equation}
+				\ket \gamma \doteq
+				\left(
+				\begin{array}{c}
+					\inpr{a^{(1)}}\gamma \\
+					\inpr{a^{(2)}}\gamma \\
+					\inpr{a^{(3)}}\gamma \\
+					.. \\
+				\end{array}
+				\right)
+				\end{equation}
+
+
+				\begin{equation}
+				\ket \alpha \doteq
+				\left(
+				\begin{array}{c}
+					\inpr{a^{(1)}}\alpha \\
+					\inpr{a^{(2)}}\alpha \\
+					\inpr{a^{(3)}}\alpha \\
+					.. \\
+				\end{array}
+				\right)
+				\end{equation}
+				then the operation of $X$ on $\ket \alpha$ is simply a matrix multiplication;
+				\begin{equation}
+					\ket \gamma = X \ket \alpha
+				\end{equation}
+				Similarly, we have for a bra, given
+				\begin{equation}
+					\bra \gamma = \bra \alpha X
+				\end{equation}
+				the following
+				\begin{equation}
+					\inpr \gamma {a'} = \sum_{a''} \inpr {\alpha}{a''} \braket {a''}X{a'}
+				\end{equation}
+				This looks like a row (not a column) multiplied by a square matrix, which similar to kets, inspires the following representation definitions, for it to indeed be the case
+				\begin{equation}
+					\bra \gamma \doteq \left( \inpr \gamma {a^{(1)}}, \inpr \gamma {a^{(2)}}, \inpr \gamma {a^{(3)}}, ... \right)
+					=\left( \inpr {a^{(1)}} \gamma ^*, \inpr {a^{(2)}} \gamma ^*, \inpr {a^{(3)}} \gamma ^*, ... \right)
+				\end{equation}
+				and similarly
+				\begin{equation}
+					\bra \alpha \doteq \left( \inpr {a^{(1)}} \alpha ^*, \inpr {a^{(2)}} \alpha ^*, \inpr {a^{(3)}} \alpha ^*, ... \right)
+				\end{equation}
+				\par
+				With that done, let's talk about the inner product $\inpr \beta \alpha$ and see if it is consistent with our representations of Bras and Kets as described here. We have
+				\begin{align}
+					\inpr \beta \alpha 	&= \bra \beta \ket \alpha \\
+										&= \sum_{a'} \bra \beta \ket {a'} \bra {a'} \ket \alpha
+				\end{align}
+				which is precisely, the row representation of $\bra \beta$ times the column representation of $\ket \alpha$. Also observe if we multiply corresponding representation of $\bra \alpha$ with that of $\ket \beta$, we obtain the complex conjugate of $\inpr \beta \alpha$ as represented above; consistent with the fundamental property of the inner product.
+				\par
+				The last representation of the section, will be that of the outer product (an operator), which is given by an $N\times N$ matrix, as we now multiply a column matrix $N\times 1$ with a row matrix $1\times N$. We thus, quite simply have
+				\begin{equation}
+					\oupr \beta \alpha \doteq 
+					\left( 
+					\begin{array}{cccc}
+						\inpr{a^{(1)}}\beta^* \inpr{a^{(1)}}\alpha &\inpr{a^{(2)}}\beta^* \inpr{a^{(1)}}\alpha &\inpr{a^{(3)}}\beta^* \inpr{a^{(1)}}\alpha & .. \\
+						\inpr{a^{(1)}}\beta^* \inpr{a^{(2)}}\alpha &\inpr{a^{(2)}}\beta^* \inpr{a^{(2)}}\alpha &\inpr{a^{(3)}}\beta^* \inpr{a^{(2)}}\alpha & .. \\
+						.. & .. & ..
+					\end{array}
+					\right)
+				\end{equation}
+				(Note: The star is for complex conjugation, not multiplication!)\\
+				If the operator is observable, say $A$, and we try to represent it using it's own eigenkets, then we get
+				\begin{equation}
+					A = \sum_{a'}\sum_{a''} \oupr{a''}{a''} A \oupr{a'}{a'} 
+				\end{equation}
+				In here, observe that $\ket {a''}$ can be thought of as representing a column matrix of $1 \times N$, and $\bra {a'}$ as a row matrix of $N \times 1$, and therefore $\braket {a''}A{a'}$ should be represented by an $N \times N$ square matrix. Since $\ket {a'}$ and $\ket {a''}$ are eigenkets, thus we have
+				\begin{align}
+					\bra {a''} A \ket {a'} 	&= \bra {a''} a' \ket {a'}\\
+											&= \bra {a''} \ket{a'} a' \\
+											&= \inpr{a'}{a'} a' \delta_{a',a''} \\
+											&= a' \delta_{a',a''}
+				\end{align}
+				which basically shows the matrix is diagonal. Now going back, we have
+				\begin{align}
+					A 	&= \sum_{a'}\sum_{a''} \ket{a''} a' \delta_{a',a''} \bra{a'}
+						= \sum_{a'}\sum_{a''} \ket{a'} a' \delta_{a',a''} \bra{a'} \\
+						&= \sum_{a'}\sum_{a''} a' \ket{a'} \bra{a'}  \delta_{a',a''}
+						= \sum_{a'}\sum_{a''} a' \Lambda_{a'}  \delta_{a',a''}\\
+						&= \sum_{a'} a' \Lambda_{a'}
+				\end{align}
 \vspace{12pt}
 \hrule
 
