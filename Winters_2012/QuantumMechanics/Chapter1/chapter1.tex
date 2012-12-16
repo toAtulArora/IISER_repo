@@ -317,6 +317,7 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 					.. & .. & .. &  & . \\
 				\end{array}
 				\right)
+				\label{operator_matrix_representation}
 				\end{equation}
 				We already know from Equation \ref{hermitian_adjoint_operator} then, that 
 				\begin{equation}
@@ -337,7 +338,7 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				\end{equation}
 				Which is precisely the matrix multiplication operation.
 				\par
-				Let us now talk about the matrix represenation of a ket $\ket \alpha$, begin acted upon by an operator like so
+				Let us now talk about the matrix represenation of a ket $\ket \alpha$, being acted upon by an operator like so
 				\begin{equation}
 					\ket \gamma = X \ket \alpha
 				\end{equation}
@@ -373,6 +374,7 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 					.. \\
 				\end{array}
 				\right)
+				\label{ket_matrix_representation}
 				\end{equation}
 				then the operation of $X$ on $\ket \alpha$ is simply a matrix multiplication;
 				\begin{equation}
@@ -432,8 +434,81 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 						= \sum_{a'}\sum_{a''} \ket{a'} a' \delta_{a',a''} \bra{a'} \\
 						&= \sum_{a'}\sum_{a''} a' \ket{a'} \bra{a'}  \delta_{a',a''}
 						= \sum_{a'}\sum_{a''} a' \Lambda_{a'}  \delta_{a',a''}\\
-						&= \sum_{a'} a' \Lambda_{a'}
+						&= \sum_{a'} a' \Lambda_{a'} \label{observable_operators_expansion}
 				\end{align}
+				Note here, that the matrix representing the operator $A$ is both diagonal and real. Which implies that it's complex conjugated transpose will be identical to itself; which is consistent with $A$ being Hermitian.				
+			\subsubsection{Spin $\frac 1 2$ Systems}
+				\begin{flushright} December 17, 2012 \end{flushright}
+				Let the two eigenkets be $\ket +$ and $\ket -$. Then from the definition of the identity operator, we have
+				\begin{equation}
+					1 = (\oupr + + ) + (\oupr - -)					
+				\end{equation}
+				Now we can define the $S_z$ operator as
+				\begin{equation}
+					A = \frac \hbar 2 \left[ (\oupr + + ) -  (\oupr --) \right]
+					\label{operator_twostate}
+				\end{equation}
+				using equation \ref{observable_operators_expansion} and the eigenvalues for $\ket +$ and $\ket -$. We can easily find the eigenvalues using this expression for $A$, by simply multiplying the corresponding eigenket and invoking their orthonormality to get
+				\begin{equation}
+					A \ket \pm = \pm \frac \hbar 2 \ket \pm
+				\end{equation}
+				Before we try to represent them as matrices, let us first look at two more operators of interest in Quantum Mechanics (as we shall hopefully see later)
+				\begin{equation}
+					S_+ = \hbar \oupr + -
+				\end{equation}
+				This operator can be thought of as one that increases spin. If we operate this on $\ket -$ we get $\frac \hbar 2 \ket +$ and if we operate on $\ket +$, we get a Null ket; consistent with the idea, as $\ket +$ is already the highest spin in this system. Similarly we also have 
+				\begin{equation}
+					S_- = \hbar \oupr - +
+				\end{equation}
+				Now we come to the matrix representations. It is customary (or so I've been told) to write the highest angular momentum component first, in the row indices. So we therefore have from equation \ref{ket_matrix_representation},
+				\begin{align}
+				\ket + \doteq
+				\left(
+				\begin{array}{c}
+					1 \\
+					0
+				\end{array}
+				\right)
+				& &\ket - \doteq
+				\left(
+				\begin{array}{c}
+					0 \\
+					1
+				\end{array}
+				\right)
+				\end{align}
+				Using equation \ref{operator_matrix_representation}, we can write the matrices for all three operators discussed here;
+				\begin{align}
+				S_z \doteq
+				\frac \hbar 2
+				\left(
+				\begin{array}{cc}
+					1 &0 \\
+					0 &-1
+				\end{array}
+				\right)
+				& &S_+ \doteq
+				\hbar
+				\left(
+				\begin{array}{cc}
+					0 &1 \\
+					0 &0
+				\end{array}
+				\right)
+				& &S_- \doteq
+				\hbar
+				\left(
+				\begin{array}{cc}
+					0 &0 \\
+					1 &0
+				\end{array}
+				\right)
+				\end{align}
+				Observe that neither $S_+$ nor $S_-$ are hermitian (since their complex conjugated transpose aren't identical to themselves)\\
+				{\bf Doubt} Why is there $\hbar$ instead of $\displaystyle \frac \hbar 2$ in the spin increase/decrease operators?
+		\subsection{Measurements, Observables and the Uncertainty Relations}
+			\subsubsection{Measurements}
+				In the words of PAM Dirac ``A measurement always causes the system to jump into an eigenstate of the dynamical variable that is being measured''
 \vspace{12pt}
 \hrule
 
