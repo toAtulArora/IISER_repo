@@ -68,6 +68,8 @@
 \def\braket#1#2#3{\langle#1|#2|#3\rangle}
 %hermitian adjoint
 \def\ha#1{#1^\dagger}
+%expectation value
+\def\expval#1{\langle #1 \rangle}
 
 %Theorems one can use
 \newtheorem{theorem}{Theorem}
@@ -508,7 +510,32 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				{\bf Doubt} Why is there $\hbar$ instead of $\displaystyle \frac \hbar 2$ in the spin increase/decrease operators?
 		\subsection{Measurements, Observables and the Uncertainty Relations}
 			\subsubsection{Measurements}
-				In the words of PAM Dirac ``A measurement always causes the system to jump into an eigenstate of the dynamical variable that is being measured''
+				In the words of PAM Dirac ``A measurement always causes the system to jump into an eigenstate of the dynamical variable that is being measured'' Details have been omitted from the discussion, as we'd covered them in our prior course.\\
+				Postulate: 
+				\begin{equation}
+					\text{Probability of jumping into a particular state given by } \ket {a'} = \inpr {a'} \alpha ^2
+				\end{equation}
+				granted $\ket \alpha$ is normalized. \\
+				Definition: \emph{Expectation Value} of $A$ with respect to a state $\ket \alpha$ is given by
+				\begin{equation}
+					 \expval A \equiv \braket \alpha A \alpha
+				\end{equation}
+				We can use the closure property and obtain
+				\begin{align}
+					\expval A 	&= \sum_{a'}\sum_{a''} \inpr \alpha {a''} \braket {a''} A {a'} \inpr {a'} \alpha \\
+								&= \sum_{a'} a' \inpr {a'} \alpha ^2
+				\end{align}
+				We have used orthonormality of eigenkets, the fact that they are eigenkets, and that the inner products are complex numbers. This shows that the expectation value agrees with the notion of \emph{average measured value}.
+				\par
+				Note that expectation value is NOT identical to eigenvalues. For instance, for a spin $\frac 1 2$ system, for $S_z$ the eigenvalues can only be $+\hbar/2$ and $-\hbar/2$, whereas it's expectation value is a real number between $+\hbar/2$ and $-\hbar/2$.
+				\par
+				\emph{Pure Ensemble} is a collection of identically prepared physical systems, viz. all are characterized by the same ket, $\ket \alpha$. For instance, the $+ \hat z$ beam through an SG$\hat z$ apparatus.
+				\par
+				\emph{Selective Measurement} is a measurement that selects only one of the eigenkets of an observable, $A$, say $\ket a'$. Mathematically we can represent this by the projection operator on $\ket \alpha$ as
+				\begin{equation}
+					\Lambda_{a'}\ket \alpha = \ket {a'} \inpr{a'} \alpha
+				\end{equation}
+			\subsubsection{Spin $\frac 1 2$ Systems, Again}
 \vspace{12pt}
 \hrule
 
