@@ -534,8 +534,38 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				\emph{Selective Measurement} is a measurement that selects only one of the eigenkets of an observable, $A$, say $\ket a'$. Mathematically we can represent this by the projection operator on $\ket \alpha$ as
 				\begin{equation}
 					\Lambda_{a'}\ket \alpha = \ket {a'} \inpr{a'} \alpha
-				\end{equation}
+				\end{equation}				
 			\subsubsection{Spin $\frac 1 2$ Systems, Again}
+				\begin{flushright}{\small December 18-19, 2012}\end{flushright}
+				Recall the sequential Stern Gerlach experiments. Here we're interested in writing the $\hat x$ beam in terms of the $\hat z$ components, as it splits into two $z$ components, when passed through an SG $\hat z$ apparatus. 
+				We now use the mathematics developed so far, to determine the eigenkets of the $S_x$ operator, $\ket {S_x;\pm}$ in terms of the eigenkets $\ket \pm$ of the $S_z$ operator, previously discussed.
+				\par
+				We know that the intensities of both the $\pm \hat z$ beams is the same (after an $\hat x$ beam is passed through an SG $\hat z$ setup), thus on the basis of the postulates discussed, we must have
+				\begin{equation}
+					|\inpr{+}{S_x;+}|^2 = |\inpr{-}{S_x;+}|^2 = \frac 1 2
+				\end{equation}
+				{\bf Doubt} Why can't we say that the $\ket {S_x ; \pm}$ can be represented by $\ket {S_y; \pm}$? What's so special about $\ket {\pm}$?
+				{\bf Clarification} This will get dissolved as we proceed, and in-fact this is used.
+				\par
+				Keeping this in mind, we may write 
+				\begin{equation}
+					\ket {S_x; +} = \frac 1 {\sqrt 2} \ket + + \frac 1 {\sqrt 2} e^{i\delta} \ket {-}
+				\end{equation}
+				The imaginary part might seem a little strange just now, but hang on tight.
+				\par
+				We further need $\ket{ S_x \pm}$ to be orthogonal, viz. $\inpr {S_x;+}{S_x;-} = 0$. With this, we can write
+				\begin{equation}
+					\ket {S_x;-} = \frac 1 {\sqrt 2} \ket + - \frac 1 {\sqrt 2} e^{i\delta} \ket {-}
+				\end{equation}
+				(if it doesn't seem immediately obvious, try writing the dual conjugate of $\ket {S_x;+}$ and you'll be convinced)\\
+				Now since we know the eigenkets, we can easily write the operator using Equation \ref{observable_operators_expansion} to write
+				\begin{equation}
+					S_x =\frac \hbar 2 [ \oupr{S_x;+}{S_x;+} - \oupr{S_x;-}{S_x;-}]
+				\end{equation}
+				The arbitrary addition of $\hbar$ is to account for the eigenvalues, remember? Now we simply substitute (after taking the appropriate dual conjugates) and expand
+				\begin{align}
+					={\cancel{\frac{\oupr ++}2}}
+				\end{align}
 \vspace{12pt}
 \hrule
 
