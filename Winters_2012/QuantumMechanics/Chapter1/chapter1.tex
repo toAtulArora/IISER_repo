@@ -549,13 +549,13 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				\par
 				Keeping this in mind, we may write 
 				\begin{equation}
-					\ket {S_x; +} = \frac 1 {\sqrt 2} \ket + + \frac 1 {\sqrt 2} e^{i\delta} \ket {-}
+					\ket {S_x; +} = \frac 1 {\sqrt 2} \ket + + \frac 1 {\sqrt 2} e^{i\delta_1} \ket {-}
 				\end{equation}
 				The imaginary part might seem a little strange just now, but hang on tight.
 				\par
 				We further need $\ket{ S_x \pm}$ to be orthogonal, viz. $\inpr {S_x;+}{S_x;-} = 0$. With this, we can write
 				\begin{equation}
-					\ket {S_x;-} = \frac 1 {\sqrt 2} \ket + - \frac 1 {\sqrt 2} e^{i\delta} \ket {-}
+					\ket {S_x;-} = \frac 1 {\sqrt 2} \ket + - \frac 1 {\sqrt 2} e^{i\delta_1} \ket {-}
 				\end{equation}
 				(if it doesn't seem immediately obvious, try writing the dual conjugate of $\ket {S_x;+}$ and you'll be convinced)\\
 				Now since we know the eigenkets, we can easily write the operator using Equation \ref{observable_operators_expansion} to write
@@ -564,8 +564,22 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				\end{equation}
 				The arbitrary addition of $\hbar$ is to account for the eigenvalues, remember? Now we simply substitute (after taking the appropriate dual conjugates) and expand
 				\begin{align}
-					={\cancel{\frac{\oupr ++}2}}
+					&=\frac \hbar 2 \left({\cancel{\frac{\oupr ++}2}} + \frac {e^{-i\delta_1}} 2 \oupr + - + \frac {e^{i\delta_1}} 2 \oupr - + + {\cancel{\frac{\oupr --} 2}} \right) \\
+					&- \left({\cancel{\frac{\oupr ++}2}} - \frac {e^{-i\delta_1}} 2 \oupr + - - \frac {e^{i\delta_1}} 2 \oupr - + + {\cancel{\frac{\oupr --} 2}} \right) \\
+					&=\frac \hbar 2 \left[e^{-i\delta_1} \oupr + - + e^{i\delta_1}\oupr - + \right]
 				\end{align}
+				{\bf Doubt} The book at this stage says, `notice' that this operator is Hermitian. However, for me, this doesn't come across as obvious.\\
+				{\bf Clarification} It is rather obvious as can be easily seen by creating the matrix representation using the eigenkets $\ket {S_x; +}$ and $\ket {S_x; -}$, as was done for the general case earlier.
+				\par
+				On similar grounds we can write
+				\begin{equation}
+					\ket {S_y; +} = \frac 1 {\sqrt 2} \ket + + \frac 1 {\sqrt 2} e^{i\delta_2} \ket {-}
+				\end{equation}
+				\begin{equation}
+					\ket {S_y;-} = \frac 1 {\sqrt 2} \ket + - \frac 1 {\sqrt 2} e^{i\delta_2} \ket {-}
+				\end{equation}
+				{\bf Doubt} Why don't we make both parts imaginary? Why is only $\ket -$'s co-efficient complex with non-zero imaginary parts?
+				 
 \vspace{12pt}
 \hrule
 
