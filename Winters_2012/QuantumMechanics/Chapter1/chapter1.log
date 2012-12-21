@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  20 DEC 2012 13:26
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  21 DEC 2012 11:29
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Winters_2012/QuantumMechanics/Chap
 ter1/chapter1.tex
@@ -503,15 +503,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 538.
 
-[9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 586.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 586.
+[9] [10] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 648.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 648.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Winters_2012\QuantumMechanics\Chap
 ter1\chapter1.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 586.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 586.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 648.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 648.
 Package rerunfilecheck Info: File `chapter1.out' has not changed.
 (rerunfilecheck)             Checksum: 29F60D26DEFCE1401B3831F9E9BB6A8F;1085.
 
@@ -519,12 +519,12 @@ Package rerunfilecheck Info: File `chapter1.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 586.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 648.
  ) 
 Here is how much of TeX's memory you used:
- 7535 strings out of 494045
- 106921 string characters out of 3148366
- 205958 words of memory out of 3000000
+ 7561 strings out of 494045
+ 107247 string characters out of 3148366
+ 210958 words of memory out of 3000000
  10603 multiletter control sequences out of 15000+200000
  22688 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
@@ -540,20 +540,22 @@ en\ec\dpi600\ecrm1200.pk> <C:\Users\A. S. Aurora\AppData\Local\MiKTeX\2.9\fonts
 \pk\ljfour\jknappen\ec\dpi600\eccc1095.pk> <C:\Users\A. S. Aurora\AppData\Local
 \MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk> <C:\Users\A. S. Aur
 ora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc2488.pk><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on chapter1.pdf (10 pages, 241251 bytes).
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on chapter1.pdf (12 pages, 268198 bytes).
 PDF statistics:
- 556 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 602 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

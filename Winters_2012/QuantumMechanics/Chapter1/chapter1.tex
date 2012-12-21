@@ -578,8 +578,70 @@ Areas marked with a {\bf Doubt} or {\bf Find out} are ones I am not absolutely c
 				\begin{equation}
 					\ket {S_y;-} = \frac 1 {\sqrt 2} \ket + - \frac 1 {\sqrt 2} e^{i\delta_2} \ket {-}
 				\end{equation}
-				{\bf Doubt} Why don't we make both parts imaginary? Why is only $\ket -$'s co-efficient complex with non-zero imaginary parts?
-				 
+				{\bf Doubt} Why don't we make both parts imaginary? Why is only $\ket -$'s co-efficient complex with non-zero imaginary parts?\\
+				We now need another relation to find which $\delta_1$ and $\delta_2$ to use. And that relation is related to the doubt I had earlier. `Suppose we have a beam of spin $\frac 1 2$ atoms moving in the z-direction. We can consier a dequential Stern Gerlach experiment with SG$\hat x$ followed by SG$\hat y$.' Results of this experiment are analogous to the earlier case. Thus we have
+				\begin{equation}
+					|\inpr{S_y;+}{S_x;+}|^2 = |\inpr{S_y;-}{S_x;+}|^2 = \frac 1 2
+				\end{equation}
+				Now again, all we do is substitute after taking appropriate dual conjugations. We therefore have
+				\begin{align}
+					\bra {S_y; +} &= \frac 1 {\sqrt 2} \bra + + \frac 1 {\sqrt 2} e^{-i\delta_2} \bra {-} \\
+					\Rightarrow \frac 1 {\sqrt 2} 	&= 	\frac 1 2 \left|  1 + e^{i(\delta_1 - \delta_2)}\right| \\
+					\Rightarrow \sqrt 2 			&=	\left| 1 + \cos \phi + i\sin \phi \right|\\
+					\Rightarrow 2 					&=  \left| 1 + \cos \phi + i\sin \phi \right| ^ 2\\
+								 					&=  \left( 1 + \cos \phi + i\sin \phi \right) \left( 1 + \cos \phi - i\sin \phi \right) \\
+								 					&=  1 + \cos \phi - \cancel{i\sin\phi} + \cos \phi + \cos^2\phi - \cancel{i \cos\phi\sin\phi} + \cancel{i\sin\phi} + \cancel{i \sin \phi\cos\phi} + \sin^2\phi\\
+								 					&=2 + 2\cos\phi \\
+					\Rightarrow \cos \phi 			&= 0 \\
+					\Rightarrow \phi 				&= \pm \pi/2 \\
+					\Rightarrow \delta_1 - \delta_2 &= \pm \pi/2 \\
+					\Rightarrow \delta_2 - \delta_1 &= \pm \pi/2 \;\; \text{(in accordance with the text)}
+				\end{align}
+				We can now see that if the matrix elements of $S_x$ are real, then those of $S_y$ are complex (with non zero imaginary parts) and vice versa.\\
+				It is convenient to take the $S_x$ matrix elements to be real and to set $\delta_1=0$;\\
+				{\bf Unclear} $\delta_2$ can then be either $-\pi/2$ or $\pi/2$, which is an ambiguity caused by not specifying the coordinate system, viz. left handed or right handed.\\
+				So with this, we have finally,
+				\begin{align}
+					\ket {S_x;\pm} &= \frac 1 {\sqrt 2} \ket + \pm \frac 1 {\sqrt 2} \ket - \\
+					\ket {S_y;\pm} &= \frac 1 {\sqrt 2} \ket + \pm \frac i {\sqrt 2} \ket - \\					
+					S_x &= \frac \hbar 2 \left[ \oupr + - + \oupr - + \right]\\
+					S_y &= \frac \hbar 2 \left[ i\oupr + - + i\oupr - + \right]
+				\end{align}
+				We also observe that 
+				\begin{equation}
+					S_{\pm} = S_x \pm iS_y
+				\end{equation}
+				We define the \emph{commutator} as
+				\begin{equation}
+					[A,B] \equiv AB - BA
+				\end{equation}
+				and the \emph{anti-commutator} as
+				\begin{equation}
+					{A,B} \equiv AB + BA
+				\end{equation}
+				With minor calculations (which have been omitted here) we can easily show
+				\begin{equation}
+					[S_i,S_j] = i \epsilon_{ijk} \hbar S_k
+				\end{equation}
+				and also,
+				\begin{equation}
+					\{ S_i,S_j \} = \frac {\hbar^2} 2 \delta_{ij}
+				\end{equation}
+				From the anti-commutator relation, we have 
+				\begin{equation}
+					S_x^2 = S_y^2 = S_z^2 = \frac {\hbar^2} 4 \delta_{ij}
+				\end{equation}
+				and we can also define an operator $\bf S.S$ or $\bf S^2$ as
+				\begin{equation}
+					{\bf S}^2 \equiv S_x^2 + S_y^2 +S_z^2
+				\end{equation}
+				Observe how this operator is just the identity operator multiplied by a scalar. Thus we immediately have
+				\begin{equation}
+					[{\bf S}^2, S_i] = 0
+				\end{equation}
+				Note: Even though for spins higher than $\frac 1 2$, $\bf S^2$ is no longer identity, but the relation stated above still holds.
+				\begin{flushright} December 20 and 21, 2012\end{flushright}
+				
 \vspace{12pt}
 \hrule
 
