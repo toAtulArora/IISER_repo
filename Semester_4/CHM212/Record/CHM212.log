@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  17 JAN 2013 01:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  23 JAN 2013 21:10
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/CHM212.te
 x
@@ -221,6 +221,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks22
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
@@ -250,7 +254,7 @@ Package: suffix 2006/07/15 1.5 Variant command support
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
-\AC@clearlist=\toks22
+\AC@clearlist=\toks23
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
@@ -259,7 +263,7 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen113
 \extrarowheight=\dimen114
-\NC@list=\toks23
+\NC@list=\toks24
 \extratabsurround=\skip53
 \backup@length=\skip54
 )
@@ -269,7 +273,7 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@target=\dimen118
 \TX@delta=\dimen119
 \TX@cols=\count104
-\TX@ftn=\toks24
+\TX@ftn=\toks25
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
@@ -305,7 +309,7 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count113
 \lst@gtempboxa=\box29
-\lst@token=\toks25
+\lst@token=\toks26
 \lst@length=\count114
 \lst@currlwidth=\dimen127
 \lst@column=\count115
@@ -490,15 +494,15 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen134
 \Gin@req@width=\dimen135
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 198.
-Package hyperref Info: Option `linktocpage' set `true' on input line 198.
-Package hyperref Info: Option `breaklinks' set `true' on input line 198.
-Package hyperref Info: Option `pageanchor' set `true' on input line 198.
-Package hyperref Info: Option `plainpages' set `false' on input line 198.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 198.
+Package hyperref Info: Option `colorlinks' set `true' on input line 203.
+Package hyperref Info: Option `linktocpage' set `true' on input line 203.
+Package hyperref Info: Option `breaklinks' set `true' on input line 203.
+Package hyperref Info: Option `pageanchor' set `true' on input line 203.
+Package hyperref Info: Option `plainpages' set `false' on input line 203.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 203.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 198.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 198.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 203.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 203.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\classicth
 esis.sty"
@@ -536,7 +540,7 @@ Package: eulervm 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
 Package: microtype 2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
-\MT@toks=\toks26
+\MT@toks=\toks27
 \MT@count=\count131
 LaTeX Info: Redefining \lsstyle on input line 1597.
 LaTeX Info: Redefining \lslig on input line 1597.
@@ -604,7 +608,7 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \aftertitleunit=\skip63
 \ttl@plus=\dimen150
 \ttl@minus=\dimen151
-\ttl@toksa=\toks27
+\ttl@toksa=\toks28
 \titlewidth=\dimen152
 \titlewidthlast=\dimen153
 \titlewidthfirst=\dimen154
@@ -690,6 +694,12 @@ matter/Acknowledgments.aux")
 matter/Contents.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment01.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment02.aux"
+
+LaTeX Warning: Label `1A_slides' multiply defined.
+
+)
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
 matter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -742,12 +752,12 @@ t")
 \scratchbox=\box33
 \nofMPsegments=\count141
 \nofMParguments=\count142
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count143
 \MPscratchDim=\dimen156
 \MPnumerator=\count144
 \makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks30
 )
 LaTeX Info: Redefining \microtypecontext on input line 32.
 Package microtype Info: Generating PDF output.
@@ -762,7 +772,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
-matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=63, 65.33208pt x 69.3792pt>
+matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=95, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -857,6 +867,12 @@ Overfull \hbox (11.04105pt too wide) in paragraph at lines 5--5
 ]  
  []
 
+
+Overfull \hbox (26.25131pt too wide) in paragraph at lines 7--7
+ [][] []\T1/pplj/m/n/10.95 Diagrammatic rep-re-sen-ta-tion of the test setup []
+  
+ []
+
 )
 \tf@lof=\write5
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
@@ -903,7 +919,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-[2] <gfx/e1_1.jpg, id=154, 642.4pt x 481.8pt>
+[2] <gfx/e1_1.jpg, id=200, 642.4pt x 481.8pt>
 File: gfx/e1_1.jpg Graphic file (type jpg)
  <use gfx/e1_1.jpg>
 Package pdftex.def Info: gfx/e1_1.jpg used on input line 71.
@@ -915,6 +931,49 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 71--72
 
 ) [3 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/e
 1_1.jpg>] [4]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment02.tex"
+Chapter 2.
+<gfx/e2_separate.jpg, id=215, 378.4539pt x 308.8338pt>
+File: gfx/e2_separate.jpg Graphic file (type jpg)
+
+<use gfx/e2_separate.jpg>
+Package pdftex.def Info: gfx/e2_separate.jpg used on input line 31.
+(pdftex.def)             Requested size: 268.80103pt x 219.35835pt.
+ [5
+
+
+
+
+] [6 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/e
+2_separate.jpg>]
+<gfx/e2_mix1.jpg, id=243, 620.5584pt x 466.3824pt>
+File: gfx/e2_mix1.jpg Graphic file (type jpg)
+ <use gfx/e2_mix1.jpg>
+Package pdftex.def Info: gfx/e2_mix1.jpg used on input line 79.
+(pdftex.def)             Requested size: 403.19897pt x 303.0311pt.
+
+Overfull \hbox (67.19897pt too wide) in paragraph at lines 79--80
+ [] 
+ []
+
+<gfx/e2_mix2.jpg, id=244, 620.5584pt x 466.3824pt>
+File: gfx/e2_mix2.jpg Graphic file (type jpg)
+ <use gfx/e2_mix2.jpg>
+Package pdftex.def Info: gfx/e2_mix2.jpg used on input line 85.
+(pdftex.def)             Requested size: 403.19897pt x 303.0311pt.
+
+Overfull \hbox (67.19897pt too wide) in paragraph at lines 85--86
+ [] 
+ []
+
+) [7] [8 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/g
+fx/e2_mix1.jpg>] [9 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM2
+12/Record/gfx/e2_mix2.jpg>] [10
+
+
+
+]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
 matter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
@@ -928,10 +987,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [5
-
-
-
+) [11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
@@ -949,6 +1005,8 @@ matter/Acknowledgments.aux")
 matter/Contents.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment01.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment02.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
 matter/Colophon.aux"))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 95.
@@ -980,6 +1038,7 @@ ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
   amsgen.sty    1999/11/30 v2.0
   amsbsy.sty    1999/11/29 v1.2d
   amsopn.sty    1999/12/14 v2.01 operator names
+enumerate.sty    1999/03/05 v3.00 enumerate extensions (DPC)
  fontenc.sty
    t1enc.def    2005/09/27 v1.99g Standard LaTeX file
   xspace.sty    2009/10/20 v1.13 Space after command names (DPC,MH)
@@ -1083,23 +1142,30 @@ FrontBackmatter/Contents.tex
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
 gfx/e1_1.jpg
+Experiments/Experiment02.tex
+gfx/e2_separate.jpg
+gfx/e2_mix1.jpg
+gfx/e2_mix2.jpg
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `CHM212.out' has not changed.
-(rerunfilecheck)             Checksum: C6B9531F35A0634F227E649D9F6FD8A8;861.
+(rerunfilecheck)             Checksum: 1D18A3C25A23CC10DFDE14DE3536D8CB;1400.
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 14240 strings out of 494045
- 221323 string characters out of 3148366
- 398002 words of memory out of 3000000
- 17114 multiletter control sequences out of 15000+200000
+ 14360 strings out of 494045
+ 223384 string characters out of 3148366
+ 399370 words of memory out of 3000000
+ 17174 multiletter control sequences out of 15000+200000
  67910 words of font info for 93 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 47i,13n,67p,738b,490s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,13n,67p,738b,525s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A. S.
  Aurora\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\unknown\unknown\dpi900\simpson
 s.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb>
@@ -1110,9 +1176,9 @@ s/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera
 /fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CHM212.pdf (11 pages, 177590 bytes).
+Output written on CHM212.pdf (17 pages, 3672348 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 12931 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 119 named destinations out of 1000 (max. 500000)
+ 13010 words of extra memory for PDF output out of 14400 (max. 10000000)
 

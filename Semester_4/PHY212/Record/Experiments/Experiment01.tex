@@ -7,10 +7,10 @@ January 8 and 15, 2012
 \section{Aim}
 	To determine the charge to mass ratio (e/m) of an electron by the helical method (long solenoid).
 \section{Apparatus}
-	e/m by Helical Method apparatus (we used the one by SIBA india), connecting wires
+	e/m by Helical Method apparatus (we used the one by SIBA India), connecting wires
 
 \section{Cathode Anode}
-	Cathodes are defined to be where a reduction takes place (chemically). Thus in accordance with the <TODO: ADD IMAGE REFERENCE>, the anode is where the conventional current starts from and moves towards the cathode. For an electron, it starts from the cathode and moves towards the anode.
+	Cathodes are defined to be where a reduction takes place (chemically). Thus in accordance with the image appended, the anode is where the conventional current starts from and moves towards the cathode. For an electron, it starts from the cathode and moves towards the anode.
 \section{Theory}
 	Our objective here, as described earlier, is to determine the charge to mass ratio. For this, we shall describe here, an apparatus, without developing a motivation for doing the same.
 	\par
@@ -22,30 +22,25 @@ January 8 and 15, 2012
 	\par
 	Now the next step is introducing a differential velocity component (do not confuse this with infinitesimal) along the $X$ direction. This is done by applying an alternating electric field as shown in the figure. When the electrons reach the plane A, they would have a certain distribution of velocity components along the $X$ direction. It is important to realize here that the distribution of electrons along the $X$ axis will be fairly small, because the velocities are not large enough to cause enough spatial deviation, in the small time corresponding to the length of the accelerating plates. This condition can be achieved by making the speed of the electrons sufficiently large with respect to the length of the alternating electric field plates. Yet, when observed on the screen, a line would be obtained (it's length would depend on the strength of the alternating electric field) as the electrons get displaced along (or against) the $X$ axis, as they're displaced by $L'$ along the $Z$ axis, because of the initial velocity.
 	\par
-	With that said, it is now that we introduce a uniform magnetic field B along the $Z$ axis. We are certainly introducing certain errors by doing so, as the magnetic field in the experiment is present everywhere in the tube, when it's turned on. However, to simplify, we account for it's effect after the electrons have passed the plane $A$.
-
+	With that said, it is now that we introduce a uniform magnetic field B along the $Z$ axis. We are certainly introducing certain errors by doing so, as the magnetic field in the experiment is present everywhere in the tube, when it's turned on. However, to simplify, we account for it's effect after the electrons have passed the plane $A$. Now most electrons would have a non-zero velocity component along the $X$ axis, viz. a direction perpendicular to the uniform magnetic field. Thus, we can evaluate the radius of the acceleration of the electron with velocity $v_x$ can be evaluated as
+	\begin{align}
+		\frac {m_e v_x^2 } r &= e v_x B \\
+		\Rightarrow \omega &= \frac {v_x} r = \frac {m_e B} {m}  = \frac {2 \pi} {T} \\		
+		\Rightarrow T &=\frac {2\pi} {eB}		
+	\end{align}
+	Using the formula for a solenoid and taking $\theta_1 = \theta_2 = \theta$ tending to zero in the following
+	\begin{equation}
+		B = \mu_0 N I (\cos {\theta_1} - \cos{\theta_2})/2L
+	\end{equation}
+	where the symbols have their usual meanings and $\theta$ is the corresponding angle (loosely speaking, s.t. for the angle tending to zero, it results in an ideal, infinite length solenoid)\\
+	Using this and equating $T$ to the time $t=l/v_z$ (time taken by the electron to travel the distance l, as given in the diagram), we get the following working formula.
+	\begin{equation}
+		\frac e m = \frac {V}{2I^2} \left( \frac {4 \pi L} {\mu_0 N l \cos {\theta}} \right) ^2
+	\end{equation}		
+	where for our setup, we have $N=980$ (the number of turns), $L=43$ cm, $l_x=13.5$ cm, $l_y=11$ cm.
 \section{Observations and Calculations}
-	\begin{table}
-		\myfloatalign
-		\begin{tabularx}{\textwidth}{Xlll}
-			\hline
-			\tableheadline{Order of Dark Ring $m$} 	&	\tableheadline{Left (cm)} & \tableheadline{Right (cm)}\\
-			\hline
-				6	&	5.800	&	6.260\\
-				9	&	5.755	&	6.304\\
-				12	&	5.720	&	6.350\\
-				13	&	5.704	&	6.360\\
-				14	&	5.700	&	6.370\\
-				15	&	5.670	&	6.382\\
-				16	&	5.665	&	6.400\\
-				19	&	5.650	&	6.420\\
-				23	&	5.605	&	6.459\\
-				25	&	5.600	&	6.467\\
-			\hline
-		\end{tabularx}
-		\caption{Diameter of Newton's Ring}
-		\label{1_Diameter}
-	\end{table}
+	Observations have been appended at the end of this experiment. \\
+
 
 	% \begin{figure}[bth]
 	% 	\begin{center}
@@ -55,9 +50,25 @@ January 8 and 15, 2012
 	% \label{1_graph}
 	% \end{figure}
 
+\section{Procedure}
+	
+	\begin{enumerate}
+		\item Placed the solenoid in the wooden bracket such that its axis lies in the east-west direction (although this is not very important, since the magnetic field would change at most by about $2\%$). Mounted the CRT inside the solenoid at the centre. The power unit should be kept as far away as possible to avoid stray magnetic field. \footnote {The procedure is highly influenced from the Lab Manual for PHY212, 2013}
+		\item Connected the CRT with it's power-supply using the 8 wire plug into the octal base provided
+		\item Connected the solenoid with the DC power terminals colourwise.
+		\item Turn off the magnetic field by using the corresponding knob.
+		\item Plug the supplies to the mains, and switch it on. Leave it for about three minutes for the CRT to warm up.
+		\item Adjust the accelerating voltage to get a spot. Adjust the focus and intensity to get a finer and clearer spot. Note the accelerating voltage. 
+		\item Apply an AC voltage to the Y or X plates by means of the DEF volt control. Do note that you need to turn on the deflection plate to centre the position of the spot, while the DEF knob is at zero. Otherwise the control for centring doesn't work.
+		\item Now adjust the deflection to about 2 cm.
+		\item Now put the DC in the forward direction. Turn on the solenoid current and increase the DC voltage till the line reduces to a point. (you are increasing the magnetic field)
+		\item Reverse the DC voltage using the other knob and again find a DC voltage to get a point. Note both currents
+		\item Repeat the same with Y or X plates (depending on which you did first)
+		\item Use the formula derived earlier and plug in the value of the slope of the $V$ vs $I^2$ graph.
+	\end{enumerate}
 
 \section{Result}
-	The expected wavelength of sodium vapour lamp is $589.5$ nm. \\
-	Experimentally, the wavelength, $\lambda$ was found to be \\
-	$598.16\pm 3.25\%$ nm (standard deviation of the slope).\\
-	Accuracy error is $1.5\%$, within the precision.
+	The expected $e/m$ ratio is $1.66 \times 10^{11}$ C/Kg. Experimentally, we obtained $1.66\times 10^{11}$ C/Kg and $1.57 \times 10^{11}$ C/Kg for the X with a $7\%$ standard error and Y with a $9\%$ standard error.
+
+\section{Precautions}
+	Precautions have been embedded place-wise in the procedure.

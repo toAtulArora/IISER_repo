@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  15 JAN 2013 16:51
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  22 JAN 2013 15:22
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/PHY212/Record/PHY212.te
 x
@@ -762,7 +762,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
-matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=59, 65.33208pt x 69.3792pt>
+matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=67, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -884,11 +884,12 @@ Class scrreprt Warning: \float@addtolists detected!
 
 
 
-]) [2] [3] [4
-
-
-
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+[2] [3]) [4]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
 matter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
@@ -903,6 +904,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
  []
 
 ) [5
+
+
+
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 95.
@@ -1059,31 +1063,32 @@ FrontBackmatter/Colophon.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `PHY212.out' has not changed.
-(rerunfilecheck)             Checksum: F55F813B9EA39DFEB46C41A6DDA9A717;770.
+(rerunfilecheck)             Checksum: 43737D79026877962325D039FDF487C3;894.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 14195 strings out of 494045
- 220923 string characters out of 3148366
- 397993 words of memory out of 3000000
+ 14218 strings out of 494045
+ 221095 string characters out of 3148366
+ 398993 words of memory out of 3000000
  17102 multiletter control sequences out of 15000+200000
- 65829 words of font info for 92 fonts, out of 3000000 for 9000
+ 69719 words of font info for 98 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 45i,13n,67p,1180b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,13n,67p,1180b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fp
-lrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/urw/palatino/uplri8a.pfb>
-Output written on PHY212.pdf (11 pages, 126117 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplri8a.pfb>
+Output written on PHY212.pdf (11 pages, 144261 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 12406 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 12934 words of extra memory for PDF output out of 14400 (max. 10000000)
 

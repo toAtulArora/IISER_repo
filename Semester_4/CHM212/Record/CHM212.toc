@@ -9,3 +9,11 @@
 \contentsline {section}{\numberline {1.5}Observations and Results}{3}{section.1.5}
 \contentsline {section}{\numberline {1.6}Precaution}{3}{section.1.6}
 \contentsline {section}{\numberline {1.7}Acknowledgements}{4}{section.1.7}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Thin Layer Chromatography (Constituent Detection)}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aim}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Chemicals Required}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Theory}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Procedure}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Observations and Results}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Precaution}{7}{section.2.6}
+\contentsline {section}{\numberline {2.7}Acknowledgements}{8}{section.2.7}
