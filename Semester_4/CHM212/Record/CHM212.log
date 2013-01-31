@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  31 JAN 2013 01:55
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  31 JAN 2013 01:58
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/CHM212.te
 x
@@ -980,11 +980,7 @@ ts/Experiment03.tex" [10
 
 ]
 Chapter 3.
-
-LaTeX Warning: Reference `gfx/e3_compound' on page 11 undefined on input line 1
-6.
-
-<gfx/e3_compound.jpg, id=324, 45.16875pt x 114.4275pt>
+<gfx/e3_compound.jpg, id=325, 45.16875pt x 114.4275pt>
 File: gfx/e3_compound.jpg Graphic file (type jpg)
 
 <use gfx/e3_compound.jpg>
@@ -1223,19 +1219,16 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 95.
 Package rerunfilecheck Info: File `CHM212.out' has not changed.
 (rerunfilecheck)             Checksum: 6981F1054D494DDF262C33E138218B57;1926.
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 95.
  ) 
 Here is how much of TeX's memory you used:
- 14480 strings out of 494045
- 225373 string characters out of 3148366
+ 14476 strings out of 494045
+ 225338 string characters out of 3148366
  399370 words of memory out of 3000000
- 17222 multiletter control sequences out of 15000+200000
- 69366 words of font info for 96 fonts, out of 3000000 for 9000
+ 17221 multiletter control sequences out of 15000+200000
+ 67910 words of font info for 93 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  47i,13n,67p,1145b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A. S.
@@ -1246,12 +1239,11 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera
-/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CHM212.pdf (23 pages, 7831059 bytes).
+/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on CHM212.pdf (23 pages, 7821379 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
+ 479 PDF objects out of 1000 (max. 8388607)
  177 named destinations out of 1000 (max. 500000)
  13094 words of extra memory for PDF output out of 14400 (max. 10000000)
 
