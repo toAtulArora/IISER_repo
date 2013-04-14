@@ -1,0 +1,181 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}                  % optional argument are 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% Hyperlinks
+%\usepackage{hyperref}								% to use hyperlinks
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6}			% hyperlinks setup
+%\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% personal data
+\firstname{Atul}
+\familyname{Singh Arora}
+%\title{}               % optional, remove the line if not wanted
+\address{was born on November 20, 1991 \\resides in 4317/3 Ansari Road}{Darya Ganj, New Delhi}    % optional, remove the line if not wanted
+%\mobile{+30 698 4385057}                    % optional, remove the line if not wanted
+\phone{+91 89681 72389}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{toAtulArora@gmail.com}                      % optional, remove the line if not wanted
+%\email{\href{mailto:s.dakourou@gmail.com}{s.dakourou@gmail.com}}                      % optional, remove the line if not wanted
+% \homepage{\href{http://KnowledgePayback.blogspot.com}{Blog}}                % optional, remove the line if not wanted
+% \homepage{\url{http://KnowledgePayback.blogspot.com}}
+% \extrainfo{http://KnowledgePayback.blogspot.com} % optional, remove the line if not wanted
+\extrainfo{\\http://github.com/toAtulArora \\http://KnowledgePayback.blogspot.com}
+
+%\photo[64pt][0.4pt]{picture}                         % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Nothing worth having comes without sacrifice}                 % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Objective}
+	\cvline{\small{..of the document}}{To get selected for the Monsoon School on Physics of Life}
+	\cvline{\small{..in general}}{To become a good human being and to be able to contribute to expanding our knowledge of nature.}
+
+\section{Education}
+	%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+	\cventry{Present}{BS-MS Dual Degree}{Indian Institute of Science Education and Research}{Mohali}{\textit{8.6/10}}{\textbf{Semester I} \textit{(8.5/10)}: Mechanics, Chemistry of elements and chemical transformations, Cellular basis of life, Symmetry, Language Skills B, Introduction to Computers, Physics Lab I, Chem Lab I, Bio Lab I\\
+	\textbf{Semester II} \textit{(8.6/10)}: Electromagnetism, Atoms Molecules and Symmetry, Gene expression and development, Analysis in one variable, Hands-on electronics, History of science, Physics Lab II, Chemistry Lab II, Biology Lab II\\
+	\textbf{Semester III} \textit{(8.8/10)}: Waves and optics, Spectroscopic and other physical methods, Genetics and evolution, Curves and surfaces, Introduction to Astrophysics, Workshop Training, Physics Lab III, Chemistry Lab III, Biology Lab III\\
+	\textbf{Semester IV} \textit{(in progress)}: Thermodynamics and statistical physics, Energetics and dynamics of chemical reactions, Behaviour and ecology, Probability and statistics, Introduction to Quantum Physics, Philosophy of science, Physics Lab IV, Chemistry Lab IV, Biology Lab IV
+	}
+	\cventry{2010}{CBSE 10+2}{Sardar Patel Vidyalaya}{New Delhi}{\textit{80\%}}{Physics, Chemistry, Math, Computer Science, English}
+	\cventry{2008}{CBSE X}{Sardar Patel Vidyalaya}{New Delhi}{\textit{93\%}}{Science, Maths, Social Science, English, Hindi, Information Technology}
+
+\section{Experience}
+	\cventry{Winter\\2012}{Intern}{Indian Institute of Science Education and Research}{Mohali}{}{Studied Quantum Mechanics from J.J. Sakurai, under the guidance of Prof. Jasjeet Bagla and created a corresponding report.}
+	\cventry{Summer\\2012}{Intern}{Indian Institute of Science Education and Research}{Mohali}{}{Studied Group Theory and Linear Algebra for understanding Symmetry, under Prof. Kapil Hari Paranjape. \\A brief introductory understanding of the Knot Theory was also undertaken. LaTeX was learnt during this period, to be able to efficiently communicate via the internet.}%
+	\cventry{Summer\\2011}{Intern}{Indian Institute of Technology}{Bombay}{}{Worked on Image Recognition techniques using OpenCV, for Yarn Fault detection under the supervision of Prof. Anirban Guha.\\This was an extension to an IIT alumni's Masters thesis. The work was done using Visual Studio, C++ and involved understanding of OpenCV and the idea behind various algorithms, to be able to solve the problem at hand.}%
+
+\section{Projects}
+	\cventry{Sem III\\2012}{Opportunity Cell Website}{}{Team Project}{A centralized web portal for the Opportunity Cell of IISER Mohali}{}%
+
+	\cventry{Sem III\\2012}{Fly Count Assister}{}{}{For easing the task of counting flies (Biology experiment), this application was written in Python and used extensively. With just two buttons on the keyboard, and the voice support, the counting process was made much more efficient}{}%
+
+	\cventry{Sem III\\2012}{NaveenTantra}{}{Team Project}{An Online Election system, based on a novel fraud prevention technique, created using Javascript, PHP and mySQL}{}%
+
+	\cventry{Summer\\2012}{Telescope}{}{Team Project}{Newtonian Reflection Telescope for observing Transit of Venus}{}%
+	\cventry{Sem II\\2012}{Capacitive Touch Sensor}{}{}{Sensitive enough to measure changes in PicoFarads, developed for the Science Day}{}%
+
+	\cventry{2010-11}{Chatur Chaalak}{}{}{Developed with the aim of application in robotics, this project was designed to control the torque and speed of stepper motors, with precision, independently. This was implemented using C as the language and Atmel AVR as the platform}{}%
+
+
+	\cventry{2010}{Live GSM}{}{}{This was an attempt at controlling a phone using a microcontroller, to be able to remotely control devices, using DTMF communication protocol over voice calls}{}%
+
+
+	\cventry{Class XII\\2010}{3D Modelling and Animation}{}{}{Imitated the `21st Century FOX' animation and customized it to read `XII class presents', for a class presentation, using the popular 3D cinema creation software, Maya}{}%
+
+	\cventry{Class XI-XII\\2009-10}{Space Race}{}{}{This game was developed using OpenGL to ensure cross-platform support and as a transition to the open world. Apart from the 3D-graphics, this game had Newtonian physics implemented using a point particle approach, derived from an open-source game}{}%
+
+
+	\cventry{Class XI\\2009}{Robotic Rescue Vehicle (RRV)}{}{}{It was designed using auto-mobile parts such as bicycle chains and sprockets, wiper motors, car batteries, a web-camera, and an ordinary PC, which gave it a unique look. It could be moved around wirelessly using a laptop which gave a live video feed from the robot, ideal for rescue operations}{}%
+
+
+	\cventry{Class X\\2008}{Math Project}{}{}{A calculator built using micro-controllers, to verify the property $(a+b)(a-b)=a^2-b^2$. It was a battery operated device, with an LCD screen and used an 89S52 to process}{}%
+
+
+	\cventry{Class IX\\2006}{ALive City 2 - DirectX 9.0}{}{}{My second attempt at game making; this was developed without using any game engines, while the game itself was controlled using a USB steering wheel, built by me, based on an open-source application}{}%
+
+
+	\cventry{Class VIII\\2005}{Motion Detection - Image Processing}{}{}{This program was developed to save frames of a video feed, only when motion is detected, ideal for surveillance}{}%
+
+	\cventry{Class VIII\\2005}{ALive City - DirectX 8.0}{}{}{My first computer graphics 3D project, a simple racing game where the player could put his/her own picture, right on the car}{}%
+
+	\cventry{Class VII\\2004}{Edge Detecting Robot}{}{}{Built using stepper motors and a microprocessor, this vehicle was programmed to detect edges of a table using infra red sensors and turn to avoid falling}{}%
+	\cventry{Class VII\\2004}{AT Keyboard Interface}{}{}{Built using the 8051 series of Microcontrollers and an LCD, this device was developed to serve as a low cost portable typing tutor for kids. It was programmed using Bascom, a basic compiler}{}%
+	\cventry{Class VII\\2004}{School Bell Scheduler 2}{}{}{This application was re-written in Visual Basic.NET to automate ringing of school bells, given the schedule, like it's first version. It used UART for securer communication and was installed in Srijan School, Model Town, New Delhi}{}%
+	\cventry{Class VI\\2003}{School Bell Scheduler}{}{}{A program, written in Visual Basic 6, for automating the ringing of school bells. The user simply needs to specify the schedule}{}%
+
+\section{Recognition}
+	\cvline{2012}{Capacitive touch won the Best Physics Demonstration, at the Science Day 2012, organized by IISER Mohali}
+
+	\cvline{2011}{Was awarded the KVPY fellowship, for my work on Stepper Motor control, Chatur Chaalak}
+
+	\cvline{2010}{Was awarded the First position in Senior programming, with my Team member, in an inter-school programming competition, a part of Access, an annual Computer Symposium, Access, organized by Modern School}
+
+	\cvline{2010}{I was selected as one of the participants for attending the Bright Green Youth, Denmark, an international climate summit for the youth, on the basis of my performance in the National Science Fair and a personal interview. In DK, our team made it to the top 14 projects}
+
+
+	\cvline{2009}{The Robotic Rescue Vehicle was awarded the first position in the Delhi region and second position in the Northern region, at the National Science Fair, held at the National Science Centre, New Delhi}
+
+	\cvline{2005}{ALive City won the first place in the open Software Display, at an inter-school Computer Symposium, Access, an annual event organized by Modern School, Barakhamba Road, New Delhi}
+	\cvline{2004}{ALive City qualified the open Software Display, at the inter-school Computer Symposium, Access}
+	\cvline{2004}{Displayed the Robotic Rescue Vehicle at an interschool competition and secured the third position, even though due to a component failure, the robot failed to work when it was judged}
+	\cvline{2003}{Displayed the School Bell Scheduler at the National Convention 2003, Computer Society of India, IIT-Delhi}
+
+
+\section{Languages}
+	\cvlanguage{Native}{Punjabi}{}
+	\cvlanguage{Fluent}{English}{Formally studied till Sem I, BS-MS}
+	\cvlanguage{Fluent}{Hindi}{Formally studied till class X}
+
+\section{Computer Skills}
+	\cvline{Familiar OSs}{\small Windows: XP, Vista, 7; Linux: Ubuntu, OpenSuse}
+	\cvline{Languages}{\small Basic, C, C++, C\#, Python, Javascript, SQL, HTML, PHP, LaTeX}
+	\cvline{Applications}{\small Visual Studio, Sublime Text, Microsoft Office (Word, Powerpoint, Outlook, OneNote, Excel), CorelDraw, Git, Sony Vegas, Autodesk Maya, GNU plot, SolidWorks, FL Studio, Sony Sound Forge}
+%\cvcomputer{Basic}{UML, HTML, C++, Tcl, System C} {}{}
+%\cvcomputer{Intermediate}{C, Matlab, Assembly(Intel x86)}{}{}
+%\cvcomputer{Expert}{VHDL, nML}{}{}
+
+\section{Extra-Curricular Activities}
+	\cvline{}{Playing the Guitar}
+	\cvline{}{Programming and Electronics}
+	\cvline{}{Member of the Debating Society}	
+	\cvline{}{Playing the Tabla}
+	\cvline{}{Red I in Taekwondo}
+		
+
+	% \cvline{}
+	% 	{
+	% 		\begin{itemize}
+	% 			\item Guitar
+	% 			\item Programming
+	% 			\item Electronics
+	% 			\item Debating
+	% 			\item Phonetics
+	% 			\item Tabla
+	% 			\item Taekwondo
+	% 		\end{itemize}
+	% 	}
+
+% \section{Extra-Curricular Activities}
+% 	\cvline{Guitar}{Music has enthralled me since childhood. Guitar started out for me as an adventure and till date I continue to learn. I had developed fluency in playing off of the staff notation, in addition to being able to play the common open and barre chords. I am still a novice though.}
+% 	\cvline{Programming}{This is one of my favourite activities and for me, it's more of a tool that enables me to harness the full strength of the computer, as in it's absence, I feel restricted. I have programmed in various languages, with various objectives, ranging from pure entertainment, like Games, to programming a robot's movements.}
+% 	\cvline{Electronics}{I have always been fascinated by automation and was fortunate to be exposed to electronics at an early age. I have used 8051 series of microcontrollers using Basic as the language. I later learnt C and moved to the AVR series. I have experience with various components such as MOSFETs, TRIACs etc. which assist in operating other devices.}
+% 	\cvline{Debating}{I am presently a member of the Debating Society and enjoy the thrill of Parliamentery Debating, which sharpens your real time thinking, provides clarity and at the end of the day, helps you make better notes!}
+% 	\cvline{Phonetics}{We all know how words are never pronounced the way they're written, in English that is. Yet we're never taught how to read the script that tells us how to pronounce them! So once you learn the script, you realize everybody's fallible.}
+% 	\cvline{Tabla and Taekwondo}{They're clubbed here since both these activities, I was formally trained in. I was a `Red One' belt and learnt Tabla for over 3 years. However neither of these, have I been able to pursue lately.}
+
+
+% \section{About Me}
+% 	\cvline{Research Interests}{I haven't studied enough to do research, but I am most interested in Physics. I am particularly fascinated by Quantum Mechanics, and the associated Quantum Computing area. Both, the inherent counter-intuitive behaviour of microscopic particles, and computing, are topics which are very close to my heart.}
+% 	\cvline{In General}{
+% 	I adore science. I have experienced numerous `tears of joy' moments while studying books by authors such as `Goldberg', `Artin' and `Griffiths'. I am unable to leave problems unsolved (which is almost a curse for writing examinations) which has helped me learn a lot over the years. I like working on projects and studying. I dislike examinations, or atleast the kind we've taken so far. I value team work.}
+% 	\cvline{Beliefs}{I believe that nothing worth having, comes without sacrifice and that as long as I'm working intelligently and hard, I shouldn't be disappointed by failures.}
+% 	\cvline{Patriotism}{I firmly believe that this nation can strive to excellence, regardless of how unlikely it seems, for it is these few people who believed, have in the past, changed the map of the world, to what we see it as today.}
+
+\end{document}

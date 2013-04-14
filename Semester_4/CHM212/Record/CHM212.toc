@@ -25,3 +25,71 @@
 \contentsline {section}{\numberline {3.5}Observations and Results}{13}{section.3.5}
 \contentsline {section}{\numberline {3.6}Precaution}{14}{section.3.6}
 \contentsline {section}{\numberline {3.7}Acknowledgements}{15}{section.3.7}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Column Chromatography}}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aim}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Chemicals Required}{17}{section.4.2}
+\contentsline {section}{\numberline {4.3}Theory}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Procedure}{18}{section.4.4}
+\contentsline {section}{\numberline {4.5}Observations and Results}{19}{section.4.5}
+\contentsline {section}{\numberline {4.6}Precaution}{20}{section.4.6}
+\contentsline {section}{\numberline {4.7}Acknowledgements}{20}{section.4.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {The Solvent Extraction Technique}}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aim}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Chemicals Required}{23}{section.5.2}
+\contentsline {section}{\numberline {5.3}Theory}{23}{section.5.3}
+\contentsline {section}{\numberline {5.4}Procedure}{24}{section.5.4}
+\contentsline {section}{\numberline {5.5}Observations and Results}{25}{section.5.5}
+\contentsline {section}{\numberline {5.6}Precaution}{25}{section.5.6}
+\contentsline {section}{\numberline {5.7}Acknowledgements}{26}{section.5.7}
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Distillation (Introduction)}}{29}{chapter.6}
+\contentsline {section}{\numberline {6.1}Aim}{29}{section.6.1}
+\contentsline {section}{\numberline {6.2}Chemicals Required}{29}{section.6.2}
+\contentsline {section}{\numberline {6.3}Apparatus/Setup}{29}{section.6.3}
+\contentsline {section}{\numberline {6.4}Theory}{30}{section.6.4}
+\contentsline {section}{\numberline {6.5}Procedure}{31}{section.6.5}
+\contentsline {section}{\numberline {6.6}Observations and Results}{31}{section.6.6}
+\contentsline {section}{\numberline {6.7}Precaution}{31}{section.6.7}
+\contentsline {section}{\numberline {6.8}Acknowledgements}{31}{section.6.8}
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Fractional Distillation}}{33}{chapter.7}
+\contentsline {section}{\numberline {7.1}Aim}{33}{section.7.1}
+\contentsline {section}{\numberline {7.2}Chemicals Required}{33}{section.7.2}
+\contentsline {section}{\numberline {7.3}Apparatus/Setup}{33}{section.7.3}
+\contentsline {section}{\numberline {7.4}Theory}{33}{section.7.4}
+\contentsline {section}{\numberline {7.5}Procedure}{34}{section.7.5}
+\contentsline {section}{\numberline {7.6}Observations and Results}{34}{section.7.6}
+\contentsline {section}{\numberline {7.7}Precaution}{35}{section.7.7}
+\contentsline {section}{\numberline {7.8}Acknowledgements}{35}{section.7.8}
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {The Dean Stark Apparatus}}{37}{chapter.8}
+\contentsline {section}{\numberline {8.1}Aim}{37}{section.8.1}
+\contentsline {section}{\numberline {8.2}Chemicals Required}{37}{section.8.2}
+\contentsline {section}{\numberline {8.3}Apparatus/Setup}{37}{section.8.3}
+\contentsline {section}{\numberline {8.4}Theory}{37}{section.8.4}
+\contentsline {section}{\numberline {8.5}Procedure}{39}{section.8.5}
+\contentsline {section}{\numberline {8.6}Observations and Results}{39}{section.8.6}
+\contentsline {section}{\numberline {8.7}Precaution}{39}{section.8.7}
+\contentsline {section}{\numberline {8.8}Acknowledgements}{40}{section.8.8}
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Crystallization}}{41}{chapter.9}
+\contentsline {section}{\numberline {9.1}Aim}{41}{section.9.1}
+\contentsline {section}{\numberline {9.2}Chemicals Required}{41}{section.9.2}
+\contentsline {section}{\numberline {9.3}Theory}{42}{section.9.3}
+\contentsline {section}{\numberline {9.4}Procedure}{42}{section.9.4}
+\contentsline {section}{\numberline {9.5}Observations and Results}{42}{section.9.5}
+\contentsline {section}{\numberline {9.6}Precaution}{42}{section.9.6}
+\contentsline {section}{\numberline {9.7}Acknowledgements}{42}{section.9.7}
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Purification by Derivatisation and Crystallization}}{45}{chapter.10}
+\contentsline {section}{\numberline {10.1}Aim}{45}{section.10.1}
+\contentsline {section}{\numberline {10.2}Chemicals Required}{45}{section.10.2}
+\contentsline {section}{\numberline {10.3}Theory}{45}{section.10.3}
+\contentsline {section}{\numberline {10.4}Procedure}{45}{section.10.4}
+\contentsline {section}{\numberline {10.5}Observations and Results}{46}{section.10.5}
+\contentsline {section}{\numberline {10.6}Causes of failure}{46}{section.10.6}
+\contentsline {section}{\numberline {10.7}Precaution}{46}{section.10.7}
+\contentsline {section}{\numberline {10.8}Acknowledgements}{46}{section.10.8}
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Self-Test}}{47}{chapter.11}
+\contentsline {section}{\numberline {11.1}Aim}{47}{section.11.1}
+\contentsline {section}{\numberline {11.2}Chemicals Required}{47}{section.11.2}
+\contentsline {section}{\numberline {11.3}Theory}{47}{section.11.3}
+\contentsline {section}{\numberline {11.4}Procedure}{47}{section.11.4}
+\contentsline {section}{\numberline {11.5}Observations and Results}{49}{section.11.5}
+\contentsline {section}{\numberline {11.6}Precaution}{50}{section.11.6}
+\contentsline {section}{\numberline {11.7}Acknowledgements}{51}{section.11.7}

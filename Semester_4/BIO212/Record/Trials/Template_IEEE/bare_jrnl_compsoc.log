@@ -1,0 +1,186 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  15 APR 2013 01:30
+entering extended mode
+**C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/Trials/Te
+mplate_IEEE/bare_jrnl_compsoc.tex
+
+("C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/Trials/Te
+mplate_IEEE/bare_jrnl_compsoc.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\Trials\Te
+mplate_IEEE\IEEEtran.cls"
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 373.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 12 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <14> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <14> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <22> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <22> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+)
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\Trials\Te
+mplate_IEEE\bare_jrnl_compsoc.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 426.
+LaTeX Font Info:    ... okay on input line 426.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 543.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 543.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 543.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14> on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9.79996> on input line 543.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 543.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 543.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 570.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <14> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 570.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 608.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 618.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 624.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\Trials\Te
+mplate_IEEE\bare_jrnl_compsoc.aux") ) 
+Here is how much of TeX's memory you used:
+ 1024 strings out of 494045
+ 18076 string characters out of 3148366
+ 65532 words of memory out of 3000000
+ 4354 multiletter control sequences out of 15000+200000
+ 49191 words of font info for 99 fonts, out of 3000000 for 9000
+ 718 hyphenation exceptions out of 8191
+ 28i,8n,28p,287b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvi
+ps/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+palatino/uplri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/zapfding/uzdr
+.pfb>
+Output written on bare_jrnl_compsoc.pdf (1 page, 77077 bytes).
+PDF statistics:
+ 35 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

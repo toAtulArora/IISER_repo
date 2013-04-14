@@ -10,3 +10,30 @@
 \contentsline {section}{\numberline {1.6}Procedure}{3}{section.1.6}
 \contentsline {section}{\numberline {1.7}Result}{4}{section.1.7}
 \contentsline {section}{\numberline {1.8}Precautions}{4}{section.1.8}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Frank Hertz}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aim}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Apparatus}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Theory}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Rationale Behind the Experiment}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Experimental Setup}{5}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Observations and Calculations}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Procedure}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Result}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hydrogen Balmer Series and Rydberg Constant}}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Aim}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Apparatus}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Theory}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Motivation}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Experimental Setup}{10}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Useful Results}{10}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Observations and Calculations}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Procedure}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Result}{11}{section.3.6}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Quinckes Method}}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aim}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Apparatus}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Theory}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The Rationale}{13}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Observations and Calculations}{13}{section.4.4}
+\contentsline {section}{\numberline {4.5}Procedure}{13}{section.4.5}
+\contentsline {section}{\numberline {4.6}Result}{13}{section.4.6}
