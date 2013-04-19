@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  15 APR 2013 00:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  17 APR 2013 17:24
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/PHY212/Record/PHY212.te
 x
@@ -696,6 +696,8 @@ ts/Experiment02.aux")
 ts/Experiment03.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
 ts/Experiment04.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
+ts/Experiment05.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
 matter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -768,7 +770,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
-matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=175, 65.33208pt x 69.3792pt>
+matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=231, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -816,21 +818,19 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (18.2694pt too wide) in paragraph at lines 22--22
+Overfull \hbox (18.2694pt too wide) in paragraph at lines 23--23
  [][] []\T1/pplj/m/sc/10.95/80ls hydrogen balmer se-ries and ry-d-berg con-stan
 t []  
  []
 
-)
-\tf@toc=\write4
-LaTeX Font Info:    Try loading font information for U+zeur on input line 18.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
+LaTeX Font Info:    Try loading font information for U+zeur on input line 50.
+("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 18.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 50.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -838,12 +838,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 18.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 50.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 18.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 50.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -852,7 +852,9 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 
 
-]
+])
+\tf@toc=\write4
+ [6]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
@@ -874,7 +876,10 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 66.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [6
+) [7
+
+] [8
+
 
 ])
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
@@ -894,14 +899,23 @@ Class scrreprt Warning: \float@addtolists detected!
 
 
 
-
-
-]
+] [2]
 Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[2] [3]) [4]
+<gfx/eBYm.jpg, id=361, 722.7pt x 346.6551pt>
+File: gfx/eBYm.jpg Graphic file (type jpg)
+ <use gfx/eBYm.jpg>
+Package pdftex.def Info: gfx/eBYm.jpg used on input line 47.
+(pdftex.def)             Requested size: 436.80103pt x 209.51804pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 47--48
+ [] 
+ []
+
+[3 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/PHY212/Record/gfx/eBY
+m.jpg>]) [4]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
 ts/Experiment02.tex"
 Chapter 2.
@@ -915,13 +929,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<gfx/e2_circuit.jpg, id=305, 237.0456pt x 146.2263pt>
+<gfx/e2_circuit.jpg, id=388, 237.0456pt x 146.2263pt>
 File: gfx/e2_circuit.jpg Graphic file (type jpg)
  <use gfx/e2_circuit.jpg>
 Package pdftex.def Info: gfx/e2_circuit.jpg used on input line 26.
 (pdftex.def)             Requested size: 336.0pt x 207.2791pt.
 
-<gfx/e2_result.pdf, id=306, 597.432pt x 844.95674pt>
+<gfx/e2_result.pdf, id=389, 597.432pt x 844.95674pt>
 File: gfx/e2_result.pdf Graphic file (type pdf)
  <use gfx/e2_result.pdf>
 Package pdftex.def Info: gfx/e2_result.pdf used on input line 35.
@@ -948,7 +962,7 @@ Overfull \hbox (0.3882pt too wide) in paragraph at lines 58--59
 -creased
  []
 
-[11] <gfx/exp3.pdf, id=378, 844.95674pt x 597.432pt>
+[11] <gfx/exp3.pdf, id=461, 844.95674pt x 597.432pt>
 File: gfx/exp3.pdf Graphic file (type pdf)
  <use gfx/exp3.pdf>
 Package pdftex.def Info: gfx/exp3.pdf used on input line 68.
@@ -965,16 +979,53 @@ pdf>]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
 ts/Experiment04.tex"
 Chapter 4.
-) [13
+[13
 
 
 
 
-] [14
+] [14]
+Overfull \hbox (6.18542pt too wide) in paragraph at lines 80--82
+$\U/zeur/m/n/10.95 1000\U/zeus/m/n/10.95 ©\U/zeur/m/n/10.95 g=L \U/zeus/m/n/10.
+95 ½ \U/zeur/m/n/10.95 1338kg=m[]$\T1/pplj/m/n/10.95 . On sub-si-tu-tion we get
+ $\U/zeur/m/n/10.95 [] \U/zeus/m/n/10.95 ½ ¨\U/zeur/m/n/10.95 1\T1/pplj/m/n/10
+.95 .\U/zeur/m/n/10.95 054 \U/zeus/m/n/10.95  \U/zeur/m/n/10.95 0\T1/pplj/m/n/
+10.95 .\U/zeur/m/n/10.95 008\U/zeus/m/n/10.95 © $
+ []
+
+[15]
+Overfull \hbox (1.56615pt too wide) in paragraph at lines 109--110
+[]\T1/pplj/m/n/10.95 Two so-lu-tions of dif-fer-ent con-cen-tra-tions of Man-ga
+nese sul-phate
+ []
+
+[16]) [17]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
+ts/Experiment05.tex" [18
+
 
 
 
 ]
+Chapter 5.
+[19]
+Overfull \hbox (56.53043pt too wide) in paragraph at lines 77--77
+[] 
+ []
+
+[20]
+Overfull \hbox (4.00735pt too wide) in paragraph at lines 100--101
+[]\T1/pplj/m/n/10.95 Connected the LED in the socket and switched on the power 
+
+ []
+
+[21]
+Overfull \hbox (5.08041pt too wide) in paragraph at lines 118--119
+[]\T1/pplj/m/n/10.95 Kept the mode switch to VI and ad-justed the volt-age slig
+htly
+ []
+
+) [22]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
 matter/Colophon.tex"
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
@@ -988,11 +1039,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [15
+) [23
+
+
+
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\PHY212.au
 x"
@@ -1012,9 +1066,11 @@ ts/Experiment02.aux")
 ts/Experiment03.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
 ts/Experiment04.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\Experimen
+ts/Experiment05.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\PHY212\Record\FrontBack
 matter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
 
 
  *File List*
@@ -1145,29 +1201,31 @@ FrontBackmatter/Contents.tex
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
+gfx/eBYm.jpg
 Experiments/Experiment02.tex
 gfx/e2_circuit.jpg
 gfx/e2_result.pdf
 Experiments/Experiment03.tex
 gfx/exp3.pdf
 Experiments/Experiment04.tex
+Experiments/Experiment05.tex
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `PHY212.out' has not changed.
-(rerunfilecheck)             Checksum: 4E74A196E22257A320ED7552F645BC36;2669.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+(rerunfilecheck)             Checksum: 1CB17A3C4851882799E595A634EC1FB3;3630.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 14395 strings out of 494045
- 225029 string characters out of 3148366
- 398991 words of memory out of 3000000
- 17182 multiletter control sequences out of 15000+200000
- 71228 words of font info for 103 fonts, out of 3000000 for 9000
+ 14588 strings out of 494045
+ 228022 string characters out of 3148366
+ 403018 words of memory out of 3000000
+ 17262 multiletter control sequences out of 15000+200000
+ 85707 words of font info for 136 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 46i,13n,67p,1516b,523s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,15n,67p,1516b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1182,9 +1240,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
 palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri
 8a.pfb>
-Output written on PHY212.pdf (21 pages, 2366707 bytes).
+Output written on PHY212.pdf (31 pages, 4403637 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 13165 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 683 PDF objects out of 1000 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
+ 16354 words of extra memory for PDF output out of 17280 (max. 10000000)
 
