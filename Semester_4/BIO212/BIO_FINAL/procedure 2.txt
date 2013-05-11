@@ -1,0 +1,45 @@
+We found paramecium in a total of 10 samples collected from the Nala and nearby puddles.
+50 mL cultures were made for each of the 10 samples. (refer Materials and methods ) 
+To every 40 mL of water, 10 mL of the sample water was added.
+These cultures were checked after two days of having set up.
+Our requirement was to have two samples of paramecium having visibly distinct sizes and/or phenotypes.
+We observed relatively large paramecium in one of the samples collected from the Nala, but we did not find paramecium which were much smaller in size than this.
+So, we used another species of Paramecium, available with another group in our lab, which had a fairly smaller size. 
+We set up 100 mL cultures for both of these Paramecium species.
+The cultures are referred to as:
+Flask P: small paramecium
+Flask Q: large paramecium.
+Both the flasks were checked on the next day.
+Flask P: Under 4X, only paramecium were seen.
+Flask Q: Under 4X, small round organisms ( referred to as “organism X “) were seen in high numbers apart from the large paramecium.
+Isolating Paramecium from Flask Q
+10 uL of the culture was taken on a glass slide.
+The drop was diluted with 200 uL of water.
+Under 4X  : organism X were seen in the bottom part of the drop, while the paramecium were seen floating on the top part.
+We used a 20 uL micropipette, to carefully extract the top part of the drop.
+This isolated drop was used to set up a 25 mL culture.
+But on the next day, both organism X and paramecium were found in significant nos. in the flask.
+Result : large paramecium could not be isolated.
+Motivation behind next step:
+In competition, the presence of the organism X can be taken as a component of the environment.
+
+SETTING UP THE CULTURES FOR PARAMECIUM COMPETITION STUDIES:
+Both the paramecium cultures were allowed to grow for about 7 days after which we safely assumed that both the populations had reached their corresponding carrying capacities.
+We determined the population densities of Flask P and Flask Q, which essentially gave us the values of their carrying capacities, K1 and K2.
+
+Two replicates were set up; namely Flask A and Flask B :
+Total volume : 50 mL
+Volume of Flask P culture added: 2.29 mL
+Volume of Flask Q culture added: 3.92 mL
+Ambient temperature of the cultures :
+
+Counting :
+Pls refer to counting.A
+This was continued for 14 days.
+
+
+
+
+
+
+

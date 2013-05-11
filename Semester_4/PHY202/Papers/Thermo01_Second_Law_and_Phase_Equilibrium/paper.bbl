@@ -1,0 +1,63 @@
+\providecommand*{\mcitethebibliography}{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+{\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{5}
+\providecommand*{\natexlab}[1]{#1}
+\providecommand*{\mciteSetBstSublistMode}[1]{}
+\providecommand*{\mciteSetBstMaxWidthForm}[2]{}
+\providecommand*{\mciteBstWouldAddEndPuncttrue}
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*{\mciteBstWouldAddEndPunctfalse}
+  {\let\EndOfBibitem\relax}
+\providecommand*{\mciteSetBstMidEndSepPunct}[3]{}
+\providecommand*{\mciteSetBstSublistLabelBeginEnd}[3]{}
+\providecommand*{\EndOfBibitem}{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}
+{(\emph{\alph{mcitesubitemcount}})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem[Abarca \emph{et~al.}(2000)Abarca, G\'omez-Sal, Mart\'in, Mena, Poblet,
+  and Y\'elamos]{Mena2000}
+A.~Abarca, P.~G\'omez-Sal, A.~Mart\'in, M.~Mena, J.~M. Poblet and C.~Y\'elamos,
+  \emph{Inorg. Chem.}, 2000, \textbf{39}, 642--651\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Abernethy \emph{et~al.}(2003)Abernethy, Codd, Spicer, and
+  Taylor]{Abernethy2003}
+C.~D. Abernethy, G.~M. Codd, M.~D. Spicer and M.~K. Taylor, \emph{{J}. {A}m.
+  {C}hem. {S}oc.}, 2003, \textbf{125}, 1128--1129\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Cotton \emph{et~al.}(1999)Cotton, Wilkinson, Murillio, and
+  Bochmann]{Cotton1999}
+F.~A. Cotton, G.~Wilkinson, C.~A. Murillio and M.~Bochmann, \emph{{A}dvanced
+  {I}norganic {C}hemistry}, Wiley, Chichester, 6th edn, 1999\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Arduengo \emph{et~al.}(1992)Arduengo, Dias, Harlow, and
+  Kline]{Arduengo1992}
+A.~J. Arduengo, III, H.~V.~R. Dias, R.~L. Harlow and M.~Kline,
+  \emph{{J}.~{A}m.\ {C}hem.\ {S}oc.}, 1992, \textbf{114}, 5530--5534\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Appelhans \emph{et~al.}(2005)Appelhans, Zuccaccia, Kovacevic,
+  Chianese, Miecznikowski, Macchioni, Clot, Eisenstein, and
+  Crabtree]{Eisenstein2005}
+L.~N. Appelhans, D.~Zuccaccia, A.~Kovacevic, A.~R. Chianese, J.~R.
+  Miecznikowski, A.~Macchioni, E.~Clot, O.~Eisenstein and R.~H. Crabtree,
+  \emph{{J}.~{A}m.\ {C}hem. {S}oc.}, 2005, \textbf{127}, 16299--16311\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

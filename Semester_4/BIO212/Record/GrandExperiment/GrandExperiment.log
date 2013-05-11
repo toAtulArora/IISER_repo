@@ -1,0 +1,382 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  25 APR 2013 19:18
+entering extended mode
+**C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandExpe
+riment/GrandExperiment.tex
+
+("C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandExpe
+riment/GrandExperiment.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\GrandExpe
+riment\IEEEtran.cls"
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 373.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is an 11 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <6> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\GPT@outputbox=\box27
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count92
+\calc@Bcount=\count93
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count94
+\calc@Cskip=\skip46
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen119
+\Gin@req@width=\dimen120
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box28
+\AM@toc@title=\toks16
+\c@AM@survey=\count95
+\AM@templatesizebox=\box29
+)
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\GrandExpe
+riment\GrandExperiment.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 430.
+LaTeX Font Info:    ... okay on input line 430.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count96
+\scratchdimen=\dimen121
+\scratchbox=\box30
+\nofMPsegments=\count97
+\nofMParguments=\count98
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count99
+\MPscratchDim=\dimen122
+\MPnumerator=\count100
+\makeMPintoPDFobject=\count101
+\everyMPtoPDFconversion=\toks18
+)
+\AtBeginShipoutBox=\box31
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 558.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <12> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 558.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 558.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 558.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 558.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 558.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 558.
+LaTeX Font Info:    Try loading font information for U+pzd on input line 558.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 585.
+LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <12> not available
+(Font)              Font shape `OT1/phv/b/sc' tried instead on input line 585.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <11> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 605.
+LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <11> not available
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 605.
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <11> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 605.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 608.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 608.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+] [2]
+<flaskA.pdf, id=19, 794.97pt x 614.295pt>
+File: flaskA.pdf Graphic file (type pdf)
+ <use flaskA.pdf>
+Package pdftex.def Info: flaskA.pdf used on input line 686.
+(pdftex.def)             Requested size: 274.6262pt x 212.2132pt.
+
+Overfull \hbox (21.57634pt too wide) in paragraph at lines 686--687
+ [][] 
+ []
+
+<flaskB.pdf, id=20, 794.97pt x 614.295pt>
+File: flaskB.pdf Graphic file (type pdf)
+ <use flaskB.pdf>
+Package pdftex.def Info: flaskB.pdf used on input line 693.
+(pdftex.def)             Requested size: 274.6262pt x 212.2132pt.
+
+Overfull \hbox (21.57634pt too wide) in paragraph at lines 693--694
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <11> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 709.
+[3 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandEx
+periment/flaskA.pdf> <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO
+212/Record/GrandExperiment/flaskB.pdf>] [4
+
+]
+<FLASK_A.pdf, id=77, page=1, 845.1575pt x 597.23125pt>
+File: FLASK_A.pdf Graphic file (type pdf)
+
+<use FLASK_A.pdf, page 1>
+Package pdftex.def Info: FLASK_A.pdf, page1 used on input line 900.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: FLASK_A.pdf Graphic file (type pdf)
+ <use FLASK_A.pdf, page 1>
+Package pdftex.def Info: FLASK_A.pdf, page1 used on input line 900.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_A.pdf Graphic file (type pdf)
+ <use FLASK_A.pdf, page 1>
+Package pdftex.def Info: FLASK_A.pdf, page1 used on input line 900.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_A.pdf Graphic file (type pdf)
+
+<use FLASK_A.pdf, page 1>
+Package pdftex.def Info: FLASK_A.pdf, page1 used on input line 900.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_A.pdf Graphic file (type pdf)
+ <use FLASK_A.pdf, page 1>
+Package pdftex.def Info: FLASK_A.pdf, page1 used on input line 900.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+ [5
+
+ <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandExpe
+riment/FLASK_A.pdf, page is rotated 90 degrees>] <FLASK_B.pdf, id=89, page=1, 8
+45.1575pt x 597.23125pt>
+File: FLASK_B.pdf Graphic file (type pdf)
+
+<use FLASK_B.pdf, page 1>
+Package pdftex.def Info: FLASK_B.pdf, page1 used on input line 901.
+(pdftex.def)             Requested size: 845.15544pt x 597.22978pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+ <use FLASK_B.pdf, page 1>
+Package pdftex.def Info: FLASK_B.pdf, page1 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+ <use FLASK_B.pdf, page 1>
+Package pdftex.def Info: FLASK_B.pdf, page1 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+
+<use FLASK_B.pdf, page 1>
+Package pdftex.def Info: FLASK_B.pdf, page1 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+ <use FLASK_B.pdf, page 1>
+Package pdftex.def Info: FLASK_B.pdf, page1 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+ [6
+
+
+ <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandExpe
+riment/FLASK_B.pdf, page is rotated 90 degrees>]
+<FLASK_B.pdf, id=103, page=2, 845.1575pt x 597.23125pt>
+File: FLASK_B.pdf Graphic file (type pdf)
+
+<use FLASK_B.pdf, page 2>
+Package pdftex.def Info: FLASK_B.pdf, page2 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+ <use FLASK_B.pdf, page 2>
+Package pdftex.def Info: FLASK_B.pdf, page2 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+File: FLASK_B.pdf Graphic file (type pdf)
+ <use FLASK_B.pdf, page 2>
+Package pdftex.def Info: FLASK_B.pdf, page2 used on input line 901.
+(pdftex.def)             Requested size: 614.40643pt x 434.1708pt.
+
+[7 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/BIO212/Record/GrandEx
+periment/FLASK_B.pdf, page is rotated 90 degrees>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\BIO212\Record\GrandExpe
+riment\GrandExperiment.aux") ) 
+Here is how much of TeX's memory you used:
+ 2786 strings out of 494045
+ 43922 string characters out of 3148366
+ 103947 words of memory out of 3000000
+ 6051 multiletter control sequences out of 15000+200000
+ 48431 words of font info for 94 fonts, out of 3000000 for 9000
+ 718 hyphenation exceptions out of 8191
+ 39i,18n,43p,789b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/font
+name/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvbo8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/zapfding/uzdr.pfb>
+Output written on GrandExperiment.pdf (7 pages, 593923 bytes).
+PDF statistics:
+ 148 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+

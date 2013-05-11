@@ -93,3 +93,9 @@
 \contentsline {section}{\numberline {11.5}Observations and Results}{49}{section.11.5}
 \contentsline {section}{\numberline {11.6}Precaution}{50}{section.11.6}
 \contentsline {section}{\numberline {11.7}Acknowledgements}{51}{section.11.7}
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Purification by Sublimation}}{53}{chapter.12}
+\contentsline {section}{\numberline {12.1}Aim}{53}{section.12.1}
+\contentsline {section}{\numberline {12.2}Chemicals Required}{53}{section.12.2}
+\contentsline {section}{\numberline {12.3}Theory}{53}{section.12.3}
+\contentsline {section}{\numberline {12.4}Experimental Setup}{54}{section.12.4}
+\contentsline {section}{\numberline {12.5}Acknowledgements}{54}{section.12.5}

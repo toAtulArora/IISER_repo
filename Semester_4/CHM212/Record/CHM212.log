@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  11 APR 2013 20:45
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.1)  22 APR 2013 13:06
 entering extended mode
 **C:/Users/A.*S.*Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/CHM212.te
 x
@@ -718,6 +718,8 @@ ts/Experiment09.aux")
 ts/Experiment10.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment11.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment12.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
 matter/Colophon.aux"))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -790,7 +792,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
-matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=399, 65.33208pt x 69.3792pt>
+matter/Titlepage.tex" <gfx/iiserlogo.jpg, id=423, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -944,7 +946,7 @@ LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <9> not available
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-[2] <gfx/e1_1.jpg, id=640, 642.4pt x 481.8pt>
+[2] <gfx/e1_1.jpg, id=672, 642.4pt x 481.8pt>
 File: gfx/e1_1.jpg Graphic file (type jpg)
  <use gfx/e1_1.jpg>
 Package pdftex.def Info: gfx/e1_1.jpg used on input line 71.
@@ -959,7 +961,7 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 71--72
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment02.tex"
 Chapter 2.
-<gfx/e2_separate.jpg, id=656, 378.4539pt x 308.8338pt>
+<gfx/e2_separate.jpg, id=688, 378.4539pt x 308.8338pt>
 File: gfx/e2_separate.jpg Graphic file (type jpg)
 
 <use gfx/e2_separate.jpg>
@@ -972,7 +974,7 @@ Package pdftex.def Info: gfx/e2_separate.jpg used on input line 31.
 
 ] [6 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/e
 2_separate.jpg>]
-<gfx/e2_mix1.jpg, id=684, 620.5584pt x 466.3824pt>
+<gfx/e2_mix1.jpg, id=716, 620.5584pt x 466.3824pt>
 File: gfx/e2_mix1.jpg Graphic file (type jpg)
  <use gfx/e2_mix1.jpg>
 Package pdftex.def Info: gfx/e2_mix1.jpg used on input line 79.
@@ -982,7 +984,7 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 79--80
  [] 
  []
 
-<gfx/e2_mix2.jpg, id=685, 620.5584pt x 466.3824pt>
+<gfx/e2_mix2.jpg, id=717, 620.5584pt x 466.3824pt>
 File: gfx/e2_mix2.jpg Graphic file (type jpg)
  <use gfx/e2_mix2.jpg>
 Package pdftex.def Info: gfx/e2_mix2.jpg used on input line 85.
@@ -1003,7 +1005,7 @@ ts/Experiment03.tex" [10
 
 ]
 Chapter 3.
-<gfx/e3_compound.jpg, id=718, 45.16875pt x 114.4275pt>
+<gfx/e3_compound.jpg, id=750, 45.16875pt x 114.4275pt>
 File: gfx/e3_compound.jpg Graphic file (type jpg)
 
 <use gfx/e3_compound.jpg>
@@ -1016,7 +1018,7 @@ Overfull \hbox (3.80544pt too wide) in paragraph at lines 42--43
 s found
  []
 
-[12] <gfx/e3_init.jpg, id=748, 591.8913pt x 302.3295pt>
+[12] <gfx/e3_init.jpg, id=780, 591.8913pt x 302.3295pt>
 File: gfx/e3_init.jpg Graphic file (type jpg)
  <use gfx/e3_init.jpg>
 Package pdftex.def Info: gfx/e3_init.jpg used on input line 72.
@@ -1027,7 +1029,7 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 72--73
  []
 
 [13 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/e3
-_init.jpg>] <gfx/e3_first.jpg, id=764, 522.9939pt x 294.3798pt>
+_init.jpg>] <gfx/e3_first.jpg, id=796, 522.9939pt x 294.3798pt>
 File: gfx/e3_first.jpg Graphic file (type jpg)
 
 <use gfx/e3_first.jpg>
@@ -1038,7 +1040,7 @@ Overfull \hbox (67.19897pt too wide) in paragraph at lines 95--96
  [] 
  []
 
-<gfx/e3_second.jpg, id=765, 620.5584pt x 335.0919pt>
+<gfx/e3_second.jpg, id=797, 620.5584pt x 335.0919pt>
 File: gfx/e3_second.jpg Graphic file (type jpg)
  <use gfx/e3_second.jpg>
 Package pdftex.def Info: gfx/e3_second.jpg used on input line 102.
@@ -1059,14 +1061,14 @@ ts/Experiment04.tex" [16
 
 ]
 Chapter 4.
-<gfx/e4_compound1.png, id=793, 200.75pt x 123.46124pt>
+<gfx/e4_compound1.png, id=825, 200.75pt x 123.46124pt>
 File: gfx/e4_compound1.png Graphic file (type png)
 
 <use gfx/e4_compound1.png>
 Package pdftex.def Info: gfx/e4_compound1.png used on input line 22.
 (pdftex.def)             Requested size: 134.39795pt x 82.66019pt.
 
-<gfx/e4_compound2.png, id=795, 220.825pt x 90.3375pt>
+<gfx/e4_compound2.png, id=827, 220.825pt x 90.3375pt>
 File: gfx/e4_compound2.png Graphic file (type png)
 
 <use gfx/e4_compound2.png>
@@ -1080,7 +1082,7 @@ Overfull \hbox (7.43677pt too wide) in paragraph at lines 108--109
 Vivek, Prashansa
  []
 
-[20] <gfx/e4_1.jpg, id=857, 427.3566pt x 586.1097pt>
+[20] <gfx/e4_1.jpg, id=889, 427.3566pt x 586.1097pt>
 File: gfx/e4_1.jpg Graphic file (type jpg)
  <use gfx/e4_1.jpg>
 Package pdftex.def Info: gfx/e4_1.jpg used on input line 113.
@@ -1093,13 +1095,13 @@ Overfull \hbox (168.0pt too wide) in paragraph at lines 113--114
 
 LaTeX Warning: Float too large for page by 60.78682pt on input line 116.
 
-<gfx/e4_2.jpg, id=858, 2585.66pt x 1943.26pt>
+<gfx/e4_2.jpg, id=890, 2585.66pt x 1943.26pt>
 File: gfx/e4_2.jpg Graphic file (type jpg)
  <use gfx/e4_2.jpg>
 Package pdftex.def Info: gfx/e4_2.jpg used on input line 120.
 (pdftex.def)             Requested size: 201.60205pt x 151.49065pt.
 
-<gfx/e4_3.jpg, id=859, 2585.66pt x 1943.26pt>
+<gfx/e4_3.jpg, id=891, 2585.66pt x 1943.26pt>
 File: gfx/e4_3.jpg Graphic file (type jpg)
  <use gfx/e4_3.jpg>
 Package pdftex.def Info: gfx/e4_3.jpg used on input line 128.
@@ -1116,13 +1118,13 @@ cord/gfx/e4_2.jpg> <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM21
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment05.tex"
 Chapter 5.
-<gfx/e5_compound1.png, id=871, 100.375pt x 151.56625pt>
+<gfx/e5_compound1.png, id=903, 100.375pt x 151.56625pt>
 File: gfx/e5_compound1.png Graphic file (type png)
 
 <use gfx/e5_compound1.png>
 Package pdftex.def Info: gfx/e5_compound1.png used on input line 24.
 (pdftex.def)             Requested size: 67.19897pt x 101.47716pt.
- <gfx/e5_compound2.png, id=872, 180.675pt x 80.3pt>
+ <gfx/e5_compound2.png, id=904, 180.675pt x 80.3pt>
 File: gfx/e5_compound2.png Graphic file (type png)
 
 <use gfx/e5_compound2.png>
@@ -1154,7 +1156,7 @@ Overfull \hbox (7.43677pt too wide) in paragraph at lines 115--116
 Vivek, Prashansa
  []
 
-[26] <gfx/e5_1.jpg, id=934, 497.6994pt x 417.7206pt>
+[26] <gfx/e5_1.jpg, id=966, 497.6994pt x 417.7206pt>
 File: gfx/e5_1.jpg Graphic file (type jpg)
  <use gfx/e5_1.jpg>
 Package pdftex.def Info: gfx/e5_1.jpg used on input line 120.
@@ -1164,7 +1166,7 @@ Overfull \hbox (168.0pt too wide) in paragraph at lines 120--121
  [] 
  []
 
-<gfx/e5_2.jpg, id=935, 503.2401pt x 450.0012pt>
+<gfx/e5_2.jpg, id=967, 503.2401pt x 450.0012pt>
 File: gfx/e5_2.jpg Graphic file (type jpg)
  <use gfx/e5_2.jpg>
 Package pdftex.def Info: gfx/e5_2.jpg used on input line 127.
@@ -1178,7 +1180,7 @@ _2.jpg>]
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment06.tex"
 Chapter 6.
-<gfx/e6_setup.png, id=945, 295.1025pt x 391.4625pt>
+<gfx/e6_setup.png, id=977, 295.1025pt x 391.4625pt>
 File: gfx/e6_setup.png Graphic file (type png)
  <use gfx/e6_setup.png>
 Package pdftex.def Info: gfx/e6_setup.png used on input line 31.
@@ -1205,7 +1207,7 @@ ts/Experiment07.tex" [32
 
 ]
 Chapter 7.
-<gfx/e7_compound.png, id=990, 80.3pt x 146.5475pt>
+<gfx/e7_compound.png, id=1022, 80.3pt x 146.5475pt>
 File: gfx/e7_compound.png Graphic file (type png)
  <use gfx/e7_compound.png>
 Package pdftex.def Info: gfx/e7_compound.png used on input line 13.
@@ -1238,7 +1240,7 @@ ts/Experiment08.tex" [36
 
 ]
 Chapter 8.
-<gfx/e8_setup.png, id=1027, 170.6375pt x 539.01375pt>
+<gfx/e8_setup.png, id=1059, 170.6375pt x 539.01375pt>
 File: gfx/e8_setup.png Graphic file (type png)
  <use gfx/e8_setup.png>
 Package pdftex.def Info: gfx/e8_setup.png used on input line 27.
@@ -1272,7 +1274,7 @@ Sri-jit, Prashansa,
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment09.tex"
 Chapter 9.
-<gfx/e9_tlc.jpg, id=1072, 617.1858pt x 462.0462pt>
+<gfx/e9_tlc.jpg, id=1104, 617.1858pt x 462.0462pt>
 File: gfx/e9_tlc.jpg Graphic file (type jpg)
  <use gfx/e9_tlc.jpg>
 Package pdftex.def Info: gfx/e9_tlc.jpg used on input line 13.
@@ -1336,33 +1338,33 @@ Overfull \hbox (0.86967pt too wide) in paragraph at lines 28--29
 
 
 
-] [48] <gfx/e11_aniline.jpg, id=1167, 251.4996pt x 342.5598pt>
+] [48] <gfx/e11_aniline.jpg, id=1199, 251.4996pt x 342.5598pt>
 File: gfx/e11_aniline.jpg Graphic file (type jpg)
 
 <use gfx/e11_aniline.jpg>
 Package pdftex.def Info: gfx/e11_aniline.jpg used on input line 68.
 (pdftex.def)             Requested size: 134.39795pt x 183.06642pt.
 
-<gfx/e11_phenol.jpg, id=1168, 466.3824pt x 620.5584pt>
+<gfx/e11_phenol.jpg, id=1200, 466.3824pt x 620.5584pt>
 File: gfx/e11_phenol.jpg Graphic file (type jpg)
 
 <use gfx/e11_phenol.jpg>
 Package pdftex.def Info: gfx/e11_phenol.jpg used on input line 75.
 (pdftex.def)             Requested size: 134.39795pt x 178.82104pt.
- <gfx/e11_mixB.jpg, id=1169, 466.3824pt x 620.5584pt>
+ <gfx/e11_mixB.jpg, id=1201, 466.3824pt x 620.5584pt>
 File: gfx/e11_mixB.jpg Graphic file (type jpg)
 
 <use gfx/e11_mixB.jpg>
 Package pdftex.def Info: gfx/e11_mixB.jpg used on input line 83.
 (pdftex.def)             Requested size: 134.39795pt x 178.82104pt.
- <gfx/e11_benzoic.jpg, id=1170, 466.3824pt x 620.5584pt>
+ <gfx/e11_benzoic.jpg, id=1202, 466.3824pt x 620.5584pt>
 File: gfx/e11_benzoic.jpg Graphic file (type jpg)
 
 <use gfx/e11_benzoic.jpg>
 Package pdftex.def Info: gfx/e11_benzoic.jpg used on input line 90.
 (pdftex.def)             Requested size: 134.39795pt x 178.82104pt.
 
-<gfx/e11_naphthalene.jpg, id=1171, 466.3824pt x 620.5584pt>
+<gfx/e11_naphthalene.jpg, id=1203, 466.3824pt x 620.5584pt>
 File: gfx/e11_naphthalene.jpg Graphic file (type jpg)
 
 <use gfx/e11_naphthalene.jpg>
@@ -1379,29 +1381,55 @@ Sri-jit, Prashansa
  []
 
 ) [51 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/
-e11_naphthalene.jpg>] [52
+e11_naphthalene.jpg>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment12.tex" [52
+
 
 
 
 ]
-("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
-matter/Colophon.tex"
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 10.
+Chapter 12.
+
+Overfull \hbox (0.84937pt too wide) in paragraph at lines 2--2
+[]\chapterNumber 12 
+ []
+
+<gfx/e12_phase.jpg, id=1230, 248.42813pt x 222.07968pt>
+File: gfx/e12_phase.jpg Graphic file (type jpg)
+
+<use gfx/e12_phase.jpg>
+Package pdftex.def Info: gfx/e12_phase.jpg used on input line 38.
+(pdftex.def)             Requested size: 336.0pt x 300.38763pt.
+
+Overfull \hbox (1.82259pt too wide) in paragraph at lines 45--46
+\T1/pplj/m/n/10.95 Naphthalene was taken in a china dish. An in-verted fun-nel 
+was placed
+ []
+
+[53]
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 50.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\bera\t1fvm.fd"
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 10.
-
+(Font)              scaled to size 9.30756pt on input line 50.
+) [54 <C:/Users/A. S. Aurora/Documents/IISER_repo/Semester_4/CHM212/Record/gfx/
+e12_phase.jpg>]
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
+matter/Colophon.tex"
 Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [53
+) [55
+
+
+
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
 
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\CHM212.au
 x"
@@ -1435,9 +1463,11 @@ ts/Experiment09.aux")
 ts/Experiment10.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
 ts/Experiment11.aux")
+("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\Experimen
+ts/Experiment12.aux")
 ("C:\Users\A. S. Aurora\Documents\IISER_repo\Semester_4\CHM212\Record\FrontBack
 matter/Colophon.aux"))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
 
 
  *File List*
@@ -1605,24 +1635,26 @@ gfx/e11_phenol.jpg
 gfx/e11_mixB.jpg
 gfx/e11_benzoic.jpg
 gfx/e11_naphthalene.jpg
-FrontBackmatter/Colophon.tex
+Experiments/Experiment12.tex
+gfx/e12_phase.jpg
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
+FrontBackmatter/Colophon.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `CHM212.out' has not changed.
-(rerunfilecheck)             Checksum: 92037F90C43237161839727DDFAF3ACF;6352.
+(rerunfilecheck)             Checksum: A9ADD11286FE93DE98BA6BA2EA251ED9;6761.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
- 15151 strings out of 494045
- 238134 string characters out of 3148366
- 401385 words of memory out of 3000000
- 17497 multiletter control sequences out of 15000+200000
- 67910 words of font info for 93 fonts, out of 3000000 for 9000
+ 15234 strings out of 494045
+ 239839 string characters out of 3148366
+ 402003 words of memory out of 3000000
+ 17547 multiletter control sequences out of 15000+200000
+ 81640 words of font info for 121 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  54i,14n,67p,1145b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc} <C:\Users\A. S.
@@ -1635,9 +1667,9 @@ s/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera
 /fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on CHM212.pdf (63 pages, 21570189 bytes).
+Output written on CHM212.pdf (65 pages, 21596664 bytes).
 PDF statistics:
- 1346 PDF objects out of 1440 (max. 8388607)
- 502 named destinations out of 1000 (max. 500000)
- 13728 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1395 PDF objects out of 1440 (max. 8388607)
+ 512 named destinations out of 1000 (max. 500000)
+ 16853 words of extra memory for PDF output out of 17280 (max. 10000000)
 

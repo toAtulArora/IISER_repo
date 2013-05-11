@@ -68,6 +68,10 @@
 % The Computer Society usually requires 12pt for submissions.
 %
 \documentclass[11pt,journal,compsoc]{IEEEtran}
+
+\usepackage{color}
+\pagecolor{white}
+\usepackage[final]{pdfpages}
 %
 % If IEEEtran.cls has not been installed into the LaTeX system files,
 % manually specify the path to it like:
@@ -451,18 +455,20 @@
 % journal papers have the author affiliations above the "Manuscript
 % received ..."  text while in non-compsoc journals this is reversed. Sigh.
 % \author{Atul~Singh~Arora,~\IEEEmembership{BS~II~year,~IISER Mohali,}
-\author{Atul~Singh~Arora,~\IEEEmembership{IISER~Mohali,}
-        Ritu~Roychaudhury,~\IEEEmembership{IISER~Mohali,}
-        and~Prashansa~Gupta,~\IEEEmembership{IISER~Mohali}% <-this % stops a space
+\author{Ritu~Roy~Chowdhury,~\IEEEmembership{IISER~Mohali,}
+        Prashansa~Gupta,~\IEEEmembership{IISER~Mohali,}
+        Evelyn~Abraham,~\IEEEmembership{IISER~Mohali,}
+        Biplob~Nandy,~\IEEEmembership{IISER~Mohali,}
+        and~Atul~Singh~Arora,~\IEEEmembership{IISER~Mohali}}% <-this % stops a space
 
-\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell is with the Department
-of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
-GA, 30332.\protect\\
+% \IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell is with the Department
+% of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+% GA, 30332.\protect\\
 % note need leading \protect in front of \\ to get a newline within \thanks as
 % \\ is fragile and will error, could use \hfil\break instead.
-E-mail: see http://www.michaelshell.org/contact.html
-\IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
-\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
+% E-mail: see http://www.michaelshell.org/contact.html
+% \IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+% \thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -525,7 +531,7 @@ E-mail: see http://www.michaelshell.org/contact.html
 \IEEEcompsoctitleabstractindextext{%
 \begin{abstract}
 %\boldmath
-For the investigation of validity of the Lotka-Voltera model for competition between species, a simple competition was setup between two species of paramecium which are phenotypically distinguishable. It was found that both these species could co-exist and further, it was observed that their population density had exceeded that of their corresponding isolated cultures. An evolution study was planned to test if differentially speedening the process of evolution for one species could lead to its better relative survival.
+For the investigation of validity of the Lotka-Volterra model for competition between species, a simple competition was setup between two species of paramecium which are phenotypically distinguishable. It was found that both these species could co-exist and further, it was observed that their phenotypes began to `interchange'. An evolution study was planned to test if differentially speedening the process of evolution for one species could lead to its better relative survival.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -537,7 +543,7 @@ For the investigation of validity of the Lotka-Voltera model for competition bet
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Computer Society, IEEEtran, journal, \LaTeX, paper, template.
+Paramecium, competition study, lotka-volterra, evolution, co-evolution
 \end{IEEEkeywords}}
 
 
@@ -570,6 +576,127 @@ Computer Society, IEEEtran, journal, \LaTeX, paper, template.
 
 
 \section{Introduction}
+  Evolutionary biology often explains the observed and very rarely predicts, roughly speaking. This experiment was aimed at putting evolutionary ideas to work for predicting the outcome of an experiment. We have been taught that organisms have co-evolved and it therefore makes sense to imagine that the organisms that could evolve faster, would've out-survived their competitors. To test this, we chalked out a two stage plan. The first was to test the prevailing Lotka-Volterra model for competition between two species of Paramecium. Second stage was to increase the rate of evolution, selectively for one species and observe the densities, as they compete.
+
+\section{Materials}
+  For setting up one culture of a 100 mL volume, we used:
+  \begin{enumerate}
+    \item Beaker/Conical flask 100 mL
+    \item Elix Water (roughly 100 mL)
+    \item Yeast Powder (0.04 g per 100 mL)
+    \item Wheat Beads (3-4 per 100 mL)    
+    \item Paramecium Sample
+  \end{enumerate}
+  For finding the Paramecia from the `wild' we required
+  \begin{enumerate}
+    \item Gloves
+    \item Centrifuge Tubes (essentially seal-able containers)
+    \item Pro-pipetter
+    \item Permanent Marker
+  \end{enumerate}
+\section{Method}
+  \subsection{Counting Paramecium}
+    Since counting is the heart of this experiment, repeatability was a very important concern. We did the following to ensure reliability of the data.
+    \begin{enumerate}
+      \item Volume for counting was taken to be very small ( $10\mu L$ initially, and then dropped to $5\mu L$ finally) to ensure the total number of Paramecium are readily countable.
+      \item Videos were recorded using a digital camcorder, by pointing it through the lens of the eye piece of the Ziess microscope available in the Biology teaching lab.
+    \end{enumerate}
+    We took a total of $100\mu L$ volume from the sample to estimate the densities. The counting was done manually.
+  \subsection{Creating the culture}
+    \begin{enumerate}
+      \item Took $40mL$ of Elix water in the flask.
+      \item Added 4 wheat seeds to the beaker and boiled it for 2 minutes, using a micro-wave oven.
+      \item Further, to it, $0.04g$ of finely grinded yeast powder was added immediately and stirred
+      \item The contents of the beaker were cooled to room temperature.
+      \item To this, the Paramecium culture was added and mixed
+      \item The volume was made $100mL$ by adding Elix water and mixed gently.
+      \item The culture created was incubated at $25^oC$.
+    \end{enumerate}
+  \subsection{Finding the Paramecia}
+    \begin{enumerate}
+      \item At  first we decided a location like a small pond, puddle, etc. and then after wearing gloves, extracted some water using pipette and pro-pipetter and dumped the water in a fresh centrifuge tube and marked it using appropriate label.
+      \item We repeated the above procedure for different depths and also at various other locations in the water body.
+      \item Then we took a drop of water from each tube in a glass slide and observed it under a microscope and we reported about our observations.
+      \item Once, a particular species of paramecium was found, we reported it to ``Dr. N.G. Prasad'' and then we had setup the cultures.
+    \end{enumerate}
+\section{Apparatus}
+  The following were available and used from the Biology Teaching Laboratory.
+  \begin{enumerate}
+    \item Zeiss Stemi DV4
+    \item Pathological Microscope
+  \end{enumerate}
+\section{Experimental Procedure}
+  We found Paramecium in a total of 10 samples collected from the Nala and nearby puddles. $50mL$ cultures were made for each of the 10 samples. (refer Materials and methods ) To every $40mL$ of water, $10mL$ of the sample water was added. These cultures were checked after two days of having set up. 
+  \par
+  Our requirement was to have two samples of Paramecia having visibly distinct sizes and/or phenotypes. We observed relatively large Paramecium in one of the samples collected from the Nala, but we did not find Paramecium which were much smaller in size than this. So, we used another species of Paramecium, available with another group in our lab, which had a fairly smaller size.
+  \par
+  We set up $100mL$ cultures for both of these Paramecium species. The cultures are referred to as:
+  \begin{enumerate}
+    \item Flask P: small Paramecium
+    \item Flask Q: large Paramecium.
+  \end{enumerate}
+  Both the flasks were checked on the next day.
+  \begin{enumerate}
+    \item Flask P: Under 4X, only Paramecium were seen.
+    \item Flask Q: Under 4X, small round organisms (referred to as `Organism X') were seen in high numbers apart from the large Paramecium.
+  \end{enumerate}
+
+  \subsection{Isolating Paramecium from Flask Q}
+  $10uL$ of the culture was taken on a glass slide. The drop was diluted with $200uL$ of water. Under 4X magnification, organism X were seen in the bottom part of the drop, while the Paramecium were seen floating on the top part. We used a $20\mu L$ micro-pipette, to carefully extract the top part of the drop. This isolated drop was used to set up a $25mL$ culture. However, on the following day, both organism X and the Paramecium were found in significant numbers in the flask. Thus the large Paramecium could not be isolated.
+  
+  \subsection{Motivation behind next step}
+  In competition, the presence of the organism X can be taken as a component of the environment.
+
+  \subsection{Setting up the Cultures for Paramecium Competition Study}
+  Both the Paramecia cultures were allowed to grow for about 7 days after which we safely assumed that both the populations had reached their corresponding carrying capacities.
+  We determined the population densities of Flask P and Flask Q, which essentially gave us the values of their carrying capacities, $K_1$ and $K_2$.
+  \par
+  Two replicates were set up; namely Flask A and Flask B, with the following parameters
+  \par
+  \begin{enumerate}
+    \item Total volume: $50 mL$
+    \item Volume of Flask P culture added: $2.29 mL$
+    \item Volume of Flask Q culture added: $3.92 mL$
+    \item Ambient temperature of the cultures: $25^oC$
+  \end{enumerate}
+  They were counted daily for a period of 14 days.
+
+\section{Observations}
+  \subsection{Densities}
+    Please refer to table \ref{density_data_A} and \ref{density_data_B} for details.
+    \includepdf[pages=1-,addtolist={1,table,{Bird Observations},density_data_A},pagecommand={Table \ref{density_data_A}}]{FLASK_A.pdf}
+    \includepdf[pages=1-,addtolist={1,table,{Bird Observations},density_data_B},pagecommand={Table \ref{density_data_B}}]{FLASK_B.pdf}
+    Graph \ref{density_graph_A} and \ref{density_graph_B} correspond to the observations given in the table.
+
+    \begin{figure}[!t]
+    \centering
+    \includegraphics[width=3.8in]{flaskA}
+    \caption{Flask A}
+    \label{density_graph_A}
+    \end{figure}
+
+    \begin{figure}[!t]
+    \centering
+    \includegraphics[width=3.8in]{flaskB}
+    \caption{Flask B}
+    \label{density_graph_B}
+    \end{figure}
+
+  \subsection{Qualitative Observations}
+    There were two kinds of distinctions between the Paramecium species that could be observed initially.
+    \par
+    Size: The sizes were roughly in the ratio 3:4
+    \par
+    Phenotypic: The smaller one, had a characteristic white spot at the extreme of its body, which was opposite to it's movement. The larger one had, on a large scale, uniform distribution of the white colouration.
+    \par
+    However, afterwards, the following distinctions were observed:
+    \par
+    Size: There were atleast three different sizes \footnote{These are most likely not `baby' Paramecia since in the stock culture, the `baby' Paramecia were not dominantly visible}
+    \par
+    Phenotypic: The white spot could be seen at times, at the characteristic location for both large and small Paramecium. It is implied here, that there were both large and small Paramecia, that didn't have any clear spot.
+
+\section{Result and Discussion}
+
 % Computer Society journal papers do something a tad strange with the very
 % first section heading (almost always called "Introduction"). They place it
 % ABOVE the main text! IEEEtran.cls currently does not do this for you.
@@ -606,25 +733,26 @@ Computer Society, IEEEtran, journal, \LaTeX, paper, template.
 % 
 % Here we have the typical use of a "T" for an initial drop letter
 % and "HIS" in caps to complete the first word.
-\IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
-for IEEE Computer Society journal papers produced under \LaTeX\ using
-IEEEtran.cls version 1.7 and later.
+% \IEEEPARstart{T}{his} demo file is intended to serve as a ``starter file''
+% for IEEE Computer Society journal papers produced under \LaTeX\ using
+% IEEEtran.cls version 1.7 and later.
+
 % You must have at least 2 lines in the paragraph with the drop letter
 % (should never be an issue)
-I wish you the best of success.
+% I wish you the best of success.
 
-\hfill mds
+% \hfill mds
  
-\hfill January 11, 2007
+% \hfill January 11, 2007
 
-\subsection{Subsection Heading Here}
-Subsection text here.
+
+% Subsection text here.
 
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
 \subsubsection{Subsubsection Heading Here}
-Subsubsection text here.
+% Subsubsection text here.
 
 
 % An example of a floating figure using the graphicx package.
@@ -640,15 +768,20 @@ Subsubsection text here.
 % option should be used if it is desired that the figures are to be
 % displayed while in draft mode.
 %
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
+
+% ==================================================================
+% \begin{figure}[!t]
+% \centering
+% \includegraphics[width=2.5in]{myfigure}
 % where an .eps filename suffix will be assumed under latex, 
 % and a .pdf suffix will be assumed for pdflatex; or what has been declared
 % via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
-%\end{figure}
+% \caption{Simulation Results}
+% \label{fig_sim}
+% \end{figure}
+
+
+
 
 % Note that IEEE typically puts floats only at the top, even when this
 % results in a large percentage of a column being occupied by floats.
@@ -716,7 +849,7 @@ Subsubsection text here.
 
 
 \section{Conclusion}
-The conclusion goes here.
+% The conclusion goes here.
 
 
 
@@ -790,13 +923,13 @@ The authors would like to thank...
 % <OR> manually copy in the resultant .bbl file
 % set second argument of \begin to the number of references
 % (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+% \begin{thebibliography}{1}
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+% \bibitem{IEEEhowto:kopka}
+% H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+%   0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
 
-\end{thebibliography}
+% \end{thebibliography}
 
 % biography section
 % 
@@ -809,22 +942,22 @@ H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
 %\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
+% \begin{IEEEbiography}{Michael Shell}
+% Biography text here.
+% \end{IEEEbiography}
 
 % if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+% \begin{IEEEbiographynophoto}{John Doe}
+% Biography text here.
+% \end{IEEEbiographynophoto}
 
 % insert where needed to balance the two columns on the last page with
 % biographies
 %\newpage
 
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
+% \begin{IEEEbiographynophoto}{Jane Doe}
+% Biography text here.
+% \end{IEEEbiographynophoto}
 
 % You can push biographies down or up by placing
 % a \vfill before or after them. The appropriate

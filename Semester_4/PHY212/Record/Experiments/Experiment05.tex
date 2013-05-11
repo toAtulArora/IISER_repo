@@ -1,0 +1,126 @@
+%************************************************
+\chapter{Planck's Constant from an LED}
+%************************************************
+\begin{flushright}
+April 9, 2013
+\end{flushright}
+\section{Aim}
+	To determine Planck's constant using a light emitting diode (LED).
+\section{Apparatus}
+	An LED connected to a voltmeter and ammeter with voltage control, a suitable oven with temperature readout
+\section{Theory}
+	\subsection{Motivation}
+		Planck's derivation of the energy for spectral energy density of black-body radiation was a landmark achievement which required the bold assumption that all resonators in the cavity, have discrete energy bundles, given by 
+		\begin{equation}
+			\epsilon_n = nh\mu, \quad n=0,1,2..
+		\end{equation}
+	\subsection{An Experimental Determination of `h'}
+		There are various methods of determining the value of `h'. Here we use an LED for this purpose. We use the fact that energy of a photon, $E=h\nu$ equals the energy gap $E_g=eV_0$ where $e$ is the electron charge and $V_0$ is the potential barrier from the n-doped to the p-doped side of the diode junction, without an external voltage. Since $\nu$ can be readily measure, and my thus be assumed to be known, we simply need to indirectly measure $V_o$ to determine $h$.
+		\par
+	\subsection{Minimal Theory: LEDs}
+		We use take for granted, the current voltage characteristic equation for a diode as is given
+		\begin{equation}
+			I=Ae^{ - \frac {V_0}{V_1}}e^{\frac V {V_1} -1}
+		\end{equation}
+		where $A$ is a proportionality constant, $V_0$ is the potential barrier described earlier (what we wish to determine), $V_1=\eta k T /e$, wehre $k$ is the Boltzmann constant, $T$ is the absolute temperature, and $e$ is the electron charge and $V=V_m-RI$, which for our case can be approximated to $V=V_m$, where $V_m$ is the voltage across the external diode.
+		\par
+		So we simply take natural log to obtain
+		\begin{align}
+			\ln I 	&= \ln A - \frac{V_0}{V_1} + (\frac{V_m}{V_1} - 1)\\
+					&=\frac{V_m-V_0}{V_1} + C\\
+					&=\frac{(V_m-V_0)e}{\eta K T} + C\\
+		\end{align}
+		Now if we take $T$ to be constant and vary $I$ (or $V_m$), the slope may expressed as
+		\begin{align}
+			\frac {\Delta \ln I} {\Delta V_m} &= 1/V_1 = \frac e {\eta kT}\\
+			\Rightarrow \eta &= \frac{e \Delta V_m}{kT \Delta \ln I}
+		\end{align}
+		Now if we fix $T$ to approx. 1.8V and vary $I$ (with $T$) and plot $\ln I$ vs. $1/T$, the slope may be given by
+		\begin{equation}
+			\frac{\Delta \ln I}{\Delta(1/T)}=\frac{(V_m-V_0)e}{\eta k}
+		\end{equation}
+		So using both of these, $V_0$ can be determined and as described earlier, $h$ can be calculated as
+		\begin{equation}
+			h=\frac {eV_0}{\nu}
+		\end{equation}
+		And that's about it.
+\section{Observations and Calculations}	
+	Observations have been appended at the end of this experiment.
+	\par
+	Slope of the $V$ vs $\ln I$ was found to be $M_1=0.032$ with $R^2=0.999$. Slope of the $1/T$ vs. $\ln I$ graph was found to be $M_2=-3.29\times 10^3$ with $R^2=0.998$. Using these, we have \par
+	$h=(6.99 \pm 0.00645)\times 10^{-34} $
+	% \begin{figure}[bth]
+	% 	\begin{center}
+	% 		\includegraphics[width=1.0\linewidth]{gfx/e2_circuit}
+	% 	\end{center}
+	% \caption[Simplified schematic of the Setup]{Simplified schematic of the Setup}
+	% \label{e2_circuit}
+	% \end{figure}
+\section{Error Analysis}
+	\begin{align*}
+		\sigma (M_1) 	&= 3\times 10^{-5} \\
+		\text{Where $M_1$ is the slope from the first graph} \\
+		\text{Thus, the error in $\eta$ is given by} \\
+		\frac {e}{kT} \sigma (M_1) &= 0.0014\\
+		\text{Similarly we have}\\
+		\sigma (M_2) 	&= 6.58 \\
+		\text{Error in $M_2 k \eta / e$} 
+						&= \text{$\%$ error in $M_2$ + $\%$ error in $\eta$}\\
+						&=(0.02 + 0.053) \%\\
+						&=0.55\%\\
+		\text{Error in $V_0$ will then be} 
+						&= \text{absolute error in $M_2k\eta/e$}\\
+						&=0.00189 V\\
+		\Rightarrow \text{Error in h} 
+						&= e\lambda (0.00189)/c\\
+						&= 0.00645\times10^{-34}
+	\end{align*}
+
+\section{Procedure}
+	This has been heavily influenced by the Physics Lab Manual provided to us at IISER M, for the year 2013.
+	\par
+	The apparatus in the lab has a two-way switch, that can be set to VI mode or to TI mode. The current is displayed in $\mu A$ when in the VI mode and in $mA$ when in the TI mode.
+		\begin{enumerate}
+			\item To draw V-I characteristics of LED
+				\begin{enumerate}
+					\item Voltage Source
+						\begin{enumerate}
+							\item Range: 0 - 1.95 V
+							\item Resolution: 1 $m$V
+							\item Accuracy=0.2 $\%$
+						\end{enumerate}
+					\item Ammeter
+						\begin{enumerate}
+							\item Range: 0 - 2000 $\mu$A
+							\item Resolution: 1 $\mu$A
+							\item Accuracy=0.2 $\%$
+						\end{enumerate}
+				\end{enumerate}
+				\begin{enumerate}
+					\item Connected the LED in the socket and switched on the power
+					\item Switch the two way switch VI position. In this position, the first display would read voltage across the LED and the second display would read current.
+					\item Increased the voltage gradually and tabulated the VI readings. There will not be any current till aprox. 1.5 V. Plotted $\ln I$ vs $V$ and determined $\eta$.
+				\end{enumerate}
+			\item Dependence of current on temperature at constant voltage
+				\begin{enumerate}
+					\item Ammeter
+						\begin{enumerate}
+							\item Range: 0 - 1.95 V
+							\item Resolution: 10 $\mu$A
+						\end{enumerate}
+					\item Temperature Readout for the Oven
+						\begin{enumerate}
+							\item Range: Ambient to $65^oC$
+							\item Resolution: 0.1 $^oC$
+						\end{enumerate}
+				\end{enumerate}
+				\begin{enumerate}
+					\item Kept the mode switch to VI and adjusted the voltage slightly below the band gap voltage of the LED (1.8 V for Yellow/Red and 1.95V for Green)
+					\item Switched the `mode' switch to TI
+					\item Inserted the LED into the oven and connected the oven to the socket. Before powering it, it was made sure the oven's set off and the temperature knob is set to the minimum. At this point the display would read the ambient temperature. Varied the temperature and read the current.
+					\item Plotted $\ln I$ vs $\frac 1 T$
+				\end{enumerate}
+		\end{enumerate}
+
+\section{Result}
+	The value of `h' was found to be $h=(6.99 \pm 0.00645)\times 10^{-34} $
