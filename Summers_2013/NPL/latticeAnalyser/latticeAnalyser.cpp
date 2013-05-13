@@ -107,17 +107,25 @@ int main( int, char** argv )
   // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
   // TODO: Allow the user to select the colour
-  Scalar dark=Scalar(41,28,20);
-  Scalar light=Scalar(145,128,115);
-  int lightTol=20;
-  int darkTol=20;
+  Scalar colorB=Scalar(41,28,20);
+  Scalar colorA=Scalar(145,128,115);
+  int colorATol=20;
+  int colorBTol=20;
 
-  Scalar lowerBound = light-Scalar::all(20);
-  Scalar upperBound = light+Scalar::all(20);
+  Scalar lowerBound;
+  Scalar upperBound;
+
+  lowerBound = colorA-Scalar::all(colorATol);
+  upperBound = colorA+Scalar::all(colorATol);
   // Now we want a mask for the these ranges
   inRange(src,lowerBound,upperBound, srcColorA);
 
-  srcColorFilter=srcColorA;
+  lowerBound = colorB-Scalar::all(colorBTol);
+  upperBound = colorB+Scalar::all(colorBTol);  
+  inRange(src,lowerBound,upperBound, srcColorB);
+
+  addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
+  
   //You may not it here, like so
   // srcColorFilter=Mat(srcColorFilter.rows, srcColorFilter.cols, srcColorFilter.type(), Scalar(255,255,255))-srcColorFilter;
   // srcColorA=Mat(srcColorA.rows, srcColorA.cols, srcColorA.type(), Scalar(255,255,255))-srcColorA;
@@ -128,8 +136,9 @@ int main( int, char** argv )
   cvtColor( src, src_process, COLOR_BGR2GRAY );
   // cvtColor( src, src_gray, COLOR_BGR2GRAY );
   // multiply(src_process,srcColorFilter,src_gray,1);
-  src_gray=srcColorFilter.mul(src_process/255);
-
+  // src_gray=srcColorFilter.mul(src_process/255);
+  src_gray=srcColorFilter;
+  
   blur( src_gray, src_gray, Size(3,3) );
 
   /// Create Window
