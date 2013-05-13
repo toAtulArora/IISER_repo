@@ -1,0 +1,59 @@
+Notes
+--
+
+0. Matrix basics [http://opencv.willowgarage.com/documentation/cpp/basic_structures.html?highlight=matrix%20initialize]
+1. addWeighted( src1, alpha, src2, beta, 0.0, dst);
+2. filter2D
+3. saturate_cast<type>
+4. copyMakeBorder
+
+1. Discrete Fourier Transform
+2. Bilateral Filtering : http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/Bilateral_Filtering.html
+3. Morphological operators [Eroding and Dialating] 
+    Opening
+    Closing
+    Morphological Gradient
+    Top Hat
+    Black Hat
+4. Pyramid up and down
+5. Threshold [there are a few types, binary, truncate etc.]
+6. Gradient using the SObel method, and then the Laplacian method
+7. Canny Edge Detector
+8. Hough Line Transform http://coding-experiments.blogspot.in/2011/05/ellipse-detection-in-image-by-using.html
+
+
+inRange: Its a function for truncating multi-dimensional arrays on the basis of each points distance from a given vector (scalar with 3 values kinds)
+ void inRange(InputArray src, InputArray lowerb, InputArray upperb, OutputArray dst)
+
+
+
+Useful Code Snippets
+--
+# Remember -> OpenCV stores things in BGR order
+lowerBound = cv.Scalar(120, 80, 100);
+upperBound = cv.Scalar(140, 85, 110);
+
+# this gives you the mask for those in the ranges you specified,
+# but you want the inverse, so we'll add bitwise_not...
+cv.InRange(cv_im, lowerBound, upperBound, cv_rgb_thresh);
+cv.Not(cv_rgb_thresh, cv_rgb_thresh);
+
+
+
+--
+# Temporary images for each color channel
+b = cv.CreateImage(cv.GetSize(orig), orig.depth, 1)
+g = cv.CloneImage(b)
+r = cv.CloneImage(b)
+cv.Split(orig, b, g, r, None)
+
+# Threshold each channel using individual lo and hi thresholds
+channels = [ b, g, r ]
+thresh = [ (B_LO, B_HI), (G_LO, G_HI), (R_LO, R_HI) ]
+for c, (lo, hi) in zip(channels, thresh):
+    cv.Threshold(ch, ch, hi, 100, cv.CV_THRESH_TOZERO_INV)
+    cv.Threshold(ch, ch, lo, 100, cv.CV_THRESH_TOZERO)
+
+# Compose a new RGB image from the thresholded channels (if you need it)
+dst = cv.CloneImage(orig)
+cv.Merge(b, g, r, None, dst)
