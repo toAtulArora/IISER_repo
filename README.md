@@ -19,7 +19,7 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
-* May 14, Tuesday: 
+* May 14, Tuesday: Trying to get the webcam to work, eventually acceded to installing everything on a desktop machine
 
 * May 13, Monday: Completed the proof of concept version of the latticeAnlyser. Tomorrow we plan to print the coloured ovals and test
 
