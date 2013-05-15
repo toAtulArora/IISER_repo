@@ -24,12 +24,11 @@ using namespace cv;
 using namespace std;
 
 Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;
-// Mat cimg;
+Mat cimg;
 Mat_<Vec3b> srcTemp = src;
 int thresh = 100;
 int max_thresh = 255;
-int canny=100;
-int centre=30;
+
 int minRadius=1, maxRadius=30;
 RNG rng(12345);
 
@@ -82,82 +81,102 @@ int process(VideoCapture& capture)
     }
     imshow( source_window, src );
 
-
     /////////////////////////
     //COLOR FILTER
     ////////////////////////
     // //Input src, output src_gray
 
-    // Scalar lowerBound;
-    // Scalar upperBound;
+    Scalar lowerBound;
+    Scalar upperBound;
 
-    // lowerBound = colorA-Scalar::all(colorATol);
-    // upperBound = colorA+Scalar::all(colorATol);
-    // // Now we want a mask for the these ranges
-    // inRange(src,lowerBound,upperBound, srcColorA);
+    lowerBound = colorA-Scalar::all(colorATol);
+    upperBound = colorA+Scalar::all(colorATol);
+    // Now we want a mask for the these ranges
+    inRange(src,lowerBound,upperBound, srcColorA);
 
-    // lowerBound = colorB-Scalar::all(colorBTol);
-    // upperBound = colorB+Scalar::all(colorBTol);  
-    // // We do it for both the colours 
-    // inRange(src,lowerBound,upperBound, srcColorB);
+    lowerBound = colorB-Scalar::all(colorBTol);
+    upperBound = colorB+Scalar::all(colorBTol);  
+    // We do it for both the colours 
+    inRange(src,lowerBound,upperBound, srcColorB);
 
-    // // Now we create a combined filter for them
-    // addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
+    // Now we create a combined filter for them
+    addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
     
 
-    // /// Convert image to gray
-    // cvtColor( src, src_process, COLOR_BGR2GRAY );
+    /// Convert image to gray
+    cvtColor( src, src_process, COLOR_BGR2GRAY );
 
-    // /// Now keep only the required areas in the image  
-    // // // // multiply(src_process,srcColorFilter,src_gray,1);
-    // src_gray=srcColorFilter.mul(src_process/255);
-    // // // // src_gray=srcColorFilter;
+    /// Now keep only the required areas in the image  
+    // // // multiply(src_process,srcColorFilter,src_gray,1);
+    src_gray=srcColorFilter.mul(src_process/255);
+    // // // src_gray=srcColorFilter;
 
-    // // NOw blur it
-    // blur( srcColorFilter, src_gray, Size(3,3) );
+    // NOw blur it
+    blur( src_gray, src_gray, Size(3,3) );
 
-    // imshow( filter_window, srcColorFilter);
-
-
+    imshow( filter_window, srcColorFilter);
     ////////////////////////////
 
-    // BLANK PROCESSING
-    medianBlur( src, src, 5 );
-    cvtColor( src, src_gray, COLOR_BGR2GRAY );
+    //BLANK PROCESSING
+    // cvtColor( src, src_gray, COLOR_BGR2GRAY );
+    // blur( src_gray, src_gray, Size(3,3) );
 
-    // // // blur( src_gray, src_gray, Size(3,3) );
+    /////////////////////////////
+    // This is contour Detection
+    ////////////////////////////
+    Mat threshold_output;
+    vector<vector<Point> > contours;
+    vector<Vec4i> hierarchy;
 
+    /// Detect edges using Threshold
+    threshold( src_gray, threshold_output, thresh, 255, THRESH_BINARY );
+    /// Find contours
+    findContours( threshold_output, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
 
+    /// Find the rotated rectangles and ellipses for each contour
+    vector<RotatedRect> minRect( contours.size() );
+    vector<RotatedRect> minEllipse( contours.size() );
+
+    for( size_t i = 0; i < contours.size(); i++ )
+       { minRect[i] = minAreaRect( Mat(contours[i]) );
+         if( contours[i].size() > 5 )
+           { minEllipse[i] = fitEllipse( Mat(contours[i]) ); }
+       }
+
+    /// Draw contours + rotated rects + ellipses
+    Mat drawing = Mat::zeros( threshold_output.size(), CV_8UC3 );
+    for( size_t i = 0; i< contours.size(); i++ )
+       {
+         Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
+         // contour
+         drawContours( drawing, contours, (int)i, color, 1, 8, vector<Vec4i>(), 0, Point() );
+         // ellipse
+         // ellipse( drawing, minEllipse[i], color, 2, 8 );
+
+         // rotated rectangle
+         // Point2f rect_points[4]; minRect[i].points( rect_points );
+         // for( int j = 0; j < 4; j++ )
+         //    line( drawing, rect_points[j], rect_points[(j+1)%4], color, 1, 8 );
+       }
+
+    imshow( "Contours", drawing );
     
     ///////////////////////////    
     //  THIS IS HOUGH
     ///////////////////////////
     // cvtColor(img, cimg, CV_GRAY2BGR);
-    // cimg=src_gray;
-    // Mat cimg();
-    Mat cimg(src.rows,src.cols, CV_8UC3, Scalar(255,255,255));
+    cimg=src_gray;
 
     vector<Vec3f> circles;
-    HoughCircles(src_gray, circles, CV_HOUGH_GRADIENT, 1, 10,
-                 canny, centre, minRadius, maxRadius // change the last two parameters
+    HoughCircles(cimg, circles, CV_HOUGH_GRADIENT, 1, 10,
+                 100, 30, minRadius, maxRadius // change the last two parameters
                                 // (min_radius & max_radius) to detect larger circles
                  );
-
-    // src_gray:s Input image (grayscale)
-    // circles: A vector that stores sets of 3 values: x_{c}, y_{c}, r for each detected circle.
-    // CV_HOUGH_GRADIENT: Define the detection method. Currently this is the only one available in OpenCV
-    // dp = 1: The inverse ratio of resolution
-    // min_dist = src_gray.rows/8: Minimum distance between detected centers
-    // param_1 = 200: Upper threshold for the internal Canny edge detector
-    // param_2 = 100*: Threshold for center detection.
-    // min_radius = 0: Minimum radio to be detected. If unknown, put zero as default.
-    // max_radius = 0: Maximum radius to be detected. If unknown, put zero as default
-
     for( size_t i = 0; i < circles.size(); i++ )
     {
         Vec3i c = circles[i];
         // Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );        
-        Scalar color = Scalar( 255,255,0 );        
+        Scalar color = Scalar( 0,255,255 );        
         circle( cimg, Point(c[0], c[1]), c[2], color, 3, CV_AA);
         circle( cimg, Point(c[0], c[1]), 2, color, 3, CV_AA);
     }
@@ -214,10 +233,9 @@ int main( int ac, char** argv )
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
   createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
   createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
-  createTrackbar( "Min Radius (Hough)", settings_window, &minRadius, 100, 0 );
+  createTrackbar( "Min Radius (Hough)", settings_window, &minRadius, 10, 0 );
   createTrackbar( "Max Radius (Hough)", settings_window, &maxRadius, 200, 0 );  
-  createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
-  createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
+
 
   /// Show in a window
   namedWindow( "Contours", WINDOW_AUTOSIZE );
