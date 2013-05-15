@@ -24,9 +24,12 @@ using namespace cv;
 using namespace std;
 
 Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;
+Mat cimg;
 Mat_<Vec3b> srcTemp = src;
 int thresh = 100;
 int max_thresh = 255;
+
+int minRadius=1, maxRadius=30;
 RNG rng(12345);
 
 // Colour read
@@ -105,8 +108,8 @@ int process(VideoCapture& capture)
 
     /// Now keep only the required areas in the image  
     // // // multiply(src_process,srcColorFilter,src_gray,1);
-    // // //src_gray=srcColorFilter.mul(src_process/255);
-    src_gray=srcColorFilter;
+    src_gray=srcColorFilter.mul(src_process/255);
+    // // // src_gray=srcColorFilter;
 
     // NOw blur it
     blur( src_gray, src_gray, Size(3,3) );
@@ -158,6 +161,27 @@ int process(VideoCapture& capture)
 
     imshow( "Contours", drawing );
     
+    ///////////////////////////    
+    //  THIS IS HOUGH
+    ///////////////////////////
+    // cvtColor(img, cimg, CV_GRAY2BGR);
+    cimg=src_gray;
+
+    vector<Vec3f> circles;
+    HoughCircles(cimg, circles, CV_HOUGH_GRADIENT, 1, 10,
+                 100, 30, minRadius, maxRadius // change the last two parameters
+                                // (min_radius & max_radius) to detect larger circles
+                 );
+    for( size_t i = 0; i < circles.size(); i++ )
+    {
+        Vec3i c = circles[i];
+        Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );        
+        circle( cimg, Point(c[0], c[1]), c[2], color, 3, CV_AA);
+        circle( cimg, Point(c[0], c[1]), 2, color, 3, CV_AA);
+    }
+
+    imshow("Hough", cimg);
+
 
     //////////////////////
     // CLI
@@ -208,9 +232,13 @@ int main( int ac, char** argv )
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
   createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
   createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
+  createTrackbar( "Min Radius (Hough)", settings_window, &minRadius, 10, 0 );
+  createTrackbar( "Max Radius (Hough)", settings_window, &maxRadius, 200, 0 );  
+
 
   /// Show in a window
   namedWindow( "Contours", WINDOW_AUTOSIZE );
+  namedWindow( "Hough", WINDOW_AUTOSIZE );
 
 
   /// Load source image
