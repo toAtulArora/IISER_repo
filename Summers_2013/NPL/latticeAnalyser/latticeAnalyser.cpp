@@ -35,8 +35,8 @@ Point origin;
 // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
   // TODO: Allow the user to select the colour
-  Scalar colorB=Scalar(41,28,20);
-  Scalar colorA=Scalar(145,128,115);
+  Scalar colorB=Scalar(245,245,10);
+  Scalar colorA=Scalar(10,245,245);
   int colorATol=10;
   int colorBTol=10;
 
@@ -93,9 +93,9 @@ int main( int, char** argv )
 
   // cvtColor( src, src_gray, COLOR_BGR2GRAY );
   /// Now keep only the required areas in the image  
-  multiply(src_process,srcColorFilter,src_gray,1);
+  // multiply(src_process,srcColorFilter,src_gray,1);
   // src_gray=srcColorFilter.mul(src_process/255);
-  // src_gray=srcColorFilter;
+  src_gray=srcColorFilter;
 
   // NOw blur it
   blur( src_gray, src_gray, Size(3,3) );
@@ -110,7 +110,7 @@ int main( int, char** argv )
   //Show the filtered image too
   const char* filter_window = "Color Filter";
   namedWindow( filter_window, WINDOW_AUTOSIZE );
-  imshow( filter_window, src_gray);
+  imshow( filter_window, srcColorFilter);
 
 
   createTrackbar( " Threshold:", "Source", &thresh, max_thresh, thresh_callback );
