@@ -68,7 +68,7 @@ void thresh_callback(int, void* );
  */
 int main( int, char** argv )
 {
-  /// Load source image
+  /// Load source image and convert it to gray
   src = imread( argv[1], 1 );
   
   Scalar lowerBound;
@@ -81,23 +81,23 @@ int main( int, char** argv )
 
   lowerBound = colorB-Scalar::all(colorBTol);
   upperBound = colorB+Scalar::all(colorBTol);  
-  // We do it for both the colours 
   inRange(src,lowerBound,upperBound, srcColorB);
 
-  // Now we create a combined filter for them
   addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
   
+  //You may not it here, like so
+  // srcColorFilter=Mat(srcColorFilter.rows, srcColorFilter.cols, srcColorFilter.type(), Scalar(255,255,255))-srcColorFilter;
+  // srcColorA=Mat(srcColorA.rows, srcColorA.cols, srcColorA.type(), Scalar(255,255,255))-srcColorA;
 
-  /// Convert image to gray
+  // not(srcColorFilter,srcColorFilter);
+
+  /// Convert image to gray and blur it
   cvtColor( src, src_process, COLOR_BGR2GRAY );
-
   // cvtColor( src, src_gray, COLOR_BGR2GRAY );
-  /// Now keep only the required areas in the image  
-  multiply(src_process,srcColorFilter,src_gray,1);
+  // multiply(src_process,srcColorFilter,src_gray,1);
   // src_gray=srcColorFilter.mul(src_process/255);
-  // src_gray=srcColorFilter;
+  src_gray=srcColorFilter;
 
-  // NOw blur it
   blur( src_gray, src_gray, Size(3,3) );
 
   /// Create Window
