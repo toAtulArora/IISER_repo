@@ -86,48 +86,95 @@ int process(VideoCapture& capture)
     /////////////////////////
     //COLOR FILTER
     ////////////////////////
-    // //Input src, output src_gray
+    //Input src, output src_gray
 
-    // Scalar lowerBound;
-    // Scalar upperBound;
+    Scalar lowerBound;
+    Scalar upperBound;
 
-    // lowerBound = colorA-Scalar::all(colorATol);
-    // upperBound = colorA+Scalar::all(colorATol);
-    // // Now we want a mask for the these ranges
-    // inRange(src,lowerBound,upperBound, srcColorA);
+    lowerBound = colorA-Scalar::all(colorATol);
+    upperBound = colorA+Scalar::all(colorATol);
+    // Now we want a mask for the these ranges
+    inRange(src,lowerBound,upperBound, srcColorA);
 
-    // lowerBound = colorB-Scalar::all(colorBTol);
-    // upperBound = colorB+Scalar::all(colorBTol);  
-    // // We do it for both the colours 
-    // inRange(src,lowerBound,upperBound, srcColorB);
+    lowerBound = colorB-Scalar::all(colorBTol);
+    upperBound = colorB+Scalar::all(colorBTol);  
+    // We do it for both the colours 
+    inRange(src,lowerBound,upperBound, srcColorB);
 
-    // // Now we create a combined filter for them
-    // addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
+    // Now we create a combined filter for them
+    addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
     
 
-    // /// Convert image to gray
-    // cvtColor( src, src_process, COLOR_BGR2GRAY );
+    /// Convert image to gray
+    cvtColor( src, src_process, COLOR_BGR2GRAY );
 
-    // /// Now keep only the required areas in the image  
-    // // // // multiply(src_process,srcColorFilter,src_gray,1);
-    // src_gray=srcColorFilter.mul(src_process/255);
-    // // // // src_gray=srcColorFilter;
+    /// Now keep only the required areas in the image  
+    // // // multiply(src_process,srcColorFilter,src_gray,1);
+    src_gray=srcColorFilter.mul(src_process/255);
+    // // // src_gray=srcColorFilter;
 
-    // // NOw blur it
-    // blur( srcColorFilter, src_gray, Size(3,3) );
+    // NOw blur it
+    blur( src_gray, src_gray, Size(3,3) );
 
-    // imshow( filter_window, srcColorFilter);
+    imshow( filter_window, srcColorFilter);
 
 
     ////////////////////////////
 
     // BLANK PROCESSING
-    medianBlur( src, src, 5 );
-    cvtColor( src, src_gray, COLOR_BGR2GRAY );
+    // medianBlur( src, src, 5 );
+    // cvtColor( src, src_gray, COLOR_BGR2GRAY );
 
     // // // blur( src_gray, src_gray, Size(3,3) );
 
+    /////////////////////////////
+    // This is contour Detection
+    ////////////////////////////
+    Mat threshold_output;
+    vector<vector<Point> > contours;
+    vector<Vec4i> hierarchy;
 
+    /// Detect edges using Threshold
+    threshold( src_gray, threshold_output, thresh, 255, THRESH_BINARY );
+    /// Find contours
+    findContours( threshold_output, contours, hierarchy, RETR_TREE, CHAIN_APPROX_SIMPLE, Point(0, 0) );
+
+    /// Find the rotated rectangles and ellipses for each contour
+    vector<RotatedRect> minRect( contours.size() );
+    vector<RotatedRect> minEllipse( contours.size() );
+
+    for( size_t i = 0; i < contours.size(); i++ )
+       { minRect[i] = minAreaRect( Mat(contours[i]) );
+         if( contours[i].size() > 5 )
+           { minEllipse[i] = fitEllipse( Mat(contours[i]) ); }
+       }
+
+    /// Draw contours + rotated rects + ellipses
+    Mat drawing = Mat::zeros( threshold_output.size(), CV_8UC3 );
+    for( size_t i = 0; i< contours.size(); i++ )
+       {
+        if(
+          (minEllipse[i].size.height>minRadius && minEllipse[i].size.width>minRadius) 
+          &&
+          (minEllipse[i].size.height<maxRadius && minEllipse[i].size.width<maxRadius)
+          )
+        {
+         // Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
+        Scalar color = Scalar(0,255,255 );
+         // contour
+         // drawContours( drawing, contours, (int)i, color, 1, 8, vector<Vec4i>(), 0, Point() );
+
+         // ellipse
+         ellipse( drawing, minEllipse[i], color, 2, 8 );
+
+         // rotated rectangle
+         // Point2f rect_points[4]; minRect[i].points( rect_points );
+         // for( int j = 0; j < 4; j++ )
+         //    line( drawing, rect_points[j], rect_points[(j+1)%4], color, 1, 8 );
+        }
+       }
+
+    imshow( "Contours", drawing );
     
     ///////////////////////////    
     //  THIS IS HOUGH
