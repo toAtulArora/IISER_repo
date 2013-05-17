@@ -343,6 +343,14 @@ int process(VideoCapture& capture)
     for( int i=0;i<dipoles[0][0].count[k];i++)
     {
 
+      int xx=dipoles[k][i].x;
+      int yy=dipoles[k][i].y;
+      float theta = (3.1415926535/180) * dipoles[k][i].angle;
+
+      line(drawing, Point2f(xx - 5*cos(theta), yy - 5*sin(theta)),Point2f(xx + 5*cos(theta), yy + 5*sin(theta)), Scalar(0,255,255),5,8);
+
+
+
       // Use "y" to show that the baseLine is about
       char text[30];
       // dipoles[0][0].count[0]=1;
@@ -371,13 +379,9 @@ int process(VideoCapture& capture)
 
         // then put the text itself
         // putText(drawing, text, textOrg, fontFace, fontScale, Scalar::all(255), thickness, 8);
+      putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(255), thickness, 8);
 
-      int xx=dipoles[k][i].x;
-      int yy=dipoles[k][i].y;
-      float theta = (3.1415926535/180) * dipoles[k][i].angle;
-
-      line(drawing, Point2f(xx - 5*cos(theta), yy - 5*sin(theta)),Point2f(xx + 5*cos(theta), yy + 5*sin(theta)), Scalar(0,255,255),5,8);
     }
     imshow( "Contours", drawing );
   
