@@ -14,7 +14,9 @@
               save settings [not doing it]
     2. Look at it grow!
         a. Enable screen cropping [done]
-        b. Write an algorithm for ellipse to dipole conversion [in process]
+        b. Write an algorithm for ellipse to dipole conversion [completed]
+        c. Save data for each frame using a circular array of sorts
+        d. Output the data perhaps in a text file 
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -45,21 +47,22 @@ int minMinorAxis=1, maxMajorAxis=30;
 int mode=0;
 float theta=3.14159;
 
-
+//mode 
 //0 is screen select
 //1 is colour select
 
 RNG rng(12345);
 
+/////////////DIPOLE DETECTION
+
 class dipole
 {
 public:
-  float angle; //angle
-  int x,y;  //centre
+  float angle,order; //angle is the angle, order gives a rough size of the dipole detected
+  int x,y,id;  //centre, id tells where its mapped
   int e1,e2; //index number of ellipse
   static int count[2]; //double buffer
-  static int current;
-
+  static int current;  
 };
 
 int dipole::count[2] = {0};
@@ -69,9 +72,42 @@ int dipole::current=0;
 //TODO: Use a dynamic aray
 // array<dipole,500> dipoles;
 // array<dipole,500> lastDipoles;
-dipole dipoles[2][5000];
+#define DmaxDipoleCount 1000
+dipole dipoles[2][DmaxDipoleCount];
 // Colour read
 // Point origin;
+
+
+
+///////////////DIPOLE INFORMATION STORAGE
+bool dipoleRec=false;
+
+class dipoleSkel
+{
+public:
+    float angle; 
+    int x,y;
+    float instAngularVelocity;
+    bool detected;  //stores whether the dipole was detected at all
+};
+
+//This class is for storing dipole data of a given frame
+class dipoleFrame
+{
+public:
+  float time;   //time elapsed since the seed frame
+  float order;  //gives the rough size of the dipoles
+  vector<dipoleSkel> data;
+};
+
+// #define DframeBufferLen  5000
+dipoleFrame seedDipole;
+//NOTE: You have to fix the numbering problem right here.
+vector <dipoleFrame> dipoleData;
+
+long frameBufferLen=0;
+long maxDipoleCount=0;
+/////////////////////////////
 
 // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
@@ -85,6 +121,9 @@ dipole dipoles[2][5000];
   const char* filter_window = "Color Filter";
   const char* settings_window="Settings";
 
+
+//////////TIMING
+  double t,tLast;
 static void onMouse( int event, int x, int y, int, void* )
 {
   if(mode==0)
@@ -123,8 +162,6 @@ static void onMouse( int event, int x, int y, int, void* )
         cout<<x<<","<<y<<endl;
         colorA=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);        
         cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
-        // displayOverlay("Source","haha",2000);
-        // cout<<colorA.val;
         break;
     case CV_EVENT_RBUTTONUP:
         cout<<x<<","<<y<<endl;
@@ -142,9 +179,13 @@ int process(VideoCapture& capture)
   
   for(;;)
   {    
+    
 
     {  //IMAGE CAPTURE and CROP  
       capture>>srcPreCrop;    
+      tLast=t;
+      t=getTickCount()/getTickFrequency();   //This is give time in seconds
+
       if(srcPreCrop.empty())
       {
         cout<<"Didn't get an image";
@@ -223,15 +264,17 @@ int process(VideoCapture& capture)
            { minEllipse[i] = fitEllipse( Mat(contours[i]) ); }
        }
 
-    for( size_t i = 0; i< contours.size(); i++ )
+    for( size_t i = 0; i< minEllipse.size(); i++ )
        {
+        //You can add aditional conditions to eliminate detected ellipses
         if(!(
           (minEllipse[i].size.height>minMinorAxis && minEllipse[i].size.width>minMinorAxis) 
           &&
           (minEllipse[i].size.height<maxMajorAxis && minEllipse[i].size.width<maxMajorAxis)
           ))
         {
-          minEllipse[i]=RotatedRect(Point2f(0,0),Point2f(0,0),0);
+          // minEllipse[i]=RotatedRect(Point2f(0,0),Point2f(0,0),0);
+          minEllipse.erase(minEllipse.begin()+i--);
         }
        }
 
@@ -240,18 +283,18 @@ int process(VideoCapture& capture)
     ///////////////////////////
     //  Dipole Detection Algorithm
     ///////////////////////////    
-    bool detected[5000]={0};
+    vector<bool> detected (minEllipse.size(),false);
 
     int k = !(dipoles[0][0].current);
     dipoles[0][0].current=k;
     dipoles[0][0].count[k]=0;
     
     // dipolesA[0].lastcount=0;
-    for (int i=0; i<contours.size();i++)
+    for (int i=0; i<minEllipse.size();i++)
     {
       if(detected[i]==false)
       {
-        for (int j=0; j<contours.size();j++)
+        for (int j=0; j<minEllipse.size();j++)
         {
           if((i!=j) && detected[j]==false)  //This is so that you don't test with yourself and with others that got paired
           {
@@ -277,8 +320,8 @@ int process(VideoCapture& capture)
                     //this is collection of the final result
                     int c=dipoles[k][0].count[k]++; //dont get confused, count is static, so even dipoles[0][0] would've worked, ro for that matter, any valid index
                     //Note the ++ is after because the count is always one greater than the index of the last element!
-                    dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
-                    dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+                    
+
                     // dipoles[k][c].angle=(minEllipse[i].angle + minEllipse[j].angle)/2.0;
                     // dipoles[k][c].angle=(minEllipse[i].angle);
 
@@ -287,12 +330,53 @@ int process(VideoCapture& capture)
                     RotatedRect smallerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) <= MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
                     dipoles[k][c].angle=(largerEllipse.angle);
 
+                    dipoles[k][c].order=MAX(largerEllipse.size.height, largerEllipse.size.width);
+
+                    dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
+                    dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+
                     //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
                     if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
                       dipoles[k][c].angle+=180;
 
                     dipoles[k][c].e1=i; //don't know why this is required
                     dipoles[k][c].e2=j;
+
+
+
+
+                    //////////////THIS IS FOR RECORDING THE DIPOLE MOVEMENT/////////////
+                    if (dipoleRec==true)
+                    {
+                      dipoleData.push_back(seedDipole);
+                      long cf=dipoleData.size()-1;  //current frame
+                      dipoleData[cf].time=t;
+
+                      for(int q=0;q<seedDipole.data.size();q++)
+                      {
+                        //This is to test which dipole belongs where in accordance with the seedDipole frame
+                        if(MAX(abs(seedDipole.data[q].x - dipoles[k][c].x), abs(seedDipole.data[q].y - dipoles[k][c].y)) < (seedDipole.order/2.0) )
+                        {
+                          dipoles[k][c].id=q;
+                          // dipoleData.data[q] = dipoles[k][c]
+                          //TODO: Make a function for converting 
+                          dipoleData[cf].data[q].x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
+                          dipoleData[cf].data[q].y=dipoles[k][c].y;
+                          dipoleData[cf].data[q].angle=dipoles[k][c].angle;
+                          dipoleData[cf].data[q].instAngularVelocity=0;
+                          dipoleData[cf].data[q].detected=true;   //This is true only when the dipole's
+
+                          //Now that it has matched, terminate the loop
+                          i=seedDipole.data.size();
+                        }
+                      }
+                    }
+
+
+
+
+
+
 
 
                 }
@@ -355,7 +439,7 @@ int process(VideoCapture& capture)
       char text[30];
       // dipoles[0][0].count[0]=1;
       // sprintf(text,"%f",dipoles[0][dipoles[0][0].count[k]-1].angle);
-      sprintf(text,"%1.1f",dipoles[k][i].angle);
+      
       int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
       double fontScale = 0.5;
       int thickness = 1;
@@ -379,8 +463,13 @@ int process(VideoCapture& capture)
 
         // then put the text itself
         // putText(drawing, text, textOrg, fontFace, fontScale, Scalar::all(255), thickness, 8);
+      sprintf(text,"%1.1f",dipoles[k][i].angle);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(255), thickness, 8);
+
+      sprintf(text,"%d,%d",i,dipoles[k][i].id);
+      putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
+      putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar(255,255,0), thickness, 8);
 
     }
     imshow( "Contours", drawing );
@@ -427,8 +516,10 @@ int process(VideoCapture& capture)
     // CLI
     //////////////////////
     char key = (char) waitKey(5); //delay N millis, usually long enough to display and capture input
+    int kMax; //sorry, bad programming, but relatively desparate for results..
     switch (key)
     {
+
         case 'c':
           mode=1;
           cout<<"Mouse will capture color now. Right click for one, left for the other";
@@ -438,11 +529,31 @@ int process(VideoCapture& capture)
           cout<<"Screen crop mode selected. Mouse will capture start point at left click and the other point at right click";
           break;
         case 'p':
-          cout<<"Processing..";
-          for( int i=0;i<dipoles[0][0].count[0];i++)
+          cout<<"Frame will be used as a seed";
+          dipoleRec=true; //Enable dipole recording
+          
+          dipoleSkel tempDipole;  //create a temporary dipole skeleton
+          k=dipoles[0][0].current;  //find the current buffer of dipoles detected (double buffered for possible multithreading)
+          kMax=dipoles[0][0].count[k]; //find the number of dipoles detected in the last scan
+
+          for(int c=0;c<kMax;c++)
+          {
+            tempDipole.x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
+            tempDipole.y=dipoles[k][c].y;
+            tempDipole.angle=dipoles[k][c].angle;
+            tempDipole.instAngularVelocity=0;
+            tempDipole.detected=false;   //This is to ensure the dipole was detected, but for the seed frame, it is left false.
+            seedDipole.data.push_back(tempDipole);  //Add the data in the seedframe's data stream
+
+            seedDipole.order+=dipoles[k][c].order;  //to get teh average order
+            if(c>0)
             {
-              cout<<"Hello";
-            }
+              seedDipole.order/=2.0;
+            }              
+          }
+          seedDipole.time=t; //Note the time (this was recorded just after the screen had been captured)          
+          dipoleData.push_back(seedDipole);
+
           break;                    
         case 'q':
         case 'Q':
