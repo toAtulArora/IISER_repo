@@ -19,7 +19,7 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
-* May 16, Thursday: Working on dipole detection.
+* May 16, Thursday: Working on dipole detection. The algorithm has started to work partially. It still does a mod 180 detection.
 
 * May 15, Wednesday: The magnetic lifting worked, but friction reduction failed. Rather interestingly the dipole would align to the suspension magnet's field. Plus, today the spot recognition algorithm was finalized and it seemd to be perfect.
 

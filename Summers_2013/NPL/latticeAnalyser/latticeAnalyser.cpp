@@ -14,7 +14,7 @@
               save settings [not doing it]
     2. Look at it grow!
         a. Enable screen cropping [done]
-        b. 
+        b. Write an algorithm for ellipse to dipole conversion [in process]
 */
 
 #include "opencv2/highgui/highgui.hpp"
