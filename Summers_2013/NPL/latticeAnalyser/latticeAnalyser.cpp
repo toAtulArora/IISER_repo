@@ -43,6 +43,8 @@ int canny=100;
 int centre=30;
 int minMinorAxis=1, maxMajorAxis=30;
 int mode=0;
+float theta=3.14159;
+
 
 //0 is screen select
 //1 is colour select
@@ -253,12 +255,12 @@ int process(VideoCapture& capture)
         {
           if((i!=j) && detected[j]==false)  //This is so that you don't test with yourself and with others that got paired
           {
-              if(abs(minEllipse[i].angle-minEllipse[j].angle)< 15)  //if the orientation matches (less than 5 degrees), then 
+              // if(abs(minEllipse[i].angle-minEllipse[j].angle)< 15)  //if the orientation matches (less than 5 degrees), then 
               {
                 //Find the distance between minEllipses
 
                 Point differenceVector=Point(minEllipse[i].center.x - minEllipse[j].center.x, minEllipse[i].center.y - minEllipse[j].center.y);  //find the difference vector
-                float distanceSquared=differenceVector.x^2 + differenceVector.y^2; //find the distance squared
+                float distanceSquared=differenceVector.x*differenceVector.x + differenceVector.y*differenceVector.y; //find the distance squared
 
                 //Find the major axis length
                 float majorAxis=MAX( MAX(minEllipse[i].size.width, minEllipse[i].size.height) , MAX(minEllipse[j].size.width, minEllipse[j].size.height)); //find the max dimension
@@ -275,7 +277,8 @@ int process(VideoCapture& capture)
                     int c=++dipoles[k][0].count[k]; //dont get confused, count is static, so even dipoles[0][0] would've worked, ro for that matter, any valid index
                     dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
                     dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
-                    dipoles[k][c].angle=(minEllipse[i].angle + minEllipse[j].angle)/2.0;
+                    // dipoles[k][c].angle=(minEllipse[i].angle + minEllipse[j].angle)/2.0;
+                    dipoles[k][c].angle=(minEllipse[i].angle);
                     dipoles[k][c].e1=i; //don't know why this is required
                     dipoles[k][c].e2=j;
 
@@ -320,23 +323,30 @@ int process(VideoCapture& capture)
 
 
 
-        // Use "y" to show that the baseLine is about
-        char text[30];
-        // dipoles[0][0].count[0]=1;
-        sprintf(text,"%d",dipoles[0][0].count[0]);
-        int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
-        double fontScale = 2;
-        int thickness = 3;
 
-        int baseline=0;
-        Size textSize = getTextSize(text, fontFace,
-                                    fontScale, thickness, &baseline);
-        baseline += thickness;
 
-        // center the text
-        Point textOrg((drawing.cols - textSize.width)/2,
-                      (drawing.rows + textSize.height)/2);
 
+       }
+
+    for( int i=0;i<dipoles[0][0].count[k];i++)
+    {
+
+      // Use "y" to show that the baseLine is about
+      char text[30];
+      // dipoles[0][0].count[0]=1;
+      sprintf(text,"%f",dipoles[0][dipoles[0][0].count[k]-1].angle);
+      int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
+      double fontScale = 2;
+      int thickness = 3;
+
+      int baseline=0;
+      Size textSize = getTextSize(text, fontFace,
+                                  fontScale, thickness, &baseline);
+      baseline += thickness;
+
+      // center the text
+      Point textOrg((drawing.cols - textSize.width)/2,
+                    (drawing.rows + textSize.height)/2);
         // // draw the box
         // rectangle(drawing, textOrg + Point(0, baseline),
         //           textOrg + Point(textSize.width, -textSize.height),
@@ -347,17 +357,11 @@ int process(VideoCapture& capture)
         //      Scalar(0, 0, 255));
 
         // then put the text itself
-        putText(drawing, text, textOrg, fontFace, fontScale,
-                Scalar::all(255), thickness, 8);
+        // putText(drawing, text, textOrg, fontFace, fontScale,                Scalar::all(255), thickness, 8);
 
-
-       }
-
-    for( int i=0;i<dipoles[0][0].count[k];i++)
-    {
       int xx=dipoles[k][i].x;
       int yy=dipoles[k][i].y;
-      int theta=(2*3.141)/dipoles[k][i].angle;
+      float theta = (3.1415926535/180) * dipoles[k][i].angle;
 
       line(drawing, Point2f(xx - 5*cos(theta), yy - 5*sin(theta)),Point2f(xx + 5*cos(theta), yy + 5*sin(theta)), Scalar(0,255,255),5,8);
     }
@@ -474,6 +478,7 @@ int main( int ac, char** argv )
   createTrackbar( "Max Radius (Hough)", settings_window, &maxMajorAxis, 200, 0 );  
   createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
   createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
+  // createTrackbar( "Theta", settings_window, &thetaD, 3.141591, 0 );    
 
   /// Show in a window
   namedWindow( "Contours", WINDOW_AUTOSIZE );
