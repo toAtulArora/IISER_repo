@@ -265,7 +265,8 @@ int process(VideoCapture& capture)
                 //Find the major axis length
                 float majorAxis=MAX( MAX(minEllipse[i].size.width, minEllipse[i].size.height) , MAX(minEllipse[j].size.width, minEllipse[j].size.height)); //find the max dimension
                 
-                float errorPlusOne = distanceSquared / (majorAxis*majorAxis) ; //now to compare, just divide and see if it's close enough to one
+                //The ratio is the ratio between the distance between the ellipse and the small circle and the length of the major axis
+                float errorPlusOne = distanceSquared / ((11.348/30)*(11.348/30)*majorAxis*majorAxis) ; //now to compare, just divide and see if it's close enough to one
 
                 if (errorPlusOne>0.5 && errorPlusOne<2)  //if the error is small enough, then its a match
                 {
@@ -274,11 +275,22 @@ int process(VideoCapture& capture)
                     detected[j]=true;
 
                     //this is collection of the final result
-                    int c=++dipoles[k][0].count[k]; //dont get confused, count is static, so even dipoles[0][0] would've worked, ro for that matter, any valid index
+                    int c=dipoles[k][0].count[k]++; //dont get confused, count is static, so even dipoles[0][0] would've worked, ro for that matter, any valid index
+                    //Note the ++ is after because the count is always one greater than the index of the last element!
                     dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
                     dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
                     // dipoles[k][c].angle=(minEllipse[i].angle + minEllipse[j].angle)/2.0;
-                    dipoles[k][c].angle=(minEllipse[i].angle);
+                    // dipoles[k][c].angle=(minEllipse[i].angle);
+
+                    // We're using two shapes, one ellipse and one circle.                    
+                    RotatedRect largerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) > MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
+                    RotatedRect smallerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) <= MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
+                    dipoles[k][c].angle=(largerEllipse.angle);
+
+                    //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
+                    if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
+                      dipoles[k][c].angle+=180;
+
                     dipoles[k][c].e1=i; //don't know why this is required
                     dipoles[k][c].e2=j;
 
@@ -302,7 +314,7 @@ int process(VideoCapture& capture)
          // Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
         Scalar color = Scalar(0,0,255 );
          // contour
-         // drawContours( drawing, contours, (int)i, color, 1, 8, vector<Vec4i>(), 0, Point() );
+         drawContours( drawing, contours, (int)i, color, 1, 8, vector<Vec4i>(), 0, Point() );
 
          // ellipse
          
@@ -334,10 +346,11 @@ int process(VideoCapture& capture)
       // Use "y" to show that the baseLine is about
       char text[30];
       // dipoles[0][0].count[0]=1;
-      sprintf(text,"%f",dipoles[0][dipoles[0][0].count[k]-1].angle);
+      // sprintf(text,"%f",dipoles[0][dipoles[0][0].count[k]-1].angle);
+      sprintf(text,"%1.1f",dipoles[k][i].angle);
       int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
-      double fontScale = 2;
-      int thickness = 3;
+      double fontScale = 0.5;
+      int thickness = 1;
 
       int baseline=0;
       Size textSize = getTextSize(text, fontFace,
@@ -357,7 +370,8 @@ int process(VideoCapture& capture)
         //      Scalar(0, 0, 255));
 
         // then put the text itself
-        // putText(drawing, text, textOrg, fontFace, fontScale,                Scalar::all(255), thickness, 8);
+        // putText(drawing, text, textOrg, fontFace, fontScale, Scalar::all(255), thickness, 8);
+      putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(255), thickness, 8);
 
       int xx=dipoles[k][i].x;
       int yy=dipoles[k][i].y;
