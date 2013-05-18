@@ -15,8 +15,8 @@
     2. Look at it grow!
         a. Enable screen cropping [done]
         b. Write an algorithm for ellipse to dipole conversion [completed]
-        c. Save data for each frame using a circular array of sorts
-        d. Output the data perhaps in a text file 
+        c. Save data for each frame using a circular array of sorts [done]
+        d. Output the data perhaps in a text file  [done]
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -79,7 +79,7 @@ dipole dipoles[2][DmaxDipoleCount];
 
 
 
-///////////////DIPOLE INFORMATION STORAGE
+///////////////DIPOLE INFORMATION STORAGE IN RAM
 bool dipoleRec=false;
 
 class dipoleSkel
@@ -95,7 +95,7 @@ public:
 class dipoleFrame
 {
 public:
-  float time;   //time elapsed since the seed frame
+  double time;   //time elapsed since the seed frame
   float order;  //gives the rough size of the dipoles
   vector<dipoleSkel> data;
 };
@@ -105,8 +105,12 @@ dipoleFrame seedDipole;
 //NOTE: You have to fix the numbering problem right here.
 vector <dipoleFrame> dipoleData;
 
-long frameBufferLen=0;
-long maxDipoleCount=0;
+#define DframeBufferLen 5000
+////THIS IS FOR STORING IN FILE
+FILE * pFile;
+char fileName[50];
+
+
 /////////////////////////////
 
 // This is a colour filter for improving accuracy
@@ -123,7 +127,8 @@ long maxDipoleCount=0;
 
 
 //////////TIMING
-  double t,tLast;
+  long t,tLast;
+  double deltaT;
 static void onMouse( int event, int x, int y, int, void* )
 {
   if(mode==0)
@@ -184,7 +189,37 @@ int process(VideoCapture& capture)
     {  //IMAGE CAPTURE and CROP  
       capture>>srcPreCrop;    
       tLast=t;
-      t=getTickCount()/getTickFrequency();   //This is give time in seconds
+      // t=getTickCount()/getTickFrequency();   //This is give time in seconds
+      t=getTickCount(); 
+      deltaT=(t-tLast)/getTickFrequency();
+
+      if(dipoleRec)
+      {
+        //if this is not the last frame, add a frame
+        dipoleData.push_back(seedDipole);
+        //This is to avoid overflows
+        // if (dipoleData.size()>DframeBufferLen)
+          // dipoleData.erase(dipoleData.begin());
+        //for the last frame
+        dipoleData[dipoleData.size()-1].time=dipoleData[dipoleData.size()-2].time+deltaT;
+      }
+
+      // long cfInit=dipoleData.size()-1;  //last frame
+      
+      // //test for current frame
+      // if(dipoleData[cfInit].time!=t)
+      // {
+      //   //if this is not the last frame, add a frame
+      //   dipoleData.push_back(seedDipole);
+      //   //This is to avoid overflows
+      //   if (dipoleData.size()>DframeBufferLen)
+      //     dipoleData.erase(dipoleData.begin());
+      //   //for the last frame
+      //   cfInit=dipoleData.size()-1;
+      //   dipoleData[cfInit].time=t;
+      // }
+
+
 
       if(srcPreCrop.empty())
       {
@@ -345,17 +380,23 @@ int process(VideoCapture& capture)
 
 
 
-                    //////////////THIS IS FOR RECORDING THE DIPOLE MOVEMENT/////////////
+                    //////////////THIS IS FOR RECORDING/SAVING THE DIPOLE MOVEMENT/////////////
                     if (dipoleRec==true)
                     {
-                      dipoleData.push_back(seedDipole);
-                      long cf=dipoleData.size()-1;  //current frame
-                      dipoleData[cf].time=t;
+
+                      long cf=dipoleData.size()-1;  //last frame
+
 
                       for(int q=0;q<seedDipole.data.size();q++)
                       {
                         //This is to test which dipole belongs where in accordance with the seedDipole frame
-                        if(MAX(abs(seedDipole.data[q].x - dipoles[k][c].x), abs(seedDipole.data[q].y - dipoles[k][c].y)) < (seedDipole.order/2.0) )
+                        // if(MAX(abs(seedDipole.data[q].x - dipoles[k][c].x), abs(seedDipole.data[q].y - dipoles[k][c].y)) < (seedDipole.order/2.0) )
+                        //Or you could use the last fraame for this
+                        if(
+                          (MAX(abs(dipoleData[cf-1].data[q].x - dipoles[k][c].x), abs(dipoleData[cf-1].data[q].y - dipoles[k][c].y)) < (dipoleData[cf-1].order/2.0) )
+                          && 
+                          (dipoleData[cf].data[q].detected==false)
+                          )
                         {
                           dipoles[k][c].id=q;
                           // dipoleData.data[q] = dipoles[k][c]
@@ -365,11 +406,14 @@ int process(VideoCapture& capture)
                           dipoleData[cf].data[q].angle=dipoles[k][c].angle;
                           dipoleData[cf].data[q].instAngularVelocity=0;
                           dipoleData[cf].data[q].detected=true;   //This is true only when the dipole's
-
+                          
+                          dipoleData[cf].order=dipoles[k][c].order; //This is bad programming..i should average, but doens't matter
                           //Now that it has matched, terminate the loop
-                          i=seedDipole.data.size();
+                          q=seedDipole.data.size();
                         }
                       }
+
+
                     }
 
 
@@ -467,7 +511,7 @@ int process(VideoCapture& capture)
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(255), thickness, 8);
 
-      sprintf(text,"%d,%d",i,dipoles[k][i].id);
+      sprintf(text,"%d,%d",dipoles[k][i].id,i);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar(255,255,0), thickness, 8);
 
@@ -531,7 +575,7 @@ int process(VideoCapture& capture)
         case 'p':
           cout<<"Frame will be used as a seed";
           dipoleRec=true; //Enable dipole recording
-          
+          seedDipole.data.clear();  //clear the data
           dipoleSkel tempDipole;  //create a temporary dipole skeleton
           k=dipoles[0][0].current;  //find the current buffer of dipoles detected (double buffered for possible multithreading)
           kMax=dipoles[0][0].count[k]; //find the number of dipoles detected in the last scan
@@ -551,10 +595,40 @@ int process(VideoCapture& capture)
               seedDipole.order/=2.0;
             }              
           }
-          seedDipole.time=t; //Note the time (this was recorded just after the screen had been captured)          
+          seedDipole.time=0; //Initial time is to be stored as zero
           dipoleData.push_back(seedDipole);
 
-          break;                    
+          break;
+        case 'w':
+          cout<<"Writing angle vs time for the first dipole to file";
+          if(dipoleRec==true)
+          {
+            sprintf(fileName,"latticeAnalyser_%d",getTickCount());
+            pFile = fopen (fileName,"w");
+            
+            //Loop through all the frames
+            for (vector<dipoleFrame>::iterator dD = dipoleData.begin() ; dD != dipoleData.end(); ++dD)
+            {
+              //Within each frame, loop through all dipoles?
+              // for(vector<dipoleSkel>::iterator dS = dD.data.begin() ; dS!=dD.data.end() ; ++dS)
+              // {
+
+              // }
+              //or just print the first dipole
+              fprintf (pFile, "%f,%f\n",dD->data[0].angle,dD->time);
+              // fprintf (pFile, "%d,%d\n",dD->data[0].angle,dD->time);
+            }
+              
+
+            // for (int p=0;p<dipoleData.size();p++)
+            // {
+            //   fprintf(pFile,"%d,%d\n",dipoleData[p].data.size(),dipoleData[p].time);
+            // }
+            fclose (pFile);
+            // fprintf (pFile, "Name %d [%-10.10s]\n",n,name);
+
+          }
+          break;
         case 'q':
         case 'Q':
         case 27: //escape key
