@@ -615,7 +615,8 @@ int process(VideoCapture& capture)
 
               // }
               //or just print the first dipole
-              fprintf (pFile, "%f,%f\n",dD->data[0].angle,dD->time);
+              if(dD->data[0].detected)
+                fprintf (pFile, "%f,%f\n",dD->data[0].angle,dD->time);
               // fprintf (pFile, "%d,%d\n",dD->data[0].angle,dD->time);
             }
               
