@@ -10,6 +10,7 @@
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Watch It Grow}}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Sentimental Introduction}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}The Journey}{3}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Time Line}{3}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Construction of the Lattice Analyser}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{21}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Look it has begun}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Time Line}{4}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{5}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{5}{subsection.2.2.4}

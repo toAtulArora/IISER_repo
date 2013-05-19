@@ -3,3 +3,10 @@
 \select@language {american}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1}{\ignorespaces Sample Image}}{6}{figure.caption.7}
+\contentsline {figure}{\numberline {2}{\ignorespaces Hough Transform}}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {3}{\ignorespaces Contour Detection}}{8}{figure.caption.9}
+\contentsline {figure}{\numberline {4}{\ignorespaces Final Pattern}}{8}{figure.caption.10}
+\contentsline {figure}{\numberline {5}{\ignorespaces Multi Shape, Single Colour}}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {6}{\ignorespaces First Observation}}{10}{figure.caption.12}
+\contentsline {figure}{\numberline {7}{\ignorespaces Final Test Pattern}}{11}{figure.caption.13}
