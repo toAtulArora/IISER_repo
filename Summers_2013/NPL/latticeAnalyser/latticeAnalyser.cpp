@@ -17,6 +17,8 @@
         b. Write an algorithm for ellipse to dipole conversion [completed]
         c. Save data for each frame using a circular array of sorts [done]
         d. Output the data perhaps in a text file  [done]
+    3. Testing
+        a. Test OpenCV's computation time
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -29,6 +31,10 @@
 
 using namespace cv;
 using namespace std;
+
+//For computation time
+double tCstart,tCdelta,tCend; //time for computation
+vector <double> computationTime;
 
 Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;
 //for the cropping
@@ -187,7 +193,10 @@ int process(VideoCapture& capture)
     
 
     {  //IMAGE CAPTURE and CROP  
-      capture>>srcPreCrop;    
+      capture>>srcPreCrop;
+      ///////////////COMPUTATION TIME CALCULATION
+      tCstart=getTickCount();
+      ///////////
       tLast=t;
       // t=getTickCount()/getTickFrequency();   //This is give time in seconds
       t=getTickCount(); 
@@ -232,7 +241,9 @@ int process(VideoCapture& capture)
       }
       else
         src=srcPreCrop;
+      
       imshow( source_window, srcPreCrop );
+
     }
 
     ////////////////////////
@@ -515,6 +526,14 @@ int process(VideoCapture& capture)
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
       putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar(255,255,0), thickness, 8);
 
+      //DEBUG ONLY
+      if(i==0)
+      {         
+        Mat cimg(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
+        sprintf(text,"%1.1f",dipoles[k][i].angle);
+        putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);
+        imshow("Hough", cimg);
+      }
     }
     imshow( "Contours", drawing );
   
@@ -630,6 +649,13 @@ int process(VideoCapture& capture)
 
           }
           break;
+        case 'W':
+          pFile=fopen("TestComputation","w");
+          for(vector<double>::iterator d=computationTime.begin();d!=computationTime.end();++d)
+          {
+            fprintf(pFile,"%f\n",*d);
+          }
+          break;
         case 'q':
         case 'Q':
         case 27: //escape key
@@ -642,6 +668,9 @@ int process(VideoCapture& capture)
         default:
             break;
     }
+    tCend=getTickCount();
+    tCdelta=tCend-tCstart;
+    computationTime.push_back(tCdelta/getTickFrequency());
   }
   return 0;
 
