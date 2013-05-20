@@ -277,7 +277,7 @@ int process(VideoCapture& capture)
       // NOw blur it
       blur( src_gray, src_gray, Size(3,3) );
 
-      imshow( filter_window, src_gray);
+      //imshow( filter_window, src_gray);
     }
 
     ////////////////////////////
@@ -532,10 +532,10 @@ int process(VideoCapture& capture)
         Mat cimg(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
         sprintf(text,"%1.1f",dipoles[k][i].angle);
         putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);
-        imshow("Hough", cimg);
+        //imshow("Hough", cimg);
       }
     }
-    imshow( "Contours", drawing );
+    //imshow( "Contours", drawing );
   
 
 
