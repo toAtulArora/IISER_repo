@@ -18,7 +18,8 @@
         c. Save data for each frame using a circular array of sorts [done]
         d. Output the data perhaps in a text file  [done]
     3. Testing
-        a. Test OpenCV's computation time
+        a. Test OpenCV's computation time [done]
+		b. Compiling it on Windows [done and as it turns out, useless]
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -188,8 +189,8 @@ static void onMouse( int event, int x, int y, int, void* )
 int process(VideoCapture& capture)
 {
   cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
-  capture.set(CV_CAP_PROP_FRAME_HEIGHT,240);
-  capture.set(CV_CAP_PROP_FRAME_WIDTH,320);
+  capture.set(CV_CAP_PROP_FRAME_HEIGHT,480);
+  capture.set(CV_CAP_PROP_FRAME_WIDTH,640);
   for(;;)
   {    
     
@@ -458,8 +459,8 @@ int process(VideoCapture& capture)
          drawContours( drawing, contours, (int)i, color, 1, 8, vector<Vec4i>(), 0, Point() );
 
          // ellipse
-         
-         ellipse( drawing, minEllipse[i], color, 2, 8 );
+         if(i<minEllipse.size())
+			ellipse( drawing, minEllipse[i], color, 2, 8 );
 
          // rotated rectangle
          // Point2f rect_points[4]; minRect[i].points( rect_points );
@@ -537,7 +538,7 @@ int process(VideoCapture& capture)
         imshow("Hough", cimg);
       }
     }
-    imshow( "Contours", drawing );
+    //imshow( "Contours", drawing );
   
 
 
@@ -580,7 +581,7 @@ int process(VideoCapture& capture)
     //////////////////////
     // CLI
     //////////////////////
-    char key = (char) waitKey(5); //delay N millis, usually long enough to display and capture input
+    char key = (char) waitKey(1); //delay N millis, usually long enough to display and capture input
     int kMax; //sorry, bad programming, but relatively desparate for results..
     switch (key)
     {

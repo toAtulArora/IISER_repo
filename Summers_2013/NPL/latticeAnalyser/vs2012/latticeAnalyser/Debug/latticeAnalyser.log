@@ -1,4 +1,4 @@
-﻿Build started 21/05/2013 07:23:40 PM.
+﻿Build started 21/05/2013 09:01:05 PM.
      1>Project "C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\latticeAnalyser\vs2012\latticeAnalyser\latticeAnalyser.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\opencv\build\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\latticeAnalyser.cpp
@@ -23,4 +23,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.03
+Time Elapsed 00:00:02.20
