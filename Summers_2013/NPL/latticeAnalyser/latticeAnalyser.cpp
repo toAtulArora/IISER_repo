@@ -187,7 +187,9 @@ static void onMouse( int event, int x, int y, int, void* )
 
 int process(VideoCapture& capture)
 {
-  
+  cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
+  capture.set(CV_CAP_PROP_FRAME_HEIGHT,240);
+  capture.set(CV_CAP_PROP_FRAME_WIDTH,320);
   for(;;)
   {    
     
