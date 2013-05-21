@@ -528,7 +528,7 @@ int process(VideoCapture& capture)
 
       //DEBUG ONLY
       if(i==0)
-      {         
+      {
         Mat cimg(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
         sprintf(text,"%1.1f",dipoles[k][i].angle);
         putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);
