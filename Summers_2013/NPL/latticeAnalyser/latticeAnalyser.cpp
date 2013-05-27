@@ -27,6 +27,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
+#include <thread>
 // #include <string.h>
 // #include <array> 
 
@@ -37,7 +38,7 @@ using namespace std;
 double tCstart,tCdelta,tCend; //time for computation
 vector <double> computationTime;
 
-Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;
+Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 //for the cropping
 int cropped = 0;
 Point origin;
@@ -184,19 +185,37 @@ static void onMouse( int event, int x, int y, int, void* )
   }
 }
 
+void tGrabFrame(VideoCapture& capture)
+{
+  for(;;)
+    capture>>srcPreCrop;
+}
 
-
+void tUpdateDisplay()
+{
+  imshow("Contours", drawing );
+  // imshow("Hough", cimg);
+  imshow( filter_window, src_gray);
+  imshow( source_window, srcPreCrop );
+}
 int process(VideoCapture& capture)
 {
   cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
   capture.set(CV_CAP_PROP_FRAME_HEIGHT,480);
   capture.set(CV_CAP_PROP_FRAME_WIDTH,640);
+  
+  thread t1(tGrabFrame,capture);
+  // thread t2(tUpdateDisplay);
+
+
+
   for(;;)
+  if(!srcPreCrop.empty())
   {    
     
 
     {  //IMAGE CAPTURE and CROP  
-      capture>>srcPreCrop;
+      // capture>>srcPreCrop;
       ///////////////COMPUTATION TIME CALCULATION
       tCstart=getTickCount();
       ///////////
@@ -245,7 +264,7 @@ int process(VideoCapture& capture)
       else
         src=srcPreCrop;
       
-      imshow( source_window, srcPreCrop );
+      // imshow( source_window, srcPreCrop );
 
     }
 
@@ -280,7 +299,7 @@ int process(VideoCapture& capture)
       // NOw blur it
       blur( src_gray, src_gray, Size(3,3) );
 
-      imshow( filter_window, src_gray);
+      // imshow( filter_window, src_gray);
     }
 
     ////////////////////////////
@@ -450,7 +469,7 @@ int process(VideoCapture& capture)
 
     //////////////DRAWING THE CONTOUR AND DIPOLE
     /// Draw contours + rotated rects + ellipses
-    Mat drawing = Mat::zeros( threshold_output.size(), CV_8UC3 );
+    drawing = Mat::zeros( threshold_output.size(), CV_8UC3 );
     for( size_t i = 0; i< contours.size(); i++ )
        {
          // Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
@@ -460,7 +479,7 @@ int process(VideoCapture& capture)
 
          // ellipse
          if(i<minEllipse.size())
-			ellipse( drawing, minEllipse[i], color, 2, 8 );
+			       ellipse( drawing, minEllipse[i], color, 2, 8 );
 
          // rotated rectangle
          // Point2f rect_points[4]; minRect[i].points( rect_points );
@@ -534,13 +553,10 @@ int process(VideoCapture& capture)
       {
         Mat cimg(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
         sprintf(text,"%1.1f",dipoles[k][i].angle);
-        putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);
-        imshow("Hough", cimg);
+        putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);        
       }
     }
-    //imshow( "Contours", drawing );
-  
-
+    
 
     ///////////////////////////    
     //  THIS IS HOUGH
@@ -577,11 +593,11 @@ int process(VideoCapture& capture)
 
     // imshow("Hough", cimg);
 
-
+    tUpdateDisplay();
     //////////////////////
     // CLI
     //////////////////////
-    char key = (char) waitKey(1); //delay N millis, usually long enough to display and capture input
+    char key = (char) waitKey(5); //delay N millis, usually long enough to display and capture input
     int kMax; //sorry, bad programming, but relatively desparate for results..
     switch (key)
     {
