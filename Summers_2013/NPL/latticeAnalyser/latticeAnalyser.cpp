@@ -27,7 +27,8 @@
 		    d. Atomic Sync for frame fetching [done]
         f. Atomic Sync for display update [done, and apparently faster! Yey]
             [There's something wrong though, since the frame jitters like a bad codec.]
-        g. Double Buffer for display
+            [resolved]
+        g. Double Buffer for display [skipped]
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -289,8 +290,8 @@ void updateDisplay()
         {
           updateDisplay();
           // this_thread::sleep_for(chrono::milliseconds(10));
-          updateDisplayCompleted=true;          
-          // updateDisplayRequested=true;
+          // updateDisplayCompleted=true;          
+          updateDisplayRequested=false;
         }
 		    // else
           // this_thread::sleep_for(chrono::milliseconds (1));
@@ -332,9 +333,9 @@ int process(VideoCapture& capture)
 	frameRequested=true;
 
     if(frameGrabbed==true && !srcPreCrop.empty())
-		#ifdef ATOMIC_DISPLAY
-		if(updateDisplayCompleted)
-		#endif
+		// #ifdef ATOMIC_DISPLAY
+		// 	// if(updateDisplayCompleted)
+		// #endif
       
     {
       frameRequested=false;	//this is so that the frame is not processed unless required
@@ -816,11 +817,13 @@ int process(VideoCapture& capture)
             }
             break;
           case 'W':
+
             pFile=fopen("TestComputation","w");
             for(vector<double>::iterator d=computationTime.begin();d!=computationTime.end();++d)
             {
               fprintf(pFile,"%f\n",*d);
             }
+            fclose(pFile);
             break;
           case 'q':
           case 'Q':
