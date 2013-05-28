@@ -33,6 +33,7 @@
 #include <stdlib.h>
 #include <thread>
 #include <atomic>
+#include <mutex>
 // #include <string.h>
 // #include <array> 
 
@@ -53,9 +54,11 @@ mutex grabbingFrame;
 double tCstart,tCdelta,tCend; //time for computation
 vector <double> computationTime;
 
-// vector <Mat>  buf;
+vector <Mat>  buf;
 
-atmoic<Mat> frameGrabbed; 
+Mat grabbedFrame; 
+atomic<bool> frameGrabbed=false,frameRequested=false;
+
 Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 
 // int lastBuf=1;
@@ -209,9 +212,15 @@ void tGrabFrame(VideoCapture& capture)
 {
   for(;;)
   {
-    capture>>frameGrabbed;
-    // buf.push_back(frameGrabbed);
+    
+	capture>>grabbedFrame;
+	if(frameRequested)
+	{		
+		grabbedFrame.copyTo(srcPreCrop);
+		frameGrabbed=true;
+	}
 
+	//buf.push_back(frameGrabbed);
 
     // if(processingImage.try_lock())
     // {
@@ -272,11 +281,14 @@ int process(VideoCapture& capture)
     //   srcPreCrop=buf[buf.size()-1]; //grab the latest frame
     // }
 
-    frameGrabbed.copyTo(srcPreCrop);
+    // frameGrabbed.copyTo(srcPreCrop);
+	frameRequested=true;
 
-    if(!srcPreCrop.empty())  
+    if(frameGrabbed==true && !srcPreCrop.empty())  
     {
-      
+      frameRequested=false;	//this is so that the frame is not processed unless required
+	  frameGrabbed=false;	//this is so that we know the next time a frame is grabbed
+
       #ifdef MULTI_THREAD_DISPLAY
         // drawnow=true;
         drawnow.lock();
