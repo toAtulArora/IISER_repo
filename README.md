@@ -19,6 +19,12 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+* May 27, Monday: Multithreading attempted and succeeded, although not a very good release. Making progress in installing IPP.
+
+* May 21 - 26, Tuesday to Sunday: Not well; Succeeded in compiling the code in windows. It's slower. Looked up multithreading using C++ 11
+
+* May 20, Monday: Time Lag measured and found to be roughly 3 to 4 frames behind. Not quite acceptable. Attempting to install OpenCV with IPP
+
 ** May 18 and 19, Saturday and Sunday: Completing the documentation for the same. Thought of a way of testing the time lag.
 
 * May 17, Friday: The algorithm was successfully completed to measure 360 degrees. PLUS, completed the frame recording, identification of each dipole as unique and dumping the data out in file AND its testing with uniform motion which it passed with flying colours (which is to say in the visible range!, because proper standard deviation tests haven't quite been done yet) The vision part of the anlyser is almost done.

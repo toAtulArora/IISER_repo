@@ -34,6 +34,13 @@
 using namespace cv;
 using namespace std;
 
+//Configuration
+// #define MULTI_THREAD_DISPLAY
+
+#ifdef MULTI_THREAD_DISPLAY
+  bool drawnow=false;
+#endif
+
 //For computation time
 double tCstart,tCdelta,tCend; //time for computation
 vector <double> computationTime;
@@ -189,15 +196,35 @@ void tGrabFrame(VideoCapture& capture)
 {
   for(;;)
     capture>>srcPreCrop;
+     
 }
 
-void tUpdateDisplay()
+void updateDisplay()
 {
-  imshow("Contours", drawing );
-  // imshow("Hough", cimg);
-  imshow( filter_window, src_gray);
-  imshow( source_window, srcPreCrop );
+  if(!drawing.empty())
+    imshow("Contours", drawing );
+  // if(!cimg.empty())
+    // imshow("Hough", cimg);
+  if(!src_gray.empty())
+    imshow( filter_window, src_gray);
+  if(!srcPreCrop.empty())
+    imshow( source_window, srcPreCrop );
+
 }
+
+#ifdef MULTI_THREAD_DISPLAY
+  void tUpdateDisplay()
+  {
+    for(;;)
+    {
+      if(drawnow)
+      {
+        drawnow=false;
+        updateDisplay();
+      }
+    }
+  }
+#endif
 int process(VideoCapture& capture)
 {
   cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
@@ -205,7 +232,9 @@ int process(VideoCapture& capture)
   capture.set(CV_CAP_PROP_FRAME_WIDTH,640);
   
   thread t1(tGrabFrame,capture);
-  // thread t2(tUpdateDisplay);
+  #ifdef MULTI_THREAD_DISPLAY
+    thread t2(tUpdateDisplay);
+  #endif
 
 
 
@@ -593,7 +622,13 @@ int process(VideoCapture& capture)
 
     // imshow("Hough", cimg);
 
-    tUpdateDisplay();
+    #ifndef MULTI_THREAD_DISPLAY
+      updateDisplay();
+    #endif
+    
+    #ifdef MULTI_THREAD_DISPLAY
+      drawnow=true;
+    #endif
     //////////////////////
     // CLI
     //////////////////////
