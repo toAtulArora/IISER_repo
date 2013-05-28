@@ -23,7 +23,11 @@
     4. Optimizing
         a. Multi-threading frame fethcing [done]
         b. Multi-threading display update [done, but failed to improve, infact made it worse]
-        c. Multi-thread using mutex [done, no real difference but not slow either]
+        c. Multi-thread using mutex [done, no real difference but not slow either][it is actually very slow]
+		    d. Atomic Sync for frame fetching [done]
+        f. Atomic Sync for display update [done, and apparently faster! Yey]
+            [There's something wrong though, since the frame jitters like a bad codec.]
+        g. Double Buffer for display
 */
 
 #include "opencv2/highgui/highgui.hpp"
@@ -34,6 +38,7 @@
 #include <thread>
 #include <atomic>
 #include <mutex>
+#include <chrono>
 // #include <string.h>
 // #include <array> 
 
@@ -42,9 +47,25 @@ using namespace std;
 
 //Configuration
 // #define MULTI_THREAD_DISPLAY
+#define ATOMIC_DISPLAY
+
+
+#ifdef ATOMIC_DISPLAY
+  #ifndef MULTI_THREAD_DISPLAY
+    #define MULTI_THREAD_DISPLAY
+  #endif
+#endif
 
 #ifdef MULTI_THREAD_DISPLAY
-  mutex drawnow;
+  #ifndef ATOMIC_DISPLAY
+    mutex drawnow;
+  #endif
+#endif
+
+
+#ifdef ATOMIC_DISPLAY
+    atomic<bool> updateDisplayRequested=true;
+    atomic<bool> updateDisplayCompleted=false;
 #endif
 
 mutex processingImage;
@@ -245,17 +266,39 @@ void updateDisplay()
 }
 
 #ifdef MULTI_THREAD_DISPLAY
-  void tUpdateDisplay()
-  {
-    for(;;)
+  #ifndef ATOMIC_DISPLAY
+    void tUpdateDisplay()
     {
-      drawnow.lock(); //this is to ensure it updates only once the processing has been done and not repetatively the same frame
-      drawnow.unlock();
+      for(;;)
+      {
+        drawnow.lock(); //this is to ensure it updates only once the processing has been done and not repetatively the same frame
+        drawnow.unlock();
 
-      updateDisplay();
+        updateDisplay();
 
+      }
     }
-  }
+  #else
+    void tAtomicDisplay()
+    {
+      for(;;)
+      {
+        
+          // && updateDisplayCompleted==false)
+      	if(updateDisplayRequested)
+        {
+          updateDisplay();
+          // this_thread::sleep_for(chrono::milliseconds(10));
+          updateDisplayCompleted=true;          
+          // updateDisplayRequested=true;
+        }
+		    // else
+          // this_thread::sleep_for(chrono::milliseconds (1));
+			 // this_thread::yield();
+
+      }
+    }
+  #endif
 #endif
 int process(VideoCapture& capture)
 {
@@ -265,7 +308,11 @@ int process(VideoCapture& capture)
   
   thread t1(tGrabFrame,capture);
   #ifdef MULTI_THREAD_DISPLAY
-    thread t2(tUpdateDisplay);
+    #ifndef ATOMIC_DISPLAY
+      thread t2(tUpdateDisplay);
+    #else
+      thread t2(tAtomicDisplay);
+    #endif
   #endif
 
 
@@ -284,14 +331,20 @@ int process(VideoCapture& capture)
     // frameGrabbed.copyTo(srcPreCrop);
 	frameRequested=true;
 
-    if(frameGrabbed==true && !srcPreCrop.empty())  
+    if(frameGrabbed==true && !srcPreCrop.empty())
+		#ifdef ATOMIC_DISPLAY
+		if(updateDisplayCompleted)
+		#endif
+      
     {
       frameRequested=false;	//this is so that the frame is not processed unless required
-	  frameGrabbed=false;	//this is so that we know the next time a frame is grabbed
+  	  frameGrabbed=false;	//this is so that we know the next time a frame is grabbed
 
       #ifdef MULTI_THREAD_DISPLAY
         // drawnow=true;
-        drawnow.lock();
+        #ifndef ATOMIC_DISPLAY
+          drawnow.lock();          
+        #endif
       #endif
 
       {  //IMAGE CAPTURE and CROP  
@@ -679,7 +732,14 @@ int process(VideoCapture& capture)
       
       #ifdef MULTI_THREAD_DISPLAY
         // drawnow=true;
-        drawnow.unlock();
+        #ifndef ATOMIC_DISPLAY
+          drawnow.unlock();
+        #else
+          updateDisplayRequested=true;  //Both are required to trigger an update
+          // updateDisplayCompleted=false; //The request flag is used to indicate processing is done, the second indicates the same here
+          //however, once the frame has been updated, the update flag avoids unecessary refreshing of the frames.
+        #endif
+
       #endif
       //////////////////////
       // CLI
