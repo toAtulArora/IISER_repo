@@ -32,6 +32,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <thread>
+#include <atomic>
 // #include <string.h>
 // #include <array> 
 
@@ -46,12 +47,16 @@ using namespace std;
 #endif
 
 mutex processingImage;
+mutex grabbingFrame;
 
 //For computation time
 double tCstart,tCdelta,tCend; //time for computation
 vector <double> computationTime;
 
-vector <Mat> buf; Mat frameGrabbed; Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
+// vector <Mat>  buf;
+
+atmoic<Mat> frameGrabbed; 
+Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 
 // int lastBuf=1;
 //for the cropping
@@ -205,7 +210,9 @@ void tGrabFrame(VideoCapture& capture)
   for(;;)
   {
     capture>>frameGrabbed;
-    buf.push_back(frameGrabbed);
+    // buf.push_back(frameGrabbed);
+
+
     // if(processingImage.try_lock())
     // {
     //   buf.copyTo(srcPreCrop);      
@@ -258,12 +265,15 @@ int process(VideoCapture& capture)
   {
     // processingImage.lock();
     //if the video feed has over 1 frame
-    if(buf.size()>1)
-    {
-      buf.erase(buf.begin()); //remove the oldest frame
-      srcPreCrop=buf[buf.size()-1]; //grab the latest frame
-    }
-    
+
+    // if(buf.size()>1)
+    // {
+    //   buf.erase(buf.begin()); //remove the oldest frame
+    //   srcPreCrop=buf[buf.size()-1]; //grab the latest frame
+    // }
+
+    frameGrabbed.copyTo(srcPreCrop);
+
     if(!srcPreCrop.empty())  
     {
       
