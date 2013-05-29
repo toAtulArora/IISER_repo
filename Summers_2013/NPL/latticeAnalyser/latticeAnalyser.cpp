@@ -37,25 +37,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <thread>
-#include <atomic>
 #include <mutex>
 #include <chrono>
+// #include <atomic>
+
 // #include <string.h>
 // #include <array> 
 
-using namespace cv;
-using namespace std;
+
 
 //Configuration
 // #define MULTI_THREAD_DISPLAY
-#define ATOMIC_DISPLAY
-
+// #define ATOMIC_DISPLAY
+// #define MULTI_THREAD_CAMERA_UPDATE
 
 #ifdef ATOMIC_DISPLAY
   #ifndef MULTI_THREAD_DISPLAY
     #define MULTI_THREAD_DISPLAY
   #endif
 #endif
+
+#if (defined(ATOMIC_DISPLAY) || defined(MULTI_THREAD_DISPLAY) || defined(MULTI_THREAD_CAMERA_UPDATE))
+  #include<atomic>
+#endif
+
+using namespace cv;
+using namespace std;
+
 
 #ifdef MULTI_THREAD_DISPLAY
   #ifndef ATOMIC_DISPLAY
@@ -79,7 +87,11 @@ vector <double> computationTime;
 vector <Mat>  buf;
 
 Mat grabbedFrame; 
-atomic<bool> frameGrabbed=false,frameRequested=false;
+#ifdef MULTI_THREAD_CAMERA_UPDATE
+  atomic<bool> frameGrabbed=false,frameRequested=false;
+#else
+  bool frameGrabbed=false,frameRequested=false;
+#endif
 
 Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 
@@ -230,7 +242,7 @@ static void onMouse( int event, int x, int y, int, void* )
   }
 }
 
-void tGrabFrame(VideoCapture& capture)
+void tGrabFrame(VideoCapture&& capture)
 {
   for(;;)
   {
