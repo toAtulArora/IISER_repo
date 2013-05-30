@@ -572,7 +572,7 @@ int process(VideoCapture& capture)
                           // if(MAX(abs(seedDipole.data[q].x - dipoles[k][c].x), abs(seedDipole.data[q].y - dipoles[k][c].y)) < (seedDipole.order/2.0) )
                           //Or you could use the last fraame for this
                           if(
-                            (MAX(abs(dipoleData[cf-1].data[q].x - dipoles[k][c].x), abs(dipoleData[cf-1].data[q].y - dipoles[k][c].y)) < (dipoleData[cf-1].order/2.0) )
+                            (MAX(abs(dipoleData[cf-1].data[q].x - dipoles[k][c].x), abs(dipoleData[cf-1].data[q].y - dipoles[k][c].y)) < (dipoleData[cf-1].order/4.0) )
                             && 
                             (dipoleData[cf].data[q].detected==false)
                             )
