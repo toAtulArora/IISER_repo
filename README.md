@@ -19,6 +19,9 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+* May 30, Thursday: The vacuum cleaner setup had to be used. The box was drilled accordingly and the test failed partially anyway.
+* May 29, Wednesday: The pump was built but it failed the test. The air pressure generated was negligible. i7 was configured alongside and the Lattice Analyser was built on it (had to make the multi threading optional using macros) using OpenCV with OpenTBB. Tests were run and it was found to be fast enough for an 8 x 8 dipole matrix.
+* May 28, Tuesday: Multi-threading retried, wasn't quite functional last time. Looked up various techniques for multi-threading and froze an algorithm. The pump couldn't be built for parts weren't available.
 * May 27, Monday: Multithreading attempted and succeeded, although not a very good release. Making progress in installing IPP.
 
 * May 21 - 26, Tuesday to Sunday: Not well; Succeeded in compiling the code in windows. It's slower. Looked up multithreading using C++ 11
