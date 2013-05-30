@@ -1,0 +1,42 @@
+#AVRTOOLCHAIN BUILD INSTRUCTIONS
+
+#download the latest, bin-utils, gcc-core and avr-libc for now
+
+#extract them, try the following for quicker extraction
+
+cat *.tar.gz | tar -xvf - -i
+cat *.tar.bz2 | tar -xzvf - -i
+
+#these commands extract, use your brain
+#hint: - -i is for ignoring the end of file
+
+############################
+mkdir avr-binutils; cd &_
+../binutils-versionnumber/configure --target=avr --prefix=/opt/avr
+make
+make install
+###
+export PATH=$PATH:/opt/avr/bin
+#if you haven't already, to check you can use
+#echo $PATH
+
+#To do this automatically everytime, do the following
+#in /etc/profile, add a line
+#PATH=$PATH:/opt/avr/bin
+#can use the following command
+#vi PATH
+#then i, and then use the arrow keys to go to the bottom, when done adding, press escape, and type :wq and press enter for saving (writing to file) and quiting
+
+#############################
+mkdir avr-gcc; cd &_
+../gcc-versionnumer/configure --target=avr --prefix=/opt/avr --enable-languages=c --disable-nls --disable-libssp
+make
+make install
+
+##############################
+cd avr-libc-version
+./configure --build=`./config.guess` --host=avr --prefix=/opt/avr
+make
+make install
+
+##############################
