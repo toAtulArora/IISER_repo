@@ -29,6 +29,8 @@
             [There's something wrong though, since the frame jitters like a bad codec.]
             [resolved]
         g. Double Buffer for display [skipped]
+    5. Hardware Interface
+        a. Modify the CLI to include menus
 */
 
 #include "opencv2/highgui/highgui.hpp"
