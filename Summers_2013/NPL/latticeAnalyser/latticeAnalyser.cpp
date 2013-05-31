@@ -41,6 +41,7 @@
 #include <thread>
 #include <mutex>
 #include <chrono>
+#include <string>
 // #include <atomic>
 
 // #include <string.h>
@@ -49,9 +50,13 @@
 
 
 //Configuration
+// #define ATOMIC
 // #define MULTI_THREAD_DISPLAY
 // #define ATOMIC_DISPLAY
 // #define MULTI_THREAD_CAMERA_UPDATE
+
+const float version=0.6;
+
 
 #ifdef ATOMIC_DISPLAY
   #ifndef MULTI_THREAD_DISPLAY
@@ -59,10 +64,15 @@
   #endif
 #endif
 
-#if (defined(ATOMIC_DISPLAY) || defined(MULTI_THREAD_DISPLAY) || defined(MULTI_THREAD_CAMERA_UPDATE))
+#if (defined(ATOMIC) || defined(ATOMIC_DISPLAY) || defined(MULTI_THREAD_DISPLAY) || defined(MULTI_THREAD_CAMERA_UPDATE))
   #include<atomic>
 #endif
 
+#ifdef ATOMIC
+  atomic<bool> threadsEnabled=false;
+#else
+  bool threadsEnabled=false;
+#endif
 using namespace cv;
 using namespace std;
 
@@ -246,7 +256,7 @@ static void onMouse( int event, int x, int y, int, void* )
 
 void tGrabFrame(VideoCapture&& capture)
 {
-  for(;;)
+  while(threadsEnabled)
   {
     
 	capture>>grabbedFrame;
@@ -284,7 +294,7 @@ void updateDisplay()
   #ifndef ATOMIC_DISPLAY
     void tUpdateDisplay()
     {
-      for(;;)
+      while(threadsEnabled)
       {
         drawnow.lock(); //this is to ensure it updates only once the processing has been done and not repetatively the same frame
         drawnow.unlock();
@@ -296,7 +306,7 @@ void updateDisplay()
   #else
     void tAtomicDisplay()
     {
-      for(;;)
+      while(threadsEnabled)
       {
         
           // && updateDisplayCompleted==false)
@@ -317,6 +327,39 @@ void updateDisplay()
 #endif
 int process(VideoCapture& capture)
 {
+  /// Create Window
+  namedWindow( source_window, WINDOW_AUTOSIZE );
+  setMouseCallback( "Source", onMouse, 0 );
+  //Show the filtered image too
+
+  namedWindow( filter_window, WINDOW_AUTOSIZE );
+
+  //Show the settings window
+
+  namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
+  createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
+  createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
+  createTrackbar( "Min Radius (Hough)", settings_window, &minMinorAxis, 100, 0 );
+  createTrackbar( "Max Radius (Hough)", settings_window, &maxMajorAxis, 200, 0 );  
+  createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
+  createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
+  // createTrackbar( "Theta", settings_window, &thetaD, 3.141591, 0 );    
+
+  /// Show in a window
+  namedWindow( "Contours", WINDOW_AUTOSIZE );
+  namedWindow( "Hough", WINDOW_AUTOSIZE );
+
+
+  ////Voodoo intializations
+  // dipoles[0][0].current=0;
+  // dipoles[0][0].count[0]=0;
+  // dipoles[0][0].count[1]=0;
+  /// Load source image
+  // src = imread( argv[1], 1 );
+  
+  // std::string arg = argv[1];      
+////////////////
+
   cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
   capture.set(CV_CAP_PROP_FRAME_HEIGHT,480);
   capture.set(CV_CAP_PROP_FRAME_WIDTH,640);
@@ -842,6 +885,20 @@ int process(VideoCapture& capture)
           case 'q':
           case 'Q':
           case 27: //escape key
+              destroyWindow(source_window);
+              destroyWindow(filter_window);
+              destroyWindow(settings_window);
+              destroyWindow("Contours");
+              destroyWindow("Hough");
+
+              threadsEnabled=false;
+              t1.join();
+              #ifdef MULTI_THREAD_DISPLAY
+                t2.join();
+              #endif
+              // destroyAllWindows();
+              // this_thread::sleep_for( chrono::milliseconds(5000) );
+              // waitKey(1000);
               return 0;
           // case ' ': //Save an image
           //     sprintf(filename, "filename%.3d.jpg", n++);
@@ -867,55 +924,62 @@ int process(VideoCapture& capture)
  */
 int main( int ac, char** argv )
 {
-
-  ////Voodoo intializations
-  // dipoles[0][0].current=0;
-  // dipoles[0][0].count[0]=0;
-  // dipoles[0][0].count[1]=0;
-
-
-  /// Create Window
-
-  namedWindow( source_window, WINDOW_AUTOSIZE );
-  setMouseCallback( "Source", onMouse, 0 );
-  // createTrackbar( " Threshold:", "Source", &thresh, max_thresh, thresh_callback);
-  //CAN BE ENABLED, but causes problems, the following lines, to the color detection
-  // createTrackbar( " Threshold:", "Source", &thresh, max_thresh, 0);
+  cout<<"Loading";
+    cout<<endl<<endl
+        <<"Lattice Analyser | version "<<version<<endl
+        <<"------------"<<endl
+        <<"Created at the National Physical Laboratory, New Delhi"<<endl            
+        <<endl
+        <<"Project Repository Folder: github.com/toAtulArora/IISER_repo/Summers_2013/NPL"<<endl    
+        <<endl
+        <<"For help type"<<endl
+        <<"help"<<endl
+        <<"(Like you couldn't guess!)"<<endl<<endl
+        <<"\t now what?  ";
 
 
-  //Show the filtered image too
-
-  namedWindow( filter_window, WINDOW_AUTOSIZE );
-
-  //Show the settings window
-
-  namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
-  createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
-  createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
-  createTrackbar( "Min Radius (Hough)", settings_window, &minMinorAxis, 100, 0 );
-  createTrackbar( "Max Radius (Hough)", settings_window, &maxMajorAxis, 200, 0 );  
-  createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
-  createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
-  // createTrackbar( "Theta", settings_window, &thetaD, 3.141591, 0 );    
-
-  /// Show in a window
-  namedWindow( "Contours", WINDOW_AUTOSIZE );
-  namedWindow( "Hough", WINDOW_AUTOSIZE );
-
-
-  /// Load source image
-  // src = imread( argv[1], 1 );
-  std::string arg = argv[1];
-  VideoCapture capture(arg); //try to open string, this will attempt to open it as a video file
-  if (!capture.isOpened()) //if this fails, try to open as a video camera, through the use of an integer param
-      capture.open(atoi(arg.c_str()));
-  if (!capture.isOpened())
+  for(;;)
   {
-      cerr << "Failed to open a video device or video file!\n" << endl;      
-      return 1;
-  }
+    string a;
+    cin>>a;
+
+    if(!a.compare("help"))
+    {
+      cout<<endl; //for multi line, beauty stuff
+      
+      cout<<"Command \t Description"<<endl
+      <<"------- \t -----------"<<endl
+      <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl;
+
+      cout<<endl; //again for multi line console outputs, to maintain beuty
+    }
+    else if(!a.compare("exit") || !a.compare("quit"))
+    {
+      break;
+    }
+    else if(atoi(a.c_str())!=0 || !a.compare("0"))
+    {
+      threadsEnabled=true;
   
-  process(capture); 
+      VideoCapture capture; //try to open string, this will attempt to open it as a video file
+      // if (!capture.isOpened()) //if this fails, try to open as a video camera, through the use of an integer param
+      
+      capture.open(atoi(a.c_str()));
+      if (capture.isOpened())
+      {
+        process(capture);
+
+      }
+      else
+      {
+          cerr << "Failed to open the video device specified" << endl;      
+          // return 1;
+      }
+    }
+    cout<<endl<<"\t now what? ";
+  }
+
+
 
   return 0;
 }

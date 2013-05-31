@@ -10,7 +10,7 @@ export LD_LIBRARY_PATH=/usr/local/lib/
 
 #g++ hello-world.cpp -o hello-world -I /usr/local/include/opencv -L /usr/local/lib -lm -lcv -lhighgui -lcvaux
 
-g++ -std=c++11 -pthread -ggdb `pkg-config --cflags opencv` -o latticeAnalyser latticeAnalyser.cpp `pkg-config --libs opencv`
+g++ -std=c++0x -pthread -ggdb `pkg-config --cflags opencv` -o latticeAnalyser latticeAnalyser.cpp `pkg-config --libs opencv`
 #g++ -std=c++0x -pthread -ggdb `pkg-config --cflags opencv` -o latticeAnalyser latticeAnalyser.cpp /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_calib3d.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_contrib.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_core.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_features2d.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_flann.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_gpu.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_highgui.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_imgproc.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_legacy.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_ml.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_nonfree.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_objdetect.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_photo.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_stitching.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_superres.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_ts.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_video.so /usr/local/src/opencv-2.4.5/DieHard/lib/libopencv_videostab.so
 
 #this is for an IPP build
