@@ -254,7 +254,11 @@ static void onMouse( int event, int x, int y, int, void* )
   }
 }
 
-void tGrabFrame(VideoCapture&& capture)
+#ifdef __GNUC__
+	void tGrabFrame(VideoCapture&& capture)
+#else
+	void tGrabFrame(VideoCapture& capture)
+#endif
 {
   while(threadsEnabled)
   {
