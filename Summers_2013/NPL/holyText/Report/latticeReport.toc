@@ -13,4 +13,4 @@
 \contentsline {subsection}{\numberline {2.2.1}Look it has begun}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Time Line}{4}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{5}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{5}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{8}{subsection.2.2.4}

@@ -41,7 +41,32 @@
 					\par
 					Experimentally, again it was found that the motion was more damped than the `needle on glass' setup. The reason for this case was obvious after a little analysis and closer observation. The dipole would align to the field of the magnet, viz. the magnetic field was interfering with the dipole.
 			\item Air Levitation:
-					This hasn't been tested yet, but the idea is to put a disc at the bottom of the needle, and pass air through it to keep it suspended.
+					\par
+					To test this, the very first requirement was a source of stream of air. For this, we started small. We arranged for a small USB fan from a colleague. The next task was to channel the flow of air. This was accomplished by attaching the front part of a Pepsi Bottle such that the larger diameter was closer to the fan and the mouth of the bottle had the chord stuck to it (could still be moved if required), as diagrammatically given in \autoref{fanSetup}. The final setup has been given in \autoref{fanSetupActual}.
+					\begin{figure}[bth]
+						\begin{center}
+							\includegraphics[width=0.7\linewidth]{gfx/fanSetup.jpg}
+						\end{center}
+					\caption[Fan Setup]{Fan Setup}
+					\label{fanSetup}
+					\end{figure}
+
+					\begin{figure}[bth]
+						\begin{center}
+							\includegraphics[width=0.7\linewidth]{gfx/fanSetupActual.jpg}
+						\end{center}
+					\caption[Final Fan Setup]{Final Fan Setup}
+					\label{fanSetupActual}
+					\end{figure}
+					This failed miserably for the air pressure would fall the moment the assembly covered the fan. Introducing slits to allow air to flow in created no appreciable difference. This idea had to be dropped in favour of the vacuum cleaner setup as shown in TODO: add the figure. 
+					\par
+					The vacuum cleaner was used as a blower and connected to a box using a pipe. On one of the faces of the box, four holes were drilled (which were later enlarged). These were covered to increase the pressure when required. On the open hole, one dipole was placed (which had to be re built with a minor modification, refer to TODO: Add image) with a disc at the bottom. This is when an apparently bizarre observation was made. At a given pressure, it was found that the dipole could remain suspended in air beyond a certain height (and obviously there was an upper bound for the same). However, for heights lower than that, the dipole would fall. The explanation which seemed to resolve this was that the air could spread while rising sufficiently only beyond that height to apply pressure at a large enough surface area, thus create enough force. Albeit the experiment was not performed under precisely the same conditions, when it was repeated with a larger disc, the same problem was encountered, suggesting that there may be more to the explanation that deduced so far. Other geometries at the base (other than the disc) were also tried, such as a cone and a thermecol sphere, neither of which worked at low pressures which were enough to suspend the disc based setups. Further, at high pressures, disturbances in the form of torque in the dipole's axis of rotation begin to appear, which are fatal for the experiment.
+					\par
+					Other problems with air-suspension included damping in the vertical direction. Once the dipole reaches the vertical equilibrium point, it overshoots just as an oscillator. Since the friction at the plates holding the needle vertical is negligible, the oscillations don't get damped quick enough. This was experimentally observed also. The energy ratio between the rotational part and the translation part, in the earth's field, was calculated and found to be approximately one for the given setup.
+					\par
+					The most stable we could achieve with this setup was using a cylinderical projection from which the high pressure air escapes and a disc of comparable size attached to the dipole. This did get suspended satisfactorily, unlike the other methods where the suspension could not be maintained at the desired height, however the needle became rather wobbly and unstable resulting in increased friction.
+					\par
+					Online research indicated that air-bearings do function well enough and so do the boards of air hockey. These will be explored in the coming weeks to improve upon the methods to achieve the desired results.
 		\end{enumerate}
 	\subsection{Construction of the Lattice Analyser}
 		The lattice analyser has come a long way. Image detection trials were initiated with \autoref{sampleImage}. 
@@ -128,6 +153,7 @@
 
 		After implementation of the last part, an animation sequence was created in Power Point, with the dipoles rotating with a constant speed and the camera was aimed at the screen. A still from the same is given in \autoref{testPattern}. \autoref{testGraphs}, shows the angular position versus time plot, for the first dipole and yes, it is linear, just as expected. Standard deviation tests are still to be done.
 		\par
+		Further tests, relating to it's timing were done and it was found that the processing itself was taking longer than 
 		Following is the source code of the same, which has been made available online.
 		\lstinputlisting[language=C++,title=latticeAnalyser.cpp]{../../latticeAnalyser/latticeAnalyser.cpp}
 		
