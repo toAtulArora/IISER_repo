@@ -923,6 +923,11 @@ int process(VideoCapture& capture)
 
 }
 
+void temperatureTest()
+{
+  cout<<"temperature Test [Hardware]";  
+}
+
 /**
  * @function main
  */
@@ -953,11 +958,14 @@ int main( int ac, char** argv )
       
       cout<<"Command \t Description"<<endl
       <<"------- \t -----------"<<endl
-      <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl;
+      <<"temp    \t Launches hardware test"<<endl
+      <<"temperature \t same as temp"<<endl
+      <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl
+      <<"q        \t exit or quit"<<endl;
 
       cout<<endl; //again for multi line console outputs, to maintain beuty
     }
-    else if(!a.compare("exit") || !a.compare("quit"))
+    else if(!a.compare("exit") || !a.compare("quit") || !a.compare("q"))
     {
       break;
     }
@@ -979,6 +987,10 @@ int main( int ac, char** argv )
           cerr << "Failed to open the video device specified" << endl;      
           // return 1;
       }
+    }
+    else if(!a.compare("temperature") || !a.compare("temp"))
+    {
+      temperatureTest();
     }
     cout<<endl<<"\t now what? ";
   }
