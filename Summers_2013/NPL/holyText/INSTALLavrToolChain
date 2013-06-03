@@ -40,3 +40,14 @@ make
 make install
 
 ##############################
+#Download the latest sp12 from http://www.xs4all.nl/~sbolt/e-spider_prog_menu.html
+#create a link to the sp12 executable after extracting the tar
+#chmod both the link and the targeet with chmod 4555
+#export SP12=$HOME
+#and also add aline to /etc/profile saying export SP12=$HOME
+#from the home directory, run SP12 -i, and you're good to go (this works only if you a parallel port)
+
+##############################
+#Bootloader based instllation
+#For the kit at NPL, you use B 0 (D-) B 1 (D +) and C 0 (for enable programming) in the config of bootloadHID from ObDev
+#One can also try usbbasploader for use with avrdude over hid (probably not very useful anywya, since you have to change pins for this setup :( 
