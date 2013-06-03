@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  2 JUN 2013 21:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  3 JUN 2013 09:05
 entering extended mode
 **C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/holyText/Report/latticeRe
 port.tex
@@ -709,14 +709,7 @@ atter/Contents.aux)
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\holyText\Report\Chapters/P
 rologue.aux)
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\holyText\Report\Chapters/W
-atchItGrow.aux
-
-LaTeX Warning: Label `fanSetupActual' multiply defined.
-
-
-LaTeX Warning: Label `fanSetupActual' multiply defined.
-
-)
+atchItGrow.aux)
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\holyText\Report\FrontBackm
 atter/Colophon.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -961,22 +954,14 @@ File: gfx/fanSetupActual.jpg Graphic file (type jpg)
 Package pdftex.def Info: gfx/fanSetupActual.jpg used on input line 56.
 (pdftex.def)             Requested size: 235.19897pt x 176.7539pt.
 
-
-LaTeX Warning: Reference `vacuumCleanerSetup' on page 6 undefined on input line
- 61.
-
-<gfx/vacuumCleanerSetup.jpg, id=224, 2585.66pt x 1943.26pt>
+<gfx/vacuumCleanerSetup.jpg, id=225, 2585.66pt x 1943.26pt>
 File: gfx/vacuumCleanerSetup.jpg Graphic file (type jpg)
 
 <use gfx/vacuumCleanerSetup.jpg>
 Package pdftex.def Info: gfx/vacuumCleanerSetup.jpg used on input line 64.
 (pdftex.def)             Requested size: 235.19897pt x 176.7539pt.
 
-
-LaTeX Warning: Reference `theLightDipole' on page 6 undefined on input line 70.
-
-
-<gfx/theLightDipole.jpg, id=225, 233.9139pt x 281.6121pt>
+<gfx/theLightDipole.jpg, id=227, 233.9139pt x 281.6121pt>
 File: gfx/theLightDipole.jpg Graphic file (type jpg)
 
 <use gfx/theLightDipole.jpg>
@@ -991,7 +976,7 @@ Overfull \hbox (16.33775pt too wide) in paragraph at lines 83--84
 n well enough
  []
 
-<../../latticeAnalyser/picture002.jpg, id=238, 336.25626pt x 336.25626pt>
+<../../latticeAnalyser/picture002.jpg, id=239, 336.25626pt x 336.25626pt>
 File: ../../latticeAnalyser/picture002.jpg Graphic file (type jpg)
 
 <use ../../latticeAnalyser/picture002.jpg>
@@ -1000,7 +985,7 @@ e 89.
 (pdftex.def)             Requested size: 235.19897pt x 235.1982pt.
  [8 <C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/holyText/Report/gfx/th
 eLightDipole.jpg>]
-<../../latticeAnalyser/snapshot1.png, id=243, 963.6pt x 770.88pt>
+<../../latticeAnalyser/snapshot1.png, id=244, 963.6pt x 770.88pt>
 File: ../../latticeAnalyser/snapshot1.png Graphic file (type png)
 
 <use ../../latticeAnalyser/snapshot1.png>
@@ -1013,7 +998,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 113--114
  []
 
 [9 <C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/latticeAnalyser/picture
-002.jpg>] <../../latticeAnalyser/snapshot2.png, id=250, 963.6pt x 770.88pt>
+002.jpg>] <../../latticeAnalyser/snapshot2.png, id=251, 963.6pt x 770.88pt>
 File: ../../latticeAnalyser/snapshot2.png Graphic file (type png)
 
 <use ../../latticeAnalyser/snapshot2.png>
@@ -1025,7 +1010,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 121--122
  [] 
  []
 
-<../../latticeAnalyser/singleDipole.png, id=253, 97.5645pt x 97.5645pt>
+<../../latticeAnalyser/singleDipole.png, id=254, 97.5645pt x 97.5645pt>
 File: ../../latticeAnalyser/singleDipole.png Graphic file (type png)
 
 <use ../../latticeAnalyser/singleDipole.png>
@@ -1033,7 +1018,7 @@ Package pdftex.def Info: ../../latticeAnalyser/singleDipole.png used on input l
 ine 132.
 (pdftex.def)             Requested size: 100.80103pt x 100.80219pt.
 
-<../../latticeAnalyser/snapshot5.png, id=255, 963.6pt x 770.88pt>
+<../../latticeAnalyser/snapshot5.png, id=256, 963.6pt x 770.88pt>
 File: ../../latticeAnalyser/snapshot5.png Graphic file (type png)
 
 <use ../../latticeAnalyser/snapshot5.png>
@@ -1045,7 +1030,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 140--141
  [] 
  []
 
-<../../latticeAnalyser/testGraphs.pdf, id=258, 845.07718pt x 597.55246pt>
+<../../latticeAnalyser/testGraphs.pdf, id=259, 845.07718pt x 597.55246pt>
 File: ../../latticeAnalyser/testGraphs.pdf Graphic file (type pdf)
 
 <use ../../latticeAnalyser/testGraphs.pdf>
@@ -1059,7 +1044,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 151--152
 
 [10 <C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/latticeAnalyser/snapsh
 ot1.png (PNG copy)>]
-<../../latticeAnalyser/ellipseCircleDipoles4x4_black.jpg, id=263, 458.9145pt x 
+<../../latticeAnalyser/ellipseCircleDipoles4x4_black.jpg, id=264, 458.9145pt x 
 428.802pt>
 File: ../../latticeAnalyser/ellipseCircleDipoles4x4_black.jpg Graphic file (typ
 e jpg)
@@ -1285,22 +1270,16 @@ FrontBackmatter/Colophon.tex
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `latticeReport.out' has not changed.
 (rerunfilecheck)             Checksum: 1B8B80D63E86B4EF1E459F3C5B147F0D;1310.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 18551 strings out of 493921
- 284298 string characters out of 3147285
- 664465 words of memory out of 3000000
+ 18548 strings out of 493921
+ 284280 string characters out of 3147285
+ 664485 words of memory out of 3000000
  20309 multiletter control sequences out of 15000+200000
- 83759 words of font info for 113 fonts, out of 3000000 for 9000
+ 82303 words of font info for 110 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 53i,14n,67p,1580b,3039s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,14n,67p,1571b,3039s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/
@@ -1309,12 +1288,11 @@ fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fp
 lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/urw/palatino/uplri8a.pfb>
-Output written on latticeReport.pdf (45 pages, 7795435 bytes).
+ Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on latticeReport.pdf (45 pages, 7785937 bytes).
 PDF statistics:
- 1661 PDF objects out of 1728 (max. 8388607)
+ 1659 PDF objects out of 1728 (max. 8388607)
  1123 named destinations out of 1200 (max. 500000)
  21213 words of extra memory for PDF output out of 24883 (max. 10000000)
 
