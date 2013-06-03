@@ -33,6 +33,11 @@
         a. Modify the CLI to include menus
 */
 
+// for USB interface
+#include "DataTypes.h"
+#include "usbIO.h"
+//
+
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 #include <iostream>
@@ -42,6 +47,7 @@
 #include <mutex>
 #include <chrono>
 #include <string>
+
 // #include <atomic>
 
 // #include <string.h>
@@ -925,7 +931,32 @@ int process(VideoCapture& capture)
 
 void temperatureTest()
 {
-  cout<<"temperature Test [Hardware]";  
+  char usbBuf[REPORT_LEN]="ABCDEFGHIJK";
+
+  cout<<"temperature Test"<<endl<<endl;  
+  cout<<"Initializing Hardware"<<endl;
+  vInitUSB();
+  cout<<"Initialization Successful"<<endl<<endl;
+  
+  cout<<"Writing to hardware"<<endl;
+  int usbLen;
+  if( (usbLen=nWriteUSB( (unsigned char *) usbBuf,14)) )
+  {
+    cout<<"Writing Successful"<<endl<<endl;
+  }
+
+  cout<<"Reading from hardware"<<endl;
+  usbLen=nReadUSB( (unsigned char*) usbBuf);
+  if(usbLen==0)
+    cout<<"Failed!"<<endl<<endl;
+  else
+  {
+    cout<<"Data Read: ";
+    for(int i=0;i<usbLen;i++)
+      printf("%4d",usbBuf[i]);
+    cout<<endl<<endl;
+  }
+  vCloseUSB();
 }
 
 /**
