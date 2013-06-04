@@ -34,8 +34,11 @@
 */
 
 // for USB interface
-#include "DataTypes.h"
-#include "usbIO.h"
+extern "C"
+{
+  #include "DataTypes.h"
+  #include "usbIO.h"
+}
 //
 
 #include "opencv2/highgui/highgui.hpp"
@@ -938,7 +941,7 @@ void temperatureTest()
   vInitUSB();
   cout<<"Initialization Successful"<<endl<<endl;
   
-  cout<<"Writing to hardware"<<endl;
+  cout<<"Writing to hardware:"<<usbBuf<<endl;
   int usbLen;
   if( (usbLen=nWriteUSB( (unsigned char *) usbBuf,14)) )
   {
@@ -951,7 +954,8 @@ void temperatureTest()
     cout<<"Failed!"<<endl<<endl;
   else
   {
-    cout<<"Data Read: ";
+    usbBuf[usbLen]= '\0';
+    cout<<"Data Read: "<<usbBuf<<endl;
     for(int i=0;i<usbLen;i++)
       printf("%4d",usbBuf[i]);
     cout<<endl<<endl;
