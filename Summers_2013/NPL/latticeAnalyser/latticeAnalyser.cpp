@@ -935,14 +935,18 @@ int process(VideoCapture& capture)
 
 void temperatureTest()
 {
-  char usbBuf[REPORT_LEN]="ABCDEFGHIJK";
+  char usbBuf[REPORT_LEN];
+  usbBuf[0]=0;
+  usbBuf[1]=0;
+  usbBuf[2]=0;
+  usbBuf[3]=9;
 
   cout<<"temperature Test"<<endl<<endl;  
   cout<<"Initializing Hardware"<<endl;
-  vInitUSB();
-  cout<<"Initialization Successful"<<endl<<endl;
+  if(!vInitUSB())
+    cout<<"Initialization Successful"<<endl<<endl;
   
-  cout<<"Writing to hardware:"<<usbBuf<<endl;
+  cout<<"Writing to hardware:"<<usbBuf<<endl;  
   int usbLen;
   if( (usbLen=nWriteUSB( (unsigned char *) usbBuf,14)) )
   {
