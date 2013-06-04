@@ -20,19 +20,19 @@
 		for
 	Binary Protocol for testing
 		fixed length, 10 charactes, 8 it each
-		01234 56789
-		xxxxx xxxxx
-		||||  \---/
-		||||    |
-		||\|    +---------Undefined for now
-		\| |-------------Dipole Intensity (65536 max)
-		 |---------------Dipole ID (65536 max)
+		0 1 2 3 4   5 6 7 8 9 
+		x x x x x   x x x x x 
+		| | | |     \ - - - / 
+		| | | |         | 
+ 	 	| | \ |         +------------Undefined for now
+		\ |  -|---------------------Dipole Intensity (65536 max)
+		 -|------------------------Dipole ID (65536 max)
 
 */
 
 #include "usbIO.h"
 
-#define DEBUG_STAGE_ZERO
+// #define DEBUG_STAGE_ZERO
 
 
 #ifndef DEBUG_STAGE_ZERO
@@ -87,21 +87,24 @@ int main(void)
 		{
 			usbPoll();								//This has to be called frequently enough
 			len=ucGetUSBData(&data);				//Get data
-			len=(len>INBUFFER_LEN)?INBUFFER_LEN;	//truncate if overflew
+			if(len>INBUFFER_LEN)
+				len=INBUFFER_LEN;					//truncate if overflew
 			if(len)									//Got data?
 			{				
 				dipoleID=(U16Bit*)&data[0];			//point the dipoleID to its location in the data 
 													//(according to the binary protocol)
 				intensity=(U16Bit*)&data[2];		//point the intensity pointer to its location
 
-				if(*dipoleID==0)					//if the id is for the zeroth dipole (testing)
+				if(*dipoleID==256)					//if the id is for the zeroth dipole (testing)
 				{
-					pucOutBuf[0]=intensity;					
+					pucOutBuf[0]=(U8Bit) (*intensity);
 					vSendUSBData(1);				//Acknowledge receiving data
 
 					//TODO: ADD PORT CODE			//Fire up the magnet for a time proportional to the intensity
-					_delay_us((U8Bit) intensity/2 );
-					_delay_us((U8Bit) intensity/2 );
+					for(U16Bit j=0;j<(*intensity);j++)
+						_delay_us(10);
+					// _delay_us((U8Bit) (*intensity/2) );
+					// _delay_us((U8Bit) (*intensity/2) );
 					//TODO: ADD CODE TO TURN OFF					
 				}
 				else

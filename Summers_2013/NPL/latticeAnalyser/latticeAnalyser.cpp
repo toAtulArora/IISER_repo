@@ -936,15 +936,22 @@ int process(VideoCapture& capture)
 void temperatureTest()
 {
   char usbBuf[REPORT_LEN];
+  for(int q=0;q<REPORT_LEN;q++)
+  {
+    usbBuf[q]=0;
+  }
+
   usbBuf[0]=0;
   usbBuf[1]=0;
-  usbBuf[2]=0;
-  usbBuf[3]=9;
+  usbBuf[2]=15;
+  usbBuf[3]=0;
+
+
 
   cout<<"temperature Test"<<endl<<endl;  
   cout<<"Initializing Hardware"<<endl;
-  if(!vInitUSB())
-    cout<<"Initialization Successful"<<endl<<endl;
+  vInitUSB();
+  // cout<<"Initialization Successful"<<endl<<endl;
   
   cout<<"Writing to hardware:"<<usbBuf<<endl;  
   int usbLen;

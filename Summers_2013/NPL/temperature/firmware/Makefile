@@ -14,7 +14,7 @@ FUSE_H  =
 AVRDUDE = avrdude -c usbasp -p $(DEVICE) # edit this line for your programmer
 TARGET=temperature
 
-CFLAGS  = -I/opt/avr/avr/include -I/opt/avr/avr/include/avr -Iusbdrv -I.. -I.  -DDEBUG_LEVEL=0 -L/opt/avr/avr/lib
+CFLAGS  = -std=c99 -I/opt/avr/avr/include -I/opt/avr/avr/include/avr -Iusbdrv -I.. -I.  -DDEBUG_LEVEL=0 -L/opt/avr/avr/lib
 OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o usbIO.o $(TARGET).o
 
 #COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
