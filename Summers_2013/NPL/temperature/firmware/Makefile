@@ -12,9 +12,10 @@ F_CPU   = 12000000	# in Hz
 FUSE_L  = # see below for fuse values for particular devices
 FUSE_H  = 
 AVRDUDE = avrdude -c usbasp -p $(DEVICE) # edit this line for your programmer
+TARGET=temperature
 
 CFLAGS  = -I/opt/avr/avr/include -I/opt/avr/avr/include/avr -Iusbdrv -I.. -I.  -DDEBUG_LEVEL=0 -L/opt/avr/avr/lib
-OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o usbIO.o main.o
+OBJECTS = usbdrv/usbdrv.o usbdrv/usbdrvasm.o usbdrv/oddebug.o usbIO.o $(TARGET).o
 
 #COMPILE = avr-gcc -Wall -Os -DF_CPU=$(F_CPU) $(CFLAGS) -mmcu=$(DEVICE)
 COMPILE = avr-gcc -Wall -Os  $(CFLAGS) -mmcu=$(DEVICE)
@@ -118,6 +119,8 @@ COMPILE = avr-gcc -Wall -Os  $(CFLAGS) -mmcu=$(DEVICE)
 # rule for uploading firmware:
 #flash: main.hex
 	# $(AVRDUDE) -U flash:w:main.hex:i
+
+
 default: clean program
 
 help:	
@@ -126,16 +129,16 @@ help:
 	@echo "make program ... to programs the firmware to the micro with bootloadHID"	
 	@echo "make clean ..... to delete objects and hex file"
 
-hex: main.hex
+hex: $(TARGET).hex
 
-program: main.hex
+program: $(TARGET).hex
 	@echo PROGRAMING TO CHIP NOW
-	bootloadHID main.hex
+	bootloadHID $(TARGET).hex
 
 
 # rule for deleting dependent files (those which can be built by Make):
 clean:
-	rm -f main.hex main.lst main.obj main.cof main.list main.map main.eep.hex main.elf *.o usbdrv/*.o main.s usbdrv/oddebug.s usbdrv/usbdrv.s
+	rm -f $(TARGET).hex $(TARGET).lst $(TARGET).obj $(TARGET).cof $(TARGET).list $(TARGET).map $(TARGET).eep.hex $(TARGET).elf *.o usbdrv/*.o $(TARGET).s usbdrv/oddebug.s usbdrv/usbdrv.s
 
 # Generic rule for compiling C files:
 .c.o:
@@ -163,21 +166,21 @@ clean:
 usbdrv:
 	cp -r ../../../usbdrv .
 
-main.elf: usbdrv $(OBJECTS)	# usbdrv dependency only needed because we copy it
+$(TARGET).elf: usbdrv $(OBJECTS)	# usbdrv dependency only needed because we copy it
 	@echo LINKING
-	$(COMPILE) -o main.elf $(OBJECTS)
+	$(COMPILE) -o $(TARGET).elf $(OBJECTS)
 
-main.hex: main.elf
+$(TARGET).hex: $(TARGET).elf
 	@echo
 	@echo COMPILING TO HEX
-	rm -f main.hex main.eep.hex
-	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
-	avr-size main.hex
+	rm -f $(TARGET).hex $(TARGET).eep.hex
+	avr-objcopy -j .text -j .data -O ihex $(TARGET).elf $(TARGET).hex
+	avr-size $(TARGET).hex
 
 # debugging targets:
 
-disasm:	main.elf
-	avr-objdump -d main.elf
+disasm:	$(TARGET).elf
+	avr-objdump -d $(TARGET).elf
 
 cpp:
-	$(COMPILE) -E main.c
+	$(COMPILE) -E $(TARGET).c

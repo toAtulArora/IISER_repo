@@ -1,3 +1,11 @@
+/*	
+	filename: temperature
+	description: This is the firmware of the hardware that simulates temperature on the dipole lattice	
+	
+	baby steps(TM):
+		1. Communication Test with the 
+*/
+
 #include "usbIO.h"
 
 int main(void)
