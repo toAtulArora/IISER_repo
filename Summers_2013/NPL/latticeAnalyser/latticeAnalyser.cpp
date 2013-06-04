@@ -942,15 +942,16 @@ void temperatureTest()
   }
 
   usbBuf[0]=0;
-  usbBuf[1]=0;
-  usbBuf[2]=15;
-  usbBuf[3]=0;
+  usbBuf[1]=1;
+  usbBuf[2]=0;
+  usbBuf[3]=100;
 
 
 
   cout<<"temperature Test"<<endl<<endl;  
   cout<<"Initializing Hardware"<<endl;
   vInitUSB();
+  cout<<endl;
   // cout<<"Initialization Successful"<<endl<<endl;
   
   cout<<"Writing to hardware:"<<usbBuf<<endl;  

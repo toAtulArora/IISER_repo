@@ -7,7 +7,7 @@
 		2. Proof of Concept:
 			The target of this would be to keep a dipole continously rotating
 			a. Test the kind of currents and voltages required to fire up the magnet
-			b. 
+			b. Make a program and fire up the magnet from the lattic analyser
 	
 	communication protocol [clear text]
 		fixed length, 10 characters (8 bit each)
@@ -19,7 +19,7 @@
 		  +--------------Dipole ID
 		for
 	Binary Protocol for testing
-		fixed length, 10 charactes, 8 it each
+		fixed length, 10 charactes, 8 bit each
 		0 1 2 3 4   5 6 7 8 9 
 		x x x x x   x x x x x 
 		| | | |     \ - - - / 
@@ -77,6 +77,29 @@ int main(void)
 		}
 		return 0;
 	#else
+		// for(;;)
+		// {
+		// 	DDRB |= (1<<5);
+		// 	PORTB |= (1<<5);
+		// 	_delay_ms(1000);
+		// 	PORTB &= ~(1<<5);
+		// 	_delay_ms(1000);
+
+		// 	// DDRB=0xff;
+		// 	// // DDRC=0xff;
+		// 	// // PORTD=0xff;	
+		// 	// PORTB=0xff;
+		// 	// _delay_ms(1000);
+		// 	// // DDRB=0x0;
+		// 	// // DDRC=0x0;
+		// 	// // PORTD=0x0;			
+		// 	// PORTB=0x0;
+		// 	// _delay_ms(1000);
+		// }
+		
+		DDRB &= ~(1<<5);				//Make it high impedence again
+		PORTB |= (1<<5);				//
+
 		usbInit();								//Initialize USB		
 		usbDeviceDisconnect();					//Disconnect and re-connect
 		_delay_ms(255);
@@ -101,8 +124,14 @@ int main(void)
 					vSendUSBData(1);				//Acknowledge receiving data
 
 					//TODO: ADD PORT CODE			//Fire up the magnet for a time proportional to the intensity
+					
+					DDRB |= (1<<5);					//Define as output					
+					PORTB &= ~(1<<5);				//Make port D.4 low, to fire the magnet
 					for(U16Bit j=0;j<(*intensity);j++)
 						_delay_us(10);
+					// DDRB &= ~(1<<5);				//Make it high impedence again
+					PORTB |= (1<<5);				//
+
 					// _delay_us((U8Bit) (*intensity/2) );
 					// _delay_us((U8Bit) (*intensity/2) );
 					//TODO: ADD CODE TO TURN OFF					
