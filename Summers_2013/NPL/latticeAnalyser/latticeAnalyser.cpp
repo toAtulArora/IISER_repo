@@ -30,8 +30,17 @@
             [resolved]
         g. Double Buffer for display [skipped]
     5. Hardware Interface
-        a. Modify the CLI to include menus
+        a. Modify the CLI to include menus  [done]
+        b. Fagocytosis of USB demo program [done]
 */
+
+// for USB interface
+extern "C"
+{
+  #include "DataTypes.h"
+  #include "usbIO.h"
+}
+//
 
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -42,6 +51,7 @@
 #include <mutex>
 #include <chrono>
 #include <string>
+
 // #include <atomic>
 
 // #include <string.h>
@@ -923,6 +933,37 @@ int process(VideoCapture& capture)
 
 }
 
+void temperatureTest()
+{
+  char usbBuf[REPORT_LEN]="ABCDEFGHIJK";
+
+  cout<<"temperature Test"<<endl<<endl;  
+  cout<<"Initializing Hardware"<<endl;
+  vInitUSB();
+  cout<<"Initialization Successful"<<endl<<endl;
+  
+  cout<<"Writing to hardware:"<<usbBuf<<endl;
+  int usbLen;
+  if( (usbLen=nWriteUSB( (unsigned char *) usbBuf,14)) )
+  {
+    cout<<"Writing Successful"<<endl<<endl;
+  }
+
+  cout<<"Reading from hardware"<<endl;
+  usbLen=nReadUSB( (unsigned char*) usbBuf);
+  if(usbLen==0)
+    cout<<"Failed!"<<endl<<endl;
+  else
+  {
+    usbBuf[usbLen]= '\0';
+    cout<<"Data Read: "<<usbBuf<<endl;
+    for(int i=0;i<usbLen;i++)
+      printf("%4d",usbBuf[i]);
+    cout<<endl<<endl;
+  }
+  vCloseUSB();
+}
+
 /**
  * @function main
  */
@@ -953,11 +994,14 @@ int main( int ac, char** argv )
       
       cout<<"Command \t Description"<<endl
       <<"------- \t -----------"<<endl
-      <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl;
+      <<"temp    \t Launches hardware test"<<endl
+      <<"temperature \t same as temp"<<endl
+      <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl
+      <<"q        \t exit or quit"<<endl;
 
       cout<<endl; //again for multi line console outputs, to maintain beuty
     }
-    else if(!a.compare("exit") || !a.compare("quit"))
+    else if(!a.compare("exit") || !a.compare("quit") || !a.compare("q"))
     {
       break;
     }
@@ -979,6 +1023,10 @@ int main( int ac, char** argv )
           cerr << "Failed to open the video device specified" << endl;      
           // return 1;
       }
+    }
+    else if(!a.compare("temperature") || !a.compare("temp"))
+    {
+      temperatureTest();
     }
     cout<<endl<<"\t now what? ";
   }
