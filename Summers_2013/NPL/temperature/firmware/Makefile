@@ -129,6 +129,7 @@ help:
 hex: main.hex
 
 program: main.hex
+	@echo PROGRAMING TO CHIP NOW
 	bootloadHID main.hex
 
 
@@ -138,10 +139,14 @@ clean:
 
 # Generic rule for compiling C files:
 .c.o:
+	@echo
+	@echo CREATING OBJECTS FROM C FILES
 	$(COMPILE) -c $< -o $@
 
 # Generic rule for assembling Assembler source files:
 .S.o:
+	@echo
+	@echo CREATING OBJECTS FROM LIBRARIES
 	$(COMPILE) -x assembler-with-cpp -c $< -o $@
 # "-x assembler-with-cpp" should not be necessary since this is the default
 # file type for the .S (with capital S) extension. However, upper case
@@ -159,9 +164,12 @@ usbdrv:
 	cp -r ../../../usbdrv .
 
 main.elf: usbdrv $(OBJECTS)	# usbdrv dependency only needed because we copy it
+	@echo LINKING
 	$(COMPILE) -o main.elf $(OBJECTS)
 
 main.hex: main.elf
+	@echo
+	@echo COMPILING TO HEX
 	rm -f main.hex main.eep.hex
 	avr-objcopy -j .text -j .data -O ihex main.elf main.hex
 	avr-size main.hex

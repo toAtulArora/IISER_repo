@@ -27,6 +27,7 @@ PROGRAM=latticeAnalyser
 all: $(PROGRAM)	
 
 $(PROGRAM): $(OBJ)
+	@echo
 	@echo LINKING EVERYTHING TOGETHER NOW
 	$(CCP) $(LIBS) -o $(PROGRAM) $(OBJ)  -I$(EXTRAINCDIRS)	
 
@@ -38,8 +39,10 @@ clean:
 	rm -f $(OBJ) $(PROGRAM)
 
 .cpp.o:
+	@echo
 	@echo BUILDING CPP TARGETS TO OBJECTS
 	$(CCP) $(CPFLAGS) -I$(EXTRAINCDIRS) -c $*.cpp -o $*.o
 .c.o:
+	@echo
 	@echo BUILDING C TARGETS TO OBJECTS
 	$(CC) $(CFLAGS) -I$(EXTRAINCDIRS) -c $*.c -o $*.o

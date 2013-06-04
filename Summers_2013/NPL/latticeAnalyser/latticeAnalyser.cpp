@@ -30,7 +30,8 @@
             [resolved]
         g. Double Buffer for display [skipped]
     5. Hardware Interface
-        a. Modify the CLI to include menus
+        a. Modify the CLI to include menus  [done]
+        b. Fagocytosis of USB demo program [done]
 */
 
 // for USB interface
