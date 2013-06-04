@@ -32,6 +32,8 @@
     5. Hardware Interface
         a. Modify the CLI to include menus  [done]
         b. Fagocytosis of USB demo program [done]
+        c. Working on the Proof of Concept for temperature
+          i. 
 */
 
 // for USB interface
@@ -203,10 +205,12 @@ char fileName[50];
 // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
   // TODO: Allow the user to select the colour
-  Scalar colorB=Scalar(245,245,10);
+  // Scalar colorB=Scalar(245,245,10);
+Scalar colorB=Scalar(126,88,47);
   Scalar colorA=Scalar(10,245,245);
   int colorATol=30;
   int colorBTol=30;
+  int brightInv=200;  //this is to increase the brightness after processing
 //
   const char* source_window = "Source";
   const char* filter_window = "Color Filter";
@@ -353,8 +357,9 @@ int process(VideoCapture& capture)
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
   createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
   createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
-  createTrackbar( "Min Radius (Hough)", settings_window, &minMinorAxis, 100, 0 );
-  createTrackbar( "Max Radius (Hough)", settings_window, &maxMajorAxis, 200, 0 );  
+  createTrackbar( "Min Radius", settings_window, &minMinorAxis, 100, 0 );
+  createTrackbar( "Max Radius", settings_window, &maxMajorAxis, 200, 0 );  
+  createTrackbar( "Brightness Inverse",settings_window, &brightInv, 255, 0);
   createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
   createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
   // createTrackbar( "Theta", settings_window, &thetaD, 3.141591, 0 );    
@@ -498,7 +503,13 @@ int process(VideoCapture& capture)
 
         /// Now keep only the required areas in the image  
         // // // multiply(src_process,srcColorFilter,src_gray,1);
-        src_gray=srcColorFilter.mul(src_process/255);
+        
+
+
+        //Change the following to use greyscaled output
+        src_gray=srcColorFilter.mul(src_process/brightInv);
+        // src_gray=srcColorFilter;
+
         // // // src_gray=srcColorFilter;
 
         // NOw blur it
