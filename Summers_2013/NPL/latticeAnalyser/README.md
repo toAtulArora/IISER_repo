@@ -5,6 +5,7 @@ This is intended to run on a Linux (preferably Ubuntu) computer. To compile any 
 This is for linux only
 
 Here are (more) screenshots
+![Under Progress](snapshot6.png "temperature interface added")
 ![Under Progress](snapshot5.png "Almost final version for the vision part")
 ![Under Progress](snapshot3.png "Dipole Algorithm partially running")
 ![Under Progress](snapshot2.png "Proof of Concept: Screenshot")

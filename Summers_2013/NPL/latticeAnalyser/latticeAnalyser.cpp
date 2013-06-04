@@ -33,7 +33,8 @@
         a. Modify the CLI to include menus  [done]
         b. Fagocytosis of USB demo program [done]
         c. Working on the Proof of Concept for temperature
-          i. 
+          i. Velocity calculation and realtime graphs
+          ii. 
 */
 
 // for USB interface
