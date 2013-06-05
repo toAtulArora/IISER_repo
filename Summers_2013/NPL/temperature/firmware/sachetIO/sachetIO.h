@@ -16,7 +16,7 @@
 	#define sachetIO
 
 	#define TRANSMIT
-	// #define RECIEVE
+	#define RECIEVE
 	
 	#include "sachetConfig.h"
 	//#include "sachetTest.h"

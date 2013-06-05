@@ -8,6 +8,6 @@ int bam(char* data,int length)
 	{
 		printf("%c",data[i]);
 	}
-	printf("\n\nI was called");
+	//printf("\n\nI was called");
 	return 10;
 }

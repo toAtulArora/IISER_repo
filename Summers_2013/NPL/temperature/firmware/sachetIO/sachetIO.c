@@ -1,11 +1,12 @@
 #include "sachetIO.h"
-
+#include <string.h>
+//TODO: FIX THIS!
 void sachetRelease(char** sachets, int sachetLen)
 {
 	int i;
-	for (i = 0; i < sachetLen; ++i) 
+	//for (i = sachetLen-1 ; i >= 0; i++) 
 	{
-	    free(sachets[i]);
+	    //free(sachets[i]);
 	}
 	free(sachets);	
 }
@@ -71,25 +72,26 @@ void sachetRelease(char** sachets, int sachetLen)
 	// -3 : End Sequence missing
 	int sachetDecode(char* data, int size)
 	{
-		int i;
+		int i,length;
+		char* loc;
 		for(i=0;i<seqSize;i++)
 		{
 			if(data[i]!=sachetProtocol.startSeq[i])
 				return -2;
 		}
 
-		char* boing;
-		char* loc=strstr(data,sachetProtocol.endSeq);	//location of start of endSequence
+		//char* boing;
+		loc=strstr(data,sachetProtocol.endSeq);	//location of start of endSequence
 
 		if(loc==NULL)
 			return -3;
 
-		int length=(loc - (data+seqSize)); //+ 1;	//find the length from the difference. Note 1 has been removed because
+		length=(loc - (data+seqSize)); //+ 1;	//find the length from the difference. Note 1 has been removed because
 		//loc points to the first character of the end sequence
 		return length;
 	}
-
 #endif
+
 
 #ifdef TRANSMIT
 	int sachetSend(char* data, int len, int (*send)(char*,int))
@@ -126,16 +128,17 @@ void sachetRelease(char** sachets, int sachetLen)
 		//Allocate memory
 		//Make an array of pointers to strings, of size
 		//sachetCount times the size of one pointer
+
 		*sachets = (char**)malloc(sachetCount*sizeof(char*));
 
-		if(*sachets==0) return 0;
+		if((*sachets)==0) return 0;
 		//Now for each string pointer, create a fixed sized string
 		for(i=0;i<sachetCount;i++)
 		{
 			//sizeof(char) is rather redundant, there for clarity
-			*sachets[i]=(char*)malloc(seqSize*sizeof(char));
+			(*sachets)[i]=(char*)malloc(seqSize*sizeof(char));
 			
-			if(*sachets[i]==0) return 0;
+			if((*sachets)[i]==0) return 0;
 		}
 
 ///////////////////////////
@@ -145,7 +148,7 @@ void sachetRelease(char** sachets, int sachetLen)
 		//Append the start seq
 		for(i=0;i<seqSize;i++)
 		{
-			*sachets[i / sachetSize][i % sachetSize]=sachetProtocol.startSeq[i];
+			(*sachets)[i / sachetSize][i % sachetSize]=sachetProtocol.startSeq[i];
 		}
 
 		//Now append the data
@@ -153,7 +156,7 @@ void sachetRelease(char** sachets, int sachetLen)
 		{
 			int iP = i+seqSize;
 
-			*sachets[iP / sachetSize][iP % sachetSize]=data[i];
+			(*sachets)[iP / sachetSize][iP % sachetSize]=data[i];
 		}
 
 		//Now append the end seq
@@ -161,7 +164,7 @@ void sachetRelease(char** sachets, int sachetLen)
 		{
 			int iP = i + (seqSize+len);
 
-			*sachets[iP / sachetSize][iP % sachetSize]=sachetProtocol.endSeq[i];
+			(*sachets)[iP / sachetSize][iP % sachetSize]=sachetProtocol.endSeq[i];
 		}
 
 		return sachetCount;
