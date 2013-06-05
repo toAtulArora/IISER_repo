@@ -9,9 +9,10 @@ int main()
 	char* data;
 	int i,len;
 	len=sachetRecieve(&data,boom,100);
-	for(i=0;i<sachetRecieve;i++)
+	printf("Data Recieve Test \nData Length:%d \nData Recieved: ",len);
+	for(i=0;i<len;i++)
 		printf("%c",data[i]);
-	printf("\nThat was decoded from sachet data\n");
+	printf("\n\nData Transmission Test\n");
 	i=sachetSend(SendThese,36,bam);
 	//sendData(SendThese,30);
 	//printf("This is a test for sachetIO transmission\n");

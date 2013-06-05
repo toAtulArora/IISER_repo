@@ -24,7 +24,7 @@ void sachetRelease(char** sachets, int sachetLen)
 			if((*recieve)(&buff)>0)
 			{
 				finalDataLength = sachetAppend(buff,data,&dataLength);
-				if(dataLength>0)
+				if(finalDataLength>0)
 				{
 					//multiplication by char is not required
 					char* finalData=(char*)malloc((finalDataLength*sizeof(char)) + 1); //make the final data as long as it was found out to be
@@ -51,17 +51,17 @@ void sachetRelease(char** sachets, int sachetLen)
 		int sizeData=*sizeAppendedData;					//used later; starting point of the new data in the appended data
 		int newSize=sizeData+sachetSize;				//used later
 		int i,k=0;
-		*sizeAppendedData+=newSize;						//Update this value for the function that called it
-		*appendedData=(char*)realloc(appendedData,newSize);	//One more sachet of data has been recieved,
+		*sizeAppendedData=newSize;						//Update this value for the function that called it
+		*appendedData=(char*)realloc(*appendedData,newSize);	//One more sachet of data has been recieved,
 		//so make space for it in the memory
 		//exit if it fails
 		if((*appendedData)==NULL) 
 			return -1;
 		
 		//append the data now		
-		for(i=sizeData-1,k=0;k<sachetSize;i++,k++)
+		for(i=sizeData,k=0;k<sachetSize;i++,k++)
 		{
-			*appendedData[i]=newData[k];
+			(*appendedData)[i]=newData[k];
 		}
 
 		return sachetDecode(*appendedData,*sizeAppendedData);
