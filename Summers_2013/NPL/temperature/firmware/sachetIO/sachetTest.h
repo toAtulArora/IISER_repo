@@ -11,3 +11,13 @@ int bam(char* data,int length)
 	//printf("\n\nI was called");
 	return 10;
 }
+int boom(char** data);
+
+int boom(char** data)
+{
+	static char testString[30]="ART12345678901234567890SOP";
+	static int start=0;
+	*data=testString+start;
+	start+=10;
+	return 10;
+}

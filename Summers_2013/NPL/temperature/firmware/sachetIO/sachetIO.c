@@ -16,7 +16,7 @@ void sachetRelease(char** sachets, int sachetLen)
 	{
 		char* buff;
 		int finalDataLength=0,dataLength=0;
-		free(*data);		//free up whatever data was already present
+		//free(*data);		//free up whatever data was already present
 		*data=0;			//null pointer
 
 		while(timeout--)
@@ -48,22 +48,21 @@ void sachetRelease(char** sachets, int sachetLen)
 	//		:	data collected so far doesn't have the start and end sequence (for error messages refer to sachetDecode)
 	int sachetAppend(char* newData, char** appendedData,int* sizeAppendedData)
 	{
-		// int sizeData=*sizeAppendedData;					//used later; starting point of the new data in the appended data
-		// int newSize=sizeData+sachetSize;				//used later
-		// *sizeAppendedData+=newSize;						//Update this value for the function that called it
-		// *appendedData=(char*)realloc(appendedData,newSize);	//One more sachet of data has been recieved,
-		// //so make space for it in the memory
-		// //exit if it fails
-		// if((*appendedData)==NULL) 
-		// 	return -1;
+		int sizeData=*sizeAppendedData;					//used later; starting point of the new data in the appended data
+		int newSize=sizeData+sachetSize;				//used later
+		int i,k=0;
+		*sizeAppendedData+=newSize;						//Update this value for the function that called it
+		*appendedData=(char*)realloc(appendedData,newSize);	//One more sachet of data has been recieved,
+		//so make space for it in the memory
+		//exit if it fails
+		if((*appendedData)==NULL) 
+			return -1;
 		
-		// int j=0;
-		// //append the data now
-		// int i,k=0;
-		// for(i=sizeData-1;k<sachetSize;i++)
-		// {
-		// 	*appendedData[i]=newData[++k];
-		// }
+		//append the data now		
+		for(i=sizeData-1,k=0;k<sachetSize;i++,k++)
+		{
+			*appendedData[i]=newData[k];
+		}
 
 		return sachetDecode(*appendedData,*sizeAppendedData);
 	}
@@ -72,22 +71,26 @@ void sachetRelease(char** sachets, int sachetLen)
 	// -3 : End Sequence missing
 	int sachetDecode(char* data, int size)
 	{
-		int i,length;
+		int i,length=0;
 		char* loc;
-		for(i=0;i<seqSize;i++)
+
+		if(data!=NULL)
 		{
-			if(data[i]!=sachetProtocol.startSeq[i])
-				return -2;
+			for(i=0;i<seqSize;i++)
+			{
+				if(data[i]!=sachetProtocol.startSeq[i])
+					return -2;
+			}
+
+			//char* boing;
+			loc=strstr(data,sachetProtocol.endSeq);	//location of start of endSequence
+
+			if(loc==NULL)
+				return -3;
+
+			length=(loc - (data+seqSize)); //+ 1;	//find the length from the difference. Note 1 has been removed because
+			//loc points to the first character of the end sequence
 		}
-
-		//char* boing;
-		loc=strstr(data,sachetProtocol.endSeq);	//location of start of endSequence
-
-		if(loc==NULL)
-			return -3;
-
-		length=(loc - (data+seqSize)); //+ 1;	//find the length from the difference. Note 1 has been removed because
-		//loc points to the first character of the end sequence
 		return length;
 	}
 #endif
