@@ -1,13 +1,19 @@
 #include "sachetIO.h"
 #include <string.h>
+#include <stdio.h>
 //TODO: FIX THIS!
 void sachetRelease(char** sachets, int sachetLen)
 {
-	int i;
-	//for (i = sachetLen-1 ; i >= 0; i++) 
-	{
-	    //free(sachets[i]);
-	}
+	//int i,k;
+	//for (i = sachetLen-1 ; i >= 0; i--) 
+	//{
+		////char* removeMe=sachets[i];
+	    //free(sachet[i]);
+		////for(k=0;k<sachetSize;k++)
+			////printf("%c",sachets[i][k]);
+		////printf("\n");
+	//}
+	//Looks like the memory is getting cleaned in just one call because the 
 	free(sachets);	
 }
 
@@ -15,7 +21,7 @@ void sachetRelease(char** sachets, int sachetLen)
 	int sachetRecieveIterate(char** data,int (*recieve)(char**))
 	{		
 		char* buff;
-		char* intBuf=sachetR.buf[sachetR.i];	//intBuf now points to the buffer data has to be recorded into
+		char** intBuf=&sachetR.buf[sachetR.i];	//intBuf now points to the buffer data has to be recorded into
 		int finalDataLength=0, *dataLength;
 		dataLength=&sachetR.len[sachetR.i]; 		//Now *dataLength and the internal length correpsond to the same number
 
@@ -25,7 +31,7 @@ void sachetRelease(char** sachets, int sachetLen)
 			if(finalDataLength>0)
 			{
 				//intBuf=(char*)realloc(intBuf,finalDataLength+seqSize);		//to crop out the ending part
-				*data=intBuf+seqSize;										//to crop out the starting part
+				*data=(*intBuf)+seqSize;										//to crop out the starting part
 				//The following is simpler, but memory intensive
 				//multiplication by char is not required				
 				//char* finalData=(char*)malloc((finalDataLength*sizeof(char)) + 1); //make the final data as long as it was found out to be
@@ -43,7 +49,19 @@ void sachetRelease(char** sachets, int sachetLen)
 				return finalDataLength;										//Return the length of the data
 				//Got the data!
 			}
+			if((*dataLength)>inputBufferLen)	//Overflow! no valid data so far
+			{
+				//Clear the internal buffer
+				free(*intBuf);
+				//Make the length zero
+				*dataLength=0;
+				//Nothing extracted
+				*data=NULL;
+				return -3;
+			}
+			//other error codes can be looked up from sachetAppend
 		}
+		*data=NULL;
 		return finalDataLength; 	//returns negative numbers here
 
 	}

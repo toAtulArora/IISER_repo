@@ -25,3 +25,16 @@ int boom(char** data)
 	start+=10;
 	return 10;
 }
+
+int busted(char** data);
+
+int busted(char** data)
+{
+	static char testString[100]="ARTCongratulations if you can read this!SOP I take that back.. ";
+	static int start=0;
+	*data=testString+start;
+	start+=10;
+	return 10;
+
+}
+

@@ -16,7 +16,21 @@ int main()
 	i=sachetSend(SendThese,36,bam);
 	//sendData(SendThese,30);
 	//printf("This is a test for sachetIO transmission\n");
-	
+	printf("\n\nBuffered Input Test");
+	for(i=0;i<10;i++)
+	{
+		len=sachetRecieveIterate(&data,busted);		
+		if(len>0)
+		{
+			printf("Length: %d \nData Recieved: ",len);
+			for(i=0;i<len;i++)
+			{
+				printf("%c",data[i]);
+			}
+			i=10;
+		}
+	}
+
 	getchar();
 	return 0;
 }
