@@ -5,7 +5,8 @@
 	// seqSize;				//Length of start and end sequence in number of bits (recommended >2)
 	#define seqSize 3
 	#define sachetSize 10
-	
+	#define inputBufferLen 1000
+
 	struct structSachetProtocol
 	{
 		char startSeq[seqSize+1];

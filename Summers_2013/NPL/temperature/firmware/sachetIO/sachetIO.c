@@ -12,6 +12,42 @@ void sachetRelease(char** sachets, int sachetLen)
 }
 
 #ifdef RECIEVE
+	int sachetRecieveIterate(char** data,int (*recieve)(char**))
+	{		
+		char* buff;
+		char* intBuf=sachetR.buf[sachetR.i];	//intBuf now points to the buffer data has to be recorded into
+		int finalDataLength=0, *dataLength;
+		dataLength=&sachetR.len[sachetR.i]; 		//Now *dataLength and the internal length correpsond to the same number
+
+		if((*recieve)(&buff)>0)
+		{
+			finalDataLength = sachetAppend(buff,intBuf,dataLength);
+			if(finalDataLength>0)
+			{
+				//intBuf=(char*)realloc(intBuf,finalDataLength+seqSize);		//to crop out the ending part
+				*data=intBuf+seqSize;										//to crop out the starting part
+				//The following is simpler, but memory intensive
+				//multiplication by char is not required				
+				//char* finalData=(char*)malloc((finalDataLength*sizeof(char)) + 1); //make the final data as long as it was found out to be
+				//memcpy(finalData,(*data+seqSize),finalDataLength);			//extract data from the appended data to the final data
+				//free(*data);												//release memory occupied by the appended data
+				// *data=finalData;											//Update the data pointer
+
+				//Now swap buffers
+				sachetR.i=(sachetR.i==0)?1:0;
+				//Clear the old buffer
+				free(sachetR.buf[sachetR.i]);
+				//Make the length zero
+				sachetR.len[sachetR.i]=0;
+
+				return finalDataLength;										//Return the length of the data
+				//Got the data!
+			}
+		}
+		return finalDataLength; 	//returns negative numbers here
+
+	}
+
 	int sachetRecieve(char** data, int (*recieve)(char**),int timeout)
 	{
 		char* buff;

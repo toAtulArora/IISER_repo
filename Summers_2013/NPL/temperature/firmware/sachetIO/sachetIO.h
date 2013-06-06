@@ -60,12 +60,12 @@
 	#ifdef RECIEVE	
 	//For the reciever
 		////////NOT IMPLIMENTED YET
-		struct sachetR
+		struct structSachetR
 		{
 			int i;
 			char* buf[2];
 			int len[2];
-		};
+		} sachetR={0,{NULL,NULL},{0,0}};
 		////////////////////////////
 		
 		//Directly read (your recieve function should invoke poll if required)
