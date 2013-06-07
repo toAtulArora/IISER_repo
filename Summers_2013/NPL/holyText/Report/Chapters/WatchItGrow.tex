@@ -199,6 +199,42 @@
 		\par
 		Further, the CLI of the program was modified to add support for inputting various commands, which would be required for testing the hardware (which is scheduled to be built this week).
 		\par
+		And surprise surprise, the hardware interface was in fact done in the following week. \myProf had already created a simplified version of the Ob-Dev firmware for USB interface of an Atmega with the PC which was used. More on that is there in the temperature section (which follows). The Lattice Analyser had to pump in energy to the system by providing angular velocity to the system of dipoles repetitively at suitable time intervals, viz. when the temperature of the system drops. The temperature is calculated in realtime using the RMS angular velocity of each dipole in the system. It was immediately realized after a closer look that since the time window between two frames is roughly 30 ms, it is not possible to energize all the dipoles with velocities picked from a given distribution of temperature. Further, since the motion of the entire system is coupled, it suffices to energize \emph{some} dipoles sufficiently to maintain the temperature.
+		\par
+		To achieve this the following were done (or algorithms for achieving them written) \footnote{For completeness sake, it must be stated that some modifications had to be made before the colour filtration became functional}
+		\begin{enumerate}
+			\item The tools for compiling and programming the AVR installed
+			\item Bootloader programmed into the micro-controller along with the sample program given by \myProf
+			\item Communication with the PC was tested using the corresponding C example program for the PC
+			\item USB libraries were incorporated into the latticeAnalyser and linked (had to compile C objects with C++ objects)
+			\item A simple IO protocol between the Lattice Analyser and the microcontroller was written and tested.
+			\item The coil of a dipole was tested with a set of 4 A4 batteries and some basic current calculations were done
+			\item The hardware was setup to include a small current limiting resistor (about 120 ohms) and the coil powered using the Lattice Analyser
+			\item (was not required) Worked on sachetIO; a library for breaking down a large chunk of data into sachets intended to be transmitted and combined after being received.
+			\item (was not required) Looked up methods to amplify the current, since the micro-controller's current wasn't found to be strong enough to align the needle of the dipole to it.
+			\item Discussion about how to implement the energy pumping (which is how the previous two steps were found to be pointless)
+			\item A $2 \times 2$ lattice of dipoles was setup. 
+			\item The angular velocities of each dipole calculated
+			\item With each frame, the RMS angular velocity calculated
+			\item An algorithm for position and velocity based energy pumping written
+			\item Interface added to test the same by supporting inversion of force direction (so that it results in halting) and an option to make blind (viz. disable the algorithm and instead send pulses periodically in time)
+		\end{enumerate}
+		The final result was that energy could be pumped into one dipole satisfactorily. The next step was to extend the algorithm to an arbitrarily sized matrix. Certain steps such as velocity calculations when dipole detection fails (at high speeds) has arbitrary inaccurate behaviour in the said version. Algorithms for finding the axis of the coil in the dipoles also needs to be finalized, for there are more than one ways of doing this, viz. powering the coils and reading the angular position of the dipole, finding the axis of the lattice by noting the Cartesian positions of the dipole, deduce it from the rest (initial) angular position of the dipoles which should be known given the lattice size, etc.		
+		\par
 		Following is the source code of the same, which has been made available online.
 		\lstinputlisting[language=C++,title=latticeAnalyser.cpp]{../../latticeAnalyser/latticeAnalyser.cpp}
-		
+	\subsection{temperature; the rise}
+		`temperature' was built around the Atmega8 processor to start with. It's task was to energize the coils of the dipoles, when instructed by the Lattice Analyser. It's source code was written in C, compiled with the free AVR-GCC compiler using some other sister tools of it. Atmega's interface to the computer was built from \myProf's library, which was built to simplify the existing ob-dev's virtual USB libraries. The coils are powered directly using the chip for the $2\times 2$ setup. For larger matrices, a multiplexer will be required and built suitably.
+		\par
+		The current that was roughly enough to align the dipole to the coil was (after experiments with a 6 Volt battery and resistance of coil measurement, viz. 7 ohms) found to be about 1 ampere. The microcontroller can sync at most 20 mA of current at a given pin. Further for the USB interface, the system was set to run at 3.3 V (this can be pushed up to 5V also, but that would've required redesigning the circuit) and the current limiting resistor was correspondingly chosen to be about 150 ohms. This was put in series with the coil and tested. It was found that the dipole wouldn't, for even a second long pulse, align itself to the coil, starting from some initial angle. However, when further experiments were done for pumping in energy using the algorithms developed for the Lattice Analyser, this push was found to be enough, even with a few milliseconds long pulse. This version of temperature has been given in \autoref{temperatureFirstVersion}
+		\par
+		\begin{figure}[bth]
+			\begin{center}
+				\includegraphics[width=0.85\linewidth]{gfx/temperature.jpg}
+			\end{center}
+		\caption[First Version of Temperature]{First Version of Temperature}
+		\label{temperatureFirstVersion}
+		\end{figure}
+		\par
+		The main file for the temperature has been listed herewith.
+		\lstinputlisting[language=C,title=tempereture.c]{../../temperature/firmware/temperature.c}		

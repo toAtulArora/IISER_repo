@@ -19,8 +19,9 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
-** June 6, Thursday: *
-** June 5, Wednesday: Created and tested sachetIO, a library for sending large arrays, required for communicating over HID USB. This was debugged and tested. Non buffered version is ready.
+* June 7, Friday: [Project Milestone] It was realized that neither the sachetIO was required (the data length can be increased to 128 bytes without any difficulty just by changing the report length in the USB HID configurations), nor was a current amplifier. However, today a dipole was made to turn continuously using the latticeAnalyser and the temperature. It was found that the current is more than sufficient for the current task. Further, for now, pins of the MCU can directly be used. Stage one has been accomplished. Now it remains to reduce friction (for the damping is far too high) and to finalize the circuit for the setup. Then the actual experiment begins.
+* * June 6, Thursday: Added a buffer function to the sachetIO library. Looked up methods for current amplification
+* * June 5, Wednesday: Created and tested sachetIO, a library for sending large arrays, required for communicating over HID USB. This was debugged and tested. Non buffered version is ready.
 * June 4, Tuesday: Succesffully linked the latticeAnalyser (after compiling half of it with C, the rest with C++). Modified temperature to include a simple protocol and using that controlled the electromagnet of a single dipole from latticeAnalyser.
 * June 3, Monday: Started with the hardware. Configured SP12 (the programmer) then bootloadHID, flashed a board to support a bootloadHID interface.
 
