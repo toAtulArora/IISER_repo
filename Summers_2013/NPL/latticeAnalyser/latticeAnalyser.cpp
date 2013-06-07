@@ -37,13 +37,6 @@
           ii. 
 */
 
-// for USB interface
-extern "C"
-{
-  #include "DataTypes.h"
-  #include "usbIO.h"
-}
-//
 
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
@@ -55,7 +48,7 @@ extern "C"
 #include <chrono>
 #include <string>
 
-// #include <atomic>
+#include <atomic>
 
 // #include <string.h>
 // #include <array> 
@@ -63,13 +56,23 @@ extern "C"
 
 
 //Configuration
-// #define ATOMIC
-// #define MULTI_THREAD_DISPLAY
-// #define ATOMIC_DISPLAY
-// #define MULTI_THREAD_CAMERA_UPDATE
+#define ATOMIC
+#define MULTI_THREAD_DISPLAY
+#define ATOMIC_DISPLAY
+#define MULTI_THREAD_CAMERA_UPDATE
+// #define TEMPERATURE_ENABLED
 
 const float version=0.6;
 
+#ifdef TEMPERATURE_ENABLED
+// for USB interface
+extern "C"
+{
+  #include "DataTypes.h"
+  #include "usbIO.h"
+}
+//
+#endif
 
 #ifdef ATOMIC_DISPLAY
   #ifndef MULTI_THREAD_DISPLAY
@@ -77,11 +80,12 @@ const float version=0.6;
   #endif
 #endif
 
-#if (defined(ATOMIC) || defined(ATOMIC_DISPLAY) || defined(MULTI_THREAD_DISPLAY) || defined(MULTI_THREAD_CAMERA_UPDATE))
-  #include<atomic>
-#endif
+//#if (defined(ATOMIC) || defined(ATOMIC_DISPLAY) || defined(MULTI_THREAD_DISPLAY) || defined(MULTI_THREAD_CAMERA_UPDATE))
+  //#include<atomic>
+//#endif
 
 #ifdef ATOMIC
+	//#include <atomic>
   atomic<bool> threadsEnabled=false;
 #else
   bool threadsEnabled=false;
@@ -947,6 +951,8 @@ int process(VideoCapture& capture)
 
 void temperatureTest()
 {
+#ifdef TEMPERATURE_ENABLED
+
   char usbBuf[REPORT_LEN];
   for(int q=0;q<REPORT_LEN;q++)
   {
@@ -986,6 +992,9 @@ void temperatureTest()
     cout<<endl<<endl;
   }
   vCloseUSB();
+#else
+	cout<<"Temperature Support not enabled";
+#endif
 }
 
 /**
