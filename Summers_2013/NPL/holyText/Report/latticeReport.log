@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  7 JUN 2013 23:55
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  7 JUN 2013 23:58
 entering extended mode
 **C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/holyText/Report/latticeRe
 port.tex
@@ -1081,8 +1081,8 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 )
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\latticeAnalyser\latticeAna
 lyser.cpp [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
-[29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40])
-<gfx/temperature.jpg, id=1503, 2585.66pt x 1943.26pt>
+[29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43])
+<gfx/temperature.jpg, id=1634, 2585.66pt x 1943.26pt>
 File: gfx/temperature.jpg Graphic file (type jpg)
 
 <use gfx/temperature.jpg>
@@ -1090,7 +1090,7 @@ Package pdftex.def Info: gfx/temperature.jpg used on input line 233.
 (pdftex.def)             Requested size: 285.60205pt x 214.61916pt.
 
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\temperature\firmware\tempe
-rature.c [41] [42 <C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/holyText
+rature.c [44] [45 <C:/Users/Atul/Documents/IISER_repo/Summers_2013/NPL/holyText
 /Report/gfx/temperature.jpg>]
 Overfull \hbox (41.4061pt too wide) in paragraph at lines 71--72
 [][][][][][] 
@@ -1211,7 +1211,7 @@ Overfull \hbox (51.20593pt too wide) in paragraph at lines 71--72
 [][]  
  []
 
-[43] [44]
+[46] [47]
 Overfull \hbox (204.60873pt too wide) in paragraph at lines 118--119
 [][][][][][] 
  []
@@ -1276,7 +1276,11 @@ Overfull \hbox (214.40857pt too wide) in paragraph at lines 118--119
 [][]  
  []
 
-[45])) [46]
+[48])) [49] [50
+
+
+
+]
 (C:\Users\Atul\Documents\IISER_repo\Summers_2013\NPL\holyText\Report\FrontBackm
 atter/Colophon.tex
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1286,10 +1290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [47
-
-
-
+) [51
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
@@ -1474,10 +1475,10 @@ Package rerunfilecheck Info: File `latticeReport.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
  ) 
 Here is how much of TeX's memory you used:
- 19026 strings out of 493921
- 291571 string characters out of 3147285
- 699319 words of memory out of 3000000
- 20514 multiletter control sequences out of 15000+200000
+ 19182 strings out of 493921
+ 294169 string characters out of 3147285
+ 699331 words of memory out of 3000000
+ 20546 multiletter control sequences out of 15000+200000
  82303 words of font info for 110 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  55i,14n,67p,1571b,3039s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1491,9 +1492,9 @@ lrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 
 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on latticeReport.pdf (53 pages, 8745934 bytes).
+Output written on latticeReport.pdf (57 pages, 8773041 bytes).
 PDF statistics:
- 2012 PDF objects out of 2073 (max. 8388607)
- 1390 named destinations out of 1440 (max. 500000)
+ 2175 PDF objects out of 2487 (max. 8388607)
+ 1514 named destinations out of 1728 (max. 500000)
  21226 words of extra memory for PDF output out of 24883 (max. 10000000)
 
