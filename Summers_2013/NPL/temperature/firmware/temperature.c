@@ -96,7 +96,7 @@ int main(void)
 		// 	// PORTB=0x0;
 		// 	// _delay_ms(1000);
 		// }
-		
+		DDRB=0;
 		DDRB &= ~(1<<5);				//Make it high impedence again
 		PORTB |= (1<<5);				//
 
@@ -128,8 +128,8 @@ int main(void)
 					DDRB |= (1<<5);					//Define as output					
 					PORTB &= ~(1<<5);				//Make port D.4 low, to fire the magnet
 					for(U16Bit j=0;j<(*intensity);j++)
-						_delay_us(10);
-					// DDRB &= ~(1<<5);				//Make it high impedence again
+						_delay_us(1);
+					DDRB &= ~(1<<5);				//Make it high impedence again
 					PORTB |= (1<<5);				//
 
 					// _delay_us((U8Bit) (*intensity/2) );

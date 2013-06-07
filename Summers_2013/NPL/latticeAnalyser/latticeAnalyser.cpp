@@ -56,15 +56,23 @@
 
 
 //Configuration
-#define ATOMIC
-#define MULTI_THREAD_DISPLAY
-#define ATOMIC_DISPLAY
-#define MULTI_THREAD_CAMERA_UPDATE
-// #define TEMPERATURE_ENABLED
+//#define ATOMIC
+//#define MULTI_THREAD_DISPLAY
+//#define ATOMIC_DISPLAY
+//#define MULTI_THREAD_CAMERA_UPDATE
+#define TEMPERATURE_ENABLED
+//TODO: Either calculate it at runtime, or allow the user to input
+//This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
+#define COILANGLE 180 
 
 const float version=0.6;
+#define MINANGULARVELOCITY 10000000
 
+int tempCandidate=0;  //This is the dipole that is accelerated
+bool blind=false;           //This is the blind option, meaning hardware tracking is turned off
+bool invertPush=false;      //This is to invert the moment of pushing
 #ifdef TEMPERATURE_ENABLED
+inline void fireElectro(long frame);
 // for USB interface
 extern "C"
 {
@@ -122,7 +130,7 @@ Mat grabbedFrame;
   bool frameGrabbed=false,frameRequested=false;
 #endif
 
-Mat srcPreCrop; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
+Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 
 // int lastBuf=1;
 //for the cropping
@@ -137,7 +145,7 @@ int thresh = 100;
 int max_thresh = 255;
 int canny=100;
 int centre=30;
-int minMinorAxis=1, maxMajorAxis=30;
+int minMinorAxis=1, maxMajorAxis=73;
 int mode=0;
 float theta=3.14159;
 
@@ -191,6 +199,8 @@ class dipoleFrame
 public:
   double time;   //time elapsed since the seed frame
   float order;  //gives the rough size of the dipoles
+  int count;    //number of dipole detected in the frame
+  float meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
 };
 
@@ -214,8 +224,8 @@ char fileName[50];
 Scalar colorB=Scalar(126,88,47);
   Scalar colorA=Scalar(10,245,245);
   int colorATol=30;
-  int colorBTol=30;
-  int brightInv=200;  //this is to increase the brightness after processing
+  int colorBTol=35;
+  int brightInv=10;  //this is to increase the brightness after processing
 //
   const char* source_window = "Source";
   const char* filter_window = "Color Filter";
@@ -304,8 +314,8 @@ void updateDisplay()
 {
   if(!drawing.empty())
     imshow("Contours", drawing );
-  // if(!cimg.empty())
-    // imshow("Hough", cimg);
+  if(!cimg.empty())
+    imshow("Debug", cimg);
   if(!src_gray.empty())
     imshow( filter_window, src_gray);
   if(!srcPreCrop.empty())
@@ -350,6 +360,10 @@ void updateDisplay()
 #endif
 int process(VideoCapture& capture)
 {
+  #ifdef TEMPERATURE_ENABLED
+      vInitUSB();
+  #endif      
+
   /// Create Window
   namedWindow( source_window, WINDOW_AUTOSIZE );
   setMouseCallback( "Source", onMouse, 0 );
@@ -371,7 +385,7 @@ int process(VideoCapture& capture)
 
   /// Show in a window
   namedWindow( "Contours", WINDOW_AUTOSIZE );
-  namedWindow( "Hough", WINDOW_AUTOSIZE );
+  namedWindow( "Debug", WINDOW_AUTOSIZE );
 
 
   ////Voodoo intializations
@@ -396,6 +410,8 @@ int process(VideoCapture& capture)
       thread t2(tAtomicDisplay);
     #endif
   #endif
+
+
 
 
 
@@ -448,6 +464,8 @@ int process(VideoCapture& capture)
             // dipoleData.erase(dipoleData.begin());
           //for the last frame
           dipoleData[dipoleData.size()-1].time=dipoleData[dipoleData.size()-2].time+deltaT;
+          dipoleData[dipoleData.size()-1].count=0;  //No dipoles found before analysis!
+          dipoleData[dipoleData.size()-1].meanSquaredAngularVelocity=0; //Initially zero
         }
 
         // long cfInit=dipoleData.size()-1;  //last frame
@@ -576,7 +594,7 @@ int process(VideoCapture& capture)
 
       int k = !(dipoles[0][0].current);
       dipoles[0][0].current=k;
-      dipoles[0][0].count[k]=0;
+      dipoles[0][0].count[k]=0; //this count is different from that used in frames, they correspond to a subset of these which are position wise close enough to the seed frame
       
       // dipolesA[0].lastcount=0;
       for (int i=0; i<minEllipse.size();i++)
@@ -658,7 +676,13 @@ int process(VideoCapture& capture)
                             dipoleData[cf].data[q].x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
                             dipoleData[cf].data[q].y=dipoles[k][c].y;
                             dipoleData[cf].data[q].angle=dipoles[k][c].angle;
-                            dipoleData[cf].data[q].instAngularVelocity=0;
+                            dipoleData[cf].count+=1;
+                            if(cf==0)
+                              dipoleData[cf].data[q].instAngularVelocity=0;
+                            else
+                              dipoleData[cf].data[q].instAngularVelocity=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle)/deltaT;
+                            
+                            dipoleData[cf].meanSquaredAngularVelocity+= (dipoleData[cf].data[q].instAngularVelocity*dipoleData[cf].data[q].instAngularVelocity) ;  //Add the sqr of inst angular velocity, averaging is done later
                             dipoleData[cf].data[q].detected=true;   //This is true only when the dipole's
                             
                             dipoleData[cf].order=dipoles[k][c].order; //This is bad programming..i should average, but doens't matter
@@ -671,12 +695,6 @@ int process(VideoCapture& capture)
                       }
 
 
-
-
-
-
-
-
                   }
                   // magnitude(differenceVector.x,differenceVector.y,distance);
 
@@ -687,6 +705,59 @@ int process(VideoCapture& capture)
           } 
         }
       }
+      //////////////AFter the frame has been processed, evaluate physical quantities of interest
+      if(dipoleRec==true)
+      {
+        long cf=dipoleData.size()-1;  //last frame
+        if(dipoleData[cf].count>0)
+          dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
+        //else it would be zero, the meanSquaredAngularVelocity
+
+        
+
+        #ifdef TEMPERATURE_ENABLED
+          if(!blind)
+          {
+            if(dipoleData[cf].meanSquaredAngularVelocity<(MINANGULARVELOCITY*MINANGULARVELOCITY))
+            {
+              if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
+              {
+                if (dipoleData[cf].data[tempCandidate].instAngularVelocity>=0) //if it is going in the opposite direction
+                {
+                  if (invertPush)
+                    fireElectro(cf);
+                }
+                else
+                {
+                  if(!invertPush)
+                     fireElectro(cf);  //to increase speed, because the force will be towards the coil              
+                }             
+                  
+                 
+              }
+              else  //if the angle is negaative, then
+              {
+                if (dipoleData[cf].data[tempCandidate].instAngularVelocity<=0) //if it is going twoards the coil
+                {
+                  if(invertPush)
+                    fireElectro(cf);
+                }
+                else
+                {
+                  if(!invertPush)
+                    fireElectro(cf);
+                }
+                  // fireElectro(cf);
+              }
+              // fireElectro();
+            }            
+          }
+          else
+            fireElectro(cf);
+        #endif
+      }
+      /////////////
+
 
       //////////////DRAWING THE CONTOUR AND DIPOLE
       /// Draw contours + rotated rects + ellipses
@@ -737,7 +808,7 @@ int process(VideoCapture& capture)
         char text[30];
         // dipoles[0][0].count[0]=1;
         // sprintf(text,"%f",dipoles[0][dipoles[0][0].count[k]-1].angle);
-        
+        // sprintf(text,"%f",dipoleData[dipoleData.size()-1].meanSquaredAngularVelocity);
         int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
         double fontScale = 0.5;
         int thickness = 1;
@@ -772,9 +843,15 @@ int process(VideoCapture& capture)
         //DEBUG ONLY
         if(i==0)
         {
-          Mat cimg(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
-          sprintf(text,"%1.1f",dipoles[k][i].angle);
-          putText(cimg, text, Point(dipoles[k][i].x-50,dipoles[k][i].y), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);        
+          cimg = Mat(src.rows,src.cols+500, CV_8UC3, Scalar(0,0,0));           
+          // sprintf(text,"%1.1f",dipoles[k][i].angle);          
+          sprintf(text,"Press p to seed");
+          // sprintf(text,"%1.1f",dipoleData[dipoleData.size()-1].data[0].instAngularVelocity);
+
+          // if(dipoleData[dipoleData.size()-1].meanSquaredAngularVelocity >0)
+          if(dipoleRec==true)
+            sprintf(text,"%1.1f",dipoleData[dipoleData.size()-1].meanSquaredAngularVelocity);
+          putText(cimg, text, Point(src.rows/4,src.cols/4), fontFace, fontScale*12, Scalar::all(255), thickness*4, 8);        
         }
       }
       
@@ -812,7 +889,7 @@ int process(VideoCapture& capture)
       //     circle( cimg, Point(c[0], c[1]), 2, color, 3, CV_AA);
       // }
 
-      // imshow("Hough", cimg);
+      // imshow("Debug", cimg);
 
       #ifndef MULTI_THREAD_DISPLAY
         updateDisplay();
@@ -829,6 +906,8 @@ int process(VideoCapture& capture)
         #endif
 
       #endif
+    
+
       //////////////////////
       // CLI
       //////////////////////
@@ -839,14 +918,14 @@ int process(VideoCapture& capture)
 
           case 'c':
             mode=1;
-            cout<<"Mouse will capture color now. Right click for one, left for the other";
+            cout<<"Mouse will capture color now. Right click for one, left for the other"<<endl;
             break;
           case 's':
             mode=0;
-            cout<<"Screen crop mode selected. Mouse will capture start point at left click and the other point at right click";
+            cout<<"Screen crop mode selected. Mouse will capture start point at left click and the other point at right click"<<endl;
             break;
           case 'p':
-            cout<<"Frame will be used as a seed";
+            cout<<"Look what you've done!"<<endl<<"Just kidding: This frame will be used as a seed"<<endl;
             dipoleRec=true; //Enable dipole recording
             seedDipole.data.clear();  //clear the data
             dipoleSkel tempDipole;  //create a temporary dipole skeleton
@@ -866,7 +945,7 @@ int process(VideoCapture& capture)
               if(c>0)
               {
                 seedDipole.order/=2.0;
-              }              
+              }
             }
             seedDipole.time=0; //Initial time is to be stored as zero
             dipoleData.push_back(seedDipole);
@@ -889,7 +968,8 @@ int process(VideoCapture& capture)
                 // }
                 //or just print the first dipole
                 if(dD->data[0].detected)
-                  fprintf (pFile, "%f,%f\n",dD->data[0].angle,dD->time);
+                  fprintf (pFile, "%f,%f,%f\n",dD->data[0].angle,dD->time,dD->meanSquaredAngularVelocity);
+                    //->data[0].instAngularVelocity);
                 // fprintf (pFile, "%d,%d\n",dD->data[0].angle,dD->time);
               }
                 
@@ -902,6 +982,16 @@ int process(VideoCapture& capture)
               // fprintf (pFile, "Name %d [%-10.10s]\n",n,name);
 
             }
+            break;
+          case 'b':
+            //This is to make blind
+            blind=!blind;
+            cout<<"Blind:"<<blind<<endl;
+            break;
+          case 'i':
+            //invert push
+            invertPush=!invertPush;
+            cout<<"Push"<<invertPush<<endl;
             break;
           case 'W':
 
@@ -919,8 +1009,11 @@ int process(VideoCapture& capture)
               destroyWindow(filter_window);
               destroyWindow(settings_window);
               destroyWindow("Contours");
-              destroyWindow("Hough");
+              destroyWindow("Debug");
 
+              #ifdef TEMPERATURE_ENABLED
+                  vCloseUSB();
+              #endif 
               threadsEnabled=false;
               t1.join();
               #ifdef MULTI_THREAD_DISPLAY
@@ -948,6 +1041,25 @@ int process(VideoCapture& capture)
 
 
 }
+#ifdef TEMPERATURE_ENABLED
+inline void fireElectro(long frame)
+{
+  //this is to avoid too many fires within a short time
+  static long lastFrame=0;
+  // static bool alternate=false;
+  if(frame-lastFrame>3)
+  {
+    // alternate=!alternate;
+    // if(alternate)
+    // {
+      char usbBuf[REPORT_LEN]={0,1,0,30};
+      nWriteUSB((unsigned char*)usbBuf,14);    
+      lastFrame=frame;
+
+    // }
+  }
+}
+#endif
 
 void temperatureTest()
 {
@@ -962,7 +1074,7 @@ void temperatureTest()
   usbBuf[0]=0;
   usbBuf[1]=1;
   usbBuf[2]=0;
-  usbBuf[3]=100;
+  usbBuf[3]=1000;
 
 
 
@@ -992,6 +1104,7 @@ void temperatureTest()
     cout<<endl<<endl;
   }
   vCloseUSB();
+
 #else
 	cout<<"Temperature Support not enabled";
 #endif
@@ -1040,6 +1153,13 @@ int main( int ac, char** argv )
     }
     else if(atoi(a.c_str())!=0 || !a.compare("0"))
     {
+      cout<<"Commands for this mode:"<<endl
+      <<"c \t Enable mouse capture of colour"<<endl
+      <<"s \t Screen crop is selected, viz Drag with left click to select a sub window"<<endl
+      <<"p \t This frame will be selected as the seed frame"<<endl
+      <<"w \t Write the angles and dipoles, of the first dipole to file"<<endl
+      <<"W \t Write computation times to file"<<endl<<endl;
+
       threadsEnabled=true;
   
       VideoCapture capture; //try to open string, this will attempt to open it as a video file
