@@ -381,7 +381,7 @@ int process(VideoCapture& capture)
   #ifdef GRAPHS_ENABLED
     plstream *pls=new plstream();
     pls->init();
-    cout<<"YOU SHOULD NOT SEE THIS UNTIL YOU INPUTTED SOMETHING";
+    cout<<endl<<"Initializing the interface for graphing"<<endl;
     // cout<<"1"<<endl;
     double xmin2d = -2.5;
     double xmax2d =  2.5;
@@ -391,10 +391,10 @@ int process(VideoCapture& capture)
     double basex = 2.0;
     double basey = 4.0;
     double height = 3.0;
-    double xmin = -10.0;
+    double xmin = 0.0;
     double xmax = 10.0;
-    double ymin = -3.0;
-    double ymax = 7.0;
+    double ymin = 0.0;
+    double ymax = 1000.0;
     double zmin = 0.0;
     double zmax = 8.0;
     double alt = 45.0;
@@ -407,7 +407,7 @@ int process(VideoCapture& capture)
 
   #endif
 
-    
+
   #ifdef TEMPERATURE_ENABLED
       vInitUSB();
   #endif      
@@ -810,17 +810,17 @@ int process(VideoCapture& capture)
       }
       /////////////
       #ifdef GRAPHS_ENABLED
-        // if(dipoleRec==true)
-        // {
-        //   long cf=dipoleData.size()-1;  //last frame
-        //   for(int i=0;i<dipoleData[cf].count;i++)
-        //   {
-        //     double x = dipoleData[cf].data[i].id;
-        //     double z = dipoleData[cf].data[i].instAngularVelocity;
-        //     double y=cf;
-        //     pls->poin3(1,&x, &y, &z,1);            
-        //   }
-        // }        
+        if(dipoleRec==true)
+        {
+          long cf=dipoleData.size()-1;  //last frame
+          for(int i=0;i<dipoleData[cf].count;i++)
+          {
+            double x = dipoleData[cf].data[i].id;
+            double z = dipoleData[cf].data[i].instAngularVelocity;
+            double y=cf;
+            pls->poin3(1,&x, &y, &z,1);            
+          }
+        }        
       #endif
 
       //////////////DRAWING THE CONTOUR AND DIPOLE
