@@ -35,8 +35,8 @@
         c. Working on the Proof of Concept for temperature
           i. Velocity calculation [done]
           ii. Realtime graphs [library installed; plplot; basic functionality tested]
-            I. Test separate [Done]
-            II. Fagocytosis
+            I. Test separate  [Done]
+            II. Fagocytosis   
         d. Find the axis of the lattice to find the coil anlge
 */
 
@@ -56,6 +56,12 @@
 // #include <string.h>
 // #include <array> 
 
+#define GRAPHS_ENABLED
+
+#ifdef GRAPHS_ENABLED
+        #include <plplot/plplot.h>
+        #include <plplot/plstream.h>        
+#endif
 
 
 //Configuration
@@ -63,7 +69,11 @@
 //#define MULTI_THREAD_DISPLAY
 //#define ATOMIC_DISPLAY
 //#define MULTI_THREAD_CAMERA_UPDATE
-#define TEMPERATURE_ENABLED
+
+
+// #define TEMPERATURE_ENABLED
+
+
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
 #define COILANGLE 180 
@@ -367,6 +377,37 @@ void updateDisplay()
 #endif
 int process(VideoCapture& capture)
 {
+
+  #ifdef GRAPHS_ENABLED
+    plstream *pls=new plstream();
+    pls->init();
+    cout<<"YOU SHOULD NOT SEE THIS UNTIL YOU INPUTTED SOMETHING";
+    // cout<<"1"<<endl;
+    double xmin2d = -2.5;
+    double xmax2d =  2.5;
+    double ymin2d = -2.5;
+    double ymax2d =  4.0;
+    pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+    double basex = 2.0;
+    double basey = 4.0;
+    double height = 3.0;
+    double xmin = -10.0;
+    double xmax = 10.0;
+    double ymin = -3.0;
+    double ymax = 7.0;
+    double zmin = 0.0;
+    double zmax = 8.0;
+    double alt = 45.0;
+    double az = 30.0;
+    double side = 1;        
+    pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
+    pls->box3( "bnstu", "x axis", 0.0, 0,
+            "bnstu", "y axis", 0.0, 0,
+            "bcdmnstuv", "z axis", 0.0, 4 );
+
+  #endif
+
+    
   #ifdef TEMPERATURE_ENABLED
       vInitUSB();
   #endif      
@@ -417,7 +458,6 @@ int process(VideoCapture& capture)
       thread t2(tAtomicDisplay);
     #endif
   #endif
-
 
 
 
@@ -683,7 +723,8 @@ int process(VideoCapture& capture)
                           {
                             dipoles[k][c].id=q;
                             // dipoleData.data[q] = dipoles[k][c]
-                            //TODO: Make a function for converting                             
+                            //TODO: Make a function for converting      
+                            dipoleData[cf].data[q].id=q;                       
                             dipoleData[cf].data[q].x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
                             dipoleData[cf].data[q].y=dipoles[k][c].y;
                             dipoleData[cf].data[q].angle=dipoles[k][c].angle;
@@ -768,7 +809,19 @@ int process(VideoCapture& capture)
         #endif
       }
       /////////////
-
+      #ifdef GRAPHS_ENABLED
+        // if(dipoleRec==true)
+        // {
+        //   long cf=dipoleData.size()-1;  //last frame
+        //   for(int i=0;i<dipoleData[cf].count;i++)
+        //   {
+        //     double x = dipoleData[cf].data[i].id;
+        //     double z = dipoleData[cf].data[i].instAngularVelocity;
+        //     double y=cf;
+        //     pls->poin3(1,&x, &y, &z,1);            
+        //   }
+        // }        
+      #endif
 
       //////////////DRAWING THE CONTOUR AND DIPOLE
       /// Draw contours + rotated rects + ellipses
@@ -936,65 +989,68 @@ int process(VideoCapture& capture)
             cout<<"Screen crop mode selected. Mouse will capture start point at left click and the other point at right click"<<endl;
             break;
           case 'p':
-            cout<<"Look what you've done!"<<endl<<"Just kidding: This frame will be used as a seed"<<endl;
-            dipoleRec=true; //Enable dipole recording
-            seedDipole.data.clear();  //clear the data
-            dipoleSkel tempDipole;  //create a temporary dipole skeleton
-            k=dipoles[0][0].current;  //find the current buffer of dipoles detected (double buffered for possible multithreading)
-            kMax=dipoles[0][0].count[k]; //find the number of dipoles detected in the last scan
-
-            for(int c=0;c<kMax;c++)
             {
-              tempDipole.x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
-              tempDipole.y=dipoles[k][c].y;
-              tempDipole.angle=dipoles[k][c].angle;
-              tempDipole.instAngularVelocity=0;
-              tempDipole.detected=false;   //This is to ensure the dipole was detected, but for the seed frame, it is left false.
-              tempDipole.id=c;
-              seedDipole.data.push_back(tempDipole);  //Add the data in the seedframe's data stream
-
-              seedDipole.order+=dipoles[k][c].order;  //to get teh average order
-              if(c>0)
+              cout<<"Look what you've done!"<<endl<<"Just kidding: This frame will be used as a seed"<<endl;
+              dipoleRec=true; //Enable dipole recording
+              seedDipole.data.clear();  //clear the data
+              dipoleSkel tempDipole;  //create a temporary dipole skeleton
+              k=dipoles[0][0].current;  //find the current buffer of dipoles detected (double buffered for possible multithreading)
+              kMax=dipoles[0][0].count[k]; //find the number of dipoles detected in the last scan
+  
+              for(int c=0;c<kMax;c++)
               {
-                seedDipole.order/=2.0;
+                tempDipole.x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
+                tempDipole.y=dipoles[k][c].y;
+                tempDipole.angle=dipoles[k][c].angle;
+                tempDipole.instAngularVelocity=0;
+                tempDipole.detected=false;   //This is to ensure the dipole was detected, but for the seed frame, it is left false.
+                tempDipole.id=c;
+                seedDipole.data.push_back(tempDipole);  //Add the data in the seedframe's data stream
+  
+                seedDipole.order+=dipoles[k][c].order;  //to get teh average order
+                if(c>0)
+                {
+                  seedDipole.order/=2.0;
+                }
               }
+              seedDipole.time=0; //Initial time is to be stored as zero
+              dipoleData.push_back(seedDipole);
+              break;
             }
-            seedDipole.time=0; //Initial time is to be stored as zero
-            dipoleData.push_back(seedDipole);
-
-            break;
           case 'w':
-            cout<<"Writing angle vs time for the first dipole to file";
-            if(dipoleRec==true)
-            {
-              sprintf(fileName,"latticeAnalyser_%d",getTickCount());
-              pFile = fopen (fileName,"w");
-              
-              //Loop through all the frames
-              for (vector<dipoleFrame>::iterator dD = dipoleData.begin() ; dD != dipoleData.end(); ++dD)
+            {            
+              cout<<"Writing angle vs time for the first dipole to file";
+              if(dipoleRec==true)
               {
-                //Within each frame, loop through all dipoles?
-                // for(vector<dipoleSkel>::iterator dS = dD.data.begin() ; dS!=dD.data.end() ; ++dS)
-                // {
-
-                // }
-                //or just print the first dipole
-                if(dD->data[0].detected)
-                  fprintf (pFile, "%f,%f,%f\n",dD->data[0].angle,dD->time,dD->meanSquaredAngularVelocity);
-                    //->data[0].instAngularVelocity);
-                // fprintf (pFile, "%d,%d\n",dD->data[0].angle,dD->time);
-              }
+                sprintf(fileName,"latticeAnalyser_%d",getTickCount());
+                pFile = fopen (fileName,"w");
                 
+                //Loop through all the frames
+                for (vector<dipoleFrame>::iterator dD = dipoleData.begin() ; dD != dipoleData.end(); ++dD)
+                {
+                  //Within each frame, loop through all dipoles?
+                  // for(vector<dipoleSkel>::iterator dS = dD.data.begin() ; dS!=dD.data.end() ; ++dS)
+                  // {
 
-              // for (int p=0;p<dipoleData.size();p++)
-              // {
-              //   fprintf(pFile,"%d,%d\n",dipoleData[p].data.size(),dipoleData[p].time);
-              // }
-              fclose (pFile);
-              // fprintf (pFile, "Name %d [%-10.10s]\n",n,name);
+                  // }
+                  //or just print the first dipole
+                  if(dD->data[0].detected)
+                    fprintf (pFile, "%f,%f,%f\n",dD->data[0].angle,dD->time,dD->meanSquaredAngularVelocity);
+                      //->data[0].instAngularVelocity);
+                  // fprintf (pFile, "%d,%d\n",dD->data[0].angle,dD->time);
+                }
+                  
 
+                // for (int p=0;p<dipoleData.size();p++)
+                // {
+                //   fprintf(pFile,"%d,%d\n",dipoleData[p].data.size(),dipoleData[p].time);
+                // }
+                fclose (pFile);
+                // fprintf (pFile, "Name %d [%-10.10s]\n",n,name);
+
+              }
+              break;
             }
-            break;
           case 'b':
             //This is to make blind
             blind=!blind;
@@ -1006,14 +1062,15 @@ int process(VideoCapture& capture)
             cout<<"Push"<<invertPush<<endl;
             break;
           case 'W':
-
-            pFile=fopen("TestComputation","w");
-            for(vector<double>::iterator d=computationTime.begin();d!=computationTime.end();++d)
             {
-              fprintf(pFile,"%f\n",*d);
+              pFile=fopen("TestComputation","w");
+              for(vector<double>::iterator d=computationTime.begin();d!=computationTime.end();++d)
+              {
+                fprintf(pFile,"%f\n",*d);
+              }
+              fclose(pFile);
+              break;              
             }
-            fclose(pFile);
-            break;
           case 'q':
           case 'Q':
           case 27: //escape key
@@ -1049,15 +1106,18 @@ int process(VideoCapture& capture)
     }    
     // processingImage.unlock();
   }
+  #ifdef GRAPHS_ENABLED
+    delete pls;
+  #endif
   return 0;
 
 
 }
 
-float distSq(int x1,int y1,int x2,int y2)
-{
-  return (pow(x1-x2,2) + pow(y1-y2,2))
-}
+// float distSq(int x1,int y1,int x2,int y2)
+// {
+//   return (pow(x1-x2,2) + pow(y1-y2,2));
+// }
 // void latticeAxis(vector<dipoleSkel>& data,vector<float>& angles)
 // {
 //   int lastDistance=10000;
@@ -1096,8 +1156,8 @@ float distSq(int x1,int y1,int x2,int y2)
   
 // }
 
-void latticeAxis(vector<dipoleSkel>& data)
-{
+// void latticeAxis(vector<dipoleSkel>& data)
+// {
   //Find neighbours
   //Find the ones with only 3 neighbours
   //Within these, find the ones with a particular slope missing
@@ -1106,7 +1166,7 @@ void latticeAxis(vector<dipoleSkel>& data)
 // double a=3.14;  // The value you seek
 // std::find_if(v.begin(),v.end(),[a](double b) { return a>b-epsilon && a<b+epsilon; });  
 
-}
+// }
 #ifdef TEMPERATURE_ENABLED
 inline void fireElectro(long frame)
 {
@@ -1207,8 +1267,7 @@ int main( int ac, char** argv )
       cout<<"Command \t Description"<<endl
       <<"------- \t -----------"<<endl
       <<"temp    \t Launches hardware test"<<endl
-      <<"temperature \t same as temp"<<endl
-      <<"latticeAxis \t Test the axis algorithm"<<endl
+      <<"temperature \t same as temp"<<endl      
       <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl
       <<"q        \t exit or quit"<<endl;
 
@@ -1248,10 +1307,10 @@ int main( int ac, char** argv )
     {
       temperatureTest();
     }
-    else if(!a.compare("latticeAxis"))
-    {
-      latticeAxisTest();
-    }
+    // else if(!a.compare("latticeAxis"))
+    // {
+    //   latticeAxisTest();
+    // }
     cout<<endl<<"\t now what? ";
   }
 
