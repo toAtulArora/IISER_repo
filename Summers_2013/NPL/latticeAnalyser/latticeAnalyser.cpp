@@ -34,7 +34,9 @@
         b. Fagocytosis of USB demo program [done]
         c. Working on the Proof of Concept for temperature
           i. Velocity calculation [done]
-          ii. Realtime graphs [library installed; plplot]
+          ii. Realtime graphs [library installed; plplot; basic functionality tested]
+            I. Test separate [Done]
+            II. Fagocytosis
         d. Find the axis of the lattice to find the coil anlge
 */
 

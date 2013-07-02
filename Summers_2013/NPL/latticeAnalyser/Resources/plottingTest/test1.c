@@ -18,6 +18,8 @@ private:
 
 void x01cc::plot1()
 {
+
+
         // Make a simple function, y(x) = x^2
         int N = 100;
         double xmax = 5.0;
@@ -59,7 +61,45 @@ void x01cc::plot1()
         double side = 1;        
         pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
         pls->plot3d(x,y,(const double**) z,N,N,DRAW_LINEY,true);
+        pls->col0(3);
         pls->poin3(N,x,y,x,1);
+
+        // PLFLT *i   = new PLFLT[2];
+        // PLFLT *h   = new PLFLT[2];
+        // PLFLT *l   = new PLFLT[2];
+        // PLFLT *s   = new PLFLT[2];
+        // bool  *rev = new bool[2];
+
+        // i[0] = 0.0;       // left boundary
+        // i[1] = 1.0;       // right boundary
+
+        // h[0] = 240;       // blue -> green -> yellow ->
+        // h[1] = 0;         // -> red
+
+        // l[0] = 0.6;
+        // l[1] = 0.6;
+
+        // s[0] = 0.8;
+        // s[1] = 0.8;
+
+        // rev[0] = false;       // interpolate on front side of colour wheel.
+        // rev[1] = false;       // interpolate on front side of colour wheel.
+
+        // pls->scmap1n( 256 );
+        // pls->scmap1l( false, 2, i, h, l, s, rev );
+
+        // delete[] i;
+        // delete[] h;
+        // delete[] l;
+        // delete[] s;
+        // delete[] rev;
+
+        
+        pls->box3( "bnstu", "x axis", 0.0, 0,
+                "bnstu", "y axis", 0.0, 0,
+                "bcdmnstuv", "z axis", 0.0, 4 );
+
+
         // pls->poin(N,x,y,1);
         // pls->end();
 }
