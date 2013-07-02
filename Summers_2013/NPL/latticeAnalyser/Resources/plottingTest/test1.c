@@ -59,6 +59,7 @@ void x01cc::plot1()
         double side = 1;        
         pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
         pls->plot3d(x,y,(const double**) z,N,N,DRAW_LINEY,true);
+        pls->poin3(N,x,y,x,1);
         // pls->poin(N,x,y,1);
         // pls->end();
 }
