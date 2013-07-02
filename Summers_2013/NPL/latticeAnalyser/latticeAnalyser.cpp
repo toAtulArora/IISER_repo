@@ -33,8 +33,9 @@
         a. Modify the CLI to include menus  [done]
         b. Fagocytosis of USB demo program [done]
         c. Working on the Proof of Concept for temperature
-          i. Velocity calculation and realtime graphs
-          ii. 
+          i. Velocity calculation [done]
+          ii. Realtime graphs [library installed; plplot]
+        d. Find the axis of the lattice to find the coil anlge
 */
 
 
@@ -187,7 +188,11 @@ bool dipoleRec=false;
 class dipoleSkel
 {
 public:
-    float angle; 
+    float angle;
+    int id; //For the dipoleData, this refers to the id of seedDipole
+    //in seedDipole, this should refer to the hardware ID
+    vector<int> neighour;
+    vector<float> neAngle;
     int x,y;
     float instAngularVelocity;
     bool detected;  //stores whether the dipole was detected at all
@@ -639,8 +644,12 @@ int process(VideoCapture& capture)
 
                       dipoles[k][c].order=MAX(largerEllipse.size.height, largerEllipse.size.width);
 
-                      dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
-                      dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+                      
+                      dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
+                      dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+
+                      // dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
+                      // dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
 
                       //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
                       if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
@@ -672,7 +681,7 @@ int process(VideoCapture& capture)
                           {
                             dipoles[k][c].id=q;
                             // dipoleData.data[q] = dipoles[k][c]
-                            //TODO: Make a function for converting 
+                            //TODO: Make a function for converting                             
                             dipoleData[cf].data[q].x=dipoles[k][c].x; //Copy the relavent data from the dipole data collected into the temp dipole
                             dipoleData[cf].data[q].y=dipoles[k][c].y;
                             dipoleData[cf].data[q].angle=dipoles[k][c].angle;
@@ -939,6 +948,7 @@ int process(VideoCapture& capture)
               tempDipole.angle=dipoles[k][c].angle;
               tempDipole.instAngularVelocity=0;
               tempDipole.detected=false;   //This is to ensure the dipole was detected, but for the seed frame, it is left false.
+              tempDipole.id=c;
               seedDipole.data.push_back(tempDipole);  //Add the data in the seedframe's data stream
 
               seedDipole.order+=dipoles[k][c].order;  //to get teh average order
@@ -1039,6 +1049,60 @@ int process(VideoCapture& capture)
   }
   return 0;
 
+
+}
+
+float distSq(int x1,int y1,int x2,int y2)
+{
+  return (pow(x1-x2,2) + pow(y1-y2,2))
+}
+// void latticeAxis(vector<dipoleSkel>& data,vector<float>& angles)
+// {
+//   int lastDistance=10000;
+//   // Calculating the shortest distance squared, between the first point and all other points
+//   for(int i=1;i<data.size();i++)    
+//   {    
+//     int distance=pow((data[0].x-data[i].x),2) + pow((data[0].y-data[i].y),2);
+//     lastDistance=MIN(distance,lastDistance);
+//   }
+
+
+//   float tolLower=0.5;
+//   float tolHigher=1.5;
+//   for(int i=0;i<data.size();i++)
+//   {
+//     for(int j=0;j<data.size();j++)
+//     {
+//       if(i!=j)
+//       {
+//         float neiDist=distSq(data[i].x,data[i].y,data[j].x,data[j].y)/(lastDistance)
+//         if( neiDist > tolLower && neiDist<tolHigher ) //Yup, found a neighbour!
+//         {
+//           float angleFound=atan2( (data[i].y - data[j].y) / (data[i].x - data[j].x) );
+//           angles.push_back(angleFound); //Added the angle found to an array
+//         }
+//       }
+//     }
+//   }
+// }
+
+// inline void latticeAxisTest()
+// {
+//   // Calculate shortest distance squared between the first point and all other pointss
+//   // for each point, find all neighbours, store the angle determined in an array
+//   // TODO: In the previous step, add a method to avoid incorrect counting
+  
+// }
+
+void latticeAxis(vector<dipoleSkel>& data)
+{
+  //Find neighbours
+  //Find the ones with only 3 neighbours
+  //Within these, find the ones with a particular slope missing
+  
+
+// double a=3.14;  // The value you seek
+// std::find_if(v.begin(),v.end(),[a](double b) { return a>b-epsilon && a<b+epsilon; });  
 
 }
 #ifdef TEMPERATURE_ENABLED
@@ -1142,6 +1206,7 @@ int main( int ac, char** argv )
       <<"------- \t -----------"<<endl
       <<"temp    \t Launches hardware test"<<endl
       <<"temperature \t same as temp"<<endl
+      <<"latticeAxis \t Test the axis algorithm"<<endl
       <<"<number> \t Initiates analysis of dipoles using the corresponding camera"<<endl
       <<"q        \t exit or quit"<<endl;
 
@@ -1180,6 +1245,10 @@ int main( int ac, char** argv )
     else if(!a.compare("temperature") || !a.compare("temp"))
     {
       temperatureTest();
+    }
+    else if(!a.compare("latticeAxis"))
+    {
+      latticeAxisTest();
     }
     cout<<endl<<"\t now what? ";
   }
