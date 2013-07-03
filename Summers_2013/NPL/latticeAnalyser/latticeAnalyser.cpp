@@ -381,13 +381,19 @@ int process(VideoCapture& capture)
   #ifdef GRAPHS_ENABLED
     plstream *pls=new plstream();
     pls->init();
+    pls->ssub( 1, 2 );
+    pls->adv(1);
     cout<<endl<<"Initializing the interface for graphing"<<endl;
     // cout<<"1"<<endl;
     double xmin2d = -2.5;
     double xmax2d =  2.5;
     double ymin2d = -2.5;
     double ymax2d =  4.0;
-    pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+    // pls->wind( 0.0, 1.0, 0.0, 1.0 );
+    // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+    pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+    pls->wind( -2, 2, -2, 2 );
+
     double basex = 2.0;
     double basey = 4.0;
     double height = 3.0;
@@ -401,9 +407,25 @@ int process(VideoCapture& capture)
     double az = 30.0;
     double side = 1;        
     pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
-    pls->box3( "bnstu", "x axis", 0.0, 0,
-            "bnstu", "y axis", 0.0, 0,
-            "bcdmnstuv", "z axis", 0.0, 4 );
+    pls->box3( "bnstu", "Dipole Count", 0.0, 0,
+            "bnstu", "Frame Count", 0.0, 0,
+            "bcdmnstuv", "Angular Position", 0.0, 4 );
+    
+    
+
+
+
+    pls->adv(2);
+    pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+    pls->wind( -2, 2, -2, 2 );
+    // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+    // pls->wind( 0.0, 1.0, 0.0, 1.0 );
+    zmin=-360;
+    zmax=360;
+    pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
+    pls->box3( "bnstu", "Dipole Count", 0.0, 0,
+            "bnstu", "Frame Count", 0.0, 0,
+            "bcdmnstuv", "Angular Velocity", 0.0, 4 );
 
   #endif
 
@@ -687,11 +709,11 @@ int process(VideoCapture& capture)
                       dipoles[k][c].order=MAX(largerEllipse.size.height, largerEllipse.size.width);
 
                       
-                      dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
-                      dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+                      // dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
+                      // dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
 
-                      // dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
-                      // dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+                      dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
+                      dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
 
                       //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
                       if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
@@ -824,12 +846,34 @@ int process(VideoCapture& capture)
             
           for(int i=0;i<dipoleData[cf].count;i++)
           {
-            double x = dipoleData[cf].data[i].id;
-            double z = dipoleData[cf].data[i].angle;
-            // double x = i;
-            // double z=i;
-            double y = cf;
-            pls->poin3(1,&x, &y, &z,1);
+            if(dipoleData[cf].data[i].detected)
+            {
+              pls->adv(1);
+              pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+              pls->wind( -2, 2, -2, 2 );
+              
+              double x = dipoleData[cf].data[i].id;
+              double z = dipoleData[cf].data[i].angle;
+              // double x = i;
+              // double z=i;
+              double y = cf;
+              pls->col0(i);
+              pls->poin3(1,&x, &y, &z,1);
+              
+
+
+              pls->adv(2);
+              pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+              pls->wind( -2, 2, -2, 2 );
+
+              // x = dipoleData[cf].data[i].id;
+              z = dipoleData[cf].data[i].instAngularVelocity;
+              // double x = i;
+              // double z=i;
+              // y = cf;
+              pls->col0(i);
+              pls->poin3(1,&x, &y, &z,1);
+            }
           }
         }        
       #endif
