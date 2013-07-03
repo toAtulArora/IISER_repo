@@ -414,7 +414,8 @@ int process(VideoCapture& capture)
     
 
 
-
+    // This is for selecting the second view
+    // Following are to get the points in the right location!
     pls->adv(2);
     pls->vpor( 0.0, 1.0, 0.0, 1.0 );
     pls->wind( -2, 2, -2, 2 );
@@ -704,20 +705,30 @@ int process(VideoCapture& capture)
                       // We're using two shapes, one ellipse and one circle.                    
                       RotatedRect largerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) > MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
                       RotatedRect smallerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) <= MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
-                      dipoles[k][c].angle=(largerEllipse.angle);
+                      float dCenterX=largerEllipse.center.x-smallerEllipse.center.x;
+                      float dCenterY=largerEllipse.center.y-smallerEllipse.center.y;
 
-                      dipoles[k][c].order=MAX(largerEllipse.size.height, largerEllipse.size.width);
+                      dipoles[k][c].angle=((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180;
 
-                      
+
+                      //UNCOMMENT THIS PART FOR THE OLD ANGLE ESTIMATOR
+                      // dipoles[k][c].angle=(largerEllipse.angle);
+
+
+                      // //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
+                      // if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
+                      //   dipoles[k][c].angle+=180;
+                      ////////////////////////
+
                       // dipoles[k][c].x=(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
                       // dipoles[k][c].y=(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
+
+                      dipoles[k][c].order=MAX(largerEllipse.size.height, largerEllipse.size.width);
 
                       dipoles[k][c].x=largerEllipse.center.x; //(minEllipse[i].center.x + minEllipse[j].center.x)/2.0;
                       dipoles[k][c].y=largerEllipse.center.y; //(minEllipse[i].center.y + minEllipse[j].center.y)/2.0;
 
-                      //Now we use the circle to remove the mod 180 problem and get the complete 360 degree position
-                      if((smallerEllipse.center.y -largerEllipse.center.y) < 0)
-                        dipoles[k][c].angle+=180;
+
 
                       dipoles[k][c].e1=i; //don't know why this is required
                       dipoles[k][c].e2=j;
