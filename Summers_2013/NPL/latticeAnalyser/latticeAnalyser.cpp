@@ -36,8 +36,8 @@
           i. Velocity calculation [done]
           ii. Realtime graphs [library installed; plplot; basic functionality tested]
             I. Test separate  [Done]
-            II. Fagocytosis   
-        d. Find the axis of the lattice to find the coil anlge
+            II. Fagocytosis   [Done]
+        d. Find the axis of the lattice to find the coil anlge [after experimentation, discontinued]
 */
 
 
@@ -396,7 +396,7 @@ int process(VideoCapture& capture)
     double ymin = 0.0;
     double ymax = 1000.0;
     double zmin = 0.0;
-    double zmax = 8.0;
+    double zmax = 360.0;
     double alt = 45.0;
     double az = 30.0;
     double side = 1;        
@@ -812,13 +812,24 @@ int process(VideoCapture& capture)
       #ifdef GRAPHS_ENABLED
         if(dipoleRec==true)
         {
+          // cout<<endl<<"DID SOMETHING";
+          // static long cfRe=0;
           long cf=dipoleData.size()-1;  //last frame
+          // cf=cf-cfRe;
+          // if(cf>1000)
+          // {
+          //   cfRe+=1000;
+          //   pls->bop();
+          // }
+            
           for(int i=0;i<dipoleData[cf].count;i++)
           {
             double x = dipoleData[cf].data[i].id;
-            double z = dipoleData[cf].data[i].instAngularVelocity;
-            double y=cf;
-            pls->poin3(1,&x, &y, &z,1);            
+            double z = dipoleData[cf].data[i].angle;
+            // double x = i;
+            // double z=i;
+            double y = cf;
+            pls->poin3(1,&x, &y, &z,1);
           }
         }        
       #endif

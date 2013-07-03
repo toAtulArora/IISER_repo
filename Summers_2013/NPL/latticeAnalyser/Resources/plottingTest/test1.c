@@ -18,8 +18,6 @@ private:
 
 void x01cc::plot1()
 {
-
-
         // Make a simple function, y(x) = x^2
         int N = 100;
         double xmax = 5.0;
