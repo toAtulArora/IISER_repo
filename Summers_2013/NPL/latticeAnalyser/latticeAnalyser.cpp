@@ -61,6 +61,7 @@
 #ifdef GRAPHS_ENABLED
         #include <plplot/plplot.h>
         #include <plplot/plstream.h>        
+        plstream *pls=new plstream();
 #endif
 
 
@@ -375,58 +376,70 @@ void updateDisplay()
     }
   #endif
 #endif
+#ifdef GRAPHS_ENABLED
+    void clearGraph()
+    {
+      pls->col0(1);
+      // cout<<"1"<<endl;
+      double xmin2d = -2.5;
+      double xmax2d =  2.5;
+      double ymin2d = -2.5;
+      double ymax2d =  4.0;
+      // pls->wind( 0.0, 1.0, 0.0, 1.0 );
+      // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+      pls->adv(1);
+      pls->clear();
+      pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+      pls->wind( -2.5, 2.5, -3.0, 3.0 );
+
+      double basex = 2.0;
+      double basey = 4.0;
+      double height = 3.0;
+      double xmin = 0.0;
+      double xmax = 10.0;
+      double ymin = 0.0;
+      double ymax = 1000.0;
+      double zmin = 0.0;
+      double zmax = 360.0;
+      double alt = 45.0;
+      double az = 30.0;
+      double side = 1;        
+      pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
+      pls->box3( "bnstu", "Dipole Count", 0.0, 0,
+              "bnstu", "Frame Count", 0.0, 0,
+              "bcdmnstuv", "Angular Position", 0.0, 4 );
+      
+      
+
+
+      // This is for selecting the second view
+      // Following are to get the points in the right location!
+      pls->adv(2);
+      pls->clear();
+      pls->vpor( 0.0, 1.0, 0.0, 1.0 );
+      pls->wind( -2.5, 2.5, -3.0, 3.0 );
+      // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
+      // pls->wind( 0.0, 1.0, 0.0, 1.0 );
+      zmin=-360;
+      zmax=360;
+      pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
+      pls->box3( "bnstu", "Dipole Count", 0.0, 0,
+              "bnstu", "Frame Count", 0.0, 0,
+              "bcdmnstuv", "Angular Velocity", 0.0, 4 );
+    }
+#endif
+
 int process(VideoCapture& capture)
 {
 
   #ifdef GRAPHS_ENABLED
-    plstream *pls=new plstream();
+    
     pls->init();
     pls->ssub( 1, 2 );
     pls->adv(1);
     cout<<endl<<"Initializing the interface for graphing"<<endl;
-    // cout<<"1"<<endl;
-    double xmin2d = -2.5;
-    double xmax2d =  2.5;
-    double ymin2d = -2.5;
-    double ymax2d =  4.0;
-    // pls->wind( 0.0, 1.0, 0.0, 1.0 );
-    // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
-    pls->vpor( 0.0, 1.0, 0.0, 1.0 );
-    pls->wind( -2, 2, -2, 2 );
 
-    double basex = 2.0;
-    double basey = 4.0;
-    double height = 3.0;
-    double xmin = 0.0;
-    double xmax = 10.0;
-    double ymin = 0.0;
-    double ymax = 1000.0;
-    double zmin = 0.0;
-    double zmax = 360.0;
-    double alt = 45.0;
-    double az = 30.0;
-    double side = 1;        
-    pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
-    pls->box3( "bnstu", "Dipole Count", 0.0, 0,
-            "bnstu", "Frame Count", 0.0, 0,
-            "bcdmnstuv", "Angular Position", 0.0, 4 );
-    
-    
-
-
-    // This is for selecting the second view
-    // Following are to get the points in the right location!
-    pls->adv(2);
-    pls->vpor( 0.0, 1.0, 0.0, 1.0 );
-    pls->wind( -2, 2, -2, 2 );
-    // pls->env(xmin2d, xmax2d, ymin2d, ymax2d, 0, -2);
-    // pls->wind( 0.0, 1.0, 0.0, 1.0 );
-    zmin=-360;
-    zmax=360;
-    pls->w3d(basex, basey, height, xmin, xmax, ymin, ymax, zmin, zmax, alt, az);
-    pls->box3( "bnstu", "Dipole Count", 0.0, 0,
-            "bnstu", "Frame Count", 0.0, 0,
-            "bcdmnstuv", "Angular Velocity", 0.0, 4 );
+    clearGraph();
 
   #endif
 
@@ -846,14 +859,20 @@ int process(VideoCapture& capture)
         if(dipoleRec==true)
         {
           // cout<<endl<<"DID SOMETHING";
-          // static long cfRe=0;
+          static long cfRe=0;
           long cf=dipoleData.size()-1;  //last frame
-          // cf=cf-cfRe;
-          // if(cf>1000)
-          // {
-          //   cfRe+=1000;
-          //   pls->bop();
-          // }
+          long t=(cf-cfRe);
+          if(t>=1000)
+          {
+            cfRe=cf;
+            clearGraph();
+            t=0;
+            // pls->bop();
+            // pls->adv(1);
+            // pls->clear();
+            // pls->adv(2);
+            // pls->clear();
+          }
             
           for(int i=0;i<dipoleData[cf].count;i++)
           {
@@ -861,13 +880,13 @@ int process(VideoCapture& capture)
             {
               pls->adv(1);
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
-              pls->wind( -2, 2, -2, 2 );
-              
+              pls->wind( -2.5, 2.5, -3.0, 3.0 );
+
               double x = dipoleData[cf].data[i].id;
               double z = dipoleData[cf].data[i].angle;
               // double x = i;
               // double z=i;
-              double y = cf;
+              double y = t;
               pls->col0(i);
               pls->poin3(1,&x, &y, &z,1);
               
@@ -875,7 +894,7 @@ int process(VideoCapture& capture)
 
               pls->adv(2);
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
-              pls->wind( -2, 2, -2, 2 );
+              pls->wind( -2.5, 2.5, -3.0, 3.0 );
 
               // x = dipoleData[cf].data[i].id;
               z = dipoleData[cf].data[i].instAngularVelocity;
@@ -915,11 +934,6 @@ int process(VideoCapture& capture)
           // int theta=dipoles[k][i].angle;
 
           // line(drawing, Point2f(xx,yy),Point2f(xx + 5*cos(theta), yy + 5*sin(theta)), Scalar(0,0,255),1,8);
-
-
-
-
-
 
          }
 
