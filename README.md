@@ -1,5 +1,8 @@
 LATEST ON RECORD
 --
+Showcase
+![Under Progress](Summers_2013/NPL/latticeAnalyser/snapshot10.png "More than Proof of Concept")
+
 Working at NPL on an experiment that should help understand the dynamics of a 2D dipole lattice!
 
 OLD INTRODUCTION
@@ -19,6 +22,15 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+
+* July 3, Wednesday: Realised that a DIY air hockey table would be a better way of searching and it was. In the latticeAnalyser implimented dual graphs (one for the angular position and the other for the velocity). Also implemented the atan2 function for correcting the angle problem that used to occur.
+
+* July 2, Tuesday: Figured how to use plplot, the basics. Got it up and running for 3d points and surfaces. Figured how to use grids, labels and enabling realtime support. Built and merged a minimalistic version of the same to the latticeAnalyser
+
+* July 1, Monday: Air hockey tables were searched for some toy ones found too. Attempted the writing of an algorithm for auto numbering of points in a lattice. Figured it was not straight forward to impliment with the usual C++ syntax. Will instead made provision (partially) for swapping manually. Also, plplot, a suitable plotting library was found and installed.
+
+** June 9 - 21 : Monsoon School; Physics of Life, NCBS Bengaluru
+
 * June 7, Friday: [Project Milestone] It was realized that neither the sachetIO was required (the data length can be increased to 128 bytes without any difficulty just by changing the report length in the USB HID configurations), nor was a current amplifier. However, today a dipole was made to turn continuously using the latticeAnalyser and the temperature. It was found that the current is more than sufficient for the current task. Further, for now, pins of the MCU can directly be used. Stage one has been accomplished. Now it remains to reduce friction (for the damping is far too high) and to finalize the circuit for the setup. Then the actual experiment begins.
 * * June 6, Thursday: Added a buffer function to the sachetIO library. Looked up methods for current amplification
 * * June 5, Wednesday: Created and tested sachetIO, a library for sending large arrays, required for communicating over HID USB. This was debugged and tested. Non buffered version is ready.
