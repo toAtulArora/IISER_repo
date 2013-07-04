@@ -1,7 +1,7 @@
 LATEST ON RECORD
 --
 Showcase
-![Under Progress](Summers_2013/NPL/latticeAnalyser/snapshot10.png "More than Proof of Concept")
+![Under Progress](Summers_2013/NPL/latticeAnalyser/snapshot12.png "More than Proof of Concept")
 
 Working at NPL on an experiment that should help understand the dynamics of a 2D dipole lattice!
 
@@ -22,6 +22,8 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+
+* July 4, Thursday: Cmake was fiddled around with and a graph for kinetic energy added. There was a periodic shoot up in the value which was caused by a mod problem in the angles. It was rectified. The dipole's hardware modification has also been initiated.
 
 * July 3, Wednesday: Realised that a DIY air hockey table would be a better way of searching and it was. In the latticeAnalyser implimented dual graphs (one for the angular position and the other for the velocity). Also implemented the atan2 function for correcting the angle problem that used to occur.
 

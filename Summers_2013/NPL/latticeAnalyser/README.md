@@ -5,6 +5,7 @@ This is intended to run on a Linux (preferably Ubuntu) computer. To compile any 
 This is for linux only
 
 Here are (more) screenshots
+![Under Progress](snapshot12.png "Avg Kinetic Energy Graph")
 ![Under Progress](snapshot10.png "Atan2 and Graphs added")
 ![Under Progress](snapshot6.png "temperature interface added")
 ![Under Progress](snapshot5.png "Almost final version for the vision part")
