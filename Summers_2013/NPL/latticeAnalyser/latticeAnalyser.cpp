@@ -59,9 +59,12 @@
 #define GRAPHS_ENABLED
 
 #ifdef GRAPHS_ENABLED
-        #include <plplot/plplot.h>
-        #include <plplot/plstream.h>        
-        plstream *pls=new plstream();
+    #include <plplot/plplot.h>
+    #include <plplot/plstream.h>        
+    plstream *pls=new plstream();
+    const char *legline[4];
+    int colline[4],styline[4];
+    int id1;
 #endif
 
 
@@ -218,7 +221,7 @@ public:
   double time;   //time elapsed since the seed frame
   float order;  //gives the rough size of the dipoles
   int count;    //number of dipole detected in the frame
-  float meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
+  double meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
 };
 
@@ -241,9 +244,14 @@ char fileName[50];
   // Scalar colorB=Scalar(245,245,10);
 Scalar colorB=Scalar(126,88,47);
   Scalar colorA=Scalar(10,245,245);
-  int colorATol=30;
-  int colorBTol=35;
-  int brightInv=10;  //this is to increase the brightness after processing
+  // int colorATol=30;
+  // int colorBTol=35;
+  // int brightInv=10;  //this is to increase the brightness after processing
+
+  int colorATol=255;
+  int colorBTol=255;
+  int brightInv=255;  //this is to increase the brightness after processing
+
 //
   const char* source_window = "Source";
   const char* filter_window = "Color Filter";
@@ -426,6 +434,24 @@ void updateDisplay()
       pls->box3( "bnstu", "Dipole Count", 0.0, 0,
               "bnstu", "Frame Count", 0.0, 0,
               "bcdmnstuv", "Angular Velocity", 0.0, 4 );
+
+      pls->adv(3);
+
+
+      //the second false is the one!
+
+      legline[0] = "total energy";                       // pens legend
+      legline[1] = "not assigned";
+      legline[2] = "not assigned";
+      legline[3] = "not assigned";
+
+      pls->stripc( &id1, "bcnst", "bcnstv",
+          0, 100, 0.3, 0, 10,
+          0, 0,
+          true, false,
+          1, 3,
+          colline, styline, legline,
+          "t", "", "Average Kinetic Energy" );
     }
 #endif
 
@@ -433,12 +459,15 @@ int process(VideoCapture& capture)
 {
 
   #ifdef GRAPHS_ENABLED
+    styline[0] = colline[0] = 2;      // pens color and line style
+    styline[1] = colline[1] = 3;
+    styline[2] = colline[2] = 4;
+    styline[3] = colline[3] = 5;        
     
     pls->init();
-    pls->ssub( 1, 2 );
-    pls->adv(1);
+    pls->ssub( 1, 3 );
+    // pls->adv(1);
     cout<<endl<<"Initializing the interface for graphing"<<endl;
-
     clearGraph();
 
   #endif
@@ -778,9 +807,28 @@ int process(VideoCapture& capture)
                             if(cf==0)
                               dipoleData[cf].data[q].instAngularVelocity=0;
                             else
-                              dipoleData[cf].data[q].instAngularVelocity=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle)/deltaT;
+                            {                              
+                              float deltaAngle=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle);
+                              if(abs(deltaAngle)>300)  //eg. 359 - 2
+                              {
+                                if(dipoleData[cf].data[q].angle<30) //roughly speaking, it couldn't couldn't have crossed 20!
+                                {
+                                  deltaAngle=(dipoleData[cf].data[q].angle+360)-dipoleData[cf-1].data[q].angle;
+                                }
+                                else  //the other one must be close to zero!
+                                {
+                                  deltaAngle=dipoleData[cf].data[q].angle-(dipoleData[cf-1].data[q].angle+360);
+                                }
+                              }                              
+                              
+                              dipoleData[cf].data[q].instAngularVelocity=deltaAngle/deltaT;
+                            }
+                              
                             
+                            // if(cf>1)
+                              // if(dipoleData[cf-1].data[q].detected)
                             dipoleData[cf].meanSquaredAngularVelocity+= (dipoleData[cf].data[q].instAngularVelocity*dipoleData[cf].data[q].instAngularVelocity) ;  //Add the sqr of inst angular velocity, averaging is done later
+                            
                             dipoleData[cf].data[q].detected=true;   //This is true only when the dipole's
                             
                             dipoleData[cf].order=dipoles[k][c].order; //This is bad programming..i should average, but doens't matter
@@ -809,6 +857,7 @@ int process(VideoCapture& capture)
         long cf=dipoleData.size()-1;  //last frame
         if(dipoleData[cf].count>0)
           dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
+
         //else it would be zero, the meanSquaredAngularVelocity
 
         
@@ -887,7 +936,7 @@ int process(VideoCapture& capture)
               // double x = i;
               // double z=i;
               double y = t;
-              pls->col0(i);
+              pls->col0(i+1);
               pls->poin3(1,&x, &y, &z,1);
               
 
@@ -901,10 +950,13 @@ int process(VideoCapture& capture)
               // double x = i;
               // double z=i;
               // y = cf;
-              pls->col0(i);
+              pls->col0(i+1);
               pls->poin3(1,&x, &y, &z,1);
             }
           }
+
+          pls->adv(3);
+          pls->stripa(id1,0,cf,(dipoleData[cf].meanSquaredAngularVelocity));
         }        
       #endif
 
@@ -1099,10 +1151,10 @@ int process(VideoCapture& capture)
             }
           case 'w':
             {            
-              cout<<"Writing angle vs time for the first dipole to file";
+              cout<<endl<<"Writing angle vs time for the first dipole to file"<<endl;
               if(dipoleRec==true)
               {
-                sprintf(fileName,"latticeAnalyser_%d",getTickCount());
+                sprintf(fileName,"latticeAnalyserBeta_%d",getTickCount());
                 pFile = fopen (fileName,"w");
                 
                 //Loop through all the frames
