@@ -784,11 +784,11 @@ int process(VideoCapture& capture)
                       float roughAngle=(((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180);
 
                       //THIS IS INTERESTING..
-                      if (roughAngle>0 || roughAngle<180)
+                      // if (roughAngle>0 && roughAngle<180)
                       {
                         float equivalentAngle=roughAngle;  //will always be between 0 and 180
                         //if the precise angle is anyway close enough then dont do anything, else
-                        if(abs(preciseAngle-equivalentAngle)>10)
+                        if(abs(preciseAngle-equivalentAngle)>50)
                         {
                           preciseAngle += 180;
                         }
