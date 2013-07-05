@@ -70,9 +70,9 @@
 
 //Configuration
 //#define ATOMIC
-//#define MULTI_THREAD_DISPLAY
-//#define ATOMIC_DISPLAY
-//#define MULTI_THREAD_CAMERA_UPDATE
+// #define MULTI_THREAD_DISPLAY
+// #define ATOMIC_DISPLAY
+// #define MULTI_THREAD_CAMERA_UPDATE
 
 
 // #define TEMPERATURE_ENABLED
@@ -83,7 +83,7 @@
 #define COILANGLE 180 
 #define preciseAngleTol 20
     //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
-const float version=0.6;
+const double version=0.6;
 // #define MINANGULARVELOCITY 10000000
 int minAngularVelocity=100;
 
@@ -129,8 +129,8 @@ using namespace std;
 
 
 #ifdef ATOMIC_DISPLAY
-    atomic<bool> updateDisplayRequested=true;
-    atomic<bool> updateDisplayCompleted=false;
+    atomic<bool> updateDisplayRequested;
+    atomic<bool> updateDisplayCompleted;
 #endif
 
 mutex processingImage;
@@ -144,10 +144,27 @@ vector <Mat>  buf;
 
 Mat grabbedFrame; 
 #ifdef MULTI_THREAD_CAMERA_UPDATE
-  atomic<bool> frameGrabbed=false,frameRequested=false;
+  atomic<bool> frameGrabbed,frameRequested;
 #else
   bool frameGrabbed=false,frameRequested=false;
 #endif
+
+void initializeMultithreadResources()
+{
+#ifdef MULTI_THREAD_CAMERA_UPDATE
+  frameGrabbed=false,frameRequested=false;
+#endif  
+
+#ifdef ATOMIC_DISPLAY
+    updateDisplayRequested=true;
+    updateDisplayCompleted=false;
+#endif
+
+#ifdef ATOMIC
+  //#include <atomic>
+  threadsEnabled=false;
+#endif    
+}
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 
@@ -166,7 +183,7 @@ int canny=100;
 int centre=30;
 int minMinorAxis=1, maxMajorAxis=73;
 int mode=0;
-float theta=3.14159;
+double theta=3.14159;
 
 //mode 
 //0 is screen select
@@ -179,7 +196,7 @@ RNG rng(12345);
 class dipole
 {
 public:
-  float angle,order; //angle is the angle, order gives a rough size of the dipole detected
+  double angle,order; //angle is the angle, order gives a rough size of the dipole detected
   int x,y,id;  //centre, id tells where its mapped
   int e1,e2; //index number of ellipse
   static int count[2]; //double buffer
@@ -206,13 +223,13 @@ bool dipoleRec=false;
 class dipoleSkel
 {
 public:
-    float angle;
+    double angle;
     int id; //For the dipoleData, this refers to the id of seedDipole
     //in seedDipole, this should refer to the hardware ID
     vector<int> neighour;
-    vector<float> neAngle;
+    vector<double> neAngle;
     int x,y;
-    float instAngularVelocity;
+    double instAngularVelocity;
     bool detected;  //stores whether the dipole was detected at all
 };
 
@@ -221,7 +238,7 @@ class dipoleFrame
 {
 public:
   double time;   //time elapsed since the seed frame
-  float order;  //gives the rough size of the dipoles
+  double order;  //gives the rough size of the dipoles
   int count;    //number of dipole detected in the frame
   double meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
@@ -725,13 +742,13 @@ int process(VideoCapture& capture)
                   //Find the distance between minEllipses
 
                   Point differenceVector=Point(minEllipse[i].center.x - minEllipse[j].center.x, minEllipse[i].center.y - minEllipse[j].center.y);  //find the difference vector
-                  float distanceSquared=differenceVector.x*differenceVector.x + differenceVector.y*differenceVector.y; //find the distance squared
+                  double distanceSquared=differenceVector.x*differenceVector.x + differenceVector.y*differenceVector.y; //find the distance squared
 
                   //Find the major axis length
-                  float majorAxis=MAX( MAX(minEllipse[i].size.width, minEllipse[i].size.height) , MAX(minEllipse[j].size.width, minEllipse[j].size.height)); //find the max dimension
+                  double majorAxis=MAX( MAX(minEllipse[i].size.width, minEllipse[i].size.height) , MAX(minEllipse[j].size.width, minEllipse[j].size.height)); //find the max dimension
                   
                   //The ratio is the ratio between the distance between the ellipse and the small circle and the length of the major axis
-                  float errorPlusOne = distanceSquared / ((11.348/30)*(11.348/30)*majorAxis*majorAxis) ; //now to compare, just divide and see if it's close enough to one
+                  double errorPlusOne = distanceSquared / ((11.348/30)*(11.348/30)*majorAxis*majorAxis) ; //now to compare, just divide and see if it's close enough to one
 
                   if (errorPlusOne>0.5 && errorPlusOne<2)  //if the error is small enough, then its a match
                   {
@@ -753,8 +770,8 @@ int process(VideoCapture& capture)
                       
 
                       //CENTRE BASED ANGLE ESTIMATION
-                      // float dCenterX=largerEllipse.center.x-smallerEllipse.center.x;
-                      // float dCenterY=largerEllipse.center.y-smallerEllipse.center.y;
+                      // double dCenterX=largerEllipse.center.x-smallerEllipse.center.x;
+                      // double dCenterY=largerEllipse.center.y-smallerEllipse.center.y;
 
                       // dipoles[k][c].angle=((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180;
                       //////////////////////////////
@@ -768,15 +785,16 @@ int process(VideoCapture& capture)
                       ////////////////////////
 
 
+                      //////////////////////////////////////
+
                       //THIS IS ATAN ASSISTED RESOLOLVING ELLIPSE ANGLE
                       //This is because the dipole angle is more accurate!
-                      float preciseAngle=(largerEllipse.angle);
+                      double preciseAngle=(largerEllipse.angle);
 
                       //This is calculated using the centres of the ellipse and circle
                       
-                      float dCenterX=largerEllipse.center.x-smallerEllipse.center.x;
-                      float dCenterY=largerEllipse.center.y-smallerEllipse.center.y;
-
+                      double dCenterX=largerEllipse.center.x-smallerEllipse.center.x;
+                      double dCenterY=largerEllipse.center.y-smallerEllipse.center.y;
 
                       //IN CODE NOTES:
                       //ELLIPSE is zero/180 when straight
@@ -784,16 +802,16 @@ int process(VideoCapture& capture)
 
                       //The first + 180 is because atan2 returns between plus and minus pi,
                       /////and the minus ninty is because the ellipse is perpendicular to the line joining centres of the two ellipses (ellipse and circle)
-                      float roughAngle=(((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180);
+                      double roughAngle=(((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180);
 
                       //THIS IS INTERESTING..
                       // if (roughAngle>0 && roughAngle<180)
                       {
-                        float equivalentAngle=roughAngle;  //will always be between 0 and 180
+                        double equivalentAngle=roughAngle;  //will always be between 0 and 180
                         //if the precise angle is anyway close enough then dont do anything, else
                         //The commented didn't work
                         // if(( ((int)abs(preciseAngle-equivalentAngle)) % 360)>preciseAngleTol && ( ((int) abs((preciseAngle+180)-equivalentAngle)) % 360)<preciseAngleTol)
-                        if(abs(preciseAngle-equivalentAngle)>preciseAngleTol && abs((preciseAngle+180)-equivalentAngle)<preciseAngleTol)
+                        if(abs(preciseAngle-equivalentAngle)>preciseAngleTol && abs((preciseAngle+180)-equivalentAngle)<=preciseAngleTol)
                         {
                           preciseAngle += 180;
                         }
@@ -849,7 +867,7 @@ int process(VideoCapture& capture)
                               dipoleData[cf].data[q].instAngularVelocity=0;
                             else
                             {                              
-                              float deltaAngle=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle);
+                              double deltaAngle=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle);
                               if(abs(deltaAngle)>300)  //eg. 359 - 2
                               {
                                 if(dipoleData[cf].data[q].angle<30) //roughly speaking, it couldn't couldn't have crossed 20!
@@ -868,7 +886,7 @@ int process(VideoCapture& capture)
                             
                             // if(cf>1)
                               // if(dipoleData[cf-1].data[q].detected)
-                            dipoleData[cf].meanSquaredAngularVelocity+= (dipoleData[cf].data[q].instAngularVelocity*dipoleData[cf].data[q].instAngularVelocity) ;  //Add the sqr of inst angular velocity, averaging is done later
+                            dipoleData[cf].meanSquaredAngularVelocity += (dipoleData[cf].data[q].instAngularVelocity*dipoleData[cf].data[q].instAngularVelocity) ;  //Add the sqr of inst angular velocity, averaging is done later
                             
                             dipoleData[cf].data[q].detected=true;   //This is true only when the dipole's
                             
@@ -896,8 +914,8 @@ int process(VideoCapture& capture)
       if(dipoleRec==true)
       {
         long cf=dipoleData.size()-1;  //last frame
-        if(dipoleData[cf].count>0)
-          dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
+        // if(dipoleData[cf].count>0)
+        //   dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
 
         //else it would be zero, the meanSquaredAngularVelocity
 
@@ -977,7 +995,7 @@ int process(VideoCapture& capture)
               // double x = i;
               // double z=i;
               double y = t;
-              pls->col0(i+1);
+              pls->col0((i+1)%10);
               pls->poin3(1,&x, &y, &z,1);
               
 
@@ -991,7 +1009,7 @@ int process(VideoCapture& capture)
               // double x = i;
               // double z=i;
               // y = cf;
-              pls->col0(i+1);
+              pls->col0((i+1)%10);
               pls->poin3(1,&x, &y, &z,1);
             }
           }
@@ -1036,7 +1054,7 @@ int process(VideoCapture& capture)
 
         int xx=dipoles[k][i].x;
         int yy=dipoles[k][i].y;
-        float theta = (3.1415926535/180) * dipoles[k][i].angle;
+        double theta = (3.1415926535/180) * dipoles[k][i].angle;
 
         line(drawing, Point2f(xx - 5*cos(theta), yy - 5*sin(theta)),Point2f(xx + 5*cos(theta), yy + 5*sin(theta)), Scalar(0,255,255),5,8);
 
@@ -1292,11 +1310,11 @@ int process(VideoCapture& capture)
 
 }
 
-// float distSq(int x1,int y1,int x2,int y2)
+// double distSq(int x1,int y1,int x2,int y2)
 // {
 //   return (pow(x1-x2,2) + pow(y1-y2,2));
 // }
-// void latticeAxis(vector<dipoleSkel>& data,vector<float>& angles)
+// void latticeAxis(vector<dipoleSkel>& data,vector<double>& angles)
 // {
 //   int lastDistance=10000;
 //   // Calculating the shortest distance squared, between the first point and all other points
@@ -1307,18 +1325,18 @@ int process(VideoCapture& capture)
 //   }
 
 
-//   float tolLower=0.5;
-//   float tolHigher=1.5;
+//   double tolLower=0.5;
+//   double tolHigher=1.5;
 //   for(int i=0;i<data.size();i++)
 //   {
 //     for(int j=0;j<data.size();j++)
 //     {
 //       if(i!=j)
 //       {
-//         float neiDist=distSq(data[i].x,data[i].y,data[j].x,data[j].y)/(lastDistance)
+//         double neiDist=distSq(data[i].x,data[i].y,data[j].x,data[j].y)/(lastDistance)
 //         if( neiDist > tolLower && neiDist<tolHigher ) //Yup, found a neighbour!
 //         {
-//           float angleFound=atan2( (data[i].y - data[j].y) / (data[i].x - data[j].x) );
+//           double angleFound=atan2( (data[i].y - data[j].y) / (data[i].x - data[j].x) );
 //           angles.push_back(angleFound); //Added the angle found to an array
 //         }
 //       }
@@ -1419,6 +1437,8 @@ void temperatureTest()
  */
 int main( int ac, char** argv )
 {
+  initializeMultithreadResources();
+
   cout<<"Loading";
     cout<<endl<<endl
         <<"Lattice Analyser | version "<<version<<endl
