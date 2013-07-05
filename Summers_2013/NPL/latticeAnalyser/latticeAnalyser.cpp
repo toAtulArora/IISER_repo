@@ -914,11 +914,10 @@ int process(VideoCapture& capture)
       if(dipoleRec==true)
       {
         long cf=dipoleData.size()-1;  //last frame
-        // if(dipoleData[cf].count>0)
-        //   dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
-
+        if(dipoleData[cf].count>0)
+          dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
         //else it would be zero, the meanSquaredAngularVelocity
-
+        dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
         
 
         #ifdef TEMPERATURE_ENABLED
