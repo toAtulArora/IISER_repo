@@ -81,9 +81,11 @@
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
 #define COILANGLE 180 
-
+#define preciseAngleTol 20
+    //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
 const float version=0.6;
-#define MINANGULARVELOCITY 10000000
+// #define MINANGULARVELOCITY 10000000
+int minAngularVelocity=100;
 
 int tempCandidate=0;  //This is the dipole that is accelerated
 bool blind=false;           //This is the blind option, meaning hardware tracking is turned off
@@ -487,6 +489,7 @@ int process(VideoCapture& capture)
   //Show the settings window
 
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
+  createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 100000, 0 );
   createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
   createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
   createTrackbar( "Min Radius", settings_window, &minMinorAxis, 100, 0 );
@@ -788,7 +791,9 @@ int process(VideoCapture& capture)
                       {
                         float equivalentAngle=roughAngle;  //will always be between 0 and 180
                         //if the precise angle is anyway close enough then dont do anything, else
-                        if(abs(preciseAngle-equivalentAngle)>50 && abs((preciseAngle+180)-equivalentAngle)<50)
+                        //The commented didn't work
+                        // if(( ((int)abs(preciseAngle-equivalentAngle)) % 360)>preciseAngleTol && ( ((int) abs((preciseAngle+180)-equivalentAngle)) % 360)<preciseAngleTol)
+                        if(abs(preciseAngle-equivalentAngle)>preciseAngleTol && abs((preciseAngle+180)-equivalentAngle)<preciseAngleTol)
                         {
                           preciseAngle += 180;
                         }
@@ -901,7 +906,7 @@ int process(VideoCapture& capture)
         #ifdef TEMPERATURE_ENABLED
           if(!blind)
           {
-            if(dipoleData[cf].meanSquaredAngularVelocity<(MINANGULARVELOCITY*MINANGULARVELOCITY))
+            if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
             {
               if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
               {
@@ -993,6 +998,7 @@ int process(VideoCapture& capture)
 
           pls->adv(3);
           pls->stripa(id1,0,cf,(dipoleData[cf].meanSquaredAngularVelocity));
+          pls->stripa(id1,1,cf,minAngularVelocity);
         }        
       #endif
 
