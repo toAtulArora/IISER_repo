@@ -806,6 +806,18 @@ int process(VideoCapture& capture)
 
                       //THIS IS INTERESTING..
                       // if (roughAngle>0 && roughAngle<180)
+                      if(roughAngle>350 && preciseAngle<10)
+                      {
+                        // preciseAngle+=180;
+                        ;
+                        //do NOTHING!
+                        //don't remove this bbecause there are else cases also!
+                      }
+                      else if(roughAngle<10 && preciseAngle>170)
+                      {
+                        preciseAngle+=180;
+                      }
+                      else
                       {
                         double equivalentAngle=roughAngle;  //will always be between 0 and 180
                         //if the precise angle is anyway close enough then dont do anything, else
