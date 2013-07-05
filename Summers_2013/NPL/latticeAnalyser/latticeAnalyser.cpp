@@ -788,7 +788,7 @@ int process(VideoCapture& capture)
                       {
                         float equivalentAngle=roughAngle;  //will always be between 0 and 180
                         //if the precise angle is anyway close enough then dont do anything, else
-                        if(abs(preciseAngle-equivalentAngle)>50)
+                        if(abs(preciseAngle-equivalentAngle)>50 && abs((preciseAngle+180)-equivalentAngle)<50)
                         {
                           preciseAngle += 180;
                         }
