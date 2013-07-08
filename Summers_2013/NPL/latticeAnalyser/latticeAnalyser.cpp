@@ -127,7 +127,6 @@ using namespace std;
   #endif
 #endif
 
-
 #ifdef ATOMIC_DISPLAY
     atomic<bool> updateDisplayRequested;
     atomic<bool> updateDisplayCompleted;
@@ -239,7 +238,7 @@ class dipoleFrame
 public:
   double time;   //time elapsed since the seed frame
   double order;  //gives the rough size of the dipoles
-  int count;    //number of dipole detected in the frame
+  int count,velValidCount;    //number of dipole detected in the frame, number of dipoles for which inst angular velocity could be calculated (essentially, that it was detected in two consecutive frames)
   double meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
 };
@@ -278,7 +277,7 @@ Scalar colorB=Scalar(126,88,47);
 
 
 //////////TIMING
-  long t,tLast;
+  long t,tLast,tickWhenGrabbed;
   double deltaT;
 static void onMouse( int event, int x, int y, int, void* )
 {
@@ -337,12 +336,13 @@ static void onMouse( int event, int x, int y, int, void* )
   while(threadsEnabled)
   {
     
-	capture>>grabbedFrame;
-	if(frameRequested)
-	{		
-		grabbedFrame.copyTo(srcPreCrop);
-		frameGrabbed=true;
-	}
+    capture>>grabbedFrame;    
+    if(frameRequested)
+    {		
+      tickWhenGrabbed=getTickCount();
+    	grabbedFrame.copyTo(srcPreCrop);
+    	frameGrabbed=true;
+    }
 
 	//buf.push_back(frameGrabbed);
 
@@ -584,7 +584,8 @@ int process(VideoCapture& capture)
         ///////////
         tLast=t;
         // t=getTickCount()/getTickFrequency();   //This is give time in seconds
-        t=getTickCount(); 
+        // t=getTickCount(); 
+        t=tickWhenGrabbed;
         deltaT=(t-tLast)/getTickFrequency();
 
         if(dipoleRec)
@@ -598,6 +599,7 @@ int process(VideoCapture& capture)
           dipoleData[dipoleData.size()-1].time=dipoleData[dipoleData.size()-2].time+deltaT;
           dipoleData[dipoleData.size()-1].count=0;  //No dipoles found before analysis!
           dipoleData[dipoleData.size()-1].meanSquaredAngularVelocity=0; //Initially zero
+          dipoleData[dipoleData.size()-1].velValidCount=0;              //This is to set the number of dipoles for which velocity was calculated to zero. Very important
         }
 
         // long cfInit=dipoleData.size()-1;  //last frame
@@ -721,6 +723,10 @@ int process(VideoCapture& capture)
 
       ///////////////////////////
       //  Dipole Detection Algorithm
+      ////////////////////////////////////////
+      // This detects form the ellipses detected, the dipoles!!
+      // This doesn't act on the dipoles itself!!!
+      // You yourself got confused about this :D
       ///////////////////////////    
       vector<bool> detected (minEllipse.size(),false);
 
@@ -731,7 +737,7 @@ int process(VideoCapture& capture)
       // dipolesA[0].lastcount=0;
       for (int i=0; i<minEllipse.size();i++)
       {
-        if(detected[i]==false)
+        if(detected[i]==false)  //This detected corresponds to having been paired earlier
         {
           for (int j=0; j<minEllipse.size();j++)
           {
@@ -848,7 +854,8 @@ int process(VideoCapture& capture)
 
 
 
-
+                      // A NEW DIPOLE HAS BEEN DETECTED (HOPEFULLY)
+                      // TIME TO PUT IT IN PLACE (IF ASKED TO)
                       //////////////THIS IS FOR RECORDING/SAVING THE DIPOLE MOVEMENT/////////////
                       if (dipoleRec==true)
                       {
@@ -861,6 +868,8 @@ int process(VideoCapture& capture)
                           //This is to test which dipole belongs where in accordance with the seedDipole frame
                           // if(MAX(abs(seedDipole.data[q].x - dipoles[k][c].x), abs(seedDipole.data[q].y - dipoles[k][c].y)) < (seedDipole.order/2.0) )
                           //Or you could use the last fraame for this
+                          //CAVEAT: YOU MAY THINK WITH THE LAST FRAME, THERE MIGHT ALREADY HAVE BEEN MISSES!! BUT THAT'S ALRIGHT, EVERY LAST FRAME COMES FORM THE SEED FRAME, SO AT WORST, IT WILL BE 
+                          //MATCHED TO THE DIPOLE IN THE SEED FRAME
                           if(
                             (MAX(abs(dipoleData[cf-1].data[q].x - dipoles[k][c].x), abs(dipoleData[cf-1].data[q].y - dipoles[k][c].y)) < (dipoleData[cf-1].order/4.0) )
                             && 
@@ -878,21 +887,29 @@ int process(VideoCapture& capture)
                             if(cf==0)
                               dipoleData[cf].data[q].instAngularVelocity=0;
                             else
-                            {                              
-                              double deltaAngle=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle);
-                              if(abs(deltaAngle)>300)  //eg. 359 - 2
+                            {
+                              if(dipoleData[cf-1].data[q].detected==true)
                               {
-                                if(dipoleData[cf].data[q].angle<30) //roughly speaking, it couldn't couldn't have crossed 20!
+                                double deltaAngle=(dipoleData[cf].data[q].angle - dipoleData[cf-1].data[q].angle);
+                                if(abs(deltaAngle)>300)  //eg. 359 - 2
                                 {
-                                  deltaAngle=(dipoleData[cf].data[q].angle+360)-dipoleData[cf-1].data[q].angle;
+                                  if(dipoleData[cf].data[q].angle<30) //roughly speaking, it couldn't couldn't have crossed 20!
+                                  {
+                                    deltaAngle=(dipoleData[cf].data[q].angle+360)-dipoleData[cf-1].data[q].angle;
+                                  }
+                                  else  //the other one must be close to zero!
+                                  {
+                                    deltaAngle=dipoleData[cf].data[q].angle-(dipoleData[cf-1].data[q].angle+360);
+                                  }
                                 }
-                                else  //the other one must be close to zero!
-                                {
-                                  deltaAngle=dipoleData[cf].data[q].angle-(dipoleData[cf-1].data[q].angle+360);
-                                }
-                              }                              
-                              
-                              dipoleData[cf].data[q].instAngularVelocity=deltaAngle/deltaT;
+                                dipoleData[cf].data[q].instAngularVelocity=deltaAngle/deltaT;
+                                dipoleData[cf].velValidCount+=1;
+                              }
+                              else
+                              {
+                                dipoleData[cf].data[q].instAngularVelocity=0; //this is NOT TRUE! but doen't matter, because the usual analysis will use angle vs time
+                                //this is used for angular velocity caclulation, in which it will be added, but not counted while dividing...so it is harmless
+                              }
                             }
                               
                             
@@ -926,8 +943,8 @@ int process(VideoCapture& capture)
       if(dipoleRec==true)
       {
         long cf=dipoleData.size()-1;  //last frame
-        if(dipoleData[cf].count>0)
-          dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].count;
+        if(dipoleData[cf].velValidCount>0)
+          dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].velValidCount;
         //else it would be zero, the meanSquaredAngularVelocity
         dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
         
