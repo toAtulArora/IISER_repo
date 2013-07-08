@@ -758,19 +758,19 @@ int process(VideoCapture& capture)
 
                   if (errorPlusOne>0.5 && errorPlusOne<2)  //if the error is small enough, then its a match
                   {
-                      //This is to ensure these don't get paired
+                      // This is to ensure these don't get paired
                       detected[i]=true;
                       detected[j]=true;
 
-                      //this is collection of the final result
+                      // this is collection of the final result
                       int c=dipoles[k][0].count[k]++; //dont get confused, count is static, so even dipoles[0][0] would've worked, ro for that matter, any valid index
-                      //Note the ++ is after because the count is always one greater than the index of the last element!
+                      // Note the ++ is after because the count is always one greater than the index of the last element!
                       
 
                       // dipoles[k][c].angle=(minEllipse[i].angle + minEllipse[j].angle)/2.0;
                       // dipoles[k][c].angle=(minEllipse[i].angle);
 
-                      // We're using two shapes, one ellipse and one circle.                    
+                      //We're using two shapes, one ellipse and one circle.                    
                       RotatedRect largerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) > MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
                       RotatedRect smallerEllipse =  ( MAX(minEllipse[i].size.width, minEllipse[i].size.height) <= MAX(minEllipse[j].size.width, minEllipse[j].size.height)  )?minEllipse[i]:minEllipse[j];
                       
@@ -1120,7 +1120,16 @@ int process(VideoCapture& capture)
         putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
         putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y), fontFace, fontScale, Scalar::all(255), thickness, 8);
 
+        
         sprintf(text,"%d,%d",dipoles[k][i].id,i);
+
+        if(dipoleRec==true)
+        {
+          if(dipoles[k][i].id < seedDipole.data.size())
+            sprintf(text,"[%d],%d",seedDipole.data[dipoles[k][i].id].id,i);
+        }
+          
+
         putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar::all(0), thickness*3, 8);
         putText(drawing, text, Point(dipoles[k][i].x,dipoles[k][i].y-10), fontFace, fontScale, Scalar(255,255,0), thickness, 8);
 
@@ -1199,6 +1208,25 @@ int process(VideoCapture& capture)
       int kMax; //sorry, bad programming, but relatively desparate for results..
       switch (key)
       {
+          case 'i': //Initialize the indices of the seed
+          { //you've to use brackets in case if you want local variables!
+            if(dipoleRec==true)
+            {
+              cout<<endl<<"Input the indices in order to calibrate "<<endl;            
+              for (int newLocation=0;newLocation<seedDipole.data.size();newLocation++)
+              {
+                  int val;
+                  cin>>val;
+                  seedDipole.data[val].id=newLocation;
+              }
+            }
+            else
+            {
+              cout<<endl<<"Start dipole recording using the key `p' and try again";
+            }
+            break;
+
+          }
           case 'c':
             #ifdef GRAPHS_ENABLED
               clearGraph();
@@ -1280,7 +1308,7 @@ int process(VideoCapture& capture)
             blind=!blind;
             cout<<"Blind:"<<blind<<endl;
             break;
-          case 'i':
+          case 'I':
             //invert push
             invertPush=!invertPush;
             cout<<"Push"<<invertPush<<endl;
