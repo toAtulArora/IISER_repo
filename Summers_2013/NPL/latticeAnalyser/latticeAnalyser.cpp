@@ -1303,6 +1303,10 @@ int process(VideoCapture& capture)
               }
               break;
             }
+          case 'W':
+          {
+            // cout<<endl<<"Writing angle of all dipoles for the given frame"
+          }
           case 'b':
             //This is to make blind
             blind=!blind;
