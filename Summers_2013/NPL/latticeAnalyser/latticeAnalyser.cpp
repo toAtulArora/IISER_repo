@@ -1209,7 +1209,8 @@ int process(VideoCapture& capture)
       switch (key)
       {
           case 'i': //Initialize the indices of the seed
-          { //you've to use brackets in case if you want local variables!
+          { 
+            //you've to use brackets in case if you want local variables!
             if(dipoleRec==true)
             {
               cout<<endl<<"Input the indices in order to calibrate "<<endl;            
@@ -1303,9 +1304,42 @@ int process(VideoCapture& capture)
               }
               break;
             }
-          case 'W':
+          case 'F':
           {
+            // Table Description
+            //  Time    Dipole 0    Dipole 1    Dipole 2 ...
             // cout<<endl<<"Writing angle of all dipoles for the given frame"
+            
+            if(dipoleRec==true)
+            {
+              cout<<endl<<"Writing all the data collected so far into a file";              
+              sprintf(fileName,"latticeAnalyserRENAMEorLOSEme");
+              pFile=fopen(fileName,"w");
+              // fprintf(pFile,"Time \t");
+              // for(int fi=0;fi<seedDipole.data.size();fi++)
+              // {
+                // fprintf(pFile,"")
+              // }
+
+              for (vector<dipoleFrame>::iterator dD=dipoleData.begin(); dD!=dipoleData.end();dD++)
+              {
+                //The first entry is time
+                fprintf(pFile,"%f",dD->time);
+                for(vector<dipoleSkel>::iterator dData=dD->data.begin(); dData!=dD->data.end(); dData++)
+                { 
+                  //Second entry onwrds, we have the dipole angles
+                  if(dData->detected==true)
+                    fprintf(pFile,"\t %f",dData->angle);
+                  else
+                    fprintf(pFile,"\t");
+                }
+                fprintf(pFile,"\n");
+              }
+              fclose (pFile);
+              cout<<endl<<"Written! Unless something broke..";
+            }
+            else
+              cout<<endl<<"Data recording is off. Turn it on using `p'.";
           }
           case 'b':
             //This is to make blind
