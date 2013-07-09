@@ -1315,12 +1315,15 @@ int process(VideoCapture& capture)
               cout<<endl<<"Writing all the data collected so far into a file";              
               sprintf(fileName,"latticeAnalyserRENAMEorLOSEme");
               pFile=fopen(fileName,"w");
-              // fprintf(pFile,"Time \t");
-              // for(int fi=0;fi<seedDipole.data.size();fi++)
-              // {
-                // fprintf(pFile,"")
-              // }
+              //Write the column names (very important to figure out which dipole corresponds to which spatial location)
+              fprintf(pFile,"Time");
+              for(int fi=0;fi<seedDipole.data.size();fi++)
+              {
+                fprintf(pFile,"\t Dipole %d",seedDipole.data[fi].id);
+              }
+              fprintf(pFile,"\n");
 
+              //Now write the data
               for (vector<dipoleFrame>::iterator dD=dipoleData.begin(); dD!=dipoleData.end();dD++)
               {
                 //The first entry is time
@@ -1340,6 +1343,7 @@ int process(VideoCapture& capture)
             }
             else
               cout<<endl<<"Data recording is off. Turn it on using `p'.";
+            break;
           }
           case 'b':
             //This is to make blind
