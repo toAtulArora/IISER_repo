@@ -53,6 +53,10 @@
 
 #include <atomic>
 
+using namespace cv;
+using namespace std;
+
+
 // #include <string.h>
 // #include <array> 
 
@@ -111,14 +115,22 @@ extern "C"
   //#include<atomic>
 //#endif
 
+
+#define CALIBRATION_ENABLED
+
+#ifdef CALIBRATION_ENABLED
+    Mat cameraMatrix;
+    // = Mat(3,3,CV_32FC1);
+    Mat distCoeffs;
+    // = Mat(5,1,CV_32FC1);    
+#endif  
+
 #ifdef ATOMIC
 	//#include <atomic>
   atomic<bool> threadsEnabled=false;
 #else
   bool threadsEnabled=false;
 #endif
-using namespace cv;
-using namespace std;
 
 
 #ifdef MULTI_THREAD_DISPLAY
@@ -140,6 +152,11 @@ double tCstart,tCdelta,tCend; //time for computation
 vector <double> computationTime;
 
 vector <Mat>  buf;
+// /////////////////////
+//     Mat_<double> cameraMatrix(3,3), distCoeffs(5,1);
+//     cameraMatrix =[ 5.6712925674714052e+02, 0., 3.1716566879559707e+02, 0., 5.6556813512152769e+02, 2.1037221807058236e+02, 0., 0., 1. ];
+// //////////////////////
+
 
 Mat grabbedFrame; 
 #ifdef MULTI_THREAD_CAMERA_UPDATE
@@ -147,7 +164,48 @@ Mat grabbedFrame;
 #else
   bool frameGrabbed=false,frameRequested=false;
 #endif
+#ifdef CALIBRATION_ENABLED
+  void getCameraCalibrationParameters()
+  {
+    char calibrationFile[]="configurations/logitech2";
+    FileStorage fs2(calibrationFile, FileStorage::READ);
 
+    // first method: use (type) operator on FileNode.
+    // int frameCount = (int)fs2["frameCount"];
+
+    // std::string date;
+    // second method: use FileNode::operator >>
+    // fs2["calibrationDate"] >> date;
+
+    // Mat cameraMatrix2, distCoeffs2;
+
+    fs2["camera_matrix"] >> cameraMatrix;
+    fs2["distortion_coefficients"] >> distCoeffs;
+
+
+    // cameraMatrix = Mat(3,3,CV_32FC1);
+    // distCoeffs = Mat(5,1,CV_32FC1);    
+    // //TODO: Input them off of a file instead..
+    // //Not very certain how the pointer thing is working..found this on an implementation on the net
+    //   cameraMatrix.ptr<float>(0)[0] = 5.6712925674714052e+02;
+    //   cameraMatrix.ptr<float>(0)[1] = 0;
+    //   cameraMatrix.ptr<float>(0)[2] = 3.1716566879559707e+02;
+    //   cameraMatrix.ptr<float>(1)[0] = 0;
+    //   cameraMatrix.ptr<float>(1)[1] = 5.6556813512152769e+02;
+    //   cameraMatrix.ptr<float>(1)[2] = 2.1037221807058236e+02;
+    //   cameraMatrix.ptr<float>(2)[0] = 0;
+    //   cameraMatrix.ptr<float>(2)[1] = 0;
+    //   cameraMatrix.ptr<float>(2)[2] = 1;
+
+    //   distCoeffs.ptr<float>(0)[0]=1.0093652191470437e-01;
+    //   distCoeffs.ptr<float>(1)[0]=-3.9155163783030478e-01;
+    //   distCoeffs.ptr<float>(2)[0]=-8.1203753896884399e-04;
+    //   distCoeffs.ptr<float>(3)[0]=4.7881016467320944e-03;
+    //   distCoeffs.ptr<float>(4)[0]=2.8593695994355700e-01;
+    cout<<"Camera Calibration Enabled"<<endl<<"Using file: "<<calibrationFile<<endl;
+    cout<<cameraMatrix<<endl<<distCoeffs<<endl;
+  }
+#endif
 void initializeMultithreadResources()
 {
 #ifdef MULTI_THREAD_CAMERA_UPDATE
@@ -631,6 +689,10 @@ int process(VideoCapture& capture)
         else
           src=srcPreCrop;
         
+        #ifdef CALIBRATION_ENABLED
+          Mat temp=src.clone();
+          undistort(temp, src, cameraMatrix, distCoeffs);
+        #endif
         // imshow( source_window, srcPreCrop );
 
       }
@@ -1584,7 +1646,7 @@ int main( int ac, char** argv )
       <<"W \t Write computation times to file"<<endl<<endl;
 
       threadsEnabled=true;
-  
+      getCameraCalibrationParameters();
       VideoCapture capture; //try to open string, this will attempt to open it as a video file
       // if (!capture.isOpened()) //if this fails, try to open as a video camera, through the use of an integer param
       
