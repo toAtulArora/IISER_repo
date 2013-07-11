@@ -23,6 +23,18 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 SUMMER '13 TIMELINE
 --
 
+* July 11, Thursday: A simple two point setup was created with one needle held from the top and bottom (used magnets to start with then removed them for testing damping) using glass slides and it seems to be better than what we've seen so far. Further, with plastic it is highly damped.
+
+* July 10, Wednesday: A little more of error analysis and dipole air elevation setup for all the dipoles was done (the fourth was setup and left for drying). Used an interesting method for making the dipoles. It was found during tests that with the heavy bottom, the needle setup (with the pointed edge up!) had almost the same damping as that of the air elevated setup. Further it was concluded that more accuracy is required for the air elevation setup to work properly. It was hypothesized that the main source of 'angular friction' were the guides that held the needle upright and not the needle tip.
+
+* July 9, Tuesday: Did the error analysis. Used a hell lot of GNUplot. Experimentally (that is in the physical world) setup the third dipole.
+
+* July 8, Monday: Working on writing a method to record all the observations into a file. Further figured out what and how to do, for estimating errors and accounting for the systematic errors. Further started the dipole modifications for setting up the first dipole for air elevation. This was done and found to have worked rather well. Better than the needle counter-parts (but no reliable comparison can be made yet, the systems compared weren't 'identical enough')
+
+** July 6 and 7, Weekend: Spent on an alternate project
+
+* July 5, Friday: Two interesting things were done; one the long lingering bug in the modding was resolved using assistance from the atan2 approximation. Second, the aluminium disk was fitted on a needle and left to dry. Exciting cause that would finally conclude whether the air elevation method could work or not.
+
 * July 4, Thursday: Cmake was fiddled around with and a graph for kinetic energy added. There was a periodic shoot up in the value which was caused by a mod problem in the angles. It was rectified. The dipole's hardware modification has also been initiated.
 
 * July 3, Wednesday: Realised that a DIY air hockey table would be a better way of searching and it was. In the latticeAnalyser implimented dual graphs (one for the angular position and the other for the velocity). Also implemented the atan2 function for correcting the angle problem that used to occur.
