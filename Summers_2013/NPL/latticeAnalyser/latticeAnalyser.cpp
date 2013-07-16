@@ -79,12 +79,13 @@ using namespace std;
 // #define MULTI_THREAD_CAMERA_UPDATE
 
 
-// #define TEMPERATURE_ENABLED
+#define TEMPERATURE_ENABLED
 
 
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
-#define COILANGLE 268 
+// #define COILANGLE 0 
+float coilAngle = 0;
 #define preciseAngleTol 20
     //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
 const double version=0.6;
@@ -94,7 +95,7 @@ int minAngularVelocity=100;
 int tempCandidate=0;  //This is the dipole that is accelerated
 bool blind=false;           //This is the blind option, meaning hardware tracking is turned off
 bool invertPush=false;      //This is to invert the moment of pushing
-bool useCalibration=false;
+bool useCalibration=true;
 #ifdef TEMPERATURE_ENABLED
 inline void fireElectro(long frame);
 // for USB interface
@@ -226,6 +227,13 @@ void initializeMultithreadResources()
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 //////////////////////
+float findPrinciple(float val,float modVal)
+{
+  while(val<0)
+    val-=modVal;
+  return val;
+}
+
 //Think of a clock. I give you two positions on the clock. You've to tell me which ones ahead
 /////basically modular arithmetic in some sense
 bool IsClockwise(float final, float initial, float modVal)
@@ -260,7 +268,7 @@ float shortestDistance(float final, float initial, float modVal)
   while(deltaB<0)
     deltaB+=modVal;
 
-  return (deltaA<deltaB)? deltaA: deltaB;
+  return (deltaA<deltaB) ? deltaA: deltaB;
 }
 
 
@@ -357,11 +365,19 @@ char fileName[50];
   // 20, 28, 41 [dark]
   // TODO: Allow the user to select the colour
   // Scalar colorB=Scalar(245,245,10);
-Scalar colorB=Scalar(126,88,47);
-  Scalar colorA=Scalar(10,245,245);
+  // Scalar colorB=Scalar(126,88,47);
+  // Scalar colorA=Scalar(10,245,245);
+
+  // HSV
+  Scalar colorA=((float)206*(360/360),62.7*(255/100),49.4*(255/100));
   // int colorATol=30;
   // int colorBTol=35;
   // int brightInv=10;  //this is to increase the brightness after processing
+  // H: 0 - 180, S: 0 - 255, V: 0 - 255
+
+  int valueTol=10;
+  int saturationTol=10;
+  int hueTol=20;
 
   int colorATol=255;
   int colorBTol=255;
@@ -415,11 +431,11 @@ static void onMouse( int event, int x, int y, int, void* )
         colorA=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);        
         cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
         break;
-    case CV_EVENT_RBUTTONUP:
-        cout<<x<<","<<y<<endl;
-        colorB=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);
-        cout<<"Color B's been changed to "<<endl<<colorB.val[0]<<endl<<colorB.val[1]<<endl<<colorB.val[2]<<endl;
-        break;
+    // case CV_EVENT_RBUTTONUP:
+    //     cout<<x<<","<<y<<endl;
+    //     colorB=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);
+    //     cout<<"Color B's been changed to "<<endl<<colorB.val[0]<<endl<<colorB.val[1]<<endl<<colorB.val[2]<<endl;
+    //     break;
     }
   }
 }
@@ -604,8 +620,12 @@ int process(VideoCapture& capture)
 
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
   createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 100000, 0 );
-  createTrackbar( "ColorA Tolerance", settings_window, &colorATol, 256, 0 );
-  createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
+  // H: 0 - 180, S: 0 - 255, V: 0 - 255  
+  createTrackbar( "Hue Tolerance", settings_window, &hueTol, 180, 0 );
+  createTrackbar( "Saturation Tolerance", settings_window, &saturationTol, 255, 0 );
+  createTrackbar( "Value Tolerance", settings_window, &valueTol, 255,0 );
+
+  // createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
   createTrackbar( "Min Radius", settings_window, &minMinorAxis, 100, 0 );
   createTrackbar( "Max Radius", settings_window, &maxMajorAxis, 200, 0 );  
   createTrackbar( "Brightness Inverse",settings_window, &brightInv, 255, 0);
@@ -750,21 +770,30 @@ int process(VideoCapture& capture)
         //Input src, output src_gray
         Scalar lowerBound;
         Scalar upperBound;
+        Mat srcCloneTemp=src.clone();
+        
 
-        lowerBound = colorA-Scalar::all(colorATol);
-        upperBound = colorA+Scalar::all(colorATol);
+        cvtColor(src,src,CV_BGR2HSV);
+        // lowerBound = colorA-Scalar::all(colorATol);
+        // upperBound = colorA+Scalar::all(colorATol);
+        upperBound=colorA+Scalar((float)hueTol,(float)saturationTol,(float)valueTol);
+        lowerBound=colorA-Scalar((float)hueTol,(float)saturationTol,(float)valueTol);
+
         // Now we want a mask for the these ranges
         inRange(src,lowerBound,upperBound, srcColorA);
 
-        lowerBound = colorB-Scalar::all(colorBTol);
-        upperBound = colorB+Scalar::all(colorBTol);  
+        // lowerBound = colorB-Scalar::all(colorBTol);
+        // upperBound = colorB+Scalar::all(colorBTol);  
         // We do it for both the colours 
+        // cvtColor(src,)
         inRange(src,lowerBound,upperBound, srcColorB);
 
         // Now we create a combined filter for them
-        addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
+        // addWeighted(srcColorA, 1, srcColorB, 1, 0, srcColorFilter);
+        addWeighted(srcColorA, 1, srcColorB, 0, 0, srcColorFilter);
         
-
+        cvtColor(src,src,CV_HSV2BGR);
+        // cvtColor(srcColorA,srcColorA,CV_HSV2BGR);
         /// Convert image to gray
         cvtColor( src, src_process, COLOR_BGR2GRAY );
 
@@ -944,13 +973,12 @@ int process(VideoCapture& capture)
                       //   {
                       //     preciseAngle += 180;
                       //   }
-                      // }
-                      
+                      // }                      
                       //THIS IS MATH POWER (actually miniscule manifestation of math's power)
                       if(shortestDistance(roughAngle,preciseAngle,360)>shortestDistance(roughAngle,preciseAngle+180,360))
                         preciseAngle+=180;
 
-                      dipoles[k][c].angle=preciseAngle;
+                      dipoles[k][c].angle=findPrinciple(preciseAngle,360);
                       ///////////////////
 
 
@@ -1070,7 +1098,7 @@ int process(VideoCapture& capture)
             if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
             {
               // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
-              if(IsClockwise(dipoleData[cf].data[tempCandidate].angle,COILANGLE,360))
+              if(IsClockwise(dipoleData[cf].data[tempCandidate].angle,coilAngle,360))
               {
                 if (dipoleData[cf].data[tempCandidate].instAngularVelocity>=0) //if it is going in the opposite direction
                 {
@@ -1324,6 +1352,13 @@ int process(VideoCapture& capture)
       int kMax; //sorry, bad programming, but relatively desparate for results..
       switch (key)
       {
+          case 'o':
+          {
+            cout<<endl<<"Input the coil angle"<<endl;
+            cin>>coilAngle;
+            cout<<endl<<"CoilAngle updated to "<<coilAngle;
+            break;
+          }
           case 'i': //Initialize the indices of the seed
           { 
             //you've to use brackets in case if you want local variables!
