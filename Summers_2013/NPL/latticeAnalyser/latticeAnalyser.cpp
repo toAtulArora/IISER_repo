@@ -226,6 +226,8 @@ void initializeMultithreadResources()
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
 //////////////////////
+//Think of a clock. I give you two positions on the clock. You've to tell me which ones ahead
+/////basically modular arithmetic in some sense
 bool IsClockwise(float final, float initial, float modVal)
 {
   float delta,deltaA,deltaB;
@@ -244,6 +246,23 @@ bool IsClockwise(float final, float initial, float modVal)
   else
     return false;
 }
+//This is to find the shortest distance in two numbers in a modular arithmetic system
+float shortestDistance(float final, float initial, float modVal)
+{
+  float delta,deltaA,deltaB;
+  delta=final-initial;
+
+  deltaA=delta;
+  while(deltaA<0)
+    deltaA+=modVal;
+
+  deltaB=-delta;
+  while(deltaB<0)
+    deltaB+=modVal;
+
+  return (deltaA<deltaB)? deltaA: deltaB;
+}
+
 
 // int lastBuf=1;
 //for the cropping
@@ -901,30 +920,35 @@ int process(VideoCapture& capture)
                       /////and the minus ninty is because the ellipse is perpendicular to the line joining centres of the two ellipses (ellipse and circle)
                       double roughAngle=(((180/3.1415926535)*atan2(dCenterY,dCenterX)) + 180);
 
-                      //THIS IS INTERESTING..
-                      // if (roughAngle>0 && roughAngle<180)
-                      if(roughAngle>350 && preciseAngle<10)
-                      {
-                        // preciseAngle+=180;
-                        ;
-                        //do NOTHING!
-                        //don't remove this bbecause there are else cases also!
-                      }
-                      else if(roughAngle<10 && preciseAngle>170)
-                      {
+                      //THIS DOESN'T GIVE PROPER RESULTS!!
+                      // //THIS IS INTERESTING..
+                      // // if (roughAngle>0 && roughAngle<180)
+                      // if(roughAngle>350 && preciseAngle<10)
+                      // {
+                      //   // preciseAngle+=180;
+                      //   ;
+                      //   //do NOTHING!
+                      //   //don't remove this bbecause there are else cases also!
+                      // }
+                      // else if(roughAngle<10 && preciseAngle>170)
+                      // {
+                      //   preciseAngle+=180;
+                      // }
+                      // else
+                      // {
+                      //   double equivalentAngle=roughAngle;  //will always be between 0 and 180
+                      //   //if the precise angle is anyway close enough then dont do anything, else
+                      //   //The commented didn't work
+                      //   // if(( ((int)abs(preciseAngle-equivalentAngle)) % 360)>preciseAngleTol && ( ((int) abs((preciseAngle+180)-equivalentAngle)) % 360)<preciseAngleTol)
+                      //   if(abs(preciseAngle-equivalentAngle)>preciseAngleTol && abs((preciseAngle+180)-equivalentAngle)<=preciseAngleTol)
+                      //   {
+                      //     preciseAngle += 180;
+                      //   }
+                      // }
+                      
+                      //THIS IS MATH POWER (actually miniscule manifestation of math's power)
+                      if(shortestDistance(roughAngle,preciseAngle,360)>shortestDistance(roughAngle,preciseAngle+180,360))
                         preciseAngle+=180;
-                      }
-                      else
-                      {
-                        double equivalentAngle=roughAngle;  //will always be between 0 and 180
-                        //if the precise angle is anyway close enough then dont do anything, else
-                        //The commented didn't work
-                        // if(( ((int)abs(preciseAngle-equivalentAngle)) % 360)>preciseAngleTol && ( ((int) abs((preciseAngle+180)-equivalentAngle)) % 360)<preciseAngleTol)
-                        if(abs(preciseAngle-equivalentAngle)>preciseAngleTol && abs((preciseAngle+180)-equivalentAngle)<=preciseAngleTol)
-                        {
-                          preciseAngle += 180;
-                        }
-                      }
 
                       dipoles[k][c].angle=preciseAngle;
                       ///////////////////
