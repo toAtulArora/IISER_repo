@@ -84,7 +84,7 @@ using namespace std;
 
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
-#define COILANGLE 180 
+#define COILANGLE 268 
 #define preciseAngleTol 20
     //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
 const double version=0.6;
@@ -94,6 +94,7 @@ int minAngularVelocity=100;
 int tempCandidate=0;  //This is the dipole that is accelerated
 bool blind=false;           //This is the blind option, meaning hardware tracking is turned off
 bool invertPush=false;      //This is to invert the moment of pushing
+bool useCalibration=false;
 #ifdef TEMPERATURE_ENABLED
 inline void fireElectro(long frame);
 // for USB interface
@@ -224,6 +225,25 @@ void initializeMultithreadResources()
 }
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
+//////////////////////
+bool IsClockwise(float final, float initial, float modVal)
+{
+  float delta,deltaA,deltaB;
+  delta=final-initial;
+  
+  deltaA=delta;
+  while(deltaA<0)
+    deltaA+=modVal;
+  
+  deltaB=-delta;
+  while(deltaB<0)
+    deltaB+=modVal;
+
+  if(deltaA<deltaB)
+    return true;
+  else
+    return false;
+}
 
 // int lastBuf=1;
 //for the cropping
@@ -589,7 +609,13 @@ int process(VideoCapture& capture)
   // std::string arg = argv[1];      
 ////////////////
 
-  cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
+  // cout<<capture.get(CV_CAP_PROP_FRAME_HEIGHT);
+  // capture.set(CV_CAP_PROP_FRAME_HEIGHT,1080);
+  // capture.set(CV_CAP_PROP_FRAME_WIDTH,1920);
+    
+  // capture.set(CV_CAP_PROP_FRAME_HEIGHT,720);
+  // capture.set(CV_CAP_PROP_FRAME_WIDTH,1280);
+
   capture.set(CV_CAP_PROP_FRAME_HEIGHT,480);
   capture.set(CV_CAP_PROP_FRAME_WIDTH,640);
   
@@ -690,8 +716,11 @@ int process(VideoCapture& capture)
           src=srcPreCrop;
         
         #ifdef CALIBRATION_ENABLED
-          Mat temp=src.clone();
-          undistort(temp, src, cameraMatrix, distCoeffs);
+          if(useCalibration)
+          {
+            Mat temp=src.clone();
+            undistort(temp, src, cameraMatrix, distCoeffs);            
+          }
         #endif
         // imshow( source_window, srcPreCrop );
 
@@ -1008,7 +1037,7 @@ int process(VideoCapture& capture)
         if(dipoleData[cf].velValidCount>0)
           dipoleData[cf].meanSquaredAngularVelocity/=dipoleData[cf].velValidCount;
         //else it would be zero, the meanSquaredAngularVelocity
-        dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
+        // dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
         
 
         #ifdef TEMPERATURE_ENABLED
@@ -1016,7 +1045,8 @@ int process(VideoCapture& capture)
           {
             if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
             {
-              if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
+              // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
+              if(IsClockwise(dipoleData[cf].data[tempCandidate].angle,COILANGLE,360))
               {
                 if (dipoleData[cf].data[tempCandidate].instAngularVelocity>=0) //if it is going in the opposite direction
                 {
@@ -1412,6 +1442,10 @@ int process(VideoCapture& capture)
             blind=!blind;
             cout<<"Blind:"<<blind<<endl;
             break;
+          case 'd':
+            useCalibration=!useCalibration;
+            cout<<endl<<"Calibration Use:"<<useCalibration<<endl;
+            break;
           case 'I':
             //invert push
             invertPush=!invertPush;
@@ -1534,9 +1568,10 @@ inline void fireElectro(long frame)
     // alternate=!alternate;
     // if(alternate)
     // {
-      char usbBuf[REPORT_LEN]={0,1,0,30};
+      char usbBuf[REPORT_LEN]={0,1,0,100};
       nWriteUSB((unsigned char*)usbBuf,14);    
       lastFrame=frame;
+      cout<<endl<<">> Temperature: Electro Fired";
 
     // }
   }
@@ -1635,8 +1670,13 @@ int main( int ac, char** argv )
     {
       break;
     }
-    else if(atoi(a.c_str())!=0 || !a.compare("0"))
+    else if(!a.compare("temperature") || !a.compare("temp"))
     {
+      temperatureTest();
+    }
+    else 
+    {
+      // if(atoi(a.c_str())!=0 || !a.compare("0"))
       cout<<"Commands for this mode:"<<endl
       <<"c \t Will clear the graphs"<<endl
       <<"C \t Enable mouse capture of colour"<<endl
@@ -1650,7 +1690,12 @@ int main( int ac, char** argv )
       VideoCapture capture; //try to open string, this will attempt to open it as a video file
       // if (!capture.isOpened()) //if this fails, try to open as a video camera, through the use of an integer param
       
-      capture.open(atoi(a.c_str()));
+      capture.open(a);
+      if(!capture.isOpened())
+      {
+          capture.open(atoi(a.c_str()));  
+      }
+      
       if (capture.isOpened())
       {
         process(capture);
@@ -1661,10 +1706,6 @@ int main( int ac, char** argv )
           cerr << "Failed to open the video device specified" << endl;      
           // return 1;
       }
-    }
-    else if(!a.compare("temperature") || !a.compare("temp"))
-    {
-      temperatureTest();
     }
     // else if(!a.compare("latticeAxis"))
     // {
