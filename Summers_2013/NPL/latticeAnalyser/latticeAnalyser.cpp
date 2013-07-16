@@ -975,7 +975,7 @@ int process(VideoCapture& capture)
                       //   }
                       // }                      
                       //THIS IS MATH POWER (actually miniscule manifestation of math's power)
-                      if(shortestDistance(roughAngle,preciseAngle,360)>shortestDistance(roughAngle,preciseAngle+180,360))
+                      if((shortestDistance(roughAngle,preciseAngle,360)-shortestDistance(roughAngle,preciseAngle+180,360))>30)
                         preciseAngle+=180;
 
                       dipoles[k][c].angle=findPrinciple(preciseAngle,360);
