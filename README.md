@@ -22,6 +22,12 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+** July 18, Thursday: (Not well) [at home] Tried to setup plplot in windows using CMake and VS11 (2012) failed. Tried with minGW that too failed. Tried upgrading Sublime Text 3 to work with latex, that too failed. Working on updating the documentation.
+* July 17, Wednesday: (Not well in the morning) Physically completed construction of four new dipoles, ready to be tested as a 2x2 lattice.
+* July 16, Tuesday: The modding problem was fixed (using modular arithmetic) in the dipole angle detection also. Dipole oscillations were setup with energy pumping using the temperature. Another dipole was also tested. Colour correction was changed from being based on RGB to HSV. This improved dipole detection at higher angular velocities.
+* July 15, Monday: Attempted an upgrade of the gstreamer plugin which failed.'tempreature' was made functional again and damping was tested using the realtime graphs. The modding problem in the angle detection for deciding when to fire the electromagnet was also fixed.
+
+** July 12-14, Friday to Sunday: Working on a secondary project.
 
 * July 11, Thursday: A simple two point setup was created with one needle held from the top and bottom (used magnets to start with then removed them for testing damping) using glass slides and it seems to be better than what we've seen so far. Further, with plastic it is highly damped.
 

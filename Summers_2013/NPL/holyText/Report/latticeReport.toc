@@ -12,6 +12,6 @@
 \contentsline {section}{\numberline {2.2}The Journey}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Look it has begun}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Time Line}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{6}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{9}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{44}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{10}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{59}{subsection.2.2.5}
