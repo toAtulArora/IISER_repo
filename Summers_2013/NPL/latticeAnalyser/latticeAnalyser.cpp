@@ -517,6 +517,7 @@ void updateDisplay()
   #endif
 #endif
 #ifdef GRAPHS_ENABLED
+
     void clearGraph()
     {
       pls->col0(1);
@@ -975,10 +976,11 @@ int process(VideoCapture& capture)
                       //   }
                       // }                      
                       //THIS IS MATH POWER (actually miniscule manifestation of math's power)
-                      if((shortestDistance(roughAngle,preciseAngle,360)-shortestDistance(roughAngle,preciseAngle+180,360))>30)
+                      if((shortestDistance(roughAngle,preciseAngle,360)-shortestDistance(roughAngle,preciseAngle+180,360))>5)
                         preciseAngle+=180;
 
                       dipoles[k][c].angle=findPrinciple(preciseAngle,360);
+                      dipoles[k][c].angle=roughAngle;
                       ///////////////////
 
 
@@ -1159,9 +1161,10 @@ int process(VideoCapture& capture)
             if(dipoleData[cf].data[i].detected)
             {
               pls->adv(1);
+              
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
               pls->wind( -2.5, 2.5, -3.0, 3.0 );
-
+              pls->w3d(2,4,3,0,10,0,1000,0,360,45,30);
               double x = dipoleData[cf].data[i].id;
               double z = dipoleData[cf].data[i].angle;
               // double x = i;
@@ -1175,7 +1178,7 @@ int process(VideoCapture& capture)
               pls->adv(2);
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
               pls->wind( -2.5, 2.5, -3.0, 3.0 );
-
+              pls->w3d(2,4,3,0,10,0,1000,-360,360,45,30);
               // x = dipoleData[cf].data[i].id;
               z = dipoleData[cf].data[i].instAngularVelocity;
               // double x = i;
@@ -1627,7 +1630,7 @@ inline void fireElectro(long frame)
     // alternate=!alternate;
     // if(alternate)
     // {
-      char usbBuf[REPORT_LEN]={0,1,0,100};
+      char usbBuf[REPORT_LEN]={'B',5,0,200};
       nWriteUSB((unsigned char*)usbBuf,14);    
       lastFrame=frame;
       cout<<endl<<">> Temperature: Electro Fired";
@@ -1647,10 +1650,10 @@ void temperatureTest()
     usbBuf[q]=0;
   }
 
-  usbBuf[0]=0;
-  usbBuf[1]=1;
-  usbBuf[2]=0;
-  usbBuf[3]=1000;
+  usbBuf[0]='B';
+  usbBuf[1]=5;
+  usbBuf[2]=255;
+  usbBuf[3]=255;
 
 
 

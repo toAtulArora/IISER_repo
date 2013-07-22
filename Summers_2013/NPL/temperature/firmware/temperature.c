@@ -27,13 +27,38 @@
  	 	| | \ |         +------------Undefined for now
 		\ |  -|---------------------Dipole Intensity (65536 max)
 		 -|------------------------Dipole ID (65536 max)
+	Binary Protocol V0.2
+		fixed length, 4 characters for now
+		0 1 2 3 4  
+		x x x x x  
+		| | | |    
+		| | | |    
+ 	 	| | \ |    
+		\ |  -|---------------------Dipole Intensity (65536 max)
+		 -|------------------------Dipole ID
+		 								|
+		 							   / \
+								Port 		Bit
 
 */
 
 #include "usbIO.h"
-
+#include "avriomacros.h"
+// #include "temperatureConfig.h"
 // #define DEBUG_STAGE_ZERO
 
+// This is to ease programming, reduce codesize
+// #define port(x) port##x
+// #define bit(x) bit##x
+#define fireElectro(port,bit,duration) \
+{ \
+	out(bit,port);	\ 
+	off(bit,port);	\ 
+	for(U16Bit j=0;j<duration;j++) \
+		_delay_us(1); \
+	in(bit,port);	\
+	on(bit,port);	\
+}
 
 #ifndef DEBUG_STAGE_ZERO
 	// U16Bit acknowledge[10]="Ok";
@@ -121,6 +146,7 @@ int main(void)
 				if(*dipoleID==256)					//if the id is for the zeroth dipole (testing)
 				{
 					pucOutBuf[0]=(U8Bit) (*intensity);
+					// pucOutBuf[0]=(U8Bit) (*(intensity[0]))
 					vSendUSBData(1);				//Acknowledge receiving data
 
 					//TODO: ADD PORT CODE			//Fire up the magnet for a time proportional to the intensity
@@ -138,8 +164,26 @@ int main(void)
 				}
 				else
 				{
+					char pin=data[1];
+
 					pucOutBuf[0]=':';
 					pucOutBuf[1]='(';
+
+					// if(data[0]=='A')
+						// fireElectro(A,pin,*intensity)
+					if(data[0]=='B')
+					{
+						fireElectro(B,pin,*intensity)
+						pucOutBuf[0]='B';
+						pucOutBuf[1]=data[1];
+
+					}
+					else if(data[0]=='C')
+						fireElectro(C,pin,*intensity)
+					else if(data[0]=='D')
+						fireElectro(D,pin,*intensity)
+					// don't even think of missing the brackets, the macro is a set of statements!
+
 					vSendUSBData(2);				//Acknowledge receiving data
 
 				}
