@@ -231,7 +231,109 @@ Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_pro
 // {
 //   if(abs(val-expected)
 // }
+//////////////
+//the following two functions are from http://www.cs.rit.edu/~ncs/color/t_convert.html
+///////////
+//0-360 and 0-1 (originally)
+//r g b is also from zero to one
+void RGBtoHSV( double r, double g, double b, double *h, double *s, double *v )
+{
+  r/=255;
+  g/=255;
+  b/=255;
 
+  double min, max, delta;
+
+  min = MIN( r, MIN(g, b) );
+  max = MAX( r, MAX(g, b) );
+  *v = max;       // v
+
+  delta = max - min;
+
+  if( max != 0 )
+    *s = delta / max;   // s
+  else {
+    // r = g = b = 0    // s = 0, v is undefined
+    *s = 0;
+    *h = -1;
+    return;
+  }
+
+  if( r == max )
+    *h = ( g - b ) / delta;   // between yellow & magenta
+  else if( g == max )
+    *h = 2 + ( b - r ) / delta; // between cyan & yellow
+  else
+    *h = 4 + ( r - g ) / delta; // between magenta & cyan
+
+  *h *= 60;       // degrees
+  if( *h < 0 )
+    *h += 360;
+
+  (*h) *= (180.0/360.0);
+  (*s) *= 255.0;
+  (*v) *= 255.0;
+}
+
+void HSVtoRGB( double *r, double *g, double *b, double h, double s, double v )
+{
+  h *= (360.0/180.0);
+  s /= 255.0;
+  v /= 255.0;
+
+  int i;
+  double f, p, q, t;
+
+  if( s == 0 ) {
+    // achromatic (grey)
+    *r = *g = *b = v;
+    return;
+  }
+
+  h /= 60;      // sector 0 to 5
+  i = floor( h );
+  f = h - i;      // factorial part of h
+  p = v * ( 1 - s );
+  q = v * ( 1 - s * f );
+  t = v * ( 1 - s * ( 1 - f ) );
+
+  switch( i ) {
+    case 0:
+      *r = v;
+      *g = t;
+      *b = p;
+      break;
+    case 1:
+      *r = q;
+      *g = v;
+      *b = p;
+      break;
+    case 2:
+      *r = p;
+      *g = v;
+      *b = t;
+      break;
+    case 3:
+      *r = p;
+      *g = q;
+      *b = v;
+      break;
+    case 4:
+      *r = t;
+      *g = p;
+      *b = v;
+      break;
+    default:    // case 5:
+      *r = v;
+      *g = p;
+      *b = q;
+      break;
+  }
+
+  (*r)*=255;
+  (*g)*=255;
+  (*b)*=255;
+}
 
 //////////////////////
 float findPrinciple(float val,float modVal)
@@ -382,7 +484,7 @@ char fileName[50];
   // Scalar colorA=Scalar(10,245,245);
 
   // HSV
-  Scalar colorA=((float)206*(360/360),62.7*(255/100),49.4*(255/100));
+  Scalar colorA=((float)206*(360/180),74*(255/100),83*(255/100));
   // int colorATol=30;
   // int colorBTol=35;
   // int brightInv=10;  //this is to increase the brightness after processing
@@ -440,8 +542,9 @@ static void onMouse( int event, int x, int y, int, void* )
     switch( event )
     {        
     case CV_EVENT_LBUTTONUP:
-        cout<<x<<","<<y<<endl;
-        colorA=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);        
+        cout<<endl<<"x="<<x<<",y="<<y<<endl;
+        // colorA=Scalar(srcPreCrop.at<Vec3b>(x,y)[0],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[2]);        
+        RGBtoHSV(srcPreCrop.at<Vec3b>(x,y)[2],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[0],&(colorA.val[2]),&(colorA.val[1]),&(colorA.val[0]));
         cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
         break;
     // case CV_EVENT_RBUTTONUP:
