@@ -226,6 +226,13 @@ void initializeMultithreadResources()
 }
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
+//////////////
+// bool isGood(float val,float expected,float tol)
+// {
+//   if(abs(val-expected)
+// }
+
+
 //////////////////////
 float findPrinciple(float val,float modVal)
 {
@@ -285,7 +292,13 @@ int thresh = 100;
 int max_thresh = 255;
 int canny=100;
 int centre=30;
-int minMinorAxis=1, maxMajorAxis=73;
+
+int minorAxis=7;
+int majorAxis=50;
+int radius=15;
+int ellipseTolerance=8;
+
+
 int mode=0;
 double theta=3.14159;
 
@@ -375,13 +388,13 @@ char fileName[50];
   // int brightInv=10;  //this is to increase the brightness after processing
   // H: 0 - 180, S: 0 - 255, V: 0 - 255
 
-  int valueTol=10;
-  int saturationTol=10;
   int hueTol=20;
+  int valueTol=193;
+  int saturationTol=255;
 
   int colorATol=255;
   int colorBTol=255;
-  int brightInv=255;  //this is to increase the brightness after processing
+  int brightInv=111;  //this is to increase the brightness after processing
 
 //
   const char* source_window = "Source";
@@ -627,8 +640,11 @@ int process(VideoCapture& capture)
   createTrackbar( "Value Tolerance", settings_window, &valueTol, 255,0 );
 
   // createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
-  createTrackbar( "Min Radius", settings_window, &minMinorAxis, 100, 0 );
-  createTrackbar( "Max Radius", settings_window, &maxMajorAxis, 200, 0 );  
+  createTrackbar( "Minor Axis", settings_window, &minorAxis, 100, 0 );
+  createTrackbar( "Major Axis", settings_window, &majorAxis, 200, 0 ); 
+  createTrackbar( "Radius", settings_window, &radius, 200, 0 ); 
+  createTrackbar( "Ellipse Tolerance", settings_window, &ellipseTolerance, 200, 0 ); 
+
   createTrackbar( "Brightness Inverse",settings_window, &brightInv, 255, 0);
   createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
   createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
@@ -848,11 +864,31 @@ int process(VideoCapture& capture)
       for( size_t i = 0; i< minEllipse.size(); i++ )
          {
           //You can add aditional conditions to eliminate detected ellipses
-          if(!(
-            (minEllipse[i].size.height>minMinorAxis && minEllipse[i].size.width>minMinorAxis) 
-            &&
-            (minEllipse[i].size.height<maxMajorAxis && minEllipse[i].size.width<maxMajorAxis)
-            ))
+          float minor = (minEllipse[i].size.height<minEllipse[i].size.width)?minEllipse[i].size.height:minEllipse[i].size.width;
+          float major = (minEllipse[i].size.height>minEllipse[i].size.width)?minEllipse[i].size.height:minEllipse[i].size.width;
+          bool good=false;
+          
+          if(minor/major<1.3 && minor/major>0.7)  //if close enough to a circle
+          {
+            if((abs(minor-radius)<ellipseTolerance) && (abs(major-radius)<ellipseTolerance))
+              good=true;  //VALID CIRCLE DETECTED
+          }
+          else //IF its an ellipse then
+          {
+            if(abs(minor-minorAxis)<ellipseTolerance && abs(major-majorAxis)<ellipseTolerance)
+              good=true;  //VALID ELLIPSE FOUND
+          }
+          // if(
+          //   !(
+          //     (
+          //     (minEllipse[i].size.height>minMinorAxis && minEllipse[i].size.width>minMinorAxis) 
+          //     &&
+          //     (minEllipse[i].size.height<maxMajorAxis && minEllipse[i].size.width<maxMajorAxis)
+          //     )
+          //   )            
+
+          //   )
+          if(!good)
           {
             // minEllipse[i]=RotatedRect(Point2f(0,0),Point2f(0,0),0);
             minEllipse.erase(minEllipse.begin()+i--);
@@ -980,7 +1016,7 @@ int process(VideoCapture& capture)
                         preciseAngle+=180;
 
                       dipoles[k][c].angle=findPrinciple(preciseAngle,360);
-                      dipoles[k][c].angle=roughAngle;
+                      // dipoles[k][c].angle=roughAngle;
                       ///////////////////
 
 
