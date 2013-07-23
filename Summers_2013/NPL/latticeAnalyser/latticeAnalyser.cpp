@@ -69,6 +69,7 @@ using namespace std;
     const char *legline[4];
     int colline[4],styline[4];
     int id1;
+    bool plotSqKE=true;
 #endif
 
 
@@ -85,7 +86,7 @@ using namespace std;
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
 // #define COILANGLE 0 
-float coilAngle = 0;
+float coilAngle = 90;
 #define preciseAngleTol 20
     //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
 const double version=0.6;
@@ -395,7 +396,7 @@ int canny=100;
 int centre=30;
 
 int minorAxis=7;
-int majorAxis=50;
+int majorAxis=43;
 int radius=15;
 int ellipseTolerance=8;
 
@@ -429,6 +430,7 @@ int dipole::current=0;
 // array<dipole,500> dipoles;
 // array<dipole,500> lastDipoles;
 #define DmaxDipoleCount 1000
+#define DtemperatureAverageOverPeriod 1
 dipole dipoles[2][DmaxDipoleCount];
 // Colour read
 // Point origin;
@@ -458,7 +460,7 @@ public:
   double time;   //time elapsed since the seed frame
   double order;  //gives the rough size of the dipoles
   int count,velValidCount;    //number of dipole detected in the frame, number of dipoles for which inst angular velocity could be calculated (essentially, that it was detected in two consecutive frames)
-  double meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
+  double meanSquaredAngularVelocity,temperature; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
 };
 
@@ -1254,14 +1256,35 @@ int process(VideoCapture& capture)
         //else it would be zero, the meanSquaredAngularVelocity
         // dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
         
+        int temperatureFrameCount=0;
+        double temperatureFrame=0;
+        for(int k=cf;k>0;k--)
+        {
+          double dTime=(dipoleData[cf].time-dipoleData[k].time);
+          // cout<<dTime;
+          if(dTime>=0 && dTime<DtemperatureAverageOverPeriod)
+          {
+            temperatureFrame+=dipoleData[k].meanSquaredAngularVelocity;
+            // cout<<temperatureFrame;
+            temperatureFrameCount++;
+          }
+          else
+            k=0;  //terminate the loop
+        }
+        if(temperatureFrameCount>0)
+          temperatureFrame/=temperatureFrameCount;
+        else
+          temperatureFrame=0;
+        dipoleData[cf].temperature=temperatureFrame;
+        
 
         #ifdef TEMPERATURE_ENABLED
           if(!blind)
           {
-            if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
+            if(dipoleData[cf].temperature<(minAngularVelocity))
             {
               int candidate=posPhysicalToDetected(tempCandidate);
-              
+
               // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
               if(IsClockwise(dipoleData[cf].data[candidate].angle,coilAngle,360))
               {
@@ -1353,8 +1376,12 @@ int process(VideoCapture& capture)
           }
 
           pls->adv(3);
-          pls->stripa(id1,0,cf,(dipoleData[cf].meanSquaredAngularVelocity));
-          pls->stripa(id1,1,cf,minAngularVelocity);
+          pls->stripa(id1,0,cf,minAngularVelocity);
+          if(plotSqKE)
+            pls->stripa(id1,1,cf,(dipoleData[cf].meanSquaredAngularVelocity));
+          else
+            pls->stripa(id1,1,cf,(dipoleData[cf].temperature));
+          
         }        
       #endif
 
@@ -1518,6 +1545,14 @@ int process(VideoCapture& capture)
       int kMax; //sorry, bad programming, but relatively desparate for results..
       switch (key)
       {
+          #ifdef GRAPHS_ENABLED
+            case '0':
+            {
+              plotSqKE=!plotSqKE;
+              cout<<endl<<"Plot measure of inst. average kinetic energy:"<<plotSqKE;
+              break;
+            }
+          #endif
           case 'o':
           {
             cout<<endl<<"Input the coil angle"<<endl;
