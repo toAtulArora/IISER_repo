@@ -13,5 +13,10 @@
 \contentsline {subsection}{\numberline {2.2.1}Look it has begun}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Time Line}{4}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Construction of the Dipole}{8}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{10}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{59}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.4}Construction of the Lattice Analyser}{12}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Proof of Concept: Recognizing Patterns}{12}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Aftermath and Recognition Tests}{13}{subsubsection.2.2.4.2}
+\contentsline {subsubsection}{\numberline {2.2.4.3}`temperature' compatible}{17}{subsubsection.2.2.4.3}
+\contentsline {subsubsection}{\numberline {2.2.4.4}Adding Realtime Graphing Capability}{19}{subsubsection.2.2.4.4}
+\contentsline {subsubsection}{\numberline {2.2.4.5}The Modding Problem}{21}{subsubsection.2.2.4.5}
+\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{63}{subsection.2.2.5}
