@@ -22,14 +22,19 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
-** July 18, Thursday: (Not well) [at home] Tried to setup plplot in windows using CMake and VS11 (2012) failed. Tried with minGW that too failed. Tried upgrading Sublime Text 3 to work with latex, that too failed. Working on updating the documentation.
+** July 20 and 21, Saturday and Sunday: Working on the documentation.
+
+** July 18 and 19, Thursday and Friday: (Not well) [at home] Tried to setup plplot in windows using CMake and VS11 (2012) failed. Tried with minGW that too failed. Tried upgrading Sublime Text 3 to work with latex, that too failed. Working on updating the documentation. Also worked on the secondary project with some success.
+
 * July 17, Wednesday: (Not well in the morning) Physically completed construction of four new dipoles, ready to be tested as a 2x2 lattice.
+
 * July 16, Tuesday: The modding problem was fixed (using modular arithmetic) in the dipole angle detection also. Dipole oscillations were setup with energy pumping using the temperature. Another dipole was also tested. Colour correction was changed from being based on RGB to HSV. This improved dipole detection at higher angular velocities.
+
 * July 15, Monday: Attempted an upgrade of the gstreamer plugin which failed.'tempreature' was made functional again and damping was tested using the realtime graphs. The modding problem in the angle detection for deciding when to fire the electromagnet was also fixed.
 
 ** July 12-14, Friday to Sunday: Working on a secondary project.
 
-* July 11, Thursday: A simple two point setup was created with one needle held from the top and bottom (used magnets to start with then removed them for testing damping) using glass slides and it seems to be better than what we've seen so far. Further, with plastic it is highly damped.
+* July 11, Thursday: A simple two point setup was created with one needle held from the top and bottom (used magnets to start with then removed them for testing damping) using glass slides and it seems to be better than what we've seen so far. Further, with plastic it is highly damped.  However, we tried to mount the needle on both sides with screws (for a metal cavity) and the damping was very sensitive to the amount of pressure. Further the idea is hard to implement cause the vision detection can't be done on it then, atleast the way we're doing it now. Also, camera calibration was implemented to correct for camera defects using a chessboard pattern. The systematic errors didn't disappear.
 
 * July 10, Wednesday: A little more of error analysis and dipole air elevation setup for all the dipoles was done (the fourth was setup and left for drying). Used an interesting method for making the dipoles. It was found during tests that with the heavy bottom, the needle setup (with the pointed edge up!) had almost the same damping as that of the air elevated setup. Further it was concluded that more accuracy is required for the air elevation setup to work properly. It was hypothesized that the main source of 'angular friction' were the guides that held the needle upright and not the needle tip.
 
@@ -47,7 +52,7 @@ SUMMER '13 TIMELINE
 
 * July 2, Tuesday: Figured how to use plplot, the basics. Got it up and running for 3d points and surfaces. Figured how to use grids, labels and enabling realtime support. Built and merged a minimalistic version of the same to the latticeAnalyser
 
-* July 1, Monday: Air hockey tables were searched for some toy ones found too. Attempted the writing of an algorithm for auto numbering of points in a lattice. Figured it was not straight forward to impliment with the usual C++ syntax. Will instead made provision (partially) for swapping manually. Also, plplot, a suitable plotting library was found and installed.
+* July 1, Monday: Air hockey tables were searched for some toy ones found too. Attempted the writing of an algorithm for auto numbering of points in a lattice. Figured it was not straight forward to implement with the usual C++ syntax. Will instead made provision (partially) for swapping manually. Also, plplot, a suitable plotting library was found and installed.
 
 ** June 9 - 21 : Monsoon School; Physics of Life, NCBS Bengaluru
 
