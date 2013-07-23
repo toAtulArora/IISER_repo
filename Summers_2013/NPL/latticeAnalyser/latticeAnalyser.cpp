@@ -233,7 +233,6 @@ Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_pro
 // }
 //////////////
 //the following two functions are from http://www.cs.rit.edu/~ncs/color/t_convert.html
-///////////
 //0-360 and 0-1 (originally)
 //r g b is also from zero to one
 void RGBtoHSV( double r, double g, double b, double *h, double *s, double *v )
@@ -472,9 +471,20 @@ vector <dipoleFrame> dipoleData;
 ////THIS IS FOR STORING IN FILE
 FILE * pFile;
 char fileName[50];
-
-
 /////////////////////////////
+
+
+///////////
+int posPhysicalToDetected(int phyID)
+{
+  for(int i=0;i<seedDipole.data.size();i++)
+  {
+    if(seedDipole.data[i].id==phyID)
+      return i;
+  }
+  cout<<endl<<"INVALID physical ID";
+  return 0;
+}
 
 // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
@@ -548,12 +558,12 @@ static void onMouse( int event, int x, int y, int, void* )
   else if(mode==1)
   {
     switch( event )
-    {        
+    {
     case CV_EVENT_LBUTTONUP:
         cout<<"Color A is currently (HSV) "<<endl<<(float)colorA.val[0]<<endl<<(float)colorA.val[1]<<endl<<(float)colorA.val[2]<<endl;
         cout<<endl<<"x="<<x<<",y="<<y<<endl;
         // colorA=Scalar(srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);    
-
+        //THIS IS RIGHT, it had to be y,x and not x,y!!! damn..
         RGBtoHSV((int)srcPreCrop.at<Vec3b>(y,x)[2],(int)srcPreCrop.at<Vec3b>(y,x)[1],(int)srcPreCrop.at<Vec3b>(y,x)[0],&(colorA.val[0]),&(colorA.val[1]),&(colorA.val[2]));
         cout<<"BGR colours are "<<(int)srcPreCrop.at<Vec3b>(y,x)[2]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[1]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[0]<<endl;
         // printf("RGB colours are %f %f %f",srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);
@@ -1250,10 +1260,12 @@ int process(VideoCapture& capture)
           {
             if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
             {
+              int candidate=posPhysicalToDetected(tempCandidate);
+              
               // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
-              if(IsClockwise(dipoleData[cf].data[tempCandidate].angle,coilAngle,360))
+              if(IsClockwise(dipoleData[cf].data[candidate].angle,coilAngle,360))
               {
-                if (dipoleData[cf].data[tempCandidate].instAngularVelocity>=0) //if it is going in the opposite direction
+                if (dipoleData[cf].data[candidate].instAngularVelocity>=0) //if it is going in the opposite direction
                 {
                   if (invertPush)
                     fireElectro(cf);
@@ -1268,7 +1280,7 @@ int process(VideoCapture& capture)
               }
               else  //if the angle is negaative, then
               {
-                if (dipoleData[cf].data[tempCandidate].instAngularVelocity<=0) //if it is going twoards the coil
+                if (dipoleData[cf].data[candidate].instAngularVelocity<=0) //if it is going twoards the coil
                 {
                   if(invertPush)
                     fireElectro(cf);
