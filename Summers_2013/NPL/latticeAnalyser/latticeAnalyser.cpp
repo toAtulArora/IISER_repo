@@ -484,7 +484,15 @@ char fileName[50];
   // Scalar colorA=Scalar(10,245,245);
 
   // HSV
-  Scalar colorA=((float)206*(360/180),74*(255/100),83*(255/100));
+
+
+
+  //This is experimental :P
+  Scalar colorA((float)103.953, (float)151.59, (float)217);
+  
+  //The following's from GIMP
+  // Scalar colorA((float)206*(360/180),74*(255/100),83*(255/100));
+
   // int colorATol=30;
   // int colorBTol=35;
   // int brightInv=10;  //this is to increase the brightness after processing
@@ -492,7 +500,7 @@ char fileName[50];
 
   int hueTol=20;
   int valueTol=193;
-  int saturationTol=255;
+  int saturationTol=70;
 
   int colorATol=255;
   int colorBTol=255;
@@ -542,14 +550,18 @@ static void onMouse( int event, int x, int y, int, void* )
     switch( event )
     {        
     case CV_EVENT_LBUTTONUP:
+        cout<<"Color A is currently (HSV) "<<endl<<(float)colorA.val[0]<<endl<<(float)colorA.val[1]<<endl<<(float)colorA.val[2]<<endl;
         cout<<endl<<"x="<<x<<",y="<<y<<endl;
-        // colorA=Scalar(srcPreCrop.at<Vec3b>(x,y)[0],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[2]);        
-        RGBtoHSV(srcPreCrop.at<Vec3b>(x,y)[2],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[0],&(colorA.val[2]),&(colorA.val[1]),&(colorA.val[0]));
-        cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
+        // colorA=Scalar(srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);    
+
+        RGBtoHSV((int)srcPreCrop.at<Vec3b>(y,x)[2],(int)srcPreCrop.at<Vec3b>(y,x)[1],(int)srcPreCrop.at<Vec3b>(y,x)[0],&(colorA.val[0]),&(colorA.val[1]),&(colorA.val[2]));
+        cout<<"BGR colours are "<<(int)srcPreCrop.at<Vec3b>(y,x)[2]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[1]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[0]<<endl;
+        // printf("RGB colours are %f %f %f",srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);
+        cout<<"Color A's been changed to "<<endl<<(float)colorA.val[0]<<endl<<(float)colorA.val[1]<<endl<<(float)colorA.val[2]<<endl;
         break;
     // case CV_EVENT_RBUTTONUP:
     //     cout<<x<<","<<y<<endl;
-    //     colorB=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);
+    //     colorB=Scalar(src.at<Vec3b>(y,x)[0],src.at<Vec3b>(y,x)[1],src.at<Vec3b>(y,x)[2]);
     //     cout<<"Color B's been changed to "<<endl<<colorB.val[0]<<endl<<colorB.val[1]<<endl<<colorB.val[2]<<endl;
     //     break;
     }
