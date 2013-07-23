@@ -43,7 +43,8 @@
           i. Proof of concept [Done] 
           ii. Import configurations form file [Done]
           iii. Test proper firing [Done]
-          iv. Algorithm to find the best candidate for pumping energy
+          iv. Algorithm to find the best candidate for pumping energy [Done]
+          v. Test the algorithm with 2 dipoles (not even a lattice :) [Done]
         b. Improved colour filter based on HSV
           i. implement [Done]
           ii. allow colour picking (debug exisiting problem) [Done]
@@ -878,7 +879,7 @@ int process(VideoCapture& capture)
   //Show the settings window
 
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
-  createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 100000, 0 );
+  createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 1000000, 0 );
   // H: 0 - 180, S: 0 - 255, V: 0 - 255  
   createTrackbar( "Hue Tolerance", settings_window, &hueTol, 180, 0 );
   createTrackbar( "Saturation Tolerance", settings_window, &saturationTol, 255, 0 );
