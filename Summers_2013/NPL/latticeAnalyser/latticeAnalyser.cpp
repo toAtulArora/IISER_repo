@@ -226,6 +226,115 @@ void initializeMultithreadResources()
 }
 
 Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_process; Mat srcColorA; Mat srcColorB;Mat drawing;
+//////////////
+// bool isGood(float val,float expected,float tol)
+// {
+//   if(abs(val-expected)
+// }
+//////////////
+//the following two functions are from http://www.cs.rit.edu/~ncs/color/t_convert.html
+///////////
+//0-360 and 0-1 (originally)
+//r g b is also from zero to one
+void RGBtoHSV( double r, double g, double b, double *h, double *s, double *v )
+{
+  r/=255;
+  g/=255;
+  b/=255;
+
+  double min, max, delta;
+
+  min = MIN( r, MIN(g, b) );
+  max = MAX( r, MAX(g, b) );
+  *v = max;       // v
+
+  delta = max - min;
+
+  if( max != 0 )
+    *s = delta / max;   // s
+  else {
+    // r = g = b = 0    // s = 0, v is undefined
+    *s = 0;
+    *h = -1;
+    return;
+  }
+
+  if( r == max )
+    *h = ( g - b ) / delta;   // between yellow & magenta
+  else if( g == max )
+    *h = 2 + ( b - r ) / delta; // between cyan & yellow
+  else
+    *h = 4 + ( r - g ) / delta; // between magenta & cyan
+
+  *h *= 60;       // degrees
+  if( *h < 0 )
+    *h += 360;
+
+  (*h) *= (180.0/360.0);
+  (*s) *= 255.0;
+  (*v) *= 255.0;
+}
+
+void HSVtoRGB( double *r, double *g, double *b, double h, double s, double v )
+{
+  h *= (360.0/180.0);
+  s /= 255.0;
+  v /= 255.0;
+
+  int i;
+  double f, p, q, t;
+
+  if( s == 0 ) {
+    // achromatic (grey)
+    *r = *g = *b = v;
+    return;
+  }
+
+  h /= 60;      // sector 0 to 5
+  i = floor( h );
+  f = h - i;      // factorial part of h
+  p = v * ( 1 - s );
+  q = v * ( 1 - s * f );
+  t = v * ( 1 - s * ( 1 - f ) );
+
+  switch( i ) {
+    case 0:
+      *r = v;
+      *g = t;
+      *b = p;
+      break;
+    case 1:
+      *r = q;
+      *g = v;
+      *b = p;
+      break;
+    case 2:
+      *r = p;
+      *g = v;
+      *b = t;
+      break;
+    case 3:
+      *r = p;
+      *g = q;
+      *b = v;
+      break;
+    case 4:
+      *r = t;
+      *g = p;
+      *b = v;
+      break;
+    default:    // case 5:
+      *r = v;
+      *g = p;
+      *b = q;
+      break;
+  }
+
+  (*r)*=255;
+  (*g)*=255;
+  (*b)*=255;
+}
+
 //////////////////////
 float findPrinciple(float val,float modVal)
 {
@@ -285,7 +394,13 @@ int thresh = 100;
 int max_thresh = 255;
 int canny=100;
 int centre=30;
-int minMinorAxis=1, maxMajorAxis=73;
+
+int minorAxis=7;
+int majorAxis=50;
+int radius=15;
+int ellipseTolerance=8;
+
+
 int mode=0;
 double theta=3.14159;
 
@@ -369,19 +484,19 @@ char fileName[50];
   // Scalar colorA=Scalar(10,245,245);
 
   // HSV
-  Scalar colorA=((float)206*(360/360),62.7*(255/100),49.4*(255/100));
+  Scalar colorA=((float)206*(360/180),74*(255/100),83*(255/100));
   // int colorATol=30;
   // int colorBTol=35;
   // int brightInv=10;  //this is to increase the brightness after processing
   // H: 0 - 180, S: 0 - 255, V: 0 - 255
 
-  int valueTol=10;
-  int saturationTol=10;
   int hueTol=20;
+  int valueTol=193;
+  int saturationTol=255;
 
   int colorATol=255;
   int colorBTol=255;
-  int brightInv=255;  //this is to increase the brightness after processing
+  int brightInv=111;  //this is to increase the brightness after processing
 
 //
   const char* source_window = "Source";
@@ -427,8 +542,9 @@ static void onMouse( int event, int x, int y, int, void* )
     switch( event )
     {        
     case CV_EVENT_LBUTTONUP:
-        cout<<x<<","<<y<<endl;
-        colorA=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);        
+        cout<<endl<<"x="<<x<<",y="<<y<<endl;
+        // colorA=Scalar(srcPreCrop.at<Vec3b>(x,y)[0],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[2]);        
+        RGBtoHSV(srcPreCrop.at<Vec3b>(x,y)[2],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[0],&(colorA.val[2]),&(colorA.val[1]),&(colorA.val[0]));
         cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
         break;
     // case CV_EVENT_RBUTTONUP:
@@ -517,6 +633,7 @@ void updateDisplay()
   #endif
 #endif
 #ifdef GRAPHS_ENABLED
+
     void clearGraph()
     {
       pls->col0(1);
@@ -626,8 +743,11 @@ int process(VideoCapture& capture)
   createTrackbar( "Value Tolerance", settings_window, &valueTol, 255,0 );
 
   // createTrackbar( "ColorB Tolerance", settings_window, &colorBTol, 256, 0 );
-  createTrackbar( "Min Radius", settings_window, &minMinorAxis, 100, 0 );
-  createTrackbar( "Max Radius", settings_window, &maxMajorAxis, 200, 0 );  
+  createTrackbar( "Minor Axis", settings_window, &minorAxis, 100, 0 );
+  createTrackbar( "Major Axis", settings_window, &majorAxis, 200, 0 ); 
+  createTrackbar( "Radius", settings_window, &radius, 200, 0 ); 
+  createTrackbar( "Ellipse Tolerance", settings_window, &ellipseTolerance, 200, 0 ); 
+
   createTrackbar( "Brightness Inverse",settings_window, &brightInv, 255, 0);
   createTrackbar( "Canny (Hough)", settings_window, &canny, 200, 0 );  
   createTrackbar( "Centre (Hough)", settings_window, &centre, 200, 0 );    
@@ -847,11 +967,31 @@ int process(VideoCapture& capture)
       for( size_t i = 0; i< minEllipse.size(); i++ )
          {
           //You can add aditional conditions to eliminate detected ellipses
-          if(!(
-            (minEllipse[i].size.height>minMinorAxis && minEllipse[i].size.width>minMinorAxis) 
-            &&
-            (minEllipse[i].size.height<maxMajorAxis && minEllipse[i].size.width<maxMajorAxis)
-            ))
+          float minor = (minEllipse[i].size.height<minEllipse[i].size.width)?minEllipse[i].size.height:minEllipse[i].size.width;
+          float major = (minEllipse[i].size.height>minEllipse[i].size.width)?minEllipse[i].size.height:minEllipse[i].size.width;
+          bool good=false;
+          
+          if(minor/major<1.3 && minor/major>0.7)  //if close enough to a circle
+          {
+            if((abs(minor-radius)<ellipseTolerance) && (abs(major-radius)<ellipseTolerance))
+              good=true;  //VALID CIRCLE DETECTED
+          }
+          else //IF its an ellipse then
+          {
+            if(abs(minor-minorAxis)<ellipseTolerance && abs(major-majorAxis)<ellipseTolerance)
+              good=true;  //VALID ELLIPSE FOUND
+          }
+          // if(
+          //   !(
+          //     (
+          //     (minEllipse[i].size.height>minMinorAxis && minEllipse[i].size.width>minMinorAxis) 
+          //     &&
+          //     (minEllipse[i].size.height<maxMajorAxis && minEllipse[i].size.width<maxMajorAxis)
+          //     )
+          //   )            
+
+          //   )
+          if(!good)
           {
             // minEllipse[i]=RotatedRect(Point2f(0,0),Point2f(0,0),0);
             minEllipse.erase(minEllipse.begin()+i--);
@@ -975,10 +1115,11 @@ int process(VideoCapture& capture)
                       //   }
                       // }                      
                       //THIS IS MATH POWER (actually miniscule manifestation of math's power)
-                      if((shortestDistance(roughAngle,preciseAngle,360)-shortestDistance(roughAngle,preciseAngle+180,360))>30)
+                      if((shortestDistance(roughAngle,preciseAngle,360)-shortestDistance(roughAngle,preciseAngle+180,360))>5)
                         preciseAngle+=180;
 
                       dipoles[k][c].angle=findPrinciple(preciseAngle,360);
+                      // dipoles[k][c].angle=roughAngle;
                       ///////////////////
 
 
@@ -1159,9 +1300,10 @@ int process(VideoCapture& capture)
             if(dipoleData[cf].data[i].detected)
             {
               pls->adv(1);
+              
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
               pls->wind( -2.5, 2.5, -3.0, 3.0 );
-
+              pls->w3d(2,4,3,0,10,0,1000,0,360,45,30);
               double x = dipoleData[cf].data[i].id;
               double z = dipoleData[cf].data[i].angle;
               // double x = i;
@@ -1175,7 +1317,7 @@ int process(VideoCapture& capture)
               pls->adv(2);
               pls->vpor( 0.0, 1.0, 0.0, 1.0 );
               pls->wind( -2.5, 2.5, -3.0, 3.0 );
-
+              pls->w3d(2,4,3,0,10,0,1000,-360,360,45,30);
               // x = dipoleData[cf].data[i].id;
               z = dipoleData[cf].data[i].instAngularVelocity;
               // double x = i;
@@ -1627,7 +1769,7 @@ inline void fireElectro(long frame)
     // alternate=!alternate;
     // if(alternate)
     // {
-      char usbBuf[REPORT_LEN]={0,1,0,100};
+      char usbBuf[REPORT_LEN]={'B',5,0,200};
       nWriteUSB((unsigned char*)usbBuf,14);    
       lastFrame=frame;
       cout<<endl<<">> Temperature: Electro Fired";
@@ -1647,10 +1789,10 @@ void temperatureTest()
     usbBuf[q]=0;
   }
 
-  usbBuf[0]=0;
-  usbBuf[1]=1;
-  usbBuf[2]=0;
-  usbBuf[3]=1000;
+  usbBuf[0]='B';
+  usbBuf[1]=5;
+  usbBuf[2]=255;
+  usbBuf[3]=255;
 
 
 
