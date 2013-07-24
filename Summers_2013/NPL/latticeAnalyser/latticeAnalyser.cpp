@@ -45,11 +45,14 @@
           iii. Test proper firing [Done]
           iv. Algorithm to find the best candidate for pumping energy [Done]
           v. Test the algorithm with 2 dipoles (not even a lattice :) [Done]
+          vi. Ensure the temperature communication doesn't make the program wait [Done]
+          vii. Test with a 2x2 lattice [Done]
         b. Improved colour filter based on HSV
           i. implement [Done]
           ii. allow colour picking (debug exisiting problem) [Done]
         c. Stricter ellipse detection (rejects most unwanted ellipses) [Done]
         d. Temperature Calculation and corresponding proof of concept triger [Done]
+
 */
 
 
@@ -415,7 +418,7 @@ int canny=100;
 int centre=30;
 
 int minorAxis=7;
-int majorAxis=43;
+int majorAxis=35;
 int radius=15;
 int ellipseTolerance=8;
 
@@ -535,7 +538,8 @@ char fileName[50];
       {
         dipolePort.push_back(extractedString[0]);
         dipoleBit.push_back((extractedString[1]-'0'));
-        cout<<"Dipole "<<i<<" \t -- \t"<<dipolePort[i]<<dipoleBit[i]<<" (Port"<<dipolePort[i]<<" Bit"<<dipoleBit[i]<<")"<<endl;
+        //Not using dipole pin because obviously char corresponding to 0 is not '0'
+        cout<<"Dipole "<<i<<" \t -- \t"<<dipolePort[i]<<extractedString[1]<<" (Port"<<dipolePort[i]<<" Bit"<<extractedString[1]<<")"<<endl;
       }
       else
       {
@@ -631,11 +635,11 @@ int posPhysicalToDetected(int phyID)
 
   int hueTol=20;
   int valueTol=193;
-  int saturationTol=70;
+  int saturationTol=85;
 
   int colorATol=255;
   int colorBTol=255;
-  int brightInv=111;  //this is to increase the brightness after processing
+  int brightInv=74;  //this is to increase the brightness after processing
 
 //
   const char* source_window = "Source";
@@ -1403,6 +1407,8 @@ int process(VideoCapture& capture)
           #ifndef TEMPERATURE_SINGLDIPOLE
           if(dipoleData[cf].temperature<(minAngularVelocity))
           {
+            static int lastFireIntensity=0;
+            static long lastFireTime=0;
             int bestCandidate=0;    //Gotto pump some dipole! :P
             float lastMinDist=360;  //This is the how far it is from the coil, can't be greater than 180
             for(int i=0;i<dipoleData[cf].data.size();i++)
@@ -1417,7 +1423,13 @@ int process(VideoCapture& capture)
 
             int dipoleToFire=seedDipole.data[ dipoleData[cf].data[bestCandidate].id ].id;
             // fireElectro(dipoleToFire,abs(dipoleData[cf].data[bestCandidate].instAngularVelocity/10));
-            fireElectro(dipoleToFire,30);
+            cout<<( (tickWhenGrabbed - lastFireTime )/getTickFrequency() ) <<","<<(((float)lastFireIntensity)/1000)<<endl;
+            if( ( (tickWhenGrabbed - lastFireTime )/getTickFrequency() )  > (((float)lastFireIntensity)/1000) )
+            {
+              lastFireIntensity=30;
+              fireElectro(dipoleToFire,lastFireIntensity);  
+              lastFireTime=tickWhenGrabbed;              
+            }            
           }
           #endif
 
@@ -1977,7 +1989,7 @@ int process(VideoCapture& capture)
       // {
         char usbBuf[REPORT_LEN]={dipolePort[id],dipoleBit[id],0,200};
 
-        nWriteUSB((unsigned char*)usbBuf,14);    
+        nWriteUSB((unsigned char*)usbBuf,14);
         lastFrame=frame;
         cout<<endl<<">> Temperature: Electro Fired for dipole "<<id;
 
@@ -1991,7 +2003,7 @@ int process(VideoCapture& capture)
 
         nWriteUSB((unsigned char*)usbBuf,14);    
         // lastFrame=frame;
-        cout<<endl<<">> Temperature: Electro Fired for dipole "<<id<<" with intensity "<<intensity;
+        cout<<endl<<">> Temperature: Electro Fired for dipole "<<id<<" with intensity "<<intensity<<" ";
   }
 #endif
 #endif

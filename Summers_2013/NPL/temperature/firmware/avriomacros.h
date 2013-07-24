@@ -15,13 +15,15 @@
 //
 //***********************************************************************************
 // I couldn't find my own file where I'd done this, and this guy came to save some time! :)
+// Revision comment: The in command was wrong!!! Actually had to spend more time figuring what was going wrong
+// than would've to have written the whole thing! But not guarenteed without errors..
 ///////////////////////////////////
 
  /*Macro function to declare an output pin */
 #define out(bit,port)	DDR##port |= (1 << bit)
 
 /* Macro function to declare an input pin */
-#define in(bit,port)	DDR##port |= (0 << bit)
+#define in(bit,port)	DDR##port &= ~(1 << bit)
 
 /* Macro function to set an output pin high */
 #define on(bit,port)	PORT##port |= (1 << bit)
