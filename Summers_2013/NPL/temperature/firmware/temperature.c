@@ -174,12 +174,13 @@ int main(void)
 					if(data[0]=='B')
 					{
 						fireElectro(B,pin,*intensity)
-						pucOutBuf[0]='B';
-						pucOutBuf[1]=data[1];
-
 					}
 					else if(data[0]=='C')
+					{	
 						fireElectro(C,pin,*intensity)
+						pucOutBuf[0]='C';
+						pucOutBuf[1]=data[1];
+					}
 					else if(data[0]=='D')
 						fireElectro(D,pin,*intensity)
 					// don't even think of missing the brackets, the macro is a set of statements!

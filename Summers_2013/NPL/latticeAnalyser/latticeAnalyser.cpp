@@ -38,6 +38,18 @@
             I. Test separate  [Done]
             II. Fagocytosis   [Done]
         d. Find the axis of the lattice to find the coil anlge [after experimentation, discontinued]
+    6. Finalizing
+        a. Temperature Interface generic
+          i. Proof of concept [Done] 
+          ii. Import configurations form file [Done]
+          iii. Test proper firing [Done]
+          iv. Algorithm to find the best candidate for pumping energy [Done]
+          v. Test the algorithm with 2 dipoles (not even a lattice :) [Done]
+        b. Improved colour filter based on HSV
+          i. implement [Done]
+          ii. allow colour picking (debug exisiting problem) [Done]
+        c. Stricter ellipse detection (rejects most unwanted ellipses) [Done]
+        d. Temperature Calculation and corresponding proof of concept triger [Done]
 */
 
 
@@ -69,6 +81,7 @@ using namespace std;
     const char *legline[4];
     int colline[4],styline[4];
     int id1;
+    bool plotSqKE=true;
 #endif
 
 
@@ -85,7 +98,7 @@ using namespace std;
 //TODO: Either calculate it at runtime, or allow the user to input
 //This is the detected angle of the dipole when it is aligned with the coil (least energy configuration)
 // #define COILANGLE 0 
-float coilAngle = 0;
+float coilAngle = 90;
 #define preciseAngleTol 20
     //This is slightly twisted to explain; it is the difference allowed between the atan2 angle and the ellipse angle to resolve the mod, if this is not clear, refer to the code
 const double version=0.6;
@@ -97,14 +110,21 @@ bool blind=false;           //This is the blind option, meaning hardware trackin
 bool invertPush=false;      //This is to invert the moment of pushing
 bool useCalibration=true;
 #ifdef TEMPERATURE_ENABLED
-inline void fireElectro(long frame);
-// for USB interface
-extern "C"
-{
-  #include "DataTypes.h"
-  #include "usbIO.h"
-}
-//
+  #ifdef TEMPERATURE_SINGLDIPOLE
+    inline void fireElectro(long frame, int id);
+  #else
+    void fireElectro(int id, int intensity);
+  #endif
+
+  // for USB interface
+  extern "C"
+  {
+    #include "DataTypes.h"
+    #include "usbIO.h"
+  }
+  //
+  vector<char> dipolePort;
+  vector<char> dipoleBit;
 #endif
 
 #ifdef ATOMIC_DISPLAY
@@ -166,6 +186,7 @@ Mat grabbedFrame;
 #else
   bool frameGrabbed=false,frameRequested=false;
 #endif
+
 #ifdef CALIBRATION_ENABLED
   void getCameraCalibrationParameters()
   {
@@ -233,7 +254,6 @@ Mat srcPreCrop; Mat cimg; Mat src; Mat src_gray; Mat srcColorFilter; Mat src_pro
 // }
 //////////////
 //the following two functions are from http://www.cs.rit.edu/~ncs/color/t_convert.html
-///////////
 //0-360 and 0-1 (originally)
 //r g b is also from zero to one
 void RGBtoHSV( double r, double g, double b, double *h, double *s, double *v )
@@ -334,7 +354,6 @@ void HSVtoRGB( double *r, double *g, double *b, double h, double s, double v )
   (*g)*=255;
   (*b)*=255;
 }
-
 //////////////////////
 float findPrinciple(float val,float modVal)
 {
@@ -396,7 +415,7 @@ int canny=100;
 int centre=30;
 
 int minorAxis=7;
-int majorAxis=50;
+int majorAxis=43;
 int radius=15;
 int ellipseTolerance=8;
 
@@ -430,6 +449,7 @@ int dipole::current=0;
 // array<dipole,500> dipoles;
 // array<dipole,500> lastDipoles;
 #define DmaxDipoleCount 1000
+#define DtemperatureAverageOverPeriod 1
 dipole dipoles[2][DmaxDipoleCount];
 // Colour read
 // Point origin;
@@ -459,7 +479,7 @@ public:
   double time;   //time elapsed since the seed frame
   double order;  //gives the rough size of the dipoles
   int count,velValidCount;    //number of dipole detected in the frame, number of dipoles for which inst angular velocity could be calculated (essentially, that it was detected in two consecutive frames)
-  double meanSquaredAngularVelocity; //mean of squares of angular velocities of each of the dipoles
+  double meanSquaredAngularVelocity,temperature; //mean of squares of angular velocities of each of the dipoles
   vector<dipoleSkel> data;
 };
 
@@ -472,9 +492,120 @@ vector <dipoleFrame> dipoleData;
 ////THIS IS FOR STORING IN FILE
 FILE * pFile;
 char fileName[50];
-
-
 /////////////////////////////
+#ifdef TEMPERATURE_ENABLED
+  void getTemperaturePins()
+  {
+
+    char temperaturePinsFile[]="configurations/temperaturePins";    
+    FileStorage fs2(temperaturePinsFile, FileStorage::READ);
+    cout<<endl<<"Temperature Enabled, using file: "<<temperaturePinsFile<<endl;
+
+    char tempString[5];    
+    string extractedString;
+    dipolePort.clear();
+    dipoleBit.clear();
+
+    int iMax;
+    fs2["count"]>>iMax;
+
+    // FileNodeIterator it = fs2.begin(), it_end = fs2.end();
+    // int idx = 0;
+    // std::vector<uchar> lbpval;
+
+    // // iterate through a sequence using FileNodeIterator
+    // for( ; it != it_end; ++it, idx++ )
+    // {
+    //     // cout << "feature #" << idx << ": ";
+    //     cout << "x=" << (int)(*it)["x"] << ", y=" << (int)(*it)["y"] << ", lbp: (";
+    //     // you can also easily read numerical arrays using FileNode >> std::vector operator.
+    //     (*it)["lbp"] >> lbpval;
+    //     for( int i = 0; i < (int)lbpval.size(); i++ )
+    //         cout << " " << (int)lbpval[i];
+    //     cout << ")" << endl;
+    // }
+
+
+    for(int i=0;i<iMax;i++)
+    {
+      sprintf(tempString,"p%d",i);
+      fs2[tempString] >> extractedString;
+      // cout<<tempString<<" "<<extractedString<<endl;
+      if(extractedString.size()>1)
+      {
+        dipolePort.push_back(extractedString[0]);
+        dipoleBit.push_back((extractedString[1]-'0'));
+        cout<<"Dipole "<<i<<" \t -- \t"<<dipolePort[i]<<dipoleBit[i]<<" (Port"<<dipolePort[i]<<" Bit"<<dipoleBit[i]<<")"<<endl;
+      }
+      else
+      {
+        dipolePort.push_back('Z');
+        dipoleBit.push_back(9);
+      }
+    }
+    
+  }
+#endif
+
+
+
+///////////////////////
+float candidateAptitude( int id)
+{
+  // int candidate=posPhysicalToDetected(id);
+  int cf=dipoleData.size()-1;
+  int candidate=id;
+  float distanceFromCoil=shortestDistance(dipoleData[cf].data[candidate].angle,coilAngle,360);
+  // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
+  if(IsClockwise(dipoleData[cf].data[candidate].angle,coilAngle,360))
+  {
+    if (dipoleData[cf].data[candidate].instAngularVelocity>0) //if it is going in the opposite direction
+    {
+      if (invertPush)
+        // fireElectro(cf,tempCandidate);
+        return distanceFromCoil;
+    }
+    else
+    {
+      if(!invertPush)
+         // fireElectro(cf,tempCandidate);  //to increase speed, because the force will be towards the coil              
+        return distanceFromCoil;
+    }             
+      
+     
+  }
+  else  //if the angle is negaative, then
+  {
+    if (dipoleData[cf].data[candidate].instAngularVelocity<0) //if it is going twoards the coil
+    {
+      if(invertPush)
+        // fireElectro(cf,tempCandidate);
+        return distanceFromCoil;
+    }
+    else
+    {
+      if(!invertPush)
+        // fireElectro(cf,tempCandidate);
+        return distanceFromCoil;
+    }
+      // fireElectro(cf);
+  }
+  return 0; //this means the given dipole can't be used to pump in energy
+}
+
+
+///////////
+
+int posPhysicalToDetected(int phyID)
+{
+  for(int i=0;i<seedDipole.data.size();i++)
+  {
+    if(seedDipole.data[i].id==phyID)
+      return i;
+  }
+  cout<<endl<<"INVALID physical ID";
+  return 0;
+}
 
 // This is a colour filter for improving accuracy
   // 20, 28, 41 [dark]
@@ -484,7 +615,15 @@ char fileName[50];
   // Scalar colorA=Scalar(10,245,245);
 
   // HSV
-  Scalar colorA=((float)206*(360/180),74*(255/100),83*(255/100));
+
+
+
+  //This is experimental :P
+  Scalar colorA((float)103.953, (float)151.59, (float)217);
+  
+  //The following's from GIMP
+  // Scalar colorA((float)206*(360/180),74*(255/100),83*(255/100));
+
   // int colorATol=30;
   // int colorBTol=35;
   // int brightInv=10;  //this is to increase the brightness after processing
@@ -492,7 +631,7 @@ char fileName[50];
 
   int hueTol=20;
   int valueTol=193;
-  int saturationTol=255;
+  int saturationTol=70;
 
   int colorATol=255;
   int colorBTol=255;
@@ -540,16 +679,20 @@ static void onMouse( int event, int x, int y, int, void* )
   else if(mode==1)
   {
     switch( event )
-    {        
+    {
     case CV_EVENT_LBUTTONUP:
+        cout<<"Color A is currently (HSV) "<<endl<<(float)colorA.val[0]<<endl<<(float)colorA.val[1]<<endl<<(float)colorA.val[2]<<endl;
         cout<<endl<<"x="<<x<<",y="<<y<<endl;
-        // colorA=Scalar(srcPreCrop.at<Vec3b>(x,y)[0],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[2]);        
-        RGBtoHSV(srcPreCrop.at<Vec3b>(x,y)[2],srcPreCrop.at<Vec3b>(x,y)[1],srcPreCrop.at<Vec3b>(x,y)[0],&(colorA.val[2]),&(colorA.val[1]),&(colorA.val[0]));
-        cout<<"Color A's been changed to "<<endl<<colorA.val[0]<<endl<<colorA.val[1]<<endl<<colorA.val[2]<<endl;
+        // colorA=Scalar(srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);    
+        //THIS IS RIGHT, it had to be y,x and not x,y!!! damn..
+        RGBtoHSV((int)srcPreCrop.at<Vec3b>(y,x)[2],(int)srcPreCrop.at<Vec3b>(y,x)[1],(int)srcPreCrop.at<Vec3b>(y,x)[0],&(colorA.val[0]),&(colorA.val[1]),&(colorA.val[2]));
+        cout<<"BGR colours are "<<(int)srcPreCrop.at<Vec3b>(y,x)[2]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[1]<<","<<(int)srcPreCrop.at<Vec3b>(y,x)[0]<<endl;
+        // printf("RGB colours are %f %f %f",srcPreCrop.at<Vec3b>(y,x)[0],srcPreCrop.at<Vec3b>(y,x)[1],srcPreCrop.at<Vec3b>(y,x)[2]);
+        cout<<"Color A's been changed to "<<endl<<(float)colorA.val[0]<<endl<<(float)colorA.val[1]<<endl<<(float)colorA.val[2]<<endl;
         break;
     // case CV_EVENT_RBUTTONUP:
     //     cout<<x<<","<<y<<endl;
-    //     colorB=Scalar(src.at<Vec3b>(x,y)[0],src.at<Vec3b>(x,y)[1],src.at<Vec3b>(x,y)[2]);
+    //     colorB=Scalar(src.at<Vec3b>(y,x)[0],src.at<Vec3b>(y,x)[1],src.at<Vec3b>(y,x)[2]);
     //     cout<<"Color B's been changed to "<<endl<<colorB.val[0]<<endl<<colorB.val[1]<<endl<<colorB.val[2]<<endl;
     //     break;
     }
@@ -736,7 +879,7 @@ int process(VideoCapture& capture)
   //Show the settings window
 
   namedWindow(settings_window,WINDOW_AUTOSIZE  | CV_GUI_NORMAL);
-  createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 100000, 0 );
+  createTrackbar( "Min Ang Vel Sq", settings_window, &minAngularVelocity, 1000000, 0 );
   // H: 0 - 180, S: 0 - 255, V: 0 - 255  
   createTrackbar( "Hue Tolerance", settings_window, &hueTol, 180, 0 );
   createTrackbar( "Saturation Tolerance", settings_window, &saturationTol, 255, 0 );
@@ -1232,39 +1375,87 @@ int process(VideoCapture& capture)
         //else it would be zero, the meanSquaredAngularVelocity
         // dipoleData[cf].meanSquaredAngularVelocity=sqrt(dipoleData[cf].meanSquaredAngularVelocity);
         
+        int temperatureFrameCount=0;
+        double temperatureFrame=0;
+        for(int k=cf;k>0;k--)
+        {
+          double dTime=(dipoleData[cf].time-dipoleData[k].time);
+          // cout<<dTime;
+          if(dTime>=0 && dTime<DtemperatureAverageOverPeriod)
+          {
+            temperatureFrame+=dipoleData[k].meanSquaredAngularVelocity;
+            // cout<<temperatureFrame;
+            temperatureFrameCount++;
+          }
+          else
+            k=0;  //terminate the loop
+        }
+        if(temperatureFrameCount>0)
+          temperatureFrame/=temperatureFrameCount;
+        else
+          temperatureFrame=0;
+        dipoleData[cf].temperature=temperatureFrame;
+        
 
         #ifdef TEMPERATURE_ENABLED
+
+          //If you want to put pid, put it here..
+          #ifndef TEMPERATURE_SINGLDIPOLE
+          if(dipoleData[cf].temperature<(minAngularVelocity))
+          {
+            int bestCandidate=0;    //Gotto pump some dipole! :P
+            float lastMinDist=360;  //This is the how far it is from the coil, can't be greater than 180
+            for(int i=0;i<dipoleData[cf].data.size();i++)
+            {
+              float minDist=candidateAptitude(i);
+              if(minDist<lastMinDist)
+              {                
+                lastMinDist=minDist;
+                bestCandidate=i;
+              }
+            }
+
+            int dipoleToFire=seedDipole.data[ dipoleData[cf].data[bestCandidate].id ].id;
+            // fireElectro(dipoleToFire,abs(dipoleData[cf].data[bestCandidate].instAngularVelocity/10));
+            fireElectro(dipoleToFire,30);
+          }
+          #endif
+
+          #ifdef TEMPERATURE_SINGLDIPOLE
+          //THE SINGLE DIPOLE ALGORITHM
           if(!blind)
           {
-            if(dipoleData[cf].meanSquaredAngularVelocity<(minAngularVelocity*minAngularVelocity))
+            if(dipoleData[cf].temperature<(minAngularVelocity))
             {
+              int candidate=posPhysicalToDetected(tempCandidate);
+
               // if((dipoleData[cf].data[tempCandidate].angle - COILANGLE) > 0)
-              if(IsClockwise(dipoleData[cf].data[tempCandidate].angle,coilAngle,360))
+              if(IsClockwise(dipoleData[cf].data[candidate].angle,coilAngle,360))
               {
-                if (dipoleData[cf].data[tempCandidate].instAngularVelocity>=0) //if it is going in the opposite direction
+                if (dipoleData[cf].data[candidate].instAngularVelocity>=0) //if it is going in the opposite direction
                 {
                   if (invertPush)
-                    fireElectro(cf);
+                    fireElectro(cf,tempCandidate);
                 }
                 else
                 {
                   if(!invertPush)
-                     fireElectro(cf);  //to increase speed, because the force will be towards the coil              
+                     fireElectro(cf,tempCandidate);  //to increase speed, because the force will be towards the coil              
                 }             
                   
                  
               }
               else  //if the angle is negaative, then
               {
-                if (dipoleData[cf].data[tempCandidate].instAngularVelocity<=0) //if it is going twoards the coil
+                if (dipoleData[cf].data[candidate].instAngularVelocity<=0) //if it is going twoards the coil
                 {
                   if(invertPush)
-                    fireElectro(cf);
+                    fireElectro(cf,tempCandidate);
                 }
                 else
                 {
                   if(!invertPush)
-                    fireElectro(cf);
+                    fireElectro(cf,tempCandidate);
                 }
                   // fireElectro(cf);
               }
@@ -1272,7 +1463,8 @@ int process(VideoCapture& capture)
             }            
           }
           else
-            fireElectro(cf);
+            fireElectro(cf,tempCandidate);
+          #endif
         #endif
       }
       /////////////
@@ -1329,8 +1521,13 @@ int process(VideoCapture& capture)
           }
 
           pls->adv(3);
-          pls->stripa(id1,0,cf,(dipoleData[cf].meanSquaredAngularVelocity));
-          pls->stripa(id1,1,cf,minAngularVelocity);
+          pls->stripa(id1,0,cf,minAngularVelocity);
+          //NOTE: The library apparently has issues if you stop printing both! it crashes at runtime :(
+          if(plotSqKE)
+            pls->stripa(id1,1,cf,(dipoleData[cf].meanSquaredAngularVelocity));
+          else
+            pls->stripa(id1,1,cf,(dipoleData[cf].temperature));
+          
         }        
       #endif
 
@@ -1494,6 +1691,14 @@ int process(VideoCapture& capture)
       int kMax; //sorry, bad programming, but relatively desparate for results..
       switch (key)
       {
+          #ifdef GRAPHS_ENABLED
+            case '0':
+            {
+              plotSqKE=!plotSqKE;
+              cout<<endl<<"Plot measure of inst. average kinetic energy:"<<plotSqKE;
+              break;
+            }
+          #endif
           case 'o':
           {
             cout<<endl<<"Input the coil angle"<<endl;
@@ -1759,29 +1964,44 @@ int process(VideoCapture& capture)
 
 // }
 #ifdef TEMPERATURE_ENABLED
-inline void fireElectro(long frame)
-{
-  //this is to avoid too many fires within a short time
-  static long lastFrame=0;
-  // static bool alternate=false;
-  if(frame-lastFrame>3)
+#ifdef TEMPERATURE_SINGLDIPOLE
+  inline void fireElectro(long frame,int id)
   {
-    // alternate=!alternate;
-    // if(alternate)
-    // {
-      char usbBuf[REPORT_LEN]={'B',5,0,200};
-      nWriteUSB((unsigned char*)usbBuf,14);    
-      lastFrame=frame;
-      cout<<endl<<">> Temperature: Electro Fired";
+    //this is to avoid too many fires within a short time
+    static long lastFrame=0;
+    // static bool alternate=false;
+    if(frame-lastFrame>3)
+    {
+      // alternate=!alternate;
+      // if(alternate)
+      // {
+        char usbBuf[REPORT_LEN]={dipolePort[id],dipoleBit[id],0,200};
 
-    // }
+        nWriteUSB((unsigned char*)usbBuf,14);    
+        lastFrame=frame;
+        cout<<endl<<">> Temperature: Electro Fired for dipole "<<id;
+
+      // }
+    }
   }
-}
+#else
+  void fireElectro(int id, int intensity)
+  {
+        char usbBuf[REPORT_LEN]={dipolePort[id],dipoleBit[id],0,intensity};
+
+        nWriteUSB((unsigned char*)usbBuf,14);    
+        // lastFrame=frame;
+        cout<<endl<<">> Temperature: Electro Fired for dipole "<<id<<" with intensity "<<intensity;
+  }
+#endif
 #endif
 
 void temperatureTest()
 {
 #ifdef TEMPERATURE_ENABLED
+  cout<<"Which dipole to fire?";
+  int i=0;
+  cin>>i;
 
   char usbBuf[REPORT_LEN];
   for(int q=0;q<REPORT_LEN;q++)
@@ -1789,11 +2009,12 @@ void temperatureTest()
     usbBuf[q]=0;
   }
 
-  usbBuf[0]='B';
-  usbBuf[1]=5;
+  // usbBuf[0]='B';
+  // usbBuf[1]=5;
+  usbBuf[0]=dipolePort[i];
+  usbBuf[1]=dipoleBit[i];
   usbBuf[2]=255;
   usbBuf[3]=255;
-
 
 
   cout<<"temperature Test"<<endl<<endl;  
@@ -1834,6 +2055,9 @@ void temperatureTest()
 int main( int ac, char** argv )
 {
   initializeMultithreadResources();
+  #ifdef TEMPERATURE_ENABLED
+    getTemperaturePins();
+  #endif
 
   cout<<"Loading";
     cout<<endl<<endl
