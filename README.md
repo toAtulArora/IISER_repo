@@ -22,6 +22,12 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+* July 24, Wednesday: [Project Milestone] Completed testing with a 2x2 lattice, with energy pumping and it worked just fine! Obviously it required a lot of debugging, for electronics never works at once. Plus there were other software issues.
+
+* July 23, Tuesday: [important day] Finalized the HSV colour filter.  Further added calculation of temperature using a timed average. Added support for making the pin configurations readable from file. Then temperature ran into issues and was fixed (int char problem) and put the last piece of the puzzle.
+
+* July 22, Monday: Figured out the best way to make temperature take generic inputs for triggering the electromagnets. Further the ellipse detection was made more strict to dis-allow ellipse/circles that are not of suitable dimensions. Further worked on an HSV colour filter instead of the RGB model to support higher speeds.
+
 ** July 20 and 21, Saturday and Sunday: Working on the documentation.
 
 ** July 18 and 19, Thursday and Friday: (Not well) [at home] Tried to setup plplot in windows using CMake and VS11 (2012) failed. Tried with minGW that too failed. Tried upgrading Sublime Text 3 to work with latex, that too failed. Working on updating the documentation. Also worked on the secondary project with some success.
