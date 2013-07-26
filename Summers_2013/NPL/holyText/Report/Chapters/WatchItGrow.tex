@@ -274,13 +274,13 @@
 		\subsubsection{The Modding Problem}
 			Consider an ellipse. To describe all its orientations uniquely, given it's position, we need a convention for defining the angle and the angle should span pi radians. Only $\pi$ radians are required as opposed to $2\pi$ simply because of the symmetry of the ellipse. TODO: Put an image of an ellipse with the angle. We therefore need more information than the angle of the ellipse, to determine the angle of the dipole. The design of the pattern takes care of it by providing a circle to break the symmetry. Simplistically, the problem is now solved, for the circle's position can easily be used to decide when to add $\pi$ to the ellipse angle and you have the dipole's angle. TODO: Add an image showing the ellipse with a circle and the dipole angle changed accordingly.
 			\par
-			Upon implementing this simple logic as an algorithm and testing, it was found that it runs into troubles very quickly and periodically.
+			Upon implementing this simple logic as an algorithm and testing, it was found that it runs into troubles very quickly and periodically. To understand, first assume that the ellipse reads zero degrees when horizontal and thus, the circle, if it is above the 
 			\par
 			atan2 approximation for correcting the angle problem, atan2 assisted angle approximation, modular arithmetic based approach for correcting the dipole angle detection (figured this from a simpler problem of firing the elctromagnet)
 		\\
 		mod problem for deciding when to fire the electro magnet, used modular arithmetic
 		\\
-		RGB based colour detection to HSV based colour filtering, to improve high speed performance
+		RGB based colour detection to HSV based colour filtering, to improve high speed performance | various problems such as conversion of rgb to hsv and so on..
 		\\
 		misc: cmake was fiddled around with, auto numbering of lattice points, writing all the data into a file, gstreamer plugins for reading x264
 		\\

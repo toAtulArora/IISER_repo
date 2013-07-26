@@ -19,4 +19,4 @@
 \contentsline {subsubsection}{\numberline {2.2.4.3}`temperature' compatible}{17}{subsubsection.2.2.4.3}
 \contentsline {subsubsection}{\numberline {2.2.4.4}Adding Realtime Graphing Capability}{19}{subsubsection.2.2.4.4}
 \contentsline {subsubsection}{\numberline {2.2.4.5}The Modding Problem}{21}{subsubsection.2.2.4.5}
-\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{63}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.5}temperature; the rise}{72}{subsection.2.2.5}

@@ -22,6 +22,10 @@ https://github.com/toatularora/IISER_repo/blob/master/Semester_3/Summers/backup/
 
 SUMMER '13 TIMELINE
 --
+** July 26, Friday: Not well again. Tried to work on the documentation
+
+* July 25, Thursday: Working on setting up latex on linux along with dOxygen for documentation. The latex bit failed. There were various problems even after painfully installing TeXlive to work with ST3, while compiling the classic thesis template.
+
 * July 24, Wednesday: [Project Milestone] Completed testing with a 2x2 lattice, with energy pumping and it worked just fine! Obviously it required a lot of debugging, for electronics never works at once. Plus there were other software issues.
 
 * July 23, Tuesday: [important day] Finalized the HSV colour filter.  Further added calculation of temperature using a timed average. Added support for making the pin configurations readable from file. Then temperature ran into issues and was fixed (int char problem) and put the last piece of the puzzle.
