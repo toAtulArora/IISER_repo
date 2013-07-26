@@ -1,5 +1,7 @@
 OVERVIEW
 --
+UPDATE: This project has been shifted to its own repository
+github.com/toAtulArora/dipoles
 
 There are three parts to this
 
