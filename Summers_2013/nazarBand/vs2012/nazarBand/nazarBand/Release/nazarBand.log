@@ -1,13 +1,13 @@
-﻿Build started 29/07/2013 12:40:41 AM.
+﻿Build started 29/07/2013 01:18:28 AM.
      1>Project "C:\Users\Atul\Documents\IISER_repo\Summers_2013\nazarBand\vs2012\nazarBand\nazarBand\nazarBand.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\opencv\build\x86\vc11\include /IC:\opencv\build\include /IC:\boost_1_54_0\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\pieces\faceDetectAndTrain.cpp
          faceDetectAndTrain.cpp
-     1>..\..\..\pieces\faceDetectAndTrain.cpp(19): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
      1>..\..\..\pieces\faceDetectAndTrain.cpp(20): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>..\..\..\pieces\faceDetectAndTrain.cpp(71): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>..\..\..\pieces\faceDetectAndTrain.cpp(119): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
-     1>..\..\..\pieces\faceDetectAndTrain.cpp(123): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\..\pieces\faceDetectAndTrain.cpp(21): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\..\pieces\faceDetectAndTrain.cpp(72): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\..\pieces\faceDetectAndTrain.cpp(139): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\..\pieces\faceDetectAndTrain.cpp(143): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Atul\Documents\IISER_repo\Summers_2013\nazarBand\vs2012\nazarBand\Release\nazarBand.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x86\vc11\lib /LIBPATH:C:\boost_1_54_0\stage\lib opencv_core245.lib opencv_imgproc245.lib opencv_highgui245.lib opencv_ml245.lib opencv_video245.lib opencv_features2d245.lib opencv_calib3d245.lib opencv_objdetect245.lib opencv_contrib245.lib opencv_legacy245.lib opencv_flann245.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Atul\Documents\IISER_repo\Summers_2013\nazarBand\vs2012\nazarBand\Release\nazarBand.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Atul\Documents\IISER_repo\Summers_2013\nazarBand\vs2012\nazarBand\Release\nazarBand.lib" /MACHINE:X86 /SAFESEH Release\faceDetectAndTrain.obj
          Generating code
@@ -17,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.13
+Time Elapsed 00:00:04.49

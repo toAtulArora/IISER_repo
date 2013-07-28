@@ -10,6 +10,7 @@
 #include <fstream>
 // #include <fstream>
 // #include <sstream>
+#include "boost/filesystem.hpp"
 
 #define PI 3.14159265
 using namespace cv;
@@ -22,7 +23,7 @@ void getMidPoint(Rect r,float& x, float& y)
 
 int main(int argc, const char *argv[])
 {
-	string windowName="Camera Stream",debugWindow="Gray-Scale",candidateWindow="Candidate Preview";
+	string windowName="Camera Stream",debugWindow="Gray-Scale",candidateWindow="Candidate Preview",directoryToUse="Atul";
 	namedWindow(windowName,WINDOW_AUTOSIZE);
 	namedWindow(debugWindow,WINDOW_AUTOSIZE);
 	namedWindow(candidateWindow,WINDOW_AUTOSIZE);
@@ -85,22 +86,39 @@ int main(int argc, const char *argv[])
 				{
 					static int count=0;					
 					char filename[10];
+					//string filename="";
 					vector<int> compression_params;
 					compression_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
 					compression_params.push_back(9);
-					
-					//Finds the best file name to use
-					do
-					{
-						fileTest.close();
-						count++;
-						sprintf(filename,"%d.png",count);
-						fileTest.open(filename);
-					} while(fileTest.is_open());
 
-					imwrite(filename,trainRoi,compression_params);
-					cout<<"Image saved with name "<<count<<endl;
-					candidateInBuffer=false;	//Saved!
+					//Ensure the directory corresponding to the label exists
+					boost::filesystem::path rootPath ( "." );
+					boost::filesystem::path labelPath (directoryToUse);
+					boost::filesystem::path finalPath = rootPath/labelPath;
+					boost::system::error_code returnedError;
+
+					boost::filesystem::create_directories( finalPath, returnedError );
+
+					if ( returnedError )
+					   cout<<"Fudge! Something went wrong while trying to create the desired directory"; //did not successfully create directories
+					else
+					{
+						//directories successfully created
+						//Finds the best file name to use
+						do
+						{
+							fileTest.close();
+							count++;
+							//filename<<finalPath.string()<<count;
+							sprintf(filename,"%s/%d.png",(finalPath.string()).c_str(),count);
+							cout<<filename<<endl;
+							fileTest.open(filename);
+						} while(fileTest.is_open());
+
+						imwrite(filename,trainRoi,compression_params);
+						cout<<"Image saved with name "<<count<<endl;
+					}
+					candidateInBuffer=false;	//Saved! (Hopefully that is, else move on)
 				}
 				if(!waitForEyes)
 				{
@@ -138,6 +156,11 @@ int main(int argc, const char *argv[])
 		char key=(char) waitKey(1);
 		switch(key)
 		{
+			case 'l':
+			case 'L':
+				cout<<"Input a label for the training set";
+				cin>>directoryToUse;
+				break;
 			case 'q':
 			case 'Q':
 				return 0;
