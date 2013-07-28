@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\pieces\traverse.cpp">
+    <ClCompile Include="..\..\..\pieces\faceDetect.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
