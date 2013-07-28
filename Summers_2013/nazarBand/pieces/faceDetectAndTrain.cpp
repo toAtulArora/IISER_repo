@@ -24,7 +24,7 @@ int main(int argc, const char *argv[])
 	namedWindow(windowName,WINDOW_AUTOSIZE);
 	namedWindow(debugWindow,WINDOW_AUTOSIZE);
 	namedWindow(candidateWindow,WINDOW_AUTOSIZE);
-	Mat frame,frameClone,gray,roi,visRoi,trainRoi;
+	Mat frame,frameClone,gray,roi,visRoi,trainRoi,visTrainRoi;
 	Mat rotMat(2,3,CV_32FC1);
 
 	bool getCandidate=false;
@@ -61,11 +61,11 @@ int main(int argc, const char *argv[])
 		for(Rect r: rects)
 		{
 			roi=gray(r);
-			nestedCascade.detectMultiScale(roi,subrects,1.3,4,CV_HAAR_SCALE_IMAGE,Size(30,30),Size(300,300));
+			nestedCascade.detectMultiScale(roi,subrects,1.3,4,CV_HAAR_SCALE_IMAGE,Size(r.width/5,r.height/5),Size(r.width/2.5,r.height/2.5));
 			rectangle(frame,r,Scalar(255,0,0));
-			visRoi=frame(r);
+			//visRoi=frame(r);
 			for(Rect rr: subrects)
-				rectangle(visRoi,(rr),Scalar(0,255,0));
+				rectangle(frame(r),(rr),Scalar(0,255,0));
 			if(subrects.size()==2 && getCandidate==true)
 			{
 				getCandidate=false;
@@ -77,11 +77,12 @@ int main(int argc, const char *argv[])
 					angle-=180;
 				//angle=-angle;
 				Point center=Point((x1+x2)/2,(y1+y2)/2);
-				rotMat=getRotationMatrix2D(center,angle,1.2);
+				rotMat=getRotationMatrix2D(center,angle,1.15);
 				cout<<angle<<endl;
-				// trainRoi=frameClone(r);				
-				warpAffine(visRoi,trainRoi,rotMat,visRoi.size());
-				imshow(candidateWindow,trainRoi);
+				//trainRoi=frameClone(r);				
+				warpAffine(frame(r),visTrainRoi,rotMat,frame(r).size());
+				warpAffine(frameClone(r),trainRoi,rotMat,frameClone(r).size());
+				imshow(candidateWindow,visTrainRoi);
 			}
 		}		
 	// vector<int> compression_params;

@@ -1,10 +1,11 @@
-﻿Build started 28/07/2013 10:30:46 PM.
+﻿Build started 28/07/2013 10:49:12 PM.
      1>Project "C:\Users\Atul\Documents\IISER_repo\Summers_2013\nazarBand\vs2012\nazarBand\nazarBand\nazarBand.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\opencv\build\x86\vc11\include /IC:\opencv\build\include /IC:\boost_1_54_0\ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\pieces\faceDetectAndTrain.cpp
          faceDetectAndTrain.cpp
      1>..\..\..\pieces\faceDetectAndTrain.cpp(17): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
      1>..\..\..\pieces\faceDetectAndTrain.cpp(18): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>..\..\..\pieces\faceDetectAndTrain.cpp(64): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
      1>..\..\..\pieces\faceDetectAndTrain.cpp(75): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
      1>..\..\..\pieces\faceDetectAndTrain.cpp(79): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
        Link:
@@ -16,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.23
+Time Elapsed 00:00:03.04
