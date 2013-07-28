@@ -7,8 +7,10 @@
 #include <cctype>
 #include <vector>
 #include <math.h>
+#include <fstream>
 // #include <fstream>
 // #include <sstream>
+
 #define PI 3.14159265
 using namespace cv;
 using namespace std;
@@ -31,6 +33,8 @@ int main(int argc, const char *argv[])
 	
 	//Settings
 	bool waitForEyes=true;
+
+	ifstream fileTest;
 
 	string cascadeFn = "c:/opencv/data/haarcascades/haarcascade_frontalface_alt.xml";
 	string nestedFn = "c:/opencv/data/haarcascades/haarcascade_eye.xml";
@@ -79,14 +83,23 @@ int main(int argc, const char *argv[])
 				//Another key can be used to reject
 				if(candidateInBuffer)
 				{
-					static int count=0;
-					count++;
+					static int count=0;					
 					char filename[10];
 					vector<int> compression_params;
 					compression_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
 					compression_params.push_back(9);
-					sprintf(filename,"%d.png",count);
+					
+					//Finds the best file name to use
+					do
+					{
+						fileTest.close();
+						count++;
+						sprintf(filename,"%d.png",count);
+						fileTest.open(filename);
+					} while(fileTest.is_open());
+
 					imwrite(filename,trainRoi,compression_params);
+					cout<<"Image saved with name "<<count<<endl;
 					candidateInBuffer=false;	//Saved!
 				}
 				if(!waitForEyes)
