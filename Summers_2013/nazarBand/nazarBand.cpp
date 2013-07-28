@@ -3,7 +3,8 @@ name:           nazarBand.cpp
 description:    <skipped for now>
 baby steps:
     1. Create tiny pieces
-        a. test the directory traverser using boost
+        a. test the directory traverser using boost [proof of concept bit done]
+        b. convert the python demo to c++ and test
 */
 
 #include "opencv2/core/core.hpp"
