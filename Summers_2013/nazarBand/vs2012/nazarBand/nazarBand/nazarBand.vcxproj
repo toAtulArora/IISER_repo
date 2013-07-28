@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\pieces\faceDetect.cpp" />
+    <ClCompile Include="..\..\..\pieces\faceDetectAndTrain.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EEAD0278-F168-452A-AD25-1D7735E33E18}</ProjectGuid>
