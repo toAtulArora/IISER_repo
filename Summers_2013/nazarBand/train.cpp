@@ -15,7 +15,7 @@ using namespace std;
 using namespace cv;
 using namespace boost::filesystem;
 
-void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels)
+void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels, Size rescaleToSize)
 {
 	int i=0;
   path current_dir("."); //
@@ -28,13 +28,15 @@ void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels
       for(directory_iterator iter(itr->path()), end; iter !=end; iter++)        
       {
         if(!is_directory(iter->status()))
-        {
-          
+        {          
 		  Mat img=imread(iter->path().string());
 		  if(!img.empty())
 		  {
+			Mat imgRescale;
+			//resize(img, imgRescale, Size(200,200), 0, 0, CV_INTER_CUBIC);
+			resize(img, imgRescale, rescaleToSize, 0, 0, CV_INTER_AREA);	//for shrinking
 			cout<<"\tImage["<<images.size()<<"] "<<iter->path().leaf().string()<<" added to the said label \n";
-			images.push_back(img);
+			images.push_back(imgRescale);
 			labels.push_back(i);
 			sLabels.push_back(iter->path().leaf().string());
 		  }
@@ -59,7 +61,7 @@ int main()
 	vector<Mat> images;
 	vector<int> labels;
 	vector<string> sLabels;
-  getImages(images,labels,sLabels);
+  getImages(images,labels,sLabels,Size(200,200));
 	
   if(images.size() <=1 )
   {
@@ -75,12 +77,12 @@ int main()
   model->save("defaultTrained");
   cout<<"Done"<<endl;
 
+  cout<<endl<<"Press enter to quit"<<endl;
   char a=0;
-  while(a!='q')
+  while(a!='\n')
   {
-	  a=waitKey(0);
-  }
-  //char a=waitKey(10000);
+	  a=cin.get();
+  }  
 
 	return 0;
 }
