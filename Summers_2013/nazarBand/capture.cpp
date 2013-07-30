@@ -17,8 +17,8 @@ using namespace cv;
 using namespace std;
 void getMidPoint(Rect r,float& x, float& y)
 {
-	x=r.x + (r.width/2);
-	y=r.y + (r.height/2);	
+	x=(float)(r.x + (r.width/2));
+	y=(float)(r.y + (r.height/2));	
 }
 
 int main(int argc, const char *argv[])
@@ -69,7 +69,7 @@ int main(int argc, const char *argv[])
 		for(Rect r: rects)
 		{
 			roi=gray(r);
-			nestedCascade.detectMultiScale(roi,subrects,1.3,4,CV_HAAR_SCALE_IMAGE,Size(r.width/5,r.height/5),Size(r.width/2.5,r.height/2.5));
+			nestedCascade.detectMultiScale(roi,subrects,1.3,4,CV_HAAR_SCALE_IMAGE,Size((int)(r.width/5),(int)(r.height/5)),Size((int)(r.width/2.5),(int)(r.height/2.5)));
 			rectangle(frame,r,Scalar(255,0,0));
 
 			//visRoi=frame(r);
@@ -136,11 +136,11 @@ int main(int argc, const char *argv[])
 					float x1,y1,x2,y2;
 					getMidPoint(subrects[0],x1,y1);
 					getMidPoint(subrects[1],x2,y2);				
-					float angle=atan2(y2-y1,x2-x1)*(180.0/PI);
+					double angle=atan2(y2-y1,x2-x1)*(180.0/PI);
 					if(x1>x2)
 						angle-=180;
 					//angle=-angle;
-					Point center=Point((x1+x2)/2,(y1+y2)/2);
+					Point center=Point((int)(x1+x2)/2,(int)(y1+y2)/2);
 					rotMat=getRotationMatrix2D(center,angle,1.15);
 					cout<<angle<<endl;						
 					warpAffine(frame(r),visTrainRoi,rotMat,frame(r).size());

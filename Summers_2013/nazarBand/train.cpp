@@ -25,11 +25,12 @@ void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels
     {
       cout<<"\nLooking in "<<itr->path().string()<<"\n";
       cout<<"label:"<<i<<"\nsLabel:"<<itr->path().leaf().string()<<"\n";
+      sLabels.push_back(itr->path().leaf().string());
       for(directory_iterator iter(itr->path()), end; iter !=end; iter++)        
       {
         if(!is_directory(iter->status()))
         {          
-		  Mat img=imread(iter->path().string());
+		  Mat img=imread(iter->path().string(),CV_LOAD_IMAGE_GRAYSCALE);
 		  if(!img.empty())
 		  {
 			Mat imgRescale;
@@ -38,7 +39,7 @@ void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels
 			cout<<"\tImage["<<images.size()<<"] "<<iter->path().leaf().string()<<" added to the said label \n";
 			images.push_back(imgRescale);
 			labels.push_back(i);
-			sLabels.push_back(iter->path().leaf().string());
+			// sLabels.push_back(itr->path().leaf().string());
 		  }
 		  else
 		  {
@@ -60,8 +61,8 @@ int main()
 {
 	vector<Mat> images;
 	vector<int> labels;
-	vector<string> sLabels;
-  getImages(images,labels,sLabels,Size(200,200));
+	vector<string> Labels;
+  getImages(images,labels,Labels,Size(200,200));
 	
   if(images.size() <=1 )
   {
@@ -69,12 +70,20 @@ int main()
 	return 1;
   }
   cout<<"Starting Training.."<<endl;
-  Ptr<FaceRecognizer> model = createEigenFaceRecognizer();
+  Ptr<FaceRecognizer> model = createFisherFaceRecognizer();
   model->train(images, labels);  
   cout<<"Done"<<endl;
 
   cout<<"Saving to file.."<<endl;
   model->save("defaultTrained");
+  FileStorage fs("defaultTrainedLabels",FileStorage::WRITE);
+  fs<<"count"<< (int)(Labels.size()) ;
+  for(string s : Labels)
+  {
+    static int i=0;	
+    fs << format("l%d",i++) << s;
+  }
+  fs.release();
   cout<<"Done"<<endl;
 
   cout<<endl<<"Press enter to quit"<<endl;

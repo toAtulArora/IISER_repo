@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "capture", "capture\capture.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "train", "train\train.vcxproj", "{25D3A86B-3B31-4C5B-BCAF-4CA4BCF4165C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nazar", "nazar\nazar.vcxproj", "{70FD12E9-79FB-4697-932B-2073924D517F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +27,10 @@ Global
 		{25D3A86B-3B31-4C5B-BCAF-4CA4BCF4165C}.Debug|Win32.Build.0 = Debug|Win32
 		{25D3A86B-3B31-4C5B-BCAF-4CA4BCF4165C}.Release|Win32.ActiveCfg = Release|Win32
 		{25D3A86B-3B31-4C5B-BCAF-4CA4BCF4165C}.Release|Win32.Build.0 = Release|Win32
+		{70FD12E9-79FB-4697-932B-2073924D517F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{70FD12E9-79FB-4697-932B-2073924D517F}.Debug|Win32.Build.0 = Debug|Win32
+		{70FD12E9-79FB-4697-932B-2073924D517F}.Release|Win32.ActiveCfg = Release|Win32
+		{70FD12E9-79FB-4697-932B-2073924D517F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
