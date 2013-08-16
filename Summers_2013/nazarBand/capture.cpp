@@ -23,33 +23,53 @@ void getMidPoint(Rect r,float& x, float& y)
 
 int main(int argc, const char *argv[])
 {
-	string windowName="Camera Stream",debugWindow="Gray-Scale",candidateWindow="Candidate Preview",directoryToUse="Atul";
+	string windowName="Camera Stream",debugWindow="Gray-Scale",candidateWindow="Candidate Preview",directoryToUse="Atul",projectRoot=".";
 	namedWindow(windowName,WINDOW_AUTOSIZE);
 	namedWindow(debugWindow,WINDOW_AUTOSIZE);
 	namedWindow(candidateWindow,WINDOW_AUTOSIZE);
 	Mat frame,frameClone,gray,roi,visRoi,trainRoi,visTrainRoi;
 	Mat rotMat(2,3,CV_32FC1);
-
+	int defaultCamera=0;
 	bool getCandidate=false,candidateInBuffer=false;
 	
 	//Settings
 	bool waitForEyes=true;
 
-	ifstream fileTest;
-
 	string cascadeFn = "c:/opencv/data/haarcascades/haarcascade_frontalface_alt.xml";
 	string nestedFn = "c:/opencv/data/haarcascades/haarcascade_eye.xml";
+
+	// CascadeClassifier(cascadeFn);
+	FileStorage fs("commonConfig",FileStorage::READ);
+	if(fs.isOpened())
+	{
+		fs["projectRoot"]>>projectRoot;
+		cout<<"Project Root:"<<projectRoot<<endl;
+		fs["cascadeFace"]>>cascadeFn;
+		fs["cascadeEyes"]>>nestedFn;
+		fs["defaultCamera"]>>defaultCamera;
+		fs.release();
+	}
+	else
+	{
+		cout<<"Warning: Couldn't read the configuration file, saving everything in the current directory";
+		projectRoot=".";
+	}
+
+	ifstream fileTest;
+
 	//CascadeClassifier cascade(cascadeFn), nestedCascade(nestedFn);
 	CascadeClassifier cascade,nestedCascade;
 	if(!cascade.load(cascadeFn))
-		cout<<"Couldn't open the cascade file"<<endl<<cascadeFn;
+	{
+		cout<<"Couldn't open the cascade file:"<<endl<<cascadeFn;
+		return -1;
+	}
 	if(!nestedCascade.load(nestedFn))
 		cout<<"Couldn't open the cascade for the eyes"<<endl<<nestedFn;
 
-	// CascadeClassifier(cascadeFn);
-	
+
 	// video source = 0 (default camera)
-	VideoCapture capture(0);
+	VideoCapture capture(defaultCamera);
 	if(!capture.isOpened())
 		cout<<"Couldn't read from the camera";
 	
@@ -92,7 +112,7 @@ int main(int argc, const char *argv[])
 					compression_params.push_back(9);
 
 					//Ensure the directory corresponding to the label exists
-					boost::filesystem::path rootPath ( "." );
+					boost::filesystem::path rootPath ( projectRoot );
 					boost::filesystem::path labelPath (directoryToUse);
 					boost::filesystem::path finalPath = rootPath/labelPath;
 					boost::system::error_code returnedError;
@@ -157,7 +177,7 @@ int main(int argc, const char *argv[])
 		switch(key)
 		{
 			case 'l':
-			case 'L':
+			case 'L':				
 				cout<<"Input a label for the training set";
 				cin>>directoryToUse;
 				break;

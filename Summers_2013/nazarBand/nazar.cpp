@@ -60,13 +60,29 @@ void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels
 int main(int argc, const char *argv[])
 {
 	string windowName="Camera Stream",debugWindow="Gray-Scale",candidateWindow="Candidate Preview",directoryToUse="Atul";
+	string cascadeFn = "c:/opencv/data/haarcascades/haarcascade_frontalface_alt.xml",projectRoot=".";
 	Mat frame,frameClone,gray,roi,roiResize;
+	int defaultCamera=0;
 	ifstream fileTest;
 	Size rescaleToSize(200,200);
 	vector<string> Labels;
 
+	cout<<"Initializing common configuration"<<endl;
+	FileStorage f("commonConfig",FileStorage::READ);
+	if(f.isOpened())
+	{		
+		f["cascadeFace"]>>cascadeFn;
+		f["defaultCamera"]>>defaultCamera;
+		f["projectRoot"]>>projectRoot;
+		f.release();
+	}
+	else
+	{
+		cout<<"Warning: Couldn't read the configuration file";
+	}
+
 	cout<<"Loading the cascade file for detecting a face"<<endl;
-	string cascadeFn = "c:/opencv/data/haarcascades/haarcascade_frontalface_alt.xml";
+	
 	CascadeClassifier cascade;
 	if(!cascade.load(cascadeFn))
 		cout<<"Couldn't open the cascade file"<<endl<<cascadeFn;
@@ -74,8 +90,8 @@ int main(int argc, const char *argv[])
 
 	cout<<"Loading from trained file for recognizing faces"<<endl;
 	Ptr<FaceRecognizer> model=createFisherFaceRecognizer();
-	model->load("defaultTrained");	
-	FileStorage fs("defaultTrainedLabels",FileStorage::READ);
+	model->load(projectRoot + "/defaultTrained");	
+	FileStorage fs(projectRoot + "/defaultTrainedLabels",FileStorage::READ);
 	int count;
 	fs["count"]>>count;
 	cout<<"Total Authorised Personel:"<<count<<endl;
@@ -101,8 +117,8 @@ int main(int argc, const char *argv[])
 	//cout<<"Done"<<endl;
 
 	// video source = 0 (default camera)
-	cout<<"Initializing the default camera"<<endl;
-	VideoCapture capture(0);
+	cout<<"Initializing the default camera:"<<defaultCamera<<endl;
+	VideoCapture capture(defaultCamera);
 	if(!capture.isOpened())
 		cout<<"Couldn't read from the camera";
 	
@@ -128,13 +144,14 @@ int main(int argc, const char *argv[])
 		
 		// CascadeClassifier::detectMultiScale(const Mat& image, vector<Rect>& objects, double scaleFactor=1.1, int minNeighbors=3, int flags=0, Size minSize=Size(), Size maxSize=Size())		
 		cascade.detectMultiScale(gray,rects,1.3,4,CV_HAAR_SCALE_IMAGE,Size(30,30),Size(300,300));		
+		cvtColor(frame,gray,COLOR_BGR2GRAY);
 		for(Rect r: rects)
-		{			
+		{
 			roi=gray(r);
 			resize(roi, roiResize, rescaleToSize, 0, 0, CV_INTER_AREA);	//for shrinking
 	        int predictedLabel = -1;
 	        double confidence = 0.0;
-	        model->predict(roiResize, predictedLabel, confidence);			
+	        model->predict(roiResize, predictedLabel, confidence);
 
 			if(predictedLabel==-1)	//No face found [won't happen unless i use a threshold..]
 				rectangle(frame,r,Scalar(255,255,0),1);
@@ -151,7 +168,9 @@ int main(int argc, const char *argv[])
 				string text=format("%d (%.3f)",predictedLabel,confidence);
 				//char text[30];
 				text=format("%s (%.3f)",Labels[predictedLabel].c_str(),confidence);				
+				putText(frame, text, Point(r.x,r.y-10), FONT_HERSHEY_PLAIN, 1.5, Scalar::all(0), 6, 8);
 				putText(frame, text, Point(r.x,r.y-10), FONT_HERSHEY_PLAIN, 1.5, Scalar::all(255), 1, 8);
+				
 		        //putText(frame, "Hello",textOrg, fontFace, fontScale, Scalar::all(255), thickness, 8);
 				
 			}			

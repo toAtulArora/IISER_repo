@@ -1,0 +1,5 @@
+%YAML:1.0
+defaultCamera: 0
+projectRoot: "../../../../localData/nazarBand"
+cascadeFace: "c:/opencv/data/haarcascades/haarcascade_frontalface_alt.xml"
+cascadeEyes: "c:/opencv/data/haarcascades/haarcascade_eye.xml"

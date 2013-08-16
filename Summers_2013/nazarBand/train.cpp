@@ -15,10 +15,10 @@ using namespace std;
 using namespace cv;
 using namespace boost::filesystem;
 
-void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels, Size rescaleToSize)
+void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels, Size rescaleToSize,string projectRoot)
 {
 	int i=0;
-  path current_dir("."); //
+  path current_dir(projectRoot); //
 	for (directory_iterator itr(current_dir), end; itr != end; ++itr)
   {
     if(is_directory(itr->status()))
@@ -59,10 +59,23 @@ void getImages(vector<Mat>& images, vector<int>& labels, vector<string>& sLabels
 
 int main()
 {
+	string projectRoot=".";
 	vector<Mat> images;
 	vector<int> labels;
 	vector<string> Labels;
-  getImages(images,labels,Labels,Size(200,200));
+	cout<<"Reading common configuration file"<<endl;
+	FileStorage f("commonConfig",FileStorage::READ);
+	if(f.isOpened())
+	{		
+		f["projectRoot"]>>projectRoot;
+		f.release();
+	}
+	else
+	{
+		cout<<"Warning: Couldn't read the configuration file";
+	}
+
+  getImages(images,labels,Labels,Size(200,200),projectRoot);
 	
   if(images.size() <=1 )
   {
@@ -75,8 +88,8 @@ int main()
   cout<<"Done"<<endl;
 
   cout<<"Saving to file.."<<endl;
-  model->save("defaultTrained");
-  FileStorage fs("defaultTrainedLabels",FileStorage::WRITE);
+  model->save(projectRoot + "/defaultTrained");
+  FileStorage fs(projectRoot + "/defaultTrainedLabels",FileStorage::WRITE);
   fs<<"count"<< (int)(Labels.size()) ;
   for(string s : Labels)
   {

@@ -1,0 +1,56 @@
+\select@language {american}
+\vspace {-\cftbeforepartskip }
+\select@language {american}
+\contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {Charge to Mass ratioe/m}}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Aim}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Apparatus}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}Cathode Anode}{1}{section.1.3}
+\contentsline {section}{\numberline {1.4}Theory}{1}{section.1.4}
+\contentsline {section}{\numberline {1.5}Observations and Calculations}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Procedure}{3}{section.1.6}
+\contentsline {section}{\numberline {1.7}Result}{4}{section.1.7}
+\contentsline {section}{\numberline {1.8}Precautions}{4}{section.1.8}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Frank Hertz}}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Aim}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Apparatus}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Theory}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Rationale Behind the Experiment}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Experimental Setup}{5}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Observations and Calculations}{6}{section.2.4}
+\contentsline {section}{\numberline {2.5}Error Analysis}{6}{section.2.5}
+\contentsline {section}{\numberline {2.6}Procedure}{7}{section.2.6}
+\contentsline {section}{\numberline {2.7}Result}{7}{section.2.7}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Hydrogen Balmer Series and Rydberg Constant}}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Aim}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Apparatus}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Theory}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Motivation}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Experimental Setup}{10}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Useful Results}{10}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Observations and Calculations}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Procedure}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Result}{11}{section.3.6}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Quincke's Method}}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Aim}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Apparatus}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Theory}{13}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The Rationale}{13}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Derivations}{13}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Magnetization of bulk}{14}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Force due to a Magnetic Field}{14}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Paramagnetic Susceptibility}{15}{subsubsection.4.3.2.3}
+\contentsline {section}{\numberline {4.4}Observations and Calculations}{15}{section.4.4}
+\contentsline {section}{\numberline {4.5}Error Analysis}{16}{section.4.5}
+\contentsline {section}{\numberline {4.6}Procedure}{16}{section.4.6}
+\contentsline {section}{\numberline {4.7}Result}{17}{section.4.7}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Planck's Constant from an LED}}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Aim}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Apparatus}{19}{section.5.2}
+\contentsline {section}{\numberline {5.3}Theory}{19}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Motivation}{19}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}An Experimental Determination of `h'}{19}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Minimal Theory: LEDs}{19}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Observations and Calculations}{20}{section.5.4}
+\contentsline {section}{\numberline {5.5}Error Analysis}{21}{section.5.5}
+\contentsline {section}{\numberline {5.6}Procedure}{21}{section.5.6}
+\contentsline {section}{\numberline {5.7}Result}{22}{section.5.7}
