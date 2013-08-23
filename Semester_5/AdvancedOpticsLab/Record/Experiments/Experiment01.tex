@@ -1,73 +1,75 @@
 %************************************************
-\chapter{Charge to Mass ratioe/m}
+\chapter{Michelson Interferometer}
 %************************************************
 \begin{flushright}
-January 8 and 15, 2012
+January 8 and 19, 2012 \\
+% [$3 \times 6 hours spent$]
 \end{flushright}
+
 \section{Aim}
-	To determine the charge to mass ratio (e/m) of an electron by the helical method (long solenoid).
-\section{Apparatus}
-	e/m by Helical Method apparatus (we used the one by SIBA India), connecting wires
-
-\section{Cathode Anode}
-	Cathodes are defined to be where a reduction takes place (chemically). Thus in accordance with the image appended, the anode is where the conventional current starts from and moves towards the cathode. For an electron, it starts from the cathode and moves towards the anode.
-\section{Theory}
-	Our objective here, as described earlier, is to determine the charge to mass ratio. For this, we shall describe here, an apparatus, without developing a motivation for doing the same. The setup for the apparatus is given in \autoref{eBYm}.
-	\par
-	First, consider a vacuum tube; in one edge, say the starting edge (there's a screen at the other edge), we place a cathode and a perforated anode and apply a constant potential difference between them (the polarity is implied from the definition of cathode), such that the electrons move away from the starting edge. Now we can evaluate the speed of the electrons that pass through the anode by invoking the work energy theorem as follows:
-	\begin{equation}
-		\frac 1 2 mv^2 = eV
-	\end{equation}
-	where the symbols have their usual meaning, viz. $m$ is mass of electron, $v$ is speed of electron at the instant described, $V$ is the potential applied across the anode and cathode, and $e$ is the charge of one electron. Refer to the diagram for direction conventions assumed. If we try to turn on the apparatus at this stage, we should just see a spot, we assume to be the centre of the screen (this may not necessarily happen experimentally, but can be adjusted; however for simplicity, we will discuss that later)
-	\par
-	Now the next step is introducing a differential velocity component (do not confuse this with infinitesimal) along the $X$ direction. This is done by applying an alternating electric field as shown in the figure. When the electrons reach the plane A, they would have a certain distribution of velocity components along the $X$ direction. It is important to realize here that the distribution of electrons along the $X$ axis will be fairly small, because the velocities are not large enough to cause enough spatial deviation, in the small time corresponding to the length of the accelerating plates. This condition can be achieved by making the speed of the electrons sufficiently large with respect to the length of the alternating electric field plates. Yet, when observed on the screen, a line would be obtained (it's length would depend on the strength of the alternating electric field) as the electrons get displaced along (or against) the $X$ axis, as they're displaced by $L'$ along the $Z$ axis, because of the initial velocity.
-	\par
-	With that said, it is now that we introduce a uniform magnetic field B along the $Z$ axis. We are certainly introducing certain errors by doing so, as the magnetic field in the experiment is present everywhere in the tube, when it's turned on. However, to simplify, we account for it's effect after the electrons have passed the plane $A$. Now most electrons would have a non-zero velocity component along the $X$ axis, viz. a direction perpendicular to the uniform magnetic field. Thus, we can evaluate the radius of the acceleration of the electron with velocity $v_x$ can be evaluated as
-	\begin{align}
-		\frac {m_e v_x^2 } r &= e v_x B \\
-		\Rightarrow \omega &= \frac {v_x} r = \frac {m_e B} {m}  = \frac {2 \pi} {T} \\		
-		\Rightarrow T &=\frac {2\pi} {eB}		
-	\end{align}
-	Using the formula for a solenoid and taking $\theta_1 = \theta_2 = \theta$ tending to zero in the following
-	\begin{equation}
-		B = \mu_0 N I (\cos {\theta_1} - \cos{\theta_2})/2L
-	\end{equation}
-	where the symbols have their usual meanings and $\theta$ is the corresponding angle (loosely speaking, s.t. for the angle tending to zero, it results in an ideal, infinite length solenoid)\\
-	Using this and equating $T$ to the time $t=l/v_z$ (time taken by the electron to travel the distance l, as given in the diagram), we get the following working formula.
-	\begin{equation}
-		\frac e m = \frac {V}{2I^2} \left( \frac {4 \pi L} {\mu_0 N l \cos {\theta}} \right) ^2
-	\end{equation}		
-	where for our setup, we have $N=980$ (the number of turns), $L=43$ cm, $l_x=13.5$ cm, $l_y=11$ cm.
-\section{Observations and Calculations}
-	Observations have been appended at the end of this experiment. \\
-
-
-	\begin{figure}[bth]
-		\begin{center}
-			\includegraphics[width=1.3\linewidth]{gfx/eBYm}
-		\end{center}
-	\caption[$\frac e m $ setup]{$\frac e m$ setup}
-	\label{eBYm}
-	\end{figure}
-
-\section{Procedure}	
+	To determine
 	\begin{enumerate}
-		\item Placed the solenoid in the wooden bracket such that its axis lies in the east-west direction (although this is not very important, since the magnetic field would change at most by about $2\%$). Mounted the CRT inside the solenoid at the centre. The power unit should be kept as far away as possible to avoid stray magnetic field. \footnote {The procedure is highly influenced from the Lab Manual for PHY212, 2013}
-		\item Connected the CRT with it's power-supply using the 8 wire plug into the octal base provided
-		\item Connected the solenoid with the DC power terminals colourwise.
-		\item Turn off the magnetic field by using the corresponding knob.
-		\item Plug the supplies to the mains, and switch it on. Leave it for about three minutes for the CRT to warm up.
-		\item Adjust the accelerating voltage to get a spot. Adjust the focus and intensity to get a finer and clearer spot. Note the accelerating voltage. 
-		\item Apply an AC voltage to the Y or X plates by means of the DEF volt control. Do note that you need to turn on the deflection plate to centre the position of the spot, while the DEF knob is at zero. Otherwise the control for centring doesn't work.
-		\item Now adjust the deflection to about 2 cm.
-		\item Now put the DC in the forward direction. Turn on the solenoid current and increase the DC voltage till the line reduces to a point. (you are increasing the magnetic field)
-		\item Reverse the DC voltage using the other knob and again find a DC voltage to get a point. Note both currents
-		\item Repeat the same with Y or X plates (depending on which you did first)
-		\item Use the formula derived earlier and plug in the value of the slope of the $V$ vs $I^2$ graph.
+		\item the average wavelength of a monochromatic source
+		\item the separation in wavelength of a dichromatic source
 	\end{enumerate}
 
-\section{Result}
-	The expected $e/m$ ratio is $1.66 \times 10^{11}$ C/Kg. Experimentally, we obtained $(1.66 \pm 0.11)\times 10^{11}$ C/Kg and $(1.57 \pm 0.14) \times 10^{11}$ C/Kg for X (with a $7\%$ standard error) and Y (with a $9\%$ standard error) axis respectively.
-
-\section{Precautions}
-	Precautions have been embedded place-wise in the procedure.
+\section{Theory}
+	The theory given in the manual is roughly sufficient. Finer points have been discussed here. We start with posing some questions and then discuss them to develop a better understanding of the subject.
+	\begin{enumerate}
+		\item What is the wavefront of the waves after they go through a diffuser?
+		\item Can the interference pattern be obtained without the diffuser? How does the diffuser help?		
+		\item Why are the fringes circular? Explain using Huygen's principle (the ray optic method is rather simple).
+		\item Are the fringes real or virtual?
+		\item If the light source was in fact a point source, what type of an interference pattern will you obtain? (courtesy sir)
+		\item In a typical YDSE setup, if we don't use a screen, are we expected to observe fringes?
+		\item How can we span all angles using just two knobs in the mirror?
+		\item Can you apply the idea of beats to explain the increase decrease of contrast?
+		\item What is the expected pattern for a plain wavefront?
+		\item For a plain wavefront, when a `dark' pattern is obtained (you'll know once you solve the previous question), where does the energy of the electromagnetic wave disappear? (sir asked this)
+	\end{enumerate}
+	
+	\subsection{`Practical' Theory}
+		Some more questions whose answers become clear after playing with the apparatus for sufficiently long
+		\begin{enumerate}
+			\item What is the primary source of the backlash error in the fine rotation knob?
+			\item When the average distance of the mirrors from the partly reflecting mirror is higher, why is it harder to get circular fringes?
+			\item What can cause a uniform rotation of the knob to screw (threaded cylinder) to not cause a corresponding change in the fringe pattern? (basically identify the main cause of this error)
+		\end{enumerate}
+\section{Procedure}	
+	\subsection{Obtaining the ring}
+		It is assumed that you've setup the michelson interferometer in accordance with the diagram in Jenkins White.
+		\begin{enumerate}
+			\item Move the coarsely moveable mirror to (roughly) the smallest distance from the beam splitter.
+			\item Now move the other mirror to a slightly larger (you can use smaller also, but then the steps would change correspondingly) distance from the beam splitter, than that of the coarsely movable mirror.
+			\item Ensure that the pin hole disk is being used.
+			\item Align the mirror using the three screws provided such that all the four spots coincide (you can choose to look directly without the telescope; in fact that works better usually).
+			\item Now remove the pin hole disk from the view and put the diffuser (if not already present).
+			\item Move the moveable mirror at most four times using the coarse movement drum (ensure the movement knob is unlocked) until the fringe pattern is observed. If the pattern is too dense (more than roughly 15 fringes), then follow from the mirror alignment step.
+			\item Assuming you have roughly 10 fringes at this stage, you now need to bring the centre of the rings into view (if it is already, you're running on beginner's luck).
+			\begin{enumerate}
+				\item There are two screws on the mirror and they can roughly be thought of as adjusting the X and Y offset.
+				\item You'll know you're on the right track if the fringes magnify as you adjust
+				\item Note that you must leave the knob to know where it really is. Simply holding it also causes the position of the knob to change.
+			\end{enumerate}
+			\item If you want further magnification, you can continue rotating and aligning the centre as you go if the need be.
+		\end{enumerate}
+		CAVEAT: For certain path differences, the contrast will become very low (as is clear from theory); don't panic.
+	\subsection{Finding $\lambda_\text{average}$}
+		Assuming you have obtained the ring already;
+		\begin{enumerate}
+			\item Set the movement to fine using the lock knob on the apparatus.
+			\item Place the telescope if you haven't done that already, such that one of the rings is just at the cross-wire.
+			\item Move the fine rotation knob until the fringes just start to move.
+			\item Now keep track of the rotations and count 20 fringes as they cross the cross-wire.
+			\item Repeat this to get sufficient observations			
+		\end{enumerate}
+	\subsection{Finding $\lambda_\text{separation}$}
+		Assuming you've obtained the ring;
+		\begin{enumerate}
+			\item Lock the movement to fine using the lock knob
+			\item Move the fine rotation until all the fringes disappear and just begin to appear
+			\item Note the position at this point
+			\item Now continue rotating the knob until the fringes disappear again and just begin to appear
+			\item Note this position again
+			\item Repeat this to get sufficient observations
+		\end{enumerate}
