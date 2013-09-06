@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  20 AUG 2013 15:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  6 SEP 2013 11:46
 entering extended mode
 **C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/advanc
 edOptics.tex
@@ -780,7 +780,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\FrontBa
-ckmatter/Titlepage.tex <gfx/iiserlogo.jpg, id=63, 65.33208pt x 69.3792pt>
+ckmatter/Titlepage.tex <gfx/iiserlogo.jpg, id=83, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -827,14 +827,14 @@ dOptics.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for U+zeur on input line 10.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 13.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeur.fd"
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eur.cfg"
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 10.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeus.fd"
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -842,12 +842,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-eus.cfg"
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 10.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 13.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\eulervm\uzeuex.fd"
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 10.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 13.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
@@ -868,7 +868,13 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\advance
-dOptics.lof)
+dOptics.lof
+Overfull \hbox (14.32681pt too wide) in paragraph at lines 5--5
+ [][] []\T1/pplj/m/n/10.95 Equivalent Michel-son In-ter-fer-om-e-ter Setup []  
+
+ []
+
+)
 \tf@lof=\write6
 Package tocbasic Info: character protrusion at lot deactivated on input line 42
 .
@@ -903,6 +909,21 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              Support for \float@addtolists may be removed from
 (scrreprt)              `scrreprt' soon .
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
 [1
 
 
@@ -912,40 +933,92 @@ Class scrreprt Warning: \float@addtolists detected!
 
 
 
-] [2]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+<gfx/e1.png, id=154, 463.7325pt x 259.7203pt>
+File: gfx/e1.png Graphic file (type png)
+ <use gfx/e1.png>
+Package pdftex.def Info: gfx/e1.png used on input line 28.
+(pdftex.def)             Requested size: 369.60205pt x 207.00374pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 28--29
+ [] 
+ []
+
+[2 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/
+e1.png>] [3] [4]
+Overfull \hbox (5.78192pt too wide) in paragraph at lines 107--108
+[]\T1/pplj/m/n/10.95 What can cause a uni-form ro-ta-tion of the knob to screw 
+(threaded
+ []
+
+[5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 68.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 68.
+(hyperref)                removing `math shift' on input line 131.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `\lambda' on input line 131.
 
-) [3] [4
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\lambda' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 140.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 140.
+
+<gfx/1_obsA.pdf, id=209, 597.55246pt x 845.07718pt>
+File: gfx/1_obsA.pdf Graphic file (type pdf)
+ <use gfx/1_obsA.pdf>
+Package pdftex.def Info: gfx/1_obsA.pdf used on input line 155.
+(pdftex.def)             Requested size: 436.80103pt x 617.75227pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 155--156
+ [] 
+ []
+
+<gfx/1_obsB.pdf, id=210, 597.55246pt x 845.07718pt>
+File: gfx/1_obsB.pdf Graphic file (type pdf)
+ <use gfx/1_obsB.pdf>
+Package pdftex.def Info: gfx/1_obsB.pdf used on input line 162.
+(pdftex.def)             Requested size: 436.80103pt x 617.75227pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 162--163
+ [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 171
+.
+LaTeX Font Info:    No file OMSpplj.fd. on input line 171.
+
+LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 171.
+
+[6]) [7] [8 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Re
+cord/gfx/1_obsA.pdf>] [9 <C:/Users/Atul/Documents/IISER_repo/Semester_5/Advance
+dOpticsLab/Record/gfx/1_obsB.pdf>] [10
 
 
 
@@ -967,7 +1040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [5
+) [11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
@@ -1121,32 +1194,43 @@ FrontBackmatter/Contents.tex
  ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
   t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
 Experiments/Experiment01.tex
+  gfx/e1.png
+gfx/1_obsA.pdf
+gfx/1_obsB.pdf
 FrontBackmatter/Colophon.tex
    t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `advancedOptics.out' has not changed.
-(rerunfilecheck)             Checksum: B90960D69D58784B778C3C5E22BE8A77;880.
+(rerunfilecheck)             Checksum: 9D753A4188EB30BA2F69129B5C8709C1;1266.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 14722 strings out of 493921
- 229670 string characters out of 3147285
- 405248 words of memory out of 3000000
- 17591 multiletter control sequences out of 15000+200000
- 66895 words of font info for 86 fonts, out of 3000000 for 9000
+ 14822 strings out of 493921
+ 230940 string characters out of 3147285
+ 406312 words of memory out of 3000000
+ 17644 multiletter control sequences out of 15000+200000
+ 73177 words of font info for 101 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 46i,13n,67p,442b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,14n,67p,1105b,548s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on advancedOptics.pdf (11 pages, 101832 bytes).
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplri8a.pfb>
+Output written on advancedOptics.pdf (17 pages, 387092 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 13438 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 14005 words of extra memory for PDF output out of 14400 (max. 10000000)
 
