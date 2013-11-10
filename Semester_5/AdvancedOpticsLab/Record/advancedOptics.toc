@@ -14,3 +14,33 @@
 \contentsline {subsection}{\numberline {1.3.3}Finding $\lambda _\text {separation}$}{6}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Observations and Conclusion}{6}{section.1.4}
 \contentsline {section}{\numberline {1.5}Sources of error}{7}{section.1.5}
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Acoustic Diffraction}}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Theory}{11}{section.2.1}
+\contentsline {section}{\numberline {2.2}Further Questions}{12}{section.2.2}
+\contentsline {section}{\numberline {2.3}Calculations and Results}{13}{section.2.3}
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {NMR}}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}$T_1$, $T_2$}{17}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Minimal Introductory Theory}{17}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}Introduction}{17}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}Nuclear spin}{18}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}Microscopic magnetism and spin precession}{19}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.4}Spin-lattice relaxation}{20}{subsubsection.3.1.1.4}
+\contentsline {subsubsection}{\numberline {3.1.1.5}Spin-Spin relaxation}{20}{subsubsection.3.1.1.5}
+\contentsline {subsubsection}{\numberline {3.1.1.6}NMR Signal}{21}{subsubsection.3.1.1.6}
+\contentsline {subsection}{\numberline {3.1.2}Instrumentation Setup}{21}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Magnet}{22}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}The Transmitter Section}{22}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}The Duplexer}{22}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}The Probe}{23}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.5}The Receiver Section}{23}{subsubsection.3.1.2.5}
+\contentsline {subsection}{\numberline {3.1.3}Theory}{23}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}Prerequisites}{23}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Effect of an RF pulse on the Hamiltonian}{24}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Phenomenological understanding of transverse and longitudinal relaxation}{26}{subsubsection.3.1.3.3}
+\contentsline {subsubsection}{\numberline {3.1.3.4}Measurement of $T_1$ using population inversion and coherence}{26}{subsubsection.3.1.3.4}
+\contentsline {subsubsection}{\numberline {3.1.3.5}Measurement of $T_2$ using Spin Echo}{27}{subsubsection.3.1.3.5}
+\contentsline {subsection}{\numberline {3.1.4}Practical Implementation}{28}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Observations}{29}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Diffusion}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Theory}{31}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Practical Implementation}{31}{subsection.3.2.2}

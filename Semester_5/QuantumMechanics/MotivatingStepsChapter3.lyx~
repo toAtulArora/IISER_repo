@@ -1,0 +1,1077 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Steps and Motivation
+\end_layout
+
+\begin_layout Author
+Atul Sinh Aurora
+\end_layout
+
+\begin_layout Abstract
+I was told once by one of my mathematic professors, Kapil H.
+ Paranjape, that understanding a proof is not about understanding how one
+ step follows from the previous.
+ I could intuitively understand the meaning, but couldn't quite feel it.
+ It was in a philosophy class that it occured to me that there are times
+ in Quantum Mechanics, when I can understand the steps, but I can't grasp
+ the idea.
+ This was made apparent by our Physics Optics Laboratory instructor, Dr.
+ Mandip Singh, when he asked us about how we would get the classical harmonic
+ oscillator's oscillations in a quantum harmonic oscillator.
+ So here, I have charted out the motivation behind the large spread of steps,
+ so that I can understand the subject, and not only the steps of the derivations.
+ Perhaps this is what 
+\emph on
+they
+\emph default
+ mean by developing intuition.
+\end_layout
+
+\begin_layout Part
+The Theory of Angular Momentum
+\end_layout
+
+\begin_layout Section
+Rotations and Angular Momentum
+\end_layout
+
+\begin_layout Standard
+In this section, we aim at finding what we really mean by angular momentum
+ and what we don't want it to mean.
+\end_layout
+
+\begin_layout Enumerate
+We first note that rotations 
+\begin_inset Formula $R$
+\end_inset
+
+ are not commutative (recall all its group properties too).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We find the commutation relation till second order.
+\end_layout
+
+\begin_layout Enumerate
+But we can show that infinitesimal rotations (upto first order) are in fact
+ commutative.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Then you make the first leap.
+ You recall the relation between infinitesimal translation and the linear
+ momentum.
+ Thereby define angular momentum 
+\begin_inset Formula $J_{k}$
+\end_inset
+
+ to be the operator that generates infinitesimal rotation.
+ (CAVEAT: it is not always the same as 
+\begin_inset Formula $r\times p$
+\end_inset
+
+, but it follows to be so in classical mechanics)
+\begin_inset Newline newline
+\end_inset
+
+It is important to pause here and think about what we're doing.
+ We just created an operator (actually three since 
+\begin_inset Formula $k\in\{x,y,z\}$
+\end_inset
+
+, but fix one of it in your head) that acts on some ket 
+\begin_inset Formula $|\alpha\rangle$
+\end_inset
+
+ in a space which doesn't necessarily have dimension 3.
+ It is the operators that are three, each corresponding to one of the physically
+ observable dimensions of space.
+ Very important to note.
+\end_layout
+
+\begin_layout Enumerate
+We now define the finite rotation operator 
+\begin_inset Formula $\mathscr{D_{k}}$
+\end_inset
+
+ using the definition of exponential as usual.
+\end_layout
+
+\begin_layout Enumerate
+So far awesome.
+ Now we want some commutation relation between the 
+\emph on
+angular momentum
+\emph default
+.
+ It seems reasonable to think that we can use the commutation of 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For this it is 
+\emph on
+postulated
+\emph default
+ that 
+\begin_inset Formula $\mathscr{D}_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ have the same group properties
+\end_layout
+
+\begin_layout Enumerate
+Now we use the commutation relation of 
+\begin_inset Formula $R$
+\end_inset
+
+ to get a commutation relation between 
+\begin_inset Formula $\mathscr{D}_{k}$
+\end_inset
+
+ which in turn gives a commutation relation between 
+\begin_inset Formula $J_{k}$
+\end_inset
+
+, called the fundamental commutation relation of angular momentum.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Spin 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ Systems and Finite Rotations
+\end_layout
+
+\begin_layout Standard
+In this section, we look at two approaches.
+\end_layout
+
+\begin_layout Enumerate
+In one, we construct a rotated ket, but keep the operator the same.
+ 
+\end_layout
+
+\begin_layout Enumerate
+In the other, we construct a Heisenberg like operator (by sandwitching the
+ rotation operator), but keep the ket the same.
+\begin_inset Newline newline
+\end_inset
+
+In both cases we calculate the expectation value, and as expected (pun intended)
+, it turns out to be the same
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Use the Baker-Hausdorff lemma for evaluating using the second method
+\end_layout
+
+\end_inset
+
+.
+ For clarity, for a spin half system, with rotation about the z-axis, I'll
+ state the result
+\begin_inset Formula 
+\[
+\left\langle S_{y}\right\rangle \rightarrow\left\langle S_{y}\right\rangle cos\phi+\left\langle S_{x}\right\rangle sin\phi
+\]
+
+\end_inset
+
+and as expected (both intuitively (which intuition?) and from the commutation
+ 
+\begin_inset Formula $\mathscr{D}_{z}$
+\end_inset
+
+ with 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+),
+\begin_inset Formula 
+\[
+\left\langle S_{z}\right\rangle \rightarrow\left\langle S_{z}\right\rangle 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+As it turns out, it is clear that the expectation value of the spin operator
+ does behave like components of a 3D vector being transformed.
+ And the second method shows that we haven't used any property of a spin
+ half system to get the result; the result is true for all spin operators.
+ So that's the intuition!
+\end_layout
+
+\begin_layout Enumerate
+Here's an un-intuitive result.
+ The state ket (note it is any arbitrary state) picks up a minus sign upon
+ a 
+\begin_inset Formula $360^{0}$
+\end_inset
+
+ rotation (
+\begin_inset Formula $\ket{\alpha}\rightarrow-\ket{\alpha}$
+\end_inset
+
+).
+ Another 
+\begin_inset Formula $360^{0}$
+\end_inset
+
+ rotation makes it plus again.
+ However, as far as the expectation value is concerned, we don't see this!
+\end_layout
+
+\begin_layout Enumerate
+Here's an amazing application.
+ The energy associated with a magnetic dipole is 
+\begin_inset Formula $\mu.B$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is related to the spin, the hamiltonian for such a system (with 
+\begin_inset Formula $B$
+\end_inset
+
+ fixed) is a constant times 
+\begin_inset Formula $S_{z}$
+\end_inset
+
+say.
+ So then the time evolution operator becomes a rotation operator!
+\end_layout
+
+\begin_layout Enumerate
+With this, we actually can see the change in sign of a ket.
+ The idea is simple.
+ Let a beam of particles split (so that the state is the same) and make
+ them go through two paths, say A and B.
+ In one of the paths, add a magnetic field.
+ This will change the state of the ket.
+ Now make both interfere and observe the interference as a function of the
+ rotation caused (can be done either by changing the time or the magnetic
+ field).
+ You get a verifyable result!
+\end_layout
+
+\begin_layout Enumerate
+The other two subsections in the text are almost like solved example.
+ Although somethings to think about include why pauli matrices have a -1
+ determinant and a zero trace (explicitly it is obvious, but so is the fact
+ that it is hermitian; however hermiticity follows from the spin operators
+ being observable)
+\end_layout
+
+\begin_layout Section
+SO(3), SU(2) and Euler Rotations
+\end_layout
+
+\begin_layout Standard
+Since these notes are for you; I expect some familiarity with groups.
+\end_layout
+
+\begin_layout Enumerate
+Intuitively (you can look at the book for rigour) there are 3 independent
+ variables for specifying a rotation in 3D space.
+ The group of such transformations (length and parity preserving) is called
+ SO(3).
+\end_layout
+
+\begin_layout Enumerate
+We've seen how unitary operators preserve the norm of kets (think of time
+ evolution), viz the `length'.
+ It follows from unitarianism (hehe) that for a general 2x2 unitary operator's
+ matrix representation, you can have at most 3 independent variables (4
+ if you include a scalar 
+\begin_inset Formula $e^{i\gamma}$
+\end_inset
+
+, but you can get rid of that by demanding the determinant to be unity [unimodul
+arity]).
+ Do you smell the relation yet?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Now the cool part; We can always relate a unimodular unitary operator to
+ a rotation (we saw that explicitly)
+\end_layout
+
+\begin_layout Enumerate
+Can we do the other way, associate a rotation to every unimodular unitary
+ operator? Think.
+ Think about the 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ rotation.
+ We (hopefully) clearly can't.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Euler Rotations are well (you know them intuitively very well), skipped.
+ Just look at how the rotation is transformed from the axis of the rigid
+ body, to the rotations about fixed axis.
+\end_layout
+
+\begin_layout Section
+Density Operators and Pure vs Mixed Ensambles
+\end_layout
+
+\begin_layout Standard
+This has been skipped for now
+\end_layout
+
+\begin_layout Section
+Eigenvalues and Eigenstates of Angular Momentum
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This is not what it should've been, but it is important as an algorithm
+ anyway.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We do precisely that, find eigenvalues and eigenstates of the angular momentum
+ operators (well indirectly anyway) for a general dimension of the ket space.
+\end_layout
+
+\begin_layout Enumerate
+We start with finding out commutation relations between 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{k}$
+\end_inset
+
+.
+ They commute.
+ We label their simultaneous eigenket as 
+\begin_inset Formula $\ket{a,b}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+We then define ladder operators called 
+\begin_inset Formula $J_{\pm}=J_{x}\pm iJ_{y}$
+\end_inset
+
+.
+ We also find commutation relations between 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{z}$
+\end_inset
+
+.
+ We observe that 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+ and 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+ commute.
+\end_layout
+
+\begin_layout Enumerate
+Now we find the effect of the operator 
+\begin_inset Formula $J_{z}J_{\pm}$
+\end_inset
+
+ on 
+\begin_inset Formula $\ket{a,b}$
+\end_inset
+
+.
+ Here we find something interesting.
+ 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+ acts on a ket to increase 
+\begin_inset Formula $b$
+\end_inset
+
+ to 
+\begin_inset Formula $b+\hbar$
+\end_inset
+
+, leaving 
+\begin_inset Formula $a$
+\end_inset
+
+ unchanged! Observe the cleverness of the trick.
+ Note the similarity with the harmonic oscillator.
+\end_layout
+
+\begin_layout Enumerate
+Lets see if we can get some constraints on 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ It is now shown that 
+\begin_inset Formula $J^{2}-J_{z}^{2}$
+\end_inset
+
+ results in a hermitian operator by expressing it in terms of 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+! So now since its expectation values are real.
+ From here itself we get 
+\begin_inset Formula $a\ge b^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let's do better, let's find the maximum and minimum 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ That said, one can find 
+\begin_inset Formula $b_{\text{max}}$
+\end_inset
+
+by getting 
+\begin_inset Formula $J_{-}J_{+}$
+\end_inset
+
+ to act on a maxed out ket 
+\begin_inset Formula $\ket{a,b_{\text{max}}}$
+\end_inset
+
+ and expressing the expression in terms of 
+\begin_inset Formula $J_{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+.
+ You should get 
+\begin_inset Formula $a-b_{\text{max}}^{2}-b_{\text{max}}\hbar=0$
+\end_inset
+
+.
+ Similarly you can get the minimum as plus 
+\begin_inset Formula $\hbar$
+\end_inset
+
+.
+ So on comparison of the equations, we now have 
+\begin_inset Formula $b_{\text{max}}=-b_{\text{min}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Let's now make things convenient.
+ Logically it now follows 
+\begin_inset Formula $b_{\text{max }}=b_{\text{min }}+n\hbar$
+\end_inset
+
+.
+ So we must have 
+\begin_inset Formula $b_{\text{max}}=\frac{n\hbar}{2}$
+\end_inset
+
+.
+ Wait here to note that the 
+\begin_inset Formula $n$
+\end_inset
+
+ (its an integer) that we've found, is more like a constant at this stage
+ than an index as you may think.
+ What does it depend on? We'll answer shortly, but before that we finally,
+ for convenience, define 
+\begin_inset Formula $j=b_{\text{max}}/\hbar$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+From the relation we found between 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, we have 
+\begin_inset Formula $a=\hbar^{2}j(j+1)$
+\end_inset
+
+, where 
+\begin_inset Formula $j$
+\end_inset
+
+ obviously is either an integer or a half integer.
+ So our 
+\begin_inset Formula $j$
+\end_inset
+
+ is actually dependent on the value of 
+\begin_inset Formula $a$
+\end_inset
+
+, the eigenvalue of 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+.
+ This determines the range of 
+\begin_inset Formula $b$
+\end_inset
+
+, the eigenvalues of 
+\begin_inset Formula $J_{z}$
+\end_inset
+
+, a result we've been blindly learning from class X!
+\end_layout
+
+\begin_layout Enumerate
+Also for convenience, we define 
+\begin_inset Formula $m$
+\end_inset
+
+ such that 
+\begin_inset Formula $b=m\hbar$
+\end_inset
+
+.
+ Now if 
+\begin_inset Formula $j$
+\end_inset
+
+ is a half integer, so will 
+\begin_inset Formula $m$
+\end_inset
+
+ be.
+ Else they're both happy integers.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Bravo, you've done it.
+ Here's the final piece
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J^{2}\ket{j,m}=j(j+1)\hbar^{2}\ket{j,m}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+and
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J_{z}\ket{j,m}=m\hbar\ket{j,m}
+\]
+
+\end_inset
+
+NOTE: The only property of 
+\begin_inset Formula $J_{k}$
+\end_inset
+
+ that we've used is that of its commutation relation.
+ So the result is therefore a rather general one, true for all kinds of
+ angular momenta.
+\end_layout
+
+\begin_layout Enumerate
+The matrix elements can be easily derived
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+For 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{z}$
+\end_inset
+
+, it is simple, just use the definition
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $J_{\pm}$
+\end_inset
+
+, you harness the relation 
+\begin_inset Formula $J_{+}^{\dagger}J_{+}=J^{2}-J_{z}^{2}-\hbar J_{z}$
+\end_inset
+
+ and compare the normalizaiton co-efficient and done!
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Next we look at the matrix representation of the rotation operator
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Rotations don't affect the 
+\begin_inset Formula $j$
+\end_inset
+
+ value of a ket 
+\begin_inset Formula $\ket{j,m}$
+\end_inset
+
+ (follows from the commutation of 
+\begin_inset Formula $J^{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $\mathscr{D}$
+\end_inset
+
+).
+ Infact this is why we can represent it on a matrix.
+ For each 
+\begin_inset Formula $j$
+\end_inset
+
+, we can form a 
+\begin_inset Formula $(2j+1)\times(2j+1)$
+\end_inset
+
+ matrix.
+\end_layout
+
+\begin_layout Enumerate
+For a given 
+\begin_inset Formula $j$
+\end_inset
+
+, finite rotations form a group.
+ Unit, Inverse and Closure, all exist.
+\end_layout
+
+\begin_layout Enumerate
+You can express the rotation in terms of Euler angles, by using the relation
+ derived in terms of rotations in the fixed frame.
+ It then takes a particularly simple form, except for the rotation 
+\begin_inset Formula $e^{\frac{-iJ_{y}\beta}{\hbar}}$
+\end_inset
+
+, whose matrix form is defined equal to 
+\begin_inset Formula $d_{m'm}^{(j)}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Orbital Angular Momentum
+\end_layout
+
+\begin_layout Standard
+DOUBT: When we're talking about orbital angular momentum, it is interesting
+ to think about the space in which a state resides and the space of the
+ orbital angular momentum operator vs that of the momentum opreator (or
+ translation operator).
+ 
+\end_layout
+
+\begin_layout Standard
+Instead of defining angular momentum to be a generator of infinitesimal
+ rotation, we can also (in cases where spin-angular momentum can be ignored)
+ define it to be the same as orbital angular momentum, viz.
+ 
+\begin_inset Formula $\mathbf{L=x\times p}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Orbital Angular Momentum as Rotation Generator
+\end_layout
+
+\begin_layout Enumerate
+Start with deriving the commutation relation 
+\begin_inset Formula $[L_{i},L_{j}]=i\epsilon_{ijk}L_{k}$
+\end_inset
+
+ from the definition.
+\end_layout
+
+\begin_layout Enumerate
+We can then for 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ show that it does in fact generate infinitesimal rotation.
+\end_layout
+
+\begin_layout Enumerate
+Now we look at the position representation of 
+\begin_inset Formula $L_{k},\, L_{\pm},\, L^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Operate the infinitesimal rotation (along the z-axis) operate on a state
+ 
+\begin_inset Formula $\ket{\alpha}$
+\end_inset
+
+ and then take its position representation
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+in the cartesien system
+\end_layout
+
+\begin_layout Enumerate
+then convert it to the corresponding spherical polar coordinates 
+\end_layout
+
+\begin_layout Enumerate
+taylor expand and compare, like you did for momentum, you'll get the answer
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using 
+\begin_inset Formula $L_{k}$
+\end_inset
+
+'s position representation, and the definition of 
+\begin_inset Formula $L_{\pm}$
+\end_inset
+
+, find its representation too
+\end_layout
+
+\begin_layout Enumerate
+Using what we've derived, find 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+, which turns out to be the angular part of the spherical laplacian
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+We look at the representation of 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ again to see why we get resemblence to the spherical laplacian
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Use an operator identity, which is derived using the summation form for
+ the cross and dot product
+\begin_inset Formula 
+\[
+L^{2}=x^{2}p^{2}-(x.p)^{2}+i\hbar x.p
+\]
+
+\end_inset
+
+So proving this is task 1.
+\end_layout
+
+\begin_layout Enumerate
+Then we find the position representation of each of the terms (the only
+ trick is to operate the position vectors on the bra when required).
+ Start from the right and goto left.
+\end_layout
+
+\begin_layout Enumerate
+Plug all the representations and you'll recover the same representation
+ of 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+, viz.
+ the angular part of the Laplacian.
+\end_layout
+
+\begin_layout Enumerate
+Extra intuition comes from noting that if we write the position representation
+ of 
+\begin_inset Formula $p^{2}/2m$
+\end_inset
+
+, we see it has two parts, radial and angular (an 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+ term).
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Spherical Harmonics
+\end_layout
+
+\begin_layout Standard
+hello
+\end_layout
+
+\begin_layout Section
+Addition of Angular Momentum
+\end_layout
+
+\begin_layout Subsection
+Formal Theory of Angular-Momentum Addition
+\end_layout
+
+\begin_layout Standard
+Obviously this is going to be the most general approach and can therefore
+ be a little overwhelming.
+ But don't worry.
+ You did read it at some point of time.
+ You'll do it again, but much faster this time.
+ So lets start.
+\end_layout
+
+\begin_layout Enumerate
+Consider two angular momentum operator vectors 
+\begin_inset Formula $\mathbf{J_{1}}$
+\end_inset
+
+and 
+\begin_inset Formula $\mathbf{J_{2}}$
+\end_inset
+
+ that live in two different subspaces (look at the examples for a deeper
+ insight).
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+They both satisfy their usual commutation relation amongst themselves 
+\begin_inset Formula $[J_{1i},J_{1j}]=i\hbar\epsilon_{ijk}J_{1k}$
+\end_inset
+
+ and similarly for 
+\begin_inset Formula $J_{2}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Their components commute with the components of the other, viz 
+\begin_inset Formula $[J_{1i},J_{2k}]=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now we write down an infinitesimal operator that affects both subspace 1
+ and subspace 2.
+ From this we define a new `total angular momentum' as 
+\begin_inset Formula $\mathbf{J}=\mathbf{J_{1}}+\mathbf{J_{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This 
+\begin_inset Formula $\mathbf{J}$
+\end_inset
+
+ also satisfies the usual angular momentum commutation
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note the distinction between 
+\begin_inset Formula $J_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{J_{k}}$
+\end_inset
+
+, where the first represents the component of the total angular momentum
+ (
+\begin_inset Formula $k\in\{1,2,3\})$
+\end_inset
+
+ while the other represents one of the two initial angular momentum operator
+ vector 
+\begin_inset Formula $(k\in\{1,2\})$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, viz 
+\begin_inset Formula $[J_{i},J_{j}]=i\hbar\epsilon_{ijk}J_{k}$
+\end_inset
+
+.
+ Wait here for a moment to realize that this does make sense.
+ The total angular momentum is generating an infitesimal translation for
+ the whole system.
+\end_layout
+
+\begin_layout Enumerate
+Our next task is to choose a suitable basis for this problem.
+ At this end there are two options
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We either use the eigenkets of 
+\begin_inset Formula $\mathbf{J_{1}}^{2},\,\mathbf{J_{2}}^{2},\, J_{1z},\, J_{2z}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

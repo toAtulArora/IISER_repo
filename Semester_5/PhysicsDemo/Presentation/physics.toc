@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.27pt}
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Introduction}{3}{0}{2}
+\beamer@sectionintoc {3}{The Wicked Shadow}{4}{0}{3}
+\beamer@subsectionintoc {3}{1}{The Problem}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{The Demonstration}{6}{0}{3}
+\beamer@subsectionintoc {3}{3}{The Explanation}{7}{0}{3}
+\beamer@sectionintoc {4}{The Nut Spinner}{11}{0}{4}
+\beamer@subsectionintoc {4}{1}{The Problem}{12}{0}{4}
+\beamer@subsectionintoc {4}{2}{The Demonstration}{13}{0}{4}
+\beamer@subsectionintoc {4}{3}{The Explanation}{15}{0}{4}
+\beamer@sectionintoc {5}{The Mystery Worker}{16}{0}{5}
+\beamer@subsectionintoc {5}{1}{The Problem}{17}{0}{5}
+\beamer@subsectionintoc {5}{2}{The Demonstration}{19}{0}{5}
+\beamer@subsectionintoc {5}{3}{The Explanation}{20}{0}{5}
+\beamer@sectionintoc {6}{Closing Remarks}{25}{0}{6}

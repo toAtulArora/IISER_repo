@@ -1,0 +1,466 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Outline
+\end_layout
+
+\begin_layout Enumerate
+Motivation
+\end_layout
+
+\begin_layout Enumerate
+Patterns in nature
+\end_layout
+
+\begin_layout Enumerate
+Pattern formation in reaction diffusion systems (turing mechanism)
+\end_layout
+
+\begin_layout Enumerate
+reaction-dfifusion system
+\end_layout
+
+\begin_layout Standard
+Motivation
+\end_layout
+
+\begin_layout Standard
+(can't understand the accent)
+\end_layout
+
+\begin_layout Standard
+This happens Ge on Si(111)7x7 and the formation of patterns
+\end_layout
+
+\begin_layout Standard
+Patterns at a nanoscale- self-organization, artificialy by atom manipulation
+\end_layout
+
+\begin_layout Standard
+STM image of clean Si(111)-7x7 surface
+\end_layout
+
+\begin_layout Standard
+We observe bilayer steps and terraces with domain boundaries
+\end_layout
+
+\begin_layout Standard
+steps and clusters
+\end_layout
+
+\begin_layout Standard
+What is the key ingredient necessary for the emergence of pattern from a
+ uniform structureless state?
+\end_layout
+
+\begin_layout Standard
+instability->spontanesous breaking of symmetry
+\end_layout
+
+\begin_layout Standard
+Mechanism discovered by Alan Turing --> diffusion driven instabilities can
+ give rise 
+\end_layout
+
+\begin_layout Standard
+A random walker is allowed to walk only after a waiting time 
+\backslash
+tau.
+ ->continuous time random walk
+\end_layout
+
+\begin_layout Standard
+Random waiting tim distribution
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Trapping reaction-diffusion problem
+\end_layout
+
+\begin_layout Standard
+Diffusing particles arriving at the traps get annihilated
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A+T->(1-\epsilon)A+T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $\epsilon\in[0,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Static traps
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(t)\sim e^{\{}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Balagurov & vaks, Donsker and Vardhan
+\end_layout
+
+\begin_layout Standard
+Bramson, Lebowitz, Bray and others
+\end_layout
+
+\begin_layout Standard
+If you take a distribution of traps, there'll be very large regions where
+ there's no trap, so there will be particles that take a very long time
+ to get trapped
+\end_layout
+
+\begin_layout Standard
+Now there's recent work, in which they have modelled moving traps, where
+ in 1 dimension, it goes 
+\begin_inset Formula $e^{-\alpha_{1}\rho t^{1/2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The traps are uniformly distributed
+\end_layout
+
+\begin_layout Standard
+Trapping reaction-diffusion process: Green's function methods
+\end_layout
+
+\begin_layout Standard
+Trapping reaction in 
+\begin_inset Formula $1D$
+\end_inset
+
+-> 
+\backslash
+math S = {x_1,x_2, ...,x_k,...} uniformly in R
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\partial_{t}u(x,t)=D\partial_{x}^{2}u(x,t)-k\sum_{x_{i}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dot is the reaction operator, and then he solved it upto second order 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Approximate solution
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Concentration averaged over disorder
+\end_layout
+
+\begin_layout Standard
+He tested this against a numerical solution to see how good the answer is..
+\end_layout
+
+\begin_layout Standard
+He found deviation from the mean was high, because...
+\end_layout
+
+\begin_layout Standard
+So he concluded the solution is not a very good one
+\end_layout
+
+\begin_layout Standard
+he obtained another equation by taking ...
+\end_layout
+
+\begin_layout Enumerate
+Drop a particle of type S at a random r uniform in 
+\backslash
+sigma
+\end_layout
+
+\begin_layout Enumerate
+Choose particle i from tlhe surface
+\end_layout
+
+\begin_layout Enumerate
+Compute 
+\begin_inset Formula $r_{i,t+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Generate random number 
+\backslash
+rho if (....
+ and ....
+ perform raeaction step
+\end_layout
+
+\begin_layout Enumerate
+GOTO (1)
+\end_layout
+
+\begin_layout Standard
+You get a simulation, with results
+\end_layout
+
+\begin_layout Standard
+very dense, too many points, large few points aSnd only the boundary
+\end_layout
+
+\begin_layout Standard
+First passage of tim
+\end_layout
+
+\begin_layout Standard
+Centre, we put an atom, and it goes through all these places and we record
+ the time for it to exit, sync, cluster and trap
+\end_layout
+
+\begin_layout Standard
+Mean frist passage time
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $<\tau_{f}>\sim c_{1/(k_{b}+c_{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{1}c_{2-}->positive$
+\end_inset
+
+constants that depend on 
+\begin_inset Formula $D_{\rho}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is the number o freaction before it exists, and for very high D_p,
+ it goes like this
+\end_layout
+
+\begin_layout Standard
+First passage time probability density and we saw that 
+\end_layout
+
+\begin_layout Standard
+The effect of exclusion on nonlinear reaction diffusion system with disorder
+\end_layout
+
+\begin_layout Standard
+The reaction -diffusion equations
+\end_layout
+
+\begin_layout Standard
+In that way, it reduces the formation of cluster (the rate) and then we
+ take n number of atoms reacting, where epsilon is called the strength,
+ we see how this gradient can be modelled as the exclusion
+\end_layout
+
+\begin_layout Standard
+So, in this, 
+\end_layout
+
+\begin_layout Standard
+Suppose we start with a constant concentration and after some time this
+ is what it looks like, there'll be formation of clusters at the origin
+ and decay of particles.
+ IF you take th egradient, then the negative of it, it something as this..
+\end_layout
+
+\begin_layout Standard
+So, more number of atoms are coming there, (clusters he meant) for the atoms,
+ there's repulsion, it will reduce the incoming 
+\end_layout
+
+\begin_layout Standard
+The hopping terms depend on the difference of particles
+\end_layout
+
+\begin_layout Standard
+If ws is the rate from 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Derivation from the master equation
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Linearized equations
+\end_layout
+
+\begin_layout Standard
+I can model this as some sin function..
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Drift Diffusion Equations
+\end_layout
+
+\begin_layout Standard
+Similarly if you do it numerically, you find it goes deeper.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Trapping reaction with self exclusion
+\end_layout
+
+\begin_layout Standard
+Simulation of trapping iwth exclusion
+\end_layout
+
+\begin_layout Standard
+Numerically taking the slope
+\end_layout
+
+\begin_layout Standard
+Conclusion
+\end_layout
+
+\begin_layout Enumerate
+Presented a minimal model for scluster formation at nanoscales in the presen
+ e of surface defects
+\end_layout
+
+\begin_layout Enumerate
+The linear model agrees qualitatveily with the eimernets
+\end_layout
+
+\begin_layout Standard
+Thank you
+\end_layout
+
+\begin_layout Standard
+1/3 exponent is not 
+\end_layout
+
+\begin_layout Standard
+Suppose there's a constant reaciton rate, if you wait long enough, th ereaction
+ rate reduces as p^3 or 2.
+ SO if its 
+\begin_inset Formula $e^{-kT}$
+\end_inset
+
+, then it beomces 
+\begin_inset Formula $e^{-\alpha kt}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Is there a quantum formulation also of these problems
+\end_layout
+
+\begin_layout Standard
+Crystal defect..stuff
+\end_layout
+
+\begin_layout Standard
+Later on Domston and vardhan did this for ..
+\end_layout
+
+\begin_layout Standard
+They got exact exponent, those terms come only come when you do fwith laplace
+ method and all.
+ They've arrived to probabilistic method.
+ Actually its a very big paper so I ddin't read this.
+\end_layout
+
+\begin_layout Standard
+Donston's approach was still classical.
+\end_layout
+
+\end_body
+\end_document

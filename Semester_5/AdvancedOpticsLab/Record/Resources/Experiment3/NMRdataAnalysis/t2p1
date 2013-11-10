@@ -1,0 +1,19 @@
+final sum of squares of residuals : 0.182731
+rel. change during last iteration : -3.8046e-06
+
+degrees of freedom    (FIT_NDF)                        : 28
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0807844
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00652612
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+B               = 2.00829          +/- 0.08758      (4.361%)
+T               = 78.055           +/- 5.739        (7.352%)
+
+
+correlation matrix of the fit parameters:
+
+               B      T      
+B               1.000 
+T              -0.607  1.000 
