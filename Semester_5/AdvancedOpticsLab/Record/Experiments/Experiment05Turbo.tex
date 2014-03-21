@@ -1,0 +1,181 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[oneside,english]{amsbook}
+\usepackage[latin9]{inputenc}
+\usepackage{amsthm}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{section}{chapter}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\section{Calibrating the Fabry Perot}
+
+Let us start with the assuming that you have a bright fringe at the
+centre. Let the distance initially between the two mirrors of the
+etalon be $d_{1}$. So in this situation we have
+
+\[
+2d_{1}=n\lambda
+\]
+
+
+Where $n$ is some arbitrary number, and $\lambda$ is wavelength
+of prashansa. Now suppose you move one of the mirrors such that the
+new distance is $d_{2}=d_{1}+\Delta d'$, where $\Delta d'$ is what
+you measure using the screw guage. Also, let us assume that the centre
+is bright again, and a total of $m$ fringes collapsed to the centre
+in the process of changing the distance. Then, ideally we must have
+
+\[
+2\Delta d'=m\lambda
+\]
+
+
+We know all the quantities in the equation. However, in practice,
+there'll be some error, which can be removed by calibration. Thus
+we define the expected distance by
+
+\[
+\Delta d\equiv m\lambda/2
+\]
+And we define our calibration constant
+
+\[
+C=\frac{\Delta d}{\Delta d'}
+\]
+
+
+
+\section{Determining the Space Between the Mirrors of the Etalon}
+
+The analysis for this part rests on the assumption that effect displayed
+in the following figure can be neglected. We'll show later by simple
+calculations the range of the radius for which this can be neglected.
+
+We start simple. From trigonometric arguments, we have the following
+relation between the angle $\theta_{m}$ of a ray from the source
+to the screen%
+\footnote{with respect to the line joining the centre of the pattern and the
+source%
+}, corresponding to a bright fringe, where $m$ is a number (which
+will be defined soon), and $r_{m}$, the radius of the ring on the
+screen.
+
+\[
+\frac{r_{m}}{D}=\tan\theta_{m}
+\]
+
+
+For small angles, we have
+
+\[
+\tan\theta_{m}=\theta_{m}=\frac{r_{m}}{D}
+\]
+
+
+Now we look at the $n$th large bright ring from the aforesaid ring.
+For this also, we correspondingly have
+
+\[
+\tan\theta_{m+n}=\theta_{m+n}=\frac{r_{m+n}}{D}
+\]
+
+
+We now give meaning to number $m$. For the first ring, the condition
+for being bright is given by 
+
+\[
+2d\cos\theta_{m}=m\lambda
+\]
+
+
+where $\lambda$ is the wavelength of the incident laser light. Then
+it follows that
+
+\[
+2d\cos\theta_{m+n}=(m-n)\lambda
+\]
+
+
+where the minus sign is owing to the fact that we've assumed the \emph{larger
+}ring to correspond to $\theta_{m+n}$, which implies $\theta_{m+n}>\theta_{m}$.
+
+We eliminate $m$ from these equations to obtain
+
+\[
+2d(\cos\theta_{m+n}-\cos\theta_{m})=-n\lambda
+\]
+
+
+If we use small angle approximation for $\cos\theta=1-\theta^{2}/2$,
+we get
+
+\[
+d(\theta_{m+n}^{2}-\theta_{m}^{2})=n\lambda
+\]
+
+
+which in terms of observables, is
+
+\[
+\frac{r_{m+n}^{2}-r_{m}^{2}}{D^{2}}=\frac{n\lambda}{d}
+\]
+
+
+So finally we have
+
+\[
+d=\frac{n\lambda D^{2}}{r_{m+n}^{2}-r_{m}^{2}}
+\]
+
+
+
+\subsection{Small Angle Approximation}
+
+We have assumed that the analysis given above works, so long as the
+distance $2d\tan\theta<1mm$, the least count of the radius measurement
+apparatus. We then find the range of $\theta$ for which this is valid
+and thereby determine the radius of fringes we can use, without the
+theory failing. The $d\approx2cm$ in our setup, so we get $\theta<0.025$,
+and using $\theta\approx\tan\theta=d/D$, with $D=70$cm, thus the
+radius must have the following contraints
+
+\[
+r<1.75cm
+\]
+for confident results.
+
+
+\section{The setup}
+
+The setup has very curious similarities with the michelson interferometer.
+First note that in the michelson interferometer, there are three cases
+to be considered
+\begin{enumerate}
+\item Point source (the black paper with hole dosn't function as a very
+good point source)
+\item Non coherent extended source (the diffuser case)
+\end{enumerate}
+In the first case, we would obtain a pattern on a screen, but won't
+be able to see it. In the second case we won't see it on a screen.
+However we (experimentally known) can see it directly.
+
+One could verify these results in the Fabry Perot setup as well. With
+a point source (the diode laser, with or without an additional lense),
+when viewed through the fabry perot, doesn't yield a pattern, although
+you get it on a screen. Conversely, if you converted the point source
+into an extended source, the pattern on the screen dissapears, however
+you can now observe it directly through the etalon. In complete agreement
+with the predictions.
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

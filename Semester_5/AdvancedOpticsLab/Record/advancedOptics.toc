@@ -12,12 +12,12 @@
 \contentsline {subsection}{\numberline {1.3.1}Obtaining the ring}{5}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Finding $\lambda _\text {average}$}{6}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Finding $\lambda _\text {separation}$}{6}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Observations and Conclusion}{6}{section.1.4}
+\contentsline {section}{\numberline {1.4}Observations and Conclusion}{7}{section.1.4}
 \contentsline {section}{\numberline {1.5}Sources of error}{7}{section.1.5}
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {Acoustic Diffraction}}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Theory}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Further Questions}{12}{section.2.2}
-\contentsline {section}{\numberline {2.3}Calculations and Results}{13}{section.2.3}
+\contentsline {section}{\numberline {2.3}Calculations and Results}{12}{section.2.3}
 \contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {NMR}}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}$T_1$, $T_2$}{17}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Minimal Introductory Theory}{17}{subsection.3.1.1}
@@ -43,4 +43,23 @@
 \contentsline {subsection}{\numberline {3.1.5}Observations}{29}{subsection.3.1.5}
 \contentsline {section}{\numberline {3.2}Diffusion}{31}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Theory}{31}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Practical Implementation}{31}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Practical Implementation}{34}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Observations and Result}{35}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Zeeman Effect}}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Classical Description of Zeeman Splitting}{37}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Modeling the Atom as a harmonic oscillator}{37}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Zeeman Splitting and Polarization}{38}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Limitations}{39}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Fabry Parot}{40}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The effect of sources and lenses}{40}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Constant Deviation Spectrometer}{42}{section.4.4}
+\contentsline {section}{\numberline {4.5}The Setup}{42}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}The `TV' Zeeman (polarization)}{42}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}The `Prism' Zeeman (splitting)}{43}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Fabry Perot}}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Calibrating the Fabry Perot}{49}{section.5.1}
+\contentsline {section}{\numberline {5.2}Determining the Space Between the Mirrors of the Etalon}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Small Angle Approximation}{51}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}The setup}{51}{section.5.3}
+\contentsline {section}{\numberline {5.4}Observations and Results}{51}{section.5.4}

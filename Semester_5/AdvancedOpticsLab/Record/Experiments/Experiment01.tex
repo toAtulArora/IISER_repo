@@ -2,7 +2,7 @@
 \chapter{Michelson Interferometer}
 %************************************************
 \begin{flushright}
-August 8 and 19, 2012 \\
+August 8 and 19, 2013 \\
 % [$3 \times 6 hours spent$]
 \end{flushright}
 
@@ -40,23 +40,26 @@ August 8 and 19, 2012 \\
 		\begin{equation}
 			2d\cos{\theta}=(m+1/2)\lambda
 		\end{equation}
-		It is easy to put in a few numbers \footnote{refer to page 15.23 of Ajoy Ghatak, Optics, 4th Edition for details} and conclude that reducing the distance causes fringes to collapse to the centre (while the spacing between fringes increases). Say for a given configuration, the centre's dark;
+		It is easy to put in a few numbers \footnote{refer to page 15.23 of Ajoy Ghatak, Optics, 4th Edition for details} and conclude that reducing the distance causes fringes to collapse to the centre (while the spacing between fringes increases).
+
+		Now experimentally, say for a given configuration, the centre's dark;
 		\begin{equation}
 			2d=m\lambda
 		\end{equation}
-		and say for a distance $d_o$ the same is achieved, and $N$ fringes have collapsed to the centre in the process. Then we have
+		where $2d$ again, represents the distance between the mirrors, but that is not known experimentally. What is known experimentally is the position of the moveable mirror, with respect to some reference, $d_i$.
+		Now we move this mirror to a new position, say $d_f$, such that $N$ fringes have collapsed to the centre in the process. Then we have
 		\begin{equation}
-			2(d+d_o)=(m-N)/\lambda
+			2(d+ (d_f-d_i))=(m-N)/\lambda
 		\end{equation}
 		Subtracting these, gives us a simple method of finding the `average' wavelength of the sodium source
 		\begin{equation}
-			\lambda=2d_o/N
+			\lambda=2(d_f-d_i)/N=2\Delta D/N
 			\label{5_eq1}
 		\end{equation}
 
 
 	\subsection{Resolving the D-Lines}
-		That was the basic theory behind the experiment. Using a little more naiive Math, we can even find the small difference in the Sodium D-lines. Here's how we go about it. First `$d$' is made 0. Then the mirror is moved away (or towards) through a distance $d$. In general, the fringe patterns will overlap in some fashion. Assume a $d$ is such that,
+		That was the basic theory behind the experiment. Using a little more naive Math, we can even find the small difference in the Sodium D-lines. Here's how we go about it. As a though experiment, imagine that `$d$' is made 0. Then the mirror is moved away (or towards) through a distance $d$. In general, the fringe patterns will overlap in some fashion. Assume a $d$ is such that,
 		\begin{equation}
 			2d\cos{\theta}=m\lambda_1 \\
 			2d\cos{\theta}=(m+1/2)\lambda_2
@@ -69,20 +72,24 @@ August 8 and 19, 2012 \\
 		\begin{equation}
 			2d/\lambda_1 - 2d/\lambda_2 = 1/2, 3/2, 5/2 ..
 		\end{equation}
-		then the fringe pattern will disappear and for 1, 2, 3 .. it will reappear. Now let us move another step further. ay for an experiment, I find the distance between occurrence of two blank patterns, we have
+		then the fringe pattern will disappear and for 1, 2, 3 .. it will reappear. 
+		Now let us think about how this could be achieved in practice, as it is hard to find the precise location where $d$ becomes zero. To get around this, we find the distance between occurrence of two blank (all bright) patterns. Assuming the unknown (to the experimenter) distance between the mirrors is $d$, but the position of the moveable mirror with respect to some reference, is again given by $d_i$. We can then write in general for some odd $m$
 		\begin{equation}
-			2d_1 (1/\lambda_1 - 1/\lambda_2) = 1/2
+			2d (1/\lambda_1 - 1/\lambda_2) = m/2
 		\end{equation}
+		Now the moveable mirror is moved to a position $d_f$ such that the same pattern is obtained. For this we then have
 		\begin{equation}
-			2d_2 (1/\lambda_1 - 1/\lambda_2) = 3/2
+			2(d+(d_f-d_i)) (1/\lambda_1 - 1/\lambda_2) = m/2 - 1
 		\end{equation}
+		On subtracting, to eliminate the unknown $d$, we get
 		\begin{equation}
 			2\Delta d (\Delta \lambda / \lambda^2) = 1
 		\end{equation}
+		where $\Delta d = d_f - d_i$. So finally we have,
 		\begin{equation}
-			\Rightarrow \Delta \lambda = \lambda^2/2\Delta d
+			\Delta \lambda = \lambda^2/2\Delta d
 		\end{equation}
-
+		and that's that.
 
 	\subsection{Subtle Points}
 		The theory discussed above is roughly sufficient. Finer points have been posed as questions % and then discuss them to develop a better understanding of the subject.

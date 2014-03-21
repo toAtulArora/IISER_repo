@@ -1,0 +1,811 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass amsbook
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+The Principle of Relativity
+\end_layout
+
+\begin_layout Section*
+Four Vectors
+\end_layout
+
+\begin_layout Standard
+Following are some of the things that I had to spend some time figuring.
+ This should help save some time.
+\end_layout
+
+\begin_layout Standard
+The derivation of 
+\begin_inset Formula $e^{iklm}e_{pklm}$
+\end_inset
+
+ is essentially based on counting.
+ Assume that 
+\begin_inset Formula $klm$
+\end_inset
+
+ are distinct, say 
+\begin_inset Formula $123$
+\end_inset
+
+ then 
+\begin_inset Formula $e^{iklm}e_{pklm}$
+\end_inset
+
+ is non zero only if both 
+\begin_inset Formula $i=p=0$
+\end_inset
+
+.
+ That explains the 
+\begin_inset Formula $\delta$
+\end_inset
+
+ symbol.
+ The six comes from 
+\begin_inset Formula $3!$
+\end_inset
+
+, the number of ways of fixing 
+\begin_inset Formula $klm$
+\end_inset
+
+, given fixed 
+\begin_inset Formula $i$
+\end_inset
+
+ (and therefore 
+\begin_inset Formula $p$
+\end_inset
+
+).
+ Thus we have 
+\begin_inset Formula 
+\[
+e^{iklm}e_{pklm}=-6\delta_{p}^{i}
+\]
+
+\end_inset
+
+Since all the indexes have to be unique, similarly, for 
+\begin_inset Formula $e^{iklm}e_{prlm}\neq0$
+\end_inset
+
+ we'll have for a given 
+\begin_inset Formula $lm$
+\end_inset
+
+, say 2 3, either 
+\begin_inset Formula $i=0,k=1$
+\end_inset
+
+ or 
+\begin_inset Formula $i=1,k=0$
+\end_inset
+
+.
+ For each case then, we can either have 
+\begin_inset Formula $i=p$
+\end_inset
+
+ or 
+\begin_inset Formula $i=r$
+\end_inset
+
+.
+ Given 
+\begin_inset Formula $i,k$
+\end_inset
+
+ in how many ways can I fix 
+\begin_inset Formula $lm$
+\end_inset
+
+, well 
+\begin_inset Formula $2!$
+\end_inset
+
+.
+ So that explains the result 
+\begin_inset Formula 
+\[
+e^{iklm}e_{pklm}=-2(\delta_{p}^{i}\delta_{r}^{k}-\delta_{r}^{i}\delta_{p}^{k})
+\]
+
+\end_inset
+
+----
+\end_layout
+
+\begin_layout Standard
+The space components of the antisymmetric tensor 
+\begin_inset Formula $A^{ik}$
+\end_inset
+
+, can be written compactly using an axial vector 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+.
+ An axial vector is a pseudo vector, dual to some antisymmetric tensor.
+ Thus we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+C_{\alpha}=\frac{1}{2}e_{\alpha\beta\gamma}C_{\beta\gamma}
+\]
+
+\end_inset
+
+However the problem is to write the spatial part (
+\begin_inset Formula $C_{\beta\gamma}$
+\end_inset
+
+) of the antisymmetric tensor 
+\begin_inset Formula $A^{ik}$
+\end_inset
+
+, given the axial vector 
+\begin_inset Formula $a_{\alpha}$
+\end_inset
+
+.
+ So now we simply multiply both sides of the given transformation relation
+ with 
+\begin_inset Formula $e_{\lambda\beta\gamma}$
+\end_inset
+
+ and use the fact that 
+\begin_inset Formula $e_{\lambda\beta\gamma}e_{\alpha\beta\gamma}=2\delta_{\alpha}^{\lambda}$
+\end_inset
+
+ to obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{\lambda}e_{\lambda\beta\gamma}=C_{\beta\gamma}
+\]
+
+\end_inset
+
+ where I've substituted 
+\begin_inset Formula $C_{\alpha}=a_{\alpha}$
+\end_inset
+
+.
+ (
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is just a dummy index, could be 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ also, no problemo).
+\end_layout
+
+\begin_layout Standard
+The next place where I got stuck, is the generalization of the two dimensional
+ surface in four-space.
+ You can think of it (i'll just say it, no math) as follows.
+ Think of any two vectors 
+\begin_inset Formula $x_{\alpha},x'_{\alpha}$
+\end_inset
+
+in 3D space.
+ Now consider the projection of the area enclosed by these vectors on the
+ XY plane, with the unit vectors 
+\begin_inset Formula $\hat{x}=\hat{x_{1}}$
+\end_inset
+
+and 
+\begin_inset Formula $\hat{y}=\hat{x_{2}}$
+\end_inset
+
+.
+ I can write the projection on any of the plane 
+\begin_inset Formula $\hat{x_{\alpha}}\hat{x_{\beta}}$
+\end_inset
+
+ in general, by simply writing
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{\alpha\beta}\equiv x_{\alpha}x'_{\beta}-x_{\beta}x'_{\alpha}
+\]
+
+\end_inset
+
+the cross product of their projected components on that plane.
+ This is essentially a second rank tensor.
+ I can find the dual of this tensor as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{\alpha}=\frac{1}{2}e_{\alpha\beta\gamma}f_{\beta\gamma}
+\]
+
+\end_inset
+
+which is simply the normal! Now extending this to 4D, we see the dual turns
+ out to be a tensor itself!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f*^{ik}=\frac{1}{2}e^{iklm}f_{lm}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There's some orthonogonality of sorts (ASK someone or READ more).
+ Anyway, we can show that 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f^{ik}f_{ik}^{*}=f^{ik}e_{iklm}f^{lm}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Question: What would be a similar result for the 3D case?
+\end_layout
+
+\begin_layout Section
+The principle of least action
+\end_layout
+
+\begin_layout Standard
+Very little to be said for this.
+ Just note that 
+\begin_inset Formula $\int_{a}^{b}ds$
+\end_inset
+
+ has maxima for a straight world line.
+ Thus for there to exist a minima, we take a negative sign in 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ The main result of the section was
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L=-mc^{2}\sqrt{1-\left(\frac{v}{c}\right)^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Energy and Momentum
+\end_layout
+
+\begin_layout Enumerate
+check the derivation for change in momentum when the force is parallel:
+ 
+\end_layout
+
+\begin_layout Enumerate
+check how and why we have 
+\begin_inset Formula $\mathbf{F}=d\mathbf{p}/dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+remember how conservation of mass doesn't hold, but mass is still an invariant
+ under lorentz transformations
+\end_layout
+
+\begin_layout Standard
+Main results of this section:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{p}=\partial L/\partial\mathbf{v}=\frac{m\mathbf{v}}{\sqrt{1-(v/c)^{2}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathscr{E}=\mathbf{p.v}-L=\frac{mc^{2}}{\sqrt{1-(v/c)^{2}}}\approx mc^{2}+\frac{1}{2}mv^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can relate the Energy with the momentum as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p^{2}+m^{2}c^{2}=\frac{m^{2}v^{2}}{1-(v/c)^{2}}+m^{2}c^{2}=\frac{m^{2}c^{2}}{1-(v/c)^{2}}=\frac{\mathscr{E}^{2}}{c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and can then express energy as a function of momentum (the hamiltonian,
+ which in the limiting case becomes 
+\begin_inset Formula $mc^{2}+p^{2}/2m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathscr{E}=c\sqrt{p^{2}+m^{2}c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We also ahve between energy and momentum the relation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathbf{p}=\frac{\mathscr{E}\mathbf{v}}{c^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Action
+\end_layout
+
+\begin_layout Enumerate
+Lagrangian
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Momentum using the lagrangian
+\end_layout
+
+\begin_layout Enumerate
+Hamiltonian and Lagrangian relation gives the energy
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using these epxressions write the relation between energy and momentum
+\end_layout
+
+\begin_layout Enumerate
+Variation of Action
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Generalized Momentum
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Expressed as generalized velocity
+\end_layout
+
+\begin_layout Enumerate
+Verify/found the first term to be 
+\begin_inset Formula $\mathscr{E}/c$
+\end_inset
+
+, and the space terms the 3d momentum
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Defined an anologous Force as 
+\begin_inset Formula $dP^{i}/ds$
+\end_inset
+
+.
+ The hint for the first component is that you can write Energy as 
+\begin_inset Formula $\mathscr{E}=\mathbf{p.v}-L$
+\end_inset
+
+ [ASK: How does L not depend on time? Perhaps we could say that since the
+ equation of motion is 
+\begin_inset Formula 
+\[
+\frac{\partial}{\partial t}\left(\frac{\partial L}{\partial\mathbf{v}}\right)=\frac{\partial L}{\partial\mathbf{r}}
+\]
+
+\end_inset
+
+Since the Lagrangian has no explicit dependence on 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+, it implies, the momentum is constant.
+ This implies the velocity is constant.
+ Thus all terms of 
+\begin_inset Formula $L$
+\end_inset
+
+ are constants (with respect to 
+\begin_inset Formula $\mathbf{r}$
+\end_inset
+
+ and 
+\begin_inset Formula $t$
+\end_inset
+
+).
+ QED]
+\end_layout
+
+\begin_layout Standard
+---
+\end_layout
+
+\begin_layout Section*
+15.
+ Elementary particles in the theory of relativity
+\end_layout
+
+\begin_layout Standard
+Question: Rigid body's definition, does the body's dimension change in different
+ frames?
+\end_layout
+
+\begin_layout Standard
+The xplanation for non existence of rigid bodies is not clear.
+ The use of three frames is clear, however I couldn't understand where the
+ rigidity of the body was really required to show, that the value of 
+\begin_inset Formula $\pi$
+\end_inset
+
+ that too in a moving frame changes.
+\end_layout
+
+\begin_layout Section*
+16.
+ Four-potential of a field
+\end_layout
+
+\begin_layout Enumerate
+Added the interaction with the field in the action.
+ 
+\begin_inset Formula 
+\[
+S=\int\left(-mcds-\frac{e}{c}A_{i}dx^{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You can break this into the lagrangian (just re-epxress 
+\begin_inset Formula $A_{i}dx^{i}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathbf{A},\phi,d\mathbf{r},dt$
+\end_inset
+
+ and you get
+\begin_inset Formula 
+\[
+L=-mc^{2}\sqrt{1-\frac{v^{2}}{c^{2}}}+\frac{e}{c}\mathbf{A.v}-e\phi
+\]
+
+\end_inset
+
+The origin of this makes sense now! (remember you saw this first in sakurai?,
+ the Hamiltonian perhaps)
+\end_layout
+
+\begin_layout Enumerate
+Use 
+\begin_inset Formula $\mathbf{P}=\partial L/\partial\mathbf{v}$
+\end_inset
+
+ to find the generalized momentum (we still use 
+\begin_inset Formula $\mathbf{p}$
+\end_inset
+
+ for epxressing the momentum of the free particle).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that in the lagrangian formalism, everything is 3D agian.
+ The action varation gives the 4D anaologues.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Again, we can also express the energy/hamiltonian using 
+\begin_inset Formula $\mathscr{H}=\mathbf{v.P}-L$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It needs a little `thinkable' manipulation to express the hamiltonian as
+ a function of the generalized momentum.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+<some steps missing>
+\end_layout
+
+\begin_layout Section*
+23.
+ The electromagnetic field tensor
+\end_layout
+
+\begin_layout Standard
+The equations of motion can be derived using either the Lagrandian Formalism,
+ or using the variation of action direclty.
+ The latter's been done here.
+\end_layout
+
+\begin_layout Enumerate
+Write down the action in the 4d notation
+\end_layout
+
+\begin_layout Enumerate
+Write 
+\begin_inset Formula $ds=\sqrt{dx_{i}dx^{i}}$
+\end_inset
+
+ and apply 
+\begin_inset Formula $\delta$
+\end_inset
+
+ to all the terms, without holding 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ consant.
+ Also substitute 
+\begin_inset Formula $dx_{i}/ds=du_{i}$
+\end_inset
+
+ as you go.
+\end_layout
+
+\begin_layout Enumerate
+Integrate by parts the two terms that don't have a 
+\begin_inset Formula $\delta A_{i}$
+\end_inset
+
+ term.
+\end_layout
+
+\begin_layout Enumerate
+For the part in the interal then, re-express 
+\begin_inset Formula 
+\[
+\delta A_{i}=\frac{\partial A_{i}}{\partial x_{k}}\delta x_{k}
+\]
+
+\end_inset
+
+and similarly 
+\begin_inset Formula $dA_{i}$
+\end_inset
+
+ is re-expressed as partials.
+\end_layout
+
+\begin_layout Enumerate
+Now use the relation 
+\begin_inset Formula $dx^{i}=u^{i}ds$
+\end_inset
+
+, and change indices suitably, so that you can take 
+\begin_inset Formula $\delta x^{i}ds$
+\end_inset
+
+ common.
+\end_layout
+
+\begin_layout Enumerate
+Now equating this to zero as usual, for the usual reasons, we get, (finally)
+\begin_inset Formula 
+\[
+mc\frac{du_{i}}{ds}=\frac{e}{c}\left(\frac{\partial A_{k}}{\partial x^{i}}-\frac{\partial A_{i}}{\partial x^{k}}\right)u^{k}
+\]
+
+\end_inset
+
+and we define now for the first time
+\begin_inset Formula 
+\[
+F_{ik}=\frac{\partial A_{k}}{\partial x^{i}}-\frac{\partial A_{i}}{\partial x^{k}}
+\]
+
+\end_inset
+
+the antisymmetric electromagnetic field tensor!
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You can find 
+\begin_inset Formula $F_{ik}$
+\end_inset
+
+ in terms of field strengths by simply using 
+\begin_inset Formula $A_{i}=(\phi,\mathbf{A})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+According to section 6, you can then also write 
+\begin_inset Formula $F_{ik}=(\mathbf{E,\, H}),\, F^{ik}=(-\mathbf{E,\, H})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+<properties skipped> 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The next step is then to find the generalized momentum.
+ That's simple as it comes from the other part (non-integral).
+ We then do the old trick.
+ Find 
+\begin_inset Formula $\delta S/\delta x^{i}$
+\end_inset
+
+ and call it 
+\begin_inset Formula $P^{i}$
+\end_inset
+
+ and get the relation required.
+\end_layout
+
+\begin_layout Standard
+--
+\end_layout
+
+\begin_layout Section*
+24.
+ Lorentz transformation of the fields
+\end_layout
+
+\begin_layout Section*
+12.
+ Invariant Cross-section
+\end_layout
+
+\begin_layout Standard
+Number of collisions is conserved because you can think of each collision
+ as one point in the space, and the point maps uniquely via the lorentz
+ transformation.
+\end_layout
+
+\end_body
+\end_document

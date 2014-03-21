@@ -1,0 +1,326 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A Story on 
+\begin_inset Newline newline
+\end_inset
+
+Quantum Computation and Information
+\begin_inset Newline newline
+\end_inset
+
+series codename: effortBluePrint
+\end_layout
+
+\begin_layout Author
+Atul Sinh Aurora
+\end_layout
+
+\begin_layout Abstract
+Addressed to myself; motivation: As you would've most likely forgotten by
+ now, you failed to do two extremely simple problems in the first midsem
+ of the subject.
+ The first was to prove that 
+\begin_inset Formula $tr(\rho^{2})=tr(\rho)$
+\end_inset
+
+ means the state is pure and the second was to decompose a 
+\begin_inset Formula $\rho$
+\end_inset
+
+, and it was given decomposed! I was however able to do the rest of the
+ problems which I had not seen before.
+ These other ones I had in fact done the day before the exam.
+ Surprising and demotivating as that was, I eventually realized that I need
+ to write down the learning outcomes so that my brain knows what is important
+ to remember.
+ Further, this will be helpful to you now for revising and for me now to
+ map my effort.
+ I will write what I've learnt, not in a chronological order, but instead
+ group it conceptually.
+\end_layout
+
+\begin_layout Section
+Essentials
+\end_layout
+
+\begin_layout Standard
+These are based on the book by Neilson and Chuang.
+ I'll add to this section as and when necessary.
+\end_layout
+
+\begin_layout Section
+Density Operator
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Characterization of density operators
+\emph default
+: 
+\begin_inset Newline newline
+\end_inset
+
+An operator 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density operator associated to some ensemble 
+\begin_inset Formula $\{p_{i},\ket{\psi_{i}}\}$
+\end_inset
+
+ iff it satisfies the conditions: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $tr(\rho)=1$
+\end_inset
+
+ and 
+\end_layout
+
+\begin_layout Enumerate
+positivity (all eigenvalues are positive).
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+The if part is simple.
+ Just use the `sakurai definition' of 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ The only if part can be proved easily by looking at the spectral decomposition
+ of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ and that will directly give an ensemble.
+ Note that the positivity condition implies that 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is hermitian and that its determinant
+\begin_inset Formula $>0$
+\end_inset
+
+ but the inverse doesn't hold for an operator in general.
+ I know its stupid to state it, but you got confused.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+Criterion to decide if a state is mixed or pure
+\emph default
+: 
+\begin_inset Newline newline
+\end_inset
+
+For any density matrix 
+\begin_inset Formula $\rho$
+\end_inset
+
+, 
+\begin_inset Formula $tr(\rho^{2})\leq1$
+\end_inset
+
+ with equality iff 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is a pure state.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+I proved this with three different methods (only 2 of which are water tight,
+ so the third doesn't quite count).
+ So you basically have to realize in this that you can either use the spectral
+ decomposition of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ AND use its defining properties (positivity and 
+\begin_inset Formula $tr(\rho)=1$
+\end_inset
+
+) OR you can use 
+\begin_inset Formula $\rho=\Sigma\lambda_{i}\ket{\psi_{i}}\bra{\psi_{i}}$
+\end_inset
+
+.
+ You could also mix the latter with the trace condition.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Unitary freedom in the ensemble for density matrices:
+\emph default
+
+\begin_inset Newline newline
+\end_inset
+
+The sets 
+\begin_inset Formula $\ket{\tilde{\psi}_{i}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\tilde{\varphi}_{i}}$
+\end_inset
+
+ generate the same density matrix, iff
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\ket{\tilde{\psi}_{i}}=\sum_{j}u_{ij}\ket{\tilde{\varphi}_{j}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $u_{ij}$
+\end_inset
+
+ is a unitary matrix of complex numbers
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The forward proof essentially requires you to substitute and use the unitarity
+ to get identity.
+ The only if part requires more work.
+ Consider the spectral decomposition of 
+\begin_inset Formula $\rho$
+\end_inset
+
+, with eigenkets 
+\begin_inset Formula $\ket{k}$
+\end_inset
+
+.
+ You show that the vector spaces panned by 
+\begin_inset Formula $\ket{k}$
+\end_inset
+
+ is the same as that spanned by 
+\begin_inset Formula $\ket{\tilde{{\psi_{i}}}}$
+\end_inset
+
+.
+ This is done using a vector 
+\begin_inset Formula $\psi$
+\end_inset
+
+ orthogonal to the 
+\begin_inset Formula $\ket{k}$
+\end_inset
+
+ and using the given relation.
+ Then just express each 
+\begin_inset Formula $\ket{\psi}$
+\end_inset
+
+ as a linear combination of 
+\begin_inset Formula $\ket{k}$
+\end_inset
+
+ and substitute in the given relation and the unitarity condition pops out
+ due to linear independence.
+ Then its easy peasy.
+\end_layout
+
+\end_body
+\end_document

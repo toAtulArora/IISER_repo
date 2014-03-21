@@ -528,6 +528,13 @@ Lets see if we can get some constraints on
 \end_inset
 
 .
+ * We not only show its hermitian, we show its expectation value is 
+\begin_inset Formula $>0$
+\end_inset
+
+.
+ Then we get that result.
+ TODO: Reformulate this properly
 \end_layout
 
 \begin_layout Enumerate
@@ -947,7 +954,7 @@ Spherical Harmonics
 \end_layout
 
 \begin_layout Standard
-hello
+hello, sagarion
 \end_layout
 
 \begin_layout Section

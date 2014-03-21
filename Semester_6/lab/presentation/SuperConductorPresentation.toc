@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.27pt}
+\beamer@sectionintoc {1}{Outline}{2}{0}{1}
+\beamer@sectionintoc {2}{Prior Art}{3}{0}{2}
+\beamer@sectionintoc {3}{The Idea}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{Smart Grid}{11}{0}{3}
+\beamer@subsectionintoc {3}{2}{Models}{12}{0}{3}
+\beamer@subsectionintoc {3}{3}{The Calculations}{14}{0}{3}
+\beamer@sectionintoc {4}{Phases}{21}{0}{4}
+\beamer@sectionintoc {5}{References}{24}{0}{5}
+\beamer@sectionintoc {6}{Closing Remarks}{25}{0}{6}

@@ -1,0 +1,158 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[latin9]{inputenc}
+\usepackage{textcomp}
+\usepackage{amstext}
+\usepackage{amssymb}
+\usepackage{esint}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\lyxmathsym}[1]{\ifmmode\begingroup\def\b@ld{bold}
+  \text{\ifx\math@version\b@ld\bfseries\fi#1}\endgroup\else#1\fi}
+
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+There are two important things to understand in this experiment.
+\begin{itemize}
+\item The phenomenon of diffusion and Einstein-Stokes' equation.
+\item Pulse Field Gradient - Spin Echo (or PFGSE)
+\end{itemize}
+
+\section{Diffusion}
+
+Diffusion is the random translational (or Brownian) motion of molecules
+or ions across a system driven by its internal thermal energy. Translational
+diffusion is the basic mechanism by which molecules are distributed
+in space and plays an important role in any chemical reaction. The
+systems for which there is an initial concentration gradient, Fick's
+laws quantitatively explains the relation between the (instantanous
+and local) concentration and the flux of the molecules/ions.
+
+Fick's first law postulates that the flux of a material across a given
+plane is proportional to the concentration gradient across the plane.
+In other words,
+
+\begin{equation}
+J\ =-D\frac{\partial C(x,t)}{\partial x}
+\end{equation}
+
+
+Where \emph{J} is the flux (Number/meter$^{2}$ sec) and \emph{$\frac{\partial C(x,t)}{\partial x}$}
+is the concentration gradient. The constant of proportionality is
+called the diffusion constant and has the dimensions of $length^{2}/time$.
+There is a negative sign to show that molecules/ions are flowing in
+the direction of lower concentration. The above postulate is sufficient
+to understand the behavior of the systems for which the concentration
+gradient doesn't vary with time. To analyze the variations in concentration
+due to time, Fick further postulated that the magntiude of change
+in the local concentration over time is equal to that in local diffusion
+flux, implying,
+
+\begin{equation}
+\frac{\partial C(x,t)}{\partial t}=-\frac{\partial J(x,t)}{\partial x}
+\end{equation}
+
+
+The above two equations can be combined to give the one dimensional
+version of the famous diffusion (or heat) equation:
+
+\[
+\frac{\partial C(x,t)}{\partial t}=\frac{\partial^{2}C(x,t)}{\partial x^{2}}
+\]
+
+
+It is assumed that the diffusion coefficient is independent of the
+position. There are three more things to be proven before one can
+move on to the NMR concepts. Firstly, The mean square value of the
+displacment of the particles can be evaluated as $6Dt.$ To prove
+this, one first needs to find the fundamental solution of the diffusion
+equation. Let us skip the long procedure of deriving the fundamental
+solution of the diffusion equation and take it as:
+
+\begin{equation}
+P(x,t)=\frac{1}{(\sqrt{4\pi D})^{3}}e^{\frac{-(x-x_{0})^{2}}{4Dt}}
+\end{equation}
+
+
+Average of any function $L(t)$ can now be calculated as:
+
+\begin{equation}
+<L(t)>\equiv\int_{\mathbb{R}^{3}}L(x,t)P(x,t)dx
+\end{equation}
+
+
+Secondly, we need Stoke's law that the force needed to move a small
+sphere of radius \emph{R} through a continuous medium of viscosity
+$\eta$ with a velocity \emph{V} is given by the following relation:
+
+\begin{equation}
+F=6\pi\eta RV
+\end{equation}
+
+
+Lastly, Einstein-Stoke's equation describes the way that diffusion
+increases in proportion to temperature, and is inversely proportional
+to the frictional force experienced by a molecule $f,$ where $f=6\pi\eta R.$
+Thus, 
+\begin{equation}
+D=\frac{k_{B}T}{6\pi\eta R}
+\end{equation}
+
+
+
+\section{Pulse Field Gradient - Spin Echo}
+
+Let's take a detour and first understand what spin echo sequence means.
+Imagine that one has a sample where initially the magnetization of
+the molecules is parallel to the external field. Let's ignore the
+diffusion effects for a while. 
+
+A $90\lyxmathsym{º}$ pulse is applied along the x direction so that
+the net magnetization now lies in the xy plane, in the y axis. During
+the period of time following the removal the RF pulse, each spin experiencing
+a slight variation in magnetic field begin to fan out slowly or \textquotedblleft{}dephase\textquotedblright{}.
+The variations in the magnetic field come from both transverse relaxation
+due to T$_{2}$ (spinspin interaction) and inhomogeneities in the
+external field. The importance of the spin echo experiment is that
+the effects of the inhomogeneities are made reversible. At a time
+$\tau$ a $180$º pulse is applied along the y direction. The spins
+are therefore rotated by $180\lyxmathsym{º}$ around the y axis thereby
+remaining in the xy plane. As a result of the inverted relative positions,
+and because each spin continues to precess with its former frequency,
+all spins will be perfectly reclustered at time $2\tau$ forming what
+is called an echo.%
+\footnote{Diffusion measurements by NMR, http://www.uni-muenster.de/%
+}
+
+How are this dephasing and echoing related to diffusion coefficient
+measurements? Well, imagine now that I have the sample enclosed in
+a thin tube. If I apply an external magnetic field that varies linearly
+with height then I should expect a linear variation in the larmor
+freqencies. Heterogenous magnetic field is often supplied by applying
+two pulses of duration $\delta$ and constant gradient $g$ between
+the $90$º and $180\text{º}$ pulse and after the $180$º pulse with
+an interval of time $\Delta$ between them, in the background of a
+homogenous field. If the molecules are now in translational motion
+then the re-phasing of the spins won't be perfect as the frequency
+of the spin vector while dephasing is different from the frequency
+while rephasing. This decreases the intensity of the spin echo which
+can be quantified by the following expression:
+
+\begin{equation}
+I(t)=e^{-\frac{2\tau}{T_{2}}}e^{-Dg^{2}\gamma^{2}\delta^{2}z(\Delta-\delta/3)}
+\end{equation}
+
+
+(INSERT PROOF)
+
+We can vary $I$ by keeping any $3$quantities out of $g,\ \gamma,\ \delta,\ \Delta$
+constant and varying one and do a best fit with equation $7$ to obtain
+$D.$ In our experiment we varied $g$ and held all the other parameters
+constant. 
+\end{document}

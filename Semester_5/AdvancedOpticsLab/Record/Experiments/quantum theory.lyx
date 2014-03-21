@@ -1,0 +1,328 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Zeeman effect 
+\end_layout
+
+\begin_layout Standard
+It is estabilished now that an atom in a magnetic field can be modelled
+ as a simple harmonic oscillator.
+ Let 
+\begin_inset Formula $\omega_{o}$
+\end_inset
+
+ be the frequency of motion in the absence of magnetic field; the electron
+ has the same resonant frequency in motion along 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ directions.
+ In the presence of magnetic field B, the equation of motion, in the rest
+ frame of electron is given as 
+\begin_inset Formula 
+\[
+m_{o}\frac{dv}{dt}=-m_{o}\omega_{o}^{2}r-ev\times B
+\]
+
+\end_inset
+
+where the 
+\begin_inset Formula $r$
+\end_inset
+
+ is the position vector and 
+\begin_inset Formula $v=\dot{r}$
+\end_inset
+
+ is the velocity vector.
+ If the direction of the field is along the 
+\begin_inset Formula $z$
+\end_inset
+
+ axis, 
+\begin_inset Formula $B=B\hat{e_{z}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ddot{r}+2\Omega_{L}\dot{r\times\hat{e}_{z}+\omega_{o}^{2}}r=0
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $\Omega_{L}$
+\end_inset
+
+ is the Larmor frequency defined as
+\begin_inset Formula 
+\[
+\Omega_{L}=\frac{eB}{2m_{o}}
+\]
+
+\end_inset
+
+ Applying the matrix method to solve the above equation, we look for a solution
+ in the form of a vector oscillating at 
+\begin_inset Formula $\omega$
+\end_inset
+
+ such as
+\begin_inset Formula 
+\[
+r=Re\left\{ \left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)exp(-i\omega t\right\} 
+\]
+
+\end_inset
+
+ and obtain the following matrix
+\begin_inset Formula 
+\[
+\left(\begin{array}{ccc}
+\omega_{o}^{2} & -2i\omega\Omega_{L} & 0\\
+2i\omega\Omega_{L} & \omega_{o}^{2} & 0\\
+0 & 0 & \omega_{o}^{2}
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\omega^{2}\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)
+\]
+
+\end_inset
+
+ we then find the eigen values by building the following determinant
+\begin_inset Formula 
+\[
+\left|\begin{array}{ccc}
+\omega_{o}^{2}-\omega^{2} & -2i\omega\Omega_{L} & 0\\
+2i\omega\Omega_{L} & \omega_{o}^{2}-\omega^{2} & 0\\
+0 & 0 & \omega_{o}^{2}-\omega^{2}
+\end{array}\right|=0
+\]
+
+\end_inset
+
+ which then gives 
+\begin_inset Formula 
+\[
+\left\{ \omega^{4}-\left(2\omega_{o}^{2}+4\Omega_{L}^{2}\right)\omega^{2}+\omega_{o}^{2}\right\} \left(\omega^{2}-\omega_{o}^{2}\right)=0
+\]
+
+\end_inset
+
+By inspection, 
+\begin_inset Formula $\omega=\omega_{o}$
+\end_inset
+
+is one solution.
+ For 
+\begin_inset Formula $\Omega_{L}\ll\omega_{o}$
+\end_inset
+
+ , the approximate frequencies are 
+\begin_inset Formula $\omega\backsimeq\omega_{o}\pm\Omega_{L}$
+\end_inset
+
+.
+ The eigen vectors corresponding to these
+\begin_inset Formula 
+\[
+r=\left(\begin{array}{c}
+cos(\omega_{o}-\Omega_{L})t\\
+-sin(\omega_{o}-\Omega_{L})t\\
+0
+\end{array}\right),\left(\begin{array}{c}
+0\\
+0\\
+cos(\omega_{o}t)
+\end{array}\right),\left(\begin{array}{c}
+cos(\omega_{o}+\Omega_{L})t\\
+sin(\omega_{o}+\Omega_{L})t\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+ the motion along 
+\begin_inset Formula $z$
+\end_inset
+
+ axis is not affected by the magnetic field and the angular frequency remains
+ 
+\begin_inset Formula $\omega_{o}$
+\end_inset
+
+.
+ The off diagonal terms 
+\begin_inset Formula $\pm2i\omega\Omega_{L}$
+\end_inset
+
+of the matrix depict the coupling of the motions in the 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ directions resulting in circular motion confined to the 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane, with frequencies shifted from the Larmor frequency 
+\begin_inset Formula $\omega_{o}$
+\end_inset
+
+.
+ Evidently the applied external field separates the initially equal frequencies.
+\end_layout
+
+\begin_layout Standard
+The direction of radiation is given by the 
+\begin_inset Formula $a\times r$
+\end_inset
+
+, where the 
+\begin_inset Formula $a$
+\end_inset
+
+ is the acceleration and 
+\begin_inset Formula $r$
+\end_inset
+
+ is the position vector of the electron.
+ 
+\end_layout
+
+\begin_layout Standard
+The electron oscillating parallel to 
+\begin_inset Formula $B$
+\end_inset
+
+ radiates with angular frequency 
+\begin_inset Formula $\omega_{o}$
+\end_inset
+
+, in the 
+\begin_inset Formula $y$
+\end_inset
+
+ direction when seen in the 
+\begin_inset Formula $xy$
+\end_inset
+
+ plane, and no radiation is observed in the direction of the magnetic field.
+\end_layout
+
+\begin_layout Standard
+The circular motion of the electron produces radiation with angular frequencies
+ 
+\begin_inset Formula $\omega_{o}+\Omega_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{o}-\Omega_{L}$
+\end_inset
+
+.
+ Looking edge-on, this circular motion is seen as a linear sinusoidal motion.
+ Seeing along the 
+\begin_inset Formula $y$
+\end_inset
+
+ axis, the linear motion is along the 
+\begin_inset Formula $x$
+\end_inset
+
+ axis, and the radiation is polarised perpendicular to the magnetic field.
+ Looking along the 
+\begin_inset Formula $z$
+\end_inset
+
+ direction, the motion is circular and the radiation is circularly polarised,
+ associated with the respective frequencies.
+\end_layout
+
+\end_body
+\end_document

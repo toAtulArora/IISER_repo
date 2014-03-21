@@ -1,0 +1,650 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A Story of 
+\begin_inset Newline newline
+\end_inset
+
+Atoms and Molecules
+\begin_inset Newline newline
+\end_inset
+
+series codename: effortBluePrint
+\end_layout
+
+\begin_layout Author
+Atul Sinh Aurora
+\end_layout
+
+\begin_layout Part
+One Electron Atoms
+\end_layout
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+We start with solving the shrodinger equation for a one electron atom.
+ We separate the CM motion.
+ For the relative motion, we solve the eigenvalue equation in spherical
+ polar coordinates.
+ This gives us the eigenfunctions and energy states.
+\end_layout
+
+\begin_layout Standard
+Then there're various operators that're discussed and virial theorem proved.
+\end_layout
+
+\begin_layout Section
+The Schrodinger equation for one-electron atoms
+\end_layout
+
+\begin_layout Standard
+Revision/Exercises: 
+\end_layout
+
+\begin_layout Enumerate
+You may want to attempt solving the same equation in the momentum representation
+\end_layout
+
+\begin_layout Enumerate
+Derive the operator corresponding to 
+\begin_inset Formula $\mathbf{L}^{2}$
+\end_inset
+
+ in position representation and show that its the angular part of the Laplacian.
+\end_layout
+
+\begin_layout Enumerate
+See how the centrifugal barrier is related in qm and the classical case
+\end_layout
+
+\begin_layout Enumerate
+Look at griffiths for why we have 
+\begin_inset Formula $E<V(\infty),V(-\infty)$
+\end_inset
+
+ for bound states and 
+\begin_inset Formula $E>V(\infty),V(-\infty)$
+\end_inset
+
+ for scattering states
+\end_layout
+
+\begin_layout Enumerate
+Figure precisely why 
+\begin_inset Formula $l$
+\end_inset
+
+ has to be an integer | talk to sagar later if necessary
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Find the relation between the derivation given in Jackson for 
+\begin_inset Formula $Y_{lm}$
+\end_inset
+
+ from the laplace equation and that of central forces and understand the
+ 
+\begin_inset Formula $l$
+\end_inset
+
+ problem in a little more detail
+\end_layout
+
+\begin_layout Enumerate
+Also figure why (other than how it pops out from the calculations in the
+ central force), 
+\begin_inset Formula $m$
+\end_inset
+
+ doesn't appear in the radial wave function.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Section 2.6 [central forces]
+\end_layout
+
+\begin_layout Standard
+You start with the Hamiltonian of a particle in a radial field.
+ Express the momentum by the laplacian, replace the angular part of it with
+ 
+\begin_inset Formula $\mathbf{L}^{2}$
+\end_inset
+
+ and then plug in 
+\begin_inset Formula $\psi=RY_{lm}$
+\end_inset
+
+ and you'll see 
+\begin_inset Formula $R$
+\end_inset
+
+ depends on 
+\begin_inset Formula $E$
+\end_inset
+
+ as is expected.
+ However it doesn't depend on 
+\begin_inset Formula $m$
+\end_inset
+
+ while it depends on 
+\begin_inset Formula $l$
+\end_inset
+
+.
+ You've to substitute 
+\begin_inset Formula $u=rR$
+\end_inset
+
+ to simplify the given equation.
+ Then the 
+\begin_inset Formula $l$
+\end_inset
+
+ part creates the centrifugal barrier like the classical case.
+ 
+\end_layout
+
+\begin_layout Subsection
+Hint to the Algorithm
+\end_layout
+
+\begin_layout Enumerate
+Wrote the schrodinger equation for the relative motion
+\end_layout
+
+\begin_layout Enumerate
+Expressed its radial part using section 2.6
+\end_layout
+
+\begin_layout Enumerate
+Looked at the potential for different values of 
+\begin_inset Formula $l$
+\end_inset
+
+ (it starts from 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ for 
+\begin_inset Formula $l=0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+[doubt] Showed that for 
+\begin_inset Formula $E>0$
+\end_inset
+
+ we have unbound oscillatory states at infinity (how are they normalized
+ then? another problem, how is the wavefunction for a free particle normalized?)
+\end_layout
+
+\begin_layout Enumerate
+Solving for 
+\begin_inset Formula $E<0$
+\end_inset
+
+, the bound state
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We want 
+\begin_inset Formula $u(0)=0$
+\end_inset
+
+ so that 
+\begin_inset Formula $R(0)<\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We make substitutions to get dimensionless variables
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\rho\sim r$
+\end_inset
+
+, has 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(information about radial distance)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lambda\sim Ze^{2}$
+\end_inset
+
+, has 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+(information about the charge)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You get a simplified equation [TODO: complete the verification exercise
+ in your notebook]
+\end_layout
+
+\begin_layout Enumerate
+For 
+\begin_inset Formula $r\rightarrow\infty$
+\end_inset
+
+, you get a simpler equation.
+ Its solutions are exponential 
+\begin_inset Formula $e^{\pm\rho/2}$
+\end_inset
+
+ and you keep the negative one for keeping the wavefunction bound (perhaps
+ therefore normalized)
+\end_layout
+
+\begin_layout Enumerate
+Knowing the asymptotic behavior, you claim 
+\begin_inset Formula $u(\rho)=e^{-\rho}f(\rho)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Use this to get an equation for 
+\begin_inset Formula $f(\rho)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You know (exercise 3 of your notes, section 2.6 in the book) that in this
+ case (any potential less singular than 
+\begin_inset Formula $1/r^{2}$
+\end_inset
+
+), 
+\begin_inset Formula $u(\rho)\sim\rho^{l+1}$
+\end_inset
+
+ for 
+\begin_inset Formula $\rho\rightarrow0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Thus you have 
+\begin_inset Formula $f(\rho)\sim\rho^{l+1}$
+\end_inset
+
+ near the origin.
+ You therefore plug 
+\begin_inset Formula 
+\[
+f(\rho)=\rho^{l+1}g(\rho)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $g(\rho)=\sum_{k=0}^{\infty}c_{k}\rho^{k}$
+\end_inset
+
+ with 
+\begin_inset Formula $c_{0}\neq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Plugging this in (without the expansion for 
+\begin_inset Formula $g(\rho)$
+\end_inset
+
+), will get you an equation in 
+\begin_inset Formula $g(\rho)$
+\end_inset
+
+.
+ This you solve by using the series expansion method.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Get a recursion relation
+\end_layout
+
+\begin_layout Enumerate
+Find the recursion relation in the limit 
+\begin_inset Formula $k\rightarrow\infty$
+\end_inset
+
+ and then show that this expansion is identical to that of the expansion
+ of 
+\begin_inset Formula $\rho^{p}e^{\rho}$
+\end_inset
+
+ (expand only the exponential).
+ Thus argue the expansion must terminate
+\end_layout
+
+\begin_layout Enumerate
+Then assume that the highest power of the polynomial is 
+\begin_inset Formula $n_{r}=0,1,2,\ldots$
+\end_inset
+
+ (call it the
+\emph on
+ radial quantum number
+\emph default
+) and find a condition that 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ must satisfy (remember 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ has 
+\begin_inset Formula $E$
+\end_inset
+
+, the eigenvalue of our original equation!).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Argue that the result is that 
+\begin_inset Formula $\lambda=n=1,2,3,\ldots$
+\end_inset
+
+ and call it the 
+\emph on
+principal quantum number.
+
+\emph default
+ Note how this means that 
+\begin_inset Formula $E$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $l$
+\end_inset
+
+! This is not obvious from the differential equation.
+\end_layout
+
+\begin_layout Enumerate
+Also observe what all values of 
+\begin_inset Formula $l$
+\end_inset
+
+ (remember 
+\begin_inset Formula $l>0$
+\end_inset
+
+ and integer were imposed by the spherical harmonics themselves) are allowed,
+ given a fixed value for 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ They can go to at max 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Congratulations, you just found the eigenvalue for the hydrogen atom differentia
+l equation.
+\end_layout
+
+\begin_layout Section
+Energy Levels
+\end_layout
+
+\begin_layout Enumerate
+Express 
+\begin_inset Formula $E$
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ which equals 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+This can be written in terms of the bohr radius, in terms of the modified
+ bohr radius and in terms of the fine structure constant (helps in relativistic
+ corrections).
+ Finally it can also be written in the atomic units of energy (where 
+\begin_inset Formula $-\frac{e^{2}}{4\pi\epsilon_{0}a_{0}}=-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Then there are some interesting comments about the result
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It matches bohrs model exactly.
+ (Super surprise! Especially given the kind of machinery required)
+\end_layout
+
+\begin_layout Enumerate
+There're infinitely many Energy states allowed, from a finite value all
+ the way to zero (as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+).
+ CLAIM: This is because the coulomb potential falls of slowly at large 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ Short range potentials like the square well results in finite number of
+ bound states.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You can calculate the degeneracy using the following arguments, to be 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $E$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $l$
+\end_inset
+
+ (characteristic of coulomb potential, if it deviates from coulomb, you
+ would have 
+\begin_inset Formula $n$
+\end_inset
+
+ splits for a given 
+\begin_inset Formula $n$
+\end_inset
+
+ because 
+\begin_inset Formula $0\leq l\leq n-1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E$
+\end_inset
+
+ doesn't depend on 
+\begin_inset Formula $m$
+\end_inset
+
+ either as it doesn't even show up in the differential equation [true for
+ any central potential] (recall section 2.6)
+\begin_inset Newline newline
+\end_inset
+
+Note however that this degeneracy pops up as 
+\begin_inset Formula $2l+1$
+\end_inset
+
+ splits upon application of an external magnetic field.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+You can also calculate the transition frequencies using this (as the energy
+ levels are degenerate and we don't need to worry about the selections rules
+ just yet)
+\end_layout
+
+\begin_layout Section
+The Eigenfunctions of the Bound State
+\end_layout
+
+\begin_layout Standard
+All this work is going to be better than bohr.
+ It'll give us the eigenfunctions that'll let us evaluate probability densities,
+ transition rates etc.
+\end_layout
+
+\begin_layout Subsection
+The radial eigenfunctions of the bound states
+\end_layout
+
+\begin_layout Standard
+Objective: Show that the physically accepted solutions will be associated
+ Laguerre polynomials.
+\end_layout
+
+\begin_layout Part
+Approximate Methods
+\end_layout
+
+\begin_layout Section
+Perturbation Theory
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

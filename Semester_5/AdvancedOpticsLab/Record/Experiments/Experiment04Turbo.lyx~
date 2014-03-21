@@ -59,8 +59,546 @@
 
 \begin_body
 
-\begin_layout Standard
+\begin_layout Section
+Introduction
+\end_layout
 
+\begin_layout Standard
+We start with a classical description of the Zeeman Splitting and Polarization,
+ beginning with justifying how we can model the Atom as a harmonic oscillator.
+ Next, we'll discuss the Fabry Parot device and its basics.
+ We'll then go on to discuss how it operates to produce fringes in various
+ setups.
+ We then briefly mention the constant deviation spectrometer and finally,
+ discuss the setup of the two related experiments.
+\end_layout
+
+\begin_layout Section
+Classical Description of Zeeman Splitting
+\end_layout
+
+\begin_layout Subsection
+Modeling the Atom as a harmonic oscillator
+\end_layout
+
+\begin_layout Standard
+Consider a simple atomic system with a heavy nucleus and a light electron.
+ In the rest frame of the electron, at equilibrium we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a_{0}=0=\frac{m_{e}v^{2}}{r_{0}}-\frac{kq^{2}}{r_{0}^{2}}
+\]
+
+\end_inset
+
+where radially inwards direction has been taken as negative and 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ is the radius of the orbit.
+ However, if we displace the the electron from its equilibrium trajectory,
+ and assume the velocity remains unchanged, we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=\frac{m_{e}v^{2}}{r_{0}+r}-\frac{kq^{2}}{\left(r_{0}+r\right)^{2}}
+\]
+
+\end_inset
+
+We can now taylor expand both the force term and the pseudo force to obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=m_{e}v^{2}\left(\frac{1}{r_{0}}-\frac{r}{r_{0}^{2}}+\frac{r^{2}}{r_{0}^{3}}+\ldots\right)-kq^{2}\left(\frac{1}{r_{0}^{2}}-\frac{2r}{r_{0}^{3}}+\frac{3r^{2}}{r_{0}^{4}}+\ldots\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the purturbation from the equilibrium point (radially outward corresponds
+ to 
+\begin_inset Formula $r>0$
+\end_inset
+
+).
+ Keeping only leading order terms and applying the equilibrium relation,
+ we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=\left(-\frac{mv^{2}}{r_{0}}+\frac{2kq^{2}}{r_{0}^{3}}\right)r=-m\omega_{0}^{2}r
+\]
+
+\end_inset
+
+where we have 
+\begin_inset Formula 
+\[
+\omega_{0}^{2}\equiv\left(\frac{v^{2}}{r_{0}}-\frac{2kq^{2}}{mr_{0}^{3}}\right)
+\]
+
+\end_inset
+
+Although we haven't shown 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ to be real, we assume it to be so.
+ This explains why we can model to first order, a simple (hydrogen) atom,
+ as a harmonic oscillator.
+\end_layout
+
+\begin_layout Subsection
+Explain the Splitting
+\end_layout
+
+\begin_layout Subsection
+Explain the Polarization
+\end_layout
+
+\begin_layout Standard
+Prashansa's doing the classical description part
+\end_layout
+
+\begin_layout Subsection
+Limitations
+\end_layout
+
+\begin_layout Standard
+Other than the inconsistencies of the assumptions, the fact that we need
+ a discharge tube for observing the effect is not explained.
+ For the purposes of this experiment, postponing the precise quantum mechanical
+ description for later, I would just state that radiation we observe is
+ when the electron jumps down an `orbit'.
+ This essentially means that two given `orbit' is split and due to selection
+ rules, we see only three wavelengths of radiation, shifted up, shifted
+ down and the original (before application of the magnetic field).
+\end_layout
+
+\begin_layout Standard
+Another peculiar result seems to be that the eigenvector passes through
+ the centre of the atom! This is a sort of projection, or so we were told.
+ We weren't able to identify the source of this error.
+\end_layout
+
+\begin_layout Section
+Fabry Parot
+\end_layout
+
+\begin_layout Standard
+This is a very elegent device.
+ This harnesses a principle very similar to that of the interferometer.
+ Instead of explaining in words, let's derive it straight away.
+ Consider the following diagram.
+ Consider a ray incident on the etelon at an angel 
+\begin_inset Formula $\theta$
+\end_inset
+
+ with respect to the outward normal of the first surface.
+ As shown, the virtual ray (with respect to the second surface) can be construct
+ed a distance 
+\begin_inset Formula $2d$
+\end_inset
+
+ behind the real ray.
+ Considering that the distance between the screen and the etelon, 
+\begin_inset Formula $D\gg d$
+\end_inset
+
+, to see interference we simply need to consider the path difference between
+ these two rays, along a plane whos normal coincides with the ray.
+ As shown in the diagram, it follows this distance is 
+\begin_inset Formula 
+\[
+\Delta\lambda=2d\cos\theta
+\]
+
+\end_inset
+
+This now has very interesting repurcursions.
+ If you have a monochromatic point source incident, depending on the angle
+ of a ray with the normal of the etelon surface, you would get a path difference.
+ This results in the formation of circular fringes with constructive interferenc
+e happening on specific radii (explicit calculations have been done in the
+ next experiment).
+ If there was another monochromatic source at the same location, you would
+ again get a circular pattern corresponding to the new wavelength.
+ Keep this in mind.
+ We'll use this property often.
+\end_layout
+
+\begin_layout Subsection
+The effect of sources and lenses
+\end_layout
+
+\begin_layout Standard
+It is important to understand in some detail what happens under the permutation
+ of the following conditions
+\end_layout
+
+\begin_layout Enumerate
+Monochromatic Source
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Point
+\end_layout
+
+\begin_layout Enumerate
+Extended
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Lens
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Before (the source is on the focal plane)
+\end_layout
+
+\begin_layout Enumerate
+After (if you remove the lens and look directly, it is equivalent, the eye
+ has a lens)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+[not discussed] Eye after lens
+\end_layout
+
+\begin_layout Standard
+So there will be 
+\begin_inset Formula $2^{3}=8$
+\end_inset
+
+ possibilities.
+ Let's do them all.
+ Consider a Monochromatic:
+\end_layout
+
+\begin_layout Enumerate
+Point Source, without any lens
+\begin_inset Newline newline
+\end_inset
+
+This was discussed earlier in this section.
+ The result is 
+\emph on
+circular fringes
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Extended Source, without any lens
+\begin_inset Newline newline
+\end_inset
+
+The point source and the etelon can be effectively treated as two extended
+ sources, 
+\begin_inset Formula $2d$
+\end_inset
+
+ distance apart (
+\begin_inset Formula $d$
+\end_inset
+
+ is as usual, the distance between the mirrors of the etelon).
+ Using superposition, we can claim the pattern should be a superposition
+ of multiple circular fringes, corresponding to everypoint of the source.
+ Effectively, 
+\emph on
+no pattern
+\emph default
+ should be visible.
+\end_layout
+
+\begin_layout Enumerate
+Point Source, with a lens before, but none after
+\begin_inset Newline newline
+\end_inset
+
+The result is that all the light rays incident on the etelon would be parallel.
+ Thus a uniform intensity pattern should be obtained, and changing the angle
+ of the etelon with respect to the principle axis of the lens (
+\begin_inset Formula $\theta$
+\end_inset
+
+) should yield 
+\emph on
+different uniform intensitites
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Extended Source, with a lens before, but none after
+\begin_inset Newline newline
+\end_inset
+
+In this case, each point on the extended source is mapped to a parallel
+ light beam of a fixed angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ with respect to the principle axis, as a function of its (the point's)
+ distance from the principle axis.
+ The etelon will simply add a phase difference of 
+\begin_inset Formula $2d\cos\theta$
+\end_inset
+
+ to a beam of a given orientation.
+ Since there's no lens after, all these will fall on a screen and result
+ in a 
+\emph on
+uniform intensity, independent of the orientation of the etelon
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Point Source, with a lens before and a lens after
+\begin_inset Newline newline
+\end_inset
+
+The image obtained will be that of a 
+\emph on
+single point
+\emph default
+, except it would be either bright or dark, 
+\emph on
+depending on the orientation
+\emph default
+ of the etelon (
+\begin_inset Formula $\theta$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Extended Source, with a lens before and a lens after
+\begin_inset Newline newline
+\end_inset
+
+The analysis from the previous part follows.
+ The other lens focusses parallel beams on different points on the focal
+ plane, essentially mapping 
+\begin_inset Formula $\theta$
+\end_inset
+
+ to position.
+ Since the phase difference depended on angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+, thus different points on the screen would be bright or dark, depending
+ on its value.
+ Symmetry considerations immediately tell us that the pattern will be 
+\emph on
+circular fringes
+\emph default
+ (may be cropped though, depending on the shape of the extended source).
+ 
+\begin_inset Newline newline
+\end_inset
+
+[`Prism' zeeman like]
+\end_layout
+
+\begin_layout Enumerate
+Point Source, without a lens before, but with a lens after
+\begin_inset Newline newline
+\end_inset
+
+This is perhaps the most non-trivial case.
+ Again, we effectively have two point sources, but they are followed by
+ a lens (both points are farther away from 
+\begin_inset Formula $2F$
+\end_inset
+
+).
+ Using the limiting size case, one can find the resultant position of the
+ image for both points.
+ Now the problem has been significantly been simplified.
+ Given some position of the screen (taken to be the focal plane of the lens
+ here), for any given point on the screen, we construct two lines (representing
+ the rays); the first joining the first point's image and the screen point
+ and the second joining the second point's image and the screen point.
+ Extending this line, we can find the point of intersection with the lens.
+ Now we connect the intersection of the first line with the lens, with a
+ line to the first source point.
+ Similarly for the second point we repeat the procedure.
+ Using this, one can calculate the path difference between the two rays
+ that superpose on the screen.
+ Without quantifying, from the symmetry, it is clear that a 
+\emph on
+circular pattern
+\emph default
+ will again be obtained in this case.
+ 
+\begin_inset Newline newline
+\end_inset
+
+[`TV' Zeeman like if you consider the source to be a point source]
+\end_layout
+
+\begin_layout Enumerate
+Extended Source, without a lens before, but with a lens after
+\begin_inset Newline newline
+\end_inset
+
+Here again, a 
+\emph on
+circular pattern
+\emph default
+ is obtained.
+ This can be easily understood again by considering two extended sources.
+ Now we consider only parallel beams coming from the corresponding points
+ of the two sources, for other beams (non parallel) will either not be focussed
+ or (different points, but parallel) not coherent.
+ As earlier, the etelon will add a phase difference depending on the angle
+ 
+\begin_inset Formula $\theta$
+\end_inset
+
+, and the lens will converge at a location, depending again on 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Thus, we get the aforesaid pattern.
+ 
+\begin_inset Newline newline
+\end_inset
+
+[Michelson, `TV' Zeeman like]
+\end_layout
+
+\begin_layout Standard
+Note however that if the object is placed between 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $2F$
+\end_inset
+
+ (where 
+\begin_inset Formula $F$
+\end_inset
+
+ is the focal point of the lens) then one can simply substitute the source
+ to be placed at the point where the image will be formed, had a screen
+ been placed there; then the setup can be matched to the possibilities given
+ above and proceed accordingly.
+ Further, in case of a point source along the principle axis, we can find
+ the image position by first finding the same for an extended source and
+ then take its size limit to zero.
+\end_layout
+
+\begin_layout Section
+Constant Deviation Spectrometer
+\end_layout
+
+\begin_layout Standard
+In a usual spectrometer, the wavelength resolved beam is not parallel.
+ This uses a prism as shown below (TODO: Complete this).
+ This prism produces a parallel resolved beam.
+ The details haven't been worked out for this part of the apparatus wasn't
+ used for calculations.
+\end_layout
+
+\begin_layout Section
+The Experiment
+\end_layout
+
+\begin_layout Subsection
+The `TV' Zeeman (polarization)
+\end_layout
+
+\begin_layout Standard
+The setup consists of an electromagnet, built with two coils and a mercury
+ cadmium lamp placed in the centre.
+ The light can be seen through the axis of the coils as well as through
+ a direction perpendicular to it.
+ This assembly is mounted on a rotatable, well, mount.
+ Adjacent to the mount, there's an optical bench.
+ The bench has a lens that results (eventually) in a diverging beam.
+ This is followed by the all glorious etelon.
+ Then we have two polarizers which are then viewed through a magnifier on
+ the screen using a camera.
+\end_layout
+
+\begin_layout Standard
+Let us now understand what is happening.
+ We start without polarisers.
+ This is the same as an extended source without a lens before (the object
+ is not at the focus of the lens) and a lens after.
+ However, the source is not monochromatic, instead it has three wavelengths.
+ Their circular patterns superimpose.
+ Further, as explained in the earlier sections, the different frequencies
+ are polarized differently.
+ The polarized can be inserted to block lights of specific frequencies and
+ the fringe pattern correspoding to that wavelength dissapears; resulting
+ in a higher contrast pattern.
+\end_layout
+
+\begin_layout Subsubsection
+Mini Procedure and Observations
+\end_layout
+
+\begin_layout Subsection
+The `Prism' Zeeman (splitting)
+\end_layout
+
+\begin_layout Standard
+The setup consists of collimeter, a special constant deviation prism, and
+ a telescope.
+ The collimeter has an adjustable slit width.
+ Incident to this can either be a sodium or mercury lamp, or a Neon discharge
+ tube, placed between two coils of an electromagnet.
+ 
+\end_layout
+
+\begin_layout Standard
+Let us look at what is happening.
+ The setup starts with converting the incident light into the shape of the
+ slit.
+ Then this light is passed through the collimeter.
+ The collimeter is focussed such that the point source is in its focal plane
+ (this is leading to a type 6 setup).
+ This is then incident on the prism, which does two things.
+ It guides the light into the telescope; and it spatially displaces different
+ wavelengths.
+ So effectively, the different frequencies have become spatially displaced
+ sources.
+ Since the shape of the extended source is a slit, introduction of an etelon
+ results in the creation of slits in the line (instead of the circular fringes).
+ Upon application of the magnetic field, a single frequency splits into
+ three, and so does the corresponding pattern.
+ What remains to show is that this splitting distance is directly proportional
+ to the applied magnetic field, and that was the experiment we performed.
+\end_layout
+
+\begin_layout Subsubsection
+Observations
 \end_layout
 
 \end_body

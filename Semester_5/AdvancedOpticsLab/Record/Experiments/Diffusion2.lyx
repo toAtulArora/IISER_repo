@@ -1,0 +1,406 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+There are two important things to understand in this experiment.
+\end_layout
+
+\begin_layout Itemize
+The phenomenon of diffusion and Einstein-Stokes' equation.
+\end_layout
+
+\begin_layout Itemize
+Pulse Field Gradient - Spin Echo (or PFGSE)
+\end_layout
+
+\begin_layout Section
+Diffusion
+\end_layout
+
+\begin_layout Standard
+Diffusion is the random translational (or Brownian) motion of molecules
+ or ions across a system driven by its internal thermal energy.
+ Translational diffusion is the basic mechanism by which molecules are distribut
+ed in space and plays an important role in any chemical reaction.
+ The systems for which there is an initial concentration gradient, Fick's
+ laws quantitatively explains the relation between the (instantanous and
+ local) concentration and the flux of the molecules/ions.
+\end_layout
+
+\begin_layout Standard
+Fick's first law postulates that the flux of a material across a given plane
+ is proportional to the concentration gradient across the plane.
+ In other words,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+J\ =-D\frac{\partial C(x,t)}{\partial x}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\emph on
+J
+\emph default
+ is the flux (Number/meter
+\begin_inset Formula $^{2}$
+\end_inset
+
+ sec) and 
+\emph on
+
+\begin_inset Formula $\frac{\partial C(x,t)}{\partial x}$
+\end_inset
+
+
+\emph default
+ is the concentration gradient.
+ The constant of proportionality is called the diffusion constant and has
+ the dimensions of 
+\begin_inset Formula $length^{2}/time$
+\end_inset
+
+.
+ There is a negative sign to show that molecules/ions are flowing in the
+ direction of lower concentration.
+ The above postulate is sufficient to understand the behavior of the systems
+ for which the concentration gradient doesn't vary with time.
+ To analyze the variations in concentration due to time, Fick further postulated
+ that the magntiude of change in the local concentration over time is equal
+ to that in local diffusion flux, implying,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial C(x,t)}{\partial t}=-\frac{\partial J(x,t)}{\partial x}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The above two equations can be combined to give the one dimensional version
+ of the famous diffusion (or heat) equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\partial C(x,t)}{\partial t}=\frac{\partial^{2}C(x,t)}{\partial x^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is assumed that the diffusion coefficient is independent of the position.
+ There are three more things to be proven before one can move on to the
+ NMR concepts.
+ Firstly, The mean square value of the displacment of the particles can
+ be evaluated as 
+\begin_inset Formula $6Dt.$
+\end_inset
+
+ To prove this, one first needs to find the fundamental solution of the
+ diffusion equation.
+ Let us skip the long procedure of deriving the fundamental solution of
+ the diffusion equation and take it as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P(x,t)=\frac{1}{(\sqrt{4\pi D})^{3}}e^{\frac{-(x-x_{0})^{2}}{4Dt}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Average of any function 
+\begin_inset Formula $L(t)$
+\end_inset
+
+ can now be calculated as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+<L(t)>\equiv\int_{\mathbb{R}^{3}}L(x,t)P(x,t)dx
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Secondly, we need Stoke's law that the force needed to move a small sphere
+ of radius 
+\emph on
+R
+\emph default
+ through a continuous medium of viscosity 
+\begin_inset Formula $\eta$
+\end_inset
+
+ with a velocity 
+\emph on
+V
+\emph default
+ is given by the following relation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=6\pi\eta RV
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lastly, Einstein-Stoke's equation describes the way that diffusion increases
+ in proportion to temperature, and is inversely proportional to the frictional
+ force experienced by a molecule 
+\begin_inset Formula $f,$
+\end_inset
+
+ where 
+\begin_inset Formula $f=6\pi\eta R.$
+\end_inset
+
+ Thus, 
+\begin_inset Formula 
+\begin{equation}
+D=\frac{k_{B}T}{6\pi\eta R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Pulse Field Gradient - Spin Echo
+\end_layout
+
+\begin_layout Standard
+Let's take a detour and first understand what spin echo sequence means.
+ Imagine that one has a sample where initially the magnetization of the
+ molecules is parallel to the external field.
+ Let's ignore the diffusion effects for a while.
+ 
+\end_layout
+
+\begin_layout Standard
+A 
+\begin_inset Formula $90º$
+\end_inset
+
+ pulse is applied along the x direction so that the net magnetization now
+ lies in the xy plane, in the y axis.
+ During the period of time following the removal the RF pulse, each spin
+ experiencing a slight variation in magnetic field begin to fan out slowly
+ or “dephase”.
+ The variations in the magnetic field come from both transverse relaxation
+ due to T
+\begin_inset Formula $_{2}$
+\end_inset
+
+ (spinspin interaction) and inhomogeneities in the external field.
+ The importance of the spin echo experiment is that the effects of the inhomogen
+eities are made reversible.
+ At a time 
+\begin_inset Formula $\tau$
+\end_inset
+
+ a 
+\begin_inset Formula $180$
+\end_inset
+
+º pulse is applied along the y direction.
+ The spins are therefore rotated by 
+\begin_inset Formula $180º$
+\end_inset
+
+ around the y axis thereby remaining in the xy plane.
+ As a result of the inverted relative positions, and because each spin continues
+ to precess with its former frequency, all spins will be perfectly reclustered
+ at time 
+\begin_inset Formula $2\tau$
+\end_inset
+
+ forming what is called an echo.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Diffusion measurements by NMR, http://www.uni-muenster.de/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+How are this dephasing and echoing related to diffusion coefficient measurements
+? Well, imagine now that I have the sample enclosed in a thin tube.
+ If I apply an external magnetic field that varies linearly with height
+ then I should expect a linear variation in the larmor freqencies.
+ Heterogenous magnetic field is often supplied by applying two pulses of
+ duration 
+\begin_inset Formula $\delta$
+\end_inset
+
+ and constant gradient 
+\begin_inset Formula $g$
+\end_inset
+
+ between the 
+\begin_inset Formula $90$
+\end_inset
+
+º and 
+\begin_inset Formula $180\text{º}$
+\end_inset
+
+ pulse and after the 
+\begin_inset Formula $180$
+\end_inset
+
+º pulse with an interval of time 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ between them, in the background of a homogenous field.
+ If the molecules are now in translational motion then the re-phasing of
+ the spins won't be perfect as the frequency of the spin vector while dephasing
+ is different from the frequency while rephasing.
+ This decreases the intensity of the spin echo which can be quantified by
+ the following expression:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I(t)=e^{-\frac{2\tau}{T_{2}}}e^{-Dg^{2}\gamma^{2}\delta^{2}z(\Delta-\delta/3)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(INSERT PROOF)
+\end_layout
+
+\begin_layout Standard
+We can vary 
+\begin_inset Formula $I$
+\end_inset
+
+ by keeping any 
+\begin_inset Formula $3$
+\end_inset
+
+quantities out of 
+\begin_inset Formula $g,\ \gamma,\ \delta,\ \Delta$
+\end_inset
+
+ constant and varying one and do a best fit with equation 
+\begin_inset Formula $7$
+\end_inset
+
+ to obtain 
+\begin_inset Formula $D.$
+\end_inset
+
+ In our experiment we varied 
+\begin_inset Formula $g$
+\end_inset
+
+ and held all the other parameters constant.
+ 
+\end_layout
+
+\end_body
+\end_document

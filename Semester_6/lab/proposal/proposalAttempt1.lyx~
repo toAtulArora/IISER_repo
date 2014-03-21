@@ -1,0 +1,448 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Power Distribution using Superconductors
+\end_layout
+
+\begin_layout Author
+Vinod, Joydeep, Biplob, Anita and Atul
+\end_layout
+
+\begin_layout Date
+January 2014
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+One of the major concern of power companies in the present time is the loss
+ on electrical power in the supply process.
+ Present day’s electrical connections in cities use aluminium wires.
+ These wires cause a high power loss of around 740 kW/km due to higher electrica
+l resistance[1].
+ Also the aluminium wires have to be carefully cleaned to remove the aluminium
+ oxide.
+ Even better conductors like copper cause a significant power loss.
+ The environmental impact in term of CO2 emission in the manufacturing process
+ of aluminium wires is 778 ton C/Km/year.
+ It is highly desirable to remove the existing aluminium cables with some
+ superconductor wires such that power loss due to high resistance could
+ be reduced.
+ As global warming is one of the major concern of the world, the alternative
+ for electrical power transmission should also reduce CO2 emission.
+ In early days, the major difficulty with super conductor wires was their
+ critical superconducting temperature.
+ With the discovery of high temperature superconductors in 1986 which could
+ operate at a temperature higher than 67K (temperature of liquid nitrogen),
+ it is possible to use superconductor cables for power transmission.
+ The transmission loss is very less for DC current as compared to AC and
+ it also required less number of cables.
+ With these high temperature superconductors, we propose to transmit DC
+ current in the main lines and which can be further converted to AC depending
+ on the individual requirement.
+ In this proposal we present the potential of replacing the existing aluminium
+ power lines with high temperature superconductor YBCO cables[2] in the
+ city of Chandigarh.
+ Since the superconductor cables are much costlier than the traditional
+ copper and aluminium wires and required to be maintained below a certain
+ temperature, checking the economic viability of the same should be checked
+ and it is important know the time period over which the establishment cost
+ is compensated by the reduced loss of power.
+ 
+\end_layout
+
+\begin_layout Section
+Blue Print
+\end_layout
+
+\begin_layout Subsection
+High Temperature Superconductor Wire
+\end_layout
+
+\begin_layout Standard
+Superconductivity is a phenomenon where the resistance of some material
+ is made zero by cooling it.
+ High Temperature Superconductor (HTS) was discovered in 1986.
+ Superconducting cables have been developed where coated conductors of YBCO
+ wires are used.
+ This results in low loss and low cost for a power cable.
+ YBCO wire, often called a coated conductor, can be used for carrying AC
+ current in a superconducting cable.
+ In these circumstances, hysteresis becomes important in determining the
+ resulting AC loss.
+ This consequently causes unnecessary load on the cooling system.
+\end_layout
+
+\begin_layout Subsubsection
+Structure of a single YBCO tape 
+\end_layout
+
+\begin_layout Standard
+On the base substrate, there’s an intermediate layer of some insulating
+ material.
+ This is followed by a superconducting layer of YBCO, which has minimal
+ thickness.
+ In case of current flow exceeding the critical current, the YBCO wire will
+ burn out due to heating.
+ To prevent such short high current pulses from causing accidents, an additional
+ layer of silver and copper is laminated.
+ To prevent AC losses, multiple such wires are closely wound around a cylinder,
+ as AC loss results from large magnetic field perpendicular to the edge.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename YBCO.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cutting of the YBCO Tape 
+\end_layout
+
+\begin_layout Standard
+For cutting the YBCO tape, laser methods are available.
+ They have been reportedly efficient enough to cause a minimal degradation
+ in the critical current (2-5%).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Structure of a usable 3 phase wire 
+\end_layout
+
+\begin_layout Standard
+A current insulating layer is added to a single YBCO wire.
+ Three these are assembled to create a 3 phase wire.
+ They are enclosed in a larger cable through which liquid nitrogen flows,
+ to maintain low temperature.
+ The diameter of the duct cable is 150 mm.
+ The maximum transportable length of wire is 500 m.
+ Tests have been performed on a 20 m long wire, with a joint at 10 m.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 3phase.jpg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Small scale experiment
+\end_layout
+
+\begin_layout Standard
+We plan to set up a small scale test of our experiment on some existing
+ power line.
+ Basically, we located a 11KV power line and then plan to implement our
+ model there (near Aiyappa Temple, Dilshad Garden, Delhi), for which we
+ require permission from BSES Delhi.
+ We chose Delhi because we had our model town as Delhi from where we got
+ all the data for the length of 11kv lines as well as other specifications.
+ We can perform our tests there on the 200 m range where we would place
+ 2 pumps and can easily see whether we can get the desired results of our
+ transmission and also we can measure all the costs and see the pros and
+ cons of our experiment.
+\end_layout
+
+\begin_layout Section
+Cost Estimate
+\end_layout
+
+\begin_layout Subsection
+Estimated Loss in the current distribution
+\end_layout
+
+\begin_layout Standard
+The cost involved in laying the power transmission lines is estimated for
+ the city of Delhi.
+\end_layout
+
+\begin_layout Enumerate
+Rate of laying 
+\begin_inset Formula $a$
+\end_inset
+
+ kV lines 
+\begin_inset Formula $(=b)\,6.59\times10^{5}$
+\end_inset
+
+ Rs/Km
+\end_layout
+
+\begin_layout Enumerate
+Length of 
+\begin_inset Formula $a$
+\end_inset
+
+ kV lines 
+\begin_inset Formula $(=d)\,6520\times10^{6}$
+\end_inset
+
+ Km
+\end_layout
+
+\begin_layout Enumerate
+Now the laying cost is simply 
+\begin_inset Formula $=db=Rs.\,2.572077\times10^{9}\sim Rs.\,200$
+\end_inset
+
+ crore rupees 
+\end_layout
+
+\begin_layout Standard
+Running Cost was estimated by finding the current flowing through the wires
+ and calculating the resulting power loss due to joule heating.
+ The current flowing through the wires was found indirectly by using the
+ capacity of the distribution power stations 
+\begin_inset Formula $(=c)$
+\end_inset
+
+ connected by these wires.
+ The running cost was calculated as below
+\end_layout
+
+\begin_layout Enumerate
+Power line voltage 
+\begin_inset Formula $=a=11\times10^{3}$
+\end_inset
+
+ V
+\end_layout
+
+\begin_layout Enumerate
+Distribution Transformers' total capacity 
+\begin_inset Formula $=c=6520\times10^{6}$
+\end_inset
+
+ VA
+\end_layout
+
+\begin_layout Enumerate
+Maximum current flowing through all the three wires combined 
+\begin_inset Formula $=i=c/a=592.73\times10^{3}$
+\end_inset
+
+ A
+\end_layout
+
+\begin_layout Enumerate
+Running Cost
+\begin_inset Formula $=i^{2}\rho\left(\frac{d}{A}\right)t=4.44\times10^{15}t$
+\end_inset
+
+ Joules (=Ws) which for 
+\begin_inset Formula $3.90$
+\end_inset
+
+ Rs./kWh becomes 
+\begin_inset Formula $=4.81\times10^{9}t\sim481t$
+\end_inset
+
+ crore Rupees, with 
+\begin_inset Formula $t$
+\end_inset
+
+ in hours (where 
+\begin_inset Formula $A=100mm^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho$
+\end_inset
+
+ has been evaluated from the specification of the 
+\begin_inset Formula $a$
+\end_inset
+
+ V lines, viz.
+ `11kV overhead line with `DOG' (100 
+\begin_inset Formula $mm^{2}$
+\end_inset
+
+ ACSR on PCC)'.)
+\end_layout
+
+\begin_layout Subsection
+Estimated Installation Cost of Superconducting distribution
+\end_layout
+
+\begin_layout Standard
+We are still awaiting quotations for pipes and the cooling system.
+ However, we have a quote for the superconducting wire, $250 to $400/A-m
+ which we've been told will drop as we get closer to finalizing the requirements.
+ If we evaluate the price using just the numbers for the superconducting
+ cable we'll have (with 1$~Rs.
+ 60, cost of wire as $300/A-m), Rs.
+\begin_inset Formula $6.96\times10^{19}$
+\end_inset
+
+for the model discussed in the previous section.
+ The corresponding time to recover the cost would then be 
+\begin_inset Formula $1.6509\times10^{6}\sim1.6$
+\end_inset
+
+ million years.
+ This although is a little overwhelming, can be reduced significantly if
+ as is expected, the wire cost is reduced in the near future.
+ Thus, it is anyway suitable to start perfecting the techniques.
+\end_layout
+
+\begin_layout Section
+Implementation Phases
+\end_layout
+
+\begin_layout Enumerate
+We first of all plan to set up the small scale experiment which was described
+ earlier.
+\end_layout
+
+\begin_layout Enumerate
+The next phase of our project is to see if the small scale experiment is
+ properly implemented or not and if implemented we can go directly to the
+ next phase.
+ If there are some cons then we would try to rectify them and proceed again
+ to repeating the first step until the defects are corrected.
+\end_layout
+
+\begin_layout Enumerate
+With the help of BSES Delhi, if we can convince them of the benefits of
+ such a project, we can implement our plan for replacing the overhead 11kv
+ lines with our high temperature superconductor lines and as a result we
+ can practically realize our project.
+ 
+\end_layout
+
+\begin_layout Section
+Reference
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "www.forumofregulators.gov.in/data/study/capital-cost-branchmark.rk"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset href
+LatexCommand href
+target "www.bsesdelhi.com/HTML/wb-bsesatagiance.html "
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+YBCO_wire (paper) Author: The Furukawa Electric Co.; Ltd.
+ 
+\end_layout
+
+\begin_layout Itemize
+[1] M.
+ HIROSE, T.
+ MASUDA, K.
+ SATO, R.
+ HATA, High-Temperature Superconducting (HTS) DC Cable.
+ 
+\series bold
+SEI TECHNICAL REVIEW 2006, 61, 29
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+[2] S.
+ Mukoyama, M.
+ Yagi, H.
+ Hirata, M.
+ Suzuki, S.
+ Nagaya, N.
+ Kashima, Y.
+ Shiohara, Development of YBCO High-Tc Superconducting Power Cables.
+ 
+\series bold
+Furukawa Review 2009, 35
+\series default
+.
+ 
+\end_layout
+
+\end_body
+\end_document

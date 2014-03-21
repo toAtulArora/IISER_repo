@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  22 OCT 2013 14:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  29 DEC 2013 05:22
 entering extended mode
 **C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/advanc
 edOptics.tex
@@ -503,15 +503,15 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen136
 \Gin@req@width=\dimen137
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 198.
-Package hyperref Info: Option `linktocpage' set `true' on input line 198.
-Package hyperref Info: Option `breaklinks' set `true' on input line 198.
-Package hyperref Info: Option `pageanchor' set `true' on input line 198.
-Package hyperref Info: Option `plainpages' set `false' on input line 198.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 198.
+Package hyperref Info: Option `colorlinks' set `true' on input line 199.
+Package hyperref Info: Option `linktocpage' set `true' on input line 199.
+Package hyperref Info: Option `breaklinks' set `true' on input line 199.
+Package hyperref Info: Option `pageanchor' set `true' on input line 199.
+Package hyperref Info: Option `plainpages' set `false' on input line 199.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 199.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 198.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 198.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 199.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 199.
 
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\classic
 thesis.sty
@@ -712,6 +712,14 @@ ents/Experiment01.aux)
 ents/Experiment02.aux)
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
 ents/Experiment03.aux)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment04.aux)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment05.aux
+
+LaTeX Warning: Label `e4tv' multiply defined.
+
+)
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\FrontBa
 ckmatter/Colophon.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -784,7 +792,7 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\FrontBa
-ckmatter/Titlepage.tex <gfx/iiserlogo.jpg, id=139, 65.33208pt x 69.3792pt>
+ckmatter/Titlepage.tex <gfx/iiserlogo.jpg, id=215, 65.33208pt x 69.3792pt>
 File: gfx/iiserlogo.jpg Graphic file (type jpg)
 
 <use gfx/iiserlogo.jpg>
@@ -807,7 +815,12 @@ ckmatter/Acknowledgments.tex
 LaTeX Font Info:    Font shape `T1/pplj/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplj/m/it' tried instead on input line 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--24
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
 
@@ -861,13 +874,24 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
+
+Overfull \hbox (11.85684pt too wide) in paragraph at lines 51--51
+ [][] []\T1/pplj/m/n/10.95 Modeling the Atom as a har-monic os-cil-la-tor []  
+ []
+
+
+Overfull \hbox (39.7919pt too wide) in paragraph at lines 62--62
+ [][] []\T1/pplj/m/n/10.95 Determining the Space Be-tween the Mir-rors of the E
+talon []  
+ []
+
+[5
+
+
+
+])
 \tf@toc=\write5
- [5
-
-
-
-]
+ [6]
 Package tocbasic Info: character protrusion at lof deactivated on input line 31
 .
 
@@ -876,6 +900,11 @@ dOptics.lof
 Overfull \hbox (14.32681pt too wide) in paragraph at lines 5--5
  [][] []\T1/pplj/m/n/10.95 Equivalent Michel-son In-ter-fer-om-e-ter Setup []  
 
+ []
+
+
+Overfull \hbox (8.7314pt too wide) in paragraph at lines 21--21
+ [][] []\T1/pplj/m/n/10.95 Calibration of Mag-netic Field and Cur-rent []  
  []
 
 )
@@ -900,9 +929,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [6
+ [7
 
-])
+]
+[8])
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
 ents/Experiment01.tex
 Chapter 1.
@@ -942,7 +972,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<gfx/e1.png, id=244, 463.7325pt x 259.7203pt>
+<gfx/e1.png, id=373, 463.7325pt x 259.7203pt>
 File: gfx/e1.png Graphic file (type png)
  <use gfx/e1.png>
 Package pdftex.def Info: gfx/e1.png used on input line 28.
@@ -954,7 +984,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 28--29
 
 [2 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/
 e1.png>] [3] [4]
-Overfull \hbox (5.78192pt too wide) in paragraph at lines 107--108
+Overfull \hbox (5.78192pt too wide) in paragraph at lines 114--115
 []\T1/pplj/m/n/10.95 What can cause a uni-form ro-ta-tion of the knob to screw 
 (threaded
  []
@@ -962,67 +992,67 @@ Overfull \hbox (5.78192pt too wide) in paragraph at lines 107--108
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
+(hyperref)                removing `math shift' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 131.
+(hyperref)                removing `\lambda' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 131.
+(hyperref)                removing `subscript' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 131.
+(hyperref)                removing `math shift' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `math shift' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\lambda' on input line 140.
+(hyperref)                removing `\lambda' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 140.
+(hyperref)                removing `subscript' on input line 147.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
+(hyperref)                removing `math shift' on input line 147.
 
-<gfx/1_obsA.pdf, id=299, 597.55246pt x 845.07718pt>
+[6] <gfx/1_obsA.pdf, id=443, 597.55246pt x 845.07718pt>
 File: gfx/1_obsA.pdf Graphic file (type pdf)
  <use gfx/1_obsA.pdf>
-Package pdftex.def Info: gfx/1_obsA.pdf used on input line 155.
-(pdftex.def)             Requested size: 436.80103pt x 617.75227pt.
-
-Overfull \hbox (100.80103pt too wide) in paragraph at lines 155--156
- [] 
- []
-
-<gfx/1_obsB.pdf, id=300, 597.55246pt x 845.07718pt>
-File: gfx/1_obsB.pdf Graphic file (type pdf)
- <use gfx/1_obsB.pdf>
-Package pdftex.def Info: gfx/1_obsB.pdf used on input line 162.
+Package pdftex.def Info: gfx/1_obsA.pdf used on input line 162.
 (pdftex.def)             Requested size: 436.80103pt x 617.75227pt.
 
 Overfull \hbox (100.80103pt too wide) in paragraph at lines 162--163
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+pplj on input line 171
+<gfx/1_obsB.pdf, id=444, 597.55246pt x 845.07718pt>
+File: gfx/1_obsB.pdf Graphic file (type pdf)
+ <use gfx/1_obsB.pdf>
+Package pdftex.def Info: gfx/1_obsB.pdf used on input line 169.
+(pdftex.def)             Requested size: 436.80103pt x 617.75227pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 169--170
+ [] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+pplj on input line 178
 .
-LaTeX Font Info:    No file OMSpplj.fd. on input line 171.
+LaTeX Font Info:    No file OMSpplj.fd. on input line 178.
 
 LaTeX Font Warning: Font shape `OMS/pplj/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 171.
+(Font)              for symbol `textbullet' on input line 178.
 
-[6]) [7] [8 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Re
-cord/gfx/1_obsA.pdf>] [9 <C:/Users/Atul/Documents/IISER_repo/Semester_5/Advance
-dOpticsLab/Record/gfx/1_obsB.pdf>]
+) [7] [8 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Recor
+d/gfx/1_obsA.pdf>] [9 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOp
+ticsLab/Record/gfx/1_obsB.pdf>]
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
 ents/Experiment02.tex [10
 
@@ -1031,28 +1061,25 @@ ents/Experiment02.tex [10
 
 ]
 Chapter 2.
-<gfx/e2_acousticGrating.jpg, id=358, 240.9pt x 92.2647pt>
+<gfx/e2_acousticGrating.jpg, id=487, 288.8391pt x 754.2579pt>
 File: gfx/e2_acousticGrating.jpg Graphic file (type jpg)
 
 <use gfx/e2_acousticGrating.jpg>
 Package pdftex.def Info: gfx/e2_acousticGrating.jpg used on input line 19.
-(pdftex.def)             Requested size: 436.80103pt x 167.31099pt.
+(pdftex.def)             Requested size: 268.80103pt x 701.99353pt.
 
-Overfull \hbox (100.80103pt too wide) in paragraph at lines 19--20
- [] 
- []
 
-[11 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx
-/e2_acousticGrating.jpg>]
+LaTeX Warning: Float too large for page by 70.54358pt on input line 23.
+
+[11]
 Overfull \hbox (3.72331pt too wide) in paragraph at lines 52--53
 []\T1/pplj/m/n/10.95 Will the diffrac-tion pat-tern change upon move-ment of th
 e diffrac-
  []
 
-[12] <gfx/e2_graph.pdf, id=373, 845.07718pt x 597.55246pt>
+<gfx/e2_graph.pdf, id=499, 845.07718pt x 597.55246pt>
 File: gfx/e2_graph.pdf Graphic file (type pdf)
-
-<use gfx/e2_graph.pdf>
+ <use gfx/e2_graph.pdf>
 Package pdftex.def Info: gfx/e2_graph.pdf used on input line 63.
 (pdftex.def)             Requested size: 436.80103pt x 308.8599pt.
 
@@ -1060,7 +1087,7 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 63--64
  [] 
  []
 
-<gfx/e2_obs.pdf, id=374, 597.55246pt x 845.07718pt>
+<gfx/e2_obs.pdf, id=500, 597.55246pt x 845.07718pt>
 File: gfx/e2_obs.pdf Graphic file (type pdf)
  <use gfx/e2_obs.pdf>
 Package pdftex.def Info: gfx/e2_obs.pdf used on input line 71.
@@ -1070,7 +1097,7 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 71--72
  [] 
  []
 
-<gfx/e2_results.pdf, id=375, 597.55246pt x 845.07718pt>
+<gfx/e2_results.pdf, id=501, 597.55246pt x 845.07718pt>
 File: gfx/e2_results.pdf Graphic file (type pdf)
 
 <use gfx/e2_results.pdf>
@@ -1081,17 +1108,14 @@ Overfull \hbox (100.80103pt too wide) in paragraph at lines 79--80
  [] 
  []
 
-) [13 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/g
-fx/e2_graph.pdf>] [14 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOp
-ticsLab/Record/gfx/e2_obs.pdf>] [15 <C:/Users/Atul/Documents/IISER_repo/Semeste
-r_5/AdvancedOpticsLab/Record/gfx/e2_results.pdf>]
-(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
-ents/Experiment03.tex [16
-
-
-
-
+) [12] [13 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Rec
+ord/gfx/e2_acousticGrating.jpg>] [14 <C:/Users/Atul/Documents/IISER_repo/Semest
+er_5/AdvancedOpticsLab/Record/gfx/e2_graph.pdf>] [15 <C:/Users/Atul/Documents/I
+ISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/e2_obs.pdf>] [16 <C:/Users/At
+ul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/e2_results.pdf>
 ]
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment03.tex
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1129,7 +1153,12 @@ Package eulervm Warning: Symbol \hbar not available;
 Package eulervm Warning: Symbol \hbar not available;
 (eulervm)                \hslash will be used instead on input line 77.
 
-[17]
+[17
+
+
+
+
+]
 Overfull \hbox (0.15353pt too wide) in paragraph at lines 120--125
 \T1/pplj/m/n/10.95 state and the nu-clear ex-cited state is an en-tirely dif-fe
 r-ent phe-nomenon
@@ -1188,7 +1217,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/T1.
 tex [29])
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/T2.
-tex [30]) <gfx/e3_T1P1.png, id=653, 642.4pt x 481.8pt>
+tex [30]) <gfx/e3_T1P1.png, id=783, 642.4pt x 481.8pt>
 File: gfx/e3_T1P1.png Graphic file (type png)
  <use gfx/e3_T1P1.png>
 Package pdftex.def Info: gfx/e3_T1P1.png used on input line 617.
@@ -1198,7 +1227,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 617--618
  [] 
  []
 
-<gfx/e3_T1P2.png, id=654, 642.4pt x 481.8pt>
+<gfx/e3_T1P2.png, id=784, 642.4pt x 481.8pt>
 File: gfx/e3_T1P2.png Graphic file (type png)
  <use gfx/e3_T1P2.png>
 Package pdftex.def Info: gfx/e3_T1P2.png used on input line 625.
@@ -1208,7 +1237,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 625--626
  [] 
  []
 
-<gfx/e3_T2P1.png, id=655, 642.4pt x 481.8pt>
+<gfx/e3_T2P1.png, id=785, 642.4pt x 481.8pt>
 File: gfx/e3_T2P1.png Graphic file (type png)
  <use gfx/e3_T2P1.png>
 Package pdftex.def Info: gfx/e3_T2P1.png used on input line 633.
@@ -1218,7 +1247,7 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 633--634
  [] 
  []
 
-<gfx/e3_T2P2.png, id=656, 642.4pt x 481.8pt>
+<gfx/e3_T2P2.png, id=786, 642.4pt x 481.8pt>
 File: gfx/e3_T2P2.png Graphic file (type png)
  <use gfx/e3_T2P2.png>
 Package pdftex.def Info: gfx/e3_T2P2.png used on input line 641.
@@ -1228,12 +1257,162 @@ Overfull \hbox (33.60205pt too wide) in paragraph at lines 641--642
  [] 
  []
 
-) [31 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/g
-fx/e3_T1P1.png (PNG copy)>] [32 <C:/Users/Atul/Documents/IISER_repo/Semester_5/
-AdvancedOpticsLab/Record/gfx/e3_T1P2.png (PNG copy)> <C:/Users/Atul/Documents/I
-ISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/e3_T2P1.png (PNG copy)>]
-[33 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx
-/e3_T2P2.png (PNG copy)>] [34
+
+Overfull \hbox (11.39917pt too wide) in paragraph at lines 656--663
+\T1/pplj/m/n/10.95 Diffusion is the ran-dom trans-la-tional (or Brow-n-ian) mo-
+tion of molecules
+ []
+
+[31 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx
+/e3_T1P1.png (PNG copy)>] [32 <C:/Users/Atul/Documents/IISER_repo/Semester_5/Ad
+vancedOpticsLab/Record/gfx/e3_T1P2.png (PNG copy)>] [33 <C:/Users/Atul/Document
+s/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/e3_T2P1.png (PNG copy)>]
+[34 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx
+/e3_T2P2.png (PNG copy)>]
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 784.
+
+
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/dif
+fusion.tex [35]) <gfx/diffusionGraph.png, id=830, 642.4pt x 481.8pt>
+File: gfx/diffusionGraph.png Graphic file (type png)
+
+<use gfx/diffusionGraph.png>
+Package pdftex.def Info: gfx/diffusionGraph.png used on input line 800.
+(pdftex.def)             Requested size: 369.60205pt x 277.20927pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 800--801
+ [] 
+ []
+
+) [36 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/g
+fx/diffusionGraph.png>]
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment04.tex
+Chapter 4.
+[37
+
+
+
+
+] [38]
+Overfull \hbox (3.23407pt too wide) in paragraph at lines 145--148
+[]\T1/pplj/m/n/10.95 The elec-tron os-cil-lat-ing par-al-lel to $\U/zeur/m/n/10
+.95 B$ \T1/pplj/m/n/10.95 ra-di-ates with an-gu-lar fre-quency
+ []
+
+[39] [40]
+Overfull \hbox (2.16766pt too wide) in paragraph at lines 262--280
+\T1/pplj/m/n/10.95 [`TV' Zee-man like if you con-sider the source to be a point
+ source] 
+ []
+
+[41] [42]
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 359.
+
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 359.
+
+
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/zee
+manReading.tex [43])
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/zee
+manCalibration.tex) <gfx/4_zeeman.pdf, id=902, 845.07718pt x 597.55246pt>
+File: gfx/4_zeeman.pdf Graphic file (type pdf)
+
+<use gfx/4_zeeman.pdf>
+Package pdftex.def Info: gfx/4_zeeman.pdf used on input line 365.
+(pdftex.def)             Requested size: 436.80103pt x 308.8599pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 365--366
+ [] 
+ []
+
+<gfx/4_zeemanCalibration.pdf, id=903, 845.07718pt x 597.55246pt>
+File: gfx/4_zeemanCalibration.pdf Graphic file (type pdf)
+
+<use gfx/4_zeemanCalibration.pdf>
+Package pdftex.def Info: gfx/4_zeemanCalibration.pdf used on input line 373.
+(pdftex.def)             Requested size: 436.80103pt x 308.8599pt.
+
+Overfull \hbox (100.80103pt too wide) in paragraph at lines 373--374
+ [] 
+ []
+
+<gfx/e4_zeemanPrism.jpg, id=904, 473.8503pt x 669.2202pt>
+File: gfx/e4_zeemanPrism.jpg Graphic file (type jpg)
+
+<use gfx/e4_zeemanPrism.jpg>
+Package pdftex.def Info: gfx/e4_zeemanPrism.jpg used on input line 381.
+(pdftex.def)             Requested size: 369.60205pt x 521.98965pt.
+
+Overfull \hbox (33.60205pt too wide) in paragraph at lines 381--382
+ [] 
+ []
+
+<gfx/e4_zeemanTV.jpg, id=905, 381.1038pt x 811.3512pt>
+File: gfx/e4_zeemanTV.jpg Graphic file (type jpg)
+
+<use gfx/e4_zeemanTV.jpg>
+Package pdftex.def Info: gfx/e4_zeemanTV.jpg used on input line 389.
+(pdftex.def)             Requested size: 336.0pt x 715.3407pt.
+
+
+LaTeX Warning: Float too large for page by 83.89075pt on input line 393.
+
+) [44] [45 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Rec
+ord/gfx/4_zeeman.pdf>] [46 <C:/Users/Atul/Documents/IISER_repo/Semester_5/Advan
+cedOpticsLab/Record/gfx/4_zeemanCalibration.pdf>] [47 <C:/Users/Atul/Documents/
+IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx/e4_zeemanPrism.jpg>]
+[48 <C:/Users/Atul/Documents/IISER_repo/Semester_5/AdvancedOpticsLab/Record/gfx
+/e4_zeemanTV.jpg>]
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment05.tex
+Chapter 5.
+[49
+
+
+
+
+] [50] <gfx/e5fabry.jpg, id=981, 435.5472pt x 830.1414pt>
+File: gfx/e5fabry.jpg Graphic file (type jpg)
+
+<use gfx/e5fabry.jpg>
+Package pdftex.def Info: gfx/e5fabry.jpg used on input line 172.
+(pdftex.def)             Requested size: 336.0pt x 640.42688pt.
+
+
+LaTeX Warning: Float too large for page by 8.97693pt on input line 176.
+
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 179.
+
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 179.
+
+
+Overfull \hbox (5.80368pt too wide) in paragraph at lines 179--180
+\T1/pplj/m/n/10.95 The ob-ser-va-tions cor-re-spond-ing to dis-tance es-ti-ma-t
+ion have been listed
+ []
+
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 181.
+
+
+Package hyperref Warning: No autoref name for `lstnumber' on input line 181.
+
+
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/fab
+ryPerotDistance.tex [51])
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/fab
+ryPerotDistanceResult.tex)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/fab
+ryPerotCalibration.tex)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\gfx/fab
+ryPerotCalibrationResult.tex)) [52] [53 <C:/Users/Atul/Documents/IISER_repo/Sem
+ester_5/AdvancedOpticsLab/Record/gfx/e5fabry.jpg>] [54
 
 
 
@@ -1244,7 +1423,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
 
  []
 
-) [35
+) [55
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
@@ -1266,6 +1445,10 @@ ents/Experiment01.aux)
 ents/Experiment02.aux)
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
 ents/Experiment03.aux)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment04.aux)
+(C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\Experim
+ents/Experiment05.aux)
 (C:\Users\Atul\Documents\IISER_repo\Semester_5\AdvancedOpticsLab\Record\FrontBa
 ckmatter/Colophon.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
@@ -1419,23 +1602,41 @@ gfx/e3_T1P1.png
 gfx/e3_T1P2.png
 gfx/e3_T2P1.png
 gfx/e3_T2P2.png
+gfx/diffusion.tex
+gfx/diffusionGraph.png
+Experiments/Experiment04.tex
+gfx/zeemanReading.tex
+gfx/zeemanCalibration.tex
+gfx/4_zeeman.pdf
+gfx/4_zeemanCalibration.pdf
+gfx/e4_zeemanPrism.jpg
+gfx/e4_zeemanTV.jpg
+Experiments/Experiment05.tex
+gfx/e5fabry.jpg
+gfx/fabryPerotDistance.tex
+gfx/fabryPerotDistanceResult.tex
+gfx/fabryPerotCalibration.tex
+gfx/fabryPerotCalibrationResult.tex
 FrontBackmatter/Colophon.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `advancedOptics.out' has not changed.
-(rerunfilecheck)             Checksum: F41A77222A8CF7542165D0B966803463;2234.
+(rerunfilecheck)             Checksum: 2557F2DC51268DBD2E5208DC46D76448;3739.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 16828 strings out of 493921
- 259330 string characters out of 3147285
- 504312 words of memory out of 3000000
- 19340 multiletter control sequences out of 15000+200000
- 98783 words of font info for 166 fonts, out of 3000000 for 9000
+ 17225 strings out of 493921
+ 267739 string characters out of 3147285
+ 507312 words of memory out of 3000000
+ 19521 multiletter control sequences out of 15000+200000
+ 102375 words of font info for 174 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  57i,15n,67p,1105b,3070s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{lstnumber.-2.32} has been referenced but does not
@@ -1443,23 +1644,24 @@ pdfTeX warning (dest): name{lstnumber.-2.32} has been referenced but does not
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/euler/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/eu
-ler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eu
-rm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palat
-ino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pf
-b>
-Output written on advancedOptics.pdf (41 pages, 2779812 bytes).
+.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/euler/euex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/eule
+r/eufm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb
+10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb7.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfo
+nt/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on advancedOptics.pdf (63 pages, 9942712 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 325 named destinations out of 1000 (max. 500000)
- 30541 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1214 PDF objects out of 1440 (max. 8388607)
+ 496 named destinations out of 1000 (max. 500000)
+ 31747 words of extra memory for PDF output out of 35830 (max. 10000000)
 

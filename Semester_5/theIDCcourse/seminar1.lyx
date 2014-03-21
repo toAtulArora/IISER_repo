@@ -10,7 +10,7 @@ eqs-within-sections
 figs-within-sections
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language british
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -88,16 +88,7 @@ http://www.github.com/toAtulArora/IISER_repo/
 \end_layout
 
 \begin_layout Author
-Atul Sinh Aurora
-\end_layout
-
-\begin_layout Abstract
-Seminars have been very challenging for me as the protocol of asking questions
- there is not very clear.
- Consequently, what follows, is not even close to being rigerous; the ideas
- understood, however have been attempted to be conveyed with enough clarity,
- although this may not represent my best work.
- 
+Atul Singh Arora
 \begin_inset Foot
 status collapsed
 
@@ -108,6 +99,15 @@ I am experimenting with 3 new concepts; an alternative keyboard layout,
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Abstract
+Seminars have been very challenging for me as the protocol of asking questions
+ there is not very clear.
+ Consequently, what follows, is not even close to being rigorous; the ideas
+ understood, however have been attempted to be conveyed with enough clarity,
+ although this may not represent my best work.
  The template used here is that of a book, however the chapters are merely
  corresponding to different seminars.
 \end_layout
@@ -144,15 +144,16 @@ The Abstract
 \end_layout
 
 \begin_layout Standard
-Access to ultrashort laser pulses that last long enough to accommodate only
- a few optical cycles, is begginning to allow time dependent nuclear and
- electron dynamics to be probed within atoms and molecules, thereby enhancing
- our ability to gain proper insights into how quantum systems react to strong
- external fields and how they might be subjected to optical control.
+Access to ultra-short laser pulses that last long enough to accommodate
+ only a few optical cycles, is beginning to allow time dependent nuclear
+ and electron dynamics to be probed within atoms and molecules, thereby
+ enhancing our ability to gain proper insights into how quantum systems
+ react to strong external fields and how they might be subjected to optical
+ control.
  In this talk I shall present an overview of how we have utilized intense
  laser pulses of duration as short as 4 femto seconds to explore dynamical
- effects of relevance to divere areas of the natural and engineering sciences,
- including applicationl purtaining to DNA damage, laser-induced materials
+ effects of relevance to diverge areas of the natural and engineering sciences,
+ including application pertaining to DNA damage, laser-induced materials
  modification and green photonics.
 \end_layout
 
@@ -171,8 +172,8 @@ Prof.
 \begin_layout Standard
 To get an understanding of the strength of this laser, consider the hydrogen
  atom for instance.
- Its coulombic attraction force, is a result of the electric field which
- is given by
+ Its coulomb attraction force, is a result of the electric field which is
+ given by
 \end_layout
 
 \begin_layout Standard
@@ -205,7 +206,7 @@ He then talked about small disturbances in the hydrogen atom that can be
 \begin_inset Formula $F=-kz$
 \end_inset
 
-, where as for large enough distrubances you get terms of higher order as
+, where as for large enough disturbances you get terms of higher order as
  well, which add overtones of the oscillation frequency to the mix.
  He said theoretically because of this and the time dependence, large disturbanc
 es (produced by the laser in this case), this is a difficult problem to
@@ -230,8 +231,8 @@ which has roughly an energy
 \end_inset
 
 .
- When this potential is dostorted by the disturbance, there can be a situation
- where tunelling occurs (roughly 
+ When this potential is distorted by the disturbance, there can be a situation
+ where tunnelling occurs (roughly 
 \begin_inset Formula $10^{14}-10^{15}W/cm^{2}$
 \end_inset
 
@@ -298,7 +299,7 @@ Thereafter, he started discussing the effect of the laser on Ethanol.
 \end_layout
 
 \begin_layout Standard
-Next he talked studies related to how for a given carrier gaussian envelope,
+Next he talked studies related to how for a given carrier Gaussian envelope,
  changing the phase affects the action of light on the molecule.
  He went on to talk about how the duration of the pulse also plays an interestin
 g role.
@@ -399,7 +400,7 @@ The Abstract
 Nano-patterning on surfaces can be achieved by self-organization or artificially
  by direct atom manipulation.
  Surface defects plays a very important role in the formation of patterns
- at nanoscale.
+ at nano-scale.
  It has been observed in experiments that preferential nucleation of self-organi
 zed nano-structures takes place on surfaces along step edges, dislocations
  and domain boundaries.
@@ -410,10 +411,10 @@ ng patterns induced by domain boundaries and step edges.
  defects.
  I will discuss a linear model which qualitatively explains the experimentally
  observed pattern.
- Then I will discuss nonlinear model which incorporates the effect of exclusion
+ Then I will discuss non-linear model which incorporates the effect of exclusion
  on these reaction diffusion processes.
  The effect of exclusion on simple trapping problem has been found to affect
- the stretched exponential behavior of the asymptotic survival probability.
+ the stretched exponential behaviour of the asymptotic survival probability.
  This has been recently verified by our numerical simulation.
 \end_layout
 
@@ -423,7 +424,7 @@ What I could note
 
 \begin_layout Standard
 The talk given by Dr.
- Trilochan Bagarti was rather innaccessible to our feeble minds.
+ Trilochan Bagarti was rather inaccessible to our feeble minds.
  However, what I could understand to the most extend, was the contents of
  the first slide, the 
 \emph on
@@ -461,8 +462,8 @@ Reaction diffusion models for formation of clusters on a surface with defects
 \begin_layout Standard
 He said that the motivation was lack of clear enough explanation of the
  formation of patterns on diffusion of Ge on Si(111)-(7x7).
- Patterns at a nanoscale seem to self organize.
- This can also be done arificially by atomic manipulation.
+ Patterns at a nano-scale seem to self organize.
+ This can also be done artificially by atomic manipulation.
  He showed an STM image of a clean Si(111)-7x7 surface, where bilayer steps
  and terraces with domain boundaries could be seen.
  The key ingredient necessary for the emergence of pattern from a uniform
@@ -489,7 +490,7 @@ I must mention that the mathematical formulations weren't very accessible
 
 \end_inset
 
- A homogenous stead state solution to this may b egiven by
+ A homogeneous stead state solution to this may b egiven by
 \end_layout
 
 \begin_layout Standard
@@ -504,7 +505,7 @@ I must mention that the mathematical formulations weren't very accessible
 \end_layout
 
 \begin_layout Standard
-So we linearize 
+So we linearise 
 \begin_inset Formula $u=u_{s}+\partial u;\,\partial u\sim e^{\omega t+ikx}$
 \end_inset
 
@@ -527,7 +528,7 @@ where
 \begin_inset Formula $J$
 \end_inset
 
- is the jacobian.
+ is the Jacobian.
 \end_layout
 
 \begin_layout Standard
@@ -563,22 +564,10 @@ K^{4}-\alpha^{2}\left(\frac{\partial u_{1}f}{D_{1}}+\frac{\partial u_{2}g}{D_{2}
 Next he discussed models of diffusion on disordered media and also in regular
  lattice.
  He further showed simulations of Serpinski Gasket and Percolation Cluster.
- He talked about anomolour diffusion in some detail.
+ He talked about anomalous diffusion in some detail.
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 \begin_inset Formula 
 \[
 \left\langle R_{N}^{2}\right\rangle =N^{2/d\omega}
@@ -631,7 +620,7 @@ Next he talked about a random walker that walks after waiting a time
 \begin_inset Formula $\tau$
 \end_inset
 
-, continous time random walk.
+, continuous time random walk.
  
 \end_layout
 
@@ -648,7 +637,7 @@ This was followed by a discussion which had a few more pictures;
 Trapping reaction-diffusion problem
 \emph default
 .
- Diffusing particles arriving at the traps get annhilated.
+ Diffusing particles arriving at the traps get annihilated.
  This is given by 
 \begin_inset Formula 
 \[
@@ -668,7 +657,7 @@ So the probability in the case where the traps are distributed uniformly,
 \begin_layout Standard
 \begin_inset Formula 
 \[
-p(t)\sim
+p(t)\sim e^{\alpha_{d}\rho^{2/(d+2)}t^{d/(d+2)}}
 \]
 
 \end_inset
@@ -684,7 +673,10 @@ And for the case of mobile traps we have
 \begin_inset Formula 
 \[
 p(t)\sim\begin{cases}
-e & d=1\end{cases}
+e^{-\alpha_{1}\rho t^{1/2}} & d=1\\
+e^{-\alpha_{2}\rho t/\ln t} & d=2\\
+e^{-\alpha_{3}\rho t} & d=3
+\end{cases}
 \]
 
 \end_inset
@@ -736,15 +728,15 @@ Green's Function Method
 \begin_layout Standard
 Then, he talked about 
 \emph on
-perfect traps and the law of stretched explonential
+perfect traps and the law of stretched exponential
 \emph default
 .
  The mathematical parts of this have been skipped as the notes weren't consisten
 t.
  The idea however was that every particle that arrives at the trap vanishes.
- In this case, the x-axis becomes a collection fo disjoint intervals.
+ In this case, the x-axis becomes a collection of disjoint intervals.
  He then showed that here, the survival probability, the lengths of intervals,
- becomes a poisson random variable.
+ becomes a poison random variable.
 \end_layout
 
 \begin_layout Standard
@@ -912,14 +904,14 @@ p(t_{f})=A^{2}t_{f}e^{-At_{f}}
 \begin_layout Standard
 He supplemented this with various diagrams and then moved on to describe
  a particularly simple example.
- Suppose we start with a constant concentration and after somet ime this
+ Suppose we start with a constant concentration and after some time this
  is what it looks like, there'll be formation of clusters at the origin
  and decay of particles.
- If you were to take the gradient and analyze further, you'll find that
+ If you were to take the gradient and analyse further, you'll find that
  more the number of atoms that come there (the clusters he meant) for the
  atoms, there's a repulsion which reduces the incoming rate.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Again, I'm very sorry, I myself am lost and not certain in what context
@@ -951,7 +943,7 @@ Trapping reaction with self exclusion
 \emph default
 .
  About the last topic, he said you could simulate for trapping with exclusion
- and numerically take the slope, however that is not a very simple tast
+ and numerically take the slope, however that is not a very simple test
  as the slope deals with a log term.
 \end_layout
 
@@ -960,12 +952,12 @@ In conclusion, his second last slide (last being thank you) read
 \end_layout
 
 \begin_layout Enumerate
-Presented a minimal model for cluster formation at nanoscales in the presence
+Presented a minimal model for cluster formation at nano-scales in the presence
  of surface defects
 \end_layout
 
 \begin_layout Enumerate
-The linear model agrees qualitatively with the eimernets
+The linear model agrees qualitatively with the experiments
 \end_layout
 
 \begin_layout Enumerate
@@ -1021,7 +1013,7 @@ The Abstract
 \end_layout
 
 \begin_layout Standard
-It was believed that energy transfer within the photosystem involved exciton
+It was believed that energy transfer within the photo-system involved exciton
  hopping from one site to the next.
  2D electronic spectroscopic experiments carried out by Fleming et al., needed
  a modification of this view.
@@ -1039,6 +1031,13 @@ It was believed that energy transfer within the photosystem involved exciton
 
 \begin_layout Section
 What I could partially follow
+\end_layout
+
+\begin_layout Standard
+Prof.
+ Sebastian started with talking about claims about biological systems that
+ perform quantum computation.
+ The outline of the talk has been listed:
 \begin_inset Foot
 status collapsed
 
@@ -1053,13 +1052,6 @@ This seminar has parts I could follow but couldn't deduce from prior steps.
 
 \end_layout
 
-\begin_layout Standard
-Prof.
- Sebastian started with talking about claims about biological systems that
- perform quantum computation.
- The outline of the talk has been listed:
-\end_layout
-
 \begin_layout Enumerate
 Problem
 \end_layout
@@ -1069,11 +1061,11 @@ Coherences
 \end_layout
 
 \begin_layout Enumerate
-Environment - Decoherence
+Environment - De-coherence
 \end_layout
 
 \begin_layout Enumerate
-The FMO photosystem
+The FMO photo system
 \end_layout
 
 \begin_layout Enumerate
@@ -1089,7 +1081,7 @@ Approach based on Adiabatic Basis
 \end_layout
 
 \begin_layout Enumerate
-Decoherence and Population Relaxation
+De-coherence and Population Relaxation
 \end_layout
 
 \begin_layout Enumerate
@@ -1099,8 +1091,8 @@ Summary
 \begin_layout Standard
 So let us start with the problem itself.
  The FMO complex (named after Scientists Fenna-Matthews-Olson, workin in
- the field) consists of three chlorophyl monomers.
- Chlorophyl itself has 7 centres.
+ the field) consists of three chlorophyll monomers.
+ Chlorophyll itself has 7 centres.
  You excite one of them, and the excitation can travel.
  There's one centre that transfers the energy to the reaction centre (number
  3).
@@ -1148,7 +1140,6 @@ will constitute what is called coherence.
  up time dependence.
  This results in the oscillation of the wave function with time.
  He even showed a simple animation to get the point through.
- TODO: Add the math.
 \end_layout
 
 \begin_layout Standard
@@ -1202,7 +1193,7 @@ The speaker then talked about an experiment in which 2D electronic spectroscopy
  biological system, as was expected from the aforesaid theory, lasting for
  about 600 fs.
  Typically they are expected to die out within 60 fs or so.
- There've been claims of oscillations lasting for over 1.2 to 1.5 ps also.
+ There have been claims of oscillations lasting for over 1.2 to 1.5 ps also.
 \end_layout
 
 \begin_layout Standard
@@ -1211,7 +1202,7 @@ The explanation of the experiment was rather simplistic and not too deep.
  pulses, each of 35 fs duration.
  The first pulse puts the ground state into a linear combination of ground
  and excited state.
- The second coverts it to a predominantly excited state and the final pulse
+ The second converts it to a predominantly excited state and the final pulse
  gets them back to the ground and excited state.
  The time between the first and second & the second and third can be changed
  experimentally.
@@ -1219,7 +1210,7 @@ The explanation of the experiment was rather simplistic and not too deep.
 \begin_inset Formula $S(\tau,T,t)$
 \end_inset
 
- which is fourier transformed to the frequency domain 
+ which is Fourier transformed to the frequency domain 
 \begin_inset Formula $S(\omega_{0},T,\omega_{1})$
 \end_inset
 
@@ -1230,7 +1221,7 @@ The explanation of the experiment was rather simplistic and not too deep.
 
 \begin_layout Standard
 Prof.
- Sebastian then went on to talk about the photosystem.
+ Sebastian then went on to talk about the photo-system.
  This essentially consists of one monomer of the FMO complex.
  The energy difference between the Highest Occupied Molecular Orbital and
  the Lowest Unoccupied Molecular Orbital was stated to be about 12,000 
@@ -1268,10 +1259,10 @@ So the question now is how to describe such a system including the surroundings.
  Imagine now that you have 7 molecules.
  I take their Hamiltonian without worrying about the surroundings.
  I can consider the surroundings to be phonon like sites, with a Hamiltonian
- approximated by that of a harmonic oscilator.
+ approximated by that of a harmonic oscillator.
  For each site I can write this.
  The coupling then will essentially cause fluctuations which results in
- the energy gaps going up and down, which as diagramatically shown by Prof.
+ the energy gaps going up and down, which as diagrammatically shown by Prof.
  Sebastian.
  Thus one can write the coupling as 
 \end_layout
@@ -1298,9 +1289,9 @@ centre and the temperature bath at
 \end_inset
 
 .
- The hamiltonian for this system however has one problem.
- The decoherence and population relxation are caused byt he same term.
- There're no small parameters to do purturbation.
+ The Hamiltonian for this system however has one problem.
+ The de-coherence and population relaxation are caused by the same term.
+ There are no small parameters to do perturbation.
 \end_layout
 
 \begin_layout Standard
@@ -1328,7 +1319,7 @@ The final result of all the hard work, was displayed on a very interesting
  slide.
  This had results from two different papers, numerically calculated points,
  on a population vs time (in femto seconds), together with Prof.
- Sebastian's curve, in complete agreement, for various centres of chlorophyl.
+ Sebastian's curve, in complete agreement, for various centres of chlorophyll.
 \end_layout
 
 \begin_layout Standard
@@ -1337,13 +1328,13 @@ The speaker then went on to talk about how transfer between the eigenstates
  If the surrounding's not ignored, then the oscillation doesn't last for
  long enough.
  Which is to say that without the population relaxation, the surroundings
- kill the oscillations very quidkly.
- However, with population relxation, you can see a transfer to site 3.
+ kill the oscillations very quickly.
+ However, with population relaxation, you can see a transfer to site 3.
 \end_layout
 
 \begin_layout Standard
 Some of the lurking questions were essentially to do with why the oscillations
- lasted for so very long and as it turns out, we can answer it in atleast
+ lasted for so very long and as it turns out, we can answer it in at least
  the following ways.
 \end_layout
 
@@ -1373,7 +1364,7 @@ The speaker concluded by stating that an almost analytic approach to the
 \end_layout
 
 \begin_layout Standard
-The final remark was an answer to the question `Are Bactera Quantum Computing?'.
+The final remark was an answer to the question `Are Bacteria Quantum Computing?'.
  According to the speaker, such quantum phenomena in biology, in his opinion,
  he doubts exist.
 \end_layout
@@ -1430,7 +1421,7 @@ The speaker opened with an amusing statement `I don't need to complete the
  So the basic unit, the cell is in the spot light.
  It has the basic characteristics of `life'.
  More specifically, Dr.
- Rao looked at the cell periferi in this talk in more detail, called the
+ Rao looked at the cell periphery in this talk in more detail, called the
  cell membrane.
  It is composed of thousands of kinds of lipids and other molecules.
 \end_layout
@@ -1478,7 +1469,7 @@ The speaker then digressed to discuss a seminal work of AM Turing.
  observed in Biology.
  His 1952 paper
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 which was written at a time when there were no explanations for biological
@@ -1495,7 +1486,7 @@ The changes of position and velocity are as given by Newton's Law of Motion
 \end_layout
 
 \begin_layout Enumerate
-The stresses are as given by the elastic motion, also taking into acount
+The stresses are as given by the elastic motion, also taking into account
  the osmotic pressure as given form the chemical data 
 \begin_inset Newline newline
 \end_inset
@@ -1529,14 +1520,14 @@ Prof.
 \end_inset
 
  is the degradation rate.
- The equations have been ommitted for brevity.
+ The equations have been omitted for brevity.
  The speaker however stressed on the fact that the cell has been treated
  as a passive entity, as the forces and stresses had been ignored.
  He went on to state that the cellular medium is interactive; driven out
  of equilibrium.
  By moving the meshwork (the cytoskeletal filaments) one can shift the system
  off of equilibrium.
- And this process happens continiously, using various different kinds of
+ And this process happens continuously, using various different kinds of
  molecular machines.
 \end_layout
 
@@ -1601,8 +1592,8 @@ Active Stress
 
 \begin_layout Standard
 Dr.
- Rao post this, looked at the repurcusions of applying active mechanics
- to the cell surface.
+ Rao post this, looked at the percussions of applying active mechanics to
+ the cell surface.
  As history has it, a 2D swimming pool model of lipid bilayer was widely
  accepted, more formally known as the picture of Fluid Mosaic (1972).
  This picture was challenged by new experimental evidence which showed a
@@ -1665,7 +1656,7 @@ Interacts with dynamic actin and remodels it
 \end_layout
 
 \begin_layout Standard
-Now interestingly enough, in an in vitro design of a minimal cortical actin
+Now interestingly enough, in an in vitro design of a minimal cortical action
  system, different components, viz.
  Actin, Myosin, Filament and ATP were appropriately added and after the
  required labeling, one is able to see the formation of asters; This was
@@ -1674,7 +1665,7 @@ Now interestingly enough, in an in vitro design of a minimal cortical actin
  Rao said that it is better to have a 3D system so that the removal of substrate
 s is facilitated, as compared to restriction between glass slides.
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 There were some more details which have skipped here, related to the aforesaid.
@@ -1692,7 +1683,7 @@ Now the question of computing comes.
  That said, using Turing's model, one can perform all kinds of computations.
  However there are always energy consideration and optimal rates.
  The concept of mutual information (shannon) can be used to improve the
- accuracty.
+ accuracy.
  The possibility of chemical programming is thus manifested here.
  The condition however is that for regulatable information processing in
  finite time, the system needs to be driven out of equilibrium.
@@ -1704,7 +1695,7 @@ With that, the speaker ended the talk.
  that have active cell membranes, and the answer to it was Eukaryotic Cells
  (specifically not bacterial cells).
  Another question was related to cryptography, which the speaker said is
- plaussible exists for there are various instances where a cell must know
+ plausible exists for there are various instances where a cell must know
  the other cell's type.
  Further there are instances when cells try to imitate to be `good guys'
  to penetrate.

@@ -1,0 +1,222 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+I'll start with a classical inspiration for existence of zeeman splitting
+ and how we can apply to hydrogen like atoms and the kind of .
+\end_layout
+
+\begin_layout Standard
+I'll then discuss how the fabry perot device works
+\end_layout
+
+\begin_layout Standard
+I'll then talk about why it is that we need a discharge tube to observe
+ the zeeman effect
+\end_layout
+
+\begin_layout Standard
+Then i'll go on to derive the quantum mechanical description (basically
+ the derivaiton is not so much physics as is simple algebra)
+\end_layout
+
+\begin_layout Standard
+Finally I'll 
+\end_layout
+
+\begin_layout Section
+Classical Description of Zeeman Splitting
+\end_layout
+
+\begin_layout Subsection
+Modeling the Atom as a harmonic oscillator
+\end_layout
+
+\begin_layout Standard
+Consider a simple atomic system with a heavy nucleus and a light electron.
+ In the rest frame of the electron, at equilibrium we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a_{0}=0=\frac{m_{e}v^{2}}{r_{0}}-\frac{kq^{2}}{r_{0}^{2}}
+\]
+
+\end_inset
+
+where radially inwards direction has been taken as negative.
+ However, if we displace the the electron from its equilibrium trajectory,
+ and assume the velocity remains unchanged, we can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=\frac{m_{e}v^{2}}{r_{0}+r}-\frac{kq^{2}}{\left(r_{0}+r\right)^{2}}
+\]
+
+\end_inset
+
+We can now taylor expand both the force term and the pseudo force to obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=m_{e}v^{2}\left(\frac{1}{r_{0}}-\frac{r}{r_{0}^{2}}+\frac{r^{2}}{r_{0}^{3}}+\ldots\right)-kq^{2}\left(\frac{1}{r_{0}^{2}}-\frac{2r}{r_{0}^{3}}+\frac{3r^{2}}{r_{0}^{4}}+\ldots\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the purturbation from the equilibrium point (radially outward corresponds
+ to 
+\begin_inset Formula $r>0$
+\end_inset
+
+).
+ Keeping only leading order terms and applying the equilibrium relation,
+ we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m_{e}a=\left(-\frac{mv^{2}}{r_{0}}+\frac{2kq^{2}}{r_{0}^{3}}\right)r=-m\omega_{0}^{2}r
+\]
+
+\end_inset
+
+where we have 
+\begin_inset Formula 
+\[
+\omega_{0}^{2}\equiv\left(\frac{v^{2}}{r_{0}}-\frac{2kq^{2}}{mr_{0}^{3}}\right)
+\]
+
+\end_inset
+
+Although we haven't shown 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ to be real, we assume it to be so.
+ This explains why we can model to first order, a simple (hydrogen) atom,
+ as a harmonic oscillator.
+\end_layout
+
+\begin_layout Subsection
+Prashansa's doing the classical description part
+\end_layout
+
+\begin_layout Section
+Fabry Parot
+\end_layout
+
+\begin_layout Standard
+This is a very elegent device.
+ This harnesses a principle very similar to that of the interferometer.
+ Instead of explaining in words, let's derive it straight away.
+ Consider the following diagram.
+ Consider a ray incident on the etelon at an angel 
+\begin_inset Formula $\theta$
+\end_inset
+
+ with respect to the outward normal of the first surface.
+ As shown, the virtual ray (with respect to the second surface) can be construct
+ed a distance 
+\begin_inset Formula $2d$
+\end_inset
+
+ behind the real ray.
+ Considering that the distance between the screen and the etelon, 
+\begin_inset Formula $D\gg d$
+\end_inset
+
+, to see interference we simply need to consider the path difference between
+ these two rays, along a plane whos normal coincides with the ray.
+ As shown in the diagram, it follows this distance is 
+\begin_inset Formula 
+\[
+\Delta\lambda=2d\cos\theta
+\]
+
+\end_inset
+
+This now has very interesting repurcursions.
+ If you have a monochromatic point source incident, depending on the angle
+ of a ray with the normal of the etelon surface, you would get a path difference.
+ This results in the formation of circular fringes with constructive interferenc
+e happening on specific radii (explicit calculations have been done in the
+ next experiment).
+ If the source was dichromatic, you would again get a circular pattern correspon
+ding 
+\end_layout
+
+\end_body
+\end_document

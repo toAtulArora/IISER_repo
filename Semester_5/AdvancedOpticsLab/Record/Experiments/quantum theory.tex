@@ -1,0 +1,108 @@
+%% LyX 2.0.6 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[latin9]{inputenc}
+\usepackage{amssymb}
+\usepackage{babel}
+\begin{document}
+
+\section{Zeeman effect }
+
+It is estabilished now that an atom in a magnetic field can be modelled
+as a simple harmonic oscillator. Let $\omega_{o}$ be the frequency
+of motion in the absence of magnetic field; the electron has the same
+resonant frequency in motion along $x$, $y$ and $z$ directions.
+In the presence of magnetic field B, the equation of motion, in the
+rest frame of electron is given as 
+\[
+m_{o}\frac{dv}{dt}=-m_{o}\omega_{o}^{2}r-ev\times B
+\]
+where the $r$ is the position vector and $v=\dot{r}$ is the velocity
+vector. If the direction of the field is along the $z$ axis, $B=B\hat{e_{z}}$
+
+\[
+\ddot{r}+2\Omega_{L}\dot{r\times\hat{e}_{z}+\omega_{o}^{2}}r=0
+\]
+ where $\Omega_{L}$ is the Larmor frequency defined as
+\[
+\Omega_{L}=\frac{eB}{2m_{o}}
+\]
+ Applying the matrix method to solve the above equation, we look for
+a solution in the form of a vector oscillating at $\omega$ such as
+\[
+r=Re\left\{ \left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)exp(-i\omega t\right\} 
+\]
+ and obtain the following matrix
+\[
+\left(\begin{array}{ccc}
+\omega_{o}^{2} & -2i\omega\Omega_{L} & 0\\
+2i\omega\Omega_{L} & \omega_{o}^{2} & 0\\
+0 & 0 & \omega_{o}^{2}
+\end{array}\right)\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)=\omega^{2}\left(\begin{array}{c}
+x\\
+y\\
+z
+\end{array}\right)
+\]
+ we then find the eigen values by building the following determinant
+\[
+\left|\begin{array}{ccc}
+\omega_{o}^{2}-\omega^{2} & -2i\omega\Omega_{L} & 0\\
+2i\omega\Omega_{L} & \omega_{o}^{2}-\omega^{2} & 0\\
+0 & 0 & \omega_{o}^{2}-\omega^{2}
+\end{array}\right|=0
+\]
+ which then gives 
+\[
+\left\{ \omega^{4}-\left(2\omega_{o}^{2}+4\Omega_{L}^{2}\right)\omega^{2}+\omega_{o}^{2}\right\} \left(\omega^{2}-\omega_{o}^{2}\right)=0
+\]
+By inspection, $\omega=\omega_{o}$is one solution. For $\Omega_{L}\ll\omega_{o}$
+, the approximate frequencies are $\omega\backsimeq\omega_{o}\pm\Omega_{L}$.
+The eigen vectors corresponding to these
+\[
+r=\left(\begin{array}{c}
+cos(\omega_{o}-\Omega_{L})t\\
+-sin(\omega_{o}-\Omega_{L})t\\
+0
+\end{array}\right),\left(\begin{array}{c}
+0\\
+0\\
+cos(\omega_{o}t)
+\end{array}\right),\left(\begin{array}{c}
+cos(\omega_{o}+\Omega_{L})t\\
+sin(\omega_{o}+\Omega_{L})t\\
+0
+\end{array}\right)
+\]
+ the motion along $z$ axis is not affected by the magnetic field
+and the angular frequency remains $\omega_{o}$. The off diagonal
+terms $\pm2i\omega\Omega_{L}$of the matrix depict the coupling of
+the motions in the $x$ and $y$ directions resulting in circular
+motion confined to the $xy$ plane, with frequencies shifted from
+the Larmor frequency $\omega_{o}$. Evidently the applied external
+field separates the initially equal frequencies.
+
+The direction of radiation is given by the $a\times r$, where the
+$a$ is the acceleration and $r$ is the position vector of the electron. 
+
+The electron oscillating parallel to $B$ radiates with angular frequency
+$\omega_{o}$, in the $y$ direction when seen in the $xy$ plane,
+and no radiation is observed in the direction of the magnetic field.
+
+The circular motion of the electron produces radiation with angular
+frequencies $\omega_{o}+\Omega_{L}$ and $\omega_{o}-\Omega_{L}$.
+Looking edge-on, this circular motion is seen as a linear sinusoidal
+motion. Seeing along the $y$ axis, the linear motion is along the
+$x$ axis, and the radiation is polarised perpendicular to the magnetic
+field. Looking along the $z$ direction, the motion is circular and
+the radiation is circularly polarised, associated with the respective
+frequencies.
+\end{document}

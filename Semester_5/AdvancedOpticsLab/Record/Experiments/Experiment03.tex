@@ -646,10 +646,163 @@ September 9 to 30, 2013 \\
 
 
 \section{Diffusion}
+	There are two important things to understand in this experiment.
+	\begin{itemize}
+	\item The phenomenon of diffusion and Einstein-Stokes' equation.
+	\item Pulse Field Gradient - Spin Echo (or PFGSE)
+	\end{itemize}
+
 	\subsection{Theory}
-		Cation
+		Diffusion is the random translational (or Brownian) motion of molecules
+		or ions across a system driven by its internal thermal energy. Translational
+		diffusion is the basic mechanism by which molecules are distributed
+		in space and plays an important role in any chemical reaction. The
+		systems for which there is an initial concentration gradient, Fick's
+		laws quantitatively explains the relation between the (instantaneous
+		and local) concentration and the flux of the molecules/ions.
+
+		Fick's first law postulates that the flux of a material across a given
+		plane is proportional to the concentration gradient across the plane.
+		In other words,
+
+		\begin{equation}
+		J\ =-D\frac{\partial C(x,t)}{\partial x}
+		\end{equation}
+
+
+		Where \emph{J} is the flux (Number/meter$^{2}$ sec) and \emph{$\frac{\partial C(x,t)}{\partial x}$}
+		is the concentration gradient. The constant of proportionality is
+		called the diffusion constant and has the dimensions of $length^{2}/time$.
+		There is a negative sign to show that molecules/ions are flowing in
+		the direction of lower concentration. The above postulate is sufficient
+		to understand the behaviour of the systems for which the concentration
+		gradient doesn't vary with time. To analyse the variations in concentration
+		due to time, Fick further postulated that the magnitude of change
+		in the local concentration over time is equal to that in local diffusion
+		flux, implying,
+
+		\begin{equation}
+		\frac{\partial C(x,t)}{\partial t}=-\frac{\partial J(x,t)}{\partial x}
+		\end{equation}
+
+
+		The above two equations can be combined to give the one dimensional
+		version of the famous diffusion (or heat) equation:
+
+		\[
+		\frac{\partial C(x,t)}{\partial t}=\frac{\partial^{2}C(x,t)}{\partial x^{2}}
+		\]
+
+
+		It is assumed that the diffusion coefficient is independent of the
+		position. There are three more things to be proven before one can
+		move on to the NMR concepts. Firstly, The mean square value of the
+		displacement of the particles can be evaluated as $6Dt.$ To prove
+		this, one first needs to find the fundamental solution of the diffusion
+		equation. Let us skip the long procedure of deriving the fundamental
+		solution of the diffusion equation and take it as:
+
+		\begin{equation}
+		P(x,t)=\frac{1}{(\sqrt{4\pi D})^{3}}e^{\frac{-(x-x_{0})^{2}}{4Dt}}
+		\end{equation}
+
+
+		Average of any function $L(t)$ can now be calculated as:
+
+		\begin{equation}
+		<L(t)>\equiv\int_{\mathbb{R}^{3}}L(x,t)P(x,t)dx
+		\end{equation}
+
+
+		Secondly, we need Stoke's law that the force needed to move a small
+		sphere of radius \emph{R} through a continuous medium of viscosity
+		$\eta$ with a velocity \emph{V} is given by the following relation:
+
+		\begin{equation}
+		F=6\pi\eta RV
+		\end{equation}
+
+
+		Lastly, Einstein-Stoke's equation describes the way that diffusion
+		increases in proportion to temperature, and is inversely proportional
+		to the frictional force experienced by a molecule $f,$ where $f=6\pi\eta R.$
+		Thus, 
+		\begin{equation}
+		D=\frac{k_{B}T}{6\pi\eta R}
+		\end{equation}
+
+
 	\subsection{Practical Implementation}
-		Cation
+		In this section we discuss the `Pulse Field Gradient - Spin Echo' technique.
+
+		Let's take a detour and first understand what spin echo sequence means.
+		Imagine that one has a sample where initially the magnetization of
+		the molecules is parallel to the external field. 
+		% Let's ignore the diffusion effects for a while. 
+
+		A $90^o$ pulse is applied along the x direction so that
+		the net magnetization now lies in the xy plane, in the y axis. During
+		the period of time following the removal the RF pulse, each spin experiencing
+		a slight variation in magnetic field begin to fan out slowly or \textquotedblleft{}dephase\textquotedblright{}.
+		The variations in the magnetic field come from both transverse relaxation
+		due to T$_{2}$ (spin-spin interaction) and inhomogeneities in the
+		external field. The importance of the spin echo experiment is that
+		the effects of the inhomogeneities are made reversible. At a time
+		$\tau$ a $180$º pulse is applied along the y direction. The spins
+		are therefore rotated by $180^o$ around the y axis thereby
+		remaining in the xy plane. As a result of the inverted relative positions,
+		and because each spin continues to precess with its former frequency,
+		all spins will be perfectly re-clustered at time $2\tau$ forming what
+		is called an echo.%
+		\footnote{Diffusion measurements by NMR, http://www.uni-muenster.de/%
+		}
+
+		How are this de-phasing and echoing related to diffusion coefficient
+		measurements? Well, imagine now that I have the sample enclosed in
+		a thin tube. If I apply an external magnetic field that varies linearly
+		with height then I should expect a linear variation in the larmor
+		frequencies. Heterogeneous magnetic field is often supplied by applying
+		two pulses of duration $\delta$ and constant gradient $g$ between
+		the $90$º and $180\text{º}$ pulse and after the $180$º pulse with
+		an interval of time $\Delta$ between them, in the background of a
+		homogeneous field. If the molecules are now in translational motion
+		then the re-phasing of the spins won't be perfect as the frequency
+		of the spin vector while de-phasing is different from the frequency
+		while re-phasing. This decreases the intensity of the spin echo which
+		can be quantified by the following expression:
+
+		\begin{equation}
+		I(t)=e^{-\frac{2\tau}{T_{2}}}e^{-Dg^{2}\gamma^{2}\delta^{2}(\Delta-\delta/3)}
+		\end{equation}\label{diffusionEquation}
+
+		We can vary $I$ by keeping any $2$ quantities out of $g,\ \delta,\ \Delta$
+		constant and varying one and do a best fit with equation $7$ to obtain
+		$D.$ In our experiment we varied $g$ and held all the other parameters
+		constant. 
+
+	\subsection{Observations and Result}
+		The data obtained has been listed in \autoref{e3diffusionData}, where the first column is the percentage of gradient strength, the following columns represent the intensity of two different peaks. Only the first has been used for further analysis in the report.
+		Experimentally, $\delta = 800 \mu s = 8\times 10^{-4}s, \Delta=15 ms=1.5\times10^{-2}s,g=( \text{fraction}) \times 53.5 \times 0.63 G cm^{-1}= () 33.7\times 10^4 Tcm^{-1}, \gamma = 2.675 222 \times 10^8 s^{-1}T^{-1}$ and plugging them into \autoref{diffusionEquation} and taking log on both sides, we get 
+		\begin{align}
+			\log I &= \text{const} - D\times(7809.87)\times(\text{gradient intensity fraction})^2 \\
+					&= \text{const} - D\times(0.780987)\times(\text{GPZ6})^2
+		\end{align}
+		Upon curve fitting, we get 
+		\begin{equation}
+			D\times(0.780987)=-0.000154109 \pm 2.209\times 10^{-7} (0.1433\%)
+		\end{equation}
+		from which we get $D=1.973\times 10^{-4} (\pm 0.1433\%) cm^2 s^{-1}$
+		\lstinputlisting{gfx/diffusion}\label{e3diffusionData}
+
+		% \include{gfx/diffusionGraph}
+		\begin{figure}[bth]
+			\begin{center}
+				\includegraphics[width=1.1\linewidth]{gfx/diffusionGraph}
+			\end{center}
+		\caption[log(Intensity) vs Gradient Percentage$^2$]{For diffusion, log(Intensity) vs Gradient Percentage$^2$}
+		\label{e3diffusion}
+		\end{figure}
+
 	% \subsection{Understanding the Pulse Business}
 	% 	\subsubsection{Notation and the spin 1/2 system}
 	% 		Let $\ket{\alpha}$ and $\ket{\beta}$ represent the two eigenvectors of the $I_z$ angular momentum operator. So in general the system can be in a state $\ket\psi$ given by
