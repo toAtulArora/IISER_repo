@@ -1,0 +1,1037 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans avant
+\font_typewriter cmtt
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The Ion Trap Architecture
+\end_layout
+
+\begin_layout Title
+Atul Singh Arora
+\end_layout
+
+\begin_layout Abstract
+In my course of study so far, I've realized that there're atleast two good
+ ways of studying new material.
+ The first is to read the content as a hint (pretend like you're in the
+ past and its coming from the future) to yourself for developing a new subject
+ from scratch.
+ Your mind won't question everything and automatically try to get the point.
+ The other is to understand every single word of the material so you've
+ mastered it when you're through.
+ The first chapter and second (last) chapter reflect the corresponding strategie
+s.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Oversimplified overview
+\end_layout
+
+\begin_layout Section
+Prerequisites for the chapter
+\end_layout
+
+\begin_layout Standard
+Can read and take being made fun of occasionally in good spirit.
+ Also it'll help if you have some rough idea about what Qubits etc.
+ really are and their use in the context of information processing.
+\end_layout
+
+\begin_layout Section
+The meat (or vegetable if you prefer)
+\end_layout
+
+\begin_layout Standard
+If you've read Griffiths with any love, you would know that Earnshaw's thoerem
+ prohibits creation of a minima using electrostatic potential.
+ (now don't ask which Griffiths) Thus you can't trap ions conventionally.
+\end_layout
+
+\begin_layout Enumerate
+Confining the ions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Production of ions: Heating calcium in high vaccuum | fire high speed electrons
+ | some resulting ions fall inside the trap and get stuck
+\end_layout
+
+\begin_layout Enumerate
+Trap structure: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Graphics
+	filename potential.png
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+The idea is simple.
+ Since you can't create a potential minima anywhere inside the boundary,
+ you can't trap an ion.
+ But you see the saddle point.
+ You change the potential rapidly so that the `U' minima oscillates between
+ being along the X and Y axis (say).
+ This way, on an average, the saddle point sees zero average potential.
+ If the ion were anywhere other than this point, it'll experiences oscillating
+ forces.
+ This effectively results in confinement of the atom.
+ Q1.
+ How does an oscillating force ensure confinement? Q2.
+ What frequencies are most effective and why? Q3.
+ How do you know only 1 ion is trapped? 
+\begin_inset Newline newline
+\end_inset
+
+The next immediate question is what restricts the ion in the Z axis.
+ Well, we just pin the ion using a positive potential (by putting two electrodes
+ along the said axis.)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Controlling the trapped ions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Let's say that it is obvious we need the kinetic energy of the ions to be
+ much smaller than that it picks up upon interaction with a laser (or upon
+ emitting a single photon).
+ This number turns up to be about 32 K Hertz (Energy/Plank's constant).
+ The corresponding temperature to have thermal energy lower than this, turns
+ out to be a few micro kelvins!
+\begin_inset Newline newline
+\end_inset
+
+This is a serious challenge.
+\end_layout
+
+\begin_layout Enumerate
+How do you circumvent this? Laser cooling.
+ Oximoron you might say but the following little thought is illuminating.
+ If you hit an atom with light with opposite momentum, the atom slows down
+ as the light is bounced back.
+ So if you could get the ions to absorb light preferentially going opposite
+ in direction to their momentum, you've found a groundbreaking method of
+ cooling!
+\begin_inset Newline newline
+\end_inset
+
+And yes, somebody thought of that too.
+ You use something you're already familiar with, resonance and doppler.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Resonance: This is the (in)famous phenomenon where an innocent and mild
+ vibration can cause an otherwise stable system to have almost devastating
+ effects, given the frequency is just right.
+ A similar effect is observed with atoms and with remarkable sensitivity
+ to the precision of the frequency.
+ Light is absorbed by the atom only when the frequency is just right.
+\end_layout
+
+\begin_layout Enumerate
+Doppler: This is as you're well aware, the principle behind the sound effect
+ you get when a car zooms past.
+ We exploit this and set the frequency of the laser just below the resonant
+ frequency.
+ This does it then.
+\begin_inset Newline newline
+\end_inset
+
+NOTE: This is not at all this simple.
+ Q1.
+ If the photon is absorbed, it must be emitted giving the atom a push again!
+ Whats wrong? Q2.
+ What about line broadening etc.?
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Lets get Quantum Computing!
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Ions as Qbits: Every ion is one qubit.
+ (In these experiments, we deal with 3-4 Qbits.) To process information on
+ these qubits, we need to be able to 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Initialize each qubit individually: This is done by shining light on it
+ since they're physically separated enough and as the laser light can be
+ focussed to distances much smaller than that between adjacent ions.
+\end_layout
+
+\begin_layout Enumerate
+Perform C-NOT between any pair of Qubits (either can be the control/target)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ions as tiny magnets: The ion can be thought of as a tiny magnet.
+ We can code point up to be state zero and pointing down to be state one.
+ So far it is the same as classical information storage.
+ However, quantum mechanically, the magnet can `point in other directions'.
+ This is perhaps best understood as some sort of angle the magnet is at
+ with the z-axis (the direction of an external magnetic field).
+ However this is not a conventional angle.
+ When you make a measurement, you'll get state zero or one with probabilities
+ proportional to the projection along the relavent axis.
+ (Its very handwaving but gets the idea across.
+ Do not extend this picture too much without proper formalism) This is then
+ as though the atom is in a superposition of zero and one states and you
+ get one of them upon measurement.
+\begin_inset Newline newline
+\end_inset
+
+This is exploited for information processing.
+ How we probe the ion (qubit) is by using light.
+ Its interaction with the ion can be understood as
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Classically; it changes the orientation of magnet as light has (is?) electromagn
+etic fields.
+ The magnet has again, a frequency dependent response and the twist magnitude
+ can be controlled by the duration of the pulse.
+\end_layout
+
+\begin_layout Enumerate
+Quantum(ly?); the laser mixes the zero and one states.
+ The frequency and duration can be used to calculated precisely the mix
+ created, enabling us to create the desired superpositions.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The computer; ion string: Lets quickly review what C-NOT does.
+ You flip the target iff the control is one.
+ So, in our setup, the problem is to flip the state of ion B, iff ion A
+ is in (say) state one (magnet pointing down).
+ Note that we can't quite use the magnetic field of the ions themselves
+ for, one they're too small and two, ion A and B may not be adjacent.
+ Seems like a deal breaker.
+ But these people (the real scientists) are clever.
+\begin_inset Newline newline
+\end_inset
+
+It goes something like this
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+A laser light is shone on ion A such that its absorbed only in state one.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An ion with magnet down (state one), resonates at a slightly different compared
+ to one with magnet up.
+ Thus it is possible.
+\end_layout
+
+\begin_layout Enumerate
+The ion is given a little more energy (higher frequency).
+ Why, well cause the ions are able to rattle to and fro their position in
+ the trap.
+ However this is in a plane perpendicular to the line of ions (the string).
+ A vibration in this plane is transmitted to all the ions, because of their
+ charge, viz.
+ interaction by coulombic forces.
+ Now as we are dealing with single ions, it so happens that this whole string
+ vibration is also quantized! Thus we give this exact energy extra in the
+ laser beam.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+With the entire string vibrating, conditioned by if ion A is in state one,
+ we shine a light on ion B with a little less energy.
+ If the string is already vibrating, this would be sufficient to interact
+ with B.
+ This causes ion B to flip its state iff ion A is in state one.
+\end_layout
+
+\begin_layout Enumerate
+Finally, a beam of light is shone on ion A again to kill the vibration of
+ the string.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+And that's how its done! Ladies and Gentlemen, we have the ion trap quantum
+ computer architecture.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ofcourse, we've made far too many assumptions but the rough idea should
+ be clear now.
+ In the following (last) chapter, we address some of the remarks/questions
+ you might have (such as what the hell, how do you do that etc.)
+\end_layout
+
+\begin_layout Chapter
+Prologue; the trap
+\end_layout
+
+\begin_layout Section
+Minimum Requirements (for the computer and the reader)
+\end_layout
+
+\begin_layout Section
+Setup, the trap
+\end_layout
+
+\begin_layout Section
+Matrix: From paper to our loyal ions
+\end_layout
+
+\begin_layout Subsection
+The states we make
+\end_layout
+
+\begin_layout Standard
+First things first.
+ What are the states we're looking at and how long will excited states last.
+ Lets answer them.
+ There are two kinds of states.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The first are internal energy eigenstates of the ion.
+ (refer to the figure)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We write these states as 
+\begin_inset Formula $\ket{F_{1},M_{1}},\,\ket{F_{2},M_{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{F_{aux},M_{aux}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+They are separated by 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{aux}$
+\end_inset
+
+ as shown.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The other are the excitations of the centre of mass motion.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The eigenkets of the vibrational motion are written as 
+\begin_inset Formula $\ket{\{n_{i}\}}$
+\end_inset
+
+ where 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+ are the excitations of the various modes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Only the ground state 
+\begin_inset Formula $\ket{0,0,0\dots}$
+\end_inset
+
+ and the first excited state 
+\begin_inset Formula $\ket{1,0,0\dots}$
+\end_inset
+
+ are invoked for the operations
+\end_layout
+
+\begin_layout Enumerate
+This state is loosely called the phonon (used here as the bus bit)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+So the states we'll be finally working with, will be the following tensor
+ products
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\ket{0,0}\equiv\ket{F_{1},M_{1}}\otimes\ket{0,0,0\dots}\\
+\ket{0,1}\equiv\ket{F_{1},M_{1}}\otimes\ket{1,0,0\dots}\\
+\ket{1,0}\equiv\ket{F_{2},M_{2}}\otimes\ket{0,0,0\dots}\\
+\ket{0,1}\equiv\ket{F_{2},M_{2}}\otimes\ket{1,0,0\dots}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+That answers the first question.
+ The second is answered by the well known (but not well understood for me
+ so far) energy time uncertainty relation, which unlike the unambiguous
+ position momentum uncertainty arising from the commutation relation, refers
+ to a more general class of such uncertainty relations (including ones that
+ arise from perturbation theory).
+ The point is that since all the levels considered here are low-lying, separated
+ oh so mildly (hyperfine and Zeeman interactions), that the lifetime of
+ the excited states (against spontaneous emission) is essentially infinite.
+ 
+\end_layout
+
+\begin_layout Subsection
+The gates it takes
+\end_layout
+
+\begin_layout Standard
+We show how to perform the following operations.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+CROT
+\emph default
+ between any ion's internal state and the phonon bit, where CROT is given
+ by
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U_{\text{CROT}}\equiv\left[\begin{array}{cccc}
+1\\
+ & 1\\
+ &  & 1\\
+ &  &  & -1
+\end{array}\right]
+\]
+
+\end_inset
+
+in the computational basis, 
+\begin_inset Formula $\ket{00},\ket{01},\ket{10},\ket{11}$
+\end_inset
+
+.
+ So in essence, if the internal state is zero, then you do nothing.
+ Else you apply 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ to the phonon.
+\end_layout
+
+\begin_layout Enumerate
+Carry out 
+\emph on
+arbitrary rotations
+\emph default
+ in the ion's internal state, viz.
+ be able to apply 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{-i\theta.\sigma/2}=\left[\begin{array}{cc}
+cos(\theta/2) & -e^{-i\phi}sin(\theta/2)\\
+e^{i\phi}cos(\theta/2) & cos(\theta/2)
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Perform a 
+\emph on
+swap
+\emph default
+ between any ion and the bus (phonon) bit.
+ The matrix is obviously
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\[
+U_{\text{SWAP}}\equiv\left[\begin{array}{cccc}
+1\\
+ & 0 & 1\\
+ & 1 & 0\\
+ &  &  & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is known that these three operations together can be used to carry out
+ arbitrary transformations to the qubits stored.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+CROT
+\end_layout
+
+\begin_layout Standard
+Remember there were these 
+\begin_inset Formula $\ket{F_{aux},M_{aux}}$
+\end_inset
+
+ eigenstates of the ion which we didn't use in the definition of the computation
+al basis 
+\begin_inset Formula $\ket{0,1},\ket{0,1}$
+\end_inset
+
+ etc.
+ We now define 
+\begin_inset Formula 
+\[
+\ket{aux,i}=\ket{F_{aux},M_{aux}}\otimes\ket{i,0,0,0\dots}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $i\in\{0,1\}$
+\end_inset
+
+.
+ These states are available to us as kind of shelves.
+ These help us make state-dependent transformations (such as controlled
+ rotations).
+ 
+\end_layout
+
+\begin_layout Standard
+A look at the figure shows that if a radiation of frequency 
+\begin_inset Formula $\omega_{aux}+\omega_{z}$
+\end_inset
+
+ is applied, then only transitions between 
+\begin_inset Formula $\ket{1,1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{aux,0}$
+\end_inset
+
+ will occur (assuming states in unwanted levels are unoccupied).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Claim: If a 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ pulse (of the said frequency) is applied, then the state 
+\begin_inset Formula $\ket{1,1}$
+\end_inset
+
+ is rotated by 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ radians.
+ 
+\end_layout
+
+\begin_layout Standard
+This is precisely what was required.
+ If the state is 
+\begin_inset Formula $\ket{1,1}$
+\end_inset
+
+ its sign is flipped.
+ (Note: Don't confuse the state of the computational basis with that of
+ the auxilary state, which is in a zero phonon state)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Claim: A 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ pulse of frequency 
+\begin_inset Formula $\omega_{z}-(\omega_{0}-\omega_{aux})$
+\end_inset
+
+ produces a control rotation corresponding to
+\emph default
+ 
+\begin_inset Formula 
+\[
+U_{\text{C\rightharpoondown ROT}}\equiv\left[\begin{array}{cccc}
+1\\
+ & -1\\
+ &  & 1\\
+ &  &  & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Justification: This should be obvious from the previous discussion and the
+ diagram.
+ Effectively then, 
+\begin_inset Formula $U_{\text{C\rightharpoondown ROT}}$
+\end_inset
+
+ rotates the second qubit if the first is in state zero rather than one.
+\end_layout
+
+\begin_layout Subsubsection*
+Arbitrary Internal State Rotations
+\end_layout
+
+\begin_layout Standard
+To rotate an ion's internal state without affecting the phonon (centre of
+ mass motion), a pulse of frequency, without surprise, 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ is applied.
+ (This part is not too clear) 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Claim: If such a radiation has a phase 
+\begin_inset Formula $\phi$
+\end_inset
+
+ wrt some defined origin of phase, and duration sufficient to make a 
+\begin_inset Formula $p\pi$
+\end_inset
+
+ pulse, then the effect in the computational basis is
+\begin_inset Formula 
+\[
+V^{p}(\phi)\equiv\left[\begin{array}{cc}
+cos(p\pi/2) & -e^{-i\phi}sin(p\pi/2)\\
+-e^{i\phi}cos(p\pi/2) & cos(p\pi/2)
+\end{array}\right]\otimes\left[\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\emph default
+To apply such rotations successfully, it is required that experimentally,
+ the phase is controlled at the position of the ion (and not just some other
+ physical location, like a stable reference cavity).
+ In this regard therefore it is much easier if the computational basis of
+ the system are separated by radio frequencies and not optical frequencies.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Claim 2: In order to have the right phase experimentally, one needn't worry
+ about the continuous precession with 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ caused by the internal Hamiltonian of each ion
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Claim 3: However problems arise when different ions have different frequencies
+ due to the residual electric and magnetic fields in the apparatus, although
+ such problems are solvable.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Universalization: CNOT detour
+\end_layout
+
+\begin_layout Standard
+We have already developed enough machinery to implement an XOR (a reversible
+ XOR is the same as a CNOT) between the bus (phonon) and some particular
+ ion.
+ To recall, C NOT is defined as
+\begin_inset Formula 
+\[
+\text{XOR}\equiv\left[\begin{array}{cccc}
+1\\
+ & 0 & 0 & 1\\
+ & 0 & 1 & 0\\
+ & 1 & 0 & 0
+\end{array}\right]
+\]
+
+\end_inset
+
+The matrix is wrong isn't it? No! We are doing a CNOT(bus,ion) as opposed
+ to CNOT(ion,bus).
+ Here's the sequence that does the trick
+\end_layout
+
+\begin_layout Enumerate
+A 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ pulse with frequency 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+V^{1/2}(-\pi/2)=\frac{1}{\sqrt{2}}\left[\begin{array}{cc}
+1 & 1\\
+-1 & 1
+\end{array}\right]_{\text{ion}}\otimes\left[\begin{array}{cc}
+1 & 0\\
+0 & 1
+\end{array}\right]_{\text{bus}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+CROT
+\end_layout
+
+\begin_layout Enumerate
+Another 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ with frequency 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ and phase 
+\begin_inset Formula $\pi$
+\end_inset
+
+ wrt the first, viz 
+\begin_inset Formula $V^{1/2}(\pi/2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Q1.
+ How did they come up with this? Whats the rationale behind this?
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It can be checked that the result is infact XOR(bus,ion) as given by the
+ matrix above.
+ So by symmetry XOR(ion,bus) should be a similar sequence with 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ replaced with 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+ to cause the vibration (bus) level to get affected independent of the ion.
+ Right? Nope.
+ Let's understand this.
+ 
+\end_layout
+
+\begin_layout Standard
+The basic issue is that vibrations (the bus) aren't a two level system.
+ And where does this bite us? Well, recall how in the implementation of
+ the CROT we assumed that 
+\begin_inset Formula $\ket{aux,1}$
+\end_inset
+
+ is unoccupied, for if it were, then upon flashing 
+\begin_inset Formula $\omega_{aux}+\omega_{z}$
+\end_inset
+
+ it would merrily couple to 
+\begin_inset Formula $\ket{1,2}$
+\end_inset
+
+ which is, surprise surprise, outside our computation Hilber space!
+\end_layout
+
+\begin_layout Subsubsection*
+SWAP
+\end_layout
+
+\begin_layout Standard
+Well this is by far the easiest to implement.
+ Just consider the frequncy 
+\begin_inset Formula $\omega_{0}-\omega_{z}$
+\end_inset
+
+ and look at the transitions diagram.
+ The only possible transition is between 
+\begin_inset Formula $\ket{01}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{10}$
+\end_inset
+
+ (assuming ofcourse there's no population in the 
+\begin_inset Formula $\ket{11},\,\ket{02}$
+\end_inset
+
+ states etc.).
+ So then that does it! We have swapped successfully between the bus and
+ any one of the ions.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And that completes the gates part.
+\end_layout
+
+\begin_layout Subsection
+How to see without mistakes
+\end_layout
+
+\begin_layout Standard
+To complete the operation of the processor, we must be able to make measurements.
+ This is achieved with high accuracy, using what is known as `electron shelving'
+ or `quantum jumps' technique.
+ This results in whether the ion is in the 
+\begin_inset Formula $\ket{F_{1}M_{1}}$
+\end_inset
+
+ or 
+\begin_inset Formula $\ket{F_{2}M_{2}}$
+\end_inset
+
+.
+ This is achieved by illuminating the ion with a radiation resonant with
+ a transition from 
+\begin_inset Formula $\ket{F_{1}M_{1}}$
+\end_inset
+
+ to some high-lying level, whose line-width is sufficiently small so that
+ transitions from 
+\begin_inset Formula $\ket{F_{2}M_{2}}$
+\end_inset
+
+ aren't excited (else what's the point eigh?).
+ Now if the flourescence is produced, the ion state has collapsed to 
+\begin_inset Formula $\ket{F_{1}M_{1}}$
+\end_inset
+
+; if its not produced, then you know it is in 
+\begin_inset Formula $\ket{F_{2}M_{2}}$
+\end_inset
+
+.
+ Note that you can't readout the bus directly, but since you can swap, it's
+ not an issue now is it?
+\end_layout
+
+\begin_layout Section
+It's cool man
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+https://www2.physics.ox.ac.uk/research/ion-trap-quantum-computing-group/intro-to-ion
+-trap-qc
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+http://xxx.soton.ac.uk/abs/quant-ph/9608011
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

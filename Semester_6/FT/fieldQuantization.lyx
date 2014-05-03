@@ -1,0 +1,193 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+A Story of 
+\begin_inset Newline newline
+\end_inset
+
+Particles and Fields
+\begin_inset Newline newline
+\end_inset
+
+series codename: effortBluePrint
+\end_layout
+
+\begin_layout Author
+Atul Sinh Aurora
+\end_layout
+
+\begin_layout Abstract
+This I write at the first few moments post recovery from the excessive sleep
+ syndrome, which plausibly resulted from excessive work extraction from
+ the body.
+ Let's not waste the precious time and ...
+\end_layout
+
+\begin_layout Section
+Field Quantization and all
+\end_layout
+
+\begin_layout Standard
+Lets see what all there is to be done.
+\end_layout
+
+\begin_layout Enumerate
+Lagrangian Field Theory.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Write down the 
+\begin_inset Formula 
+\[
+S=\int Ldt=\int\mathcal{L}(\phi,\partial_{\mu}\phi)dt
+\]
+
+\end_inset
+
+ Lagrangian for a field (some object) and...
+\end_layout
+
+\begin_layout Enumerate
+get the `equation of motion' of the field using 
+\begin_inset Formula $\delta S=0$
+\end_inset
+
+, viz.
+ 
+\begin_inset Formula 
+\[
+\partial_{\mu}\left(\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}\right)-\frac{\partial\mathcal{L}}{\partial\phi}=0
+\]
+
+\end_inset
+
+ (note here on I'll write 
+\begin_inset Formula $L$
+\end_inset
+
+ in place of 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Hamiltonian Field Theory
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+You have 
+\begin_inset Formula $p$
+\end_inset
+
+, which is the momentum conjugate to 
+\begin_inset Formula $q$
+\end_inset
+
+, which in this case is 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ So 
+\begin_inset Formula 
+\[
+p\equiv\frac{\partial L}{\partial\dot{\phi}(x)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+You get after some calculations, 
+\begin_inset Formula 
+\[
+p(x)=\pi(x)d^{3}x
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\pi(x)\equiv\frac{\partial\mathcal{L}}{\partial\dot{\phi}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

@@ -1,0 +1,463 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans cmbr
+\font_typewriter cmtl
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Seminar Course
+\end_layout
+
+\begin_layout Author
+Atul Sinh Aurora
+\end_layout
+
+\begin_layout Standard
+March 28, 2014
+\end_layout
+
+\begin_layout Abstract
+I had the view earlier that attending seminars is not nearly as important
+ as spending time learning concepts systematically.
+ In the recent past, I have been made to realize that too much focusing
+ also is not a good idea.
+ Thus, the topics that I am interested in but do not intend to study systematica
+lly in the perceivable future, I can learn about through seminars.
+ The topics maybe sub topics in physics or those of other disciplines.
+ Making connections this way is helpful and accelerates learning.
+ So far, it has indeed been the case.
+\end_layout
+
+\begin_layout Section
+Why a Quantum Theory of Gravity
+\end_layout
+
+\begin_layout Subsection
+The when, where and who | facts
+\end_layout
+
+\begin_layout Standard
+The talk was given by Prof.
+ G.
+ Date from IMSc, Chennai, in LH-3 of the Lecture Hall Complex, IISER M,
+ on Wednesday, March 26, 2014.
+\end_layout
+
+\begin_layout Subsection
+Motivation for attending | feelings
+\end_layout
+
+\begin_layout Standard
+Our QFT instructor, Dr.
+ Sudipta, informed us and recommended that we attend it.
+ That's one.
+ Then I remember reading an eminent scientist say that we are fortunate
+ to have been born at a time when problems in physics existed and we didn't
+ have to create them.
+ I feel that Quantum Theory of Gravity is the one for us.
+ It's even more motivating to see that there was a time when even STR and
+ QM couldn't be combined consistently.
+\end_layout
+
+\begin_layout Subsection
+This I could understand
+\end_layout
+
+\begin_layout Standard
+Quantum Gravity is the fiery marriage of General Relativity and Quantum
+ Mechanics.
+ The pursuit is not purely theoretical.
+ Wheeler's description of the final state of a star is amongst one of the
+ reasons why such a theory would be necessary.*
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{\mu\nu}(g)-\frac{1}{2}R(g)g_{\mu\nu}=\frac{8\pi G}{C^{4}}T_{\mu\upsilon}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+This I'll remember
+\end_layout
+
+\begin_layout Standard
+It is possible to construct solutions to Einstein's equations such that
+ locally they follow all the properties we expect but have peculiar global
+ behaviour.
+ Imagine making a light cone on a piece of paper and then folding it to
+ make the future and past light cone match.
+ Locally, everything's consistent, but globally, you're going to the past
+ from the future!
+\end_layout
+
+\begin_layout Section
+The Dance Language of the Bees
+\end_layout
+
+\begin_layout Subsection
+The when, where and who | facts
+\end_layout
+
+\begin_layout Standard
+The talk was given by Prof.
+ Raghavendra Gadagkar from IISc, Bangalore, in LH5 of the LHC, IISER M,
+ on Thursday, March 27 2014.
+\end_layout
+
+\begin_layout Subsection
+Motivation for attending | feelings
+\end_layout
+
+\begin_layout Standard
+It was compulsory for us.
+\end_layout
+
+\begin_layout Subsection
+This I understood | detailed
+\end_layout
+
+\begin_layout Subsubsection
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Apis florea
+\emph default
+ is the species discussed in the talk.
+ It is found only in Asia, and is open nesting (thus harder to domesticate).
+ They are interesting as their social behaviour is not as sophisticated
+ (compared to the other four major species).
+ They communicate by transferring saliva and dancing, i.e.
+ subject of the talk.
+\end_layout
+
+\begin_layout Subsubsection
+Their life and Division of labour
+\end_layout
+
+\begin_layout Standard
+Within these bees, there are drones (the males), worker (essentially sterile)
+ and one queen (that lays eggs).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Drones: They do almost nothing; wait and finally go out to find virgin queens
+ in other nests and die after mating.
+\end_layout
+
+\begin_layout Enumerate
+Workers do all the work to run and maintain the system.
+ Further, what they do on a given day depends on their age.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Building and repairing the nest
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Made of wax
+\end_layout
+
+\begin_layout Enumerate
+Perfect hexagonal
+\end_layout
+
+\begin_layout Enumerate
+Eggs are layed in the hexagonal cavity
+\end_layout
+
+\begin_layout Enumerate
+Queens are layed in special larger cavities and fed 'Royal Jelly'
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bringing and processing food
+\end_layout
+
+\begin_layout Enumerate
+Defending the nest
+\end_layout
+
+\begin_layout Enumerate
+Royal Duty
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Surround the queen
+\end_layout
+
+\begin_layout Enumerate
+Done in shifts
+\end_layout
+
+\begin_layout Enumerate
+Helps the queen control the population (she uses chemical cues)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Maintaining temperature
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+To heat: They eat nectar and exercise*
+\end_layout
+
+\begin_layout Enumerate
+To cool: They bring water and evaporate it
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+Further, the nest is inherited by the daughter queen and the old queen together
+ with some workers takes a risky journey to find a new nest.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+More about bees
+\end_layout
+
+\begin_layout Standard
+The said bees dance only on horizontal surfaces unlike the other species.
+ There are two types of dances known.
+ First is called a round dance, in which the bee makes a circular motion.
+ The other's called a waggle dance in which the bee transcribes an 8 shape
+ with vigorous vibrations half way.
+\end_layout
+
+\begin_layout Standard
+Bees are also now known to have colour vision, a rather unexpected result.
+ They also have sensitivity to light's polarisation.
+\end_layout
+
+\begin_layout Standard
+Bees collect nectar which provides carbohydrate (used for building the nest)
+ and pollen, their source of protein.
+ Pollen they don't collect actively; it gets deposited on their bodies and
+ they clean themselves to pack it tightly in their pollen baskets.
+\end_layout
+
+\begin_layout Subsubsection
+Communication and Dance (the real deal)
+\end_layout
+
+\begin_layout Standard
+Earlier it was thought that waggling related to pollen being found and round
+ to nectar.
+ Later experiments confirmed that the waggling dance corresponded to the
+ food being farther than roughly 100 m and the round to less than that.
+\end_layout
+
+\begin_layout Standard
+Experiments have confirmed that the waggle dance conveys information about
+ the direction and distance of the resource found.
+ They use the sun's azimuthal as reference (as it is globally stable, unlike
+ the surroundings) even though it changes its location periodically.
+ The bees apparently correct for this.
+ Further they even update their map of the surrounding everyday and use
+ that to locate the sun.
+ 
+\end_layout
+
+\begin_layout Standard
+In the waggle dance, during the middle part of 8, the direction in which
+ the bee moves contains the direction information.
+ Also during this part, the tempo of vibration codes for distance.
+\end_layout
+
+\begin_layout Standard
+Although its not known how they find the angle, the distance is measured
+ not using the energy requirement as was previously thought, but using optical
+ flow.
+\end_layout
+
+\begin_layout Subsubsection
+Sophistication
+\end_layout
+
+\begin_layout Standard
+These bees have evolved to use fallback mechanisms for defining the angle.
+\end_layout
+
+\begin_layout Enumerate
+Sun is used when its bright enough
+\end_layout
+
+\begin_layout Enumerate
+Polarization of light on the sky is used if the sky is overcast
+\end_layout
+
+\begin_layout Enumerate
+Local landmarks can also be used.
+ They learn it each day to compensate for their change with time.
+\end_layout
+
+\begin_layout Enumerate
+Siesta; when the sun is overhead, they take time off
+\end_layout
+
+\begin_layout Subsubsection
+Amazing Facts
+\end_layout
+
+\begin_layout Enumerate
+They 'compromise and negotiate' to converge to the direction of their new
+ home.
+\end_layout
+
+\begin_layout Enumerate
+They cock their heads in the direction of the sun even when their surface
+ is not horizontal
+\end_layout
+
+\begin_layout Enumerate
+Rock bees, a species of bees, fly at night and apparently use the 'would
+ be' location of the sun for reference
+\end_layout
+
+\begin_layout Enumerate
+Bees have dialects; the Asian ones can understand certain other ones
+\end_layout
+
+\begin_layout Enumerate
+Anatomy of a controversy is a book written that pokes holes in the experiments
+ backing most of these claims.
+ Consequently better experiments have been performed to uphold the conclusions
+ presented.
+\end_layout
+
+\begin_layout Subsubsection
+Experiments
+\end_layout
+
+\begin_layout Standard
+Various experiments were to test
+\end_layout
+
+\begin_layout Enumerate
+Color vision
+\end_layout
+
+\begin_layout Enumerate
+Correlation between sugar/nectar and waggle/round dance
+\end_layout
+
+\begin_layout Enumerate
+Corelation between wiggle and flight direction (Fan like experiment)
+\end_layout
+
+\begin_layout Enumerate
+That optical information is used to find direction
+\end_layout
+
+\begin_layout Enumerate
+Use of Sun as reference (The lamp shift experiment | miscommunication)
+\end_layout
+
+\begin_layout Enumerate
+if dancing is sufficient to communicate information about resources (The
+ robot bee experiment)
+\end_layout
+
+\begin_layout Standard
+And this final one is almost engineering as is evident from the title of
+ the published paper, 
+\begin_inset Quotes eld
+\end_inset
+
+The light paths of honeybees tracked using harmonic radar provides strong
+ evidence that recruits use of the directional information contained in
+ the waggle dance
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Closing Remark
+\end_layout
+
+\begin_layout Standard
+Destroy each other's science as you can't destroy your own, owing to the
+ emotional investment.
+\end_layout
+
+\begin_layout Subsection
+In summary...
+\end_layout
+
+\end_body
+\end_document
