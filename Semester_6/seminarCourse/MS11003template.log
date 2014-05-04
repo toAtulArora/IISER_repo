@@ -1,0 +1,204 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  5 MAY 2014 00:29
+entering extended mode
+**C:/Users/Atul/Documents/IISER_repo/Semester_6/seminarCourse/MS11003template.t
+ex
+
+(C:/Users/Atul/Documents/IISER_repo/Semester_6/seminarCourse/MS11003template.te
+x
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ccfonts\ccfonts.sty"
+Package: ccfonts 2000/06/30 v1.1 (WaS)
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 78.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ccr/m/n on input line 78.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ccr/m/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 79.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ccm/m/it on input line 79.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ccm/m/it on input line 79.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 80.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ccsy/m/n on input line 80.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ccsy/m/n on input line 80.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 81.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ccex/m/n on input line 81.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ccex/m/n on input line 81.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ccr/bx/n on input line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ccr/bx/n on input line 82.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ccr/m/it on input line 83.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ccr/m/it on input line 83.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin9.def"
+File: latin9.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
+Language: english 2005/03/30 v3.3o English support from the babel system
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(C:\Users\Atul\Documents\IISER_repo\Semester_6\seminarCourse\MS11003template.au
+x)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for T1+ccr on input line 42.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\ccfonts\t1ccr.fd"
+File: t1ccr.fd 1999/11/22 v1.0a (WaS)
+)
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 44.
+LaTeX Font Info:    Font shape `T1/ccr/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmr/bx/n' tried instead on input line 278.
+LaTeX Font Info:    Try loading font information for OT1+ccr on input line 278.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\ot1ccr.fd"
+File: ot1ccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    Try loading font information for OML+ccm on input line 278.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omlccm.fd"
+File: omlccm.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 278
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omsccsy.fd"
+File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    Try loading font information for OMX+ccex on input line 278
+.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omxccex.fd"
+File: omxccex.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <10> on input line 278.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <7> on input line 278.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <5> on input line 278.
+ [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
+Overfull \hbox (15.3057pt too wide) in paragraph at lines 370--370
+\T1/ccr/m/n/10 Various ex-per-i-ments were done to test color vis-ion, co-relat
+ion between sugar/nectar
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ccr on input line 481.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omsccr.fd"
+File: omsccr.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
+)
+LaTeX Font Info:    Font shape `OMS/ccr/m/n' in size <10> not available
+(Font)              Font shape `OMS/ccsy/m/n' tried instead on input line 481.
+ [5] [6] [7]
+[8] [9] [10]
+(C:\Users\Atul\Documents\IISER_repo\Semester_6\seminarCourse\MS11003template.au
+x) ) 
+Here is how much of TeX's memory you used:
+ 918 strings out of 493921
+ 11958 string characters out of 3147285
+ 65137 words of memory out of 3000000
+ 4233 multiletter control sequences out of 15000+200000
+ 12733 words of font info for 32 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 25i,5n,23p,246b,222s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dp
+i600\xccex10.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public
+\ecc\dpi600\eoti10.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+public\concrete\dpi600\ccr7.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\public\concmath\dpi600\xccsy10.pk> <C:\Users\Atul\AppData\Local\MiKTeX
+\2.9\fonts\pk\ljfour\public\concrete\dpi600\ccr10.pk> <C:\Users\Atul\AppData\Lo
+cal\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi7.pk> <C:\Users\Atul
+\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi10.pk> <C
+:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\ecc\dpi600\eorm10.
+pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecbx1000.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecbx1200.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
+knappen\ec\dpi600\ecbx1440.pk>
+Output written on MS11003template.pdf (10 pages, 122462 bytes).
+PDF statistics:
+ 356 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

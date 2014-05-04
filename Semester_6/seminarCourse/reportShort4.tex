@@ -8,42 +8,79 @@
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
+
+\newenvironment{info}[2]
+{
+\centerline{\Large \bf IDC352 Jan-April
+2014, Instructor~:~Professor Arvind}
+\vspace*{10pt}
+%\hrule
+\leftline{\large \bf Name~:~#1~~~~~~~~~~~~Roll Number~:~#2}
+\vspace*{6pt}
+\vspace*{6pt}
+\hrule
+\vspace*{12pt}
+}
+
+\newenvironment{seminar}[5]
+{
+\section{Title~:~#1}
+\vspace*{6pt}
+\leftline{\bf Speaker~:~#2}
+\vspace*{6pt}
+\leftline{\bf Date~:~#3~~~~~~~~~Venue~:~#4}
+\vspace*{6pt}
+\noindent{\bf Report~:~}#5
+
+
+\vspace*{6pt}
+\hrule
+}
+
+
+
 \begin{document}
 
-\title{Seminar Course\\
-IDC352}
+% \title{Seminar Course\\
+% IDC352}
 
 
-\author{Atul Singh Aurora\\
-MS11003}
+% \author{Atul Singh Aurora\\
+% MS11003}
 
 
-\date{Instructor: Prof. Arvind\\
-Jan-April 2014}
+% \date{Instructor: Prof. Arvind\\
+% Jan-April 2014}
 
-\maketitle
-\pagebreak{}
-\begin{abstract}
-I had the view earlier that attending seminars is not nearly as important
-as spending time learning concepts systematically. In the recent past,
-I have been made to realize that too much focusing also is not a good
-idea. Thus, the topics that I am interested in but do not intend to
-study systematically in the perceivable future, I can learn about
-through seminars. The topics maybe sub topics in physics or those
-of other disciplines. Making connections this way is helpful and accelerates
-learning. So far, it has indeed been the case.
+% \maketitle
 
-The following discussions have been severely shortened and may therefore
-not be suitable for understanding the topics. However, the objective
-here is to convey the idea behind the talks with very few words. I
-hope in the process clarity hasn't been sacrificed.
+% \pagebreak{}
+% \begin{abstract}
+% I had the view earlier that attending seminars is not nearly as important
+% as spending time learning concepts systematically. In the recent past,
+% I have been made to realize that too much focusing also is not a good
+% idea. Thus, the topics that I am interested in but do not intend to
+% study systematically in the perceivable future, I can learn about
+% through seminars. The topics maybe sub topics in physics or those
+% of other disciplines. Making connections this way is helpful and accelerates
+% learning. So far, it has indeed been the case.
 
-\pagebreak{}
+% The following discussions have been severely shortened and may therefore
+% not be suitable for understanding the topics. However, the objective
+% here is to convey the idea behind the talks with very few words. I
+% hope in the process clarity hasn't been sacrificed.
 
-\tableofcontents{}
-\end{abstract}
+% \pagebreak{}
 
-\section{Why a Quantum Theory of Gravity}
+% \tableofcontents{}
+% \end{abstract}
+
+\begin{seminar}
+{Why a Quantum Theory of Gravity}
+{Prof. G. Date (IMSc)}
+{March 26, 2014}{LH-3, LHC}
+{
+% \section{Why a Quantum Theory of Gravity}
 
 
 \subsection{The when, where and who | facts}
@@ -234,6 +271,8 @@ past from the future!
 
 I thank Ms. Prashansa Gupta (MS11021) for sharing her notes so that
 atleast our combined notes made sense.
+
+}\end{seminar}
 
 \pagebreak{}
 
