@@ -119,6 +119,15 @@ The following discussions have been severely shortened and may therefore
 
 \end_layout
 
+\begin_layout Abstract
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Why a Quantum Theory of Gravity
 \end_layout
@@ -855,11 +864,104 @@ I thank Mr.
 \end_layout
 
 \begin_layout Section
-(Himanshu, paradoxes?)
+Magnetic Refrigeration
+\end_layout
+
+\begin_layout Subsection
+The when, where and who | facts
 \end_layout
 
 \begin_layout Standard
-Definition of paradoxes, (?), Einstein clock, EPR
+This talk was delivered by the infamous to be Dr.
+ Ayushi Singhania (Int PhD), on Wednesday, April 23, 2014, at 9 PM in LH3
+ of the LHC.
+\end_layout
+
+\begin_layout Subsection
+Motivation for attending
+\end_layout
+
+\begin_layout Standard
+The topic sounded like fun.
+\end_layout
+
+\begin_layout Subsection
+What I could follow
+\end_layout
+
+\begin_layout Standard
+The speaker started with outlining her talk; introduction, history, magneto
+ caloric effect, thermodynamics, advantages/disadvantages.
+ She explained that the technology is based in magneto caloric effects (MCE).
+ This was discovered by P.
+ Weiss and it was suggested by P.
+ Debey and W.
+ Giaque.
+ The MCE effect is based in changing the temperature of specific materials,
+ by exposing it to changing magnetic fields.
+ The phenomenon hinges on the idea that at a given temperature, the magnetic
+ field causes alignment and when it is removed, the disorientation leads
+ to dropping of the temperature (assuming there's no heat exchange).
+ This has similarities with the Curie temperature which has electric fields
+ and ferroelectric domains as analogues to their magnetic counterparts.
+\end_layout
+
+\begin_layout Standard
+The speaker motivated the functioning further by explain how thermal and
+ magnetic entropy together function to drop the temperature.
+ She broke down the process into four steps.
+ In the first (adiabatic), magnetic field is increased.
+ Since there's no exchange of heat, the net entropy is zero; the magnetic
+ entropy drops and thus the temperature increases.
+ In the next step, a liquid is passed that cools the system, taking away
+ the heating that resulted.
+ In the third step, the adiabatic demagnetization, magnetic entropy is increased
+, while the thermal entropy is decreased.
+ This step leads to cooling! In the final step, whatever is intended to
+ be cooled is passed through and the process is repeated.
+\end_layout
+
+\begin_layout Standard
+The speaker also did some calculations on the board to arrive at an expression
+ for change in temperature, in terms of the system's parameters.
+ 
+\begin_inset Formula 
+\[
+\partial T=-\frac{\mu_{0}T}{C_{H}}\left(\frac{\partial M}{\partial T}\right){}_{H}dH
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Candidate and prevalent working material for the refrigerator were discussed
+ next which included alloys of gadolinium which are known to produce 3-4
+ K change, per Tesla of change in magnetic field.
+ 
+\end_layout
+
+\begin_layout Standard
+The speaker concluded by drawing a parallel between magnetic and conventional
+ refrigeration, pointing out the role of pressure being played by the magnetic
+ field in the said case.
+ She discussed some advantages, such as environment friendliness and high
+ efficiency (60-70%) while also listing some drawbacks such as its high
+ cost and requirement of rare earth materials.
+\end_layout
+
+\begin_layout Standard
+The speaker was appreciated for her clarity and neat board work by the instructo
+r.
+\end_layout
+
+\begin_layout Subsection
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+I referred to the wikipedia article on the same topic for filling some gaps.
 \end_layout
 
 \begin_layout Standard

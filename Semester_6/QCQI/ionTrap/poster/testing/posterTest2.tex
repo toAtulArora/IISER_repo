@@ -1,0 +1,340 @@
+\documentclass[final]{beamer}
+\mode<presentation>
+{
+  \usetheme{Icy}
+}
+\usepackage{times}
+\usepackage{amsmath,amssymb}
+\usepackage{sfmath} % for sans serif math fonts; wget http://dtrx.de/od/tex/sfmath.sty
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[size=custom,height=150,width=90,scale=1.3]{beamerposter}
+\usepackage{booktabs,array}
+\usepackage{listings}
+\usepackage{xspace}
+\usepackage{fp}
+\usepackage{ifthen}
+
+\listfiles
+\newcommand*{\signstream}{SignStream\texttrademark\xspace}
+
+\graphicspath{{/u/figures/}}
+
+% Display a grid to help align images
+%\beamertemplategridbackground[1cm]
+
+\title{\Huge Benchmark Databases for Video-Based\\[0.5ex] Automatic Sign Language Recognition}
+
+\author{Philippe Dreuw\inst{1}, Carol Neidle\inst{2}, Vassilis Athitsos\inst{3}, Stan Sclaroff\inst{2}, and Hermann Ney\inst{1}}
+\institute[RWTH Aachen University] % (optional, but mostly needed)
+{
+  \inst{1}%
+  RWTH Aachen University, Aachen, Germany
+  \\
+  \inst{2}%
+  Boston University, Boston, MA, USA
+  \\
+  \inst{3}%
+  University of Texas, Arlington, TX, USA
+}
+
+\date[May. 28th, 2008]{May. 28th, 2008}
+
+\begin{document}
+\begin{frame}{} 
+\vspace{-1cm}
+\begin{columns}[t]
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{column}{.45\linewidth}
+    
+    \begin{block}{Introduction}
+      \begin{itemize}
+      \item currently available sign language video databases
+        \begin{itemize}
+        \item for linguistic purposes
+        \item gesture recognition using small vocabularies
+        \end{itemize}
+      \item here: new benchmark databases for evaluation of
+        \begin{itemize}
+        \item linguistic problems
+        \item automatic sign language recognition
+        \item statistical machine translation
+        \end{itemize}
+      \end{itemize}
+    \end{block}
+    
+    \begin{block}{Multimodal Resources for ASL}
+      \begin{itemize}
+      \item National Center for Sign Language and Gesture Resources (NCSLGR) at Boston University
+        \begin{itemize}
+        \item \url{http://www.bu.edu/asllrp/cslgr/}
+        \end{itemize}
+      \item collection of American Sign Language data from deaf native
+        signers
+      \item high-quality video files in a variety of video formats
+        \begin{itemize}
+        \item multiple angles
+        \item close-up of the face
+        \item with linguistic annotations
+        \end{itemize}
+      \end{itemize}
+
+      \begin{center}
+        \includegraphics[width=.2\linewidth]{images/camera0}
+        \,
+        \includegraphics[width=.2\linewidth]{images/camera1}
+        \,
+        \includegraphics[width=.2\linewidth]{images/camera2}
+      \end{center}
+    \end{block}
+
+    \begin{block}{Linguistic Annotations}
+      \begin{itemize}
+      \item American Sign Language Linguistic Research Project (ASLLRP)
+      \item \signstream annotation software: \url{http://www.bu.edu/asllrp/}
+        
+        \centerline{\includegraphics[width=.3\linewidth]{images/signstream}}
+
+      \item annotation format includes
+        \begin{itemize}
+        \item indication of the start and end points of linguistically significant behaviors
+        \item individual signs, produced by the hands and arms
+        \item facial gestures (e.g. eyebrow position, eye aperture)
+        \item head movements (including nods and shakes) that have grammatical significance
+        \end{itemize}
+        
+      \item 7 CD-ROMs include a total of \alert{over 1300} linguistically annotated utterances
+      \item available in \signstream or simple XML format
+      \end{itemize}
+    \end{block}
+    
+    \begin{block}{Database Access Interface}
+      \begin{itemize}
+      \item search of the existing data
+      \item download of subsets of video files and corresponding annotations
+      \item uncompressed video resolution up to 648x484 pixels at 60 frames per second
+      \item 2 to 4 synchronized cameras
+      \item checkerboard calibration sequences
+      \end{itemize}
+      
+      \vskip1ex
+      \centering
+      \includegraphics[width=.75\linewidth]{images/dai}
+      \vskip2ex
+      \includegraphics[width=.45\linewidth]{images/dai-search}
+      \,
+      \includegraphics[width=.45\linewidth]{images/dai-results}
+
+
+    \end{block}
+
+    
+   
+  \end{column}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{column}{.45\linewidth}
+    \begin{block}{RWTH-BOSTON-50 Database}
+      \vskip-2ex
+      \begin{itemize}
+      \item 483 utterances of \alert{isolated} words
+      \item vocabulary size of 50 words, 83 with pronunciations
+      \item 3 signers
+      \end{itemize}
+    \end{block}
+    
+    \begin{block}{RWTH-BOSTON-104 Database}
+      \vskip-2ex
+      \begin{itemize}
+      \item 201 utterances of \alert{continuous sign language sentences}
+      \item 3 signers
+      \item 26\% of the training data are singletons
+      \end{itemize}
+      \vskip-1ex
+      \begin{columns}[t]
+        ~~
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item corpus statistics\\[1ex]
+        
+            \begin{tabular}{@{} l rr @{}}
+              \toprule
+              & Training   &  Evaluation \\
+              \midrule
+              sentences        & 161        &   40   \\
+              running words    & 710        &  178   \\
+              vocabulary       & 103        &   65   \\
+              singletons       &  27        &    9   \\
+              OOV              & -          &    1   \\
+              images           & 12422      & 3324   \\
+              \bottomrule
+            \end{tabular}
+          \end{itemize}
+        \end{column}
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item language model perplexities\\[1ex]
+            
+            \begin{tabular}{@{} l r @{}}
+              \toprule
+              LM type     & Test $PP$ \\
+              \hline
+              zerogram    & 106.0 \\
+              unigram     & 36.8 \\
+              bigram      & 6.7 \\
+              trigram     & 4.7 \\
+              \bottomrule
+            \end{tabular}
+            
+            \vskip3ex
+          \item best known result is 12.9\% WER
+            
+          \end{itemize}
+        \end{column}
+      \end{columns}
+    \end{block}
+    
+    \begin{block}{RWTH-BOSTON-400 Database}
+      \vskip-4ex
+      \begin{columns}[t]
+        ~~
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item corpus statistics \\[1ex]
+            
+            \begin{tabular}{@{} l rrr @{}}
+              \toprule
+              & Training          &  Dev    &  Eval \\
+              \midrule                            
+              sentences        &   633             &  106            &  104   \\
+              running words    &  5733             &  678            &  589   \\
+              vocabulary       &   483             &   74            &   36   \\
+              singletons       &   217             &   10            &    2   \\
+              OOV              &     -             &    7            &    0   \\
+              images           & 49486             & 10016           & 9053   \\
+              \bottomrule
+            \end{tabular}
+          \end{itemize}
+        \end{column}
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item language model perplexities\\[1ex]
+        
+            \begin{tabular}{@{} l r r @{}}
+              \toprule
+              LM type     & Dev $PP$ & Test $PP$ \\
+              \hline
+              zerogram    & 400      & 400       \\
+              unigram     & 63.4     & 50.9      \\  %% 23 OOVs in total, 5 OOV words, 0 zeroprobs, logprob= -1371.62 ppl= 63.445 ppl1= 124.189  |  0 zeroprobs, logprob= -1182.88 ppl= 50.9218 ppl1= 101.928
+              bigram      & 32.3     & 26.2      \\  %% 23 OOVs in total, 5 OOV words, 0 zeroprobs, logprob= -1148.88 ppl= 32.3366 ppl1= 56.7559 |  0 zeroprobs, logprob= -983.82 ppl= 26.2817 ppl1= 46.8082
+              trigram     & 30.1     & 25.1      \\  %% 23 OOVs in totrepresenetations, 0 zeroprobs, logprob= -1125.94 ppl= 30.168 ppl1= 52.3583  | 0 zeroprobs, logprob= -970.573 ppl= 25.15 ppl1= 44.4459
+              \bottomrule
+            \end{tabular}
+          \end{itemize}
+        \end{column}
+      \end{columns}
+      \vskip1ex
+
+      \begin{columns}[t]
+        ~~
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item person statistics for training set\\[1ex]
+            
+            \begin{tabular}{@{} l r r @{}}
+              \toprule
+              speaker      & segments & time [sec] \\
+              \midrule                            
+              Ben          & 90       & 283.3s     \\
+              Norma        & 142      & 375.267s   \\
+              Mike         & 364      & 1219.77s   \\
+              Lana         & 37       & 162.367s   \\
+              \bottomrule
+            \end{tabular}        
+          \end{itemize}
+        \end{column}
+
+        \begin{column}{.5\linewidth}
+          \begin{itemize}
+          \item difficulties in preliminary results:
+            \begin{itemize}
+            \item silence handling
+            \item movement epenthesis
+            \item canonically one-handed vs. two-handed signs
+            \item pronunciations
+            \item increased number of speakers
+            \end{itemize}
+          \end{itemize}
+        \end{column}
+      \end{columns}
+      
+      \vskip1ex
+      \begin{itemize}
+      \item several speaker setups\\[1ex]
+        \begin{center}
+          \includegraphics[width=.27\linewidth]{images/speaker-1}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-2}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-9}
+          \vskip1ex
+          
+          \includegraphics[width=.27\linewidth]{images/speaker-3}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-4}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-5}
+          \vskip1ex
+          
+          \includegraphics[width=.27\linewidth]{images/speaker-6}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-7}
+          \,
+          \includegraphics[width=.27\linewidth]{images/speaker-8}
+        \end{center}
+      \item Example of the four speakers: due to the different
+        clothing (short sleeves, long sleeves, glasses, ...) and
+        camera setups, nine speaker setups have to be handled in the
+        RWTH-BOSTON-400 database.
+      \end{itemize}
+      
+    \end{block}
+    
+    \begin{block}{RWTH-BOSTON-Hands Database}
+      \begin{itemize}
+      \item database with annotated hand and head positions
+      \end{itemize}
+      
+      \includegraphics[height=.2\linewidth]{images/bostonhand1} \hspace{1ex}
+      \includegraphics[height=.2\linewidth]{images/bostonhand2}  \hspace{1ex}
+      \includegraphics[height=.2\linewidth]{images/xfigures/tracking_tollerance}
+      
+    \end{block}
+
+    \begin{block}{WWW}
+      \begin{itemize}
+      \item freely available for further research in
+        \begin{itemize}
+        \item linguistics:\\
+          {\large \url{http://www.bu.edu/asllrp/}}
+        \item computer science:\\
+          {\large \url{http://www-i6.informatik.rwth-aachen.de/aslr/}}
+        \end{itemize}
+      \end{itemize}
+    \end{block}
+       
+  \end{column}
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{columns}
+\vfill
+\end{frame}
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-PDF-mode: t

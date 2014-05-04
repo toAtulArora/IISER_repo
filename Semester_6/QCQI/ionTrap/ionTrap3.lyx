@@ -71,17 +71,8 @@ The Ion Trap Architecture
 Atul Singh Arora
 \end_layout
 
-\begin_layout Abstract
-In my course of study so far, I've realized that there're atleast two good
- ways of studying new material.
- The first is to read the content as a hint (pretend like you're in the
- past and its coming from the future) to yourself for developing a new subject
- from scratch.
- Your mind won't question everything and automatically try to get the point.
- The other is to understand every single word of the material so you've
- mastered it when you're through.
- The first chapter and second (last) chapter reflect the corresponding strategie
-s.
+\begin_layout Address
+Indian Institute of Science, Education and Research, Mohali
 \end_layout
 
 \begin_layout Standard
@@ -93,16 +84,8 @@ LatexCommand tableofcontents
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset FloatList figure
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
-Oversimplified overview
+Overview
 \end_layout
 
 \begin_layout Section
@@ -110,9 +93,11 @@ Prerequisites for the chapter
 \end_layout
 
 \begin_layout Standard
-Can read and take being made fun of occasionally in good spirit.
- Also it'll help if you have some rough idea about what Qubits etc.
- really are and their use in the context of information processing.
+Basic knowledge of physical concepts.
+ A rough idea about qubits will be helpful; infact knowing that they reside
+ in the space spanned by the states of any two level quantum system is sufficien
+t.
+ 
 \end_layout
 
 \begin_layout Section
@@ -131,8 +116,9 @@ Confining the ions
 
 \begin_deeper
 \begin_layout Enumerate
-Production of ions: Heating calcium in high vaccuum | fire high speed electrons
- | some resulting ions fall inside the trap and get stuck
+Production of ions: It involves heating calcium in high vacuum, then firing
+ of high speed electrons on its vapour.
+ Consequently some resulting ions fall inside the trap and get stuck.
 \end_layout
 
 \begin_layout Enumerate
@@ -150,26 +136,29 @@ Trap structure:
 \begin_inset Newline newline
 \end_inset
 
-The idea is simple.
+Trap structure: The idea is simple.
  Since you can't create a potential minima anywhere inside the boundary,
  you can't trap an ion.
  But you see the saddle point.
- You change the potential rapidly so that the `U' minima oscillates between
- being along the X and Y axis (say).
- This way, on an average, the saddle point sees zero average potential.
- If the ion were anywhere other than this point, it'll experiences oscillating
+ (In the figure, the X and Y axis represent physical space and Z is the
+ potential.) You change the potential rapidly so that the `U' minima oscillates
+ between being along the X and Y axis (say).
+ (The flat circular part is the electrode's surface) This way, on an average,
+ the saddle point sees zero average potential.
+ If the ion was anywhere other than this point, it'll experiences oscillating
  forces.
  This effectively results in confinement of the atom.
  Q1.
  How does an oscillating force ensure confinement? Q2.
  What frequencies are most effective and why? Q3.
- How do you know only 1 ion is trapped? 
+ How do you know only 1 ion is trapped? The next immediate question is what
+ restricts the ion in the spatial Z axis.
+ Well, we just pin the ion using a positive potential (by putting two electrodes
+ along the said axis.) 
 \begin_inset Newline newline
 \end_inset
 
-The next immediate question is what restricts the ion in the Z axis.
- Well, we just pin the ion using a positive potential (by putting two electrodes
- along the said axis.)
+(Figure was taken from [1])
 \end_layout
 
 \end_deeper
@@ -193,7 +182,7 @@ This is a serious challenge.
 
 \begin_layout Enumerate
 How do you circumvent this? Laser cooling.
- Oximoron you might say but the following little thought is illuminating.
+ Oxymoron you might say but the following little thought is illuminating.
  If you hit an atom with light with opposite momentum, the atom slows down
  as the light is bounced back.
  So if you could get the ions to absorb light preferentially going opposite
@@ -253,7 +242,7 @@ Initialize each qubit individually: This is done by shining light on it
 \end_layout
 
 \begin_layout Enumerate
-Perform C-NOT between any pair of Qubits (either can be the control/target)
+Perform C-NOT between any pair of Qubits (this is explained below)
 \end_layout
 
 \end_deeper
@@ -303,10 +292,7 @@ The computer; ion string: Lets quickly review what C-NOT does.
  for, one they're too small and two, ion A and B may not be adjacent.
  Seems like a deal breaker.
  But these people (the real scientists) are clever.
-\begin_inset Newline newline
-\end_inset
-
-It goes something like this
+ What they do goes something like this
 \end_layout
 
 \begin_deeper
@@ -316,8 +302,8 @@ A laser light is shone on ion A such that its absorbed only in state one.
 
 \begin_deeper
 \begin_layout Enumerate
-An ion with magnet down (state one), resonates at a slightly different compared
- to one with magnet up.
+An ion with magnet down (state one), resonates at a slightly different frequency
+ compared to one with magnet up.
  Thus it is possible.
 \end_layout
 
@@ -364,11 +350,11 @@ Ofcourse, we've made far too many assumptions but the rough idea should
 \end_layout
 
 \begin_layout Chapter
-Prologue; the trap
+Deeper in the trap
 \end_layout
 
 \begin_layout Section
-Minimum Requirements (for the computer and the reader)
+Prologue
 \end_layout
 
 \begin_layout Standard
@@ -381,7 +367,7 @@ It has been assumed that the reader has a basic knowledge of quantum mechanics
 
 \begin_layout Standard
 It can be shown that to produce arbitrary unitary transformations of the
- state of a set of qubits, it is sufficent to be able to produce arbitrary
+ state of a set of qubits, it is sufficient to be able to produce arbitrary
  rotations in the Hilbert space of any individual qubit and to be able to
  carry out the controlled-rotation operation.
 \end_layout
@@ -437,7 +423,7 @@ Further, it is worthwhile to remark that a processor with a few qubits may
 \end_layout
 
 \begin_layout Section
-Setup, the trap
+Setup
 \end_layout
 
 \begin_layout Subsection
@@ -679,11 +665,27 @@ First things first.
  Lets answer them.
  There are two kinds of states.
  
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename energyLevels.emf
+	display false
+	width 10cm
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
 The first are internal energy eigenstates of the ion.
- (refer to the figure)
+ Refer to the figure.
+ (taken from [2])
 \end_layout
 
 \begin_deeper
@@ -1294,12 +1296,12 @@ So in effect, do you realize what you've done? If this doesn't blow your
 \end_layout
 
 \begin_layout Section
-Essential and missing
+Epilogue
 \end_layout
 
 \begin_layout Standard
-There are some essential topics which haven't been discussed here but have
- been mentioned here.
+There are some essential topics which haven't been discussed here but mentioned
+ for the sake of completion.
 \end_layout
 
 \begin_layout Enumerate
@@ -1316,6 +1318,13 @@ Candidate ions
 
 \begin_layout Enumerate
 Errors and limitations
+\end_layout
+
+\begin_layout Standard
+It is hoped that the report was informative, fun and helpful in putting
+ the idea across.
+ I apologize for any mistakes that might have crept in during the process
+ of documentation.
 \end_layout
 
 \begin_layout Bibliography
@@ -1337,16 +1346,6 @@ key "key-2"
 \end_inset
 
 http://xxx.soton.ac.uk/abs/quant-ph/9608011
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "key-3"
-
-\end_inset
-
-
 \end_layout
 
 \end_body

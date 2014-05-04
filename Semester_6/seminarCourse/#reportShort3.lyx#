@@ -119,6 +119,15 @@ The following discussions have been severely shortened and may therefore
 
 \end_layout
 
+\begin_layout Abstract
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Why a Quantum Theory of Gravity
 \end_layout
@@ -855,11 +864,37 @@ I thank Mr.
 \end_layout
 
 \begin_layout Section
-(Himanshu, paradoxes?)
+Magnetic Refrigeration
+\end_layout
+
+\begin_layout Subsection
+The when, where and who | facts
 \end_layout
 
 \begin_layout Standard
-Definition of paradoxes, (?), Einstein clock, EPR
+This talk was delivered by the infamous to be Dr.
+ Ayushi Singhania (Int PhD), on Wednesday, April 23, 2014, at 9 PM in LH3
+ of the LHC.
+\end_layout
+
+\begin_layout Subsection
+Motivation for attending
+\end_layout
+
+\begin_layout Standard
+The topic sounded like fun.
+\end_layout
+
+\begin_layout Subsection
+What I could follow
+\end_layout
+
+\begin_layout Standard
+The speaker started with outlining her talk; introduction, history, magneto
+ caloric effect, thermodynamics, advantages/disadvantages.
+ She explained that the technology is based in magneto caloric effects.
+ This was discovered by E Warbug in 1881.
+ 
 \end_layout
 
 \begin_layout Standard

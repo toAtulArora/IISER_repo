@@ -371,8 +371,298 @@ Prologue; the trap
 Minimum Requirements (for the computer and the reader)
 \end_layout
 
+\begin_layout Standard
+It has been assumed that the reader has a basic knowledge of quantum mechanics
+ (Dirac's formulation preferably) and also understands qubits and their
+ role in information processing.
+ The following is intended to briefly review some concepts that'll be used
+ and to comment on some aspects specific to the architecture.
+\end_layout
+
+\begin_layout Standard
+It can be shown that to produce arbitrary unitary transformations of the
+ state of a set of qubits, it is sufficent to be able to produce arbitrary
+ rotations in the Hilbert space of any individual qubit and to be able to
+ carry out the controlled-rotation operation.
+\end_layout
+
+\begin_layout Standard
+Although conventionally we use C NOTs instead of C ROTs, the latter is more
+ important for it is easier to implement physically and thus the changed
+ generalization.
+\end_layout
+
+\begin_layout Standard
+However, a further simplification made can be made as follows.
+ Instead of seeking CROT between any pair of qubits directly, it is sufficient
+ to have one special qubit which can undergo CROT with any of the other.
+ This special qubit is refered to as a 'bus' and can be used to carry informatio
+n around using another gate called SWAP (does what it says, swaps the qubits).
+ Although this can be decomposed into the aforesaid gates, in practice,
+ this can be directly implemented physically.
+ The major disadvantage of the bus method is that parallel operations aren't
+ possible.
+\end_layout
+
+\begin_layout Standard
+Accepting the limitations and proceeding with the 'bus' idea, we have the
+ following minimum requirements of our quantum processor.
+\end_layout
+
+\begin_layout Enumerate
+Arbitrary rotations of any single qubit
+\end_layout
+
+\begin_layout Enumerate
+CROT between the bus and any other qubit (note, the other way round is not
+ required, viz.
+ the control is bit is the bus)
+\end_layout
+
+\begin_layout Enumerate
+SWAP between the bus and any other qubit
+\end_layout
+
+\begin_layout Standard
+It will be shown in the following section how all of these can be achieved
+ on the ion trap architecture.
+ Other than this ofcourse, we must be able to make measurements also.
+\end_layout
+
+\begin_layout Standard
+Further, it is worthwhile to remark that a processor with a few qubits may
+ be built using a single particle with sufficient degrees of freedom.
+ The ion trap approach however is more sensible in realizing an interesting
+ enough quantum computer, with say a hundred qubits.
+\end_layout
+
 \begin_layout Section
 Setup, the trap
+\end_layout
+
+\begin_layout Subsection
+Introduction
+\end_layout
+
+\begin_layout Standard
+We discuss here an ion trap with a line of N trapped ions.
+ Each ion has two stable and two metastable states (such as hyperfine or
+ two zeeman levels).
+ There's a setup to point laser beams to interact with any of the N ions.
+ Each ion constitutes one qubit; the two internal energy eigenkets of the
+ ion.
+ There's also the bus qubit discussed in the previous section.
+ The vibrational motion of the whole string of ions constitutes this qubit.
+ This motion must be quantized for it to be usable as a qubit.
+ This thus requires cooling the ion string well below the `quantum limit',
+ defined with respect to the axial vibrational frequency,
+\begin_inset Formula 
+\[
+k_{B}T\ll\hbar\omega_{z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This happens to be one of the most challenging parts of the experimental
+ setup, after making the trap and catching the ions.
+ (Subtleties related to the ``Lambe-Dicke'' regime haven't been discussed)
+ Further, in brief, there're two known traps, the Paul (rf) and the Penning
+ (Magnetic) and it so turns out that the former allows for tighter confinement
+ (useful for cooling) and allows for magnetic fields to be used for other
+ useful purposes such as splitting into zeeman levels.
+ Further, tighter trapping leads to faster `switching time' for quantum
+ gates such as CROT to be discussed in the next section.
+\end_layout
+
+\begin_layout Subsection
+Modeling the motion
+\end_layout
+
+\begin_layout Standard
+The N trapped ions are modelled as a system of N point charges in a harmonic
+ potential well of tight radial confinement, viz.
+ 
+\begin_inset Formula $\omega_{x},\omega_{y}\gg\omega_{z}$
+\end_inset
+
+.
+ Obviously, the parameters 
+\begin_inset Formula $\{\omega_{i}\}$
+\end_inset
+
+ will be determined by the electrode geometry and potentials, which will
+ not be discussed in this report.
+ The corresponding hamiltonian is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H=\sum_{i=1}^{N}\frac{1}{2}M\left(\omega_{x}^{2}X_{i}^{2}+\omega_{x}^{2}Y_{i}^{2}+\omega_{x}^{2}Z_{i}^{2}+\frac{\mathbf{P}_{i}^{2}}{M^{2}}\right)+\sum_{i=1}^{N}\sum_{j>i}\frac{e^{2}}{4\pi\epsilon_{0}|\mathbf{R}_{i}-\mathbf{R}_{j}|}
+\]
+
+\end_inset
+
+ where the position and momentum are operators.
+ Assertion: at low temperatures, for tight radial confinement, the ions
+ all lie along the z-axis.
+ Consequently it is reasonable to assume 
+\begin_inset Formula $|R_{i}-R_{j}|\approx|Z_{i}-Z_{j}|$
+\end_inset
+
+ which allows for the radial and axial motion to be separated.
+ Considering the axial motion, we first find a relevant length scale, say
+ 
+\begin_inset Formula 
+\[
+z_{s}=\left(\frac{e^{2}}{4\pi\epsilon_{0}M\omega_{z}^{2}}\right)^{1/3}\approx10-100\,\mu m
+\]
+
+\end_inset
+
+which is of the order of separation between the ions.
+ Solving the equation classically, one obtains the equilibrium positions
+ of the ions.
+ As is expected, for larger N, the outer ions tend to push the inner ions
+ closer.
+ Consequently, the spacing between the ions depends upon N.
+ However, it is not so obvious that the two normal modes of oscillation
+ about these equilibrium positions are independent of N (for small oscillations
+ that is).
+ Besides, even higher harmonics are nearly independent of N.
+ The frequencies of the two normal modes are 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sqrt{3}\omega_{z}$
+\end_inset
+
+ (the list goes 
+\begin_inset Formula $\{1,\sqrt{3},\,\sqrt{29/5},\,3.051,\,3.671,\,4.272,\,4.865\dots\}$
+\end_inset
+
+ times 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+).
+ In the lowest of mode of oscillation all the ions move to and fro together.
+ This mode thus corresponds to the harmonic motion of the centre of mass
+ of the ion string.
+ Since the frequencies of the higher harmonics are so different from that
+ of the ground normal mode, it can be excited selectively, without exciting
+ the other modes.
+ 
+\end_layout
+
+\begin_layout Standard
+So far everything was classical.
+ In cranking things up to the quantum level, we simply treat the centre
+ of mass coordinate 
+\begin_inset Formula $z_{cm}$
+\end_inset
+
+ as a harmonic oscillator.
+ We assert that the classically determined ground state excitation frequency
+ 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+ continues to be valid even though the ion wave functions now overlap; they
+ delicately cancel upon calculation of the centre of mass motion.
+ Accepting this assertion, we proceed by noting that the harmonic oscillator
+ has 
+\begin_inset Formula $NM$
+\end_inset
+
+ mass and frequncy 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+.
+ Thus the energy eigenfunctions are given as
+\begin_inset Formula 
+\[
+\psi_{n}(z_{cm})=\left(\frac{NM\omega_{z}}{\pi\hbar2^{2n}(n!)^{2}}\right)^{1/4}H_{n}\left(z_{cm}\sqrt{NM\omega_{z}/\hbar}\right)e^{-NM\omega_{z}z_{cm}^{2}/2\hbar}
+\]
+
+\end_inset
+
+This gives us the extent of spatial spread of the ground state probability
+ distribution, which is given by its standard deviation, 
+\begin_inset Formula 
+\[
+\Delta z_{cm}=\sqrt{\hbar/2NM\omega_{z}}
+\]
+
+\end_inset
+
+We certainly don't want our inter-ion distance to be comparable to 
+\begin_inset Formula $\Delta z_{cm}$
+\end_inset
+
+, else addressing each ion individually with a laser beam would become unnecessa
+rily hard, if not impossible.
+ Thus we require 
+\begin_inset Formula $\Delta z_{cm}\ll\Delta z_{min}$
+\end_inset
+
+.
+ A numerical solution yields 
+\begin_inset Formula 
+\[
+\Delta z_{min}\approx2.0z_{s}N^{-0.57}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $z_{s}$
+\end_inset
+
+ is the length we found in the beginning (this formula remains valid till
+ 
+\begin_inset Formula $N\approx1000$
+\end_inset
+
+).
+ Imposing the inequality we get
+\begin_inset Formula 
+\[
+\frac{\omega_{z}}{M}\ll\frac{31N^{1.86}}{\hbar^{3}}\left(\frac{e^{2}}{4\pi\epsilon_{0}}\right)^{2}\approx2.4\times10^{21}N^{1.86}\,\text{Hz/u}
+\]
+
+\end_inset
+
+where u is the atomic mass unit (
+\begin_inset Formula $1.66057\times10^{-27}$
+\end_inset
+
+ kg).
+ The parameters here are the frequency which we said depends on the geometry
+ and potentials of the electrodes.
+ The mass of the atom is also somewhat in our control (depends on which
+ we choose, but there're other factors influencing that also).
+ However, in practice, this condition is found to be easily satisfied.
+ 
+\begin_inset Formula $\omega_{z}$
+\end_inset
+
+ is no more than a GHz, while 
+\begin_inset Formula $M$
+\end_inset
+
+ ranges from 9 to 200 u.
+ It's thus accurate to image the ions as sitting on a line, with their small
+ wavepacket centred at their classical equilibrium location, with essentially
+ no overlap with others.
+ It must be stated that this condition alone doesn't guarantee that the
+ separation is enough to allow unique addressing of the ions by laser beams.
 \end_layout
 
 \begin_layout Section
@@ -998,8 +1288,30 @@ To complete the operation of the processor, we must be able to make measurements
  not an issue now is it?
 \end_layout
 
+\begin_layout Standard
+So in effect, do you realize what you've done? If this doesn't blow your
+ mind, then you have no feelings!
+\end_layout
+
 \begin_layout Section
-It's cool man
+Essential and missing
+\end_layout
+
+\begin_layout Standard
+There are some essential topics which haven't been discussed here but have
+ been mentioned here.
+\end_layout
+
+\begin_layout Enumerate
+Cooling
+\end_layout
+
+\begin_layout Enumerate
+Design of the ion trap itself
+\end_layout
+
+\begin_layout Enumerate
+Candidate ions
 \end_layout
 
 \begin_layout Bibliography
