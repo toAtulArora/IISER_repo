@@ -4,6 +4,6 @@ This work was done for the partial completion of the course titled Quantum Compu
 
 1. [The poster](posterMS11003.pdf?raw=true)
 
-2. [The report](reportMS11003.pdf?raw=true) and [the report]{reportMS11003arvindSirsFormat.pdf?raw=true} in the format provided
+2. [The report](reportMS11003.pdf?raw=true) and [the report]{reportMS11003arvindSirsFormat.pdf?raw=true} in the format provided. The source code in a [rar file]{MS11003.rar?raw=true} is also available.
 
-[Tiny Link to this page]{http://tinyurl.com/pb3wul8}
+[This is a tiny Link to this page]{http://tinyurl.com/pb3wul8}
