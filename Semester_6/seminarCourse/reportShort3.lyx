@@ -203,7 +203,7 @@ Spacetime is defined by a 4d manifold and its metric
 \begin_inset Formula $g_{\mu\nu}$
 \end_inset
 
- (-ve determinant)
+ (-ve determinant).
 \end_layout
 
 \begin_layout Enumerate
@@ -211,17 +211,17 @@ Stress tensor,
 \begin_inset Formula $T_{\mu\nu}$
 \end_inset
 
-, which describes the matter distribution
+, which describes the matter distribution.
 \end_layout
 
 \begin_layout Standard
-The metric imposes a causal structure on prashansa events in their local
+The metric imposes a causal structure on time like events in their local
  neighbourhood.
 \end_layout
 
 \begin_layout Standard
 Remarks: Given a metric, at any point, you can define a set of tangent vectors.
- These can be classified as timelike, spacelike or null (or prashansa like,
+ These can be classified as timelike, spacelike or null (or Prashansa like,
  viz.
  going nowhere).
  Corresponding geodesics determine which evens can influence each other
@@ -242,7 +242,7 @@ Einstein's equation is only a local PDE and determines solution spacetimes
 \end_layout
 
 \begin_layout Standard
-Next he talked about time orientability, strong causlity and stable causality.
+Next he talked about time orientability, strong causality and stable causality.
  He stated that causality is not automatic, so time-orientable space times
  are a subset of solutions of einstein's equation.
  An example is given in the next section.
@@ -266,11 +266,11 @@ Stable Causality: Imposing stable causality on the other hand would mean
 
 \begin_layout Standard
 Global Hyperbolicity: Spacetimes which admit spacelike hypersurface whose
- domain of dependence is th entire spacetime are globally hyperbolic.
+ domain of dependence is the entire spacetime are globally hyperbolic.
 \end_layout
 
 \begin_layout Standard
-Thus, global hyperbolicity autmatically ensures causal stability.
+Thus, global hyperbolicity automatically ensures causal stability.
 \end_layout
 
 \begin_layout Standard
@@ -279,8 +279,8 @@ Thus, global hyperbolicity autmatically ensures causal stability.
 
 \begin_layout Standard
 To have a spacetime with predictability, we can construct globally hyperbloci
- spacetime (take a spacelike hyperprashansa, define domain of depndence
- to be the full spacetime, it abruptly ends.
+ spacetime (take a spacelike hyper surface, define domain of depndence to
+ be the full spacetime, it abruptly ends.
  You extend it, how far? maximally possible).
  However, a predictable spaceimte should be an inextendable/globally hyperbolic
  solution of einstein's equation.
@@ -430,7 +430,7 @@ The next part was rather interesting.
  of entities, it seems to suggest that the horizons must have some atomic
  structure, and they must be purely geometric objects, viz.
  the`atoms' must be atoms of geometry.
- Maybe spacetime geometry is discrete.
+ Maybe space-time geometry is discrete.
  
 \end_layout
 
@@ -450,7 +450,7 @@ This hints us to the conclusion that perhaps continuum geometry is inadequate
 
 \begin_layout Standard
 So where's the problem, well GR has a property of general covariance which
- makes it a gauge theory and rsults in loss of determinism.
+ makes it a gauge theory and results in loss of determinism.
  Further, if space-time is quantized, then `notion of `dynamics'' is hard
  to define, since time evolution needs to be interpreted differently.
  Besides, the regimes where quantum rescue is sought, involves highly dynamical,
@@ -489,7 +489,7 @@ Acknowledgements
 
 \begin_layout Standard
 I thank Ms.
- Prashansa Gupta (MS11021) for sharing here notes so that atleast our combined
+ Prashansa Gupta (MS11021) for sharing her notes so that atleast our combined
  notes made sense.
 \end_layout
 
@@ -671,7 +671,7 @@ Summary
 
 \begin_layout Standard
 The speaker began by displaying data of the last eight hundred thousand
- years, stating the conentration levels of greenhouse gasses.
+ years, stating the concentration levels of greenhouse gasses.
  Before the human caused perturbation, that is seven thousand years prior
  to 1750, atmospheric CO_2 (data from ice cores) was 260-280 ppm, the levels
  of CH_4 changed by 100 ppt.
@@ -990,7 +990,8 @@ Motivation for attending
 \end_layout
 
 \begin_layout Standard
-The talk was on a holiday plus I wanted to wind up the seminar work by tonight.
+The talk was on a holiday plus I wanted to wind up the seminar work by that
+ night.
  But as usual, it turned out to be informative and the principle discussed
  was rather interesting.
 \end_layout
@@ -1020,10 +1021,10 @@ Dilution refrigerator starts working at 0.7K.
 \begin_layout Standard
 By mixing into the lower layer, the He-3 layer above is effectively being
  diluted.
- In order to continue cooling, we must somehow remove the Chancha He-3 dissolved
+ In order to continue cooling, we must somehow remove the He-3 dissolved
  in dilute phase.
- This can be understood in anology with the evaporation process, wherein
- we need to remove (prashansa) vapor.
+ This can be understood in analogy with the evaporation process, wherein
+ we need to remove vapor.
 \end_layout
 
 \begin_layout Standard
@@ -1031,7 +1032,7 @@ By mixing into the lower layer, the He-3 layer above is effectively being
 \end_layout
 
 \begin_layout Standard
-Cooling power: Vapor pressure of He falls exponentially with decreasing
+Cooling power: Vapour pressure of He falls exponentially with decreasing
  temperature.
  It is possible to increase the limiting concentration above 6.6% by increasing
  pressure.

@@ -69,7 +69,7 @@ IDC352
 \end_layout
 
 \begin_layout Author
-Atul Sinh Aurora
+Atul Singh Aurora
 \begin_inset Newline newline
 \end_inset
 
@@ -175,7 +175,7 @@ The speaker opened with `Quantum Gravity is the fiery marriage of General
 \begin_layout Standard
 \begin_inset Formula 
 \[
-R_{\mu\nu}(g)-\frac{1}{2}R(g)g_{\mu\nu}=\frac{8\pi G}{C^{4}}T_{\mu\upsilon}
+R_{\mu\nu}(g)-\frac{1}{2}R(g)g_{\mu\nu}=\frac{8\pi G}{c^{4}}T_{\mu\upsilon}
 \]
 
 \end_inset
@@ -189,7 +189,7 @@ There've been two revolutions in physics; Relativity and Quantum Mechanics.
  properties can also change.
  The combination of special relativity and Quantum Mechanics is Quantum
  Field Theory.
- QFT is consistent with fixed causality defined by minkowski spacetime,
+ QFT is consistent with fixed causality defined by minkowski space-time,
  but assumes that causal structures can be defined at arbitrarily small
  lengths.
 \end_layout
@@ -199,7 +199,7 @@ Next the speaker talked about the basic assumptions of GR.
 \end_layout
 
 \begin_layout Enumerate
-Spacetime is defined by a 4d manifold and its metric 
+space-time is defined by a 4d manifold and its metric 
 \begin_inset Formula $g_{\mu\nu}$
 \end_inset
 
@@ -221,15 +221,13 @@ The metric imposes a causal structure on time like events in their local
 
 \begin_layout Standard
 Remarks: Given a metric, at any point, you can define a set of tangent vectors.
- These can be classified as timelike, spacelike or null (or Prashansa like,
- viz.
- going nowhere).
+ These can be classified as timelike, spacelike or null.
  Corresponding geodesics determine which evens can influence each other
  causally.
 \end_layout
 
 \begin_layout Standard
-Einstein's equation is only a local PDE and determines solution spacetimes
+Einstein's equation is only a local PDE and determines solution space-times
  only locally.
  Extended solutions are not guaranteed to be causal without imposing extra
  conditions.
@@ -265,12 +263,12 @@ Stable Causality: Imposing stable causality on the other hand would mean
 \end_layout
 
 \begin_layout Standard
-Global Hyperbolicity: Spacetimes which admit spacelike hypersurface whose
- domain of dependence is the entire spacetime are globally hyperbolic.
+Global Hyperbolicity: space-times which admit spacelike hypersurface whose
+ domain of dependence is the entire space-time are globally hyperbolic.
 \end_layout
 
 \begin_layout Standard
-Thus, global hyperbolicity autmatically ensures causal stability.
+Thus, global hyperbolicity automatically ensures causal stability.
 \end_layout
 
 \begin_layout Standard
@@ -278,11 +276,11 @@ Thus, global hyperbolicity autmatically ensures causal stability.
 \end_layout
 
 \begin_layout Standard
-To have a spacetime with predictability, we can construct globally hyperbloci
- spacetime (take a spacelike hyper surface, define domain of depndence to
- be the full spacetime, it abruptly ends.
+To have a space-time with predictability, we can construct globally hyperbolic
+ space-time (take a spacelike hyper surface, define domain of depndence
+ to be the full space-time, it abruptly ends.
  You extend it, how far? maximally possible).
- However, a predictable spaceimte should be an inextendable/globally hyperbolic
+ However, a predictable space-time should be an inextendable/globally hyperbolic
  solution of einstein's equation.
 \end_layout
 
@@ -351,8 +349,8 @@ Next the speaker digressed to talk about a `Bundle of Time like Geodesics'.
 
 \begin_layout Standard
 Blackholes and Thermodynamics were discussed next.
- General relativity contains another class of intreqing solutions - Black
- holes - spactimes which have event horizons.
+ General relativity contains another class of intriguing solutions - Black
+ holes - space-times which have event horizons.
  A stationary black hole can be described in terms of parameters like mass
  (
 \begin_inset Formula $M$
@@ -375,7 +373,7 @@ Blackholes and Thermodynamics were discussed next.
 \begin_inset Formula $\Omega$
 \end_inset
 
-) angular velocity and (Prashansa Potential 
+) angular velocity and (Potential 
 \begin_inset Formula $\phi$
 \end_inset
 
@@ -430,7 +428,7 @@ The next part was rather interesting.
  of entities, it seems to suggest that the horizons must have some atomic
  structure, and they must be purely geometric objects, viz.
  the`atoms' must be atoms of geometry.
- Maybe spacetime geometry is discrete.
+ Maybe space-time geometry is discrete.
  
 \end_layout
 
@@ -450,7 +448,7 @@ This hints us to the conclusion that perhaps continuum geometry is inadequate
 
 \begin_layout Standard
 So where's the problem, well GR has a property of general covariance which
- makes it a gauge theory and rsults in loss of determinism.
+ makes it a gauge theory and results in loss of determinism.
  Further, if space-time is quantized, then `notion of `dynamics'' is hard
  to define, since time evolution needs to be interpreted differently.
  Besides, the regimes where quantum rescue is sought, involves highly dynamical,
@@ -489,7 +487,7 @@ Acknowledgements
 
 \begin_layout Standard
 I thank Ms.
- Prashansa Gupta (MS11021) for sharing here notes so that atleast our combined
+ Prashansa Gupta (MS11021) for sharing her notes so that atleast our combined
  notes made sense.
 \end_layout
 
@@ -650,8 +648,7 @@ The when, where and who | facts
 \end_layout
 
 \begin_layout Standard
-This talk was delivered by Mr.
- Essentially, aka Dr.
+This talk was delivered by Dr.
  S K Tandon, IIT Kanpur, on Wednesday, April 16, 2014, at 6 PM, in LH5,
  LHC.
 \end_layout
@@ -662,7 +659,7 @@ Motivation for attending | feelings
 
 \begin_layout Standard
 Frankly, I don't know and I regret attending it.
- Except that it helps in the counting to 6 :P
+ Except that it helps in the counting to 6.
 \end_layout
 
 \begin_layout Subsection
@@ -670,78 +667,154 @@ Summary
 \end_layout
 
 \begin_layout Standard
-The speaker began by displaying data of the last eight hundred thousand
- years, stating the concentration levels of greenhouse gasses.
- Before the human caused perturbation, that is seven thousand years prior
- to 1750, atmospheric CO_2 (data from ice cores) was 260-280 ppm, the levels
- of CH_4 changed by 100 ppt.
- The level of CO_2 was 180 ppm during the glacial (cold) period, which rose
- upto 300 ppm during the interglacial warm periods (storage in oceans).
- During the 18th century (industrial revolution), the CO_2 levels reached
- 280 ppm, while transportation revolution causing urbanization, resulted
- in its elevation to 380 ppm.
+The talk was started by display of the greenhouse gasses data spanning the
+ last 100 years.
+ Some key estimates of CO_2 concentrations are as follows
+\end_layout
+
+\begin_layout Itemize
+180 ppm | glacial (cold) period
+\end_layout
+
+\begin_layout Itemize
+300 ppm | interglacial warm period
+\end_layout
+
+\begin_layout Itemize
+280 ppm | 18th century, Industrial Revolution
+\end_layout
+
+\begin_layout Itemize
+380 ppm | transportation revolution leading to urbanization
 \end_layout
 
 \begin_layout Standard
-Continental ice sheet is a climate archive some would say.
- The cryosphere's annual layers and be counted to estimate the `age'; melted
- ice can be used to identify the liquids present at the time, while ice
- cracks can be used to analyse the gas trapped.
- Another method called scintering is also used, where scaling of air bubbles
- in ice is employed.
+The speaker then discussed some of the techniques used for arriving at such
+ conclusions
+\end_layout
+
+\begin_layout Itemize
+Continental Ice sheets (also known as Climate Archive)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cryosphere's annual layars: These are counted to establish the `age'
+\end_layout
+
+\begin_layout Itemize
+Molten Ice: This is useful for identifying liquids present at the time
+\end_layout
+
+\begin_layout Itemize
+Ice Cracks: They are the molten ice for gas
+\end_layout
+
+\begin_layout Itemize
+Scintering: Scaling of air bubbles is used
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Annual Rings
+\end_layout
+
+\begin_layout Itemize
+Radioactive
+\end_layout
+
+\begin_layout Itemize
+Age Modelling
 \end_layout
 
 \begin_layout Standard
-Further, dating techniques were discussed such as counting the annual rings,
- radioactive dating (although no detail was provided) and age modelling.
- He attempted to establish a relationship between temporary CO_2 concentration
- and human based carbon emission.
+Next an attempt was made to relate CO_2 levels and human CO_2 emissions.
+ The speaker claimed that a Nexus of sorts is formed with the following
+ components:
+\begin_inset Newline newline
+\end_inset
+
+Water, food, population control, health, energy, climate change, environment
+ sanity, knowledge equity, sustainability and terrorism.
 \end_layout
 
 \begin_layout Standard
-He went on to list some of the challenges of this century, including water,
- food, population control, health, energy climate change, environment sanity,
- knowledge equity, sustainability and terrorism.
- He claimed they form a nexus.
+Next the speaker described the earth system as composed of
+\end_layout
+
+\begin_layout Itemize
+Eco-sphere
+\end_layout
+
+\begin_layout Itemize
+Human Factors
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Anthroposphere: Aggregate of human activites
+\end_layout
+
+\begin_layout Itemize
+Metaphysical: Its a global subject and includes adoption of say international
+ protocols
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Coming to the most important point of the talk, the speaker justified how
+ 0.6 degrees of change in temperature is unaccounted for, despite the removal
+ of all known possible natural causes, including solar heating (primarily,
+ believed to contribute ~0.2 degrees), orbit cooling and millenium warming.
+ Thus by elimination, the only cause of the observed effects is anthropogenic
 \end_layout
 
 \begin_layout Standard
-Then he started describing the earth system, which is a function of the
- ecosphere and human factor.
- The human factor itself is composed of two factors, an anthroposphere and
- a metaphysical sub-component.
- The latter describes the emergence of a global subject, for instance adoption
- of international protocols for containing climate change.
- The former is the aggregate of human activities.
+The speaker went on to say how the climate models in the past relied only
+ on factors such as atmosphere, land and ocean while today additionally,
+ the following are the base standard
+\end_layout
+
+\begin_layout Enumerate
+Arosols
+\end_layout
+
+\begin_layout Enumerate
+Carbon Cycles
+\end_layout
+
+\begin_layout Enumerate
+Dynamic Vegetation
+\end_layout
+
+\begin_layout Enumerate
+Atmospheric Chemistry
+\end_layout
+
+\begin_layout Enumerate
+Land Ice
 \end_layout
 
 \begin_layout Standard
-The speaker showed that if the natural change (primarily caused by solar
- warming, which is roughly 0.2 degrees Celcius; orbit cooling, millennium
- warming etc.
- also contribute) is subtracted from the data of the 'recent past', the
- remaining 0.6 is unaccounted for.
- He asserted that this can only be accounted for by anthropogenic arguments.
+He concluded that therefore today we are justified at having more confidence
+ on these.
 \end_layout
 
 \begin_layout Standard
-He then stated how the first published climate models only included the
- atmosphere, land and ocean whereas today factors such as aerosols, carbon
- cycle, dynamic vegetation, atmosphereic chemistry, land ice etc.
- are also included.
- This boosts our confidence in these models and their predictions which
- wasn't the case in the past.
+In conclusion the speaker pointed out that there's an urgent demand for
+ affordable, reliable energy (it is he claimed pivotal to all our problems).
+ He ended on optimistic terms, discussing two examples of possible solutions.
 \end_layout
 
-\begin_layout Standard
-The speaker concluded by saying that there's an urgent demand for affordable
- and reliable energy supply (which are pivotal for solving all of our other
- problems) which are more environment friendly.
- The possible solutions he said (some of which have even been successful
- at certain locations) included Carbon Capture (which involves capturing,
- liquifiying and transporting the released Carbon Dioxide) which tends to
- be expensive, and Shale Oil (which is known to be present in large quantities
- but the extraction technology is still in its infancy)
+\begin_layout Itemize
+Carbon Capture (involves capturing, liquefying, transporting and releasing
+ the gas) [successful examples are known, although not precisely for environment
+al reasons]
+\end_layout
+
+\begin_layout Itemize
+Shail Oil (the extraction technology is still in its infancy but the reserves
+ are promising)
 \end_layout
 
 \begin_layout Subsection
@@ -749,7 +822,7 @@ This I'll remember
 \end_layout
 
 \begin_layout Standard
-There's something called shale oil, which will last us a very long time,
+There's something called shail oil, which will last us a very long time,
  but we haven't the technology to extract it yet.
 \end_layout
 
@@ -872,7 +945,7 @@ The when, where and who | facts
 \end_layout
 
 \begin_layout Standard
-This talk was delivered by the infamous to be Dr.
+This talk was delivered by Ms.
  Ayushi Singhania (Int PhD), on Wednesday, April 23, 2014, at 9 PM in LH3
  of the LHC.
 \end_layout
@@ -927,7 +1000,7 @@ The speaker also did some calculations on the board to arrive at an expression
  
 \begin_inset Formula 
 \[
-\partial T=-\frac{\mu_{0}T}{C_{H}}\left(\frac{\partial M}{\partial T}\right){}_{H}dH
+\partial T=-\frac{\mu_{0}T}{C_{H}}\left(\frac{\partial M}{\partial T}\right)_{H}dH
 \]
 
 \end_inset
@@ -981,8 +1054,8 @@ The when, where and who | facts
 
 \begin_layout Standard
 Mr.
- Subhendu Shekhar deliverd the talk on Friday, April 18, 2014, in LH3, LHC
- at 6:00 PM.
+ Subhendu Shekhar delivered the talk on Friday, April 18, 2014, in LH3,
+ LHC at 6:00 PM.
 \end_layout
 
 \begin_layout Subsection
@@ -990,7 +1063,8 @@ Motivation for attending
 \end_layout
 
 \begin_layout Standard
-The talk was on a holiday plus I wanted to wind up the seminar work by tonight.
+The talk was on a holiday plus I wanted to wind up the seminar work by that
+ night.
  But as usual, it turned out to be informative and the principle discussed
  was rather interesting.
 \end_layout
@@ -1005,12 +1079,12 @@ The speaker started with outlining his talk.
  about 1.3 K.
  Below this temperature, the vapour pressure is very small and thus very
  little evaporates to facilitate the cooling.
- This limitation can be overcome by using mixtures of liquid He-3 and He-4.
- This technique is used in dilution refrigerator.
+ This issue is resolved by using mixtures of liquid He-3 and He-4.
+ The dilution refrigerator works on this technique.
 \end_layout
 
 \begin_layout Standard
-Dilution refrigerator starts working at 0.7K.
+At 0.7K, the dilution refrigerator starts working.
  We start with two layers of almost pure He-3 and He-4 at 0.1K.
  He-3 starts diffusing into He-4.
  The reason for this was explained later.
@@ -1018,49 +1092,36 @@ Dilution refrigerator starts working at 0.7K.
 \end_layout
 
 \begin_layout Standard
-By mixing into the lower layer, the He-3 layer above is effectively being
+This next step can be understood in analogy with the evaporation process,
+ wherein we need to remove vapour for evaporation to continue.
+ By mixing into the lower layer, the He-3 layer above is effectively gets
  diluted.
- In order to continue cooling, we must somehow remove the Chancha He-3 dissolved
- in dilute phase.
- This can be understood in anology with the evaporation process, wherein
- we need to remove (prashansa) vapor.
+ In order to continue cooling, the He-3 dissolved in dilute phase must somehow
+ be removed.
 \end_layout
 
 \begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-Cooling power: Vapor pressure of He falls exponentially with decreasing
- temperature.
+Next the speaker talked about cooling power of the system.
+ Vapour pressure of He falls exponentially with decreasing temperature.
  It is possible to increase the limiting concentration above 6.6% by increasing
- pressure.
+ pressure, he asserted.
  He went on to derive an expression for change in entropy for such a system.
 \end_layout
 
 \begin_layout Standard
----
+Then the realization of such a system was discussed.
+ The basic principle may be described as follows.
+ Like in evaporation, cooling takes place when Helium atoms move from liquid
+ to vapour phase, in dilution, cooling takes place when He-3 atoms move
+ form the concentrated to dilute phase.
 \end_layout
 
 \begin_layout Standard
-Realization: The use of dilution process of cooling is similar in concept
- to helium evaporation.
-\end_layout
-
-\begin_layout Standard
-Like tn evaporation, cooling takes place when ehlium atoms move from liquid
- to vapor phase, in dilution, cooling takes place when He-3 atoms move form
- the concentrated to dilute phase.
-\end_layout
-
-\begin_layout Standard
----
-\end_layout
-
-\begin_layout Standard
-The reason for diffusion/dilution: He-3 is a fermion while He-4 is a boson.
- Therefore He-3 diffuses into He-4 to minimize its Fermi energy, while He-4
- tries to gain more superfluid condensation energy.
+Now coming to the reason for diffusion/dilution; it hinges on the statistical
+ characteristics of the constituents.
+ He-3 is a fermion while He-4 is a boson.
+ Consequently, He-3 diffuses into He-4 to minimize its Fermi energy while
+ He-4 tries to gain more super-fluid condensation energy.
 \end_layout
 
 \begin_layout Standard
@@ -1068,7 +1129,7 @@ The reason for diffusion/dilution: He-3 is a fermion while He-4 is a boson.
 \end_layout
 
 \begin_layout Standard
-Summary:
+Summary (has been written off of one of the slides):
 \end_layout
 
 \begin_layout Enumerate
@@ -1078,8 +1139,8 @@ The helium undergoes phase separation when cooled below 0.87K giving two
 
 \begin_layout Enumerate
 The specific heat of He-3 atoms is higher in the dilute phase than in the
- concentration phase of the atom foes fram the conc to dilute phase, results
- in the `production of cold'.
+ concentration phase of the atom goes from the concentrated to dilute phase,
+ results in the `production of cold'.
  
 \end_layout
 
@@ -1097,7 +1158,7 @@ What I'll remember
 \end_layout
 
 \begin_layout Standard
-Even innocent looking phase diagrams can be immensely important!
+Even innocent looking phase diagrams can be true gems!
 \end_layout
 
 \end_body

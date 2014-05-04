@@ -1,0 +1,67 @@
+\documentclass[10pt]{article}
+\newenvironment{info}[2]
+{
+\centerline{\Large \bf IDC352 Jan-April
+2014, Instructor~:~Professor Arvind}
+\vspace*{10pt}
+%\hrule
+\leftline{\large \bf Name~:~#1~~~~~~~~~~~~Roll Number~:~#2}
+\vspace*{6pt}
+\vspace*{6pt}
+\hrule
+\vspace*{12pt}
+}
+
+\newenvironment{seminar}[5]
+{
+\section{Title~:~#1}
+\vspace*{6pt}
+\leftline{\bf Speaker~:~#2}
+\vspace*{6pt}
+\leftline{\bf Date~:~#3~~~~~~~~~Venue~:~#4}
+\vspace*{6pt}
+\noindent{\bf Report~:~}#5
+
+
+\vspace*{6pt}
+\hrule
+}
+
+\begin{document}
+\begin{info}
+{Deepak Mann}{MS0012}
+\end{info}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{seminar}
+{Title of the Seminar }
+{Speaker Name (affiliation)}
+{Month day, Year}{Venue of the lecture}
+{
+Your report on the seminar will come here and I will try to
+learn from the report something about the seminar.
+
+}
+\end{seminar}
+\begin{seminar}
+{Quantum Gravity}
+{Dr. Sudipta Sarkar(IISER Mohali)}
+{March 15, 2014}{LH2, LHC, IISER Mohali}
+{The seminar was focused on explaining why we need a quantum
+theory of gravity. How gravity is different from other
+forces and how we do not have a quantum theory of it till
+date......
+
+}
+\end{seminar}
+\begin{seminar}
+{Evolution of brain size in Humans}
+{Dr. N. G. Prasad(IISER Mohali)}
+{March 1, 2014}{LH3, LHC, IISER Mohali}
+{I found the seminar very interesting. The unusually large
+brain size for human beings is an unexplained mystery in
+evolutionary biology. It turns out that one can
+explain this based on certain evolutionary arguments ....
+}
+\end{seminar}
+
+\end{document}
