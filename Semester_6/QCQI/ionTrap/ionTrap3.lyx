@@ -248,7 +248,8 @@ Perform C-NOT between any pair of Qubits (this is explained below)
 \end_deeper
 \begin_layout Enumerate
 Ions as tiny magnets: The ion can be thought of as a tiny magnet.
- We can code point up to be state zero and pointing down to be state one.
+ We can code the `pointing up' state to be zero and `pointing down' to be
+ one.
  So far it is the same as classical information storage.
  However, quantum mechanically, the magnet can `point in other directions'.
  This is perhaps best understood as some sort of angle the magnet is at
@@ -373,13 +374,13 @@ It can be shown that to produce arbitrary unitary transformations of the
 \end_layout
 
 \begin_layout Standard
-Although conventionally we use C NOTs instead of C ROTs, the latter is more
+Although conventionally we use CNOTs instead of CROTs, the latter is more
  important for it is easier to implement physically and thus the changed
  generalization.
 \end_layout
 
 \begin_layout Standard
-However, a further simplification made can be made as follows.
+However, a further simplification can be made as follows.
  Instead of seeking CROT between any pair of qubits directly, it is sufficient
  to have one special qubit which can undergo CROT with any of the other.
  This special qubit is refered to as a 'bus' and can be used to carry informatio
@@ -391,7 +392,7 @@ n around using another gate called SWAP (does what it says, swaps the qubits).
 \end_layout
 
 \begin_layout Standard
-Accepting the limitations and proceeding with the 'bus' idea, we have the
+Accepting this limitation and proceeding with the 'bus' idea, we have the
  following minimum requirements of our quantum processor.
 \end_layout
 
@@ -461,7 +462,7 @@ This happens to be one of the most challenging parts of the experimental
  (useful for cooling) and allows for magnetic fields to be used for other
  useful purposes such as splitting into zeeman levels.
  Further, tighter trapping leads to faster `switching time' for quantum
- gates such as CROT to be discussed in the next section.
+ gates such as CROT (to be discussed in the next section).
 \end_layout
 
 \begin_layout Subsection
