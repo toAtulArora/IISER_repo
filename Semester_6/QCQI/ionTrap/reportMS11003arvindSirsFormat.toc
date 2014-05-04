@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}The Ion Trap Architecture}{1}
+\contentsline {chapter}{\numberline {2}Overview}{5}
+\contentsline {section}{\numberline {2.1}Prerequisites for the chapter}{5}
+\contentsline {section}{\numberline {2.2}The meat (or vegetable if you prefer)}{5}
+\contentsline {chapter}{\numberline {3}Deeper in the trap}{11}
+\contentsline {section}{\numberline {3.1}Prologue}{11}
+\contentsline {section}{\numberline {3.2}Setup}{12}
+\contentsline {subsection}{\numberline {3.2.1}Introduction}{12}
+\contentsline {subsection}{\numberline {3.2.2}Modeling the motion}{12}
+\contentsline {section}{\numberline {3.3}Matrix: From paper to our loyal ions}{14}
+\contentsline {subsection}{\numberline {3.3.1}The states we make}{14}
+\contentsline {subsection}{\numberline {3.3.2}The gates it takes}{15}
+\contentsline {subsection}{\numberline {3.3.3}How to see without mistakes}{18}
+\contentsline {section}{\numberline {3.4}Epilogue}{19}

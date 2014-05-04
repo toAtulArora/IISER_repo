@@ -1,0 +1,68 @@
+\documentclass[11pt]{book}
+\renewcommand{\thechapter}{\arabic{chapter}}
+%\renewcommand{\chaptername}{}
+\newenvironment{project}[3]
+{
+\chapter{#1}
+\noindent{\large \bf Roll Number~:~}{#2}\\
+\noindent{\large \bf Name~:~}{#3}
+}
+
+\begin{document}
+\begin{project}{Quantum Cryptography}{MS11012}{Subhash Gupta}
+\section{Introduction and Background}
+This section will provide background and information about
+the theme. 
+Please the format above and give the title, roll number and
+your name name in the required format.
+The background material is available
+in~\cite{ms11012:ref1}. For a general introduction to the
+field see~\cite{ms11012:ref2}. A pure state is define as
+\begin{equation}
+\rho = \vert \psi \rangle \langle \psi \vert
+\label{ms11012:eq1}
+\end{equation}
+As is clear from the definition given in
+Equation~(\ref{ms11012:eq1}) we can see that all states are
+not pure.
+\begin{equation}
+\rho = 
+\frac{1}{2}\vert \psi \rangle \langle \psi \vert
++\frac{1}{2}\vert \phi \rangle \langle \phi \vert
+\label{ms11012:eq2}
+\end{equation}
+The state given in Equation~(\ref{ms11012:eq2}) is not a pure
+state.
+\subsection{Remember}
+Please remember that all labels for equations will have your
+roll number as prefix as given above. This is being done
+some that when I put all the latex files together to
+generate a book there should be no conflict of labels.
+Similarly for references in the bibliography and the
+citations labels will have to have your roll number as
+prefix. 
+\section{This is one of the main section}
+You will give this section a name depending upon your
+project. The material in section can be divided into
+subsection 
+\subsection{This is a subsection}
+We can have many subsection with headings inside a section
+\subsection{This is another one}
+\section{This is another main section}
+Your project report may require more than one main section!
+Feel free to create more section if needed.
+
+\section{Summary and Discussion}
+Provide a summary and discuss what you have understood.
+summarize the main points and also mention if have found some
+subtopics difficult.
+\begin{thebibliography}{10}
+\bibitem{ms11012:ref1}
+Arvind and Arvind, Quantum tomography {\it Physical Review
+A}{\bf 73}, 211-215 (2014).
+\bibitem{ms11012:ref2}
+Neilson and Chuang, Quantum Computation and Quantum
+Information ........
+\end{thebibliography}
+\end{project}
+\end{document}
