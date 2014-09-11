@@ -1,0 +1,134 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Formula $\gamma$
+\end_inset
+
+-ray spectrum of Cs-137 using NaI detector
+\end_layout
+
+\begin_layout Author
+Prashansa Gupta, Vivek Sagar and Atul Singh Arora
+\end_layout
+
+\begin_layout Section
+Inorganic Detector
+\end_layout
+
+\begin_layout Standard
+I scintillation mechanism in inorganic crystlas with activators
+\end_layout
+
+\begin_layout Standard
+in inorganic compounds, energy states are determined by the structure of
+ the crystal lattice.
+ There are only discrete energy levels available : valence band, conduction
+ band and the forbidden band.
+ The valence badn has electrons in the bound states, while the conduction
+ band has those electrons which have the energy to migrate through the crystal;
+ the forbidden band is the intermediate band of energies where no electrons
+ are found in the pure state of crystal.
+\end_layout
+
+\begin_layout Standard
+When energy is absorbed, an electron moves from the valence band to the
+ conduction band leaving a hole behind.
+ In a pure crystal, de-excitation of such an electron back to valence band
+ is usually an inefficient process, therefore there is no release of a photon.
+ In order to increase this probability of visible photon emission during
+ de-excitation, a small amount of impurity called an activator is added.
+ This activator creates special sites ie energy states within the forbidden
+ band called luminescence centers or recombination centers.
+ Now the energy is less than the forbidden gap, which can now produce a
+ photon.
+\end_layout
+
+\begin_layout Standard
+many electron hole pairs are created in the process of excitation of electrons
+ from the valence to the conduction band.
+ The hole can now easily drift to activator site since its ionisation energy
+ is low.
+ An electron free to migrate, finds and drops into the ionised activator
+ site creating a neutral configuration.
+ If this activator site is an excited configuration with allowed transition
+ to ground state, then de-excitation is a quick process and is accompanied
+ by photon emission.
+ This photon can be in the visible range depending on the choice of activators.
+ If the activator site is configured for a forbidden transition, then it
+ requires an increment of energy 
+\end_layout
+
+\begin_layout Standard
+This experiment employs a sodium iodide detector.
+\end_layout
+
+\begin_layout Standard
+scintillation spectroscopy of gamma radiation was ushered in by the discovery
+ of sodium iodide's ability to produce large scintillation output as compared
+ to organic counterparts, by Robert Hofstader in 1948.
+ large ingots containing 10 raised to power -3 mole fraction of thallium
+ as activator can be produced using high quality sodium iodide 
+\end_layout
+
+\end_body
+\end_document
