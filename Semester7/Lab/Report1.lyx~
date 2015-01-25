@@ -76,7 +76,7 @@ Inorganic Detector
 \end_layout
 
 \begin_layout Standard
-I scintillation mechanism in inorganic crystlas with activators
+I scintillation mechanism in inorganic crystals with activators
 \end_layout
 
 \begin_layout Standard
@@ -84,7 +84,7 @@ in inorganic compounds, energy states are determined by the structure of
  the crystal lattice.
  There are only discrete energy levels available : valence band, conduction
  band and the forbidden band.
- The valence badn has electrons in the bound states, while the conduction
+ The valence band has electrons in the bound states, while the conduction
  band has those electrons which have the energy to migrate through the crystal;
  the forbidden band is the intermediate band of energies where no electrons
  are found in the pure state of crystal.
@@ -115,7 +115,8 @@ many electron hole pairs are created in the process of excitation of electrons
  by photon emission.
  This photon can be in the visible range depending on the choice of activators.
  If the activator site is configured for a forbidden transition, then it
- requires an increment of energy 
+ requires an increment of energy that raises them to higher state from which
+ de-excitation to ground state is possible, called the thermal excitation.
 \end_layout
 
 \begin_layout Standard
