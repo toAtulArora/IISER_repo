@@ -1,0 +1,5 @@
+
+fit f(x) 'exp1' using 1:(($2+$3+$4)/3.0) via m,c
+plot 'exp1' using 1:(($2+$3+$4)/3.0)
+
+ fit [x=17:240] f(x) 'exp1' using 1:(($2+$3+$4)/3.0) via m,c    

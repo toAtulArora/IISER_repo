@@ -1,0 +1,276 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Counting radioactive decay events using a GM Tube
+\end_layout
+
+\begin_layout Author
+Vivek Sagar, Prashansa Gupta and Atul Singh Arora
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Here we show that there exist circumstances in which the Geiger Muller Tube
+ can be used to reliably count the number of beta decay events.
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Standard
+A Gieger Muller tube is a device filled with gas which counts individual
+ ionising events.
+ It consists of anode surrounded by a metal cylinder that is the cathode.
+ The gas filled in the tube is a mixture of rare gases and a quenching agent.
+ The quanta entering the tube and colliding with the gas molecules initiate
+ the ionising events.
+ 
+\end_layout
+
+\begin_layout Standard
+Quenching is the termination of the ionisation of the current pulse in the
+ GM tube.
+\end_layout
+
+\begin_layout Standard
+Plateau Threshold Voltage is the starting voltage applied to the GM tube
+ at which pulses just appear and the apparatus starts counting.
+\end_layout
+
+\begin_layout Standard
+Plateau is the part of the GM characteristic curve over which the counts
+ are predominantly independent of the applied voltage.
+\end_layout
+
+\begin_layout Standard
+Plateau Length is the range of applied voltage over which the plateau region
+ extends.
+\end_layout
+
+\begin_layout Standard
+Upper Threshold Voltage is the highest voltage upto which the plateau region
+ remains, beyond which counts increase substantially with applied voltage.
+\end_layout
+
+\begin_layout Standard
+Plateau Slope is the slope of the curve in the plateau region, which quantifies
+ the change in counts with the change in applied voltage, expressed in percentag
+e.
+\end_layout
+
+\begin_layout Standard
+Operating Voltage is the voltage at which the apparatus should be preferably
+ used, is taken to be at the middle of the plateau region.
+\end_layout
+
+\begin_layout Standard
+Background Counts are the counts registered without the source, which may
+ be due to cosmic rays and other surrounding sources.
+\end_layout
+
+\begin_layout Standard
+A characteristic curve can thus be plotted for the given GM tube, using
+ voltage and counts.
+\end_layout
+
+\begin_layout Section
+Procedure
+\end_layout
+
+\begin_layout Standard
+The GM Tube described in the previous section is powered using a 220V source.
+ A radioactive source (Cs; a 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ source) was placed about 2 cm from the window of the Tube.
+ An electronic device designed to count the number of detection events was
+ initialized to count for 60 seconds.
+ The voltage being applied to the GM Tube was varied from 350V to 650V.
+ These numbers were determined by the following two procedures.
+\end_layout
+
+\begin_layout Standard
+The voltage was increased continuously but slowly while ensuring that the
+ counts display on the electronic device reads zero.
+ The voltage at which the first count is found gives a rough estimate of
+ where to start; in this case 350V.
+\end_layout
+
+\begin_layout Standard
+The other value of the voltage was found by noting that the counts suddenly
+ shoot up at around this value.
+ Going beyond this risks reduction in the life of or permanent destruction
+ the tube.
+\end_layout
+
+\begin_layout Standard
+After the determination of appropriate range of operation, three sets of
+ counts were noted twice for voltage values incremented in steps of 30V.
+ Once with the source, and once without.
+ The background thus found was subtracted and a graph of voltage versus
+ counts was plotted and various regions identified.
+\end_layout
+
+\begin_layout Section
+Observations
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=single,caption=Experimental Observations]{chancha/exp1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The plateau threshold voltage was observed to be at 380V.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename data/exp1.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The plateau region extends upto 590V after which a sharp beginning of the
+ discharge region can be noticed.
+\end_layout
+
+\begin_layout Standard
+The plateau length is thus 
+\begin_inset Formula $(590+380)V$
+\end_inset
+
+
+\begin_inset Formula $=210V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The operating voltage 
+\begin_inset Formula $V_{O}$
+\end_inset
+
+ is defined as the average of the plateau region voltages, thus 
+\begin_inset Formula 
+\[
+V_{O}=\frac{1}{2}(590+380)=485V
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The slope of the plateau is given as 
+\begin_inset Formula 
+\[
+\frac{N_{2}-N_{1}}{V_{2}-V_{1}}\times100=\frac{16.67}{100}\times100=7.93\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+The graph plotted, appropriately shows the plateau region, with a length
+ of 210V.
+ Thus the operation voltage was found to be 485V.
+\end_layout
+
+\end_body
+\end_document

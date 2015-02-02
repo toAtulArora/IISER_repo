@@ -1,0 +1,125 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Quantum information with modular variables
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Standard
+I am interested in exploring the foundations of quantum mechanics.
+ This I find especially interesting because the very postulates of the theory
+ lead to some striking classically unexpected results which have been verified
+ experimentally, themselves aren't fully consistent; the measurement postulate
+ and the unitary time-evolution.
+ Action at a distance like effects, which arise form quantum correlations
+ slash entanglement therefore are at the heart of the theory.
+ These effects when carefully studied lead to predictions that act as tests
+ for a system to be in a state that can't be described classically [arXiv:0811.28
+03].
+ 
+\end_layout
+
+\begin_layout Standard
+Experimentally these tests have been performed on photonic and atomic systems.
+ However, performing these tests on massive systems is still an area of
+ research.
+ A proposed scheme for such tests is the use of modular variables (which
+ I'll describe shortly) of macroscopic continuous variable systems [Phys.
+ Rev.
+ Lett.
+ 112, 190402 (2014)].
+ The objective of the project would be to use modular variables to understand
+ the origin of quantum effects, viz.
+ effects peculiar slash characteristic to quantum mechanical objects.
+ These tests may even be used to quantify entanglement in such systems and
+ prove to be an interesting route to studying the foundations of the subject.
+\end_layout
+
+\begin_layout Standard
+Modular variables in simple terms may be understood as variables that are
+ bounded, which makes them `nice'.
+ In continuous systems, variables like position and momentum (
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+) are unbounded.
+ Use of modular variables such as 
+\begin_inset Formula $\sin(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $\cos(p)$
+\end_inset
+
+, which in fact can be measured, maybe used in the aforesaid context instead.
+\end_layout
+
+\end_body
+\end_document

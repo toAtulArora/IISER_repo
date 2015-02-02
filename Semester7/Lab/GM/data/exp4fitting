@@ -1,0 +1,93 @@
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.117364
+rel. change during last iteration : -2.12843e-015
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.121122
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0146705
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -1.91441         +/- 0.2667       (13.93%)
+c               = 6.19839          +/- 0.07119      (1.149%)
+
+
+correlation matrix of the fit parameters:
+
+               m      c      
+m               1.000 
+c              -0.843  1.000 
+
+gnuplot> plot f(x), 'exp4al' using ($1):(log(($2+$3+$4)/3.0)) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.24254
+rel. change during last iteration : -2.52445e-009
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.284336
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0808467
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -3.1348          +/- 1.284        (40.98%)
+c               = 6.08216          +/- 0.2202       (3.621%)
+
+
+correlation matrix of the fit parameters:
+
+               m      c      
+m               1.000 
+c              -0.816  1.000 
+gnuplot> plot f(x), 'exp4copper' using ($1):(log(($2+$3+$4)/3.0))  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.218959
+rel. change during last iteration : -7.97395e-012
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.27016
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0729862
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+m               = -0.588374        +/- 0.2848       (48.4%)
+c               = 6.08502          +/- 0.2093       (3.439%)
+
+
+correlation matrix of the fit parameters:
+
+               m      c      
+m               1.000 
+c              -0.816  1.000 
+gnuplot> plot f(x), 'exp4lead' using ($1):(log(($2+$3+$4)/3.0))    

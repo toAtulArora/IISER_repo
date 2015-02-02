@@ -1,0 +1,588 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Statistics and Nuclear Events
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora, Prashansa Gupta, Vivek Sagar
+\end_layout
+
+\begin_layout Date
+November 14, 2014
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Here we attempt to verify the popular relation between Poisson distributions
+ and distribution of radioactive decays.
+ We first discuss the mathematical construction of the distribution and
+ then demonstrate experimentally that it obeys the aforesaid distribution
+ and in the limit of large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ (defined in the following section) the distribution becomes normal.
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Standard
+Consider an experiment when a Bernoulli trial is repeated 
+\begin_inset Formula $n$
+\end_inset
+
+ times.
+ The probabilty of obtaining a success in a single trial is 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ The probability of obtaining exactly 
+\begin_inset Formula $k$
+\end_inset
+
+ successes (and 
+\begin_inset Formula $n-k$
+\end_inset
+
+ failures) is given by the Binomial distribution: 
+\begin_inset Formula 
+\[
+b(k,n,p)=C_{k}^{n}p^{k}(1-p)^{n-k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the situations when 
+\begin_inset Formula $p$
+\end_inset
+
+ is small and 
+\begin_inset Formula $n$
+\end_inset
+
+ is large such that the product 
+\begin_inset Formula $\lambda=np$
+\end_inset
+
+ is of moderate magnitude, 
+\begin_inset Formula $b(0,n,p)$
+\end_inset
+
+ can be approximated as 
+\begin_inset Formula $e^{-\lambda}$
+\end_inset
+
+ since,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(b(0,n,p))=nlog(1-\frac{\lambda}{n})=-\lambda-\frac{\lambda^{2}}{2n}...\approx-\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{b(k-1,n,p)}{b(k,n,p)}=\frac{(n-k+1)p}{kq}=\frac{\lambda-(k-1)p}{kq}\approx\frac{\lambda}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b(k,n,p)$
+\end_inset
+
+ can thus, be approximated as 
+\begin_inset Formula 
+\begin{equation}
+a(k,\lambda)=\frac{\lambda^{k}}{k!}e^{-\lambda}
+\end{equation}
+
+\end_inset
+
+ This is called the Poission approximation to the Binomial distribution.
+ 
+\begin_inset Formula $a(k,\lambda)$
+\end_inset
+
+ can also be considered as a distribution since 
+\begin_inset Formula $\sum_{k}a(k,\lambda)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now imagine a sequence of random events occuring in time, such as radioactive
+ disintegrations of a sample.
+ Each disintegration can be considered as a point on the time axis.
+ If we partition the unit time interval into 
+\begin_inset Formula $n$
+\end_inset
+
+ segments, the width of each segment being small enough so that the possibility
+ of obtaining two decays in a single segment is negligble.
+ The probability of obtaining exactly 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in 
+\begin_inset Formula $n$
+\end_inset
+
+ segments is then 
+\begin_inset Formula $b(k,n,p_{n})$
+\end_inset
+
+ where 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ is the probability that an arbitarary segment of time of length 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ observes a radioactive disintegration.
+ Let us now ask, what is the probability of obtaining no decay in the unit
+ time? The answer is 
+\begin_inset Formula $b(0,n,p_{n})=(1-p_{n})^{n}.$
+\end_inset
+
+ In the limit 
+\begin_inset Formula $n\rightarrow\infty,$
+\end_inset
+
+ the value 
+\begin_inset Formula $b(0,n,p_{n})$
+\end_inset
+
+ approaches a finite value only if 
+\begin_inset Formula $np_{n}\rightarrow\lambda,$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ being some real number.
+ This can be checked by taking the 
+\begin_inset Formula $log$
+\end_inset
+
+ of 
+\begin_inset Formula $b(0,n,p_{n})$
+\end_inset
+
+ and Taylor expanding 
+\begin_inset Formula $log(1-p_{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, the phenonmenon can be approximated using the Poission distribution.
+ The probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in a unit time is thus 
+\begin_inset Formula $a(k,\lambda).$
+\end_inset
+
+ It is often important to ask, what is the probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in 
+\begin_inset Formula $t$
+\end_inset
+
+ time, in which case one can again partition the interval into segments
+ of length 
+\begin_inset Formula $\frac{1}{n}.$
+\end_inset
+
+ In this case, the number of segments will become 
+\begin_inset Formula $nt.$
+\end_inset
+
+ Thus, 
+\begin_inset Formula $np=\lambda$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $(1)$
+\end_inset
+
+ should be replaced with 
+\begin_inset Formula $npt=\lambda t.$
+\end_inset
+
+ Thus, the probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in time 
+\begin_inset Formula $t$
+\end_inset
+
+ is 
+\begin_inset Formula $a(k,\lambda t).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have done the experiment with Cs-137 (with large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+) and with Tl (with smaller 
+\begin_inset Formula $\lambda$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Section
+Temp
+\end_layout
+
+\begin_layout Standard
+Consider an experiment when a Bernoulli trial is repeated 
+\begin_inset Formula $n$
+\end_inset
+
+ times.
+ The probabilty of obtaining a success in a single trial is 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ The probability of obtaining exactly 
+\begin_inset Formula $k$
+\end_inset
+
+ successes (and 
+\begin_inset Formula $n-k$
+\end_inset
+
+ failures) is given by the Binomial distribution: 
+\begin_inset Formula 
+\[
+b(k,n,p)=C_{k}^{n}p^{k}(1-p)^{n-k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the situations when 
+\begin_inset Formula $p$
+\end_inset
+
+ is small and 
+\begin_inset Formula $n$
+\end_inset
+
+ is large such that the product 
+\begin_inset Formula $\lambda=np$
+\end_inset
+
+ is of moderate magnitude, 
+\begin_inset Formula $b(0,n,p)$
+\end_inset
+
+ can be approximated as 
+\begin_inset Formula $e^{-\lambda}$
+\end_inset
+
+ since,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+log(b(0,n,p))=nlog(1-\frac{\lambda}{n})=-\lambda-\frac{\lambda^{2}}{2n}...\approx-\lambda
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{b(k-1,n,p)}{b(k,n,p)}=\frac{(n-k+1)p}{kq}=\frac{\lambda-(k-1)p}{kq}\approx\frac{\lambda}{k}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b(k,n,p)$
+\end_inset
+
+ can thus, be approximated as 
+\begin_inset Formula 
+\begin{equation}
+a(k,\lambda)=\frac{\lambda^{k}}{k!}e^{-\lambda}
+\end{equation}
+
+\end_inset
+
+ This is called the Poission approximation to the Binomial distribution.
+ 
+\begin_inset Formula $a(k,\lambda)$
+\end_inset
+
+ can also be considered as a distribution since 
+\begin_inset Formula $\sum_{k}a(k,\lambda)=1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now imagine a sequence of random events occuring in time, such as radioactive
+ disintegrations of a sample.
+ Each disintegration can be considered as a point on the time axis.
+ If we partition the unit time interval into 
+\begin_inset Formula $n$
+\end_inset
+
+ segments, the width of each segment being small enough so that the possibility
+ of obtaining two decays in a single segment is negligble.
+ The probability of obtaining exactly 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in 
+\begin_inset Formula $n$
+\end_inset
+
+ segments is then 
+\begin_inset Formula $b(k,n,p_{n})$
+\end_inset
+
+ where 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ is the probability that an arbitarary segment of time of length 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ observes a radioactive disintegration.
+ Let us now ask, what is the probability of obtaining no decay in the unit
+ time? The answer is 
+\begin_inset Formula $b(0,n,p_{n})=(1-p_{n})^{n}.$
+\end_inset
+
+ In the limit 
+\begin_inset Formula $n\rightarrow\infty,$
+\end_inset
+
+ the value 
+\begin_inset Formula $b(0,n,p_{n})$
+\end_inset
+
+ approaches a finite value only if 
+\begin_inset Formula $np_{n}\rightarrow\lambda,$
+\end_inset
+
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ being some real number.
+ This can be checked by taking the 
+\begin_inset Formula $log$
+\end_inset
+
+ of 
+\begin_inset Formula $b(0,n,p_{n})$
+\end_inset
+
+ and Taylor expanding 
+\begin_inset Formula $log(1-p_{n})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Thus, the phenonmenon can be approximated using the Poission distribution.
+ The probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in a unit time is thus 
+\begin_inset Formula $a(k,\lambda).$
+\end_inset
+
+ It is often important to ask, what is the probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in 
+\begin_inset Formula $t$
+\end_inset
+
+ time, in which case one can again partition the interval into segments
+ of length 
+\begin_inset Formula $\frac{1}{n}.$
+\end_inset
+
+ In this case, the number of segments will become 
+\begin_inset Formula $nt.$
+\end_inset
+
+ Thus, 
+\begin_inset Formula $np=\lambda$
+\end_inset
+
+ in the equation 
+\begin_inset Formula $(1)$
+\end_inset
+
+ should be replaced with 
+\begin_inset Formula $npt=\lambda t.$
+\end_inset
+
+ Thus, the probability of obtaining 
+\begin_inset Formula $k$
+\end_inset
+
+ decays in time 
+\begin_inset Formula $t$
+\end_inset
+
+ is 
+\begin_inset Formula $a(k,\lambda t).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Procedure
+\end_layout
+
+\begin_layout Standard
+Why this will become a Gaussian.'
+\end_layout
+
+\begin_layout Standard
+How will we test for it.
+\end_layout
+
+\end_body
+\end_document

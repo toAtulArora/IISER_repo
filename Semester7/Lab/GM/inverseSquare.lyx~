@@ -1,0 +1,353 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Approximate Inverse Square Law for 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ rays
+\end_layout
+
+\begin_layout Author
+Vivek Sagar, Prashansa Gupta and Atul Singh Arora
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In this experiment, we investigate the dependence of intensity of gamma
+ radiation on the distance of the source.
+\end_layout
+
+\begin_layout Section
+Motivation
+\end_layout
+
+\begin_layout Standard
+We would like to model the dependence of intensity of gamma radiation being
+ received.
+ For this purpose, we carry out the following experiment, note the values
+ of intensity on distance at which the source is kept.
+ It can be seen that this comes out to be an inverse square law dependence.
+ Let us assume a general power-law dependence as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r\propto d^{-\alpha}
+\]
+
+\end_inset
+
+The slope from the plot of 
+\begin_inset Formula $\log r$
+\end_inset
+
+ versus 
+\begin_inset Formula $\log d$
+\end_inset
+
+ gives the power 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Procedure
+\end_layout
+
+\begin_layout Standard
+Operate the GM counter at the previously determined operating voltage i.e.
+ 485V, and set the preset time to 60 seconds.
+\end_layout
+
+\begin_layout Standard
+Three sets of background counts were taken.
+ Placed the source in the end window detector stand.
+ Beginning with the first slot, recorded three sets of counts for the set
+ voltage.
+ Repeated the procedure, increasing the distance, until the last slot was
+ reached.
+ 
+\end_layout
+
+\begin_layout Standard
+A graph of distance versus the counts was plotted, and error bars determined.
+\end_layout
+
+\begin_layout Section
+Observations and Calculations
+\end_layout
+
+\begin_layout Standard
+The graph of distance versus the counts shows the inverse square dependence
+ of intensity on the distance.
+ 
+\end_layout
+
+\begin_layout Standard
+Another graph plots the log of both the counts and the distance, whose slope
+ gives the square power.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=single,caption=Experimental Observations]{chancha/exp2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp2.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Count Rate (sec
+\begin_inset Formula $^{-1}$
+\end_inset
+
+) vs Slot No.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp2gnuFitted.png
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+log r vs log d, where r is the average count rate (sec
+\begin_inset Formula $^{-1}$
+\end_inset
+
+) and d is the slot number
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp2wErr.png
+	scale 35
+	BoundingBox 0bp 0bp 1942bp 732bp
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+log r vs log d where r and d have been defined earlier
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The parameters from the log d versus log r graph are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=-1.86467\pm0.04755$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=5.56091\pm0.0902$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=L,caption=Fit Result]{data/exp2fitResult.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+The plots show an approximate inverse square relationship between `
+\begin_inset Formula $r$
+\end_inset
+
+' and `
+\begin_inset Formula $d$
+\end_inset
+
+', since the obtained slope
+\begin_inset Formula $=1.8<2$
+\end_inset
+
+ even after considering the errors.
+\end_layout
+
+\end_body
+\end_document

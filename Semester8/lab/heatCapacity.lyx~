@@ -1,0 +1,509 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Heat Capacity Measurement using Calorimeter
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+January 6, 7, 10 and 12 2015
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Recall: Definitions
+\end_layout
+
+\begin_layout Standard
+Heat capacity of a solid may be defined as 
+\begin_inset Formula 
+\[
+C=\Delta Q/\Delta T
+\]
+
+\end_inset
+
+where unlike fluids
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The symbols have the usual meaning
+\end_layout
+
+\end_inset
+
+, we needn't mention whether it is done at constant volume or at constant
+ pressure.
+ Specific heat capacity is therefore accordingly defined as
+\begin_inset Formula 
+\[
+c=C/m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Water Equivalent
+\end_layout
+
+\begin_layout Standard
+Consider two object types A and B with specific heat capacities 
+\begin_inset Formula $c_{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{B}$
+\end_inset
+
+.
+ For a given temperature difference 
+\begin_inset Formula $\Delta T$
+\end_inset
+
+, the amount of heat absorbed 
+\begin_inset Formula $\Delta Q$
+\end_inset
+
+, by A (assuming appropriate signs) of mass 
+\begin_inset Formula $m_{a}$
+\end_inset
+
+, will be given by 
+\begin_inset Formula 
+\[
+\Delta Q=c_{a}m_{a}\Delta T
+\]
+
+\end_inset
+
+Defn: B equivalent of A 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ The mass of B s.t.
+ heat absorbed by B for a given temperature difference is the same as the
+ heat absorbed by A
+\end_layout
+
+\begin_layout Standard
+Consequently, if 
+\begin_inset Formula $m_{b}$
+\end_inset
+
+ is the B equivalent of A, then 
+\begin_inset Formula $c_{b}m_{b}=c_{a}m_{a}$
+\end_inset
+
+, which yields 
+\begin_inset Formula 
+\[
+m_{b}=\frac{c_{a}m_{a}}{c_{b}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+The idea behind the measurement scheme
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+W
+\begin_inset space ~
+\end_inset
+
+Defn: Calorimeter 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ A vessel which can thermally isolate its contents 
+\begin_inset Formula $\doteq$
+\end_inset
+
+A
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Defn: Water 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ Water inside the calorimeter 
+\begin_inset Formula $\doteq$
+\end_inset
+
+ W
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Defn: Target Object 
+\begin_inset Formula $\equiv$
+\end_inset
+
+ The object whose heat capacity is to be measured 
+\begin_inset Formula $\doteq$
+\end_inset
+
+ C
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+I
+\begin_inset space ~
+\end_inset
+
+Defns: 
+\begin_inset Formula $m_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $c_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $C_{X}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The target object is heated to a known temperature 
+\begin_inset Formula $T_{A}$
+\end_inset
+
+ and then put in thermal contact with water and the calorimeter.
+ The calorimeter and water initially are assumed to be at temperature 
+\begin_inset Formula $T_{W}=T_{c}=T$
+\end_inset
+
+.
+ After achievement of equilibrium (at which the temperature is say 
+\begin_inset Formula $T_{f}$
+\end_inset
+
+), we have, heat lost by the target = heat gained by water and the calorimeter,
+ viz.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-c_{c}m_{c}(T_{f}-T_{A})=c_{a}m_{a}(T_{f}-T)+c_{w}m_{w}(T_{f}-T)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+Assmptn: Water equiavlent of A = 
+\begin_inset Formula $m_{wa}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\implies & -c_{c}m_{c}(T_{f}-T_{A}) & =c_{w}(m_{w}+m_{wa})(T_{f}-T)\\
+\implies & c_{c} & =\frac{c_{w}(m_{w}+m_{wa})(T_{f}-T)}{m_{c}(T_{a}-T_{f})}
+\end{aligned}
+\]
+
+\end_inset
+
+and it is physically plausible that 
+\begin_inset Formula $T_{f}>T$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{a}>T_{f}$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $c_{c}$
+\end_inset
+
+ is positive.
+\end_layout
+
+\begin_layout Section
+The experiment
+\end_layout
+
+\begin_layout Subsection
+Setup
+\end_layout
+
+\begin_layout Standard
+The setup consists of two parts, the heating setup and the calorimeter.
+ A weighing machine is also required (precision 0.1g).
+ The target object is heated to 
+\begin_inset Formula $100\,^{0}C$
+\end_inset
+
+ using steam.
+ The calorimeter is used as described.
+ The weighing machine is used to measure the mass (or strictly, the weight)
+ of the target object and water.
+\end_layout
+
+\begin_layout Subsubsection
+Heating Setup
+\end_layout
+
+\begin_layout Standard
+It consists of a round bottom flask, with its mouth air-sealed and connected
+ to a pipe.
+ The other end of the pipe is connected to a heating chamber which is essentiall
+y a cylinder with two chambers in thermal contact.
+ Steam flows into one of the chambers and is taken out via another pipe
+ (air tight connection) which drains the steam into a beaker.
+ Note carefully that this implies that the target object must be a good
+ conductor of heat.
+ This is because the heating is taking place by conduction of heat from
+ the surface of the chamber with the target object particles.
+ The particles in contact with the chamber wall will heat up and then heat
+ their neighbours and so on.
+ If the conductivity is not good, there'd be a temperature gradient which
+ hasn't been modeled.
+ Therefore even if we're using a metal, we must make sure there's no impurity
+ on the surface.
+\end_layout
+
+\begin_layout Subsubsection
+Calorimeter
+\end_layout
+
+\begin_layout Standard
+We are given the water equivalent of the calorimeter.
+ It has a stirer and a thermometer (precision 
+\begin_inset Formula $0.1\,^{0}C$
+\end_inset
+
+).
+ It pays to realize that instead of using a volumetric flask for measuring
+ the volume of water, we may simply use the weighing machine to find the
+ amount of water inside the calorimeter.
+ Other than the simplicity, this has the advantage of (a) not requiring
+ conversion to mass from volume and more importantly (b) not over estimating,
+ unlike the volume flask where some of the water may not transfer off of
+ its walls.
+\end_layout
+
+\begin_layout Subsubsection
+Formula
+\end_layout
+
+\begin_layout Standard
+The final formula for the specific heat capacity is
+\begin_inset Formula 
+\[
+c_{c}=\frac{4.186(m_{w}+15.3)(T_{f}-T)}{m_{c}(100-T_{f})}Jg^{-1}K^{-1}
+\]
+
+\end_inset
+
+obtained by substituting for 
+\begin_inset Formula $c_{w}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{wa}$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{a}$
+\end_inset
+
+ values off of the manual (and the boiling temperature of water).
+ For ease of reference, 
+\begin_inset Formula $T_{f}$
+\end_inset
+
+ is the final equilibrium temperature and 
+\begin_inset Formula $T$
+\end_inset
+
+ is the initial temperature of water.
+\end_layout
+
+\begin_layout Subsection
+Procedure
+\end_layout
+
+\begin_layout Standard
+The procedure given in the manual is rather obvious and has been omitted.
+ All the important points have been listed before.
+ However, as will be pointed out later, if we measure the initial temperature
+ of the target object with a thermometer instead of assuming it to be 100
+ 
+\begin_inset Formula $^{0}C$
+\end_inset
+
+, the obtained specific heat capacity will be more reliable.
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Standard
+The experiment was performed for various solids, viz.
+ glass, copper (twice), tin.
+ The results have been tabulated below.
+\end_layout
+
+\begin_layout Section
+Results and Discussion
+\end_layout
+
+\begin_layout Standard
+The specific heat
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The units of all specific heats in this section are 
+\begin_inset Formula $Jg^{-1}K^{-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ of glass was found to be 0.70, while the quoted value is 0.84.
+ Similarly for copper it was 0.29 (room temperature 18.3 
+\begin_inset Formula $^{0}C$
+\end_inset
+
+) and 0.10 (room temperature 16.3 
+\begin_inset Formula $^{0}C$
+\end_inset
+
+), while the quoted value again was higher; 0.34.
+ It appears that the assumption that the initial temperature of the target
+ object is 100 
+\begin_inset Formula $^{0}C$
+\end_inset
+
+ is becoming more inaccurate as the room temperature drops.
+ Finally, for tin, the value was found to be 0.22 and the quoted value was
+ 0.21, which is the closest.
+ This maybe attributed to (a) the fact that it was obtained as stated before,
+ by measuring the initial temperature of the target object and (b) absence
+ of an oxide layer on the tin surface.
+\end_layout
+
+\begin_layout Section
+Suggestions
+\end_layout
+
+\begin_layout Itemize
+A thermometer in the heating chamber could be used to obtain a more reliable
+ initial temperature value
+\end_layout
+
+\begin_layout Itemize
+Ethanol (99.9%) could be used as a fuel to ensure no soot is formed during
+ the heating process
+\end_layout
+
+\begin_layout Itemize
+The outlet pipe shouldn't touch the water in the beaker, else there're cases
+ in which the water maybe sucked by the outlet pipe into the heating chamber.
+\end_layout
+
+\end_body
+\end_document

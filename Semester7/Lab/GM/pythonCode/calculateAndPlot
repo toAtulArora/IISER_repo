@@ -1,0 +1,7 @@
+import csv
+finalList=[]
+with open('../data/readings') as csvfile:
+    readingsReader=csv.reader(csvfile,delimiter='\t')
+    for row in readingsReader:
+        for element in row:
+            

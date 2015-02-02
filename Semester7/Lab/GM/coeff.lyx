@@ -1,0 +1,708 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Attenuation of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ Radiation by Matter
+\end_layout
+
+\begin_layout Author
+Vivek Sagar, Prashansa Gupta and Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+November 3, 2014
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+In order to understand the nature of absorption of gamma radiation by matter,
+ we perform the following experiment to calculate the linear and mass attenuatio
+n coefficient.
+ 
+\end_layout
+
+\begin_layout Section
+Theory 
+\end_layout
+
+\begin_layout Standard
+When gamma radiation passes through matter, it undergoes absorption primarily
+ by compton scattering, photoelectric effect and air production interactions.
+ It is well known that intensity of radiation transmitted decreases exponentiall
+y with material thickness.
+\end_layout
+
+\begin_layout Standard
+So we consider an exponential function defined as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i=i_{0}\exp(-\mu d)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where
+\begin_inset Formula $i_{o}$
+\end_inset
+
+is the incident intensity of the beam,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i(x)$
+\end_inset
+
+ is the intensity received after being transmitted through thickness of
+ 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the linear attenuation constant
+\end_layout
+
+\begin_layout Standard
+if we take log on both sides, the equation becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\log i=-\mu d+\log i_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\log r=-\mu d+c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The values of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ are calculated by fitting the graph of log r versus d.
+\end_layout
+
+\begin_layout Standard
+The mass attenuation coefficient 
+\begin_inset Formula $\mu_{m}=\mu\rho$
+\end_inset
+
+ , where 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the density of material.
+\end_layout
+
+\begin_layout Standard
+The experiment uses three different absorbers, aluminium lead and copper,
+ each of whose attenuation coefficients can be determined by fitting the
+ graph.
+\end_layout
+
+\begin_layout Section
+Procedure
+\end_layout
+
+\begin_layout Standard
+Set the voltage at the previously determined operating voltage of 485V,
+ and the preset time of counting to 60 seconds.
+\end_layout
+
+\begin_layout Standard
+Placed the gamma source in the detector stand, to a appropriately near position
+ and took background counts.
+ Then, for each of the absorber set, took three sets of counts at each available
+ thickness and tabulated the value.
+\end_layout
+
+\begin_layout Section
+Observations and Calculations
+\end_layout
+
+\begin_layout Standard
+The graphs plot log r versus d for each of the absorbers.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=single,caption=Aluminium]{chancha/exp4al}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4alLog.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+log r vs d where d is average count rate (sec
+\begin_inset Formula $^{-1}$
+\end_inset
+
+) and r has been defined earlier for Aluminium
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4al.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+r vs d for Aluminium
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+aluminium
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log r=md+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=-1.91441\pm0.2667mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=6.19839\pm0.07119mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=-m\approx1.92mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{m}\approx(19.2cm^{-1})/(2.7g/cm^{3})=7.1cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quoted values are 
+\begin_inset Formula $\mu=115.5cm^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}=42.7cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=single,caption=Copper]{chancha/exp4copper}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4copperLog.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+log r vs d for Copper
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4copper.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+r vs d for Copper
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+copper
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log r=md+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=-3.1348\pm1.284mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=6.08216\pm0.2202mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=-m\approx3.14mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{m}\approx(31.4cm^{-1})/(8.93g/cm^{3})=3.5cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quoted values are 
+\begin_inset Formula $\mu=161.16cm^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}=18.04cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=single,caption=Lead]{chancha/exp4lead}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4leadLog.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+log r vs d for Lead
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename data/exp4lead.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+r vs d for lead
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lead
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log r=md+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=-0.588374\pm0.2848mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c=6.08502\pm0.2093mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=-m\approx0.59mm^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu_{m}\approx(5.9cm^{-1})/(11.34g/cm^{3})=0.52cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quoted values are 
+\begin_inset Formula $\mu=11.55cm^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{m}=5.55cm^{2}/g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[frame=L,caption=Fit Result]{data/exp4fitting.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The detailed observations have been listed below:
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename chancha/attenuation.pdf
+	extra LaTeX "pages={1,2}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results and Conclusions
+\end_layout
+
+\begin_layout Standard
+The graph of log r versus d was plotted, and values of linear and mass coefficie
+nt were calculated.
+\end_layout
+
+\begin_layout Standard
+The linear fits in the log graph are not appropriate, which might contribute
+ in highly erroneous results for attenuation coefficients obtained as:
+\end_layout
+
+\begin_layout Standard
+aluminium - 14 % error in 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+copper - 41 % error in 
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lead - 48 % error in 
+\begin_inset Formula $\mu$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
