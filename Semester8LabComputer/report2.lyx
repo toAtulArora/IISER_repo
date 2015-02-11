@@ -491,15 +491,18 @@ s different, and
 
 \end_inset
 
-which finally yields 
+which finally yields
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-\omega^{2}=\frac{1}{LC_{1}}+\frac{1}{LC_{2}}\pm\left[\frac{1}{LC_{2}}-\frac{1}{LC_{1}}\right]
+\omega=\frac{1}{LC_{1}}+\frac{1}{LC_{2}}\pm\sqrt{\left[\frac{1}{LC_{1}}\right]^{2}+\left[\frac{1}{LC_{2}}\right]^{2}+\frac{2}{L^{2}C_{1}C_{2}}\cos ka}
 \]
 
 \end_inset
 
-
+With this we know 
 \end_layout
 
 \end_body
