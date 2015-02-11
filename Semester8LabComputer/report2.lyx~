@@ -879,14 +879,12 @@ We used
 \end_layout
 
 \begin_layout Itemize
-\begin_inset ERT
-status open
+\begin_inset Flex URL
+status collapsed
 
 \begin_layout Plain Layout
 
-
-\backslash
-url{http://www.digikey.com/schemeit#}
+http://www.digikey.com/schemeit#
 \end_layout
 
 \end_inset

@@ -167,7 +167,23 @@ and we know that
 \end_layout
 
 \begin_layout Standard
-Next, consider next the spring mass system as given below.
+Next, consider next the case in which the masses alternate between 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+, while the spring constants go 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+.
  We again write two sets of equations for the forces on both types of 
 \begin_inset Formula $n^{th}$
 \end_inset
