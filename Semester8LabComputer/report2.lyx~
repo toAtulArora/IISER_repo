@@ -71,6 +71,10 @@
 Lattice Dynamics
 \end_layout
 
+\begin_layout Date
+February March 2015
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
@@ -303,7 +307,7 @@ Now in the usual case, we impose a periodic boundary condition, which (claim)
 \end_inset
 
  is the number of entities).
- [todo: proof] This is also expected since for 
+ [can be proven] This is also expected since for 
 \begin_inset Formula $N$
 \end_inset
 
@@ -502,7 +506,340 @@ which finally yields
 
 \end_inset
 
-Interestingly enough, 
+So using this we can plot 
+\begin_inset Formula $\omega(k)$
+\end_inset
+
+ against k; obviously for each value of 
+\begin_inset Formula $k$
+\end_inset
+
+ we'll get two values of 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ Now the smallest separation between two values of 
+\begin_inset Formula $\omega(k)$
+\end_inset
+
+ will be 
+\begin_inset Formula 
+\[
+\Delta\omega\equiv2\sqrt{\left[\frac{1}{LC_{1}}\right]^{2}+\left[\frac{1}{LC_{2}}\right]^{2}-\frac{2}{L^{2}C_{1}C_{2}}}=2\left(\frac{1}{LC_{1}}-\frac{1}{LC_{2}}\right)
+\]
+
+\end_inset
+
+.
+ If instead we plot 
+\begin_inset Formula $k$
+\end_inset
+
+ vs 
+\begin_inset Formula $\omega$
+\end_inset
+
+, there'll be a region of 
+\begin_inset Formula $\omega$
+\end_inset
+
+, namely 
+\begin_inset Formula 
+\[
+\omega\in\left(\frac{1}{LC_{1}}+\frac{1}{LC_{2}}-\frac{\Delta\omega}{2},\frac{1}{LC_{1}}+\frac{1}{LC_{2}}+\frac{\Delta\omega}{2}\right)
+\]
+
+\end_inset
+
+ for which there'll not exist any value of 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Thus we expect a bandgap.
+ Also note that 
+\begin_inset Formula $k$
+\end_inset
+
+ is defined upto a multiple of 
+\begin_inset Formula $2\pi/a$
+\end_inset
+
+.
+ One final point that needs to be mentioned in addition is that even though
+ 
+\begin_inset Formula $\omega(k)$
+\end_inset
+
+ is multi-valued (viz.
+ for a given 
+\begin_inset Formula $k$
+\end_inset
+
+ there're two 
+\begin_inset Formula $\omega$
+\end_inset
+
+s), when we restrict 
+\begin_inset Formula $k$
+\end_inset
+
+ to 
+\begin_inset Formula $(0,\pi/a)$
+\end_inset
+
+, then the inverse function 
+\begin_inset Formula $k(\omega)$
+\end_inset
+
+ is single-valued.
+\end_layout
+
+\begin_layout Standard
+The one important caveat in this case is that for determining the value
+ of 
+\begin_inset Formula $ka$
+\end_inset
+
+ from the observation we must realize that 
+\begin_inset Formula $n\in\{0,1,2,3,4\}$
+\end_inset
+
+ because we used 
+\begin_inset Formula $q_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $q_{n}'$
+\end_inset
+
+ which together repeat only 5 times.
+ Thus we must have 
+\begin_inset Formula $\phi=ka(\frac{N}{2}-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Procedure
+\end_layout
+
+\begin_layout Enumerate
+Connect the outputs to the Oscilloscope and set to the XY mode.
+\end_layout
+
+\begin_layout Enumerate
+Put both the switches in the direction of the mono-atomic label.
+\end_layout
+
+\begin_layout Enumerate
+Set to the low frequency mode (the apparatus) 
+\end_layout
+
+\begin_layout Enumerate
+Set the amplitude to be roughly the maximum
+\end_layout
+
+\begin_layout Enumerate
+Using the knobs 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ and by adjusting the frequency, we can adjust the X and Y amplitude such
+ that for 
+\begin_inset Formula $\phi=\pi/2$
+\end_inset
+
+ we roughly get a circle (definition of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is given in the previous section)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+It is expected that changing the frequency will change the axis of the ellipse
+ (of which circle will be a special case) and finally into a line and so
+ on.
+\end_layout
+
+\begin_layout Enumerate
+Changing 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ shouldn't change the axis, but infact it was observed that changing 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ does change the frequency
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Change the frequency to change between consecutive figures of the form 
+\backslash
+ O / O and so on.
+\end_layout
+
+\begin_layout Enumerate
+This must be repeated till the frequency abruptly drops to zero for a reasonable
+ range of the frequency.
+\end_layout
+
+\begin_layout Enumerate
+Repeat the procedure with both switches in the direction of the di-atomic
+ (although it is misleading strictly speaking) label.
+\end_layout
+
+\begin_layout Section
+Observations
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Result
+\end_layout
+
+\begin_layout Standard
+Both the mono-atmoic and 'di-atomic' (read the next section) yielded results
+ that matched theoretical predictions.
+\end_layout
+
+\begin_layout Section
+Explorable Questions
+\end_layout
+
+\begin_layout Enumerate
+What is the spring mass analogue when we replace 
+\begin_inset Formula $L\leftrightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+How is it that 
+\begin_inset Formula $\omega(k)$
+\end_inset
+
+ found in the more general case, is identical if in one of the following
+ situations, we apply 
+\begin_inset Formula $L_{x}\leftrightarrow C_{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $L_{1}\neq L_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $C=C_{1}=C_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $L=L_{1}=L_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{1}\neq C_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+These questions relate the physical case of di-atomic interactions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+See for instance Classical Harmonic Theory, Solid State Physics, Ashcroft
+ and Mermin
+\end_layout
+
+\end_inset
+
+ with the physical situation created in the apparatus.
+ They are mathematically distinct in terms of dynamics viz.
+ you can't relate 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+s with 
+\begin_inset Formula $m$
+\end_inset
+
+s and 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ (spring constant); but for the quantity 
+\begin_inset Formula $\omega$
+\end_inset
+
+ we can find such a relation.
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The manual provided was found to be mostly misleading.
+ However it did motivate some of the problems listed.
+ The procedure however was found to be mostly accurate.
+\end_layout
+
+\begin_layout Standard
+The most important theoretical improvement that can be made is the realization
+ that our physical system is not properly modeled by the differential equations
+ we wrote down.
+ We have accordingly motivated the use modified formulae for obtaining 
+\begin_inset Formula $\phi$
+\end_inset
+
+ as stated which gives much more accurate results experimentally than quoted
+ in the manual.
+ We were also able to account for the various ranges where 
+\begin_inset Formula $\omega$
+\end_inset
+
+ has no corresponding 
+\begin_inset Formula $k$
+\end_inset
+
+ which was confirmed experimentally.
+\end_layout
+
+\begin_layout Standard
+No experimental improvements could be made/suggested as the apparatus is
+ essentially an inaccessible black box.
 \end_layout
 
 \end_body
