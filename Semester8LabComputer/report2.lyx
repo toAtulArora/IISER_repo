@@ -133,7 +133,7 @@ Spring Mass System
 \end_layout
 
 \begin_layout Standard
-Consider the following spring mass system.
+Consider an infinite point masses connected to each other by identical springs.
  We write the forces on the 
 \begin_inset Formula $n^{th}$
 \end_inset
@@ -210,8 +210,22 @@ L, C circuit equivalent
 \end_layout
 
 \begin_layout Standard
-Consider the following LC circuit.
- We can write down using Kirchoff's law the following:
+Consider an infinite generalization of the following LC circuit.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename single.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write down using Kirchoff's law the following:
 \begin_inset Formula 
 \[
 -L\ddot{q}_{n}-C^{-1}(q_{n}-q_{n-1})+C^{-1}(q_{n+1}-q_{n})=0
@@ -416,8 +430,22 @@ Also note that there's an upper limit to
 \end_layout
 
 \begin_layout Standard
-Next consider the following LC circuit.
- We can write down using Kirchoff's law the following: 
+Next consider again an infinite generalization of the following LC circuit.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename generic2.pdf
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can write down using Kirchoff's law the following: 
 \begin_inset Formula 
 \[
 -L_{1}\ddot{q}_{n}-C_{2}^{-1}(q_{n}-q_{n}')+C_{1}^{-1}(q_{n-1}'-q_{n})=0
@@ -840,6 +868,36 @@ The most important theoretical improvement that can be made is the realization
 \begin_layout Standard
 No experimental improvements could be made/suggested as the apparatus is
  essentially an inaccessible black box.
+\end_layout
+
+\begin_layout Section
+Reference
+\end_layout
+
+\begin_layout Standard
+We used 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.digikey.com/schemeit#
+\end_layout
+
+\end_inset
+
+ for creating the schematics 
+\end_layout
+
+\begin_layout Itemize
+Aschroft and Mermin's book on Solid State Physics for looking at some results
+\end_layout
+
+\begin_layout Itemize
+Landau for looking at damped oscillators
 \end_layout
 
 \end_body
