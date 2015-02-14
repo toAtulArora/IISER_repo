@@ -1,0 +1,9 @@
+set terminal jpeg
+set output "resultRENAMEme.jpg"
+g(x)=m*x + c
+fit g(c) "data" via m,c
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set xlabel "Temperature TT (°C)"
+set ylabel "Voltage V (Volts)"
+plot "data" title "observations", g(x) title "linear fit"

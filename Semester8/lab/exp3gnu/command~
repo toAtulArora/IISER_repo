@@ -1,0 +1,5 @@
+set terminal jpeg
+set output "resultRENAMEme.jpg"
+g(x)=m*x + c
+fit "data" g(x) via m,c
+plot "data" title "data", g(x) title "fit"
