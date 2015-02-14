@@ -72,7 +72,7 @@ Lattice Dynamics
 \end_layout
 
 \begin_layout Date
-February March 2015
+Jan, February 2015
 \end_layout
 
 \begin_layout Section
@@ -752,6 +752,67 @@ Observations
 \end_layout
 
 \begin_layout Subsection
+Mono-atomic
+\end_layout
+
+\begin_layout Standard
+The graph has been plotted for frequency (kHz) vs.
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ (radians)
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename exp2 monoatomic.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+'Di-atomic'
+\end_layout
+
+\begin_layout Standard
+The graph has been plotted for frequency (Hz) vs.
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ (radians) [although at that point, we were calling it 
+\begin_inset Formula $\theta$
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename Book1.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename Book2.pdf
+	extra LaTeX "pages={1,2}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Time Summary
 \end_layout
 
@@ -1319,7 +1380,7 @@ No experimental improvements could be made/suggested as the apparatus is
 \end_layout
 
 \begin_layout Section
-Reference
+References and Acknowledgements
 \end_layout
 
 \begin_layout Standard
@@ -1346,6 +1407,12 @@ Aschroft and Mermin's book on Solid State Physics for looking at some results
 
 \begin_layout Itemize
 Landau for looking at damped oscillators
+\end_layout
+
+\begin_layout Standard
+I acknowledge the contribution of my team members, Vivek and Prashansa who
+ worked diligently and contributed in a fundamental way to the understanding
+ of the theory and performance of the experiment.
 \end_layout
 
 \end_body

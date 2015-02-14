@@ -751,19 +751,6 @@ Repeat the procedure with both switches in the direction of the di-atomic
 Observations
 \end_layout
 
-\begin_layout Subsection
-Mono-atomic
-\end_layout
-
-\begin_layout Standard
-The graph has been plotted for frequency (kHz) vs.
- 
-\begin_inset Formula $\phi$
-\end_inset
-
- (radians)
-\end_layout
-
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
@@ -774,38 +761,10 @@ The graph has been plotted for frequency (kHz) vs.
 
 \end_layout
 
-\begin_layout Subsection
-'Di-atomic'
-\end_layout
-
-\begin_layout Standard
-The graph has been plotted for frequency (Hz) vs.
- 
-\begin_inset Formula $\phi$
-\end_inset
-
- (radians) [although at that point, we were calling it 
-\begin_inset Formula $\theta$
-\end_inset
-
-]
-\end_layout
-
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
 	filename Book1.pdf
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset External
-	template PDFPages
-	filename Book2.pdf
-	extra LaTeX "pages={1,2}"
 
 \end_inset
 
