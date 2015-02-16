@@ -178,7 +178,10 @@ Now it is clear that we expect a linear relation between
 \end_layout
 
 \begin_layout Subsection
-Error Analysis
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ and its error analysis
 \end_layout
 
 \begin_layout Standard
@@ -263,7 +266,72 @@ The procedure then is obvious.
 \end_layout
 
 \begin_layout Itemize
-We attach the component
+We attach the component to the terminals of the given device (one with a
+ display)
+\end_layout
+
+\begin_layout Itemize
+We set the current to the desired value (say 
+\begin_inset Formula $10\,\mu A$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+We plugin the thermometer also into the device
+\end_layout
+
+\begin_layout Itemize
+We immerse both the thermometer and the component into the heating chamber
+ and initiate the heating.
+ Its made sure that 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the component and thermometer's sensor are as close to each other as possible
+\end_layout
+
+\begin_layout Itemize
+both are roughly in the centre of the container (to avoid inhomogeneous
+ heating)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+We wait till the temperature rises to say 120 
+\begin_inset Formula $^{0}C$
+\end_inset
+
+ and then let the temperature fall
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+while that happens, we record temperature (
+\begin_inset Formula $T$
+\end_inset
+
+) and voltage (
+\begin_inset Formula $V$
+\end_inset
+
+) everytime the value of 
+\begin_inset Formula $V$
+\end_inset
+
+ on the display changes.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Observations
+\end_layout
+
+\begin_layout Standard
+We performed the experiment for two semiconductors, a red LED and a blue
+ LED.
 \end_layout
 
 \end_body
