@@ -74,6 +74,10 @@
 Band-gap | Semiconductor
 \end_layout
 
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
 \begin_layout Date
 February 2015
 \end_layout
@@ -120,7 +124,7 @@ and
 \begin_inset Formula $\gamma$
 \end_inset
 
- is also assumed a constant, 
+ is also assumed to be constant, 
 \begin_inset Formula $T$
 \end_inset
 
@@ -402,7 +406,7 @@ Time-line
 <column alignment="left" valignment="top" width="0">
 <column alignment="block" valignment="top" width="9cm">
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -411,7 +415,7 @@ Feb 9
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -420,7 +424,7 @@ Monday
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -491,7 +495,7 @@ Performed the experiment with a green LED | wrote the code for data analysis
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -500,7 +504,7 @@ Feb 16
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -509,7 +513,7 @@ Monday
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout

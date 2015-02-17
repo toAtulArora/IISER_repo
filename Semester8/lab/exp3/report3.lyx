@@ -74,6 +74,10 @@
 Band-gap | Semiconductor
 \end_layout
 
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
 \begin_layout Date
 February 2015
 \end_layout
@@ -120,11 +124,11 @@ and
 \begin_inset Formula $\gamma$
 \end_inset
 
- is also assumed a constant, 
+ is also assumed to be constant, 
 \begin_inset Formula $T$
 \end_inset
 
- is temperature and 
+ is absolute temperature and 
 \begin_inset Formula $E_{g}$
 \end_inset
 
