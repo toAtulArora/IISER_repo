@@ -120,7 +120,7 @@ and
 \begin_inset Formula $\gamma$
 \end_inset
 
- is (what is it? :( ), 
+ is also assumed a constant, 
 \begin_inset Formula $T$
 \end_inset
 
@@ -390,6 +390,147 @@ while that happens, we record temperature (
 Observations
 \end_layout
 
+\begin_layout Subsection
+Time-line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="block" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Started reading the theory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Completed the record of the previous experiment | started performing the
+ next experiment | red LED observations taken (by Sagar)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Thursday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Performed the experiment with a green LED | wrote the code for data analysis
+ and plotting | printed the record of the previous experiment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Completed the analysis and record | starting with the theory of the next
+ experiment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Readings and analysis
+\end_layout
+
 \begin_layout Standard
 We performed the experiment for two semiconductors, a red LED and a green
  LED.
@@ -406,7 +547,7 @@ We performed the experiment for two semiconductors, a red LED and a green
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Red LED
 \end_layout
 
@@ -443,7 +584,7 @@ Thus, the value of
  
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Green LED
 \end_layout
 
@@ -529,6 +670,7 @@ The value of
 .
  One could make the experiment performance faster by using ice to cool down
  the system.
+ Other than this, the experiment seemed to be reasonably well setup.
 \end_layout
 
 \begin_layout Section
@@ -538,6 +680,8 @@ Acknowledgements
 \begin_layout Standard
 I thank my teammates for their contribution in performance of the experiment
  and discussion of the theory.
+ The lab manual was referred to for the theory (since I don't fully understand
+ the derivations of the equations we started with).
 \end_layout
 
 \end_body
