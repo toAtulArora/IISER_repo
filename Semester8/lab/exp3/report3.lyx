@@ -330,8 +330,119 @@ Observations
 \end_layout
 
 \begin_layout Standard
-We performed the experiment for two semiconductors, a red LED and a blue
+We performed the experiment for two semiconductors, a red LED and a green
  LED.
+ 
+\end_layout
+
+\begin_layout Subsection
+Red LED
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/stm/Documents/IISER_repo/Semester8/lab/exp3gnu/ledRed.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+Final set of parameters            Asymptotic Standard Error
+\end_layout
+
+\begin_layout Plain Layout
+=======================            ==========================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+m               = -0.00230434      +/- 5.952e-05    (2.583%)
+\end_layout
+
+\begin_layout Plain Layout
+c               = 1.75263          +/- 0.004418     (0.2521%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the value of 
+\begin_inset Formula $E_{g}=$
+\end_inset
+
+ (prashansa: please do this with error (pun intended)!)
+\end_layout
+
+\begin_layout Standard
+TODO: Add excel data
+\end_layout
+
+\begin_layout Subsection
+Green LED
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/stm/Documents/IISER_repo/Semester8/lab/exp3gnu/ledGreen.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+Final set of parameters            Asymptotic Standard Error
+\end_layout
+
+\begin_layout Plain Layout
+=======================            ==========================
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+m               = -0.00239901      +/- 3.816e-05    (1.591%)
+\end_layout
+
+\begin_layout Plain Layout
+c               = 1.80443          +/- 0.003239     (0.1795%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus, the value of 
+\begin_inset Formula $E_{g}=$
+\end_inset
+
+ (prashansa: please do this with error (pun intended)!)
+\end_layout
+
+\begin_layout Standard
+TODO: Add excel data
 \end_layout
 
 \end_body
