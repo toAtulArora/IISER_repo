@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -393,6 +396,16 @@ We performed the experiment for two semiconductors, a red LED and a green
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename Exp3Readings.pdf
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Red LED
 \end_layout
@@ -407,28 +420,14 @@ Red LED
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Final set of parameters            Asymptotic Standard Error
-\end_layout
 
-\begin_layout Plain Layout
-=======================            ==========================
-\end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-m               = -0.00230434      +/- 5.952e-05    (2.583%)
-\end_layout
-
-\begin_layout Plain Layout
-c               = 1.75263          +/- 0.004418     (0.2521%)
+\backslash
+lstinputlisting{../exp3gnu/ledRedFit}
 \end_layout
 
 \end_inset
@@ -438,14 +437,10 @@ c               = 1.75263          +/- 0.004418     (0.2521%)
 
 \begin_layout Standard
 Thus, the value of 
-\begin_inset Formula $E_{g}=$
+\begin_inset Formula $E_{g}=2.3884\pm0.117(4.921\%)\, eV$
 \end_inset
 
- (prashansa: please do this with error (pun intended)!)
-\end_layout
-
-\begin_layout Standard
-TODO: Add excel data
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -462,28 +457,14 @@ Green LED
 \end_layout
 
 \begin_layout Standard
-\begin_inset listings
-inline false
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Final set of parameters            Asymptotic Standard Error
-\end_layout
 
-\begin_layout Plain Layout
-=======================            ==========================
-\end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-m               = -0.00239901      +/- 3.816e-05    (1.591%)
-\end_layout
-
-\begin_layout Plain Layout
-c               = 1.80443          +/- 0.003239     (0.1795%)
+\backslash
+lstinputlisting{../exp3gnu/ledGreenFit}
 \end_layout
 
 \end_inset
@@ -493,14 +474,10 @@ c               = 1.80443          +/- 0.003239     (0.1795%)
 
 \begin_layout Standard
 Thus, the value of 
-\begin_inset Formula $E_{g}=$
+\begin_inset Formula $E_{g}=2.463\pm0.074\,(3.01\%)\, eV$
 \end_inset
 
- (prashansa: please do this with error (pun intended)!)
-\end_layout
-
-\begin_layout Standard
-TODO: Add excel data.
+ 
 \end_layout
 
 \begin_layout Section
@@ -512,7 +489,39 @@ The value of
 \begin_inset Formula $E_{g}$
 \end_inset
 
- was found to be (TODO:) for a green LED and (TODO:) for a red LED.
+ was found to be 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $2.463\pm0.074\, eV$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ for a green LED and 
+\begin_inset Formula $E_{g}=2.3884\pm0.117\, eV$
+\end_inset
+
+ for a red LED.
  The relation was found to be linear to about 
 \begin_inset Formula $2\%$
 \end_inset

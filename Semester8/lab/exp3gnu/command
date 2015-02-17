@@ -1,10 +1,10 @@
 set terminal pdf
 set output "resultRENAMEme.pdf"
 g(x)=m*x + c
-fit g(x) "dataLEDgreen" via m,c
+fit g(x) "dataLEDred" using 2:1 via m,c
 set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
 set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
-set xlabel "Temperature T (°C)"
-set ylabel "Voltage V (Volts)"
-set title "LED green"
-plot "dataLEDgreen" title "observations", g(x) title "linear fit"
+set ylabel "Temperature T (°C)"
+set xlabel "Voltage V (Volts)"
+set title "LED red"
+plot "dataLEDred" using 2:1 title "observations", g(x) title "linear fit"

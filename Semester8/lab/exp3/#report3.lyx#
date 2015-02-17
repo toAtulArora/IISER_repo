@@ -437,10 +437,10 @@ lstinputlisting{../exp3gnu/ledRedFit}
 
 \begin_layout Standard
 Thus, the value of 
-\begin_inset Formula $E_{g}=2.3884\pm0.117(4.921\%)\, eV$
+\begin_inset Formula $E_{g}=$
 \end_inset
 
- 
+ (prashansa: please do this with error (pun intended)!)
 \end_layout
 
 \begin_layout Subsection
@@ -474,10 +474,10 @@ lstinputlisting{../exp3gnu/ledGreenFit}
 
 \begin_layout Standard
 Thus, the value of 
-\begin_inset Formula $E_{g}=2.463\pm0.074\,(3.01\%)\, eV$
+\begin_inset Formula $E_{g}=2.463\pm0.074$
 \end_inset
 
- 
+ (prashansa: please do this with error (pun intended)!)
 \end_layout
 
 \begin_layout Section
@@ -489,39 +489,7 @@ The value of
 \begin_inset Formula $E_{g}$
 \end_inset
 
- was found to be 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula $2.463\pm0.074$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- for a green LED and 
-\begin_inset Formula $E_{g}=2.3884\pm0.117(4.921\%)\, eV$
-\end_inset
-
- for a red LED.
+ was found to be (TODO:) for a green LED and (TODO:) for a red LED.
  The relation was found to be linear to about 
 \begin_inset Formula $2\%$
 \end_inset
