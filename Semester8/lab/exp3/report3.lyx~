@@ -286,6 +286,10 @@ E_{g}=\frac{c'+273.15}{m}
 \end_inset
 
 where (repeating for clarity), 
+\begin_inset Formula $m$
+\end_inset
+
+ is the slope and 
 \begin_inset Formula $c'$
 \end_inset
 
@@ -395,7 +399,7 @@ Red LED
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename /home/stm/Documents/IISER_repo/Semester8/lab/exp3gnu/ledRed.pdf
+	filename ../exp3gnu/ledRed.pdf
 
 \end_inset
 
@@ -450,7 +454,7 @@ Green LED
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename /home/stm/Documents/IISER_repo/Semester8/lab/exp3gnu/ledGreen.pdf
+	filename ../exp3gnu/ledGreen.pdf
 
 \end_inset
 
@@ -496,7 +500,35 @@ Thus, the value of
 \end_layout
 
 \begin_layout Standard
-TODO: Add excel data
+TODO: Add excel data.
+\end_layout
+
+\begin_layout Section
+Results and Critique
+\end_layout
+
+\begin_layout Standard
+The value of 
+\begin_inset Formula $E_{g}$
+\end_inset
+
+ was found to be (TODO:) for a green LED and (TODO:) for a red LED.
+ The relation was found to be linear to about 
+\begin_inset Formula $2\%$
+\end_inset
+
+.
+ One could make the experiment performance faster by using ice to cool down
+ the system.
+\end_layout
+
+\begin_layout Section
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+I thank my teammates for their contribution in performance of the experiment
+ and discussion of the theory.
 \end_layout
 
 \end_body
