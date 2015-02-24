@@ -86,6 +86,10 @@ February 2015
 Theory
 \end_layout
 
+\begin_layout Subsection
+A simple model
+\end_layout
+
 \begin_layout Standard
 TODO: FIgure out exactly what the effect is.
 \end_layout
@@ -233,6 +237,34 @@ As a remark it must be mentioned that it is possible for
 
  while there is still heat flow in accordance with the temperature difference
  at equilibrium.
+\end_layout
+
+\begin_layout Section
+Experimental Verification
+\end_layout
+
+\begin_layout Subsection
+The Setup
+\end_layout
+
+\begin_layout Standard
+We have two 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{../exp4gnu/ledRedFit}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

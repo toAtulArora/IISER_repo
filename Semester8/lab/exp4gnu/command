@@ -1,0 +1,10 @@
+set terminal pdf
+set output "resultRENAMEme.pdf"
+g(x)=m*x + c
+fit g(x) "../exp4/2reading.txt" using 3:4 via m,c
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set xlabel "Temperature Difference T (° or K)"
+set ylabel "Voltage V (mV)"
+set title "Red Yellow (Alumel-Chromel | K type)"
+plot "../exp4/2reading.txt" using 3:4 title "observations", g(x) title "linear fit"
