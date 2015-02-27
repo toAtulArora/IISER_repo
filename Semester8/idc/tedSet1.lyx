@@ -1,0 +1,114 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+IDC woodoo
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+February 2015
+\end_layout
+
+\begin_layout Section
+Aaron O'Connell:
+\end_layout
+
+\begin_layout Standard
+The talk had two basic themes: (a) logic and intuition (b) quantum superposition
+ of macroscopic objects.
+ The latter is an observed microscopic phenomenon of objects being in two
+ locations at the same time (roughly speaking).
+ The former theme was used to describe how quantum mechanical superposition
+ is against intuition and it was also shown to be against logic since it
+ is not observed at a macroscopic level.
+ The speaker, who had demonstrated macroscopic quantum superposition, went
+ on to discuss why 
+\end_layout
+
+\begin_layout Section
+Gell Mann: Beauty Truth and Physics
+\end_layout
+
+\begin_layout Section
+Dan Cobley: What physics taught me about Marketting
+\end_layout
+
+\begin_layout Section
+Pranav Mistry: 
+\end_layout
+
+\end_body
+\end_document

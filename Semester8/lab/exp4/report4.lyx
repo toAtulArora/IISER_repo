@@ -91,12 +91,8 @@ A simple model
 \end_layout
 
 \begin_layout Standard
-TODO: FIgure out exactly what the effect is.
-\end_layout
-
-\begin_layout Standard
-It is observed that if a temperature gradient is applied (to what?) there
- is a flow of current.
+It is observed that if a temperature gradient is applied (to what? a metal)
+ there is a flow of current.
  This may be stated as 
 \end_layout
 
@@ -243,12 +239,334 @@ As a remark it must be mentioned that it is possible for
 Experimental Verification
 \end_layout
 
+\begin_layout Standard
+One might find it reasonable to think that the simplest way of measuring
+ seeback effect would be to just stick in voltmeter probes to two points
+ in a metal that're maintained at distinct temperatures.
+ Reasonable as it sounds, there's a serious flaw; the voltmeter itself consists
+ of metallic parts which will produce their own seeback effect due to the
+ temperature difference at the probes.
+ So then one may think it can be rectified by heating a metallic block at
+ the middle and measuring the voltage difference at the equitemperature
+ sides.
+ Well, a little though reveals that this would be zero.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Use 
+\begin_inset Formula $\Delta V=\alpha\Delta T$
+\end_inset
+
+; its trivial then
+\end_layout
+
+\end_inset
+
+ However, the idea has merit.
+ If we put two different metal blocks' edges in contact (it'll be both a
+ thermal and electrical contact) and maintain it at temperture 
+\begin_inset Formula $T_{C}$
+\end_inset
+
+ and measure voltage off of the open edges (with open edges of both metals
+ maintained) at temperture 
+\begin_inset Formula $T_{E}$
+\end_inset
+
+, we'll get a non-zero voltage (unless the metals have the same seeback
+ cofficient).
+ Let's calculate this potential difference.
+ We assume that 
+\begin_inset Formula $T_{C}>T_{E}$
+\end_inset
+
+; 
+\begin_inset Formula $\Delta T=T_{c}-T_{E}>0$
+\end_inset
+
+, potential at the cold edge of metal one and two is 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+ respectively, and potential at the middle (common edge) is 
+\begin_inset Formula $V$
+\end_inset
+
+, so that 
+\begin_inset Formula 
+\[
+\begin{aligned} & V-V_{1}=\alpha_{1}\Delta T, & V-V_{2}=\alpha_{2}\Delta T\\
+\implies & V_{2}-V_{1}=\left(\alpha_{2}-\alpha_{1}\right)\Delta T\\
+\implies & \Delta V=\alpha\Delta T, & \alpha=\left(\alpha_{2}-\alpha_{1}\right),\,\Delta V=V_{2}-V_{1}
+\end{aligned}
+\]
+
+\end_inset
+
+This is a neat result.
+ So all that I am now required to do is to keep 
+\begin_inset Formula $\Delta T$
+\end_inset
+
+ sufficiently large, so that I can measure 
+\begin_inset Formula $\Delta V$
+\end_inset
+
+ reliably using my voltmeter.
+ 
+\end_layout
+
 \begin_layout Subsection
 The Setup
 \end_layout
 
 \begin_layout Standard
-We have two 
+That setup should be then as described earlier.
+ Well, almost because in our lab we have a slightly different setup.
+ As shown in the diagram, across the circuit, we can write 
+\begin_inset Formula 
+\[
+\alpha_{1}(T_{oc}-T_{c})+\alpha_{2}(T_{o}-T_{oc})+\Delta V+\alpha_{2}(T_{oe}-T_{o})+\alpha_{1}(T_{e}-T_{oe})=0
+\]
+
+\end_inset
+
+if we assume that 
+\begin_inset Formula $T_{oe}\approx T_{oc}$
+\end_inset
+
+, which it physically might very well be, we have 
+\begin_inset Formula 
+\[
+\Delta V=\alpha_{1}(T_{c}-T_{e})
+\]
+
+\end_inset
+
+which peculiarly enough, depends only on the seeback cofficient of metal
+ two.
+ This maybe wrong because if it were so simple to find the seeback cofficient
+ of one metal in isolation, Ashcroft won't say use a superconductor instead
+ of the second metal (a superconductor doesn't exhibit seeback (cofficient
+ is zero))
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsubsection
+Time-line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="block" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[finished the previous experiment] Started reading the theory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[Holiday | shivratri]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reading the theory done | Started performing the experiment; cooling method
+ caused errors (to be repeated)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Took 2 sets of readings (the latter wasn't linear, plausibly because of
+ accelerated cooling) | worked on the record alongside
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeated for the third time; got the right result | concluded cooling rapidly
+ is causing errors | understood a missing piece of the theory, why we need
+ a thermo-'couple'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[Lab Exam] | finishing the record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Iron-Constanon
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 1readingRedBlue.pdf
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -259,12 +577,106 @@ status open
 
 
 \backslash
-lstinputlisting{../exp4gnu/ledRedFit}
+lstinputlisting{1readingFit.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{1reading.txt}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+Alumel-Chromel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 2readingRedYellow.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{2readingFit.tex}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{2reading.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Results
+\end_layout
+
+\begin_layout Standard
+It was found that 
+\begin_inset Formula $\Delta V\propto\Delta T$
+\end_inset
+
+ to a good (
+\begin_inset Formula $~1\%$
+\end_inset
+
+) precision.
+ For Iron-Constenon, the seeback cofficient was found to be 
+\begin_inset Formula $0.0492904\pm0.0003823(0.7756\%)$
+\end_inset
+
+ mV/K while for Alumel-Chromel, it was 
+\begin_inset Formula $0.0405008\pm0.0002697(0.666\%)$
+\end_inset
+
+ mV/K.
+ 
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The setup was reasonably good and the results obtained were in good agreement
+ with the predictions.
+ The manual didn't discuss the mechanism behind the effect in much detail.
+ No modification seemed necessary.
+ Only issue is that the reasoning given for the setup provided maybe wrong
+ and perhaps a method could be devised to test that more stringently.
+\end_layout
+
+\begin_layout Section
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+I would like to acknowledge the contribution of my teammates, Prashansa
+ Gupta and Vivek Sagar who played a key role in helping me understand the
+ theory and contributed to performance of the experiment.
+ Like before, Ashcroft and Mermin's book on Solid State Physics was referred
+ to for the corresponding theory.
 \end_layout
 
 \end_body

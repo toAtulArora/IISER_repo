@@ -1,0 +1,88 @@
+% article example for classicthesis.sty
+\documentclass[12pt,a4paper]{article} % KOMA-Script article scrartcl
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage[nochapters]{classicthesis} % nochapters
+\usepackage[left=1in,right=1in,top=1.5in,bottom=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage[pdftex]{graphicx}
+\usepackage[final]{pdfpages}
+
+\usepackage{nopageno}
+
+\begin{document}
+    \title{\rmfamily\normalfont\spacedallcaps{Thermoelectric Effect}}
+    \author{\spacedlowsmallcaps{Prashansa Gupta}}
+    \date{} % no date
+    \pagestyle{plain}
+
+    \maketitle
+    
+    %\begin{abstract}
+    %    \noindent\lipsum[1] Just a test.\footnote{This is a footnote.}
+    %\end{abstract}
+       
+    %\tableofcontents
+    
+    \section{Aim}
+    This experiment aims to study thermoelectric effect, in particular Seeback effect and hence determine the seeback coefficient for the given thermocouples. 
+    
+    
+    \section{Experimental Setup}
+    The setup consists of an oven with 0-100 degrees celsius range; two thermocouples: one with the Red-Yellow wires made of Alumel-Chromel and the one with Red Blue wires made of Iron-Constanton; two thermometers with 0 - 140 deg celsius range, teflon and glass beakers and silicone oil
+    
+    \section{Theory}
+    Thermoelectric effect in general, is defined as the conversion of a temperature gradient to voltage difference and vice versa. The Seeback effect is the conversion of temperature difference into voltage, while the Peltier effect is the inverse process. 
+    A thermoelectric device is capable of producing voltage when under temperature difference. 
+    
+    Usually, the variation of thermoelectric emf with temperature is a polynomial function. In the operating range of the given setup, it is claimed to follow a linear relation given as
+    \begin{equation*}
+        V= \alpha T
+    \end{equation*}
+    So, we apply a temperature gradient to the given thermocouples, and note the voltage across them, plot the graph, fit a line and hence obtain the Seeback coefficient. \\
+    \par
+    In order to explain this on the atomic scale, we consider the Drude model.
+    \begin{equation*}
+    v_Q = \frac{1}{2} [v(x-v\tau) - v(x+v\tau] = -\tau \frac{dv}{dx} = -\tau \frac{d}{dx}\left( \frac{v^2}{2}\right)
+    \end{equation*}
+    
+    \begin{equation*}
+    <{v_i}^2 = \frac{1}{3}v^2
+    \end{equation*}
+    
+    \begin{equation*}
+    \frac{dv^2}{dx} = \frac{dv^2}{dT} \frac{dT}{dx}
+    \end{equation*}
+    
+    generalise to 3d 
+    
+    \begin{equation*}
+    v_Q = -\frac{\tau}{6} \frac{dv^2}{dT} (\bigtriangledown T ) 
+    \end{equation*}
+    
+    
+    \section{Procedure}
+    \begin{enumerate}
+    \item We dip one thermocouple in silicone oil with a thermometer and place it in the oven.
+    \item We dip the other thermocouple in ice with a thermometer, in the teflon beaker.
+    \item We then connect the terminals and switch on the voltage measurement device.
+    \item We note readings at an interval of $ 0.1 mV $while the temperature rises, increasing the temperature of the oven gradually.
+    \item We remove the thermocouple, let the oil cool, and take readings for the other. 
+    \end{enumerate}
+    
+    \section{Observations}
+    
+    \section{Errors and Results}
+    
+    errors while cooling, so we adopt the inverse method and note voltage while heating -- improper/ inhomogenous cooling -- we put ice - in order to drop the temp faster.
+    
+    increase the temperature of oven in small steps because heating occurs very fast above the set value of 60-70 deg. you can stop heating once you have reached about 80 in the thermometer. 
+    
+    
+        
+
+
+
+
+\end{document}
