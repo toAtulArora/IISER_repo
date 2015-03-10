@@ -1,0 +1,120 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{braket}
+\usepackage{cancel}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Mukunda Train 2
+\end_layout
+
+\begin_layout Standard
+Rough
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\text{tr}(\rho_{1}\rho_{2}) & =\text{tr}\left[\left|\psi_{1}\right\rangle \left\langle \psi_{1}\right|\left|\psi_{2}\right\rangle \left\langle \psi_{2}\right|\right]\\
+ & =\left|\psi_{1}\right\rangle _{a}\left\langle \psi_{1}\right|_{b}\left|\psi_{2}\right\rangle _{b}\left\langle \psi_{2}\right|_{a}\\
+ & =\left\langle \psi_{2}\right|_{a}\left|\psi_{1}\right\rangle _{a}\left\langle \psi_{1}\right|_{b}\left|\psi_{2}\right\rangle _{b}\\
+ & =\left|\left\langle \psi_{1}\right|\left|\psi_{2}\right\rangle \right|^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}((\psi_{2}-\psi_{1}\cos\theta),(\psi_{2}-\psi_{1}\cos\theta)) & =(\psi_{2},\psi_{2})+(\psi_{2},-\psi_{1}\cos\theta)-(\psi_{1}\cos\theta,\psi_{2})+(\psi_{1}\cos\theta,\psi_{1}\cos\theta)\\
+ & =1-\cos^{2}\theta-\cos^{2}\theta+\cos^{2}\theta=\sin^{2}\theta
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TODO: Evaluate length in point 3 (near equn 3.21)
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

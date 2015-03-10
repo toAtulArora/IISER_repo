@@ -1,0 +1,412 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 4cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Mukunda's Lectures [train notes]
+\end_layout
+
+\begin_layout Section
+Berry's Phase (original)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}R\in\text{multidimensional parameter space}\\
+R\rightarrow R(t) & \implies H(R)\rightarrow H(R(t))
+\end{aligned}
+\]
+
+\end_inset
+
+We assume that the time evolution is cyclic.
+ Let 
+\begin_inset Formula $R(t)$
+\end_inset
+
+ run over a closed loop
+\begin_inset Formula 
+\[
+\begin{aligned}C=\{R(t)|0\le t\le T\}=\text{closed loop in parameter space}\\
+R(T)=R(0)
+\end{aligned}
+\]
+
+\end_inset
+
+For each 
+\begin_inset Formula $R$
+\end_inset
+
+ (in the domain of interest), there're eigenvectors and eigenvalues of 
+\begin_inset Formula $H(R)$
+\end_inset
+
+ and we can write the usual
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+H(R)\ket{n;R}=E_{n}(R)\ket{n;R}\\
+\bra{n';R}\ket{n;R}=\delta_{n'n} & \sum_{n}\ket{n;R}\bra{n;R}=1
+\end{array}
+\]
+
+\end_inset
+
+We assume nondegenercy and no level crossing in the domain of interest in
+ the R space.
+ Now there's a remark in the paper that (I can't understand) says that 
+\begin_inset Formula $\ket{n;R}$
+\end_inset
+
+ is assumed continuous and single valued in 
+\begin_inset Formula $R$
+\end_inset
+
+, in contrast to the previous case (where we assumed 
+\begin_inset Formula $(\psi_{n}(t),\dot{\psi_{n}}(t))=0$
+\end_inset
+
+.
+ Don't know what relevance it has though.
+ Fine, it clarifies it in the next step.
+ It says each 
+\begin_inset Formula $\ket{n;R}$
+\end_inset
+
+ is free upto a phase dependent on 
+\begin_inset Formula $n$
+\end_inset
+
+ and 
+\begin_inset Formula $R$
+\end_inset
+
+ but is otherwise assumed to be well-defined (single-valued) in the domain
+ of interest.
+\end_layout
+
+\begin_layout Standard
+The schrodinger equation is 
+\begin_inset Formula 
+\[
+i\hbar\dot{\psi(t)}=H(R(t))\psi(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We know from the adiabatic theorem (which I read from wikipedia, there in
+ the scanned notes) that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\psi(0)=\ket{n;R(0)} & \implies\psi(t)\approx exp\left(\left[i\theta_{n}(t)\right]+\left[i\gamma_{n}(t)\right]\right)\ket{n;R(t)}\end{aligned}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $i\theta_{n}(t)=-i/\hbar\int_{0}^{t}dt'E_{n}(R(t'))$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma_{n}(t)$
+\end_inset
+
+ in those notes had been explicitly derived.
+ Here, we ignore that and simply plug this as the guess solution in the
+ schrodinger equation.
+ Lets do just that.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+i\hbar\left[i\left(\dot{\theta_{n}}+\dot{\gamma_{n}}\right)e^{i(\theta_{n}+\gamma_{n})}\ket{n;R(t)}+e^{i(\theta_{n}+\gamma_{n})}\frac{d}{dt}\ket{n;R(t)}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Okay so now i'm getting confused with differentiation.
+ Lets check.
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}\frac{d}{dx}e^{x}=e^{x}\\
+\frac{d}{dx}f(g(x))=f'(g(x))*g'(x)
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Never mind that.
+ Sorry.
+ Back to the task.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}i\hbar\left[i\left(\dot{\theta_{n}}+\dot{\gamma_{n}}\right)e^{i(\theta_{n}+\gamma_{n})}\ket{n;R}+e^{i(\theta_{n}+\gamma_{n})}\frac{d}{dt}\ket{n;R}\right] & \approx H(R)\ket{\psi(t)}\\
+i\hbar\left[\left(\cancel{-\frac{i}{\hbar}E_{n}(R)}+i\dot{\gamma_{n}}\right)e^{i(\theta_{n}+\gamma_{n})}\ket{n;R}+e^{i(\theta_{n}+\gamma_{n})}\frac{d}{dt}\ket{n;R}\right] & \approx\cancel{E_{n}(R)e^{i(\theta_{n}+\gamma_{n})}\ket{n;R}}\\
+i\dot{\gamma_{n}}e^{i(\theta_{n}+\gamma_{n})}\ket{n;R}+e^{i(\theta_{n}+\gamma_{n})}\frac{d}{dt}\ket{n;R} & \approx0
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+DOUBT: I would now want to understand what difference would it have made
+ if I had written 
+\begin_inset Formula $i\theta_{n}(t)=-i/\hbar\left[E_{n}(R(t))t\right]$
+\end_inset
+
+, because even then 
+\begin_inset Formula $i\dot{\theta_{n}}=-i/\hbar\left[E_{n}(R)\right]$
+\end_inset
+
+ and would've happily cancelled out.
+\end_layout
+
+\begin_layout Standard
+NB: This is essentially the statement
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\[
+\frac{d}{dt}\left(e^{i\theta_{n}}\ket{n;R}\right)\approx0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Continuing, I want to find 
+\begin_inset Formula $\gamma_{n}$
+\end_inset
+
+, so I go back to the previous step and write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}i\dot{\gamma_{n}}\ket{n;R}+\frac{d}{dt}\ket{n;R} & \approx0\\
+i\dot{\gamma_{n}} & \approx-\bra{n;R}\frac{d}{dt}\ket{n;R}\\
+\dot{\gamma_{n}} & \approx i\bra{n;R}\frac{d}{dt}\ket{n;R}\\
+ & \approx i\bra{n;R}\mathbf{\nabla}\ket{n;R}\dot{.\mathbf{R}}
+\end{alignedat}
+\]
+
+\end_inset
+
+NB: 
+\end_layout
+
+\begin_layout Itemize
+We now assume that the paratmeter space is 3 dimensional.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\nabla$
+\end_inset
+
+ is in the 
+\begin_inset Formula $R$
+\end_inset
+
+ space, not the physical 3d space.
+ 
+\end_layout
+
+\begin_layout Standard
+Further, I can integrate to get an expression for
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{alignedat}{1}\gamma_{n} & \approx i\int_{0}^{t}\bra{n;R}\mathbf{\nabla}\ket{n;R}.\frac{d\mathbf{R}}{dt}dt\\
+ & \approx i\int_{\mathbf{R}(0)}^{\mathbf{R}(t)}\bra{n;R}\mathbf{\nabla}\ket{n;R}.d\mathbf{R}
+\end{alignedat}
+\]
+
+\end_inset
+
+NB: 
+\end_layout
+
+\begin_layout Itemize
+For convenience, I haven't written 
+\begin_inset Formula $\ket{n;\mathbf{R}}$
+\end_inset
+
+ but it's implied.
+ 
+\end_layout
+
+\begin_layout Itemize
+I'll just show that 
+\begin_inset Formula $\gamma_{n}$
+\end_inset
+
+ is real, viz.
+ the integral is purely imaginary
+\begin_inset Formula 
+\[
+\begin{alignedat}{2}\nabla\braket{n;R|n;R} & =0 & =\bra{n;R}\left(\mathbf{\nabla}\ket{n;R}\right)+\left(\nabla\bra{n;R}\right)\ket{n;R}\\
+ &  & =\text{2Re}\left(\bra{n;R}\mathbf{\nabla}\ket{n;R}\right)
+\end{alignedat}
+\]
+
+\end_inset
+
+that tells us 
+\begin_inset Formula $\bra{n;R}\left(\mathbf{\nabla}\ket{n;R}\right)$
+\end_inset
+
+ has no real part, viz.
+ it is purely imaginary.
+\end_layout
+
+\begin_layout Standard
+Now recall we're moving along a closed curve so we get 
+\begin_inset Formula 
+\[
+\begin{alignedat}{2}\gamma_{n} & \approx i\oint_{C}\bra{n;R}\nabla\ket{n;R}.dR\\
+ & \approx\text{Re}\left(i\oint_{C}\bra{n;R}\nabla\ket{n;R}.dR\right) & [\text{we proved }\gamma_{n}\text{ is purely Real}]\\
+ & \approx i\oint_{C}\alpha.dR; & [\alpha\equiv\bra{n;R}\nabla\ket{n;R}]\\
+ & \approx i\int_{S}(\nabla\times\alpha).da; & [\text{using stokes thm, implicit}]\\
+\gamma_{n} & \approx i\int_{S}(\nabla\times\alpha).da\\
+\gamma_{n} & \approx i\int_{S}\epsilon_{ijk}\frac{\partial}{\partial x_{i}}\left(\bra{n;R}\frac{\partial}{\partial x_{j}}\ket{n;R}\right)da_{k}\\
+ & \approx i\int_{S}\epsilon_{ijk}\left(\frac{\partial}{\partial x_{i}}\bra{n;R}\frac{\partial}{\partial x_{j}}\ket{n;R}+\cancel{\bra{n;R}\frac{\partial}{\partial x_{i}}\frac{\partial}{\partial x_{j}}\ket{n;R}}\right)da_{k} & \text{[using anti-symmetry in i j]}\\
+ & \approx i\int_{S}(\mathbf{\nabla}\bra{n;R})\times(\mathbf{\nabla}\ket{n;R}).d\mathbf{a}\\
+ & \approx\sum_{m}i\int_{S}(\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R}).d\mathbf{a}\\
+ & \approx\sum_{m}i\int_{S}i\text{Im}\left((\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R})\right).d\mathbf{a} & [\gamma_{n}\text{ is purely Re}]\\
+ & \approx-\sum_{m\ne n}\int_{S}\text{Im}\left((\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R})\right).d\mathbf{a} & [\bra{n;R}\left(\mathbf{\nabla}\ket{n;R}\right)\text{ is real}]
+\end{alignedat}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
