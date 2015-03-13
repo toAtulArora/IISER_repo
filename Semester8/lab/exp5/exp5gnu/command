@@ -1,0 +1,11 @@
+set terminal pdf
+set output "resultRENAMEme.pdf"
+g(x)=m*x + c
+fit g(x) "copper.txt" using 2:1 via m,c
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set ylabel "Force/Area (N/m^2)"
+set xlabel "Displacement/Length"
+set title "Young's Modulus (Copper)"
+
+plot "copper.txt" using 2:1 title "observations", g(x) title "linear fit"

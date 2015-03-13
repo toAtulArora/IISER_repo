@@ -1,0 +1,474 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Young's Modulus
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+March 2015
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Standard
+taken from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.animations.physics.unsw.edu.au//jw/elasticity.htm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+One can deduce quite a bit about intermolecular or interatomic forces just
+ from a simple experiment, and from the observations that solid objects
+ are difficult to compress and, once broken, do not spontaneously repair.
+\end_layout
+
+\begin_layout Standard
+Take a short piece of metal wire (e.g.
+ a straightened paper clip), and try to stretch it along its length.
+ Unless the wire is very thin or you are very strong, the amount of stetching
+ will be small, and the wire will not break.
+ What has happened here is that you have slightly increased the average
+ distance, r, between the atoms.
+ However, the attractive force between pairs of atoms has been able to resist
+ the tensile force you applied.
+\end_layout
+
+\begin_layout Standard
+Now try to shorten the metal by exerting a compressive force along its length.
+ Here, you have slightly decreased the average distance between the atoms
+ but the repulsive force between pairs of atoms has been able to resist
+ the compressive force you applied.
+\end_layout
+
+\begin_layout Standard
+From this you can deduce that, (i) when the interatomic spacing is greater
+ than its unstressed value, the attractive forces between atoms must be
+ greater than the repulsive forces (the attractive forces balance both the
+ repulsive forces and the forces you impose).
+ Conversely, (ii) when the interatomic spacing is less than its unstressed
+ value, the repulsive forces between atoms must be greater than the attractive
+ forces.
+\end_layout
+
+\begin_layout Standard
+Two further observations: First it is extremely difficult to compress a
+ metal, so (iii) the repulsive forces must become very large, even for small
+ reductions in r.
+ Second, once you have broken a piece of metal, it doesn't automatically
+ spring back together: (iv) if the atoms are separated from each other by
+ even a distance of much less than a mm, the attractive forces are effectively
+ zero.
+\end_layout
+
+\begin_layout Standard
+From all these observations, we can deduce that the interatomic repulsive
+ and attractive forces, as a function of interatomic separation must look
+ qualitatively rather as shown in the graph below at left.
+\end_layout
+
+\begin_layout Standard
+By convention, repulsive forces are taken as positive and attractive as
+ negative.
+ (This conveniently makes their potential energies positive and negative
+ respectively, as shown at right, in which the zero of potential energy
+ is taken at large separation.) The vertical grey line marks the separation
+ at which their magnitudes are equal, which identifies the value or r for
+ which there is no externally imposed force.
+ On these graphs, this occurs at r = r0 = 1.12σ, and the significance of
+ the characteristic length σ will be explained later.
+ Attraction is stronger than repulsion under tension (to the right of the
+ vertical line, r > 1.12σ) and weaker than repulsion under compression.
+ Note too that, as our observations above require, the repulsive force rises
+ very rapidly with compression (r < 1.12σ) and that both forces go rapidly
+ to zero as separation increases.
+\end_layout
+
+\begin_layout Standard
+The division of forces into attractive and repulsive components is at least
+ a little arbitrary: What is really important are the total force and energy,
+ which we can actually measure.
+ This is shown by the purple curve in the next version of these graphs.
+\end_layout
+
+\begin_layout Standard
+Again, a vertical grey line marks the unstressed value of r and, of course,
+ it identifies the separation at which the total force is zero.
+ This is also the point at which the potential energy U has a minimum, because
+ the total force Fr = −dU/dr.
+ (See potential energy.)
+\end_layout
+
+\begin_layout Standard
+Our aim here is to relate these curves to Young's modulus and Hooke's law.
+ But how can curves like these give a linear relation between the force
+ applied and the stretching of the interatomic bonds? The answer is that
+ Hooke's law only applies over a limited range of deformation.
+ It corresponds to a linear approximation to F(r), passing through the point
+ (r0,0), where r0 is the unstressed length.
+ Integrating Hooke's law gives a potential energy U(r) that is parabolic
+ about the minimu at r0.
+ Hooke's law thus corresponds to the green linedrawn on the F(r) plot and
+ the green parabola on the U(r) plot.
+ The insets on each graph show close-ups of these approximation, and show
+ that the approximations are poor for deformations of more than a few percent.
+ 
+\end_layout
+
+\begin_layout Standard
+(While discussing this graph, let's observe that, although the Hooke's law
+ approximation for U(r) is symmetrical about its minimum, these curves (and
+ more realistic curves) are not.
+ This asymmetry about the minimum in U(r) is responsible for the thermal
+ expansion of (most) condensed phases: At finite temperatures, the atoms
+ are not found exactly at the minimum of U, because they have finite kinetic
+ energy due to their thermal motion.
+ Oversimplifying in the interests of brevity, we can argue that the average
+ value of U at a value above the minimum lies to the right of the minimum,
+ and increases as more thermal energy is added.)
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsubsection
+Time-line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="block" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[finished the previous experiment] Started reading the theory
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[Holiday | shivratri]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reading the theory done | Started performing the experiment; cooling method
+ caused errors (to be repeated)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Took 2 sets of readings (the latter wasn't linear, plausibly because of
+ accelerated cooling) | worked on the record alongside
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repeated for the third time; got the right result | concluded cooling rapidly
+ is causing errors | understood a missing piece of the theory, why we need
+ a thermo-'couple'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feb 27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[Lab Exam] | finishing the record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Constantan
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename exp5gnu/constantan.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{exp5gnu/constantanFit.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Copper
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename exp5gnu/copper.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{exp5gnu/copperFit.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
