@@ -1,0 +1,309 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Hall Effect
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+March 2015
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Standard
+Assuming the Drude model, it can be shown that (see for example Ashcroft
+ and Mermin) the equation of motion per electron becomes 
+\begin_inset Formula 
+\[
+\frac{dp}{dt}=-\frac{p}{\tau}+f
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f$
+\end_inset
+
+ is the force, and 
+\begin_inset Formula $\tau$
+\end_inset
+
+ is s.t.
+ probability of collision of an electron in time 
+\begin_inset Formula $dt$
+\end_inset
+
+ is 
+\begin_inset Formula $dt/\tau$
+\end_inset
+
+.
+ Let us now consider the situation depicted by the following diagram [taken
+ from Ashcroft and Mermin].
+ It seems reasonable to imagine that for a fixed value of 
+\begin_inset Formula $E_{x}$
+\end_inset
+
+, 
+\begin_inset Formula $j_{x}$
+\end_inset
+
+ will depend on 
+\begin_inset Formula $H$
+\end_inset
+
+ by adding to the resistance in some way.
+ We therefore define a quantity, Magneto-resistance as 
+\begin_inset Formula 
+\[
+\rho(H)=\frac{E_{x}}{j_{x}}
+\]
+
+\end_inset
+
+which was experimentally found by Hall to indeed by field dependent.
+ Next since by inspection we already know that in steady state, 
+\begin_inset Formula $E_{y}$
+\end_inset
+
+ must balance the lorentz force, which is proportional to both 
+\begin_inset Formula $H$
+\end_inset
+
+ and to 
+\begin_inset Formula $j_{x}$
+\end_inset
+
+, we define a quanitity known as the Hall coeffecient 
+\begin_inset Formula 
+\[
+R_{H}=\frac{E_{y}}{j_{x}H}
+\]
+
+\end_inset
+
+At this very step, one can make a rather important point.
+ The direction of 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename diagram.png
+	BoundingBox 0bp 70bp 703bp 357bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+FAQ: 
+\end_layout
+
+\begin_layout Standard
+1.
+ Write about how you would fix the issue: magnetic field in the centre is
+ non zero
+\end_layout
+
+\begin_layout Standard
+2.
+ Even at zero magnetic field, the multimeter reads non-zero current (this
+ is 
+\begin_inset Quotes eld
+\end_inset
+
+hall current
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Observations
+\end_layout
+
+\begin_layout Subsubsection
+Time-line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="block" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+March 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Started and almost finished performing the experiment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+March 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Understood whether or not repeating is required (longitudenal voltage) |
+ started writing the record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+March 24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analyzed the data and worked on writing the record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
