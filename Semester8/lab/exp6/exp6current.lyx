@@ -728,51 +728,108 @@ Look at the reading on the voltmeter.
  the magnetic field is zero.
  The reading in practice won't be zero (excluding exceptional circumstances)
  because of the longitudinal voltage as explained.
- This can 
+\end_layout
+
+\begin_layout Enumerate
+Now change the 'Zero adj.' potentiometer on the PCB to get the reading to
+ be zero.
+ 
+\begin_inset Newline newline
+\end_inset
+
+If the range of the potentiometer exhausts and you're not able to achieve
+ a zero then
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Power off the PCB and carefully loosen the 
+\begin_inset Formula $pb$
+\end_inset
+
+ probe
+\end_layout
+
+\begin_layout Enumerate
+Readjust it to be almost opposite to the midpoint of 
+\begin_inset Formula $pt1$
+\end_inset
+
+ and 
+\begin_inset Formula $pt2$
+\end_inset
+
+ probes.
+\end_layout
+
+\begin_layout Enumerate
+Try the zero adjustment again.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+To be certain that the zero adjustment is reliable, increase the current
+ from the current source and record the readings on the voltmeter.
+ This should remain roughly zero.
+ Tabulate the data.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Finding 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Set the field to be over 1,500 Gauss (low precision should read 150)
+\end_layout
+
+\begin_layout Enumerate
+Keep the PCB powered off.
+ Measure the magnetic field at both behind the PCB and in front of the crystal.
+\end_layout
+
+\begin_layout Enumerate
+Now power the PCB by sweeping the current and measure the corresponding
+ value of voltage on the voltmeter (which we now know is reliably, 
+\begin_inset Formula $V_{H}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Measure the field again to be certain nothing went wrong.
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-FAQ: 
+NOTE: To know the signs, one must know the direction of the magnetic field,
+ for which apparatus is not available.
+ Therefore we can't comment on the type of charge carrier.
 \end_layout
 
-\begin_layout Standard
-1.
- Write about how you would fix the issue: magnetic field in the centre is
- non zero
-\end_layout
-
-\begin_layout Standard
-2.
- Even at zero magnetic field, the multimeter reads non-zero current (this
- is 
-\begin_inset Quotes eld
-\end_inset
-
-hall current
-\begin_inset Quotes erd
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Section
 Observations
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Time-line
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="3" columns="3">
+<lyxtabular version="3" rows="4" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
 <column alignment="block" valignment="top" width="9cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -781,7 +838,7 @@ March 20
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -831,7 +888,7 @@ Understood whether or not repeating is required (longitudenal voltage) |
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -840,7 +897,7 @@ March 24
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -849,11 +906,41 @@ Tuesday
 
 \end_inset
 </cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Completed writing the theory for the record, and completed some part from
+ the old record (which was accidentally left)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Completed the record and analyzed the data and worked on writing the record
+March 27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Analyzing the data and completing the record.
 \end_layout
 
 \end_inset
@@ -864,6 +951,32 @@ Completed the record and analyzed the data and worked on writing the record
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Crystal
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename exp6observations.pdf
+	width 20cm
+	BoundingBox 50bp 150bp 842bp 595bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Result
+\end_layout
+
+\begin_layout Standard
+The hall coefficient was found to be TODO: SOMETHING.
+ The sign couldn't be determined for lack of availability of apparatus to
+ measure the direction of the magnetic field.
 \end_layout
 
 \end_body

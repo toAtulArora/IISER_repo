@@ -296,7 +296,26 @@ The setup allows one to essentially stretch a wire with known weight, as
 \end_inset
 
  with precision.
- 
+ The dial also requires the wire to be looped around its knob two or three
+ times.
+\end_layout
+
+\begin_layout Standard
+The procedure is straight forward.
+ One measures the length of the wire (after making it taut preferably),
+ fixes it on the setup so that its taut.
+ The wire is looped through the displacement dial and attached to the weight
+ through th pulley.
+ Weight is added with as high a precision as possible.
+ Once the small weights are over (viz.
+ all used), the wire is removed and another wire is setup.
+ This wire is now started with the same old weight, except this time, low
+ precision weights are used to get the old weight.
+ Subsequently, high precision weights are added and the procedure continued
+ till the wire breaks.
+ Obviously, the displacement is noted sensibly to account for consistency
+ with the previous sets of readings.
+ This entire procedure is repeated with a wire of a different material.
 \end_layout
 
 \begin_layout Section
