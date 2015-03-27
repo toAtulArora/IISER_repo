@@ -127,7 +127,42 @@ where
 \end_inset
 
  by adding to the resistance in some way.
- We therefore define a quantity, Magneto-resistance as 
+ We therefore define a quantity
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall: In general, we define 
+\begin_inset Formula $\rho$
+\end_inset
+
+ as 
+\begin_inset Formula $\mathbf{E}=\rho\mathbf{j}$
+\end_inset
+
+.
+ If we consider a typical case (straight wire), we get 
+\begin_inset Formula $j=I/A$
+\end_inset
+
+, 
+\begin_inset Formula $V=EL$
+\end_inset
+
+ and get 
+\begin_inset Formula $V=I\rho L/A$
+\end_inset
+
+ which using ohms definition, we get the familiar 
+\begin_inset Formula $R=\rho L/A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, Magneto-resistance as 
 \begin_inset Formula 
 \[
 \rho(H)=\frac{E_{x}}{j_{x}}
@@ -158,17 +193,272 @@ R_{H}=\frac{E_{y}}{j_{x}H}
 
 At this very step, one can make a rather important point.
  The direction of 
+\begin_inset Formula $E_{y}$
+\end_inset
+
+ depends on whether the charge of the current mediator is positive or negative.
+ If the charge is negative, as shown below, 
+\begin_inset Formula $E_{y}$
+\end_inset
+
+ will be negative, and therefore so will 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+.
+ If the charge were positive, 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ will be positive.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
 	filename diagram.png
-	BoundingBox 0bp 70bp 703bp 357bp
+	width 16cm
+	BoundingBox 0bp 60bp 703bp 357bp
 	clip
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+We now derive these quantities under the Drude model.
+ Let's start with using the equation of motion per electron for an arbitrary
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ field as 
+\begin_inset Formula 
+\[
+\frac{d\mathbf{p}}{dt}=-e\left(\mathbf{E}+\frac{\mathbf{p}}{mc}\times\mathbf{H}\right)-\frac{\mathbf{p}}{\tau}
+\]
+
+\end_inset
+
+In the steady state then, for the given set of fields, we'll have 
+\begin_inset Formula 
+\[
+\begin{aligned}0= & -eE_{x}+\cancelto{-\omega_{c}p_{y}}{\left(-\frac{eH}{mc}p_{y}\right)}-\frac{p_{x}}{\tau}\\
+0= & -eE_{y}-\cancelto{-\omega_{c}p_{x}}{\left(-\frac{eH}{mc}p_{y}\right)}-\frac{p_{y}}{\tau}
+\end{aligned}
+\]
+
+\end_inset
+
+Recall case: Only 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ fields: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\rho$
+\end_inset
+
+ is defined as
+\begin_inset Formula $\mathbf{E}\equiv\rho\mathbf{j}$
+\end_inset
+
+, and 
+\begin_inset Formula $\sigma\equiv1/\rho$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{j}=-ne\mathbf{v}$
+\end_inset
+
+ (where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of electrons per unit volume)
+\end_layout
+
+\begin_layout Itemize
+In the presence of only a constant 
+\begin_inset Formula $\mathbf{E}$
+\end_inset
+
+ field, we have 
+\begin_inset Formula 
+\[
+\mathbf{v}=-\frac{ne\mathbf{E}\tau}{m}
+\]
+
+\end_inset
+
+which entails 
+\begin_inset Formula 
+\[
+\mathbf{j}=\frac{-ne^{2}\tau}{m}\mathbf{E}=\sigma\mathbf{E}
+\]
+
+\end_inset
+
+thus 
+\begin_inset Formula 
+\[
+\sigma=\frac{ne^{2}\tau}{m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Getting back to the equations, we multiply by 
+\begin_inset Formula 
+\[
+-\frac{ne\tau}{m}
+\]
+
+\end_inset
+
+ to get
+\begin_inset Formula 
+\[
+\begin{aligned}\sigma_{0}E_{x}= & \omega_{c}\tau j_{y}+j_{x}\\
+\sigma_{0}E_{y}= & -\omega_{c}\tau j_{x}+j_{y}
+\end{aligned}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{j}=-ne\mathbf{p}/m$
+\end_inset
+
+.
+ Next we assume that in steady state, 
+\begin_inset Formula $j_{y}$
+\end_inset
+
+ is zero.
+ Plugging this in the previous equations we get
+\begin_inset Formula 
+\[
+\begin{aligned}\sigma_{0}E_{x}= & j_{x} & \implies E_{x}= & j_{x}\left(\frac{m}{ne^{2}\tau}\right)=j_{x}\rho & \implies & \rho(H)=\frac{m}{ne^{2}\tau}\\
+\sigma_{0}E_{y}= & -\omega_{c}\tau j_{x} & \implies E_{y}= & -j_{x}\frac{\cancel{e}H}{\cancel{m}c}\cancel{\tau}\frac{\cancel{m}}{ne^{\cancel{2}}\cancel{\tau}}=j_{x}\left(-\frac{1}{nec}\right)H=j_{x}R_{H}H & \implies & R_{H}=-\frac{1}{nec}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So in accordance with our theory, 
+\begin_inset Formula $\rho(H)$
+\end_inset
+
+ doesn't dependent on 
+\begin_inset Formula $H$
+\end_inset
+
+, the field.
+ This can be verified experimentally.
+ Further, it depends on 
+\begin_inset Formula $\tau$
+\end_inset
+
+ which can depend on various parameters, including temperature.
+ 
+\end_layout
+
+\begin_layout Standard
+However, 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ according to the theory is rather boldly predicted to be independent of
+ all parameters of the metal, except the electron density.
+ This density can be calculated assuming that only the valence electrons
+ of the metal participate in the process of metallic conduction.
+ However, experimentally it is known that 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ does depend on the field strength 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+The setup is as straight forward as it gets.
+ We have two electromagnets to produce a strong 
+\begin_inset Formula $H$
+\end_inset
+
+ field.
+ Then there's a PCB that holds a crystal which has 5 probes.
+ Now this part is slightly new.
+ Two of these probes are at horizontally opposite points, say 
+\begin_inset Formula $pl$
+\end_inset
+
+, 
+\begin_inset Formula $pr$
+\end_inset
+
+.
+ The remaining three probes are along points on the vertically opposite
+ edge, of which two are on the top edge, say 
+\begin_inset Formula $pt1$
+\end_inset
+
+, 
+\begin_inset Formula $pt2$
+\end_inset
+
+, and one probe on the bottom edge 
+\begin_inset Formula $pb$
+\end_inset
+
+.
+ This is a practial requirement.
+ We want to find 
+\begin_inset Formula $R_{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho(H)$
+\end_inset
+
+ for which, by definition of these quantities, we need 
+\begin_inset Formula $E_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $j_{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $E_{x}$
+\end_inset
+
+.
+ These quantities are measured using 
 \end_layout
 
 \begin_layout Standard
@@ -292,7 +582,7 @@ Tuesday
 \begin_inset Text
 
 \begin_layout Plain Layout
-Analyzed the data and worked on writing the record
+Completed the record and analyzed the data and worked on writing the record
 \end_layout
 
 \end_inset

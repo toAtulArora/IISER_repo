@@ -283,6 +283,42 @@ where
 \end_layout
 
 \begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+The setup allows one to essentially stretch a wire with known weight, as
+ is required.
+ Non-trivial aspects include a pulley (whose presence is not included in
+ the calculations) and a radial dial (1 division = 0.25 cm) that measures
+ 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ with precision.
+ The dial also requires the wire to be looped around its knob two or three
+ times.
+\end_layout
+
+\begin_layout Standard
+The procedure is straight forward.
+ One measures the length of the wire (after making it taut preferably),
+ fixes it on the setup so that its taut.
+ The wire is looped through the displacement dial and attached to the weight
+ through th pulley.
+ Weight is added with as high a precision as possible.
+ Once the small weights are over (viz.
+ all used), the wire is removed and another wire is setup.
+ This wire is now started with the same old weight, except this time, low
+ precision weights are used to get the old weight.
+ Subsequently, high precision weights are added and the procedure continued
+ till the wire breaks.
+ Obviously, the displacement is noted sensibly to account for consistency
+ with the previous sets of readings.
+ This entire procedure is repeated with a wire of a different material.
+\end_layout
+
+\begin_layout Section
 Observations
 \end_layout
 
@@ -521,6 +557,39 @@ where the error is caused by the smallest weight available (
 \end_inset
 
  g).
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The setup was not too shabby.
+ The following improvements will reduce performance time and increase accuracy
+\end_layout
+
+\begin_layout Itemize
+Get thinner small weights (they can be wide)
+\end_layout
+
+\begin_layout Itemize
+Use a telescope to note 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ instead of the angular measurement apparatus
+\end_layout
+
+\begin_layout Standard
+The angular dial has the following issues:
+\end_layout
+
+\begin_layout Itemize
+the height of the dial has to be adjusted by trial
+\end_layout
+
+\begin_layout Itemize
+the range of the dial is restricted
 \end_layout
 
 \begin_layout Section

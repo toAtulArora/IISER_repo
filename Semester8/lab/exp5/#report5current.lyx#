@@ -239,18 +239,90 @@ Note that the Hook's law (yet to be stated explicitly) is valid in the linear
  in this context as
 \begin_inset Formula 
 \[
+F\propto-(r-r_{eq})
 \]
 
 \end_inset
 
+Using this relation, one can write a more relavent quantity, the Young's
+ Modulus (which is defined such that it is fixed for a given material) 
+\begin_inset Formula 
+\[
+Y=\frac{F/A}{\Delta l/l}
+\]
 
+\end_inset
+
+where 
+\begin_inset Formula $F$
+\end_inset
+
+ is the tensile force (for the wire say, that we considered to start with),
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ is the surface area normal to the force, 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ is the change in length from the unstressed length (viz.
+ when 
+\begin_inset Formula $F=0$
+\end_inset
+
+), and 
+\begin_inset Formula $l$
+\end_inset
+
+ is the length when 
+\begin_inset Formula $F=0$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+The setup allows one to essentially stretch a wire with known weight, as
+ is required.
+ Non-trivial aspects include a pulley (whose presence is not included in
+ the calculations) and a radial dial (1 division = 0.25 cm) that measures
+ 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ with precision.
+ The dial also requires the wire to be looped around its knob two or three
+ times.
+\end_layout
+
+\begin_layout Standard
+The procedure is straight forward.
+ One measures the length of the wire (after making it taut preferably),
+ fixes it on the setup so that its taut.
+ The wire is looped through the displacement dial and attached to the weight
+ through th pulley.
+ Weight is added with as high a precision as possible.
+ Once the small weights are over (viz.
+ all used), the wire is removed and another wire is setup.
+ This wire is now started with the same old weight, except this time, low
+ precision weights are used to get the old weight.
+ Subsequently, high precision weights are added and the procedure continued
+ till the wire breaks.
+ Obviously, the displacement is noted sensibly to account for consistency
+ with the previous sets of readings.
+ This entire procedure is repeated with a wire of a different material.
+\end_layout
+
+\begin_layout Section
 Observations
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Time-line
 \end_layout
 
@@ -356,7 +428,7 @@ Analyzed the data and worked on writing the record
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Constantan
 \end_layout
 
@@ -395,7 +467,7 @@ lstinputlisting{exp5gnu/constantanFit.tex}
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 Copper
 \end_layout
 
@@ -485,6 +557,61 @@ where the error is caused by the smallest weight available (
 \end_inset
 
  g).
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The setup was not too shabby.
+ The following improvements will reduce performance time and increase accuracy
+\end_layout
+
+\begin_layout Itemize
+Get thinner small weights (they can be wide)
+\end_layout
+
+\begin_layout Itemize
+Use a telescope to note 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ instead of the angular measurement apparatus
+\end_layout
+
+\begin_layout Standard
+The angular dial has the following issues:
+\end_layout
+
+\begin_layout Itemize
+the height of the dial has to be adjusted by trial
+\end_layout
+
+\begin_layout Itemize
+the range of the dial is restricted
+\end_layout
+
+\begin_layout Section
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+I thank Prashansa Gupta and Vivek Sagar for their contribution in the completion
+ of this experiment.
+ Further, as stated earlier, the theory for this experiment has been primarily
+ been adapted from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.animations.physics.unsw.edu.au//jw/elasticity.htm
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

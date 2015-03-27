@@ -283,6 +283,23 @@ where
 \end_layout
 
 \begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+The setup allows one to essentially stretch a wire with known weight, as
+ is required.
+ Non-trivial aspects include a pulley (whose presence is not included in
+ the calculations) and a radial dial (1 division = 0.25 cm) that measures
+ 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ with precision.
+ 
+\end_layout
+
+\begin_layout Section
 Observations
 \end_layout
 
@@ -524,12 +541,58 @@ where the error is caused by the smallest weight available (
 \end_layout
 
 \begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The setup was not too shabby.
+ The following improvements will reduce performance time and increase accuracy
+\end_layout
+
+\begin_layout Itemize
+Get thinner small weights (they can be wide)
+\end_layout
+
+\begin_layout Itemize
+Use a telescope to note 
+\begin_inset Formula $\Delta l$
+\end_inset
+
+ instead of the angular measurement apparatus
+\end_layout
+
+\begin_layout Standard
+The angular dial has the following issues:
+\end_layout
+
+\begin_layout Itemize
+the height of the dial has to be adjusted by trial
+\end_layout
+
+\begin_layout Itemize
+the range of the dial is restricted
+\end_layout
+
+\begin_layout Section
 Acknowledgements
 \end_layout
 
 \begin_layout Standard
 I thank Prashansa Gupta and Vivek Sagar for their contribution in the completion
  of this experiment.
+ Further, as stated earlier, the theory for this experiment has been primarily
+ been adapted from 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.animations.physics.unsw.edu.au//jw/elasticity.htm
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

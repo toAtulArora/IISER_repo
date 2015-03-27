@@ -3,13 +3,16 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
+\font_roman ccfonts
 \font_sans default
 \font_typewriter default
 \font_math auto
@@ -25,9 +28,10 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing onehalf
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -51,6 +55,13 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -123,7 +134,7 @@ where
 \end_inset
 
  will depend on 
-\begin_inset Formula $H$
+\begin_inset Formula $B$
 \end_inset
 
  by adding to the resistance in some way.
@@ -165,7 +176,7 @@ Recall: In general, we define
 , Magneto-resistance as 
 \begin_inset Formula 
 \[
-\rho(H)=\frac{E_{x}}{j_{x}}
+\rho(B)=\frac{E_{x}}{j_{x}}
 \]
 
 \end_inset
@@ -176,7 +187,7 @@ which was experimentally found by Hall to indeed by field dependent.
 \end_inset
 
  must balance the lorentz force, which is proportional to both 
-\begin_inset Formula $H$
+\begin_inset Formula $B$
 \end_inset
 
  and to 
@@ -186,7 +197,7 @@ which was experimentally found by Hall to indeed by field dependent.
 , we define a quanitity known as the Hall coeffecient 
 \begin_inset Formula 
 \[
-R_{H}=\frac{E_{y}}{j_{x}H}
+R_{H}=\frac{E_{y}}{j_{x}B}
 \]
 
 \end_inset
@@ -239,7 +250,7 @@ We now derive these quantities under the Drude model.
  field as 
 \begin_inset Formula 
 \[
-\frac{d\mathbf{p}}{dt}=-e\left(\mathbf{E}+\frac{\mathbf{p}}{mc}\times\mathbf{H}\right)-\frac{\mathbf{p}}{\tau}
+\frac{d\mathbf{p}}{dt}=-e\left(\mathbf{E}+\frac{\mathbf{p}}{mc}\times\mathbf{B}\right)-\frac{\mathbf{p}}{\tau}
 \]
 
 \end_inset
@@ -247,8 +258,8 @@ We now derive these quantities under the Drude model.
 In the steady state then, for the given set of fields, we'll have 
 \begin_inset Formula 
 \[
-\begin{aligned}0= & -eE_{x}+\cancelto{-\omega_{c}p_{y}}{\left(-\frac{eH}{mc}p_{y}\right)}-\frac{p_{x}}{\tau}\\
-0= & -eE_{y}-\cancelto{-\omega_{c}p_{x}}{\left(-\frac{eH}{mc}p_{y}\right)}-\frac{p_{y}}{\tau}
+\begin{aligned}0= & -eE_{x}+\cancelto{-\omega_{c}p_{y}}{\left(-\frac{eB}{mc}p_{y}\right)}-\frac{p_{x}}{\tau}\\
+0= & -eE_{y}-\cancelto{-\omega_{c}p_{x}}{\left(-\frac{eB}{mc}p_{y}\right)}-\frac{p_{y}}{\tau}
 \end{aligned}
 \]
 
@@ -351,8 +362,8 @@ where
  Plugging this in the previous equations we get
 \begin_inset Formula 
 \[
-\begin{aligned}\sigma_{0}E_{x}= & j_{x} & \implies E_{x}= & j_{x}\left(\frac{m}{ne^{2}\tau}\right)=j_{x}\rho & \implies & \rho(H)=\frac{m}{ne^{2}\tau}\\
-\sigma_{0}E_{y}= & -\omega_{c}\tau j_{x} & \implies E_{y}= & -j_{x}\frac{\cancel{e}H}{\cancel{m}c}\cancel{\tau}\frac{\cancel{m}}{ne^{\cancel{2}}\cancel{\tau}}=j_{x}\left(-\frac{1}{nec}\right)H=j_{x}R_{H}H & \implies & R_{H}=-\frac{1}{nec}
+\begin{aligned}\sigma_{0}E_{x}= & j_{x} & \implies E_{x}= & j_{x}\left(\frac{m}{ne^{2}\tau}\right)=j_{x}\rho & \implies & \rho(B)=\frac{m}{ne^{2}\tau}\\
+\sigma_{0}E_{y}= & -\omega_{c}\tau j_{x} & \implies E_{y}= & -j_{x}\frac{\cancel{e}B}{\cancel{m}c}\cancel{\tau}\frac{\cancel{m}}{ne^{\cancel{2}}\cancel{\tau}}=j_{x}\left(-\frac{1}{nec}\right)B=j_{x}R_{H}B & \implies & R_{H}=-\frac{1}{nec}
 \end{aligned}
 \]
 
@@ -363,11 +374,11 @@ where
 
 \begin_layout Standard
 So in accordance with our theory, 
-\begin_inset Formula $\rho(H)$
+\begin_inset Formula $\rho(B)$
 \end_inset
 
  doesn't dependent on 
-\begin_inset Formula $H$
+\begin_inset Formula $B$
 \end_inset
 
 , the field.
@@ -394,7 +405,7 @@ However,
 \end_inset
 
  does depend on the field strength 
-\begin_inset Formula $H$
+\begin_inset Formula $B$
 \end_inset
 
 .
@@ -407,12 +418,27 @@ Experimental Setup
 \begin_layout Standard
 The setup is as straight forward as it gets.
  We have two electromagnets to produce a strong 
-\begin_inset Formula $H$
+\begin_inset Formula $B$
 \end_inset
 
  field.
  Then there's a PCB that holds a crystal which has 5 probes.
  Now this part is slightly new.
+ Let me define a convention for clarity.
+ The PCB is the 
+\begin_inset Formula $x-y$
+\end_inset
+
+ plane, the magnetic field 
+\begin_inset Formula $H$
+\end_inset
+
+ is along (or opposite) 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+.
+ Now back to the probes.
  Two of these probes are at horizontally opposite points, say 
 \begin_inset Formula $pl$
 \end_inset
@@ -438,11 +464,11 @@ The setup is as straight forward as it gets.
 .
  This is a practial requirement.
  We want to find 
-\begin_inset Formula $\rho(H)$
+\begin_inset Formula $R_{H}$
 \end_inset
 
  and 
-\begin_inset Formula $R_{H}$
+\begin_inset Formula $\rho(B)$
 \end_inset
 
  for which, by definition of these quantities, we need 
@@ -458,9 +484,254 @@ The setup is as straight forward as it gets.
 \end_inset
 
 .
- These quantities are measured using 
+ These quantities are measured using potential differences and currents.
+ Infact, I use a current source to pass current horizontally through the
+ crystal.
+ Next, we note that 
+\begin_inset Formula 
+\[
+-\frac{\partial V}{\partial x}=E_{x};-\frac{\partial V}{\partial y}=E_{y}
+\]
+
+\end_inset
+
+which entails that if I wish to measure the voltage difference between two
+ pionts on vertically opposite edges, unless the points have identical 
+\begin_inset Formula $x$
+\end_inset
+
+ coordinates, there'll be a potential difference along 
+\begin_inset Formula $x$
+\end_inset
+
+ which will be read, in addition to the vertical difference.
+ In practice, it is nearly impossible to achieve zero difference in the
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ coordinate.
+ Thus, we use two probes on the top edge and take an appropriate linear
+ combination (done using a potentiometer) to effectively make the 
+\begin_inset Formula $x$
+\end_inset
+
+ coordinate of the two points zero.
+ 
 \end_layout
 
+\begin_layout Standard
+So much for the five probes.
+ Now back to the discussion of the remaining setup.
+ We are given a gauss meter to measure the 
+\begin_inset Formula $B$
+\end_inset
+
+ field in a high precision (
+\begin_inset Formula $\times1$
+\end_inset
+
+) and a low precision (larger range) mode 
+\begin_inset Formula $(\times10)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that 
+\begin_inset Formula $\times1$
+\end_inset
+
+ and 
+\begin_inset Formula $\times10$
+\end_inset
+
+ mean that whatever answer the meter reads, you multiply it by 1 and 10
+ respectively.
+ This means the latter is low precision.
+ It's easy to confuse it to mean magnification 
+\begin_inset Formula $1x$
+\end_inset
+
+ and 
+\begin_inset Formula $10x$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ We are also given a current source.
+\end_layout
+
+\begin_layout Subsection
+Final Formulae
+\end_layout
+
+\begin_layout Standard
+We want our formulae in a form that's in terms of easier observables.
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}E_{x}l_{x} & =V_{x}\\
+E_{y}l_{y} & =V_{H}\\
+j_{x} & =I/A=I/l_{y}l_{z}
+\end{aligned}
+\]
+
+\end_inset
+
+Now recall the definitions
+\begin_inset Formula 
+\[
+\begin{aligned}\rho(B) & =\frac{E_{x}}{j_{x}}\\
+ & =\frac{V_{x}}{l_{x}(I/l_{y}l_{z})}\\
+ & =\frac{V_{x}l_{y}l_{z}}{l_{x}I}
+\end{aligned}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}R_{H} & =\frac{E_{y}}{j_{x}B}\\
+ & =\frac{V_{H}l_{z}\cancel{l_{y}}}{IB\cancel{l_{y}}}\\
+ & =\frac{V_{H}l_{z}}{IB}
+\end{aligned}
+\]
+
+\end_inset
+
+To be consistent with the manual, I define 
+\begin_inset Formula $t\equiv l_{z}=0.5mm,\,b\equiv l_{x}=6mm,\,l\equiv l_{y}=7mm$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Procedure
+\end_layout
+
+\begin_layout Enumerate
+Calibrating the Guass Meter and the Electromagnets
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Take the gauss meter sufficiently far away from the electromagnet and calibrate
+ it to read zero in high precision (x1).
+\end_layout
+
+\begin_layout Enumerate
+Bring the electromagnets faces sufficiently
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+such that if you place the PCB between the faces, it almost touches the
+ PCB and the crystal on opposite ends, but doesn't infact.
+\end_layout
+
+\end_inset
+
+ close.
+\end_layout
+
+\begin_layout Enumerate
+Now place the gauss meter between the two faces of the electromagnet, parallel
+ to it, with the electromagnet switched off.
+\end_layout
+
+\begin_layout Enumerate
+If the gauss meter reads a non-zero value (this may happen because of hysterisis
+) then
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Put the gauss meter in the low precision mode
+\end_layout
+
+\begin_layout Enumerate
+Turn on the electromagnet and try changing the current/voltage through the
+ coil to get the value as close to zero as possible; if the value drops
+ to zero in (
+\begin_inset Formula $\times10$
+\end_inset
+
+, then goto high precision and repeat) [this should not work]
+\end_layout
+
+\begin_layout Enumerate
+If the previous step failed, as it should
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+because it is designed to produce a large field.
+ To exactly cancel the stray field, we must get the coils to produce opposite
+ fields so that their superposition yields a small adjustable field
+\end_layout
+
+\end_inset
+
+, in one of the coils, swap the wires (do not swap wires from distinct coils,
+ it'll just result in reversing the direction of the large field) and try
+ the previous step.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Now keep the gauss meter away (viz.
+ don't keep it where it has been designed to keep according to the setup)
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Setting up the crystal, its current source and volt meter
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Now with the current source off, put the PCB between the electromagnet's
+ faces such that the PCB is parallel to the faces and the crystal is in
+ the centre.
+ Ensure that neither the PCB nor the crystal touch the electromagnet.
+\end_layout
+
+\begin_layout Enumerate
+If the terminals aren't connected, connect them in accordance with the labels
+ on the PCB.
+ The reasoning should be obvious by now.
+\end_layout
+
+\begin_layout Enumerate
+To be certain, before turning on the current source, stick in the gauss
+ meter, once behind the PCB and once in front of the crystal and ensure
+ the field is zero.
+ If it is not, repeat the previous set of steps.
+\end_layout
+
+\begin_layout Enumerate
+Now start the current source at some low value.
+\end_layout
+
+\begin_layout Enumerate
+Look at the reading on the voltmeter.
+ If this were indeed measuring the Hall voltage, it should be zero since
+ the magnetic field is zero.
+ The reading in practice won't be zero (excluding exceptional circumstances)
+ because of the longitudinal voltage as explained.
+ This can 
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 FAQ: 
 \end_layout
