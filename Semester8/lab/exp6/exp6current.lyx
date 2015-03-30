@@ -969,14 +969,114 @@ Crystal
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename dataWithB1422.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{dataWithB1422fit.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename dataWithB1605.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{dataWithB1605fit.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $B=1422$
+\end_inset
+
+, 
+\begin_inset Formula $R_{H}=(2.4083\pm.0163)\times10^{-4}\,m\Omega/G$
+\end_inset
+
+ and for 
+\begin_inset Formula $B=1605$
+\end_inset
+
+, 
+\begin_inset Formula $R_{H}=(1.8128\pm0.0125)\times10^{-4}\,m\Omega/G$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Result
 \end_layout
 
 \begin_layout Standard
-The hall coefficient was found to be TODO: SOMETHING.
- The sign couldn't be determined for lack of availability of apparatus to
- measure the direction of the magnetic field.
+The hall coefficient was found to depend on the value of the magnetic field
+ and was roughly 
+\begin_inset Formula $2\times10^{-4}\,m\Omega/G$
+\end_inset
+
+.
+ The sign of the Hall coefficient couldn't be determined for lack of availabilit
+y of apparatus to measure the direction of the magnetic field.
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The apparatus provided was found to be overall good.
+ The following could be used to improve the results
+\end_layout
+
+\begin_layout Itemize
+an apparatus to find the direction of the magnetic field
+\end_layout
+
+\begin_layout Itemize
+setup to demagnetize the electromagnet off of stray magnetic field
+\end_layout
+
+\begin_layout Itemize
+provision for cooling the sample (to obtain results closer to the true value)
+\end_layout
+
+\begin_layout Itemize
+availability of two types of crystal, one n type and one p type
 \end_layout
 
 \end_body
