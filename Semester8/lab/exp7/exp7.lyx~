@@ -1,0 +1,439 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Angle of Repose
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+March 2015
+\end_layout
+
+\begin_layout Section
+Theory
+\end_layout
+
+\begin_layout Standard
+Angle of repose is defined in the following situation.
+ Consider physical entities which are small in size and large in number,
+ such that when dropped from a given location, form a heap.
+ The conical heap so formed can be characterized by the angle the inclined
+ face of the cone makes with the horizontal.
+ This angle is defined to be the angle of repose.
+\end_layout
+
+\begin_layout Standard
+The angle of repose experimentally, is known to lie primarily between 
+\begin_inset Formula $30^{o}<\theta<45^{o}$
+\end_inset
+
+.
+ This angle is also known to depend experimentally on 
+\end_layout
+
+\begin_layout Enumerate
+Coefficient of friction
+\end_layout
+
+\begin_layout Enumerate
+Shape of the grain
+\end_layout
+
+\begin_layout Enumerate
+Density
+\end_layout
+
+\begin_layout Enumerate
+Size of the grain TODO: Complete this list
+\end_layout
+
+\begin_layout Standard
+We next describe two cases in which one can make simplifying assumptions
+ and arrive at the 
+\begin_inset Formula $30^{o}$
+\end_inset
+
+ and 
+\begin_inset Formula $45^{o}$
+\end_inset
+
+ repose angle.
+ 
+\end_layout
+
+\begin_layout Subsection
+Hard Spheres
+\end_layout
+
+\begin_layout Standard
+We assume that
+\end_layout
+
+\begin_layout Itemize
+the particles are spherical and density of mass within the sphere is uniform
+\end_layout
+
+\begin_layout Itemize
+typically, the edge layer is formed as shown in the diagram
+\end_layout
+
+\begin_layout Standard
+One can see clearly from the diagram that if the angle 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+, the centre of mass of the sphere is on the left of the farthest contact
+ point, thus the object at this angle will fall off the pile.
+ Plugging this condition yields 
+\begin_inset Formula $\theta>30^{o}$
+\end_inset
+
+ will result in a slip.
+ Thus we predict that the particles will keep contributing to the angle
+ of repose until it hits 
+\begin_inset Formula $\sim30^{o}$
+\end_inset
+
+ after which the newly added particles will fall off.
+\end_layout
+
+\begin_layout Subsection
+Box sliding
+\end_layout
+
+\begin_layout Standard
+We assume that
+\end_layout
+
+\begin_layout Itemize
+the edge layer can be approximated effectively by an almost flat sheet
+\end_layout
+
+\begin_layout Itemize
+the particles can be approximated by box
+\end_layout
+
+\begin_layout Standard
+In this situation, the assumptions allow us to find the angle of repose
+ as the condition for a box to just start sliding down an incline, which
+ is well known to be 
+\begin_inset Formula $\tan\theta=\mu$
+\end_inset
+
+, where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the coefficient of friction.
+ Since typically is 
+\begin_inset Formula $\mu<1$
+\end_inset
+
+, we have typically 
+\begin_inset Formula $\theta<45^{o}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Experimental Setup
+\end_layout
+
+\begin_layout Standard
+The following were used to perform the experiment.
+\end_layout
+
+\begin_layout Itemize
+Rai (small spherical objects (
+\begin_inset Formula $1.4<\text{diameter (mm)}<2.0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Funnel (for dropping rai uniformly)
+\end_layout
+
+\begin_layout Itemize
+Microscope (for measuring the height of the heap)
+\end_layout
+
+\begin_layout Itemize
+Discs (of various sizes to make the heap of various radius)
+\end_layout
+
+\begin_layout Standard
+The procedure followed was almost obvious.
+ The particles were dropped using the funnel on the discs and the height
+ of the resulting heap was measured.
+ Ofcourse, it is easier said than done, but there's nothing illuminating
+ in the process.
+\end_layout
+
+\begin_layout Standard
+We took one material and repeated the experiment 3 times for each disc,
+ and used 5 different discs.
+\end_layout
+
+\begin_layout Section
+Observations
+\end_layout
+
+\begin_layout Subsection
+Time-line
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="block" valignment="top" width="9cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+March 30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trying to arrive at a theoretical model | made some progress with idealized
+ assumptions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+March 31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Took 3 readings each with 4 different diameters for a given grain (rai)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+April 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Friday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[officially off]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+April 6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Took readings with one more diameter (3 readings) and figured that the slope
+ doesn't in fact change as was predicted by the threshold | writing the
+ record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Result
+\end_layout
+
+\begin_layout Standard
+It was found that for a given material, the angle of repose was independent
+ of the radius of the heap.
+ Explicitly, change in repose angle which was expected at 
+\begin_inset Formula $r/R\sim0.02$
+\end_inset
+
+ was 
+\emph on
+not
+\emph default
+ observed, where 
+\begin_inset Formula $r$
+\end_inset
+
+ is the radius of the particle and 
+\begin_inset Formula $R$
+\end_inset
+
+ that of the heap.
+\end_layout
+
+\begin_layout Section
+Critique
+\end_layout
+
+\begin_layout Standard
+The experiment didn't have a well established theory backing it therefore
+ it was hard to find exactly what it is that one must verify.
+\end_layout
+
+\end_body
+\end_document
