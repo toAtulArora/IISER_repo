@@ -88,7 +88,7 @@ Atul Singh Arora
 \end_layout
 
 \begin_layout Date
-March 2015
+March-April 2015
 \end_layout
 
 \begin_layout Section
@@ -126,7 +126,7 @@ Density
 \end_layout
 
 \begin_layout Enumerate
-Size of the grain TODO: Complete this list
+Size of the grain
 \end_layout
 
 \begin_layout Standard
@@ -157,6 +157,18 @@ the particles are spherical and density of mass within the sphere is uniform
 
 \begin_layout Itemize
 typically, the edge layer is formed as shown in the diagram
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename IMG_20150407_155733.jpg
+	width 15cm
+	BoundingBox 0bp 10bp 3264bp 2448bp
+	clip
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -224,8 +236,16 @@ Threshold
 
 \begin_layout Standard
 Dr.
- Yogesh suggested that in accordance with a paper on [TODO: which paper],
- when 
+ Yogesh suggested that in accordance with a paper titled 
+\begin_inset Quotes eld
+\end_inset
+
+A sandpile experiment and its implications for self-organized criticality
+ and characteristic earthquake
+\begin_inset Quotes erd
+\end_inset
+
+ by Naoto Yoshioka, when 
 \begin_inset Formula $r/R\sim0.02$
 \end_inset
 
@@ -244,10 +264,14 @@ The following were used to perform the experiment.
 
 \begin_layout Itemize
 Rai (small spherical objects (
-\begin_inset Formula $1.4<\text{diameter (mm)}<2.0$
+\begin_inset Formula $1.5<\text{diameter (mm)}<2.0$
 \end_inset
 
-)
+) [corresponding critical radius of heap (in cm) 
+\begin_inset Formula $7.5<R<10$
+\end_inset
+
+]
 \end_layout
 
 \begin_layout Itemize
@@ -279,13 +303,49 @@ We took one material and repeated the experiment 3 times for each disc,
 Observations
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename exp7dataEDITING.pdf
+	BoundingBox 0bp 200bp 700bp 595bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename graph.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{fitData.tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Time-line
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="4" columns="3">
+<lyxtabular version="3" rows="5" columns="3">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -379,7 +439,7 @@ Friday
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -388,7 +448,7 @@ April 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -397,13 +457,42 @@ Monday
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 Took readings with one more diameter (3 readings) and figured that the slope
  doesn't in fact change as was predicted by the threshold | writing the
  record
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+April 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tuesday
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Completed writing the record and analyzing the data
 \end_layout
 
 \end_inset
@@ -421,8 +510,11 @@ Result
 \end_layout
 
 \begin_layout Standard
-It was found that for a given material, the angle of repose was independent
- of the radius of the heap.
+It was found that for a given material, the angle of repose was 
+\begin_inset Formula $29.1^{o}\pm1.33$
+\end_inset
+
+ independent of the radius of the heap.
  Explicitly, change in repose angle which was expected at 
 \begin_inset Formula $r/R\sim0.02$
 \end_inset

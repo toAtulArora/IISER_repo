@@ -1,0 +1,628 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage{ccfonts}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm,headheight=3cm,headsep=3cm,footskip=3cm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{stmaryrd}
+\usepackage{setspace}
+\usepackage{esint}
+\onehalfspacing
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{listings}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Dirac and Majorana Mass}
+
+
+\author{Atul Singh Aurora}
+
+
+\date{April 15, 2015}
+\maketitle
+\begin{abstract}
+The concept of mass is intuitively linked with inertia. It is first
+encountered in a quantitatively precise formulation, in the work of
+Newton. With Einstein's special relativity, it acquires a new meaning
+($p^{2}=m^{2}$) (and ofcourse again, with identification of gravitational
+mass and inertial mass; general relativity). In particle physics (the
+study of `fundamental' particles) historically, it has been hard and
+consequently interesting to formulate a consistent theory of particles
+interacting in the way we know they do from experiments, and implement
+their masses, taking inspiration from one of the most successful theory
+of physics, Quantum Electrodynamics (quantum generalization of classical
+electrodynamics). Assuming the knowledge of STR and QM, I'll motivate
+the concept of fields and particles and briefly describe how it all
+fits to describe fundamental particles. Thereafter, I'll take the
+example of a Klein Gordan Field (obtained by replacing $E$ with $-i\hbar\frac{\partial}{\partial t}$
+and $\vec{p}$ with $i\hbar\vec{\nabla}$ in $p^{2}=m^{2}$) to explain
+the origin and definition of mass. Then I'll move to the main topic,
+that of Dirac and Majorana Mass, starting with the Dirac Equation.
+I'll describe the physical significance of this investigation, viz.
+why it is a candidate in describing the mass of neutrinos (a particle
+which was suspected to exist, assuming conservation of energy holds,
+by observing the spectrum of beta decay) and hint on alternatives.
+\end{abstract}
+
+\section{Prerequisites}
+
+From CM,
+\begin{itemize}
+\item Definition of $L$, the Lagrangian
+\item Euler Lagrange equations and their derivation
+\item Noether's Theorem that relates conserved quantities and continuous
+symmetries of the Lagrangian
+\end{itemize}
+From STR, I'll use the following conventions
+\begin{itemize}
+\item $\eta^{\mu\nu}=\text{diag}(1,-\vec{1})$ (NB: $\eta^{T}=\eta^{-1}=\eta$)
+\item $c=1$, $\hbar=1$
+\item indices 
+
+\begin{itemize}
+\item $i,j,k,l$ etc. run from 1 to 3
+\item $\alpha,\beta,\gamma$ etc. run from 0 to 3
+\end{itemize}
+\end{itemize}
+and need the four vector notation. Recall 
+\begin{itemize}
+\item the Einstein summing convention, $A^{\alpha}B_{\alpha}=\sum_{\alpha=0}^{4}A^{\alpha}B_{\alpha}$
+(contractions)
+\item if $A^{\alpha}=(A^{0},\vec{A})$ then $A_{\alpha}\equiv\eta_{\alpha\beta}A^{\beta}=(A^{0},-\vec{A})$
+\item Under a Lorentz transformation $\lambda_{\beta}^{\alpha}$, $A^{\alpha}\to A'^{\alpha}=\lambda_{\beta}^{\alpha}A^{\beta}$;
+objects with all indices contracted are invariant under lorentz transformations
+(NB: $\lambda^{T}\eta\lambda=\eta$)
+\end{itemize}
+From QM, I'll need the postulates. Recall
+\begin{itemize}
+\item System state: State of a system is described by a ket (or a wavefunction)
+$\left|\psi\right\rangle $ (or $\psi(x)=\left\langle x|\psi\right\rangle $)
+\item Time evolution: Given a Hermitian operator $H$ (viz. $H^{\dagger}=H$;
+where $H^{\dagger}\equiv H^{*T}$), 
+\[
+H\left|\psi\right\rangle =-i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle 
+\]
+When $H$ has no time dependence, then $\left|\psi(t)\right\rangle =e^{(-i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle $.
+NB: $U\equiv e^{(-i\hbar)^{-1}Ht}$, is unitary, viz. $U^{\dagger}=U^{-1}$
+(OR, TODO: more generally, a unitary operator)
+\item Measurement/Observables: 
+
+\begin{itemize}
+\item Upon being measured, the system collapses into one of the eigenstates
+of the operator corresponding to the measurement
+\item The probability that the system will collapse to the state $\left|n\right\rangle $,
+is given by $\left|\left\langle n|\psi\right\rangle \right|^{2}$,
+where $\left|n\right\rangle $ is the $n^{th}$ eigenstate of the
+system.
+\end{itemize}
+\end{itemize}
+and I'll need the basics of the quantum harmonic oscillator developed
+using the $a$ and $a^{\dagger}$ notation.
+
+I'll further use the usual conventions for the pauli matrices
+\[
+\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\\
+\sigma^{2} & = & \left(\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right)\\
+\sigma^{3} & = & \left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{aligned}
+\]
+
+
+Terminology from particle physics maybe helpful
+\begin{itemize}
+\item Leptons {[}TODO: Complete this part{]}
+\item Quarks
+\end{itemize}
+
+\section{Towards a quantum theory of fields}
+
+
+\subsection{Motivation}
+
+One can ask for a theory that links QM and STR, solely on grounds
+that QM is built on top of classical mechanics which we know is bound
+to fail when we goto higher speeds (thus energies). Practically though
+that's not such a big issue. However, when one looks at collision
+of particles, but can't make any predictions about the products, except
+being able to veto products on whose mass is greater than the centre
+of mass energy (solely on the energy momentum relation based on STR),
+there's a real crisis. The idea is to build a theory that can automatically
+handle the creation and destruction of particles in a way that's fully
+consistent with STR and at the same time, predict the results of colliding
+high energy particles.
+
+
+\subsection{Known Issues}
+
+One may guess that instead of writing $H_{\text{classical}}\psi=-i\hbar\frac{\partial}{\partial t}\psi$,
+if we write the relativistic version as $\left(E^{2}-\vec{p}^{2}\right)\psi=m^{2}\psi$
+and replace $E\to-i\frac{\partial}{\partial t}$, $\vec{p}\rightarrow i\vec{\nabla}$,
+we get 
+\[
+\boxempty\psi=m^{2}\psi
+\]
+where $\boxempty=\frac{\partial}{\partial t}^{2}-\vec{\nabla}^{2}$,
+it might just solve the problem. As it turns out, this attempt fails
+miserably, leading to issues in causality (events in the past are
+affected by the future), negative energies (this means there's no
+energy minima, which implies there's no stable ground state) among
+others. 
+
+One can actually predict that things will get inconsistent simply
+by observing that in QM, time and position are treated very differently;
+one is a parameter, the other's an operator. STR seamlessly mixes
+the two. This meant that we need to either make time an operator (which
+again is known to not work) or demote position from an operator to
+a parameter. All these hint to interpreting the object $\psi$ differently.
+
+
+\subsection{Concept of field}
+
+This idea almost sounds like it's been taken from a fairy tale, even
+though we're familiar with a similar notion. It is that of a field.
+Fields were first encountered in the context of electromagnetism.
+In the beginning, we use it as a device for calculating forces, and
+once we reach the Maxwell equations, we find that these fields can
+exist without sources that we thought they were an artifact of, to
+start with.
+
+In this context, there's a field for every fundamental\footnote{I know I haven't defined the word `fundamental' yet, but its intent
+and meaning will become obvious as we proceed. } particle. This field can create particles out of thin air and destroy
+them too. These fields can talk to each other and consequently the
+particles can interact. If we can construct a framework in which if
+we write a relativistically covariant (or invariant?) Lagrangian describing
+the fields and their interaction, it produces for us probabilities
+of all possible processes that involve these particles, then, then
+that does it in principle. It'll only remain to write the right Lagrangian
+(which has taken years to pin down exactly and is known as the Standard
+Model\footnote{Except ofcourse neutrino masses and oscillations})
+
+
+\subsection{Framework: QFT}
+
+Let us start with a classical field. Consider the simplest case, a
+real scalar field. Imagine a number being assigned to every location
+in space and time. If I demand that the field must satisfy the Klien
+Gordan equation\footnote{where note now that $m$ is only a parameter to start with},
+I can write a Lagrangian\footnote{density to be precise} 
+\[
+\mathcal{L}=\frac{1}{2}\left(\partial^{\mu}\phi\partial_{\mu}\phi+m^{2}\phi\right)
+\]
+by noting that the equation of motion produced by this $\mathcal{L}$
+is the Klien Gordan equation itself. Note that in general, $\phi=\phi(t,\vec{x})$.
+If I further assume that it is sufficiently well behaved, I can write
+\[
+\phi=\int\frac{d^{3}p}{\left(2\pi\right)^{3}\sqrt{2\omega_{p}}}\,\left(ae^{i\mathbf{px}}+a^{\dagger}e^{-i\mathbf{px}}\right)
+\]
+with $a=a(\vec{p})$ and the second term added explicitly to ensure
+$\phi$ is real\footnote{$\frac{d^{3}p}{\left(2\pi\right)^{3}\sqrt{2\omega_{p}}}$ is a Lorentz
+invariant measure which I won't discuss here}. I can also evaluate $\pi$, the conjugate momentum from $\mathcal{L}$.
+If I impose now, the commutation (equal time) $[\phi(t,\mathbf{x}),\pi(t,\mathbf{x}')]=i\delta(\mathbf{x}-\mathbf{x}')$,
+(note, we just converted our classical field to a quantum field) it
+can be shown that $[a(\mathbf{p}),a^{\dagger}(\mathbf{p}')]\sim\delta(\mathbf{p}-\mathbf{p}')$.
+Further, it can be shown that the Hamiltonian for the given Lagrangian,
+turns out to be 
+\[
+H\sim a^{\dagger}a+\frac{1}{2}[a(\mathbf{p}),a^{\dagger}(\mathbf{p})]
+\]
+This now has striking similarities to the quantum harmonic oscillator.
+This motivates existence of states such as $a^{\dagger}(\vec{p})\left|\text{vacuum}\right\rangle $
+which can be rigerously shown to be particles indeed. From the space-time
+translation invariance, one can arrive\footnote{using Noether's theorem},
+at the physical momentum and energy operators. If the aforesaid state
+indeed represents a particle, it must satisfy $E^{2}-\vec{p}^{2}=m^{2}$.
+And infact, it so turns out that applying the momentum operator and
+the hamiltonian operator and finding the eigenvalues of this state
+produces exactly that. Thus we conclude that this state indeed represents
+a particle that has a definite energy and momentum. Further, we now
+know that the parameter $m$ that appeared in the Lagrangian was indeed
+the mass.
+
+Obviously, the example we took had only one field which interacts
+with nothing. Any observable field must interact to be observable.
+QFT is developed then as a perturbation theory, expanded around the
+non-interacting part, such as the one just described. This results
+in what are known as Feynman rules. These rules can be used to evaluate
+quantities such as decay rates and scattering cross sections, which
+can be measured experimentally.
+
+In the discussion of mass, it must be mentioned that when interactions
+are introduced, the term $m$ in the Lagrangian, no longer represents
+mass. In that case, it is defined as the pole of the `full propogator'.
+I'll leave it at that.
+
+
+\section{Dirac and Majorana Mass}
+
+
+\subsection{The Dirac Equation}
+
+Let us now consider the famous Dirac equation and the particles its
+field produces. I must begin with motivating the Dirac equation, because
+it can be overwhelming at first. The idea was to factor the Klien
+Gordan equation. So I start with writing an equation of the form 
+\[
+(i\partial_{\mu}\gamma^{\mu}-m)\psi=0
+\]
+where $\gamma^{\mu}$ are to start with, some parameters (we think
+of them as numbers to start with). Now if I multiply this equation
+with itself (excluding the $\psi$ part), I'll have
+\[
+\begin{aligned} & (i\partial_{\mu}\gamma^{\mu}-m)(i\partial_{\nu}\gamma^{\nu}-m)\\
+= & (-\partial_{\mu}\partial_{\nu}\gamma^{\mu}\gamma^{\nu}-im\partial_{\mu}\gamma^{\mu})-(im\partial_{\nu}\gamma^{\nu}-m^{2})\\
+= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m\left[i(\partial_{\mu}\gamma^{\mu})\right]+m^{2})\\
+= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m^{2}+m^{2})\\
+= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-m^{2})
+\end{aligned}
+\]
+Now if I want this to become Klien Gordan, it's trivial to conclude
+that $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$. Now without
+getting into more detail, I'll just claim that the parameters $\gamma^{\mu}$
+are chosen to be $4\times4$ matrices and $\psi$ then is a $4-$component
+object, called a Dirac spinor. It is useful to work in a specific
+basis (choice of $\gamma$) which for this discussion I'll take out
+of a hat to be
+\[
+\begin{aligned}\sigma^{\mu}\equiv(1,\mathbf{\vec{\sigma})} &  & \overline{\sigma}^{\mu}\equiv(1,-\vec{\sigma})\\
+\gamma^{\mu} & \equiv & \left(\begin{array}{cc}
+0 & \sigma^{\mu}\\
+\overline{\sigma}^{\mu} & 0
+\end{array}\right)
+\end{aligned}
+\]
+One can check that the anti-commutation is indeed what we wanted. 
+
+
+\subsection{The Dirac Lagrangian}
+
+$\psi$ has interesting transformation properties which I won't derive
+but state as and when I need them. I claim that if I write my four
+component $\psi$ as 
+\[
+\psi=\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)
+\]
+then under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$,
+\[
+\begin{aligned}\psi_{L}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{L}=S_{L}\psi_{L}\\
+\psi_{R}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{R}=S_{R}\psi_{R}
+\end{aligned}
+\]
+which in a compact form, I'll write as
+\[
+\psi\rightarrow\Lambda_{1/2}\psi
+\]
+
+
+We need this to understand how must we write a Lagrangian for the
+Dirac equation. We must first realize that the Lagrangian is a scalar.
+We must understand therefore how to create scalars out of these objects
+we call Dirac spinors. A first guess at writing a real Lagrangian
+could be to write $\psi^{\dagger}\psi$. However, this object is not
+Lorentz invariant. This is easy to see by simply noting that the transformation
+of $\psi_{L}$ and $\psi_{R}$ is not unitary. I claim that 
+\[
+\psi^{\dagger}\gamma^{0}\rightarrow\psi^{\dagger}\gamma^{0}\Lambda_{1/2}^{-1}
+\]
+So now I simply define 
+\[
+\overline{\psi}\equiv\psi^{\dagger}\gamma^{0}
+\]
+so that
+\[
+\overline{\psi}\rightarrow\overline{\psi}\Lambda_{1/2}^{-1}
+\]
+
+
+Obviously now, $\overline{\psi}\psi$ is Lorentz invariant. I claim
+further that $\overline{\psi}\gamma^{\mu}\psi$ transforms as a four-vector.
+Armed with these, I can write the following Lorentz invariant quantity
+\[
+\mathcal{L}_{\text{Dirac}}=\overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
+\]
+I am allowed to call it the Dirac Lagrangian, if it's equation of
+motion is the Dirac equation itself. This is indeed so; recall 
+\[
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}-\frac{\partial\mathcal{L}}{\partial\phi}=0
+\]
+which in this case, (treating $\psi$ and $\overline{\psi}$ as independent)
+for $\overline{\psi}$ yeilds the Dirac equation in $\psi$.
+
+Since this discussion is focussed on the mass term, let me expand
+it for you. 
+\[
+m\overline{\psi}\psi=m\left(\begin{array}{cc}
+\psi_{L}^{\dagger} & \psi_{R}^{\dagger}\end{array}\right)\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+The objective of this exercise was to show that in the Dirac equation,
+the mass term mixes the left and right spinors. We develop some more
+formalism and then see whether we can write a different Lorentz invariant
+mass term that doesn't mix the left and right parts.
+
+
+\subsection{Projectors, mixing of mass terms}
+
+If from the full spinor, I wanted to obtain only the left handed part,
+I could do the following 
+\[
+\left(\begin{array}{cc}
+1 & 0\\
+0 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+As it turns out, if I define $\gamma^{5}\equiv i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$,
+then in our basis it becomes $\gamma^{5}=\left(\begin{array}{cc}
+-1 & 0\\
+0 & 1
+\end{array}\right)$. Note then that the left hand projector can be written simply as
+\[
+P_{L}=\frac{1-\gamma^{5}}{2}
+\]
+Similarly, its almost immediate that 
+\[
+P_{R}=\frac{1+\gamma^{5}}{2}
+\]
+Further, in our basis, it's obvious from explicit matrices corresponding
+to $P_{L}$ and $P_{R}$ that 
+\[
+P_{L}+P_{R}=1_{4\times4}
+\]
+and that 
+\[
+P_{L}P_{R}=0;\,P_{R}P_{L}=0
+\]
+I claim that $\{\gamma^{5},\gamma^{\mu}\}=0$ which allows me to show
+that 
+\[
+\gamma^{\mu}P_{L}=\gamma^{\mu}\frac{\left(1-\gamma^{5}\right)}{2}=\frac{\left(1+\gamma^{5}\right)}{2}\gamma^{\mu}=P_{R}\gamma^{\mu}
+\]
+
+
+Finally I define
+\[
+\Psi_{L}\equiv P_{L}\psi=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+and 
+\[
+\Psi_{R}\equiv P_{R}\psi=\left(\begin{array}{c}
+0\\
+\psi_{R}
+\end{array}\right)
+\]
+This allows me to write 
+\[
+\psi=1_{4\times4}\psi=\left(P_{L}+P_{R}\right)\psi=\Psi_{L}+\Psi_{R}
+\]
+along with the hermitian conjugate 
+\[
+\psi^{\dagger}=\psi^{\dagger}1_{4\times4}=\psi^{\dagger}\left(P_{L}+P_{R}\right)=\Psi_{L}^{\dagger}+\Psi_{R}^{\dagger}
+\]
+plus for clarity 
+\[
+\overline{\psi}=\psi^{\dagger}\gamma^{0}=\psi^{\dagger}1_{4\times4}\gamma^{0}=\psi^{\dagger}\left(P_{L}+P_{R}\right)\gamma^{0}=\Psi_{L}^{\dagger}\gamma^{0}+\Psi_{R}^{\dagger}\gamma^{0}=\overline{\Psi}_{L}+\overline{\Psi}_{R}
+\]
+and that in turn allows me to expand the mass term 
+\[
+\begin{aligned}m\overline{\psi}\psi=m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right) & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
+It is easy to get confused between the equation we derived in the
+previous subsection 
+\[
+m\overline{\psi}\psi=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+but both are correct and equivalent. The latter is written in the
+2-component form, while the former is in the 4-component notation.
+And while I'm still discussing notation, let me define for a four
+vector $B^{\mu}$ 
+\[
+\cancel{B}\equiv\gamma^{\mu}B_{\mu}
+\]
+
+
+So in this notation, I can write the Lagrangian as 
+\[
+\begin{aligned}\mathcal{L}_{\text{Dirac}} & = & \overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi\\
+ & = & \left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(i\cancel{\partial}-m\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & \overline{\Psi}_{L}i\cancel{\partial}\Psi_{L}+\overline{\Psi}_{R}i\cancel{\partial}\Psi_{R}-m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
+Note how the kinetic term has the left and right handed spinor separated,
+but the mass term is mixing the spinor components. We now have enough
+machinery to explore mass terms that don't mix the spinor components.
+
+
+\subsection{Majorana Mass}
+
+I start with defining the following matrix 
+\[
+C=i\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)
+\]
+Now I go back to the transformations of the Dirac spinor. If I write
+$\psi^{T}$ as 
+\[
+\psi^{T}=\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)
+\]
+then under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$,
+\[
+\begin{aligned}\psi_{L}^{T}\rightarrow & \psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}=\psi_{L}^{T}S_{L}^{T}\\
+\psi_{R}^{T}\rightarrow & \psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}=\psi_{R}^{T}S_{R}^{T}
+\end{aligned}
+\]
+which in a compact form, according to prior definitions is
+\[
+\psi^{T}\rightarrow\psi^{T}\Lambda_{1/2}^{T}
+\]
+Noting from the explicit Pauli matrices, 
+\[
+\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\\
+\sigma^{2} & = & \left(\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right)\\
+\sigma^{3} & = & \left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{aligned}
+\]
+we see that 
+\[
+\begin{alignedat}{2}\left(\sigma^{1}\right)^{T} & = & \sigma^{1}\\
+\left(\sigma^{2}\right)^{T} & = & -\sigma^{2}\\
+\left(\sigma^{3}\right)^{T} & = & \sigma^{3}
+\end{alignedat}
+\]
+Further, we can use the fact that $\{\sigma^{i},\sigma^{k}\}=2\delta^{ik}$
+to see that 
+\[
+\begin{alignedat}{2}\left(\sigma^{1}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{1}\\
+\left(\sigma^{2}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{2}\\
+\left(\sigma^{3}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{3}
+\end{alignedat}
+\]
+and this is fantastic, why? Well, consider the object $\psi_{L}^{T}\sigma^{2}$.
+We'll have 
+\[
+\psi_{L}^{T}\sigma^{2}\rightarrow\psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}\sigma^{2}=\psi_{L}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{L}^{T}\sigma^{2}S_{L}^{-1}
+\]
+and by the same reasoning, we have 
+\[
+\psi_{R}^{T}\sigma^{2}\rightarrow\psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}\sigma^{2}=\psi_{R}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{R}^{T}\sigma^{2}S_{R}^{-1}
+\]
+We now want to write this in the compact notation. For this, we note
+that 
+\[
+\psi^{T}C=i\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2} & -\psi_{R}^{T}\sigma^{2}\end{array}\right)
+\]
+so that the transformation is 
+\[
+\psi^{T}C\rightarrow i\left(\begin{array}{cc}
+\psi_{L}^{T}S_{L}^{T}\sigma^{2} & -\psi_{R}^{T}S_{R}^{T}\sigma^{2}\end{array}\right)=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2}S_{L}^{-1} & -\psi_{R}^{T}\sigma^{2}S_{R}^{-1}\end{array}\right)=\psi^{T}C\lambda_{1/2}^{-1}
+\]
+And what will all of this do? Well, it means that 
+\[
+\psi^{T}C\psi\rightarrow\psi^{T}C\lambda_{1/2}^{-1}\lambda_{1/2}\psi=\psi^{T}C\psi
+\]
+so that means we have arrived at a Lorentz scalar! Before proceeding,
+I'll make two comments. 
+\begin{enumerate}
+\item We could've arrived at the same result by simply noting that $\lambda_{1/2}^{T}C\lambda_{1/2}=C$
+\item I can write $C$ as a product of $\gamma$ matrices as 
+\[
+C=i\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)=-i\gamma^{2}\gamma^{0}
+\]
+which is easy to verify.
+\end{enumerate}
+So let us use this term finally to define a different mass term. I
+write 
+\[
+\begin{alignedat}{2}\mathcal{L}_{\text{Majorana Mass}} & \sim & m\psi^{T}C\psi\\
+ & = & -im\left(\Psi_{L}^{T}+\Psi_{R}^{T}\right)\gamma^{2}\gamma^{0}\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & -im\left(\Psi_{L}^{T}\gamma^{2}\gamma^{0}\Psi_{L}+\Psi_{R}^{T}\gamma^{2}\gamma^{0}\Psi_{R}\right)\\
+ & = & m\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{R}^{T}C\Psi_{R}\right)
+\end{alignedat}
+\]
+so here I have arrived at a mass term which does \emph{mix }the left
+and right spinors! I'd point out that this object ofcourse is not
+guaranteed to be real. To ensure that, we must add its hermitian conjugate
+($-m\psi^{\dagger}C\psi^{*}$). To conclude this subsection, I'd mention
+that 
+\begin{itemize}
+\item there are what's called a majorana fermion, which is such that $\psi$
+equals it's own `conjugate'. This results in reduction of degrees
+of freedom from 4 to 2
+\item $C$ is closely related to the charge conjugation operator
+\end{itemize}
+and state some results
+\begin{itemize}
+\item The Lagrangian with the `kinetic part' is
+\[
+\begin{alignedat}{2}\mathcal{L}_{\text{Majorana}} & = & \psi_{L}^{\dagger}i\overline{\sigma}.\partial\psi_{L}+\frac{im}{2}\left(\psi_{L}^{T}\sigma^{2}\psi_{L}-\psi_{L}^{\dagger}\sigma^{2}\psi_{L}^{*}\right)\\
+ & = & i\Psi_{L}^{\dagger}\cancel{\partial}\Psi_{L}-\frac{m}{2}\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{L}^{\dagger}C\Psi_{L}^{*}\right)
+\end{alignedat}
+\]
+
+\item Corresponding Euler Lagrange
+\[
+\begin{aligned}i\overline{\sigma}.\partial\psi_{L}-im\sigma^{2}\psi_{L}^{*} & =0\end{aligned}
+\]
+which implies that the Klien Gordan is satisfied and since it is derived
+from a Lorentz invariant lagrangian, it too is Lorentz invariant.
+\end{itemize}
+
+\section{Physical Relevance}
+
+In the physical world, we don't observe `right handed'\footnote{in the sense we have just discussed}
+neutrinos. Even the `left handed' neutrino was thought to be massless
+for a long period of time. The standard model consequently has been
+created to have the following term
+\[
+\mathcal{L}=\overline{\nu}_{L}i\cancel{\partial}\nu_{L}
+\]
+However, lately experiments have shown that the `left handed' neutrinos
+also have mass. To implement them, we first of all need a way of handling
+the fact that there's just one part of the full spinor, viz. only
+2 degrees of freedom. Plus the Dirac mass as we know it, necessarily
+mixes the left and right handed part. In this regard, atleast in some
+sense, the Majorana mass and Majorana spinor are possible candidates
+to describe neutrinos.
+
+For completeness, I must mention that there are other alternatives
+to describe the mass of neutrinos, such as the 'see-saw' model.
+\end{document}

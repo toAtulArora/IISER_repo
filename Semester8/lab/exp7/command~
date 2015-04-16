@@ -1,0 +1,10 @@
+set terminal pdf
+set output "resultRENAMEme.pdf"
+g(x)=m*x + c
+fit g(x) "dataWithB1422" using 1:2 via m,c
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set xlabel "Current I (mA)"
+set ylabel "-Hall Voltage -V_H (mV)"
+set title "B=1422 Gauss"
+plot "dataWithB1422" using 1:2 title "observations", g(x) title "linear fit"

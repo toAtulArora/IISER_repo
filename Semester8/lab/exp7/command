@@ -1,0 +1,10 @@
+set terminal pdf
+set output "resultRENAMEme.pdf"
+g(x)=m*x + c
+fit g(x) "data" using 1:2 via m,c
+set grid ytics lt 0 lw 1 lc rgb "#bbbbbb"
+set grid xtics lt 0 lw 1 lc rgb "#bbbbbb"
+set xlabel "Heap Radius (cm)"
+set ylabel "Height (cm)"
+set title "Angle of repose"
+plot "data" using 1:2:3 title "observations" w yerror, g(x) title "linear fit"
