@@ -232,7 +232,7 @@ if
 \end_inset
 
  then 
-\begin_inset Formula $A_{\alpha}\equiv\eta_{\beta}^{\alpha}A^{\beta}=(A^{0},-\vec{A})$
+\begin_inset Formula $A_{\alpha}\equiv\eta_{\alpha\beta}A^{\beta}=(A^{0},-\vec{A})$
 \end_inset
 
 

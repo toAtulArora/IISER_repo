@@ -436,11 +436,7 @@ One may guess that instead of writing
 \end_inset
 
 , 
-\begin_inset Formula $\vec{p}$
-\end_inset
-
- with 
-\begin_inset Formula $i\vec{\nabla}$
+\begin_inset Formula $\vec{p}\rightarrow i\vec{\nabla}$
 \end_inset
 
 , we get 
@@ -1439,10 +1435,10 @@ So let us use this term finally to define a different mass term.
 
 so here I have arrived at a mass term which does 
 \emph on
-mix 
+not 
 \emph default
-the left and right spinors! I'd point out that this object ofcourse is not
- guaranteed to be real.
+mix the left and right spinors! I'd point out that this object ofcourse
+ is not guaranteed to be real.
  To ensure that, we must add its hermitian conjugate (
 \begin_inset Formula $-m\psi^{\dagger}C\psi^{*}$
 \end_inset

@@ -25,29 +25,29 @@
 
 %\usetheme{default}
 %\usetheme{AnnArbor}
-%\usetheme{Antibes}
+%\usetheme{Antibes} %useless type of index (not really an index) | wasteful
 %\usetheme{Bergen}
 %\usetheme{Berkeley}
 %\usetheme{Berlin}
-%\usetheme{Boadilla}
-%\usetheme{CambridgeUS}
-%\usetheme{Copenhagen}
+%\usetheme{Boadilla} %elegant, loads of space, no index
+%\usetheme{CambridgeUS} %standard with no index
+%\usetheme{Copenhagen} %index but wasteful
 %\usetheme{Darmstadt}
 %\usetheme{Dresden}
-%\usetheme{Frankfurt}
-\usetheme{Goettingen}
+%\usetheme{Frankfurt} %index on top
+%\usetheme{Goettingen}
 %\usetheme{Hannover}
-%\usetheme{Ilmenau}
-%\usetheme{JuanLesPins}
+%\usetheme{Ilmenau} %index, not too wasteful
+%\usetheme{JuanLesPins} like antibes
 %\usetheme{Luebeck}
-%\usetheme{Madrid}
-%\usetheme{Malmoe}
-%\usetheme{Marburg}
-%\usetheme{Montpellier}
-%\usetheme{PaloAlto}
-%\usetheme{Pittsburgh}
-%\usetheme{Rochester}
-%\usetheme{Singapore}
+%\usetheme{Madrid} %elegent, no index
+%\usetheme{Malmoe} %index, wasetful
+%\usetheme{Marburg} %index side
+%\usetheme{Montpellier} %elegant, useless type index
+%\usetheme{PaloAlto} %index on the left
+%\usetheme{Pittsburgh} %no index
+%\usetheme{Rochester} %simple but nice
+\usetheme{Singapore}
 %\usetheme{Szeged}
 %\usetheme{Warsaw}
 
@@ -235,7 +235,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 	\frametitle{Prerequisites}
 		\begin{itemize}
 			\item I'll use the following pauli matrices
-
+			\pause
 			$\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
 			0 & 1\\
 			1 & 0
@@ -250,9 +250,12 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 			\end{array}\right)
 			\end{aligned}
 			 $
+			 \pause
  			\item Terminology from particle physics
+ 			\pause
  			\begin{itemize}
- 				\item Leptons: Eg. Electron, Electron Neutrino
+ 				\item Leptons: Eg. Electron, Electron Neutrino \pause (beta decay, massless, rather inert)
+ 				\pause
  				\item Quarks
  			\end{itemize}
 
@@ -398,153 +401,651 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 
 \begin{frame}
 	\frametitle{The Dirac Equation}
-	
+		\begin{itemize}
+		\item 
+		\[
+		(i\partial_{\mu}\gamma^{\mu}-m)\psi=0
+		\]
+
+		\pause
+		\item
+		\[
+		\begin{aligned} & (i\partial_{\mu}\gamma^{\mu}-m)(i\partial_{\nu}\gamma^{\nu}-m)\\
+		= & (-\partial_{\mu}\partial_{\nu}\gamma^{\mu}\gamma^{\nu}-im\partial_{\mu}\gamma^{\mu})-(im\partial_{\nu}\gamma^{\nu}-m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m\left[i(\partial_{\mu}\gamma^{\mu})\right]+m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m^{2}+m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-m^{2})
+		\end{aligned}
+		\]
+
+
+		\pause 
+		\item 
+
+		To be Klein Gordan, $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$
+
+		\pause
+		\item Claim
+
+		$\gamma^{\mu}$ are $4\times4$ matrices and $\psi$ then is a $4-$component object, called a Dirac spinor.
+
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Dirac Equation}
+\begin{itemize}
+	\item 
+	Hat:
+	\[
+	\begin{aligned}\sigma^{\mu}\equiv(1,\vec{\sigma}) &  & \overline{\sigma}^{\mu}\equiv(1,-\vec{\sigma})\\
+	\gamma^{\mu} & \equiv & \left(\begin{array}{cc}
+	0 & \sigma^{\mu}\\
+	\overline{\sigma}^{\mu} & 0
+	\end{array}\right)
+	\end{aligned}
+	\]
+	\pause
+	\item Claim: commutation holds
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Dirac Lagrangian}
+	\begin{itemize}
+		\item Claim: 
+
+\[
+\psi=\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)
+\]
+under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$
+\pause
+\[
+\begin{aligned}\psi_{L}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{L}=S_{L}\psi_{L}\\
+\psi_{R}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{R}=S_{R}\psi_{R}
+\end{aligned}
+\]
+\pause
+which in a compact form, I'll write as
+\[
+\psi\rightarrow\Lambda_{1/2}\psi
+\]
+
+		\item $\psi^{\dagger}\psi$ \pause | not Lorentz invariant
+		\pause
+		\item $\psi_{L}$ and $\psi_{R}$ is not unitary
+	\end{itemize}
 \end{frame}
 
 
-% {\del U}{\del n_1}
-% %----------------------------------------------------------------------------------------
-% %	PRESENTATION SLIDES
-% %----------------------------------------------------------------------------------------
+\begin{frame}
+	\frametitle{The Dirac Lagrangian}
+	\begin{itemize}
+		\item Claim: 
+\[
+\psi^{\dagger}\gamma^{0}\rightarrow\psi^{\dagger}\gamma^{0}\Lambda_{1/2}^{-1}
+\]
+\pause
+		\item I define		
+\[
+\overline{\psi}\equiv\psi^{\dagger}\gamma^{0}
+\]
+so that
+\pause
+\[
+\overline{\psi}\rightarrow\overline{\psi}\Lambda_{1/2}^{-1}
+\]
+\pause
+		\item $\overline{\psi}\psi$ is Lorentz invariant
+		\pause
+		\item Claim: $\overline{\psi}\gamma^{\mu}\psi$ transforms as a four-vector.
+		\pause
+		\item 
+\[
+\mathcal{L}_{\text{Dirac}}=\overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
+\]
+		\pause
+		is therefore Lorentz invariant
 
-% %------------------------------------------------
-% \section{First Section} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-% %------------------------------------------------
+	\end{itemize}
+\end{frame}
 
-% \subsection{Subsection Example} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-% \begin{frame}
-% \frametitle{Paragraphs of Text}
-% Sed iaculis dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum. Donec vestibulum ligula non lorem vulputate fermentum accumsan neque mollis.\\~\\
+\begin{frame}
+	\frametitle{The Dirac Lagrangian}
+	\begin{itemize}
 
-% Sed diam enim, sagittis nec condimentum sit amet, ullamcorper sit amet libero. Aliquam vel dui orci, a porta odio. Nullam id suscipit ipsum. Aenean lobortis commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
-% \end{frame}
+		\item Recall:
+\[
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}-\frac{\partial\mathcal{L}}{\partial\phi}=0
+\]
+		\pause 
+		(treating $\psi$ and $\overline{\psi}$ as independent) for $\overline{\psi}$ yeilds the Dirac equation in $\psi$.
 
-% %------------------------------------------------
+		\item 
+\[
+m\overline{\psi}\psi=m\left(\begin{array}{cc}
+\psi_{L}^{\dagger} & \psi_{R}^{\dagger}\end{array}\right)\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+\pause
+		\item Mass term mixes the left and right spinors
+		\item Explore: mass term that doesn't mix
+	\end{itemize}
+\end{frame}
 
-% \begin{frame}
-% \frametitle{Bullet Points}
-% \begin{itemize}
-% \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-% \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-% \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-% \item Nam cursus est eget velit posuere pellentesque
-% \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-% \end{itemize}
-% \end{frame}
 
-% %------------------------------------------------
 
-% \begin{frame}
-% \frametitle{Blocks of Highlighted Text}
-% \begin{block}{Block 1}
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-% \end{block}
+\begin{frame}
+	\frametitle{Projectors, mixing of mass terms}
+	\begin{itemize}
+		\item 
+		\pause
+\[
+\left(\begin{array}{cc}
+1 & 0\\
+0 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+		\item As it turns out, if I define $\gamma^{5}\equiv i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$, \pause
+then in our basis 
+\[\gamma^{5}=\left(\begin{array}{cc}
+-1 & 0\\
+0 & 1
+\end{array}\right)\]
+\pause
+		\item 
+		\pause
+\[
+P_{L}=\frac{1-\gamma^{5}}{2}
+\]
+Similarly,
+\[
+P_{R}=\frac{1+\gamma^{5}}{2}
+\]
 
-% \begin{block}{Block 2}
-% Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-% \end{block}
+		\item Obvious from matrix multiplication and definitions of
+		\pause
+$P_{L}$ and $P_{R}$ that 
+\pause
+\[
+P_{L}+P_{R}=1_{4\times4}
+\]
 
-% \begin{block}{Block 3}
-% Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-% \end{block}
-% \end{frame}
+	\end{itemize}
+\end{frame}
 
-% %------------------------------------------------
 
-% \begin{frame}
-% \frametitle{Multiple Columns}
-% \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-% \column{.45\textwidth} % Left column and width
-% \textbf{Heading}
-% \begin{enumerate}
-% \item Statement
-% \item Explanation
-% \item Example
-% \end{enumerate}
 
-% \column{.5\textwidth} % Right column and width
-% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
 
-% \end{columns}
-% \end{frame}
 
-% %------------------------------------------------
-% \section{Second Section}
-% %------------------------------------------------
+\begin{frame}
+	\frametitle{Projectors, mixing of mass terms}
+	\begin{itemize}
 
-% \begin{frame}
-% \frametitle{Table}
-% \begin{table}
-% \begin{tabular}{l l l}
-% \toprule
-% \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-% \midrule
-% Treatment 1 & 0.0003262 & 0.562 \\
-% Treatment 2 & 0.0015681 & 0.910 \\
-% Treatment 3 & 0.0009271 & 0.296 \\
-% \bottomrule
-% \end{tabular}
-% \caption{Table caption}
-% \end{table}
-% \end{frame}
 
-% %------------------------------------------------
 
-% \begin{frame}
-% \frametitle{Theorem}
-% \begin{theorem}[Mass--energy equivalence]
-% $E = mc^2$
-% \end{theorem}
-% \end{frame}
+\item
+\pause
+and that 
+\[
+P_{L}P_{R}=0;\,P_{R}P_{L}=0
+\]
+\pause
+		\item Claim: $\{\gamma^{5},\gamma^{\mu}\}=0$
+		\pause
+		\item It then follows that 
+		\pause
+\[
+\gamma^{\mu}P_{L}=\gamma^{\mu}\frac{\left(1-\gamma^{5}\right)}{2}=\frac{\left(1+\gamma^{5}\right)}{2}\gamma^{\mu}=P_{R}\gamma^{\mu}
+\]
+		\pause
+		\item I define 
+\[
+\Psi_{L}\equiv P_{L}\psi=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+\pause
+and 
+\[
+\Psi_{R}\equiv P_{R}\psi=\left(\begin{array}{c}
+0\\
+\psi_{R}
+\end{array}\right)
+\]
 
-% %------------------------------------------------
+	\end{itemize}
+\end{frame}
 
-% \begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-% \frametitle{Verbatim}
-% \begin{example}[Theorem Slide Code]
-% \begin{verbatim}
-% \begin{frame}
-% \frametitle{Theorem}
-% \begin{theorem}[Mass--energy equivalence]
-% $E = mc^2$
-% \end{theorem}
-% \end{frame}\end{verbatim}
-% \end{example}
-% \end{frame}
 
-% %------------------------------------------------
 
-% \begin{frame}
-% \frametitle{Figure}
-% Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-% %\begin{figure}
-% %\includegraphics[width=0.8\linewidth]{test}
-% %\end{figure}
-% \end{frame}
 
-% %------------------------------------------------
 
-% \begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-% \frametitle{Citation}
-% An example of the \verb|\cite| command to cite within the presentation:\\~
 
-% This statement requires citation \cite{p1}.
-% \end{frame}
+\begin{frame}
+	\frametitle{Projectors, mixing of mass terms}
+	\begin{itemize}
+		\item
+This allows me to write 
+\pause
+\[
+\psi=1_{4\times4}\psi=\left(P_{L}+P_{R}\right)\psi=\Psi_{L}+\Psi_{R}
+\]
+\pause
+along with the hermitian conjugate 
+\[
+\psi^{\dagger}=\psi^{\dagger}1_{4\times4}=\psi^{\dagger}\left(P_{L}+P_{R}\right)=\Psi_{L}^{\dagger}+\Psi_{R}^{\dagger}
+\]
 
-% %------------------------------------------------
+		\item Clarity:
+		\pause
+\[
+\overline{\psi}=\psi^{\dagger}\gamma^{0}=\psi^{\dagger}1_{4\times4}\gamma^{0}=\psi^{\dagger}\left(P_{L}+P_{R}\right)\gamma^{0}=\Psi_{L}^{\dagger}\gamma^{0}+\Psi_{R}^{\dagger}\gamma^{0}=\overline{\Psi}_{L}+\overline{\Psi}_{R}
+\]
+		\item and that in turn allows me to expand the mass term 
+		\pause
+\[
+\begin{aligned}m\overline{\psi}\psi=m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right) & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
 
-% \begin{frame}
-% \frametitle{References}
-% \footnotesize{
-% \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-% \bibitem[Smith, 2012]{p1} John Smith (2012)
-% \newblock Title of the publication
-% \newblock \emph{Journal Name} 12(3), 45 -- 678.
-% \end{thebibliography}
-% }
-% \end{frame}
+
+	\end{itemize}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{Projectors, mixing of mass terms}
+	\begin{itemize}
+		\item Recall: 
+\[
+m\overline{\psi}\psi=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+\pause 
+both are correct and equivalent
+\pause 
+		\item Defn: For a four vector $B^{\mu}$ 
+		\pause
+\[
+\cancel{B}\equiv\gamma^{\mu}B_{\mu}
+\]
+\pause
+		\item Result:
+		\pause
+\[
+\begin{aligned}\mathcal{L}_{\text{Dirac}} & = & \overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi\\
+ & = & \left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(i\cancel{\partial}-m\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & \overline{\Psi}_{L}i\cancel{\partial}\Psi_{L}+\overline{\Psi}_{R}i\cancel{\partial}\Psi_{R}-m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
+\pause
+		\item In this notationa also, there's mixing
+
+
+
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+
+\begin{frame}
+	\frametitle{Majorana Mass}
+	\begin{itemize}
+		\item Defn:
+\[
+C=i\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)
+\]
+\pause
+		\item Recall and process: For	
+\[
+\psi^{T}=\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)
+\]
+\pause
+under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$,
+\pause
+\[
+\begin{aligned}\psi_{L}^{T}\rightarrow & \psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}=\psi_{L}^{T}S_{L}^{T}\\
+\psi_{R}^{T}\rightarrow & \psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}=\psi_{R}^{T}S_{R}^{T}
+\end{aligned}
+\]
+\pause
+which in a compact form is
+\[
+\psi^{T}\rightarrow\psi^{T}\Lambda_{1/2}^{T}
+\]
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+		\begin{itemize}
+		\item NB: from
+\[
+\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\\
+\sigma^{2} & = & \left(\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right)\\
+\sigma^{3} & = & \left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{aligned}
+\]
+\pause
+it's obvious that
+\pause
+\[
+\begin{alignedat}{2}\left(\sigma^{1}\right)^{T} & = & \sigma^{1}\\
+\left(\sigma^{2}\right)^{T} & = & -\sigma^{2}\\
+\left(\sigma^{3}\right)^{T} & = & \sigma^{3}
+\end{alignedat}
+\]
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+		\begin{itemize}
+
+
+
+		\item consider the object $\psi_{L}^{T}\sigma^{2}$	
+		\pause
+\[
+\psi_{L}^{T}\sigma^{2}\rightarrow\psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}\sigma^{2}=\psi_{L}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{L}^{T}\sigma^{2}S_{L}^{-1}
+\]
+		\pause
+		similarly
+\[
+\psi_{R}^{T}\sigma^{2}\rightarrow\psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}\sigma^{2}=\psi_{R}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{R}^{T}\sigma^{2}S_{R}^{-1}
+\]
+\pause
+
+		\item We want to make it compact. To that end, we note
+		\pause
+\[
+\psi^{T}C=i\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2} & -\psi_{R}^{T}\sigma^{2}\end{array}\right)
+\]
+\pause
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+		\begin{itemize}
+
+		\item so that the transformation is 
+		\pause
+\[
+\psi^{T}C\rightarrow i\left(\begin{array}{cc}
+\psi_{L}^{T}S_{L}^{T}\sigma^{2} & -\psi_{R}^{T}S_{R}^{T}\sigma^{2}\end{array}\right)\]
+\[=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2}S_{L}^{-1} & -\psi_{R}^{T}\sigma^{2}S_{R}^{-1}\end{array}\right)=\psi^{T}C\lambda_{1/2}^{-1}
+\]
+\pause
+
+		\item And what will all of this do? Well, it means that 
+		\pause
+\[
+\psi^{T}C\psi\rightarrow\psi^{T}C\lambda_{1/2}^{-1}\lambda_{1/2}\psi=\psi^{T}C\psi
+\]
+\pause
+		\item Result: We have arrived at a Lorentz scalar!
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+		\begin{itemize}
+		\item Comments:
+		\pause
+			\begin{itemize}
+				\item We could've arrived at the same result by simply noting that $\lambda_{1/2}^{T}C\lambda_{1/2}=C$
+				\pause
+				\item I can write $C$ as a product of $\gamma$ matrices as 
+				\[
+				C=i\left(\begin{array}{cc}
+				\sigma^{2} & 0\\
+				0 & -\sigma^{2}
+				\end{array}\right)=-i\gamma^{2}\gamma^{0}
+				\]
+				which is easy to verify.
+			\end{itemize}
+		\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+		\begin{itemize}
+
+		\item Defn: A different mass term
+		\pause
+\[
+\begin{alignedat}{2}\mathcal{L}_{\text{Majorana Mass}} & \sim & m\psi^{T}C\psi\\
+ & = & -im\left(\Psi_{L}^{T}+\Psi_{R}^{T}\right)\gamma^{2}\gamma^{0}\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & -im\left(\Psi_{L}^{T}\gamma^{2}\gamma^{0}\Psi_{L}+\Psi_{R}^{T}\gamma^{2}\gamma^{0}\Psi_{R}\right)\\
+ & = & m\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{R}^{T}C\Psi_{R}\right)
+\end{alignedat}
+\]
+\pause
+		\item Result: Does \emph{not} mix the left and right spinors!
+		\pause
+		\item To ensure reality, we add $-m\psi^{\dagger}C\psi^{*}$
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+	\begin{itemize}
+		\item Concluding Remarks:
+		\begin{itemize}
+			\item Majorana fermion is s.t. $\psi$ equals it's own `conjugate'. \pause Reduces dof from 4 to 2
+			\pause
+			\item $C$ is closely related to the charge conjugation operator
+		\end{itemize}
+
+
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+\begin{frame}
+	\frametitle{Majorana Mass}
+	\begin{itemize}
+		\item Concluding Results:
+		\begin{itemize}
+		\pause
+		\item The Lagrangian with the `kinetic part' is
+		\pause
+		\[
+		\begin{alignedat}{2}\mathcal{L}_{\text{Majorana}} & = & \psi_{L}^{\dagger}i\overline{\sigma}.\partial\psi_{L}+\frac{im}{2}\left(\psi_{L}^{T}\sigma^{2}\psi_{L}-\psi_{L}^{\dagger}\sigma^{2}\psi_{L}^{*}\right)\\
+		 & = & i\Psi_{L}^{\dagger}\cancel{\partial}\Psi_{L}-\frac{m}{2}\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{L}^{\dagger}C\Psi_{L}^{*}\right)
+		\end{alignedat}
+		\]
+		\pause
+		\item Corresponding Euler Lagrange
+		\pause
+		\[
+		\begin{aligned}i\overline{\sigma}.\partial\psi_{L}-im\sigma^{2}\psi_{L}^{*} & =0\end{aligned}
+		\]
+		\pause
+		which implies that the Klien Gordan is satisfied and \pause it is itself is Lorentz invariant.
+		\end{itemize}
+
+
+
+	\end{itemize}
+\end{frame}
+
+ 
+
+
+
+
+
+
+
+
+\section{Physical Relevance}
+\begin{frame}	
+	\Huge{\centerline{Physical Relevance}}
+	% \tiny{\centerline{first demonstrated to us by Prof. Arvind}}
+\end{frame}
+
+ 
+\begin{frame}
+	\frametitle{Physical Relevance}
+	\begin{itemize}
+		\item No `right handed' neutrinos
+		\pause
+		\item `left handed' nearly massless
+		\pause
+		\item The great Standard Model has the term 
+		\pause
+\[
+\mathcal{L}=\overline{\nu}_{L}i\cancel{\partial}\nu_{L}
+\]
+		\item To implement mass, we must handle half a spinor
+		\pause
+		\item Dirac mass as we know it, necessarily mixes the left and right handed part
+		\pause
+		\item In this sense, Majorana spinors and the Majorana mass associated can describe neutrinos
+		\pause
+		\item There're alternatives, such as `see-saw' model
+
+	\end{itemize}
+\end{frame}
+
+
+
 
 %------------------------------------------------
 \section{Closing Remarks}
@@ -552,6 +1053,26 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 	\Huge{\centerline{The End}}
 	\end{frame}
 
+	\begin{frame}
+	\Huge{\centerline{?}}
+	\end{frame}
+
+\begin{frame}
+	\frametitle{References}
+	\begin{itemize}
+		\item An Introduction to Quantum Field Theory 
+
+		\emph{M. E. Peskin, D. V. Schroeder} 
+
+		\textbf{Addison-Wesley Publishing Company}
+		\item PHY659 Lectures
+
+		\emph{Prof. C. S. Aulakh}
+
+		\textbf{Spring 2015, IISER Mohali}
+	\end{itemize}
+
+\end{frame}
 %----------------------------------------------------------------------------------------
 
 \end{document} 
