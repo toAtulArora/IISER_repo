@@ -1,0 +1,4970 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes} %useless type of index (not really an index) | wasteful
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla} %elegant, loads of space, no index
+%\usetheme{CambridgeUS} %standard with no index
+%\usetheme{Copenhagen} %index but wasteful
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt} %index on top
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau} %index, not too wasteful
+%\usetheme{JuanLesPins} like antibes
+%\usetheme{Luebeck}
+%\usetheme{Madrid} %elegent, no index
+%\usetheme{Malmoe} %index, wasetful
+%\usetheme{Marburg} %index side
+%\usetheme{Montpellier} %elegant, useless type index
+%\usetheme{PaloAlto} %index on the left
+%\usetheme{Pittsburgh} %no index
+%\usetheme{Rochester} %simple but nice
+\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx}% Allows including images
+\usepackage{booktabs}% Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{braket}
+% \usepackage{geometry}
+% \onehalfspacing
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Dirac and Majorana Mass]{Dirac and Majorana Mass} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Atul Singh Arora} % Your name
+\institute[IISER M] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+Indian Institute of Science Education and Research Mohali \\ % Your institution for the title page
+\medskip
+% \textit{ms10024@iisermohali.ac.in} \\
+% \textit{ms11003@iisermohali.ac.in} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding iso8859-15
+\fontencoding T1
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 2
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Frame
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+titlepage
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Print the title page as the first slide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Outline
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Overview of the Talk
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% Table of contents slide, comment this block out to remove it
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+Introduction
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+tiny{
+\backslash
+centerline{first demonstrated to us by Prof. Arvind}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Motivation | Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Inertia | Newton 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Special Relativity | 
+\begin_inset Formula $p^{2}=m^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Particle Physics 
+\end_layout
+
+\begin_layout Itemize
+QED (Quantum Electrodynamics) 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Classical Electrodynamics gauge field: 
+\begin_inset Formula $A^{\mu}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Quantize | Massless Gauge Field 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Standard Model 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Massive Gauge fields | Spontaneous Symmetry Breaking 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Scalar field | Higgs 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Beyond Standard Model 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Neutrino Oscillations 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Neutrino Mass 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_layout Section
+Prerequisites
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+Prerequisites
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+tiny{
+\backslash
+centerline{first demonstrated to us by Prof. Arvind}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Prerequisites
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+From CM, recall 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Lagrangian Formalism 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Euler Lagrange equations 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Noether's Theorem relating conserved quantities and continuous symmetries 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+From STR, I'll use 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\begin_inset Formula $\eta^{\mu\nu}=\text{diag}(1,-\vec{1})$
+\end_inset
+
+ (NB: 
+\begin_inset Formula $\eta^{T}=\eta^{-1}=\eta$
+\end_inset
+
+) 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula $c=1, \hbar=1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+indices 
+\end_layout
+
+\begin_layout Itemize
+
+\begin_inset Formula $i,j,k,l$
+\end_inset
+
+ etc. run from 1 to 3 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+ etc. run from 0 to 3 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Prerequisites
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+I'll need the 4 vector notation. Recall 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Summation Convention 
+\begin_inset Formula $A^{\alpha}B_{\alpha}=\sum_{\alpha=0}^{4}A^{\alpha}B_{\alpha}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+if 
+\begin_inset Formula $A^{\alpha}=(A^{0},\vec{A})$
+\end_inset
+
+, then 
+\begin_inset Formula $A_{\alpha}\equiv\eta_{\alpha\beta}A^{\beta}=(A^{0},-\vec{A})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\lambda_{\beta}^{\alpha}$
+\end_inset
+
+, 
+\begin_inset Formula $A^{\alpha}\to A'^{\alpha}=\lambda_{\beta}^{\alpha}A^{\beta}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+contracted indices don't transform (NB: 
+\begin_inset Formula $\lambda^{T}\eta\lambda=\eta$
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+From QM, I'll need the following. Recall 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+State: 
+\begin_inset Formula $\ket{\psi}$
+\end_inset
+
+ (or 
+\begin_inset Formula $\psi(x)=\left\langle x|\psi\right\rangle$
+\end_inset
+
+) 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Time Evolution: For 
+\begin_inset Formula $H$
+\end_inset
+
+ (st. 
+\begin_inset Formula $H^{\dagger}=H$
+\end_inset
+
+; where 
+\begin_inset Formula $H^{\dagger}\equiv H^{*T}$
+\end_inset
+
+) we have 
+\begin_inset Formula \[H\left|\psi\right\rangle =-i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+a
+\end_layout
+
+\begin_layout Standard
+nd 
+\begin_inset Formula \[\left|\psi(t)\right\rangle =e^{(-i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle \]
+\end_inset
+
+NB: 
+\begin_inset Formula $U\equiv e^{(-i\hbar)^{-1}Ht}$
+\end_inset
+
+ is unitary, viz. 
+\begin_inset Formula $U^{\dagger}=U^{-1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Measurement/Observables 
+\end_layout
+
+\begin_layout Itemize
+Collapse into eigenstate of operator corresponding to the measurement 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Collapse to state 
+\begin_inset Formula $\ket{n}$
+\end_inset
+
+ with probability 
+\begin_inset Formula $\left|\left\langle n|\psi\right\rangle \right|^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Basics of quantum harmonic oscillator using 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\begin_inset Formula $a^{\dagger}$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Prerequisites
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+I'll use the following pauli matrices 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula $\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
+			0 & 1\\
+			1 & 0
+			\end{array}\right)\\
+			\sigma^{2} & = & \left(\begin{array}{cc}
+			0 & -i\\
+			i & 0
+			\end{array}\right)\\
+			\sigma^{3} & = & \left(\begin{array}{cc}
+			1 & 0\\
+			0 & -1
+			\end{array}\right)
+			\end{aligned}
+			 $
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Terminology from particle physics 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Leptons: Eg. Electron, Electron Neutrino 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+(
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+beta decay, massless, rather inert) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quarks 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_layout Section
+Towards a quantum theory of fields
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+Towards a
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+quantum theory of fields
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+tiny{
+\backslash
+centerline{first demonstrated to us by Prof. Arvind}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Motivation
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+All electrons are identical 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Unification of QM and STR 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Crisis: Can't predict the result of collision of particles 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+T
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+argets of the new theory 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Creation and destruction 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Consistent with STR (high energy) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Predict probablities 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Known Issues
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+
+\begin_inset Formula $\left(E^{2}-\vec{p}^{2}\right)\psi=m^{2}\psi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+and put 
+\begin_inset Formula $E\to-i\frac{\partial}{\partial t}, \vec{p}\rightarrow i\vec{\nabla}$
+\end_inset
+
+ to get
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+( \frac{\partial}{\partial t}^{2}-\vec{\nabla}^{2} ) \psi=m^{2}\psi
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Causality 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Negative Energies (no stable ground state) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Expected: t parameter, 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ operator 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameTitle
+Concept of field
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+One field for each type of particle 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+(
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Wheeler's idea) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+creates and destroys particles 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Interacting fields, interacting particles 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Framework: QFT
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Classical field | real scalar (number at every space time point) 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Demand Klien Gordan, then 
+\begin_inset Formula \[
+				\mathcal{L}=\frac{1}{2}\left(\partial^{\mu}\phi\partial_{\mu}\phi+m^{2}\phi\right)
+			\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\phi=\phi(t,\vec{x})$
+\end_inset
+
+ which I assume I can write as 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+			\phi=\int\frac{d^{3}p}{\left(2\pi\right)^{3}\sqrt{2\omega_{p}}}\,\left(ae^{i\mathbf{px}}+a^{\dagger}e^{-i\mathbf{px}}\right)
+			\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $a=a(\vec{p})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\pi$
+\end_inset
+
+ from 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+. 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Quantum Field | 
+\begin_inset Formula $[\phi(t,\mathbf{x}),\pi(t,\mathbf{x}')]=i\delta(\mathbf{x}-\mathbf{x}')$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Framework: QFT
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+
+\begin_inset Formula $[a(\mathbf{p}),a^{\dagger}(\mathbf{p}')]\sim\delta(\mathbf{p}-\mathbf{p}')$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula \[
+				H\sim a^{\dagger}a+\frac{1}{2}[a(\mathbf{p}),a^{\dagger}(\mathbf{p})]
+				\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarity with Quantum Harmonic Oscillator 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $a^{\dagger}(\vec{p})\left|\text{vacuum}\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Noether's theorem + Space-time invariance of 
+\begin_inset Formula $\mathcal{L} \rightarrow$
+\end_inset
+
+ physical momentum and energy operators 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To be a particle, it must satisfy 
+\begin_inset Formula $E^{2}-\vec{p}^{2}=m^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+a
+\end_layout
+
+\begin_layout Standard
+nd it does 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conclusion: Parameter 
+\begin_inset Formula $m$
+\end_inset
+
+ is mass 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Framework: QFT
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Non-interacting field 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Observable fields must interact 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+QFT | perturbation theory, expanded around the non-interacting part 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+results in Feynman Rules 
+\end_layout
+
+\begin_layout Pause
+(
+\end_layout
+
+\begin_layout Standard
+Prof. Mukunda story) 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Decay Rates 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Scattering Cross sections 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Interacting case, 
+\begin_inset Formula $m$
+\end_inset
+
+ no longer the mass 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+defined as pole of the `full propogator' 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+(
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+I'll leave it at that) 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_layout Section
+Dirac and Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+Dirac and Majorana Mass
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+tiny{
+\backslash
+centerline{first demonstrated to us by Prof. Arvind}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+The Dirac Equation
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+
+\begin_inset Formula \[
+		(i\partial_{\mu}\gamma^{\mu}-m)\psi=0
+		\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula \[
+		\begin{aligned} & (i\partial_{\mu}\gamma^{\mu}-m)(i\partial_{\nu}\gamma^{\nu}-m)\\
+		= & (-\partial_{\mu}\partial_{\nu}\gamma^{\mu}\gamma^{\nu}-im\partial_{\mu}\gamma^{\mu})-(im\partial_{\nu}\gamma^{\nu}-m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m\left[i(\partial_{\mu}\gamma^{\mu})\right]+m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-2m^{2}+m^{2})\\
+		= & (-\frac{1}{2}\partial_{\mu}\partial_{\nu}\{\gamma^{\mu},\gamma^{\nu}\}-m^{2})
+		\end{aligned}
+		\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To be Klein Gordan, 
+\begin_inset Formula $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claim
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+ are 
+\begin_inset Formula $4\times4$
+\end_inset
+
+ matrices and 
+\begin_inset Formula $\psi$
+\end_inset
+
+ then is a 
+\begin_inset Formula $4-$
+\end_inset
+
+component object, called a Dirac spinor.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+The Dirac Equation
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Hat: 
+\begin_inset Formula \[
+	\begin{aligned}\sigma^{\mu}\equiv(1,\vec{\sigma}) &  & \overline{\sigma}^{\mu}\equiv(1,-\vec{\sigma})\\
+	\gamma^{\mu} & \equiv & \left(\begin{array}{cc}
+	0 & \sigma^{\mu}\\
+	\overline{\sigma}^{\mu} & 0
+	\end{array}\right)
+	\end{aligned}
+	\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Claim: commutation holds 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+The Dirac Lagrangian
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Claim:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula \[
+\psi=\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)
+\]
+\end_inset
+
+under a lorentz boost 
+\begin_inset Formula $\mathbf{\beta}$
+\end_inset
+
+ and a rotation 
+\begin_inset Formula $\mathbf{\theta}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{aligned}\psi_{L}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{L}=S_{L}\psi_{L}\\
+\psi_{R}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{R}=S_{R}\psi_{R}
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+w
+\end_layout
+
+\begin_layout Standard
+hich in a compact form, I'll write as 
+\begin_inset Formula \[
+\psi\rightarrow\Lambda_{1/2}\psi
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\begin_inset Formula $\psi^{\dagger}\psi$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+|
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+not Lorentz invariant 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\psi_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi_{R}$
+\end_inset
+
+ is not unitary 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+The Dirac Lagrangian
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Claim: 
+\begin_inset Formula \[
+\psi^{\dagger}\gamma^{0}\rightarrow\psi^{\dagger}\gamma^{0}\Lambda_{1/2}^{-1}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+I define 
+\begin_inset Formula \[
+\overline{\psi}\equiv\psi^{\dagger}\gamma^{0}
+\]
+\end_inset
+
+so that 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\overline{\psi}\rightarrow\overline{\psi}\Lambda_{1/2}^{-1}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $\overline{\psi}\psi$
+\end_inset
+
+ is Lorentz invariant 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claim: 
+\begin_inset Formula $\overline{\psi}\gamma^{\mu}\psi$
+\end_inset
+
+ transforms as a four-vector. 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula \[
+\mathcal{L}_{\text{Dirac}}=\overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+i
+\end_layout
+
+\begin_layout Standard
+s therefore Lorentz invariant
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+The Dirac Lagrangian
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Recall: 
+\begin_inset Formula \[
+\frac{\partial\mathcal{L}}{\partial(\partial_{\mu}\phi)}-\frac{\partial\mathcal{L}}{\partial\phi}=0
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+(
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+treating 
+\begin_inset Formula $\psi$
+\end_inset
+
+ and 
+\begin_inset Formula $\overline{\psi}$
+\end_inset
+
+ as independent) for 
+\begin_inset Formula $\overline{\psi}$
+\end_inset
+
+ yeilds the Dirac equation in 
+\begin_inset Formula $\psi$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\begin_inset Formula \[
+m\overline{\psi}\psi=m\left(\begin{array}{cc}
+\psi_{L}^{\dagger} & \psi_{R}^{\dagger}\end{array}\right)\left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Mass term mixes the left and right spinors 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Explore: mass term that doesn't mix 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Projectors, mixing of mass terms
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\left(\begin{array}{cc}
+1 & 0\\
+0 & 0
+\end{array}\right)\left(\begin{array}{c}
+\psi_{L}\\
+\psi_{R}
+\end{array}\right)=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+As it turns out, if I define 
+\begin_inset Formula $\gamma^{5}\equiv i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+t
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+hen in our basis 
+\begin_inset Formula \[\gamma^{5}=\left(\begin{array}{cc}
+-1 & 0\\
+0 & 1
+\end{array}\right)\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+P_{L}=\frac{1-\gamma^{5}}{2}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Similarly, 
+\begin_inset Formula \[
+P_{R}=\frac{1+\gamma^{5}}{2}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Obvious from matrix multiplication and definitions of 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula $P_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+and 
+\begin_inset Formula $P_{R}$
+\end_inset
+
+ that 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+P_{L}+P_{R}=1_{4\times4}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Projectors, mixing of mass terms
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+a
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+nd that 
+\begin_inset Formula \[
+P_{L}P_{R}=0;\,P_{R}P_{L}=0
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claim: 
+\begin_inset Formula $\{\gamma^{5},\gamma^{\mu}\}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It then follows that 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\gamma^{\mu}P_{L}=\gamma^{\mu}\frac{\left(1-\gamma^{5}\right)}{2}=\frac{\left(1+\gamma^{5}\right)}{2}\gamma^{\mu}=P_{R}\gamma^{\mu}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I define 
+\begin_inset Formula \[
+\Psi_{L}\equiv P_{L}\psi=\left(\begin{array}{c}
+\psi_{L}\\
+0
+\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+a
+\end_layout
+
+\begin_layout Standard
+nd 
+\begin_inset Formula \[
+\Psi_{R}\equiv P_{R}\psi=\left(\begin{array}{c}
+0\\
+\psi_{R}
+\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Projectors, mixing of mass terms
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+This allows me to write 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\psi=1_{4\times4}\psi=\left(P_{L}+P_{R}\right)\psi=\Psi_{L}+\Psi_{R}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+a
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+long with the hermitian conjugate 
+\begin_inset Formula \[
+\psi^{\dagger}=\psi^{\dagger}1_{4\times4}=\psi^{\dagger}\left(P_{L}+P_{R}\right)=\Psi_{L}^{\dagger}+\Psi_{R}^{\dagger}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Clarity: 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\overline{\psi}=\psi^{\dagger}\gamma^{0}=\psi^{\dagger}1_{4\times4}\gamma^{0}=\psi^{\dagger}\left(P_{L}+P_{R}\right)\gamma^{0}=\Psi_{L}^{\dagger}\gamma^{0}+\Psi_{R}^{\dagger}\gamma^{0}=\overline{\Psi}_{L}+\overline{\Psi}_{R}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+and that in turn allows me to expand the mass term 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{aligned}m\overline{\psi}\psi=m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right) & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Projectors, mixing of mass terms
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Recall: 
+\begin_inset Formula \[
+m\overline{\psi}\psi=m(\psi_{R}^{\dagger}\psi_{L}+\psi_{L}^{\dagger}\psi_{R})
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+b
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+oth are correct and equivalent 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Defn: For a four vector 
+\begin_inset Formula $B^{\mu}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\cancel{B}\equiv\gamma^{\mu}B_{\mu}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Result: 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{aligned}\mathcal{L}_{\text{Dirac}} & = & \overline{\psi}(i\gamma^{\mu}\partial_{\mu}-m)\psi\\
+ & = & \left(\overline{\Psi}_{L}+\overline{\Psi}_{R}\right)\left(i\cancel{\partial}-m\right)\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & \overline{\Psi}_{L}i\cancel{\partial}\Psi_{L}+\overline{\Psi}_{R}i\cancel{\partial}\Psi_{R}-m\left(\overline{\Psi}_{L}\Psi_{R}+\overline{\Psi}_{R}\Psi_{L}\right)
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this notationa also, there's mixing
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Defn: 
+\begin_inset Formula \[
+C=i\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Recall and process: For 
+\begin_inset Formula \[
+\psi^{T}=\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+u
+\end_layout
+
+\begin_layout Standard
+nder a lorentz boost 
+\begin_inset Formula $\mathbf{\beta}$
+\end_inset
+
+ and a rotation 
+\begin_inset Formula $\mathbf{\theta}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{aligned}\psi_{L}^{T}\rightarrow & \psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}=\psi_{L}^{T}S_{L}^{T}\\
+\psi_{R}^{T}\rightarrow & \psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}=\psi_{R}^{T}S_{R}^{T}
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+w
+\end_layout
+
+\begin_layout Standard
+hich in a compact form is 
+\begin_inset Formula \[
+\psi^{T}\rightarrow\psi^{T}\Lambda_{1/2}^{T}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+NB: from 
+\begin_inset Formula \[
+\begin{aligned}\sigma^{1} & = & \left(\begin{array}{cc}
+0 & 1\\
+1 & 0
+\end{array}\right)\\
+\sigma^{2} & = & \left(\begin{array}{cc}
+0 & -i\\
+i & 0
+\end{array}\right)\\
+\sigma^{3} & = & \left(\begin{array}{cc}
+1 & 0\\
+0 & -1
+\end{array}\right)
+\end{aligned}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+i
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+t's obvious that 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{alignedat}{2}\left(\sigma^{1}\right)^{T} & = & \sigma^{1}\\
+\left(\sigma^{2}\right)^{T} & = & -\sigma^{2}\\
+\left(\sigma^{3}\right)^{T} & = & \sigma^{3}
+\end{alignedat}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Further, we can use the fact that 
+\begin_inset Formula $\{\sigma^{i},\sigma^{k}\}=2\delta^{ik}$
+\end_inset
+
+ to see that 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{alignedat}{2}\left(\sigma^{1}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{1}\\
+\left(\sigma^{2}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{2}\\
+\left(\sigma^{3}\right)^{T}\sigma^{2} & = & -\sigma^{2}\sigma^{3}
+\end{alignedat}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+consider the object 
+\begin_inset Formula $\psi_{L}^{T}\sigma^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\psi_{L}^{T}\sigma^{2}\rightarrow\psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}\sigma^{2}=\psi_{L}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{L}^{T}\sigma^{2}S_{L}^{-1}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+s
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+imilarly 
+\begin_inset Formula \[
+\psi_{R}^{T}\sigma^{2}\rightarrow\psi_{R}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}^{T}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}^{T}}{2}}\sigma^{2}=\psi_{R}^{T}\sigma^{2}e^{-\left(-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}+\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}\right)}=\psi_{R}^{T}\sigma^{2}S_{R}^{-1}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+We want to make it compact. To that end, we note 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\psi^{T}C=i\left(\begin{array}{cc}
+\psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)\left(\begin{array}{cc}
+\sigma^{2} & 0\\
+0 & -\sigma^{2}
+\end{array}\right)=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2} & -\psi_{R}^{T}\sigma^{2}\end{array}\right)
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+so that the transformation is 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\psi^{T}C\rightarrow i\left(\begin{array}{cc}
+\psi_{L}^{T}S_{L}^{T}\sigma^{2} & -\psi_{R}^{T}S_{R}^{T}\sigma^{2}\end{array}\right)\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+
+\begin_inset Formula \[=i\left(\begin{array}{cc}
+\psi_{L}^{T}\sigma^{2}S_{L}^{-1} & -\psi_{R}^{T}\sigma^{2}S_{R}^{-1}\end{array}\right)=\psi^{T}C\lambda_{1/2}^{-1}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+And what will all of this do? Well, it means that 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\psi^{T}C\psi\rightarrow\psi^{T}C\lambda_{1/2}^{-1}\lambda_{1/2}\psi=\psi^{T}C\psi
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Result: We have arrived at a Lorentz scalar!
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Comments: 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+We could've arrived at the same result by simply noting that 
+\begin_inset Formula $\lambda_{1/2}^{T}C\lambda_{1/2}=C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+I can write 
+\begin_inset Formula $C$
+\end_inset
+
+ as a product of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ matrices as 
+\begin_inset Formula \[
+				C=i\left(\begin{array}{cc}
+				\sigma^{2} & 0\\
+				0 & -\sigma^{2}
+				\end{array}\right)=-i\gamma^{2}\gamma^{0}
+				\]
+\end_inset
+
+which is easy to verify. 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Defn: A different mass term 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\begin_inset Formula \[
+\begin{alignedat}{2}\mathcal{L}_{\text{Majorana Mass}} & \sim & m\psi^{T}C\psi\\
+ & = & -im\left(\Psi_{L}^{T}+\Psi_{R}^{T}\right)\gamma^{2}\gamma^{0}\left(\Psi_{L}+\Psi_{R}\right)\\
+ & = & -im\left(\Psi_{L}^{T}\gamma^{2}\gamma^{0}\Psi_{L}+\Psi_{R}^{T}\gamma^{2}\gamma^{0}\Psi_{R}\right)\\
+ & = & m\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{R}^{T}C\Psi_{R}\right)
+\end{alignedat}
+\]
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+Result: Does 
+\emph on
+not
+\emph default
+ mix the left and right spinors! 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To ensure reality, we add 
+\begin_inset Formula $-m\psi^{\dagger}C\psi^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Concluding Remarks: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Majorana fermion is s.t. 
+\begin_inset Formula $\psi$
+\end_inset
+
+ equals it's own `conjugate'. 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+R
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+educes dof from 4 to 2 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset Formula $C$
+\end_inset
+
+ is closely related to the charge conjugation operator 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Majorana Mass
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+Concluding Results: 
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+The Lagrangian with the `kinetic part' is 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+		\begin{alignedat}{2}\mathcal{L}_{\text{Majorana}} & = & \psi_{L}^{\dagger}i\overline{\sigma}.\partial\psi_{L}+\frac{im}{2}\left(\psi_{L}^{T}\sigma^{2}\psi_{L}-\psi_{L}^{\dagger}\sigma^{2}\psi_{L}^{*}\right)\\
+		 & = & i\overline{\Psi}_{L}\cancel{\partial}\Psi_{L}-\frac{m}{2}\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{L}^{\dagger}C\Psi_{L}^{*}\right)
+		\end{alignedat}
+		\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Corresponding Euler Lagrange 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+		\begin{aligned}i\overline{\sigma}.\partial\psi_{L}-im\sigma^{2}\psi_{L}^{*} & =0\end{aligned}
+		\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+w
+\end_layout
+
+\begin_layout Standard
+hich implies that the Klien Gordan is satisfied and 
+\end_layout
+
+\begin_layout Pause
+i
+\end_layout
+
+\begin_layout Standard
+t is itself is Lorentz invariant. 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_deeper
+\begin_layout Section
+Physical Relevance
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+Physical Relevance
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+% 
+\backslash
+tiny{
+\backslash
+centerline{first demonstrated to us by Prof. Arvind}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+Physical Relevance
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+No `right handed' neutrinos 
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Standard
+`left handed' nearly massless 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The great Standard Model has the term 
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset Formula \[
+\mathcal{L}=\overline{\nu}_{L}i\cancel{\partial}\nu_{L}
+\]
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To implement mass, we must handle half a spinor 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dirac mass as we know it, necessarily mixes the left and right handed part 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this sense, Majorana spinors and the Majorana mass associated can describe neutrinos 
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Pause
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+item 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There're alternatives, such as `see-saw' model
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Section
+Closing Remarks
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+The End
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Frame
+
+\size giant
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+?
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\begin_inset Note Note
+status closed
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_deeper
+\begin_layout FrameTitle
+References
+\end_layout
+
+\end_deeper
+\begin_deeper
+\begin_layout Itemize
+An Introduction to Quantum Field Theory
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+M. E. Peskin, D. V. Schroeder
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Addison-Wesley Publishing Company
+\series default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+PHY659 Lectures
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Prof. C. S. Aulakh
+\emph default
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Spring 2015, IISER Mohali
+\series default
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%----------------------------------------------------------------------------------------
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_deeper
+\end_body
+\end_document

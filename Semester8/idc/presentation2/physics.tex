@@ -15,7 +15,7 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
-\documentclass[9pt]{beamer}
+\documentclass{beamer}
 
 \mode<presentation> {
 
@@ -51,8 +51,6 @@
 %\usetheme{Szeged}
 %\usetheme{Warsaw}
 
-%\useoutertheme{infolines}
-
 % As well as themes, the Beamer class has a number of color themes
 % for any slide theme. Uncomment each of these in turn to see how it
 % changes the colors of your current slide theme.
@@ -73,9 +71,9 @@
 %\usecolortheme{wolverine}
 
 %\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-\setbeamertemplate{footline}[frame number] % To replace the footer line in all slides with a simple slide count uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
-\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
 \usepackage{graphicx} % Allows including images
@@ -215,11 +213,11 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 				\item State: $\ket{\psi}$ (or $\psi(x)=\left\langle x|\psi\right\rangle$)
 				\pause
 				\item Time Evolution: For $H$ (st. $H^{\dagger}=H$; where $H^{\dagger}\equiv H^{*T}$) we have 
-				\[H\left|\psi\right\rangle =i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle\] 
+				\[H\left|\psi\right\rangle =-i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle\] 
 				\pause
 				and
-				\[\left|\psi(t)\right\rangle =e^{(i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle \]
-				NB: $U\equiv e^{(i\hbar)^{-1}Ht}$ is unitary, viz. $U^{\dagger}=U^{-1}$
+				\[\left|\psi(t)\right\rangle =e^{(-i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle \]
+				NB: $U\equiv e^{(-i\hbar)^{-1}Ht}$ is unitary, viz. $U^{\dagger}=U^{-1}$
 				\pause
 				\item Measurement/Observables
 				\begin{itemize}
@@ -264,7 +262,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 		\end{itemize}
 \end{frame}
 
-\section{Quantum theory of fields}
+\section{Towards a quantum theory of fields}
 \begin{frame}	
 	\Huge{\centerline{Towards a}}
 	\Huge{\centerline{quantum theory of fields}}
@@ -287,7 +285,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 			\pause
 			\item Consistent with STR (high energy)
 			\pause
-			\item Predict probabilities			
+			\item Predict probablities			
 		\end{itemize}
 \end{frame}
 
@@ -296,14 +294,13 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 		\begin{itemize}
 			\item $\left(E^{2}-\vec{p}^{2}\right)\psi=m^{2}\psi$ \pause 
 
-			and put $E\to i\frac{\partial}{\partial t}, \vec{p}\rightarrow -i\vec{\nabla}$ to get
+			and put $E\to-i\frac{\partial}{\partial t}, \vec{p}\rightarrow i\vec{\nabla}$ to get
 
 			\pause
 \[
 ( \frac{\partial}{\partial t}^{2}-\vec{\nabla}^{2} ) \psi=m^{2}\psi
 \]
 			\pause
-			(Klein Gordon Equation)
 			\item Causality
 			\pause
 			\item Negative Energies (no stable ground state)
@@ -329,7 +326,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 		\begin{itemize}
 			\item Classical field | real scalar (number at every space time point)
 			\pause
-			\item Demand Klein Gordon, then 
+			\item Demand Klien Gordan, then 
 			\[
 				\mathcal{L}=\frac{1}{2}\left(\partial^{\mu}\phi\partial_{\mu}\phi+m^{2}\phi\right)
 			\]
@@ -391,7 +388,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 			\item Interacting case, $m$ no longer the mass
 			\pause
 			\begin{itemize}
-				\item defined as pole of the `full propagator' \pause (I'll leave it at that)
+				\item defined as pole of the `full propogator' \pause (I'll leave it at that)
 			\end{itemize}
 		\end{itemize}
 \end{frame}
@@ -425,7 +422,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 		\pause 
 		\item 
 
-		To be Klein Gordon, $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$
+		To be Klein Gordan, $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$
 
 		\pause
 		\item Claim
@@ -465,7 +462,7 @@ Indian Institute of Science Education and Research Mohali \\ % Your institution 
 \psi_{R}
 \end{array}\right)
 \]
-under a Lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$
+under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$
 \pause
 \[
 \begin{aligned}\psi_{L}\rightarrow & e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma}}{2}}\psi_{L}=S_{L}\psi_{L}\\
@@ -480,7 +477,7 @@ which in a compact form, I'll write as
 
 		\item $\psi^{\dagger}\psi$ \pause | not Lorentz invariant
 		\pause
-		\item $S_{L}$ and $S_{R}$ are not unitary
+		\item $\psi_{L}$ and $\psi_{R}$ is not unitary
 	\end{itemize}
 \end{frame}
 
@@ -706,7 +703,7 @@ both are correct and equivalent
 \end{aligned}
 \]
 \pause
-		\item In this notation also, there's mixing
+		\item In this notationa also, there's mixing
 
 
 
@@ -742,7 +739,7 @@ C=i\left(\begin{array}{cc}
 \psi_{L}^{T} & \psi_{R}^{T}\end{array}\right)
 \]
 \pause
-under a Lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$,
+under a lorentz boost $\mathbf{\beta}$ and a rotation $\mathbf{\theta}$,
 \pause
 \[
 \begin{aligned}\psi_{L}^{T}\rightarrow & \psi_{L}^{T}e^{-i\mathbf{\theta}.\frac{\mathbf{\sigma^{T}}}{2}-\mathbf{\beta}.\frac{\mathbf{\sigma^{T}}}{2}}=\psi_{L}^{T}S_{L}^{T}\\
@@ -1031,7 +1028,7 @@ Further, we can use the fact that $\{\sigma^{i},\sigma^{k}\}=2\delta^{ik}$ to se
 		\begin{aligned}i\overline{\sigma}.\partial\psi_{L}-im\sigma^{2}\psi_{L}^{*} & =0\end{aligned}
 		\]
 		\pause
-		which implies that the Klein Gordon is satisfied and \pause it is itself is Lorentz invariant.
+		which implies that the Klien Gordan is satisfied and \pause it is itself is Lorentz invariant.
 		\end{itemize}
 
 
@@ -1100,32 +1097,14 @@ Further, we can use the fact that $\{\sigma^{i},\sigma^{k}\}=2\delta^{ik}$ to se
 		\emph{M. E. Peskin, D. V. Schroeder} 
 
 		\textbf{Addison-Wesley Publishing Company}
-
 		\item PHY659 Lectures
 
 		\emph{Prof. C. S. Aulakh}
 
 		\textbf{Spring 2015, IISER Mohali}
-
-		\item Quantum Field Theory, Second Edition
-
-		\emph{L. H. Ryder} 
-
-		\textbf{Cambridge University Press}
-
 	\end{itemize}
 
 \end{frame}
-
-\begin{frame}
-	\frametitle{Acknowledgement}
-	\begin{itemize}
-		\item Indian Institute of Science Education and Research, Mohali
-		\item Kishor Vaigyanik Protsahan Yojna, Department of Science and Technology
-	\end{itemize}
-
-\end{frame}
-
 %----------------------------------------------------------------------------------------
 
 \end{document} 

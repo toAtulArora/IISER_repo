@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  18 APR 2015 08:03
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.19)  17 APR 2015 15:49
 entering extended mode
 **C:/Users/Atul/Documents/IISER_repo/Semester8/idc/presentation/physics.tex
 (C:/Users/Atul/Documents/IISER_repo/Semester8/idc/presentation/physics.tex
@@ -114,8 +114,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\extsizes\size9.clo"
-File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
@@ -779,20 +779,20 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 File: latin9.def 2008/03/30 v1.1d Input encoding file
 ))
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -813,12 +813,12 @@ LaTeX Font Info:    ... okay on input line 108.
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=9.0pt
+* \topskip=11.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -843,7 +843,7 @@ LaTeX Font Info:    ... okay on input line 108.
 \everyMPtoPDFconversion=\toks43
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 108.
+Package hyperref Info: Link coloring OFF on input line 106.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -853,71 +853,71 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count163
 )
-LaTeX Info: Redefining \ref on input line 108.
-LaTeX Info: Redefining \pageref on input line 108.
-LaTeX Info: Redefining \nameref on input line 108.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.out)
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.out)
 \@outlinefile=\write5
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/ccr/m/n --> OT1/cmss/m/n on input line 108.
+(Font)                  OT1/ccr/m/n --> OT1/cmss/m/n on input line 106.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/ccr/m/n --> OT1/cmss/bx/n on input line 108.
+(Font)                  OT1/ccr/m/n --> OT1/cmss/bx/n on input line 106.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/ccr/m/n on input line 108.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 108.
+(Font)                  OT1/cmss/m/n --> T1/ccr/m/n on input line 106.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/ccr/bx/n --> T1/cmss/bx/n on input line 108.
+(Font)                  OT1/ccr/bx/n --> T1/cmss/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/ccr/bx/n --> T1/cmss/bx/n on input line 108.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 108.
+(Font)                  OT1/ccr/bx/n --> T1/cmss/bx/n on input line 106.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 108.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 108.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 108.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 106.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/ccr/m/it --> T1/cmss/m/it on input line 108.
+(Font)                  OT1/ccr/m/it --> T1/cmss/m/it on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ccr/m/it --> T1/cmss/m/it on input line 108.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 108.
+(Font)                  OT1/ccr/m/it --> T1/cmss/m/it on input line 106.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 108.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 108.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 106.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 108.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 106.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 108.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/ccr/bx/n on input line 108.
+(Font)                  OT1/cmss/bx/n --> T1/ccr/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 108.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 108.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 108.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 106.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 108.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 108.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 106.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 106.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
 (Font)              `pureletters' in the math version `normal' on input line 10
-8.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 10
-8.
+6.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 108.
+(Font)              `pureletters' in the math version `bold' on input line 106.
 
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
-08.
+06.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 108.
+ut line 106.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
 -basic-dictionary\translator-basic-dictionary-English.dict"
@@ -943,444 +943,1598 @@ Dictionary: translator-numbers-dictionary, Language: English
 -theorem-dictionary\translator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 108.
+LaTeX Info: Redefining \includegraphics on input line 106.
 
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.nav)
+Overfull \hbox (61.53426pt too wide) detected at line 106
+  [] [] [] [] [] [] [] []  
+ []
+
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 112.
+(Font)              size <5> substituted on input line 110.
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
 [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.toc)
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [2
 
-] [3
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[3
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 160
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 158
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 160.
+LaTeX Font Info:    No file OMScmss.fd. on input line 158.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 160.
+(Font)              for symbol `textbullet' on input line 158.
 
-LaTeX Font Info:    Try loading font information for OML+ccm on input line 160.
+LaTeX Font Info:    Try loading font information for OML+ccm on input line 158.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omlccm.fd"
 File: omlccm.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 160
+LaTeX Font Info:    Try loading font information for OMS+ccsy on input line 158
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omsccsy.fd"
 File: omsccsy.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
-LaTeX Font Info:    Try loading font information for OMX+ccex on input line 160
+LaTeX Font Info:    Try loading font information for OMX+ccex on input line 158
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\concmath\omxccex.fd"
 File: omxccex.fd 1999/03/10 v2.0b LaTeX font defs for Concrete math fonts
 )
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <9> on input line 160.
+(Font)              <10.95> on input line 158.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <6> on input line 160.
+(Font)              <8> on input line 158.
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <5> on input line 160.
+(Font)              <6> on input line 158.
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 160.
+line 158.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <7> on input line 160.
+(Font)              <9> on input line 158.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <5> on input line 158.
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
 [4
 
-] [5
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [6
+[5
 
-] [7
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [8
+[6
 
-] [9
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [10
+[7
 
-] [11
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [12
+[8
 
-] [13
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [14
+[9
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[10
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[11
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[12
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[13
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[14
 
 ]
 LaTeX Font Info:    External font `xccex10' loaded for size
-(Font)              <8> on input line 196.
- [15
+(Font)              <10> on input line 194.
+LaTeX Font Info:    External font `xccex10' loaded for size
+(Font)              <7> on input line 194.
 
-] [16
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [17
-
-] [18
-
-] [19
+[15
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[16
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[17
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[18
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[19
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [20
 
-] [21
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
-] [34
+[21
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[22
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[23
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[24
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[25
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[26
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[27
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[28
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[29
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[30
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[31
+
+]
+Overfull \vbox (9.76593pt too high) detected at line 232
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[32
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[33
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[34
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [35
 
-] [36
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
+[36
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[37
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[38
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[39
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[40
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[41
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[42
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[43
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[44
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[45
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[46
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[47
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[48
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[49
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [50
 
-] [51
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [52
-
-] [53
-
-] [54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-] [62
-
-] [63
-
-] [64
+[51
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[52
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[53
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[54
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[55
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[56
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[57
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[58
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[59
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[60
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[61
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[62
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[63
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[64
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [65
 
-] [66
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [67
-
-] [68
-
-] [69
-
-] [70
-
-] [71
-
-] [72
-
-] [73
-
-] [74
-
-] [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
+[66
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[67
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[68
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[69
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[70
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[71
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[72
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[73
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[74
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[75
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[76
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[77
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[78
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[79
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [80
 
-] [81
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [82
-
-] [83
-
-] [84
-
-] [85
-
-] [86
-
-] [87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-] [92
-
-] [93
-
-] [94
+[81
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[82
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[83
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[84
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[85
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[86
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[87
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[88
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[89
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[90
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[91
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[92
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[93
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[94
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [95
 
-] [96
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [97
-
-] [98
-
-] [99
-
-] [100
-
-] [101
-
-] [102
-
-] [103
-
-] [104
-
-] [105
-
-] [106
-
-] [107
+[96
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[97
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[98
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[99
+
+]
+Overfull \hbox (6.1383pt too wide) detected at line 544
+\OT1/mathkerncmss/m/sl/10.95 m[]\OML/ccm/m/it/10.95   \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 m [] [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/
+sl/10.95 m\OT1/cmss/m/n/10.95 (\OML/ccm/m/it/10.95  [] [] \OT1/cmss/m/n/10.95 +
+ \OML/ccm/m/it/10.95  [] []\OT1/cmss/m/n/10.95 )
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[100
+
+]
+Overfull \hbox (6.1383pt too wide) detected at line 544
+\OT1/mathkerncmss/m/sl/10.95 m[]\OML/ccm/m/it/10.95   \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 m [] [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/
+sl/10.95 m\OT1/cmss/m/n/10.95 (\OML/ccm/m/it/10.95  [] [] \OT1/cmss/m/n/10.95 +
+ \OML/ccm/m/it/10.95  [] []\OT1/cmss/m/n/10.95 )
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[101
+
+]
+Overfull \hbox (6.1383pt too wide) detected at line 544
+\OT1/mathkerncmss/m/sl/10.95 m[]\OML/ccm/m/it/10.95   \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 m [] [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/
+sl/10.95 m\OT1/cmss/m/n/10.95 (\OML/ccm/m/it/10.95  [] [] \OT1/cmss/m/n/10.95 +
+ \OML/ccm/m/it/10.95  [] []\OT1/cmss/m/n/10.95 )
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[102
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[103
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[104
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[105
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[106
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[107
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [108
 
-] [109
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [110
-
-] [111
-
-] [112
-
-] [113
-
-] [114
-
-] [115
-
-] [116
-
-] [117
-
-] [118
-
-] [119
+[109
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[110
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[111
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[112
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[113
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[114
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[115
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[116
+
+]
+Overfull \hbox (33.68486pt too wide) detected at line 674
+[] \OT1/cmss/m/n/10.95 = \OML/ccm/m/it/10.95  [][] \OT1/cmss/m/n/10.95 = \OML/
+ccm/m/it/10.95  []\T1/cmss/m/n/10.95 1[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/1
+0.95 = \OML/ccm/m/it/10.95  [] [] [] \OT1/cmss/m/n/10.95 = 	[]\OML/ccm/m/it/10
+.95 [] \OT1/cmss/m/n/10.95 + 	[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = 
+[][] + [][]
+ []
+
+
+Overfull \hbox (11.72942pt too wide) detected at line 674
+[] []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[117
+
+]
+Overfull \hbox (33.68486pt too wide) detected at line 674
+[] \OT1/cmss/m/n/10.95 = \OML/ccm/m/it/10.95  [][] \OT1/cmss/m/n/10.95 = \OML/
+ccm/m/it/10.95  []\T1/cmss/m/n/10.95 1[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/1
+0.95 = \OML/ccm/m/it/10.95  [] [] [] \OT1/cmss/m/n/10.95 = 	[]\OML/ccm/m/it/10
+.95 [] \OT1/cmss/m/n/10.95 + 	[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = 
+[][] + [][]
+ []
+
+
+Overfull \hbox (11.72942pt too wide) detected at line 674
+[] []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[118
+
+]
+Overfull \hbox (33.68486pt too wide) detected at line 674
+[] \OT1/cmss/m/n/10.95 = \OML/ccm/m/it/10.95  [][] \OT1/cmss/m/n/10.95 = \OML/
+ccm/m/it/10.95  []\T1/cmss/m/n/10.95 1[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/1
+0.95 = \OML/ccm/m/it/10.95  [] [] [] \OT1/cmss/m/n/10.95 = 	[]\OML/ccm/m/it/10
+.95 [] \OT1/cmss/m/n/10.95 + 	[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = 
+[][] + [][]
+ []
+
+
+Overfull \hbox (11.72942pt too wide) detected at line 674
+[] []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[119
+
+]
+Overfull \hbox (33.68486pt too wide) detected at line 674
+[] \OT1/cmss/m/n/10.95 = \OML/ccm/m/it/10.95  [][] \OT1/cmss/m/n/10.95 = \OML/
+ccm/m/it/10.95  []\T1/cmss/m/n/10.95 1[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/1
+0.95 = \OML/ccm/m/it/10.95  [] [] [] \OT1/cmss/m/n/10.95 = 	[]\OML/ccm/m/it/10
+.95 [] \OT1/cmss/m/n/10.95 + 	[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = 
+[][] + [][]
+ []
+
+
+Overfull \hbox (11.72942pt too wide) detected at line 674
+[] []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [120
 
-] [121
+]
+Overfull \hbox (33.68486pt too wide) detected at line 674
+[] \OT1/cmss/m/n/10.95 = \OML/ccm/m/it/10.95  [][] \OT1/cmss/m/n/10.95 = \OML/
+ccm/m/it/10.95  []\T1/cmss/m/n/10.95 1[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/1
+0.95 = \OML/ccm/m/it/10.95  [] [] [] \OT1/cmss/m/n/10.95 = 	[]\OML/ccm/m/it/10
+.95 [] \OT1/cmss/m/n/10.95 + 	[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = 
+[][] + [][]
+ []
 
-] [122
 
-] [123
+Overfull \hbox (11.72942pt too wide) detected at line 674
+[] []
+ []
 
-] [124
 
-] [125
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [126
-
-] [127
-
-] [128
-
-] [129
-
-] [130
-
-] [131
+[121
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[122
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[123
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[124
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[125
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[126
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[127
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[128
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[129
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[130
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[131
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [132
 
-] [133
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [134
-
-] [135
-
-] [136
-
-] [137
-
-] [138
-
-] [139
-
-] [140
-
-] [141
-
-] [142
-
-] [143
+[133
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[134
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[135
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[136
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[137
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[138
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[139
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[140
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[141
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[142
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[143
+
+]
+Overfull \hbox (10.62907pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (11.74571pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  [][] \OMS/ccsy/m/n/10.95 ! \OML/ccm/m/it/10.95  []\OT1/ma
+thkerncmss/m/sl/10.95 e[]\OML/ccm/m/it/10.95 [] \OT1/cmss/m/n/10.95 = \OML/ccm
+/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 e[] \OT1/cmss/m/n/10.95 = \OML/c
+cm/m/it/10.95  [][]\OT1/mathkerncmss/m/sl/10.95 S[]
+ []
+
+
+Overfull \hbox (2.96533pt too wide) detected at line 873
+\OML/ccm/m/it/10.95  []\OT1/mathkerncmss/m/sl/10.95 C \OT1/cmss/m/n/10.95 = \OT
+1/mathkerncmss/m/sl/10.95 i [] [] \OT1/cmss/m/n/10.95 = \OT1/mathkerncmss/m/sl/
+10.95 i []
+ []
+
+
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [144
 
-] [145
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [146
-
-] [147
-
-] [148
-
-] [149
-
-] [150
-
-] [151
-
-] [152
-
-] [153
-
-] [154
-
-] [155
+[145
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[146
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[147
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[148
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[149
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[150
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[151
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[152
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[153
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[154
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[155
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [156
 
-] [157
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [158
-
-] [159
-
-] [160
-
-] [161
-
-] [162
-
-] [163
-
-] [164
-
-] [165
-
-] [166
-
-] [167
+[157
 
 ]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[158
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[159
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[160
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[161
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[162
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[163
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[164
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[165
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[166
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[167
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
 [168
 
-] [169
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [170
+[169
 
-] [171
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [172
+[170
 
-] [173
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [174
+[171
 
-] [175
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [176
+[172
 
-] [177
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
 
-] [178
+[173
 
-] [179
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[174
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[175
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[176
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[177
+
+]
+Overfull \hbox (61.53426pt too wide) has occurred while \output is active
+  [] [] [] [] [] [] [] []  
+ []
+
+[178
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1131.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1131.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1110.
 
 (C:\Users\Atul\Documents\IISER_repo\Semester8\idc\presentation\physics.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1131.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1131.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1110.
 
 Package rerunfilecheck Info: File `physics.out' has not changed.
-(rerunfilecheck)             Checksum: 418BFBBEA1F7CA64912CA7FC5A16EC9D;364.
+(rerunfilecheck)             Checksum: B39B6A02509E363BCEDFEDD0B80482D6;374.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1389,53 +2543,58 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1131.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1110.
  ) 
 Here is how much of TeX's memory you used:
- 16540 strings out of 493921
- 304492 string characters out of 3147285
- 376108 words of memory out of 3000000
- 19038 multiletter control sequences out of 15000+200000
- 22333 words of font info for 59 fonts, out of 3000000 for 9000
+ 16557 strings out of 493921
+ 304706 string characters out of 3147285
+ 378316 words of memory out of 3000000
+ 19049 multiletter control sequences out of 15000+200000
+ 28862 words of font info for 75 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  56i,19n,56p,459b,591s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-csi0900.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
-\dpi600\ecsx0500.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecsx0900.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\
-ljfour\jknappen\ec\dpi600\ecsx0600.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\public\concmath\dpi600\xccsy9.pk> <C:\Users\Atul\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi9.pk> <C:\Users\Atul\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccsy7.pk> <C:\Use
-rs\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccsy5.
-pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi
-600\xccbm6.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\c
-oncmath\dpi600\xccex10.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\public\concmath\dpi600\xccmi7.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\f
-onts\pk\ljfour\public\concmath\dpi600\xccbm8.pk> <C:\Users\Atul\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccsy6.pk> <C:\Users\Atul\AppD
-ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccsy8.pk> <C:\User
-s\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi6.p
-k> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi6
-00\xccmi8.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\co
-ncmath\dpi600\xccmi5.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfou
-r\jknappen\ec\dpi600\ecss0700.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts
-\pk\ljfour\jknappen\ec\dpi600\ecss0800.pk> <C:\Users\Atul\AppData\Local\MiKTeX\
-2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1728.pk> <C:\Users\Atul\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk> <C:\Users\Atul\App
-Data\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0900.pk> <C:\Users
-\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1095.pk> 
+csi1095.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec
+\dpi600\ecsx0600.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
+nappen\ec\dpi600\ecsx1095.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\
+ljfour\public\concmath\dpi600\xccsy8.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.
+9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx0800.pk> <C:\Users\Atul\AppData\Local\
+MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi8.pk> <C:\Users\Atul\App
+Data\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi657\xccsy10.pk> <C:\Us
+ers\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi657\xccmi1
+0.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\d
+pi600\xccsy9.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
+en\ec\dpi600\ecss0500.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfo
+ur\public\concmath\dpi600\xccsy5.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fo
+nts\pk\ljfour\public\concmath\dpi600\xccbm7.pk> <C:\Users\Atul\AppData\Local\Mi
+KTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccex10.pk> <C:\Users\Atul\AppD
+ata\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi9.pk> <C:\User
+s\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccbm10.
+pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecss0700.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\con
+cmath\dpi600\xccsy7.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\public\concmath\dpi600\xccsy10.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\public\concmath\dpi600\xccmi7.pk> <C:\Users\Atul\AppData\Local\MiK
+TeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi10.pk> <C:\Users\Atul\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\public\concmath\dpi600\xccmi6.pk> <C:\Users
+\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0900.pk> 
 <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss
-0500.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/latxfont/line10.pfb>
-Output written on physics.pdf (179 pages, 824553 bytes).
+1000.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\ecss2488.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
+pen\ec\dpi600\ecss0800.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecss1095.pk> <C:\Users\Atul\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecss1440.pk> <C:\Users\Atul\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecss0600.pk><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmssi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb>
+Output written on physics.pdf (178 pages, 1576331 bytes).
 PDF statistics:
- 2890 PDF objects out of 2984 (max. 8388607)
- 366 named destinations out of 1000 (max. 500000)
+ 6463 PDF objects out of 7423 (max. 8388607)
+ 364 named destinations out of 1000 (max. 500000)
  105 words of extra memory for PDF output out of 10000 (max. 10000000)
 

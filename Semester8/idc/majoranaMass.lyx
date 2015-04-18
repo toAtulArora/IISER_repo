@@ -110,13 +110,13 @@ The concept of mass is intuitively linked with inertia.
  Assuming the knowledge of STR and QM, I'll motivate the concept of fields
  and particles and briefly describe how it all fits to describe fundamental
  particles.
- Thereafter, I'll take the example of a Klein Gordan Field (obtained by
+ Thereafter, I'll take the example of a Klein Gordon Field (obtained by
  replacing 
 \begin_inset Formula $E$
 \end_inset
 
  with 
-\begin_inset Formula $-i\hbar\frac{\partial}{\partial t}$
+\begin_inset Formula $i\hbar\frac{\partial}{\partial t}$
 \end_inset
 
  and 
@@ -124,7 +124,7 @@ The concept of mass is intuitively linked with inertia.
 \end_inset
 
  with 
-\begin_inset Formula $i\hbar\vec{\nabla}$
+\begin_inset Formula $-i\hbar\vec{\nabla}$
 \end_inset
 
  in 
@@ -247,7 +247,7 @@ Under a Lorentz transformation
 \begin_inset Formula $A^{\alpha}\to A'^{\alpha}=\lambda_{\beta}^{\alpha}A^{\beta}$
 \end_inset
 
-; objects with all indices contracted are invariant under lorentz transformation
+; objects with all indices contracted are invariant under Lorentz transformation
 s (NB: 
 \begin_inset Formula $\lambda^{T}\eta\lambda=\eta$
 \end_inset
@@ -290,7 +290,7 @@ Time evolution: Given a Hermitian operator
 ), 
 \begin_inset Formula 
 \[
-H\left|\psi\right\rangle =-i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle 
+H\left|\psi\right\rangle =i\hbar\frac{\partial}{\partial t}\left|\psi\right\rangle 
 \]
 
 \end_inset
@@ -300,12 +300,12 @@ When
 \end_inset
 
  has no time dependence, then 
-\begin_inset Formula $\left|\psi(t)\right\rangle =e^{(-i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle $
+\begin_inset Formula $\left|\psi(t)\right\rangle =e^{(i\hbar)^{-1}Ht}\left|\psi(0)\right\rangle $
 \end_inset
 
 .
  NB: 
-\begin_inset Formula $U\equiv e^{(-i\hbar)^{-1}Ht}$
+\begin_inset Formula $U\equiv e^{(i\hbar)^{-1}Ht}$
 \end_inset
 
 , is unitary, viz.
@@ -389,9 +389,15 @@ Terminology from particle physics maybe helpful
 \end_layout
 
 \begin_layout Itemize
-Leptons [TODO: Complete this part]
+Leptons
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Electrons, Neutrinos
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Quarks
 \end_layout
@@ -424,7 +430,7 @@ Known Issues
 
 \begin_layout Standard
 One may guess that instead of writing 
-\begin_inset Formula $H_{\text{classical}}\psi=-i\hbar\frac{\partial}{\partial t}\psi$
+\begin_inset Formula $H_{\text{classical}}\psi=i\hbar\frac{\partial}{\partial t}\psi$
 \end_inset
 
 , if we write the relativistic version as 
@@ -432,11 +438,11 @@ One may guess that instead of writing
 \end_inset
 
  and replace 
-\begin_inset Formula $E\to-i\frac{\partial}{\partial t}$
+\begin_inset Formula $E\to i\frac{\partial}{\partial t}$
 \end_inset
 
 , 
-\begin_inset Formula $\vec{p}\rightarrow i\vec{\nabla}$
+\begin_inset Formula $\vec{p}\rightarrow-i\vec{\nabla}$
 \end_inset
 
 , we get 
@@ -530,7 +536,7 @@ Framework: QFT
 Let us start with a classical field.
  Consider the simplest case, a real scalar field.
  Imagine a number being assigned to every location in space and time.
- If I demand that the field must satisfy the Klien Gordan equation
+ If I demand that the field must satisfy the Klein Gordon equation
 \begin_inset Foot
 status collapsed
 
@@ -566,7 +572,7 @@ by noting that the equation of motion produced by this
 \begin_inset Formula $\mathcal{L}$
 \end_inset
 
- is the Klien Gordan equation itself.
+ is the Klein Gordon equation itself.
  Note that in general, 
 \begin_inset Formula $\phi=\phi(t,\vec{x})$
 \end_inset
@@ -635,7 +641,7 @@ This now has striking similarities to the quantum harmonic oscillator.
 \begin_inset Formula $a^{\dagger}(\vec{p})\left|\text{vacuum}\right\rangle $
 \end_inset
 
- which can be rigerously shown to be particles indeed.
+ which can be rigorously shown to be particles indeed.
  From the space-time translation invariance, one can arrive
 \begin_inset Foot
 status collapsed
@@ -681,7 +687,7 @@ In the discussion of mass, it must be mentioned that when interactions are
 \end_inset
 
  in the Lagrangian, no longer represents mass.
- In that case, it is defined as the pole of the `full propogator'.
+ In that case, it is defined as the pole of the `full propagator'.
  I'll leave it at that.
 \end_layout
 
@@ -698,7 +704,7 @@ Let us now consider the famous Dirac equation and the particles its field
  produces.
  I must begin with motivating the Dirac equation, because it can be overwhelming
  at first.
- The idea was to factor the Klien Gordan equation.
+ The idea was to factor the Klein Gordon equation.
  So I start with writing an equation of the form 
 \begin_inset Formula 
 \[
@@ -742,7 +748,7 @@ where
 
 \end_inset
 
-Now if I want this to become Klien Gordan, it's trivial to conclude that
+Now if I want this to become Klein Gordon, it's trivial to conclude that
  
 \begin_inset Formula $\{\gamma^{\mu},\gamma^{\nu}\}=-2\delta^{\mu\nu}$
 \end_inset
@@ -824,7 +830,7 @@ The Dirac Lagrangian
 
 \end_inset
 
-then under a lorentz boost 
+then under a Lorentz boost 
 \begin_inset Formula $\mathbf{\beta}$
 \end_inset
 
@@ -974,7 +980,7 @@ which in this case, (treating
 \end_layout
 
 \begin_layout Standard
-Since this discussion is focussed on the mass term, let me expand it for
+Since this discussion is focused on the mass term, let me expand it for
  you.
  
 \begin_inset Formula 
@@ -1234,7 +1240,7 @@ If I write
 
 \end_inset
 
-then under a lorentz boost 
+then under a Lorentz boost 
 \begin_inset Formula $\mathbf{\beta}$
 \end_inset
 
@@ -1472,7 +1478,7 @@ The Lagrangian with the `kinetic part' is
 \begin_inset Formula 
 \[
 \begin{alignedat}{2}\mathcal{L}_{\text{Majorana}} & = & \psi_{L}^{\dagger}i\overline{\sigma}.\partial\psi_{L}+\frac{im}{2}\left(\psi_{L}^{T}\sigma^{2}\psi_{L}-\psi_{L}^{\dagger}\sigma^{2}\psi_{L}^{*}\right)\\
- & = & i\Psi_{L}^{\dagger}\cancel{\partial}\Psi_{L}-\frac{m}{2}\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{L}^{\dagger}C\Psi_{L}^{*}\right)
+ & = & i\overline{\Psi}_{L}\cancel{\partial}\Psi_{L}-\frac{m}{2}\left(\Psi_{L}^{T}C\Psi_{L}+\Psi_{L}^{\dagger}C\Psi_{L}^{*}\right)
 \end{alignedat}
 \]
 
@@ -1490,7 +1496,7 @@ Corresponding Euler Lagrange
 
 \end_inset
 
-which implies that the Klien Gordan is satisfied and since it is derived
+which implies that the Klein Gordon is satisfied and since it is derived
  from a Lorentz invariant lagrangian, it too is Lorentz invariant.
 \end_layout
 

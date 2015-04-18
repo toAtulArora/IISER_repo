@@ -24,7 +24,7 @@
 \headcommand {\beamer@framepages {23}{32}}
 \headcommand {\slideentry {3}{0}{8}{33/38}{}{0}}
 \headcommand {\beamer@framepages {33}{38}}
-\headcommand {\sectionentry {4}{Quantum theory of fields}{39}{Quantum theory of fields}{0}}
+\headcommand {\sectionentry {4}{Towards a quantum theory of fields}{39}{Towards a quantum theory of fields}{0}}
 \headcommand {\beamer@sectionpages {14}{38}}
 \headcommand {\beamer@subsectionpages {14}{38}}
 \headcommand {\slideentry {4}{0}{9}{39/39}{}{0}}
@@ -98,10 +98,8 @@
 \headcommand {\beamer@framepages {177}{177}}
 \headcommand {\slideentry {7}{0}{39}{178/178}{}{0}}
 \headcommand {\beamer@framepages {178}{178}}
-\headcommand {\slideentry {7}{0}{40}{179/179}{}{0}}
-\headcommand {\beamer@framepages {179}{179}}
-\headcommand {\beamer@partpages {1}{179}}
-\headcommand {\beamer@subsectionpages {176}{179}}
-\headcommand {\beamer@sectionpages {176}{179}}
-\headcommand {\beamer@documentpages {179}}
-\headcommand {\def \inserttotalframenumber {40}}
+\headcommand {\beamer@partpages {1}{178}}
+\headcommand {\beamer@subsectionpages {176}{178}}
+\headcommand {\beamer@sectionpages {176}{178}}
+\headcommand {\beamer@documentpages {178}}
+\headcommand {\def \inserttotalframenumber {39}}
