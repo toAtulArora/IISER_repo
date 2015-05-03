@@ -287,7 +287,7 @@ NB: This is essentially the statement
 \color none
 \begin_inset Formula 
 \[
-\frac{d}{dt}\left(e^{i\theta_{n}}\ket{n;R}\right)\approx0
+\frac{d}{dt}\left(e^{i\gamma_{n}}\ket{n;R}\right)\approx0
 \]
 
 \end_inset

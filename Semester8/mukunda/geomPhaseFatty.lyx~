@@ -399,7 +399,7 @@ Now recall we're moving along a closed curve so we get
  & \approx i\int_{S}(\mathbf{\nabla}\bra{n;R})\times(\mathbf{\nabla}\ket{n;R}).d\mathbf{a}\\
  & \approx\sum_{m}i\int_{S}(\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R}).d\mathbf{a}\\
  & \approx\sum_{m}i\int_{S}i\text{Im}\left((\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R})\right).d\mathbf{a} & [\gamma_{n}\text{ is purely Re}]\\
- & \approx-\sum_{m\ne n}\int_{S}\text{Im}\left((\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R})\right).d\mathbf{a} & [\bra{n;R}\left(\mathbf{\nabla}\ket{n;R}\right)\text{ is real}]
+ & \approx-\sum_{m\ne n}\int_{S}\text{Im}\left((\mathbf{\nabla}\bra{n;R})\ket{m;R}\times\bra{m;R}(\mathbf{\nabla}\ket{n;R})\right).d\mathbf{a} & [\bra{n;R}\left(\mathbf{\nabla}\ket{n;R}\right)\text{ is purely im}]
 \end{alignedat}
 \]
 

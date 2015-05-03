@@ -1,0 +1,917 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\usepackage{listings}
+\usepackage{xcolor}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Lorenz Attractors
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Date
+March-April 2015
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+The Lorenz attractor is the consequence of a set of 3 ordinary differential
+ equations, which for a given range of parameters, results in chaotic solutions.
+ This is of particular interest because the resultant solutions, when plotted
+ in 3 dimensional space, move in a very contrained part of the space, intuitivel
+y suggesting that its dimension must be between 1 and 3.
+ What is further fascinating is that even though the solution is chaotic,
+ it is possible to synchronize two lorenz attractors, which is to say that
+ while the motion of neither can be modelled (chaotic), yet both perform
+ the same chaotic motion.
+ In this paper, I show numerically that the dimension of the `Lorenz attractor'
+ is 
+\begin_inset Formula $\sim2$
+\end_inset
+
+ and demonstrate that it is indeed possible to synchronize two lorenz attractors.
+ Further, a peculiar observation was made; the distance between the two
+ solutions (a measure of synchrony), although appeared to drop exponentially
+ initially, in accordance with the theory, there seemed to be a periodic
+ increase and decrease which I haven't been able to account for theoretically.
+\end_layout
+
+\begin_layout Section
+Lorenz Attractor, equations
+\end_layout
+
+\begin_layout Standard
+The lorenz equations are given as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{x} & =\sigma(y-x)\\
+\dot{y} & =rx-y-xz\\
+\dot{z} & =xy-bz
+\end{aligned}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma,r,b>0$
+\end_inset
+
+ are parameters.
+ These were designed to model convection flows in the atmosphere.
+ One can show various interesting properties of the attractor, including
+ the fact that volumes in phase space contract under the flow, which results
+ in elimination of existence of sources/repellers.
+ For 
+\begin_inset Formula $r<1$
+\end_inset
+
+, it can be shown that the origin is globally stable.
+ One can further show that, given 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{H}\equiv\frac{\sigma(\sigma+b+3)}{\sigma-b-1}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula 
+\[
+1<r<r_{H}
+\]
+
+\end_inset
+
+there exist two more stable fixed points, 
+\begin_inset Formula $C^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $C^{-}$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $r>r_{H}$
+\end_inset
+
+ is where there's chaos, where chaos maybe defined as ``aperiodic long-term
+ behaviour in a deterministic system that exhibits sensitive dependence
+ on initial conditions''.
+\end_layout
+
+\begin_layout Section
+Syncing two Lorenz attractors
+\end_layout
+
+\begin_layout Standard
+Upon appropriate scaling (
+\begin_inset Formula $u=x/10,v=y/10,w=z/20$
+\end_inset
+
+), I can define the same lorenz equations as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{u} & =\sigma(v-u)\\
+\dot{v} & =ru-v-20uw\\
+\dot{w} & =5uv-bw
+\end{aligned}
+\]
+
+\end_inset
+
+I can couple another lorenz attractor as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{u}_{r} & =\sigma(v_{r}-u)\\
+\dot{v}_{r} & =ru-v-20uw_{r}\\
+\dot{w_{r}} & =5uv_{r}-bw_{r}
+\end{aligned}
+\]
+
+\end_inset
+
+where note that the coupling is done by replacing 
+\begin_inset Formula $u_{r}$
+\end_inset
+
+ with 
+\begin_inset Formula $u$
+\end_inset
+
+.
+ The claim is that regardless of the initial conditions, both attractors
+ synchronize nearly perfectly, exponentially fast.
+ This is particularly interesting because even though we're feeding in the
+ 
+\begin_inset Formula $u$
+\end_inset
+
+ variable, the other attractor is able to generate 
+\begin_inset Formula $v$
+\end_inset
+
+ and 
+\begin_inset Formula $w$
+\end_inset
+
+ to be in perfect sync.
+\end_layout
+
+\begin_layout Standard
+Quantitatively, the claim is that if I define
+\begin_inset Formula 
+\[
+\begin{aligned}\mathbf{x} & =(u,v,w)\\
+\mathbf{y} & =(u_{r},v_{r},w_{r})\\
+\mathbf{d} & =\mathbf{x}-\mathbf{y}
+\end{aligned}
+\]
+
+\end_inset
+
+then 
+\begin_inset Formula $d\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $t\to\infty$
+\end_inset
+
+.
+ The proof is as follows.
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{d}_{1} & =\sigma(d_{2}-d_{1})\\
+\dot{d}_{2} & =-d_{2}-20ud_{3}\\
+\dot{d}{}_{3} & =5ud_{2}-bd_{3}
+\end{aligned}
+\]
+
+\end_inset
+
+We now construct the following by multiplying the second equation with 
+\begin_inset Formula $d_{2}$
+\end_inset
+
+ and the third by 
+\begin_inset Formula $4d_{3}$
+\end_inset
+
+ and then adding.
+ We have 
+\begin_inset Formula 
+\[
+\begin{aligned}d_{2}\dot{d}_{2}+4d_{3}\dot{d}_{3} & =-d_{2}^{2}-20ud_{2}d_{3}+20ud_{2}d_{3}-4bd_{3}^{2}\\
+ & =-d_{2}^{2}-4bd_{3}^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+where we have managed to remove the 
+\begin_inset Formula $u$
+\end_inset
+
+ term which was known to be chaotic.
+ Note also that the left hand side is essentially 
+\begin_inset Formula 
+\[
+\frac{1}{2}\frac{d}{dt}\left(d_{2}^{2}+4d_{3}^{2}\right)
+\]
+
+\end_inset
+
+Next we define the function 
+\begin_inset Formula 
+\[
+E(\mathbf{d},t)=\frac{1}{2}\frac{d}{dt}\left(\frac{1}{\sigma}d_{1}^{2}+d_{2}^{2}+4d_{3}^{2}\right)
+\]
+
+\end_inset
+
+Note now that for 
+\begin_inset Formula $\sigma>0$
+\end_inset
+
+, 
+\begin_inset Formula $E>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ If I can show that 
+\begin_inset Formula $\dot{E}<0$
+\end_inset
+
+, then that must mean that eventually, 
+\begin_inset Formula $d\to0$
+\end_inset
+
+.
+ I have already evaluated two terms in the sum.
+ Lets evaluate the first term.
+ 
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{E} & =\left[\frac{1}{\sigma}d_{1}\dot{d}{}_{1}\right]+-d_{2}^{2}-4bd_{3}^{2}\\
+ & =-\left[d_{1}^{2}-d_{1}d_{2}\right]-d_{2}^{2}-4bd_{3}^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+Completing square (for the bracketed term)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\dot{E} & =-\left[d_{1}^{2}-d_{1}d_{2}\right]-d_{2}^{2}-4bd_{3}^{2}\\
+ & =-\left[d_{1}^{2}-\frac{1}{2}d_{2}\right]^{2}+\left(\frac{1}{2}d_{2}\right)^{2}-d_{2}^{2}-4bd_{3}^{2}\\
+ & =-\left[d_{1}^{2}-\frac{1}{2}d_{2}\right]^{2}-\frac{3}{4}d_{2}^{2}-4bd_{3}^{2}
+\end{aligned}
+\]
+
+\end_inset
+
+So for 
+\begin_inset Formula $b>0$
+\end_inset
+
+, we know that 
+\begin_inset Formula $\dot{E}\le0$
+\end_inset
+
+ with equality only if 
+\begin_inset Formula $\mathbf{d}=\mathbf{0}$
+\end_inset
+
+.
+ It thus proves that 
+\begin_inset Formula $\mathbf{d}=\mathbf{0}$
+\end_inset
+
+ is globally stable.
+\end_layout
+
+\begin_layout Section
+Correlation Dimension
+\end_layout
+
+\begin_layout Standard
+This is to briefly describe the concept since this will be used in finding
+ the dimension of the Lorenz attractor.
+ First we find a large set of points 
+\begin_inset Formula 
+\[
+X=\{\mathbf{x}_{i}|i=1,\dots,n\}
+\]
+
+\end_inset
+
+Then for a given point 
+\begin_inset Formula $\mathbf{x}$
+\end_inset
+
+, we consider a ball of radius 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ We evaluate 
+\begin_inset Formula $N_{\mathbf{x}}(\epsilon)$
+\end_inset
+
+ which measures the number of points in 
+\begin_inset Formula $X$
+\end_inset
+
+ that are inside the ball.
+ We do this computation 
+\begin_inset Formula $\forall$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{x}_{i}$
+\end_inset
+
+ and find the average, viz.
+ 
+\begin_inset Formula 
+\[
+<N_{\mathbf{x}_{i}}(\epsilon)>\equiv C(\epsilon)
+\]
+
+\end_inset
+
+It is known emperically that 
+\begin_inset Formula 
+\[
+C(\epsilon)\propto\epsilon^{d}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $d$
+\end_inset
+
+ is defined to be the 
+\emph on
+correlation dimension
+\emph default
+.
+ It is also claimed that 
+\begin_inset Formula $d_{\text{correlation}}\le d_{\text{box}}$
+\end_inset
+
+ but is usually very close.
+ It is almost immediate that 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ must be in a specific range, say 
+\end_layout
+
+\begin_layout Standard
+(minimum seperation between points in X)
+\begin_inset Formula $\ll\epsilon\ll$
+\end_inset
+
+(`diameter' of X)
+\end_layout
+
+\begin_layout Section
+Simulation
+\end_layout
+
+\begin_layout Standard
+The simulation was written in fortran.
+ The time evolution was done using RK4, for the following parameter values
+ 
+\begin_inset Formula 
+\[
+\sigma=10,\rho=29,\beta=8.0/3,\gamma=20.0,\delta=5.0,\epsilon=2.85
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ have been introduced because of scaling as has been discussed.
+ The time-step was taken to be both 
+\begin_inset Formula $dt=4.0\times10^{-3}$
+\end_inset
+
+ and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $dt=4.0\times10^{-2}$
+\end_inset
+
+ depending on the required resolution.
+\end_layout
+
+\begin_layout Subsection
+Single attractor
+\end_layout
+
+\begin_layout Standard
+Following are the results from frame 65 and 4300 respectively.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/tempSingleGood/file0065.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/tempSingleGood/file4300.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Synchronized Attractors
+\end_layout
+
+\begin_layout Standard
+This has been obtained by plotting one attractor at an offset (by 
+\begin_inset Formula $\mathbf{y}_{f}=(20,0,0)$
+\end_inset
+
+ and using the synchronization equations described earlier.
+ The first image shows that the initial conditions were distinct, explicitly
+ 
+\begin_inset Formula $x_{0}=(0.8,0.3068,7.0),\,y_{0}=(-2.8,-0.3068,-7.0)$
+\end_inset
+
+.
+ The second image shows that the two synchronize soon after.
+ The last two images show a plot between 
+\begin_inset Formula $\mathbf{d}^{2}$
+\end_inset
+
+ and time.
+ Note how despite being evolved for long enough, and despite showing that
+ 
+\begin_inset Formula $\dot{E}\le0$
+\end_inset
+
+, the error term 
+\begin_inset Formula $\mathbf{d}^{2}$
+\end_inset
+
+ does increase slightly and decrease, in what seems to be a periodic way.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/tempGood/file0040.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/tempGood/file0468.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/temp2dGood/file0052.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/temp2dGood/file0500.jpeg
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Alternate Synchronizations
+\end_layout
+
+\begin_layout Standard
+I also attempted feeding in 
+\begin_inset Formula $v$
+\end_inset
+
+ instead of 
+\begin_inset Formula $u$
+\end_inset
+
+ to the second oscillator, and then did the same with 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ In neither of the cases, did 
+\begin_inset Formula $\mathbf{d}^{2}\to0$
+\end_inset
+
+ however it did seem to stabilize.
+ The first graph is that for 
+\begin_inset Formula $v$
+\end_inset
+
+ and second that for 
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/output/Screenshot from vresult2d.avi.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/output/Screenshot from wresult2d.avi.png
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Dimension
+\end_layout
+
+\begin_layout Standard
+The correlation dimension of the attractor was evaluated by the method described
+ earlier.
+ The dimension was found to be 
+\begin_inset Formula $1.92733\pm0.02832(1.469\%)$
+\end_inset
+
+ which is slightly less than what is given in the text (
+\begin_inset Formula $\sim2.01$
+\end_inset
+
+) but is intuitively in the right range, close to 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ This was found by iterating through 
+\begin_inset Formula $2250$
+\end_inset
+
+ points.
+ The graph (
+\begin_inset Formula $\log N$
+\end_inset
+
+ 
+\begin_inset Formula $\log E$
+\end_inset
+
+ and 
+\begin_inset Formula $N$
+\end_inset
+
+ vs 
+\begin_inset Formula $E$
+\end_inset
+
+) and detailed initial conditions have been given below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/output/dimensionCorrelation.pdf
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/chaosTerm/lorenzVersion1.3/output/dimension.pdf
+	width 12cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{     frame=single,     breaklines=true,     postbreak=
+\backslash
+raisebox{0ex}[0ex][0ex]{
+\backslash
+ensuremath{
+\backslash
+color{red}
+\backslash
+hookrightarrow
+\backslash
+space}} }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting{dimensionFit}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+A lorenz attractor was simulated using RK4.
+ Two lorenz attractors were shown to get coupled, despite being in the chaotic
+ regime.
+ Interesting periodic oscillations of the relative distance (measure of
+ synchrony) were found.
+ These seem to naively said, contrad the theory.
+ Two other obvious ways of synchronization were attempted which seem to
+ result in a constant `phase difference' synchronization.
+ This is indicated by the relative distance seemingly varying slowly after
+ the transience.
+ And finally, the correlation dimension of the lorenz attractor was obtained
+ to be very close to 
+\begin_inset Formula $\sim2$
+\end_inset
+
+ as was expected.
+\end_layout
+
+\begin_layout Standard
+As a closing remark, I urge you to look at the link given below as it contains
+ interesting animations of most of these results.
+\end_layout
+
+\begin_layout Section
+References and Acknowledgement
+\end_layout
+
+\begin_layout Standard
+I refered to the textbook for the course, titled 
+\series bold
+Nonlinear Dynamics and Chaos
+\series default
+, 
+\emph on
+S.
+ H.
+ Strogatz
+\emph default
+, Perseus Books Publishing, LCC
+\end_layout
+
+\begin_layout Standard
+I would like to acknowledge our instructor, 
+\emph on
+Prof.
+ Sudeshna Sinha
+\emph default
+, the instructor for the course by the same name.
+\end_layout
+
+\begin_layout Standard
+I also mention the contribution of my friends (and colleagues).
+ Foremost, 
+\emph on
+Vivek Sagar,
+\emph default
+ discussions with him accelerated the completion of the work.
+ In addition I thank 
+\emph on
+Yosman Bapatdhar
+\emph default
+ and 
+\emph on
+Arjit Kant Gupta
+\emph default
+, who were there when I wrote the first instance of the code.
+\end_layout
+
+\begin_layout Section
+Source Code
+\end_layout
+
+\begin_layout Standard
+The source code is available online at 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/toAtulArora/chaosTerm.git
+\end_layout
+
+\end_inset
+
+.
+ The videos are in the folder 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttt{chaosTerm/lorenzVersion1.3/output}
+\end_layout
+
+\end_inset
+
+.
+ The gnuplot_fortran library has been mostly written by me (built on top
+ of a tutorial).
+ Here I have appended only the main code.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstinputlisting[language=fortran]{lorenz2.f95}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

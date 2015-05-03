@@ -1,0 +1,256 @@
+%% LyX 2.1.3 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage{ccfonts}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=3cm,lmargin=3cm,rmargin=3cm,headheight=3cm,headsep=3cm,footskip=3cm}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\usepackage{beamerarticle,pgf}
+% this default might be overridden by plain title style
+\newcommand\makebeamertitle{\frame{\maketitle}}%
+\AtBeginDocument{
+\let\origtableofcontents=\tableofcontents
+\def\tableofcontents{\@ifnextchar[{\origtableofcontents}{\gobbletableofcontents}}
+\def\gobbletableofcontents#1{\origtableofcontents}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{listings}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Measuring Geometric Phase using 3 Pin Holes :.}
+
+\makebeamertitle
+We describe a method a of measuring the geometric phase optically,
+using 3 pin holes. This method is in stark contrast with conventional
+methods where states are evolved and the phase
+
+
+\section{Introduction}
+
+
+\subsection{Geometric Phase}
+
+Concept of geometric phase was discovered as a relative phase that
+is introduced in an adiabatic and cyclic evolution of a state, between
+the final and initial state. This relative phase has both the geometric
+phase and what is known as the dynamic phase, which is the time integral
+of the Hamiltonian. The concept since then, has been generalized to
+work in cases of non-adiabatic evolution and then even to non-cyclic
+evolution. 
+
+
+\subsection{Conventional Measurement Scheme}
+
+Experimentally, conventional measurement of the geometric phase is
+associated with directly measuring the total phase difference between
+the evolved and unevolved reference states. This requires phase calibration,
+which is an experimental complication. Further, one must eliminate
+the dynamic phase to obtain the geometric phase. 
+
+
+\subsection{Kinematic Geometric Phase and the Proposed Scheme}
+
+In their paper {[}quote{]}, a method of measurement of geometric phase
+has been proposed, which is built on the kinematic approach to geometric
+phase. In this approach, the geometric phase is attributed to the
+structure of the Hilbert space itself and doesn't require dynamics
+(evolution of states). One can show that Geometric Phase is a ray
+space object and more explicitly, it has been shown that for n points
+in the ray space, there exists an entity known as the Bargmann invariant,
+from which the geometric phase can be recovered. This geometric phase
+is that for a closed curve obtained by connecting the n points with
+geodesics.
+
+The proposed scheme involves use of 3 quantum states and letting them
+interfere directly, viz. without evolving the system. From the intereferogram
+thus obtained, using the 3 vertex Bargmann invariant and some more
+details specific to the setup, it has been shown that the geometric
+phase can be recovered. Further, since the initial 3 states are known,
+one can theoretically evaluate the Geometric phase. Theory and experimental
+observations have been shown to agree. Since this method doesn't require
+evolution, the need for phase calibration and removal of dynamic phase
+has been eliminated.
+
+
+\section{Geometric Phase and Bargmann Invariant}
+
+\[
+I\propto1+\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cos\left(\phi+\arg\left\langle \psi_{1}|\psi_{2}\right\rangle \right)
+\]
+
+
+which can be derived easily as 
+\[
+\begin{aligned}\left|\psi\right\rangle  & =e^{i\phi}\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle \\
+\left\langle \psi|\psi\right\rangle  & =\left(\left\langle \psi_{1}\right|e^{-i\phi}+\left\langle \psi_{2}\right|\right)\left(e^{i\phi}\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle \right)\\
+ & =\left\langle \psi_{1}|\psi_{1}\right\rangle +\left\langle \psi_{2}|\psi_{2}\right\rangle +\left(e^{-i\phi}e^{i\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle }\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|+\text{hc}\right)\\
+ & \propto1+\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cos\left(\phi+\arg\left\langle \psi_{1}|\psi_{2}\right\rangle \right)
+\end{aligned}
+\]
+
+
+TODO: Check this
+
+\[
+\begin{aligned}\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right) & \equiv\left\langle \psi_{1}|\psi_{2}\right\rangle \left\langle \psi_{2}|\psi_{3}\right\rangle \left\langle \psi_{3}|\psi_{1}\right\rangle \\
+\text{arg}\left(\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right) & =\arg\left(\left\langle \psi_{1}|\psi_{2}\right\rangle \left\langle \psi_{2}|\psi_{3}\right\rangle \left\langle \psi_{3}|\psi_{1}\right\rangle \right)\\
+ & =\sum_{(i,j)\text{cycle}}\text{arg}\left\langle \psi_{j}|\psi_{j}\right\rangle 
+\end{aligned}
+\]
+if $\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle =0$ and
+$\text{arg}\left\langle \psi_{2}|\psi_{3}\right\rangle =0$ then $\text{arg}\left(\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right)=\text{arg}\left\langle \psi_{1}|\psi_{3}\right\rangle $
+
+
+\section{Geometric Phase and Ridge Lines}
+
+\[
+\left|\psi(\mathbf{r})\right\rangle =C\sum_{j=1}^{3}\frac{\text{exp}\left[i\left(k\left|\mathbf{R}-\mathbf{a}_{j}\right|+\phi_{j}\right)\right]}{\left|\mathbf{R}-\mathbf{a}_{j}\right|}\left|\psi_{j}\right\rangle 
+\]
+where $\mathbf{R}$ is the position vector on the observation plane
+($z=L$); $\mathbf{r}\equiv\mathbf{R}-\left(\mathbf{R}.\mathbf{z}\right)\mathbf{z}$
+(component of $\mathbf{R}$ perpendicular to $\mathbf{z}$, the unit
+vector along z-axis); $C$ is dimensionless normalization; $\phi_{j}$
+is the phase of $\left|\psi_{j}\right\rangle $ (the polarization
+state of the $j^{th}$ source). If we make the para-axial approximation,
+we get
+
+\[
+\begin{aligned}\mathbf{R}-\mathbf{a}_{j} & =\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\\
+\left|\mathbf{R}-\mathbf{a}_{j}\right| & =\left[\left(\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\right)\left(\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\right)\right]^{1/2}\\
+ & =\left[\left(L\mathbf{z}+\mathbf{r}\right)\left(L\mathbf{z}+\mathbf{r}\right)-2\left(L\mathbf{z}+\mathbf{r}\right)\mathbf{a}_{j}+\mathbf{a}_{j}^{2}\right]^{1/2}\\
+ & =\left[L^{2}+2L\cancelto{0}{\mathbf{z}.\mathbf{r}}+\mathbf{r}^{2}-2(L\cancelto{0}{\mathbf{z}.\mathbf{r}}+\mathbf{r}.\mathbf{a}_{j})+\mathbf{a}_{j}^{2}\right]^{1/2}\\
+ & =\left[L^{2}+2\frac{r^{2}+a^{2}}{2}-2(\mathbf{r}.\mathbf{a}_{j})\right]^{1/2}\\
+ & =L\left[1+2\left(\frac{r^{2}+a^{2}}{2L^{2}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L^{2}}\right)\right]^{1/2}\\
+ & \approx L\left[1+\frac{r^{2}+a^{2}}{2L^{2}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L^{2}}\right]\\
+ & =L+\frac{r^{2}+a^{2}}{2L}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}
+\end{aligned}
+\]
+\[
+\left|\psi(\mathbf{r})\right\rangle \approx C\sum_{j=1}^{3}\frac{\text{exp}\left[i\left(k\left(L+\frac{r^{2}+a^{2}}{2L}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}\right)+\phi_{j}\right)\right]}{L}\left|\psi_{j}\right\rangle 
+\]
+where we've used the fact that $\mathbf{a}_{j}^{2}=a^{2}$. TODO:
+Figure why in the denominator we can get away with writing L only
+
+The intensity distribution can then be written as 
+\[
+\begin{aligned}p(x,y) & =\left\langle \psi(\mathbf{r})|\psi(\mathbf{r})\right\rangle \\
+ & =\frac{C^{2}}{L^{2}}\sum_{j,k=1}^{3}\text{exp}\left[-i\left(k\left(\cancel{L+\frac{r^{2}+a^{2}}{2L}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}\right)+\phi_{j}\right)\right]\text{exp}\left[i\left(k\left(\cancel{L+\frac{r^{2}+a^{2}}{2L}}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}\right)\right]\left\langle \psi_{j}|\psi_{k}\right\rangle \\
+ & =\frac{C^{2}}{L^{2}}\left\{ 3+\sum_{j\neq k=1}^{3}\text{exp}\left[i\left(k\left(\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}-\phi_{j}+\text{arg}\left\langle \psi_{j}|\psi_{k}\right\rangle \right)\right]\left|\left\langle \psi_{j}|\psi_{k}\right\rangle \right|\right\} \\
+ & =\frac{C^{2}}{L^{2}}\left\{ 3+\sum_{\left(j,k\right)\text{cycle}}\cos\left[k\left(\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}-\phi_{j}+\text{arg}\left\langle \psi_{j}|\psi_{k}\right\rangle \right]\left|\left\langle \psi_{j}|\psi_{k}\right\rangle \right|\right\} \\
+ & =\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} 
+\end{aligned}
+\]
+
+
+\[
+p(x,y)=\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} 
+\]
+where 
+\[
+P_{ij}(x,y)\equiv2\left(1+\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|\right)
+\]
+with $k_{ij}\equiv k(\mathbf{a}_{i}-\mathbf{a}_{j})/L$ and $\phi_{ij}\equiv\phi_{i}-\phi_{j}$
+
+Condition for maxima then is 
+
+\[
+(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle =2n_{ij}\pi
+\]
+which is of the from $\mathbf{r}.\mathbf{k}=c$ (in 3d, this is a
+plane, in 2d, its a line obviously) 
+\[
+\begin{aligned}(x\mathbf{x}+y\mathbf{y}).(k_{x}\mathbf{x}+k_{y}\mathbf{y}+k_{z}\mathbf{z}) & =c\\
+ & =xk_{x}+yk_{y}
+\end{aligned}
+\]
+Using the formula for finding the are of a triangle, given equations
+of the lines making the edges as 
+\[
+\begin{aligned}a_{1}x+b_{1}y+c_{1} & =0\\
+a_{2}x+b_{2}y+c_{2} & =0\\
+a_{3}x+b_{3}y+c_{3} & =0
+\end{aligned}
+\]
+is 
+\[
+\frac{\text{det}\left[\begin{array}{ccc}
+a_{1} & b_{1} & c_{1}\\
+a_{2} & b_{2} & c_{2}\\
+a_{3} & b_{3} & c_{3}
+\end{array}\right]^{2}}{2C_{1}C_{2}C_{3}}
+\]
+where $C_{i}=\text{cofactor of }c_{i}$ to finally obtain
+
+\[
+S=\frac{L^{2}}{4k^{2}S_{0}}\left\{ \text{arg}\left[\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right]-2n\pi\right\} ^{2}
+\]
+where $n=n_{12}+n_{23}+n_{31}$
+
+
+\section{Extraction of Ridge Lines}
+
+For arbitrary $\mathbf{b},\,\mathbf{k}$ we have
+
+\[
+\begin{aligned}\mathbf{b}.\mathbf{\nabla}\left(\mathbf{k}.\mathbf{r}\right) & =b_{i}\frac{\partial}{\partial x_{i}}k_{j}r_{j}\\
+ & =b_{i}k_{j}\left(\frac{\partial}{\partial x_{i}}r_{j}\right)\\
+ & =b_{i}k_{j}\delta_{ij}\\
+ & =\mathbf{b}.\mathbf{k}
+\end{aligned}
+\]
+Now we define 
+\[
+\mathbf{b}_{i}\equiv\mathbf{e}_{z}\times(\mathbf{a}_{j}-\mathbf{a}_{k})=\frac{L}{k}\mathbf{e}_{z}\times\mathbf{k}_{jk}
+\]
+where $(i,j,k)=(1,2,3),(2,3,1),(3,1,2)$ NB: $\mathbf{b}_{i}\mathbf{k}_{jk}=0$
+
+Recall: $P_{ij}(x,y)\equiv2\left(1+\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|\right)$
+
+\[
+\begin{aligned}\left(\mathbf{b}_{1}.\nabla\right)p(x,y) & =\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} \\
+ & \propto\sum_{(i,k)\text{cycle}}\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)P_{ik}(x,y)\\
+ & \propto\sin\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cancelto{\mathbf{b}_{1}.\mathbf{k}_{12}}{\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)(\mathbf{k}_{12}.\mathbf{r})}\\
+ & +\sin\left[(\mathbf{k}_{23}.\mathbf{r})-\phi_{23}+\text{arg}\left\langle \psi_{2}|\psi_{3}\right\rangle \right]\left|\left\langle \psi_{2}|\psi_{3}\right\rangle \right|\cancelto{0}{\mathbf{b}_{1}.\mathbf{k}_{23}}\\
+ & +\sin\left[(\mathbf{k}_{31}.\mathbf{r})-\phi_{31}+\text{arg}\left\langle \psi_{3}|\psi_{1}\right\rangle \right]\left|\left\langle \psi_{3}|\psi_{1}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{31}
+\end{aligned}
+\]
+
+
+\[
+\begin{aligned}\left(\mathbf{b}_{2}.\nabla\right)\left(\mathbf{b}_{1}.\nabla\right)p(x,y) & \propto-\cos\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{12}\mathbf{b}_{2}.\mathbf{k}_{12}\\
+ & -\cos\left[(\mathbf{k}_{31}.\mathbf{r})-\phi_{31}+\text{arg}\left\langle \psi_{3}|\psi_{1}\right\rangle \right]\left|\left\langle \psi_{3}|\psi_{1}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{31}\cancelto{0}{\mathbf{b}_{2}.\mathbf{k}_{31}}\\
+ & \propto\cos\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|
+\end{aligned}
+\]
+
+
+NB: $\left(\mathbf{b}_{2}.\nabla\right)\left(\mathbf{b}_{1}.\nabla\right)p(x,y)=\left(\mathbf{b}_{1}.\nabla\right)\left(\mathbf{b}_{2}.\nabla\right)p(x,y)$
+
+So in general then, I have
+
+\[
+\left(\mathbf{b}_{i}.\mathbf{\nabla}\right)\left(\mathbf{b}_{j}.\mathbf{\nabla}\right)p(x,y)\propto\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|
+\]
+
+
+
+\section{References}
+
+\url{http://math.stackexchange.com/questions/901819/direct-formula-for-area-of-a-triangle-formed-by-three-lines-given-their-equatio}
+
+\url{http://en.wikipedia.org/wiki/Bloch_sphere}
+\end{document}

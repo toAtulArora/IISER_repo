@@ -1,0 +1,1158 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article-beamer
+\begin_preamble
+\usepackage{listings}
+\usepackage{braket}
+\end_preamble
+\use_default_options true
+\begin_modules
+multicol
+sectionbox
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Measuring Geometric Phase using 3 Pin Holes :.
+\end_layout
+
+\begin_layout Standard
+We describe a method a of measuring the geometric phase optically, using
+ 3 pin holes.
+ This method is in stark contrast with conventional methods where states
+ are evolved and the relative phase measured after completion of a cycle.
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Geometric Phase
+\end_layout
+
+\begin_layout Standard
+Concept of geometric phase was discovered as a relative phase that is introduced
+ in an adiabatic and cyclic evolution of a state, between the final and
+ initial state.
+ This relative phase has both the geometric phase and what is known as the
+ dynamic phase, which is the time integral of the Hamiltonian.
+ The concept since then, has been generalized to work in cases of non-adiabatic
+ evolution and then even to non-cyclic evolution.
+ 
+\end_layout
+
+\begin_layout Subsection
+Conventional Measurement Scheme
+\end_layout
+
+\begin_layout Standard
+Experimentally, conventional measurement of the geometric phase is associated
+ with directly measuring the total phase difference between the evolved
+ and unevolved reference states.
+ This requires phase calibration, which is an experimental complication.
+ Further, one must eliminate the dynamic phase to obtain the geometric phase.
+ 
+\end_layout
+
+\begin_layout Subsection
+Kinematic Geometric Phase and the Proposed Scheme
+\end_layout
+
+\begin_layout Standard
+Direct observation of geometric phases using a three-pinhole interferometer
+ 
+\series bold
+PHYSICAL REVIEW A 81, 012104 (2010)
+\series default
+, 
+\emph on
+Kobayashi et.
+ al.
+
+\emph default
+ propose a method of measurement of geometric phase, which is built on the
+ kinematic approach to geometric phase.
+ In this approach, the geometric phase is attributed to the structure of
+ the Hilbert space itself and doesn't require dynamics (evolution of states).
+ One can show that Geometric Phase is a ray space object and more explicitly,
+ it has been shown that for n points in the ray space, there exists an entity
+ known as the Bargmann invariant, from which the geometric phase can be
+ recovered.
+ This geometric phase is that for a closed curve obtained by connecting
+ the n points with geodesics.
+\end_layout
+
+\begin_layout Standard
+The proposed scheme involves use of 3 quantum states and letting them interfere
+ directly, viz.
+ without evolving the system.
+ From the intereferogram thus obtained, using the 3 vertex Bargmann invariant
+ and some more details specific to the setup, it has been shown that the
+ geometric phase can be recovered.
+ Further, since the initial 3 states are known, one can theoretically evaluate
+ the Geometric phase.
+ Theory and experimental observations have been shown to agree.
+ Since this method doesn't require evolution, the need for phase calibration
+ and removal of dynamic phase has been eliminated.
+\end_layout
+
+\begin_layout Section
+Geometric Phase and Bargmann Invariant
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename paperImages/1.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic of the setup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As Figure 1 shows, three states 
+\begin_inset Formula $\ket{\psi_{j}}(j=1,2,3)$
+\end_inset
+
+ represent the internal states of the photon from three pinholes.
+ The resultant interferogram should and does contain three distinct interference
+ fringes due to each pinhole pair.
+ To start with, superimpostion of 
+\begin_inset Formula $\ket{\psi_{1}}$
+\end_inset
+
+ and a 
+\begin_inset Formula $U(1)=e^{i\phi}$
+\end_inset
+
+ shifted 
+\begin_inset Formula $\ket{\psi_{2}}$
+\end_inset
+
+ leads to an intensity of 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+I\propto1+\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cos\left(\phi+\arg\left\langle \psi_{1}|\psi_{2}\right\rangle \right)
+\]
+
+\end_inset
+
+which can be derived easily as 
+\begin_inset Formula 
+\[
+\begin{aligned}\left|\psi\right\rangle  & =e^{i\phi}\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle \\
+\left\langle \psi|\psi\right\rangle  & =\left(\left\langle \psi_{1}\right|e^{-i\phi}+\left\langle \psi_{2}\right|\right)\left(e^{i\phi}\left|\psi_{1}\right\rangle +\left|\psi_{2}\right\rangle \right)\\
+ & =\left\langle \psi_{1}|\psi_{1}\right\rangle +\left\langle \psi_{2}|\psi_{2}\right\rangle +\left(e^{-i\phi}e^{i\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle }\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|+\text{hc}\right)\\
+ & \propto1+\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cos\left(\phi+\arg\left\langle \psi_{1}|\psi_{2}\right\rangle \right)
+\end{aligned}
+\]
+
+\end_inset
+
+Thus the interference fringes are shifted by the relative phase between
+ the states.
+ In case of constructive interference, this phase is zero and the states
+ are called 
+\emph on
+in phase
+\emph default
+.
+ Note however that this property of the states is 
+\emph on
+non transitive
+\emph default
+.
+ To make this explicit, consider the following expression, which is manifestly
+ invariant under a local change of phases (gauge invariance).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right) & \equiv\left\langle \psi_{1}|\psi_{2}\right\rangle \left\langle \psi_{2}|\psi_{3}\right\rangle \left\langle \psi_{3}|\psi_{1}\right\rangle \\
+ & =\text{tr}\left(\left|\psi_{2}\right\rangle \left\langle \psi_{2}|\psi_{3}\right\rangle \left\langle \psi_{3}|\psi_{1}\right\rangle \left\langle \psi_{1}\right|\right)\\
+\implies\text{arg}\left(\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right) & =\arg\left(\left\langle \psi_{1}|\psi_{2}\right\rangle \left\langle \psi_{2}|\psi_{3}\right\rangle \left\langle \psi_{3}|\psi_{1}\right\rangle \right)\\
+ & =\sum_{(i,j)\text{cycle}}\text{arg}\left\langle \psi_{j}|\psi_{j}\right\rangle 
+\end{aligned}
+\]
+
+\end_inset
+
+Here, if 
+\begin_inset Formula $\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle =0$
+\end_inset
+
+ and 
+\begin_inset Formula $\text{arg}\left\langle \psi_{2}|\psi_{3}\right\rangle =0$
+\end_inset
+
+, that is if the states 1 and 2 are in phase, 2 and 3 are in phase, then
+ 
+\begin_inset Formula $\text{arg}\left(\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right)=\text{arg}\left\langle \psi_{1}|\psi_{3}\right\rangle \ne0$
+\end_inset
+
+ in general.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta_{3}$
+\end_inset
+
+ is defined to be a 3 point 
+\series bold
+Bargmann Invariant
+\series default
+ and 
+\begin_inset Formula $\arg\Delta_{3}$
+\end_inset
+
+, the 
+\series bold
+Pancharatnam Phase
+\series default
+.
+ We recall/claim that the Pancharatnam phase can be related to the geometric
+ phase corresponding to that of a triangle in the B space (or if you like,
+ that of a system whose trajectory is given by the triangle).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+B `space' is a 
+\emph on
+subset
+\emph default
+ of H (Hilbert Space) with 
+\begin_inset Formula $\left\langle \psi|\psi\right\rangle =1$
+\end_inset
+
+.
+ Ray space is the subspace formed by 
+\begin_inset Formula $\rho_{\psi}=\ket{\psi}\bra{\psi}$
+\end_inset
+
+ (idea is to remove the phase freedom)
+\end_layout
+
+\end_inset
+
+ This triangle has as vertices, the points corresponding to the 3 states.
+ Its sides are formed by joining these points by geodesics.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Assuming an appropriately defined metric, this we had proved in the course.
+ It hinges on the fact that for a closed loop in B space, the total phase
+ is zero.
+ In general 
+\begin_inset Formula $\phi_{\text{total}}=\phi_{\text{dyn}}+\phi_{\text{geom}}$
+\end_inset
+
+ where for a geodesic between 2 points, 
+\begin_inset Formula $\phi_{\text{dyn}}=\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle $
+\end_inset
+
+.
+ With these assumptions and the fact that dynamic phase is additive, the
+ result stated should follow.
+\end_layout
+
+\end_inset
+
+ The relation is 
+\begin_inset Formula 
+\[
+\phi_{\text{goem}}=-\text{arg}\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)
+\]
+
+\end_inset
+
+It can be further shown, that for a two state system (such as polarization
+ of photon, the case here), 
+\begin_inset Formula $\arg\Delta_{3}$
+\end_inset
+
+ is proportional to the solid angle (
+\begin_inset Formula $\Omega$
+\end_inset
+
+) of the spherical triangle on the Bloch sphere with the three states as
+ the vertices.
+ 
+\begin_inset Formula 
+\[
+\phi_{\text{goem}}=-\frac{\Omega}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Geometric Phase and Ridge Lines
+\end_layout
+
+\begin_layout Standard
+Consider again, the three pinholes irradiated with monochromatic light of
+ wavenumber 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Without any loss of generality, the location of the three pinholes can
+ be parametrized by 
+\begin_inset Formula $\mathbf{a}_{j}(j=1,2,3)$
+\end_inset
+
+ such that 
+\begin_inset Formula $\left|\mathbf{a}_{j}\right|=a\,\forall\,j$
+\end_inset
+
+, by simply choosing the origin to be the circumcenter of the triangle.
+ The source plane is labeled to be at 
+\begin_inset Formula $z=0$
+\end_inset
+
+.
+ It is known that the state of a photon can be expressed as a combination
+ of a spatial part represented by the spherical wave and the internal, polarizat
+ion state part.
+ The state of photon from the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ pin-hole
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If we assume that all the pinholes have the same probability of transmission
+\end_layout
+
+\end_inset
+
+, on the observation plane 
+\begin_inset Formula $z=L$
+\end_inset
+
+ is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left|\psi(\mathbf{r})\right\rangle =C\sum_{j=1}^{3}\frac{\text{exp}\left[i\left(k\left|\mathbf{R}-\mathbf{a}_{j}\right|+\phi_{j}\right)\right]}{\left|\mathbf{R}-\mathbf{a}_{j}\right|}\left|\psi_{j}\right\rangle 
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ is the position vector on the observation plane (
+\begin_inset Formula $z=L$
+\end_inset
+
+); 
+\begin_inset Formula $\mathbf{r}\equiv\mathbf{R}-\left(\mathbf{R}.\mathbf{z}\right)\mathbf{z}$
+\end_inset
+
+ (component of 
+\begin_inset Formula $\mathbf{R}$
+\end_inset
+
+ perpendicular to 
+\begin_inset Formula $\mathbf{z}$
+\end_inset
+
+, the unit vector along z-axis); 
+\begin_inset Formula $C$
+\end_inset
+
+ is dimensionless normalization; 
+\begin_inset Formula $\phi_{j}$
+\end_inset
+
+ is the phase of 
+\begin_inset Formula $\left|\psi_{j}\right\rangle $
+\end_inset
+
+ (the polarization state of the 
+\begin_inset Formula $j^{th}$
+\end_inset
+
+ source).
+ If we make the para-axial approximation, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\mathbf{R}-\mathbf{a}_{j} & =\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\\
+\left|\mathbf{R}-\mathbf{a}_{j}\right| & =\left[\left(\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\right)\left(\left(L\mathbf{z}+\mathbf{r}\right)-\mathbf{a}_{j}\right)\right]^{1/2}\\
+ & =\left[\left(L\mathbf{z}+\mathbf{r}\right)\left(L\mathbf{z}+\mathbf{r}\right)-2\left(L\mathbf{z}+\mathbf{r}\right)\mathbf{a}_{j}+\mathbf{a}_{j}^{2}\right]^{1/2}\\
+ & =\left[L^{2}+2L\cancelto{0}{\mathbf{z}.\mathbf{r}}+\mathbf{r}^{2}-2(L\cancelto{0}{\mathbf{z}.\mathbf{r}}+\mathbf{r}.\mathbf{a}_{j})+\mathbf{a}_{j}^{2}\right]^{1/2}\\
+ & =\left[L^{2}+2\frac{r^{2}+a^{2}}{2}-2(\mathbf{r}.\mathbf{a}_{j})\right]^{1/2}\\
+ & =L\left[1+2\left(\frac{r^{2}+a^{2}}{2L^{2}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L^{2}}\right)\right]^{1/2}\\
+ & \approx L\left[1+\frac{r^{2}+a^{2}}{2L^{2}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L^{2}}\right]\\
+ & =L+\frac{r^{2}+a^{2}}{2L}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}
+\end{aligned}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\psi(\mathbf{r})\right\rangle \approx C\sum_{j=1}^{3}\frac{\text{exp}\left[i\left(k\left(L+\frac{r^{2}+a^{2}}{2L}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}\right)+\phi_{j}\right)\right]}{L}\left|\psi_{j}\right\rangle 
+\]
+
+\end_inset
+
+where we've used the fact that 
+\begin_inset Formula $\mathbf{a}_{j}^{2}=a^{2}$
+\end_inset
+
+.
+ In the last step, in writing the denominator approximately as 
+\begin_inset Formula $L$
+\end_inset
+
+, we have also used a stronger condition, that is 
+\begin_inset Formula $\left|\mathbf{R}-\mathbf{a}_{j}\right|\ll\left(L^{3}/k\right)^{1/4}\ll L$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The intensity distribution can then be written as 
+\begin_inset Formula 
+\[
+\begin{aligned}p(x,y) & =\left\langle \psi(\mathbf{r})|\psi(\mathbf{r})\right\rangle \\
+ & =\frac{C^{2}}{L^{2}}\sum_{j,k=1}^{3}\text{exp}\left[-i\left(k\left(\cancel{L+\frac{r^{2}+a^{2}}{2L}}-\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}\right)+\phi_{j}\right)\right]\text{exp}\left[i\left(k\left(\cancel{L+\frac{r^{2}+a^{2}}{2L}}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}\right)\right]\left\langle \psi_{j}|\psi_{k}\right\rangle \\
+ & =\frac{C^{2}}{L^{2}}\left\{ 3+\sum_{j\neq k=1}^{3}\text{exp}\left[i\left(k\left(\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}-\phi_{j}+\text{arg}\left\langle \psi_{j}|\psi_{k}\right\rangle \right)\right]\left|\left\langle \psi_{j}|\psi_{k}\right\rangle \right|\right\} \\
+ & =\frac{C^{2}}{L^{2}}\left\{ 3+\sum_{\left(j,k\right)\text{cycle}}\cos\left[k\left(\frac{(\mathbf{r}.\mathbf{a}_{j})}{L}-\frac{(\mathbf{r}.\mathbf{a}_{k})}{L}\right)+\phi_{k}-\phi_{j}+\text{arg}\left\langle \psi_{j}|\psi_{k}\right\rangle \right]\left|\left\langle \psi_{j}|\psi_{k}\right\rangle \right|\right\} \\
+ & =\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} 
+\end{aligned}
+\]
+
+\end_inset
+
+which finally yields
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x,y)=\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} 
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+P_{ij}(x,y)\equiv2\left(1+\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|\right)
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $k_{ij}\equiv k(\mathbf{a}_{i}-\mathbf{a}_{j})/L$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi_{ij}\equiv\phi_{i}-\phi_{j}$
+\end_inset
+
+.
+ This equation infact corresponds to that of the double slit interference
+ fringes between two states 
+\begin_inset Formula $\ket{\psi_{i}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\psi_{j}}$
+\end_inset
+
+.
+ Thus, the three pin hole interferogram consists of sets of interference
+ fringes with distinct directions, given by 
+\begin_inset Formula $\mathbf{k}_{ij}$
+\end_inset
+
+.
+ Evidently, the geometric phase information is contained in 
+\begin_inset Formula $P_{ij}$
+\end_inset
+
+.
+ To extract this, we look at the condition for maximum intensity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle =2n_{ij}\pi
+\]
+
+\end_inset
+
+which is of the from 
+\begin_inset Formula $\mathbf{r}.\mathbf{k}=c$
+\end_inset
+
+ (in 3d, this is a plane, in 2d, its a line obviously) 
+\begin_inset Formula 
+\[
+\begin{aligned}(x\mathbf{x}+y\mathbf{y}).(k_{x}\mathbf{x}+k_{y}\mathbf{y}+k_{z}\mathbf{z}) & =c\\
+ & =xk_{x}+yk_{y}
+\end{aligned}
+\]
+
+\end_inset
+
+Here 
+\begin_inset Formula $n_{ij}$
+\end_inset
+
+ are integers.
+ These equations define sets of three distinct parallel lines which are
+ called the 
+\series bold
+ridge lines
+\series default
+ on the observation plane.
+ The area 
+\begin_inset Formula $S$
+\end_inset
+
+ of the triangle formed by these, called the 
+\series bold
+ridge triangle
+\series default
+.
+ Using the formula for finding the area of a triangle, given equations of
+ the lines making the edges as 
+\begin_inset Formula 
+\[
+\begin{aligned}a_{1}x+b_{1}y+c_{1} & =0\\
+a_{2}x+b_{2}y+c_{2} & =0\\
+a_{3}x+b_{3}y+c_{3} & =0
+\end{aligned}
+\]
+
+\end_inset
+
+is 
+\begin_inset Formula 
+\[
+\frac{\text{det}\left[\begin{array}{ccc}
+a_{1} & b_{1} & c_{1}\\
+a_{2} & b_{2} & c_{2}\\
+a_{3} & b_{3} & c_{3}
+\end{array}\right]^{2}}{2C_{1}C_{2}C_{3}}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $C_{i}=\text{cofactor of }c_{i}$
+\end_inset
+
+, we finally obtain
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\frac{L^{2}}{4k^{2}S_{0}}\left\{ \text{arg}\left[\Delta_{3}\left(\psi_{1},\psi_{2},\psi_{3}\right)\right]-2n\pi\right\} ^{2}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $n=n_{12}+n_{23}+n_{31}$
+\end_inset
+
+ and 
+\begin_inset Formula $S_{o}$
+\end_inset
+
+ is the area of the triangle of the three pinholes.
+ 
+\end_layout
+
+\begin_layout Standard
+Some points are wroth noting here.
+ 
+\end_layout
+
+\begin_layout Itemize
+The area of ridge triangle is related to 
+\begin_inset Formula $\arg\Delta_{3}$
+\end_inset
+
+.
+ We define an 
+\series bold
+elemental ridge triangle
+\series default
+\emph on
+ 
+\emph default
+to be a ridge triangle that encloses no ridge lines.
+ For example, for 
+\begin_inset Formula $0\leq\arg\Delta_{3}<2\pi$
+\end_inset
+
+ the ridge triangles with 
+\begin_inset Formula $n=0$
+\end_inset
+
+ and 
+\begin_inset Formula $1$
+\end_inset
+
+ are elemental.
+ Clearly, the 
+\begin_inset Formula $S$
+\end_inset
+
+ with 
+\begin_inset Formula $n=0$
+\end_inset
+
+ is proportional to square of geometric phase 
+\begin_inset Formula $\arg\Delta_{3}$
+\end_inset
+
+; for 
+\begin_inset Formula $n=1$
+\end_inset
+
+ it is proportional to 
+\begin_inset Formula $2\pi-\arg\Delta_{3}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Secondly, the gauge invariance of 
+\begin_inset Formula $\Delta_{3}$
+\end_inset
+
+ carries over to the area since by introducing a phase shift to one of pinholes,
+ two sets of ridge lines are displaced but the area is conserved.
+ 
+\end_layout
+
+\begin_layout Itemize
+Third, the equation is proportional to the geometric phases regardless of
+ the vectors 
+\begin_inset Formula $\mathbf{a}_{i}$
+\end_inset
+
+, thus essentially any geometry of the three pinholes can form the ridge
+ triangle.
+ 
+\end_layout
+
+\begin_layout Section
+Extraction of Ridge Lines
+\end_layout
+
+\begin_layout Standard
+In order to determine the ridge lines, rather than the straightforward way
+ of observing individual interference fringes 
+\begin_inset Formula $P_{ij}(x,y)$
+\end_inset
+
+ by closing one of the holes, we extract all the ridge lines in a single
+ shot from the combined interferogram 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+.
+ To start with, note that for arbitrary 
+\begin_inset Formula $\mathbf{b},\,\mathbf{k}$
+\end_inset
+
+ we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\mathbf{b}.\mathbf{\nabla}\left(\mathbf{k}.\mathbf{r}\right) & =b_{i}\frac{\partial}{\partial x_{i}}k_{j}r_{j}\\
+ & =b_{i}k_{j}\left(\frac{\partial}{\partial x_{i}}r_{j}\right)\\
+ & =b_{i}k_{j}\delta_{ij}\\
+ & =\mathbf{b}.\mathbf{k}
+\end{aligned}
+\]
+
+\end_inset
+
+Now we define 
+\begin_inset Formula 
+\[
+\mathbf{b}_{i}\equiv\mathbf{e}_{z}\times(\mathbf{a}_{j}-\mathbf{a}_{k})=\frac{L}{k}\mathbf{e}_{z}\times\mathbf{k}_{jk}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $(i,j,k)=(1,2,3),(2,3,1),(3,1,2)$
+\end_inset
+
+ NB: 
+\begin_inset Formula $\mathbf{b}_{i}\mathbf{k}_{jk}=0$
+\end_inset
+
+.
+ Further note that the vector 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ in 
+\begin_inset Formula $z=0$
+\end_inset
+
+ is determined only by the geometry of the three pinholes.
+ If we consider the directional derivative along 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+, since 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ is orthogonal to 
+\begin_inset Formula $k_{jk}$
+\end_inset
+
+ we can
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The derivation is given below.
+ This is just to motivate the approach.
+\end_layout
+
+\end_inset
+
+ now eliminate one of the interference fringes 
+\begin_inset Formula $P_{ij}(x,y)$
+\end_inset
+
+ from the total interferogram 
+\begin_inset Formula $p(x,y)$
+\end_inset
+
+ while the other fringes remain sinusoidal functions.
+ Another such directional derivative isolates the desired oscillation term.
+\end_layout
+
+\begin_layout Standard
+Let's explicitly derive this.
+ Recall: 
+\begin_inset Formula $P_{ij}(x,y)\equiv2\left(1+\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|\right)$
+\end_inset
+
+.
+ Let's start with performing the first directional derivative.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left(\mathbf{b}_{1}.\nabla\right)p(x,y) & =\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)\frac{C^{2}}{L^{2}}\left\{ -3+\sum_{(i,j)\text{cycle}}P_{ij}(x,y)\right\} \\
+ & \propto\sum_{(i,k)\text{cycle}}\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)P_{ik}(x,y)\\
+ & \propto\sin\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\cancelto{\mathbf{b}_{1}.\mathbf{k}_{12}}{\left(\mathbf{b}_{1}.\mathbf{\nabla}\right)(\mathbf{k}_{12}.\mathbf{r})}\\
+ & +\sin\left[(\mathbf{k}_{23}.\mathbf{r})-\phi_{23}+\text{arg}\left\langle \psi_{2}|\psi_{3}\right\rangle \right]\left|\left\langle \psi_{2}|\psi_{3}\right\rangle \right|\cancelto{0}{\mathbf{b}_{1}.\mathbf{k}_{23}}\\
+ & +\sin\left[(\mathbf{k}_{31}.\mathbf{r})-\phi_{31}+\text{arg}\left\langle \psi_{3}|\psi_{1}\right\rangle \right]\left|\left\langle \psi_{3}|\psi_{1}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{31}
+\end{aligned}
+\]
+
+\end_inset
+
+Now when it is applied again along 
+\begin_inset Formula $\mathbf{b}_{2}$
+\end_inset
+
+, we get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{aligned}\left(\mathbf{b}_{2}.\nabla\right)\left(\mathbf{b}_{1}.\nabla\right)p(x,y) & \propto-\cos\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{12}\mathbf{b}_{2}.\mathbf{k}_{12}\\
+ & -\cos\left[(\mathbf{k}_{31}.\mathbf{r})-\phi_{31}+\text{arg}\left\langle \psi_{3}|\psi_{1}\right\rangle \right]\left|\left\langle \psi_{3}|\psi_{1}\right\rangle \right|\mathbf{b}_{1}.\mathbf{k}_{31}\cancelto{0}{\mathbf{b}_{2}.\mathbf{k}_{31}}\\
+ & \propto\cos\left[(\mathbf{k}_{12}.\mathbf{r})-\phi_{12}+\text{arg}\left\langle \psi_{1}|\psi_{2}\right\rangle \right]\left|\left\langle \psi_{1}|\psi_{2}\right\rangle \right|
+\end{aligned}
+\]
+
+\end_inset
+
+which is precisely what we'd claimed to start with.
+ NB: 
+\begin_inset Formula $\left(\mathbf{b}_{2}.\nabla\right)\left(\mathbf{b}_{1}.\nabla\right)p(x,y)=\left(\mathbf{b}_{1}.\nabla\right)\left(\mathbf{b}_{2}.\nabla\right)p(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So in general then, I can write
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(\mathbf{b}_{i}.\mathbf{\nabla}\right)\left(\mathbf{b}_{j}.\mathbf{\nabla}\right)p(x,y)\propto\cos\left[(\mathbf{k}_{ij}.\mathbf{r})-\phi_{ij}+\text{arg}\left\langle \psi_{i}|\psi_{j}\right\rangle \right]\left|\left\langle \psi_{i}|\psi_{j}\right\rangle \right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Interferograms for the three pinholes are shown in Figure 3(a) and the three
+ sets of ridge lines thus extracted are shown in Figure 3(b).
+ Thus it is easy to determine the pure geometric phase instantaneously as
+ the square root of the area of the ridge triangle extracted directly from
+ the three pinhole interferogram for three arbitrary states.
+ 
+\end_layout
+
+\begin_layout Section
+Experiment
+\end_layout
+
+\begin_layout Standard
+For the experiment (Figure 2), a 
+\begin_inset Formula $532nm$
+\end_inset
+
+ green laser source was used for illuminating a thin copper foil that is
+ perforated with three 
+\begin_inset Formula $0.1mm$
+\end_inset
+
+ radius pinholes.
+ These pinholes lie on an equilateral triangle of side 
+\begin_inset Formula $1.5mm$
+\end_inset
+
+.
+ The observation plane was placed at a distance of approximately 
+\begin_inset Formula $2m$
+\end_inset
+
+ from the pinholes, where the interfering patterns were captured using a
+ charged coupled device (CCD) camera.
+ This camera had a resolution of 
+\begin_inset Formula $640\times480$
+\end_inset
+
+ pixels with each pixel being 
+\begin_inset Formula $9\mu m\times8\mu m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The polarization states from the left, right and upper pinholes are 
+\begin_inset Formula $\ket{\psi_{1}}=(\sqrt{3}\ket{H}+i\ket{V})/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\psi_{2}}=(i\sqrt{3}\ket{H}+\ket{V})/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\psi_{3}}=\cos\ket{H}+\sin\ket{V}$
+\end_inset
+
+ where 
+\begin_inset Formula $\ket{H}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{V}$
+\end_inset
+
+ are the horizontal and vertical polarization states respectively.
+ On the Poincare sphere 
+\begin_inset Formula $\ket{\psi_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\psi_{2}}$
+\end_inset
+
+ are both located at a latitude of 
+\begin_inset Formula $\pm60^{o}$
+\end_inset
+
+ on the prime meridian and 
+\begin_inset Formula $\ket{\psi_{3}}$
+\end_inset
+
+ is located on the equator at a longitude of 
+\begin_inset Formula $2\theta$
+\end_inset
+
+ which is can be varied according to linear polarizer LP1.
+ The geometric phase is proportional to the solid angle 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ of the spherical triangle formed by 
+\begin_inset Formula $\ket{\psi_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\ket{\psi_{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\ket{\psi_{3}}$
+\end_inset
+
+ on the Poincare sphere as 
+\begin_inset Formula $\arg\Delta_{3}=-\Omega/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\arg\Delta_{3}(\psi_{1}\psi_{2}\psi_{3})=\tan^{-1}\left(\frac{1}{\sqrt{3}}\tan\theta\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename paperImages/2.png
+	width 8cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimental Setup Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename paperImages/3.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interferogram, data extraction, physical states, prediction and data
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://math.stackexchange.com/questions/901819/direct-formula-for-area-of-a-triang
+le-formed-by-three-lines-given-their-equatio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://en.wikipedia.org/wiki/Bloch_sphere
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
