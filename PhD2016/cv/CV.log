@@ -191,9 +191,9 @@ tter compatibility patches
 Package: suffix 2006/07/15 1.5 Variant command support
 )
 \bibindent=\skip54
- (./tweaklist.sty)) (./moderncvcolorpurple.sty
-Package: moderncvcolorpurple 2012/10/31 v1.2.0 modern curriculum vitae and lett
-er color scheme: purple
+ (./tweaklist.sty)) (./moderncvcolorred.sty
+Package: moderncvcolorred 2012/10/31 v1.2.0 modern curriculum vitae and letter 
+color scheme: red
 ) (./moderncvstyleclassic.sty
 Package: moderncvstyleclassic 2012/10/31 v1.2.0 modern curriculum vitae and let
 ter style scheme: classic
@@ -560,4 +560,4 @@ Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
 Package hyperref Info: backreferencing OFF on input line 6310.
-Package
+Package hyperref
