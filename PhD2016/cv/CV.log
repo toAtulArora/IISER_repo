@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  4 OCT 2015 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  4 OCT 2015 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -795,21 +795,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 60.
-Runaway argument?
-{We proposed a test of local realism based on correlation measurement\ETC.
-! Paragraph ended before \\cventry was complete.
-<to be read again> 
-                   \par 
-l.89 
-     
-? 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
- [4]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
- (./CV.aux)
+
+(./CV.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `CV.out' has not changed.
@@ -822,15 +815,18 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 12916 strings out of 494968
- 185302 string characters out of 6178965
+ 12931 strings out of 494968
+ 185454 string characters out of 6178965
  303269 words of memory out of 5000000
  15866 multiletter control sequences out of 15000+600000
- 70055 words of font info for 95 fonts, out of 8000000 for 9000
+ 70636 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,13n,67p,948b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,67p,974b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm
@@ -841,10 +837,10 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/
 marvosym.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa17.pfb>
-Output written on CV.pdf (4 pages, 221967 bytes).
+Output written on CV.pdf (5 pages, 226562 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 14 named destinations out of 1000 (max. 500000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
  20553 words of extra memory for PDF output out of 20736 (max. 10000000)
 
