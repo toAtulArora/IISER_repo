@@ -543,6 +543,13 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `unicode' set `true' on input line 4319.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
 Package hyperref Info: Hyper figures OFF on input line 4443.
 Package hyperref Info: Link nesting OFF on input line 4448.
 Package hyperref Info: Hyper index ON on input line 4451.
@@ -565,21 +572,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-
-
-Package hyperref Warning: Option `pdfpagelabels' is turned off
-(hyperref)                because \thepage is undefined.
-
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+\Fld@listcount=\count100
+\c@bookmark@seq@number=\count101
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -588,32 +591,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip67
 )
-
-! LaTeX Error: Option clash for package hyperref.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \begin{document}
-                     
-? 
 Package hyperref Info: Option `breaklinks' set `true' on input line 52.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 52.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 52.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 52.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 52.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 52.
 
 (./CV.aux)
@@ -639,6 +633,8 @@ File: t3cmr.fd 2001/12/31 TIPA font definitions
 LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 52.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
@@ -646,16 +642,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen119
 \scratchbox=\box27
-\nofMPsegments=\count102
-\nofMParguments=\count103
+\nofMPsegments=\count103
+\nofMParguments=\count104
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count104
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen120
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
 \everyMPtoPDFconversion=\toks24
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -729,7 +725,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count107
+\c@section@level=\count108
 )
 LaTeX Info: Redefining \ref on input line 52.
 LaTeX Info: Redefining \pageref on input line 52.
@@ -812,11 +808,17 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
  [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (./CV.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
-Package rerunfilecheck Info: File `CV.out' has not changed.
-(rerunfilecheck)             Checksum: EA43DB559AA6A735682FEFF9F8D427CC;450.
 
+
+Package rerunfilecheck Warning: File `CV.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `CV.out':
+(rerunfilecheck)             Before: EA43DB559AA6A735682FEFF9F8D427CC;450
+(rerunfilecheck)             After:  1E13D0D0BFF4A3B657891DA7FA4BD0F0;1066.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 9.12pt have occurred.
@@ -826,10 +828,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 9916 strings out of 494968
- 146291 string characters out of 6178965
- 278403 words of memory out of 5000000
- 12849 multiletter control sequences out of 15000+600000
+ 12968 strings out of 494968
+ 186016 string characters out of 6178965
+ 303135 words of memory out of 5000000
+ 15898 multiletter control sequences out of 15000+600000
  70955 words of font info for 103 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,13n,67p,1068b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -844,7 +846,7 @@ sr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/marvosym/marvosym.pfb></usr/share/tex
 mf/fonts/type1/fkr/tipa/tipa17.pfb>
-Output written on CV.pdf (5 pages, 247835 bytes).
+Output written on CV.pdf (5 pages, 248793 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  111 compressed objects within 2 object streams
