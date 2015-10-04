@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  3 OCT 2015 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.9.6)  4 OCT 2015 06:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -815,11 +815,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 12924 strings out of 494968
- 185339 string characters out of 6178965
+ 12922 strings out of 494968
+ 185319 string characters out of 6178965
  303135 words of memory out of 5000000
  15858 multiletter control sequences out of 15000+600000
- 70719 words of font info for 103 fonts, out of 8000000 for 9000
+ 70636 words of font info for 102 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,13n,67p,974b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
@@ -832,7 +832,7 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/
 marvosym.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa17.pfb>
-Output written on CV.pdf (5 pages, 224588 bytes).
+Output written on CV.pdf (5 pages, 224628 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  102 compressed objects within 2 object streams
