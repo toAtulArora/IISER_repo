@@ -1,0 +1,257 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Philosophy Notes
+\end_layout
+
+\begin_layout Section
+Week M
+\end_layout
+
+\begin_layout Subsection
+Monday
+\end_layout
+
+\begin_layout Subsection
+Tuesday
+\end_layout
+
+\begin_layout Standard
+Read from Alex Miller, Contemporary Metaethics (4.1), Norm Supression (5.1).
+\end_layout
+
+\begin_layout Subsubsection
+Gilbert's Contribution: NORM EXPRESSIVISM
+\end_layout
+
+\begin_layout Standard
+Moral jdugements (like lying is rong etc.), they're a non-cognitive mental
+ state (thus not truth evaluable); They express certain kinds of norms that
+ we accept.
+ (this seems to Murthy to be the most apt way of describing moral jdugements).
+ 
+\end_layout
+
+\begin_layout Standard
+Idea of rationality: If something is wrong, lying is wrong for example,
+ it only means that I'm rational to be held guildty for that act.
+ It's rational for other people to feel angry for that act.
+ So rationality here allows you to accept norms; this acceptence entails
+ guilt and anger etc.
+ (ask how rational).
+\end_layout
+
+\begin_layout Standard
+This seems to suggest that there must be some truth condition; because rationali
+ty usually is this way.
+ However he is extending the idea of rationality to something else, which
+ is non-cognitivie.
+ How its applied, is acceptance of norms.
+\end_layout
+
+\begin_layout Standard
+Kant talks about rationality in terms of maxims (rules etc.).
+ There rationality amounts to identifying some inconsistency etc.
+ The inconsistency can also come, because in some way, there's some sort
+ of rule operating.
+ He also states that reason commands you to do something.
+ He is in this sense defining rationality.
+ (what about idea of freedom defined using rationality).
+ Here however, the idea of rationality matches still.
+ The rule acceptance is...
+\end_layout
+
+\begin_layout Subsubsection
+Hare's response: Non-cognitive
+\end_layout
+
+\begin_layout Standard
+Interestingly, there'll be always some cognitive aspect in non-cognitive
+ theories.
+ If th primary component is cognitive, then the theory is cognitive.
+ It its not, then, you know.
+ This is how he challenges stevenson.
+ The use of good has a commendatory aspect.
+ And it also has a command aspect also.
+ If X is good, then the there's a descriptive part (using some criteria
+ you evaluate this), which can change and a prescriptive part (the commondat
+ ory aspect of it).
+ So stevenson was combining commands with saying it posessed a certain kind
+ of emotions.
+ Recall there was magnetic component also, which entailed that the language
+ has a goading aspect.
+ 
+\end_layout
+
+\begin_layout Standard
+Aside: Locution: , Elocultion: How is it stated, eg.
+ warning, command (!.? etc.); that can be used by modulation fo voice.
+ Perlocutionary aspect: Force by which one is made to act
+\end_layout
+
+\begin_layout Standard
+So the charge on stevenson was (by Hare) that stevenson confused the perlocution
+ary aspect of moral language with morality itself.
+ Moral language has two aspects as stated.
+ The prescriptive aspect is not the same as perlocution.
+ 
+\end_layout
+
+\begin_layout Standard
+Supervenience thesis: If something's commendable (this would come from descripti
+ve properties) then something else with same properties will also be commendable.
+ So there's some sort of universalizability.
+ (why did he mention this?) Once you command, 
+\end_layout
+
+\begin_layout Standard
+Summary: Within non-cognitivism, we studied emotivism (Charlie, came by
+ discarding Moore's naturalism); Emotivism gave rise to prescriptivism etc.
+\end_layout
+
+\begin_layout Standard
+Meta ethics: What exactly do moral statements/judgements mean? Are they
+ truth evaluable or not?
+\end_layout
+
+\begin_layout Subsubsection
+Egoism
+\end_layout
+
+\begin_layout Standard
+One obstruction to ethics was relativism.
+ Another one is egoism.
+ Most of our actions are motivated by self interest.
+ It is motivated by self interest only.
+ Psychological egoism.
+ All actions are (not ought to be) motivated by self interest.
+ It's an all encompassing theory.
+ It can justify anything.
+ This generated another theory.
+ It is different from utilitarianism in the sense that there it was utility
+ for all, now it is for an individual.
+ 
+\end_layout
+
+\begin_layout Subsection
+Wednesday
+\end_layout
+
+\begin_layout Subsubsection
+Egoism (resumed)
+\end_layout
+
+\begin_layout Standard
+Self interest undermines morality.
+ Now egoism claims that self interest is drives our action/motivation etc.
+ and therefore egoism is what matters and morality doesn't matter.
+ There two kinds of egoisms: (i) Psychological and (ii) ?.
+ Psychological Egoism makes a statement (claims, 'are' or 'is') that self
+ interest is what drives our actions, viz.
+ 
+\emph on
+all
+\emph default
+ our action is driven by self interest.
+ They say that even if we cooperate, we do so to get our interest.
+ However, this you can use to defend both alternatives.
+ Eg.
+ giving charity makes us happy, thus self interest.
+ Not giving charity, we save money, self interest.
+ Thus it doesn't explain anything, by explaining everything.
+\end_layout
+
+\begin_layout Standard
+! Observe that most of our motivations arise out of desires.
+ If my desires are satisfied, then it entails that this is self interest.
+\end_layout
+
+\begin_layout Standard
+(1) All I do is motivated by my desires (2) All my desires are for the satisfact
+ion of my interests
+\end_layout
+
+\begin_layout Standard
+The argument valid but may not be sound.
+ Let's test.
+ For hume, no action 
+\end_layout
+
+\end_body
+\end_document
