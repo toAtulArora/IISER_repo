@@ -1,0 +1,1528 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Philosophy Notes
+\end_layout
+
+\begin_layout Section
+Week M
+\end_layout
+
+\begin_layout Subsection
+Monday
+\end_layout
+
+\begin_layout Subsection
+Tuesday
+\end_layout
+
+\begin_layout Standard
+Read from Alex Miller, Contemporary Metaethics (4.1), Norm Supression (5.1).
+\end_layout
+
+\begin_layout Subsubsection
+Gilbert's Contribution: NORM EXPRESSIVISM
+\end_layout
+
+\begin_layout Standard
+Moral jdugements (like lying is rong etc.), they're a non-cognitive mental
+ state (thus not truth evaluable); They express certain kinds of norms that
+ we accept.
+ (this seems to Murthy to be the most apt way of describing moral jdugements).
+ 
+\end_layout
+
+\begin_layout Standard
+Idea of rationality: If something is wrong, lying is wrong for example,
+ it only means that I'm rational to be held guildty for that act.
+ It's rational for other people to feel angry for that act.
+ So rationality here allows you to accept norms; this acceptence entails
+ guilt and anger etc.
+ (ask how rational).
+\end_layout
+
+\begin_layout Standard
+This seems to suggest that there must be some truth condition; because rationali
+ty usually is this way.
+ However he is extending the idea of rationality to something else, which
+ is non-cognitivie.
+ How its applied, is acceptance of norms.
+\end_layout
+
+\begin_layout Standard
+Kant talks about rationality in terms of maxims (rules etc.).
+ There rationality amounts to identifying some inconsistency etc.
+ The inconsistency can also come, because in some way, there's some sort
+ of rule operating.
+ He also states that reason commands you to do something.
+ He is in this sense defining rationality.
+ (what about idea of freedom defined using rationality).
+ Here however, the idea of rationality matches still.
+ The rule acceptance is...
+\end_layout
+
+\begin_layout Subsubsection
+Hare's response: Non-cognitive
+\end_layout
+
+\begin_layout Standard
+Interestingly, there'll be always some cognitive aspect in non-cognitive
+ theories.
+ If th primary component is cognitive, then the theory is cognitive.
+ It its not, then, you know.
+ This is how he challenges stevenson.
+ The use of good has a commendatory aspect.
+ And it also has a command aspect also.
+ If X is good, then the there's a descriptive part (using some criteria
+ you evaluate this), which can change and a prescriptive part (the commondat
+ ory aspect of it).
+ So stevenson was combining commands with saying it posessed a certain kind
+ of emotions.
+ Recall there was magnetic component also, which entailed that the language
+ has a goading aspect.
+ 
+\end_layout
+
+\begin_layout Standard
+Aside: Locution: , Elocultion: How is it stated, eg.
+ warning, command (!.? etc.); that can be used by modulation fo voice.
+ Perlocutionary aspect: Force by which one is made to act
+\end_layout
+
+\begin_layout Standard
+So the charge on stevenson was (by Hare) that stevenson confused the perlocution
+ary aspect of moral language with morality itself.
+ Moral language has two aspects as stated.
+ The prescriptive aspect is not the same as perlocution.
+ 
+\end_layout
+
+\begin_layout Standard
+Supervenience thesis: If something's commendable (this would come from descripti
+ve properties) then something else with same properties will also be commendable.
+ So there's some sort of universalizability.
+ (why did he mention this?) Once you command, 
+\end_layout
+
+\begin_layout Standard
+Summary: Within non-cognitivism, we studied emotivism (Charlie, came by
+ discarding Moore's naturalism); Emotivism gave rise to prescriptivism etc.
+\end_layout
+
+\begin_layout Standard
+Meta ethics: What exactly do moral statements/judgements mean? Are they
+ truth evaluable or not?
+\end_layout
+
+\begin_layout Subsubsection
+Egoism
+\end_layout
+
+\begin_layout Standard
+One obstruction to ethics was relativism.
+ Another one is egoism.
+ Most of our actions are motivated by self interest.
+ It is motivated by self interest only.
+ Psychological egoism.
+ All actions are (not ought to be) motivated by self interest.
+ It's an all encompassing theory.
+ It can justify anything.
+ This generated another theory.
+ It is different from utilitarianism in the sense that there it was utility
+ for all, now it is for an individual.
+ 
+\end_layout
+
+\begin_layout Subsection
+Wednesday
+\end_layout
+
+\begin_layout Subsubsection
+Egoism (resumed)
+\end_layout
+
+\begin_layout Standard
+Self interest undermines morality.
+ Now egoism claims that self interest is drives our action/motivation etc.
+ and therefore egoism is what matters and morality doesn't matter.
+ There two kinds of egoisms: (i) Psychological and (ii) ethical.
+ Psychological Egoism makes a statement (claims, 'are' or 'is') that self
+ interest is what drives our actions, viz.
+ 
+\emph on
+all
+\emph default
+ our action is driven by self interest.
+ They say that even if we cooperate, we do so to get our interest.
+ However, this you can use to defend both alternatives.
+ Eg.
+ giving charity makes us happy, thus self interest.
+ Not giving charity, we save money, self interest.
+ Thus it doesn't explain anything, by explaining everything.
+\end_layout
+
+\begin_layout Standard
+! Observe that most of our motivations arise out of desires.
+ If my desires are satisfied, then it entails that this is self interest.
+\end_layout
+
+\begin_layout Standard
+(1) All I do is motivated by my desires (2) All my desires are for the satisfact
+ion of my interests
+\end_layout
+
+\begin_layout Standard
+The argument valid but may not be sound.
+ Let's test.
+ For hume, no action can arise without desire.
+ Kant countered this.
+ For instance, staying back on a Sunday out of duty.
+ However, for Kant it seems that being rational is desired.
+ Thus it may become hard to sepearte reason from desire.
+ So much for the first.
+ Now let's look at the second premise.
+ Say you want to do something and you get something out of it.
+ Counter (possible) example is that you have a friend who's unwell and you
+ take him to the doctor.
+ What self interest could you have? Well, the egoists will say that you
+ couldn't see him suffer, you wanted to reduce your suffering of seeing
+ him suffer.
+ 
+\end_layout
+
+\begin_layout Standard
+Ethical egoism says that all your desires ought to take care of your self
+ interest.
+ Why though? The self interest becomes the basis of morality.
+\end_layout
+
+\begin_layout Standard
+Helping others, intruding into their freedom (talking about countries),
+ become permanently dependent.
+ Counter is that this doesn't say you shouldn't help.
+ Just means that the means of helping is not the best.
+ Eg.
+ use the Golden Rule, perhaps modified to include helping those that don't
+ reciprocate; 
+\end_layout
+
+\begin_layout Subsubsection
+Social Contract Theory
+\end_layout
+
+\begin_layout Standard
+How do I formulate a law for myself to live together in a society.
+ What's the sociological and psychological basis for morality? This is not
+ like a scientific discovery.
+ You're trying to construct certain laws, where there's an implicit agreement
+ in the society.
+ Agree to a certain contract, (maybe of historical origins) and if you don't
+ abide by it, then you're wrong.
+ One thesis is Thomas Bob.
+ 
+\end_layout
+
+\begin_layout Standard
+Resources: John Shands --> Fundamental of philosophy | desires | John Shands
+ --> Ethics (Egoism)
+\end_layout
+
+\begin_layout Section
+Week M+1
+\end_layout
+
+\begin_layout Subsection
+Monday
+\end_layout
+
+\begin_layout Standard
+Social Contract theory: We forge an implicit agreement that gives advantage
+ to everyone.
+ Going against this agreement is immorality.
+\end_layout
+
+\begin_layout Itemize
+Question: Why must we agree? Here comes the idea of morality.
+ Thomas Hobbs gives the idea of 
+\begin_inset Quotes eld
+\end_inset
+
+state of nature
+\begin_inset Quotes erd
+\end_inset
+
+.
+ He says that we forge a document and agree to it.
+ Eg.
+ Legal agreement.
+ The terms and conditions are stated to share the burdens and benifits.
+ When agreed upon, each party expects the other to abide by it.
+ However for everyday tasks, we don't always have written agreements.
+ Eg.
+ eating in a resteraunt; its implied I'll pay for it.
+ Now as far as a social contract theory is concerned, it has neither a written
+ agreement, nor is there a restaurant like implicit agreement.
+ 
+\end_layout
+
+\begin_layout Itemize
+In the 
+\begin_inset Quotes eld
+\end_inset
+
+state of nature
+\begin_inset Quotes erd
+\end_inset
+
+ [defn: no laws (police etc.), you do what you must], there's some kind of
+ conflict.
+ Man realizes this (that it's too insecure etc.) and forges an agreement
+ for everyone's advantage.
+ Why there's this type of agreement? Lets consider two examples.
+ One is killing and one is stealing.
+ (We're trying to see how morality prohibits me from stealing or killing)
+ In the sense of agreement, these are wrong because you also want your posession
+s and yourself to be safe.
+\end_layout
+
+\begin_layout Itemize
+Note that here we're not looking at equality of humans.
+ We're looking at equality of strength.
+ If we're equal in strenght, then if I harm, then I can be equally harmed
+ by others.
+ [historically it lies in ruso and plato; recall socrates being in prison
+ and doesn't want to escape.
+ He says that's because he has a certain contract.
+ He says that its so fundamental that he can't violate it.
+ Yet there's another dialogue in the context of justice, in which there's
+ a mutual agreement and that's the whole notion of justice.
+ He then later tries to counter this, saying there's something more fundamental
+ to justice.] 
+\end_layout
+
+\begin_layout Itemize
+Criticism: The idea of mutual agreement swamps the idea of concern for others,
+ the idea of human inclinations.
+\end_layout
+
+\begin_layout Itemize
+So in essence there're two parts.
+ (1) Egoism (what's in my best interest) and (2) I don't want 
+\begin_inset Quotes eld
+\end_inset
+
+state of nature
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Criticism (by Hobs): Who ensures that this contract is maintained? Historical
+ (theological basis): There was this idea of divine rights (why kings are
+ in power) this view was prevelent.
+ This was used to justify morality.
+ However Hobs wanted a more secular basis for this.
+ Thus he suggested there must be a sovereign power that ensures enforcement
+ of these agreements.
+\end_layout
+
+\begin_layout Itemize
+Criticism: Free rider problem; if one or two don't follow the agreement,
+ then 
+\begin_inset Quotes eld
+\end_inset
+
+free riders
+\begin_inset Quotes erd
+\end_inset
+
+ exist.
+ Clearly unfair so long as others follow the contracts.
+\end_layout
+
+\begin_layout Itemize
+On the 17th we can have a discussion of questions.
+ Virtue, meta, natural, Non natural, + (alex miller?), Egosim (shang's book),
+ Social Contract theory (Ben)
+\end_layout
+
+\begin_layout Subsection
+Tuesday
+\end_layout
+
+\begin_layout Itemize
+The rational choice theories also face the same challenge as what is pointed
+ out by Hobs.
+ Just because I made an agreement, it may not agree with it, it may cease
+ to be in my interest.
+ So the idea is that my choice depends on choices made by others.
+ 
+\end_layout
+
+\begin_layout Itemize
+This is best illustrated by the prisoner's dilemma.
+ A and B are caught.
+ Both convicted of stealing.
+ Not enough evidence to know which one commited a murder.
+ The deal is that (1) if you confess and the other doesn't confess then,
+ you walk free ant the other gets hung.
+ (2) If both confess, then imprisonment for 5 years each.
+ (3) If neither confess, then 2 years each.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Now individually, the best situation is that you confess and the other doesn't.
+ Overall, both remaining silent is best.
+ So now there's a conflict.
+ However, the safest choice is to confess (you don't die).
+ The idea is that you make that choice, assuming that both make this, then
+ deviating from the said choice results in a worse situation.
+\end_layout
+
+\begin_layout Itemize
+Dilemma illustrates: Interests are forward looking, then I needn't care
+ about my agreements (backward looking).
+ However you can't enhance your self interest without promise keeping/agreement
+ etc.
+\begin_inset Newline newline
+\end_inset
+
+This shows that there's a problem with the social contract theory.
+ That theory is based on equality of strenghts.
+ The contract is between two equals so that it benifits both.
+ If there's a weaker person, then he'll submit to me anyway.
+ Thus the contract theory is restricted to equals.
+\begin_inset Newline newline
+\end_inset
+
+Kant on the other hand was saying that this equality is in terms of human
+ worth.
+ Humanity as an end itself was a kind of rational principle (contrast to
+ the rationality used to describe ability to maximizing self interest).
+ Thus for Kant, there's a different kind of contract.
+ 
+\begin_inset Newline newline
+\end_inset
+
+This shows that the idea of morality being based on self interest must go.
+ Later Kant's idea was used to link to Justice.
+ There he (forgot the name) uses the idea of original position where you
+ don't know where you'd belong to, you're behind a veil of ignorance.
+ You could be a rich person, a poor person, stupid, smart etc.
+ He said then the principle of justice will come from this position.
+\begin_inset Newline newline
+\end_inset
+
+The main problems were his assumptions; self interest doesn't guarantee
+ that you'll abide by the contract.
+ The criticims is that this conrtact will not work if the egoist position
+ is assumed.
+\end_layout
+
+\begin_layout Itemize
+The exam is from three to five on the scheduled day.
+\end_layout
+
+\begin_layout Part
+Pre-exam
+\end_layout
+
+\begin_layout Section*
+Q1 Difference b/w virtue ethics and other theories of ethics? Can the latter
+ be seen in terms of virtue ethics?
+\end_layout
+
+\begin_layout Standard
+Virtue Ethics: To decide what we ought to do, ask what we ought to be (discuss:
+ Eg.
+ Gandhi etc., consider virtues)
+\begin_inset Newline newline
+\end_inset
+
+Differences with other theories
+\end_layout
+
+\begin_layout Enumerate
+Use concrete 
+\emph on
+virtue judgements
+\emph default
+ as opposed to abstract principles (discuss: kant, emotions only instrumental;
+ consequentialism, friends view each other as instrumental for overall good)
+\end_layout
+
+\begin_layout Enumerate
+Dissasisfaction that motivated Virtue Ethics: (a) Abstract principles hard
+ to implement, (b) norms of ethics that're partial (? which theory, rule
+ utilitarianism)
+\begin_inset Newline newline
+\end_inset
+
+We must 
+\emph on
+evaluate agents
+\emph default
+ as opposed to their actions only.
+ Kant and Utilitarians also suggest how virtues can be assessed; the distinction
+ is that virtue ethics makes virtue evaluation have 
+\emph on
+primary
+\emph default
+, viz.
+ normative/laws aspect is based on virtue and not action suggested by the
+ virtue.
+\end_layout
+
+\begin_layout Enumerate
+Some felt: Idea is to look at ethical practices of the past and convert
+ them into a theory that unifies them.
+ Eg.
+ Aristotle (student of Plato) 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ life is lived by being virtuous, viz.
+ having all excellences of human character.
+\end_layout
+
+\begin_layout Standard
+Many believe that virtue ethics are compatible with act evaluation: Virtue
+ is the primary mode of evaluation, everything else is evaluated in terms
+ of virtue.
+ Specific example: 
+\end_layout
+
+\begin_layout Standard
+Hursthouse's theory:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+An action is right iff it is what a virtuous agent would, characteristically,
+ do in the circumstances..
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Defn: Eudaimohia:=human well being
+\end_layout
+
+\begin_layout Itemize
+Two types of virtues: Intellectual and moral
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intellectual virtues: conducive to certain kinds of knowledge
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Theoretical wisdom: <not defined further>
+\end_layout
+
+\begin_layout Itemize
+Practical wisdom: [important; it's necessary for moral virtue] enables the
+ agent to figure how to act well, viz.
+ a person who can deliberate; act rationally in matters of good and bad.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Moral Virtue := involves activities that lead to well-being
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Virtue := a mean state; doesn't exhibit excess; 
+\begin_inset Newline newline
+\end_inset
+
+[claim:] Practical wisdom is crucial in choosing the mean
+\end_layout
+
+\begin_layout Section*
+Q2 Issue with moral judgements being beliefs and implication of 
+\begin_inset Quotes eld
+\end_inset
+
+fact-value
+\begin_inset Quotes erd
+\end_inset
+
+ distinction
+\end_layout
+
+\begin_layout Enumerate
+Difference between beliefs and desires (in terms of being truth evaluable)
+\end_layout
+
+\begin_layout Enumerate
+Morality beliefs: (against) fit external reality? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+is there a 
+\begin_inset Quotes eld
+\end_inset
+
+state of the world
+\begin_inset Quotes erd
+\end_inset
+
+ about 
+\begin_inset Quotes eld
+\end_inset
+
+what we ought to do
+\begin_inset Quotes erd
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+how to verify? Factual agreement, moral disagreement
+\end_layout
+
+\begin_layout Enumerate
+even the idea that moral judgements are guided is also troublesome: what's
+ the nature of that which does the guiding?
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Morality beliefs: (in favour) Children worked to death, enslaved; when argued
+ against, we believe this view is wrong.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Are moral issues capable of being true, false, objectively correct etc.?
+\end_layout
+
+\begin_layout Enumerate
+Are they closer to moral reality than others?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Fact-Value distinction
+\end_layout
+
+\begin_layout Standard
+Background
+\end_layout
+
+\begin_layout Enumerate
+Fact: eg.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Beth's remark hurt Alice badly
+\begin_inset Quotes erd
+\end_inset
+
+; facts like these can be agreed upon, with reasonable people - facts exist
+ even if all don't agree.
+\end_layout
+
+\begin_layout Enumerate
+Eg.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Greed is a vice
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+misery is bad
+\begin_inset Quotes erd
+\end_inset
+
+ are neither (i) equivalent to facts nor (ii) deducible from facts; viz.
+ we ought to alleviate pain doesn't logically follow from knowing a person
+ is in pain (in context of misery is bad).
+\end_layout
+
+\begin_layout Standard
+The distinction
+\end_layout
+
+\begin_layout Enumerate
+Ought can't be strictly entailed from facts about the case
+\end_layout
+
+\begin_layout Enumerate
+Properties like 
+\begin_inset Quotes eld
+\end_inset
+
+goodness
+\begin_inset Quotes erd
+\end_inset
+
+ can't be identical to natural properties possessed by actions or states
+ of the world, eg.
+ tendency to produce happiness or misery etc.
+\end_layout
+
+\begin_layout Section*
+Q3 Distinction b/w (a) cognitivism and non-conitivism and (b) naturalism
+ and non-naturalism
+\end_layout
+
+\begin_layout Standard
+Consider: Judgement that murder is wrong.
+\begin_inset Newline newline
+\end_inset
+
+Cognitivists: Such moral judgement is a belief - it is truth-apt
+\begin_inset Newline newline
+\end_inset
+
+Non-cognitivists: Such judgements express emotions/desires - not truth-apt.
+ NB: True/false can be attributed 
+\end_layout
+
+\begin_layout Section*
+Q4 Naturalistic Fallacy and The Open Question Argument
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ as an 
+\begin_inset Quotes eld
+\end_inset
+
+object or idea
+\begin_inset Quotes erd
+\end_inset
+
+ is indefinable.
+ There're two questions
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain why 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ is indefinable
+\end_layout
+
+\begin_layout Enumerate
+On what grounds did he (Moore) say so
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Why 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ is indefinable
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Three definitions exist.
+ (a) Stipulative (b) Lexical (c) third kind
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Anyone can logically/emperically, define (stipulate) the meaning of 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The dictionary would have some rules to use the word 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Third kind: describes the nature of the notion or object, denoted by the
+ word; not merely what it's used to describe
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Definition type (c) is used for complex objects; 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+complex objects are those that have multiple properties/qualities.
+ To define them, we reduce the object to the simplest terms.
+ Simple terms will be those that others are familiar with already.
+\end_layout
+
+\begin_layout Enumerate
+Simple objects/notion: eg.
+ yellow; it doesn't mean 
+\begin_inset Quotes eld
+\end_inset
+
+producing certian vibration
+\begin_inset Quotes erd
+\end_inset
+
+, viz.
+ yellow doesn't make sense to a colourblind person.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Claim: Good is a simple notion; just as yellow doesn't mean 
+\begin_inset Quotes eld
+\end_inset
+
+producing a certain wavelength
+\begin_inset Quotes erd
+\end_inset
+
+, good doesn't mean 
+\begin_inset Quotes eld
+\end_inset
+
+producing pleasure
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+the naturalistic fallacy
+\begin_inset Quotes erd
+\end_inset
+
+: Ethics may have the goal of finding properties, besides being good, that
+ good things have; That doesn't however define good.
+ Philosophers (ethical naturalists) thought it does.
+ This is termed as the naturalistic fallacy.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Synthetic and Analytic propositions: Synthetic 
+\begin_inset Quotes eld
+\end_inset
+
+All bachelors are unmarried males
+\begin_inset Quotes erd
+\end_inset
+
+, Analytic 
+\begin_inset Quotes eld
+\end_inset
+
+All bachelor are unhappy
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In the former, the meaning is contained the other half of the proposition.
+ In the latter it's not.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Moore's Claim: 
+\begin_inset Quotes eld
+\end_inset
+
+Proposition about 'the good' are synthetic, never analytic
+\begin_inset Quotes erd
+\end_inset
+
+ [not clear what's the point? Read the rest and then the bracket!]
+\end_layout
+
+\begin_layout Enumerate
+Substantive 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ and adjective 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+; 
+\begin_inset Quotes eld
+\end_inset
+
+The good
+\begin_inset Quotes erd
+\end_inset
+
+ are 'objects' to which the adjective 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ applies.
+\begin_inset Newline newline
+\end_inset
+
+Observation/Objection: Enumerating all the things that produce pleasure
+ (for example) and calling these 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ doesn't entail 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ itself is definable.
+ Only means 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ is defined.
+\begin_inset Newline newline
+\end_inset
+
+Claim: There's no point in saying that pleasure is good unless good is something
+ different from pleasure.
+\begin_inset Newline newline
+\end_inset
+
+[so 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ being defined synthetically only means that what constitutes good maybe
+ defined as 'objects that produce pleasure'.
+ Infact he claims all definitions of 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ are of this form.
+ However, 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ doesn't define 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+.
+ DOUBT: Why is it important for 
+\begin_inset Quotes eld
+\end_inset
+
+the good
+\begin_inset Quotes erd
+\end_inset
+
+ to be synthetically used? What if its used analytically?]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Naturalistic Fallacy
+\begin_inset Quotes erd
+\end_inset
+
+: On what grounds did Moore say 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ is undefinable?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Moore said there're two and only two alternatives
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ denotes a complex whole, and there maybe disagreement about it's correct
+ analysis
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ means nothing at all; there's no such subject as Ethics
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Issues with (i):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+The open question argument
+\begin_inset Quotes erd
+\end_inset
+
+: The definition used to define the complex object, that very definition
+ maybe questioned to being good itself
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Eg.
+ Good is defined as 
+\begin_inset Quotes eld
+\end_inset
+
+producing pleasure
+\begin_inset Quotes erd
+\end_inset
+
+.
+ One may ask 
+\begin_inset Quotes eld
+\end_inset
+
+Is what pleasure produces good?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Ofcourse, given the definition, it is tautology: 
+\begin_inset Quotes eld
+\end_inset
+
+Is what pleasure produces pleasure?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ The point that (equivalently) 
+\begin_inset Newline newline
+\end_inset
+
+(a) would a hedonist support his view by wondering whether 
+\begin_inset Quotes eld
+\end_inset
+
+what pleasure produces is pleasure
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(b) no one - least of all a hedonist - would accept that 
+\begin_inset Quotes eld
+\end_inset
+
+whatever prodcues pleasure is good
+\begin_inset Quotes erd
+\end_inset
+
+ is an insignificant tautology, viz.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+whatever produces pleasure produces pleasure
+\begin_inset Quotes erd
+\end_inset
+
+.
+ However, if 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ means production of pleasure, then it infact 
+\emph on
+is
+\emph default
+ an insignificant tautology.
+\end_layout
+
+\begin_layout Enumerate
+Philosophers (eg.
+ Bentham, Mill, Spencer etc.) defended their views by saying 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+ means X.
+ The point is that both can't be true.
+ You can't say that their definition is significant (in the aforesaid sense)
+ and at the same time that it's true by definition of 
+\begin_inset Quotes eld
+\end_inset
+
+good
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Issues with (2): Moore claimed that if any person attentively considers
+ what's before his/her mind when he/she asks the question 
+\begin_inset Quotes eld
+\end_inset
+
+is pleasure after all good?
+\begin_inset Quotes erd
+\end_inset
+
+ will satisfactorily find that she isn't just wondering whether pleasure
+ is pleasant.
+ He said that if this is done for various definitions, the same 
+\begin_inset Quotes eld
+\end_inset
+
+unique
+\begin_inset Quotes erd
+\end_inset
+
+ object is compared to the suggested definition.
+ Various distinct questions maybe asked in connection of these objects,
+ eg.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+is it good
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+is this desired or approved or pleasant?
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Thus he says that there must be some 
+\begin_inset Quotes eld
+\end_inset
+
+unique object
+\begin_inset Quotes erd
+\end_inset
+
+ before his mind and so there must be subject matter for ethics.
+ [he admits that one needs to be alert for this, but he said the point of
+ the analysis is to make her alert]
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Q5 Three Features of Stevenson's emotivist theory
+\end_layout
+
+\begin_layout Standard
+Stevenson claimed that any account of meaning of ethical terms must ahve
+ the following features
+\end_layout
+
+\begin_layout Enumerate
+The fact that genuine agreements and disagreements occur within it.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Disagreement in attitude and belief: Eg.
+ Pope says contraceptive should be illicit.
+ (a) Else this may become a new means to solving family problems.
+ (b) This would cause 
+\begin_inset Quotes eld
+\end_inset
+
+lowering of morality
+\begin_inset Quotes erd
+\end_inset
+
+.
+ So the belief is (a), that the act in question will cause some effect.
+ And then there's an attitude towards/against (a).
+ The attitude is (b).
+\begin_inset Newline newline
+\end_inset
+
+The idea is simply that we may differ in our opinions about accuracy of
+ the belief independent of our attitude towards it.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Genuine disagreement in attitude: Stevenson contrasts two attitudes, (a)
+ I approve of this; do so as well (as in you also approve of this) & (b)
+ I approve of this and I want you to do so as well (I want you to also approve
+ of this).
+ The distinction is that in (a), you have a genuine disagreement.
+ A says 
+\begin_inset Quotes eld
+\end_inset
+
+this is good, approve of this
+\begin_inset Quotes erd
+\end_inset
+
+ and B says 
+\begin_inset Quotes eld
+\end_inset
+
+this is not good, don't approve of this
+\begin_inset Quotes erd
+\end_inset
+
+.
+ However, in (b) A will say 
+\begin_inset Quotes eld
+\end_inset
+
+this is good, I want you to approve of this
+\begin_inset Quotes erd
+\end_inset
+
+ while B will say 
+\begin_inset Quotes eld
+\end_inset
+
+this is not good, I don't want you to approve of this
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Thus, in (b), disagreement is not necessary; each can acknowledge both
+ to be true without self-contradiction.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The fact that moral terms have 
+\begin_inset Quotes eld
+\end_inset
+
+magnetism
+\begin_inset Quotes erd
+\end_inset
+
+ [basically have an imperative force: those who recognize X is good, are
+ more likely to do it]
+\end_layout
+
+\begin_layout Enumerate
+The fact that the scientific, or emperical, method of verification is not
+ sufficient for ethics [uses the open question argument; eventually can
+ ask if those properties are good: good is undefinable that way]
+\end_layout
+
+\begin_layout Section*
+Q6 Contractrian's view and state of nature
+\end_layout
+
+\begin_layout Standard
+Idea: Morality is a contract, constructed by rational people for mutual
+ advantage.
+\begin_inset Newline newline
+\end_inset
+
+Claims: (a) Contract theory is the only possible explanation for 'moral
+ commitments'.
+ (b) Intrinsically action-guiding properties are denied.
+\end_layout
+
+\begin_layout Subsection*
+Hypothetical contracts and moral obligations
+\end_layout
+
+\begin_layout Standard
+Contract (generically): (a) In law (discuss: 2 parties freely enter into
+ an agreement, with a hope of a net gain, granted the other complies) then
+ (b) 
+\begin_inset Quotes eld
+\end_inset
+
+not always written
+\begin_inset Quotes erd
+\end_inset
+
+: the Restaurant example (discuss) [NB: A contract basically distributes
+ benefits and burdens]
+\end_layout
+
+\begin_layout Standard
+Moral obligations: Contract with qualification, viz.
+ there's not even an implicit agreement between the moral agents.
+ (Reason: Assume there was, then it would have to be renewed each generation)
+\end_layout
+
+\begin_layout Standard
+Defence: Their content of the theory is to describe what the agreement could
+ be.
+\end_layout
+
+\begin_layout Standard
+Illustrations: (1) Killing and stealing are forbidden and (2) Cooperation
+ | benefits outweigh the burdens
+\end_layout
+
+\begin_layout Standard
+Critics: Works from a self-interest point of view.
+ What if there's a self-sufficient, intelligent and strong enough individual.
+ What has he to gain from the moral contract?
+\end_layout
+
+\begin_layout Subsection*
+Hobbes and the state of nature
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Why should I be moral
+\begin_inset Quotes erd
+\end_inset
+
+ has been answered: self-interested people could agree, provided others
+ also agree.
+\end_layout
+
+\begin_layout Standard
+Hobbes: 
+\end_layout
+
+\begin_layout Itemize
+State of Nature (SON) := Fictional state where (a) there're no police or
+ courts and everyone does as he/she pleases.
+ (b) There's lack of sympathy, altruism.
+ (c) resources are scarce.
+\end_layout
+
+\begin_layout Itemize
+Assume SON: It'll result in 
+\begin_inset Quotes eld
+\end_inset
+
+constant fear (of death etc.), life will be solitary, poor, short etc.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cause of conflict: Equality of strength of humans (brawn + wits combined);
+ (discuss); Morality works if there're enough equals.
+ (discuss)
+\end_layout
+
+\begin_layout Itemize
+Solution: Everyone should agree to be governed by an absolute ruler, who
+ enforces contracts
+\end_layout
+
+\end_body
+\end_document
