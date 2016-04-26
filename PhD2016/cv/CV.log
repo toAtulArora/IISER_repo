@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  9 JAN 2016 01:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2015.11.4)  24 JAN 2016 02:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -793,13 +793,13 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
 
 (./CV.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
 Package rerunfilecheck Info: File `CV.out' has not changed.
 (rerunfilecheck)             Checksum: 6C9342650AFA7B05DC17EF9504FA9172;1337.
 
@@ -829,7 +829,7 @@ type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/marvosym/
 marvosym.pfb></usr/share/texmf/fonts/type1/fkr/tipa/tipa17.pfb>
-Output written on CV.pdf (5 pages, 229224 bytes).
+Output written on CV.pdf (5 pages, 229310 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams

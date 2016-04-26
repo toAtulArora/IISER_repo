@@ -1,0 +1,1059 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass IEEEtran
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Effect of Peculiar Velocities on Observing Density Contrast
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora
+\end_layout
+
+\begin_layout Abstract
+It is known that for large distances and negligible peculiar velocities,
+ the observed red-shift is related directly to the distance of the source,
+ viz.
+ 
+\begin_inset Formula $Z=HR/c$
+\end_inset
+
+.
+ Using this as an approximation, one can find the density contrast by observing
+ representative objects in the sky, viz.
+ 
+\begin_inset Formula $\delta^{S}=\delta^{S}(\theta,\phi,R=cZ/H)$
+\end_inset
+
+.
+ An improvement can be made by accounting for non-zero peculiar velocities.
+ Let 
+\begin_inset Formula $Z=HS/c$
+\end_inset
+
+, where 
+\begin_inset Formula $S=R$
+\end_inset
+
+ if we assume zero peculiar velocity.
+ Our objective here, is to find a relation between the observed quantity
+ 
+\begin_inset Formula $\delta^{S}=\delta^{S}(\theta,\phi,S)$
+\end_inset
+
+ and the relevant quantity 
+\begin_inset Formula $\delta^{R}=\delta^{R}(\theta,\phi,R)$
+\end_inset
+
+.
+ The main importance of this, is that even in the linear theory, where peculiar
+ velocities are small, 
+\begin_inset Formula $\delta^{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta^{R}$
+\end_inset
+
+ are significantly different, although in this discussion, we will not prove
+ this.
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+The notation and known results used in what follows, have been briefly summarize
+d here.
+ The position of an object, is given by 
+\begin_inset Formula $\vec{R}=a\vec{r}$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ quantifies scaling/expansion of the universe and 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ represents the co-moving coordinate.
+ Consequently, the velocity is given by 
+\begin_inset Formula $\vec{V}=\dot{a}\vec{r}+a\vec{\dot{r}}$
+\end_inset
+
+.
+ Recalling, 
+\begin_inset Formula $H\equiv\dot{a}/a$
+\end_inset
+
+ and 
+\begin_inset Formula $\vec{u}\equiv\vec{\dot{r}}$
+\end_inset
+
+ (peculiar velocity), we obtain 
+\begin_inset Formula 
+\begin{equation}
+\vec{V}=H\vec{R}+a\vec{u}.\label{eq:V=HR+au}
+\end{equation}
+
+\end_inset
+
+Recall that the red-shift 
+\begin_inset Formula $Z\equiv(\lambda_{\text{obs}}-\lambda_{\text{em}})/\lambda_{\text{em}}$
+\end_inset
+
+.
+ Using the Doppler effect for light, we have 
+\begin_inset Formula $\lambda_{\text{em}}=\left(\frac{1-\beta}{1+\beta}\right)\lambda_{\text{obs}}$
+\end_inset
+
+, which entails 
+\begin_inset Formula $Z\approx\beta$
+\end_inset
+
+, where 
+\begin_inset Formula $\beta=V_{\text{los}}/c$
+\end_inset
+
+, and 
+\begin_inset Formula $V_{\text{los}}$
+\end_inset
+
+ is the line of sight speed.
+ Further, it can be shown, that for electromagnetic radiation, that was
+ emitted at 
+\begin_inset Formula $t_{\text{em}}$
+\end_inset
+
+, and observed at 
+\begin_inset Formula $t_{\text{obs}}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{\text{obs}}/\lambda_{\text{em}}=a(t_{\text{obs}})/a(t_{\text{em}})$
+\end_inset
+
+ which entails 
+\begin_inset Formula 
+\[
+\frac{a_{\text{obs}}}{a_{\text{em}}}=1+Z.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We will use some results from the linear theory for density contrast, which
+ is defined implicitly as 
+\begin_inset Formula $\rho(\vec{r},t)=\overline{\rho}(t)(1+\delta(\vec{r},t))$
+\end_inset
+
+, where 
+\begin_inset Formula $\overline{\rho}$
+\end_inset
+
+ is the background/averaged mass density, 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is the mass density.
+ In the Newtonian limit, using the fluid approach, it is known that 
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{\partial\delta}{\partial t}+\vec{\nabla}.[(1+\delta)\vec{u}] & = & 0,\\
+\frac{\partial u}{\partial t}+\frac{2\dot{a}}{a}\vec{u}+(u.\nabla)u & = & -\frac{1}{a^{2}}\vec{\nabla}\phi,\\
+\nabla^{2}\phi & = & 4\pi Ga^{2}\overline{\rho}\delta,
+\end{eqnarray*}
+
+\end_inset
+
+hold (
+\begin_inset Formula $\vec{\nabla}\equiv\partial/\partial r_{x}\hat{x}+\partial/\partial r_{y}\hat{y}+\partial/\partial r_{z}\hat{z}$
+\end_inset
+
+), while for small 
+\begin_inset Formula $u$
+\end_inset
+
+, in the linear limit, it follows from these that, 
+\begin_inset Formula 
+\[
+\ddot{\delta}+2H\dot{\delta}-4\pi G\rho\delta=0.
+\]
+
+\end_inset
+
+This can be solved to obtain two independent solutions, 
+\begin_inset Formula $D_{\pm}(t)$
+\end_inset
+
+.
+ The following results will be useful.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(i) It is found that 
+\begin_inset Formula $D_{+}=a$
+\end_inset
+
+ is a growing solution (grows with time), for an Einstien De Sitter (EDS)
+ universe.
+ In general also, it has been shown that 
+\begin_inset Formula 
+\begin{equation}
+d\ln D_{+}/d\ln a=f.\label{eq:dlnD+}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $f$
+\end_inset
+
+ depends on cosmological parameters 
+\begin_inset Formula $\Omega$
+\end_inset
+
+s.
+\begin_inset Newline newline
+\end_inset
+
+(ii) The most general solution can be written as 
+\begin_inset Formula 
+\[
+\delta(\vec{r},t)=\delta_{+}(\vec{r})\frac{D_{+}(t)}{D_{+}(t_{i})}+\delta_{-}(\vec{r})\frac{D_{-}(t)}{D_{-}(t_{i})}.
+\]
+
+\end_inset
+
+It follows after some analysis, that if we start with 
+\begin_inset Formula 
+\begin{equation}
+\vec{v}=-\vec{\nabla}\psi,\label{eq:v=-gradpsi}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\vec{v}\equiv d\vec{r}/dD_{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $\psi\equiv2a\phi/3H_{0}^{2}\Omega_{\text{nr}}D_{+}$
+\end_inset
+
+, then 
+\begin_inset Formula $\delta_{-}=0$
+\end_inset
+
+.
+ Also, from the definition of 
+\begin_inset Formula $\psi$
+\end_inset
+
+, it follows 
+\begin_inset Formula 
+\begin{equation}
+\nabla^{2}\psi=\frac{\delta}{D_{+}}\label{eq:del2psi}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The Relation between 
+\begin_inset Formula $\delta^{S}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta^{R}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+We start with 
+\begin_inset Formula $Z\approx\frac{\vec{V}.\hat{r}}{c}$
+\end_inset
+
+ and precisely define 
+\begin_inset Formula $\vec{S}\equiv Z\hat{r}cH^{-1}$
+\end_inset
+
+ to obtain 
+\begin_inset Formula $\vec{S}=(R+aH^{-1}\vec{u}.\hat{r})\hat{r}$
+\end_inset
+
+ (using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:V=HR+au"
+
+\end_inset
+
+).
+ 
+\begin_inset Formula $\vec{u}$
+\end_inset
+
+ can be expressed as 
+\begin_inset Formula $\frac{d\vec{r}}{dt}=\frac{dr}{dD_{+}}\frac{dD_{+}}{da}\frac{da}{dt}$
+\end_inset
+
+, which entails 
+\begin_inset Formula $\vec{S}=(R+(H^{-1}\dot{a})D_{+}\vec{v}f(\Omega_{\text{nr}}).\hat{r})\hat{r}$
+\end_inset
+
+ (using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:dlnD+"
+
+\end_inset
+
+).
+ We are interested in the present time, in which case, if we assume 
+\begin_inset Formula $D_{+}(t_{0})=1$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\[
+\vec{S}=\vec{R}+f_{0}(v.\hat{r})\hat{r}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{0}\equiv f(\Omega_{\text{nr}0},\Lambda_{0})$
+\end_inset
+
+.
+ From conservation of mass, we must have 
+\begin_inset Formula $\left(1+\delta^{S}(\vec{S})\right)d^{3}\vec{S}=\left(1+\delta^{R}(\vec{R})\right)d^{3}\vec{R}$
+\end_inset
+
+, where 
+\begin_inset Formula $\vec{S}$
+\end_inset
+
+ is related to 
+\begin_inset Formula $\vec{R}$
+\end_inset
+
+ as stated earlier.
+ Note that we must conserve 
+\begin_inset Formula $(1+\delta)d\tau$
+\end_inset
+
+ and not 
+\begin_inset Formula $\delta d\tau$
+\end_inset
+
+ (where 
+\begin_inset Formula $d\tau$
+\end_inset
+
+ is the volume element).
+ Since, 
+\begin_inset Formula $d^{3}\vec{S}=\frac{\partial(S_{x},S_{y},S_{z})}{\partial(R_{x},R_{y},R_{z})}d^{3}\vec{R}$
+\end_inset
+
+, effectively we are only required to evaluate the Jacobian to find an explicit
+ relation.
+ Evaluating the Jacobian directly is tedious.
+ Instead, one may note that one can write 
+\begin_inset Formula $S\hat{r}=R(1+U/R)\hat{r}$
+\end_inset
+
+, where 
+\begin_inset Formula $U=f_{0}(\vec{v}.\hat{r})$
+\end_inset
+
+, which entails that in spherical coordinates, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ remain unchanged.
+ Consequently 
+\begin_inset Formula $d^{3}\vec{S}=S^{2}dS\sin\theta d\theta d\phi$
+\end_inset
+
+ can be written as 
+\begin_inset Formula $(1+U/R)^{2}(1+dU/dR)R^{2}dR\sin\theta d\theta d\phi$
+\end_inset
+
+, which entails 
+\begin_inset Formula $J=\left(1+\frac{U}{R}\right)^{2}\left(1+\frac{dU}{dR}\right).$
+\end_inset
+
+ The required relation then, is 
+\begin_inset Formula 
+\[
+1+\delta^{R}(\vec{R})=\left(1+\delta^{S}(\vec{S})\right)\left(1+\frac{U}{R}\right)^{2}\left(1+\frac{dU}{dR}\right).
+\]
+
+\end_inset
+
+where the second term in the Right Hand Side (RHS), maybe dropped for distant
+ objects.
+ However, 
+\begin_inset Formula $U$
+\end_inset
+
+ is still unknown and to resolve that, for the approximation, we note that
+ we only require 
+\begin_inset Formula $dU/dR$
+\end_inset
+
+.
+ Let us work in the fourier space, with a single mode to simplify calculations
+ and later sum the modes.
+ We start with 
+\begin_inset Formula $\vec{v}=\vec{v}_{k}e^{-i\vec{k}.\vec{R}}$
+\end_inset
+
+ , 
+\begin_inset Formula $\psi=\psi_{k}e^{-i\vec{k}.\vec{R}}$
+\end_inset
+
+ and substitute them in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:v=-gradpsi"
+
+\end_inset
+
+ to get 
+\begin_inset Formula $\vec{v}_{k}=i\vec{k}\psi_{k}$
+\end_inset
+
+.
+ Further, for 
+\begin_inset Formula $\delta=\delta_{k}e^{-i\vec{k}.\vec{R}}$
+\end_inset
+
+, using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:del2psi"
+
+\end_inset
+
+, we get 
+\begin_inset Formula $\vec{v}_{k}=-i\vec{k}\delta_{k}/k^{2}$
+\end_inset
+
+.
+ Also, substituting for 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ in 
+\begin_inset Formula $U$
+\end_inset
+
+, we have 
+\begin_inset Formula 
+\begin{align*}
+U & =f_{0}\vec{v}_{k}.\hat{r}e^{-i\vec{k}.\vec{R}}=-\frac{if_{0}\delta_{k}\vec{k}.\hat{r}e^{-i\vec{k}.\vec{R}}}{k^{2}}=-\frac{if_{0}\delta_{k}\mu e^{-i\vec{k}.\vec{R}}}{k}\\
+\frac{dU}{dR} & =f_{0}\mu^{2}\delta_{k}e^{-i\vec{k}.\vec{R}}=-f_{0}\mu^{2}\delta,
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu=\hat{k}.\hat{r}$
+\end_inset
+
+, the cosine of the angle between 
+\begin_inset Formula $\vec{k}$
+\end_inset
+
+ and line of sight.
+ Consequently we have 
+\begin_inset Formula $(1+\delta^{S})\approx(1+\delta^{R})\left(1-f_{0}\delta^{R}\mu^{2}\right)^{-1}$
+\end_inset
+
+, where we suppressed arguments of 
+\begin_inset Formula $\delta$
+\end_inset
+
+.
+ Now keeping to first order in 
+\begin_inset Formula $\delta^{R}$
+\end_inset
+
+, we have 
+\begin_inset Formula $\delta^{S}\approx\delta^{R}(1-f_{0}\mu^{2})$
+\end_inset
+
+.
+ Substituting 
+\begin_inset Formula $\delta^{S}=\delta_{k}^{S}e^{-i\vec{k}.\vec{R}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta^{R}=-\delta_{k}^{R}e^{-i\vec{k}.\vec{R}}$
+\end_inset
+
+, we have the final relation 
+\begin_inset Formula 
+\[
+\delta_{k}^{S}(\vec{k})\approx\delta_{k}^{R}(\vec{k})\left(1+f_{0}\mu^{2}\right).
+\]
+
+\end_inset
+
+The power spectrum is given by the square of 
+\begin_inset Formula $\delta_{k}$
+\end_inset
+
+, which is 
+\begin_inset Formula 
+\begin{eqnarray}
+P^{S}(\vec{k},\mu) & \approx & \left(1+f_{0}\mu^{2}\right)^{2}P^{R}(\vec{k})\nonumber \\
+ & = & (1+2f_{0}\mu^{2}+f_{0}^{2}\mu^{4})P^{R}(\vec{k}).\label{eq:powerSpect}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Implications
+\end_layout
+
+\begin_layout Standard
+The aforesaid relation is of particular interest, for now, given the power
+ spectrum (of the density contrast), one can fit a curve to find the value
+ of 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+ using 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:powerSpect"
+
+\end_inset
+
+.
+ For instance, for a given value of 
+\begin_inset Formula $\left|\vec{k}\right|$
+\end_inset
+
+, one can plot 
+\begin_inset Formula $P^{S}$
+\end_inset
+
+ as a function of the angle between 
+\begin_inset Formula $\vec{k}$
+\end_inset
+
+ and the line of sight.
+ This dependence will only come from the 
+\begin_inset Formula $\mu$
+\end_inset
+
+ dependent part and is represented in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:polarP"
+
+\end_inset
+
+, since 
+\begin_inset Formula $\delta_{k}^{R}$
+\end_inset
+
+ is expected to be isotropic.
+ Another possibility is to plot contours of constant 
+\begin_inset Formula $P^{S}$
+\end_inset
+
+, representative plots of which are given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:Contour-plots"
+
+\end_inset
+
+ while an observed plot is given in 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "fig:observed"
+
+\end_inset
+
+, which is calculated using co-relations which we will not discuss here.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename testplot.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representative polar plot of 
+\begin_inset Formula $P^{S}(\vec{k},\mu)$
+\end_inset
+
+, for a given 
+\begin_inset Formula $\left|\vec{k}\right|$
+\end_inset
+
+, and 
+\begin_inset Formula $f=0.3,0.5,0.8$
+\end_inset
+
+ and 
+\begin_inset Formula $1.0$
+\end_inset
+
+.
+ LOS is along the x-axis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:polarP"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename p0.5.pdf
+	width 60col%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename p0.8.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename p1.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Representative contour plots for 
+\begin_inset Formula $f=0.5,\,0.8$
+\end_inset
+
+ and 
+\begin_inset Formula $1.0$
+\end_inset
+
+.
+ LOS is along the y-axis.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contour-plots"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename diagram2.png
+	lyxscale 50
+	width 110col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An observed contour plot of 
+\begin_inset Formula $\delta^{S}$
+\end_inset
+
+, with LOS along the y-axis.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:observed"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+We have shown how to correct for the errors caused by neglecting the peculiar
+ velocity, using linear theory.
+ We have also shown that this correction, while at first sight seems to
+ require the knowledge of the potential, to be relevant, it can be converted
+ into a form that allows us to estimate the value of cosmological parameters.
+ This was first pointed out by N.
+ Kaiser 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+A presentation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+
+\end_inset
+
+ on the same topic, by M.
+ White et.
+ al.
+ was particularly helpful in understanding N.
+ Kaiser's paper.
+ Discussions with Prof.
+ J.
+ Bagla have been primarily responsible for facilitating a reasonable comprehensi
+on of the concepts discussed.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+Clustering in real space & in redshift space, Nick Kaiser, 
+\emph on
+Mon.
+ Not.
+ R.
+ astr.
+ Soc.
+
+\emph default
+ (1987) 
+\series bold
+227
+\series default
+, 1-21
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+Redshift space distortions and The growth of cosmic structure, Martin White,
+ Jordan Carlson and Beth Reid
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+The Clustering of the SDSS Main Galaxy Sample II, Cullan Howlett et.
+ al.
+ 
+\emph on
+arXiv:1409.3238 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
+We will use 
+\begin_inset Formula $\psi=\psi_{k}e^{-ik.R}$
+\end_inset
+
+, 
+\begin_inset Formula $v=v_{k}e^{-ik.R}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta=\delta_{k}e^{-ik.R}$
+\end_inset
+
+ and the combination of 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:v=-gradpsi"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "eq:del2psi"
+
+\end_inset
+
+ to get 
+\begin_inset Formula $dv/dR=\delta$
+\end_inset
+
+.
+ Consequently we have 
+\begin_inset Formula $(1+\delta^{S})\approx(1+\delta^{R})\left(1+f_{0}\delta^{R}\cos\omega\right)^{-1}$
+\end_inset
+
+, where we suppressed arguments of 
+\begin_inset Formula $\delta$
+\end_inset
+
+, used 
+\begin_inset Formula $U=f_{0}v\cos\omega$
+\end_inset
+
+, with 
+\begin_inset Formula $\omega$
+\end_inset
+
+ quantifying the angle between 
+\begin_inset Formula $\vec{v}=-\vec{\nabla}\psi$
+\end_inset
+
+ & 
+\begin_inset Formula $\hat{r}$
+\end_inset
+
+, and 
+\begin_inset Formula $dU/dR\approx f_{0}\frac{dv}{dR}\cos\omega$
+\end_inset
+
+.
+ Now keeping to first order in 
+\begin_inset Formula $\delta^{R}$
+\end_inset
+
+, we have 
+\begin_inset Formula $\delta^{S}\approx\delta^{R}(1-f_{0}\cos\omega)$
+\end_inset
+
+.
+ Substituting 
+\begin_inset Formula $\delta^{S}=\delta_{k}^{S}e^{-ik.R}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta^{R}=\delta_{k}^{R}e^{-ik.R}$
+\end_inset
+
+, we have the final relation 
+\begin_inset Formula 
+\[
+\delta^{S}(k)\approx\delta^{R}(k)\left(1-f_{0}\cos\omega\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

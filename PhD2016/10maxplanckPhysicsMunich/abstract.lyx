@@ -1,0 +1,186 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Contextuality in a deterministic quantum theory
+\end_layout
+
+\begin_layout Author
+Atul Singh Arora 
+\begin_inset Newline newline
+\end_inset
+
+(Supervisor: Prof Arvind)
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I am still in the process of writing my thesis (have 3 months left off of
+ the 8 months allocated) and therefore can't submit a table of contents.
+ The provisional abstract is as follows.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+Abstract
+\end_layout
+
+\begin_layout Standard
+Einstein started with showing that Quantum Mechanics (QM) must be incomplete
+ if one assumes (a) realism and (b) locality.
+ He wanted us to believe that there must be some theory which satisifed
+ both (a) & (b) and can produce the intended results.
+ Bell later showed that certain correlations between measurable properties
+ must be bounded, given (a) and (b) hold.
+ QM he showed violates this and therefore it doesn't satisfy atleast one
+ among (a) and (b).
+ This was confirmed experimentally.
+ 
+\begin_inset Newline newline
+\end_inset
+
+We start with a theory which satisfies (a) but not (b), while being completely
+ identical with QM in terms of experimental predictions.
+ Such a theory should exist is by itself rather discomforting.
+ Infact, the said theory, known as Bohmian Mechanics (BM), is deterministic.
+ Which entails that while it maybe expected that the correlations can arise
+ from the explicit non locality in the theory, we explore what happens to
+ questions related to contextuality, which roughly asserts that deterministic
+ assignment of outcomes is not possible.
+\end_layout
+
+\begin_layout Standard
+More precisely, it is already known that usual formulations of contextuality
+ (and other determinism tests) are for discrete degrees of freedom, viz.
+ spins (for massive particles).
+ Since Bohmian Mechanics doesn't claim that spins have pre-defined values,
+ it is not surprising that both are compatible, yet the analysis is illuminating.
+ It sheds light on how non-locality and contextuality are related.
+ Further, tests of contextuality maybe extended to phase space (
+\begin_inset Formula $q,p$
+\end_inset
+
+).
+ In this setting then, the tests show that (
+\begin_inset Formula $q,p$
+\end_inset
+
+) can't be deterministic, roughly speaking, while antithetically, BM is
+ infact deterministic in (
+\begin_inset Formula $q,p$
+\end_inset
+
+)! To explore this apparent contradiction, we construct an appropriate test
+ of determinism and analyse it in the framework of BM.
+ Various possible extensions are discussed, with their advantages and limitation
+s.
+ A simplified extension of the Perse-Mermin construction is used to hint
+ that BM, despite being a non-contextual hidden variable theory, can violate
+ the KCBS inequality, suggesting that we need to refine the notion of contextual
+ity.
+ The root of the paradox, an innocuous oversight, has been recognized and
+ delineated.
+ For clarity, the Bell Test is extended to phase space and it is contrasted
+ with the aforesaid, where this oversight doesn't cause any significant
+ error.
+ The analysis, in continuous variables, is further expected to provide insights
+ into the relation between non-locality and contextuality, where the current
+ understanding is limited.
+\end_layout
+
+\end_body
+\end_document

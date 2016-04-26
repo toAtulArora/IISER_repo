@@ -1,0 +1,434 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Week 3
+\end_layout
+
+\begin_layout Subsection
+Wednesday
+\end_layout
+
+\begin_layout Itemize
+Zwicky (1930) created the MCG (Morphological Catalogue of Galaxies): b-band
+ apparent magnitude < 16.
+ For comparison SDSS Slow Digital Sky Survey (ubgvr..z: these are bands) for
+ which r<22.5.
+ Zwicky figured that there were a number of regions in the sky where you
+ could see a certain types of clusters.
+ He then proceeded to get low res spectra.
+ In the coma cluster etc., he found that galaxies appear very close, however
+ they have a very strong receding velocity.
+ There was a dispersion about the central red shift 
+\begin_inset Formula $\sigma_{\parallel}\approx1000$
+\end_inset
+
+ Km/s.
+ How can a set of 10 odd galaxies (about 
+\begin_inset Formula $10^{13}$
+\end_inset
+
+ solar mass, how can such a mass exist there.) 
+\begin_inset Formula $M\approx10^{13}M_{0}$
+\end_inset
+
+.
+ Now 
+\begin_inset Formula $R=1$
+\end_inset
+
+ Mpc.
+ 
+\begin_inset Formula $V_{esc}=\sqrt{2GM/R}\approx300$
+\end_inset
+
+Km/s.
+ Either then, this is a co-incident.
+ Or there's something I don't see; now this thing I don't see, must be really
+ massive.
+ Thus I don't see a very large portion of the mass (that can be worked out).
+ TODO: Recall mass to light ratio.
+ NB: This value is there even for the modern survey.
+\begin_inset Newline newline
+\end_inset
+
+Find a mass distribution for both mass visible and mass not visible.
+ Became important when people saw lensing (gravitational).
+ Radio astronomers (1 eV ~ 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ Kelvins) found that there's gas surrounding these galaxies with temperature
+ 
+\begin_inset Formula $10^{8}$
+\end_inset
+
+ Kelvin.
+\begin_inset Newline newline
+\end_inset
+
+We now talk about Virial temperature.
+ Temperature of each electron in this gas, would be 
+\begin_inset Formula $3K_{B}T/2=2GMm/R$
+\end_inset
+
+ (recall the virial theorem, for power laws).
+ Now 
+\begin_inset Formula $M=3K_{B}TR/4Gm\approx10^{48}$
+\end_inset
+
+kg.
+ Should use the mean molecular weight (shouldn't use the mass of the electron),
+ which will be closer to the mass of proton.
+ Then I'll get 
+\begin_inset Formula $10^{45}$
+\end_inset
+
+kg.
+ So the existence of stable gas, at 
+\begin_inset Formula $10^{8}$
+\end_inset
+
+ K, would imply that the total mass is 
+\begin_inset Formula $10^{45}$
+\end_inset
+
+kg.
+ 
+\end_layout
+
+\begin_layout Itemize
+Early 1990s, a nature paper was published.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Baryonic matter constitutes a larger fraction of the total mass of rich
+ galaxy clusters than is predicted by a combination of cosmic nucleosynthesis
+ considerations (lighth-element formation during the Big Bang) and standard
+ inflationary cosmology.
+ This cannot be accounted for by gravitational and dissipative effects during
+ cluster formation.
+ Either the density of the Universe is less than that required fro closure,
+ or there is an error in the standard interpretation of element abuncances.
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Cosmology community had in implicit belief: Only matter + radiation; 
+\begin_inset Formula $\Omega_{nr}=1$
+\end_inset
+
+ (non-relativistic).
+ Generation of hydrogen, helium, duterium, lithium; 
+\begin_inset Formula $f(\eta)$
+\end_inset
+
+ where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the ratio of photons to baryons.
+ 
+\begin_inset Formula $\Omega_{B}\sim(?)f(\eta)$
+\end_inset
+
+.
+ and 
+\begin_inset Formula $\Omega_{B}+\Omega_{DM}=\Omega_{nr}$
+\end_inset
+
+.
+ Observationally 
+\begin_inset Formula $0.01<\Omega_{B}<0.1$
+\end_inset
+
+ (and today, 
+\begin_inset Formula $\Omega_{B}\approx0.045$
+\end_inset
+
+).
+ Thus, 
+\begin_inset Formula $f_{B}\equiv\Omega_{B}/\Omega_{DM}<1/9$
+\end_inset
+
+.
+ Consequently, I'll get 
+\begin_inset Formula $f_{B}<1/20$
+\end_inset
+
+ (for the new value).
+ 
+\begin_inset Newline newline
+\end_inset
+
+These guys made first found the mass of stars: luminosity function of the
+ galaxy is observed, and then the star mass is found.
+ You take a big picutre and remove galaxy flux.
+ That gives you a bound on how many stars can be in the inter-cluster medium.
+ Mass of stars 
+\begin_inset Formula $10^{13}$
+\end_inset
+
+ solar masses.
+ Then got an estimate of mass of gas from x-ray: 
+\begin_inset Formula $6\times10^{13}$
+\end_inset
+
+ Solar mass.
+ To find 'dark matter' or cold baryonic mass, 
+\begin_inset Formula $M_{\star}=10^{13}M_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $_{x-ray}=5.5\times10^{13}M_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $M_{tot}=6.7\times10^{14}M_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $h=H_{0}/100Km/S/Mpc$
+\end_inset
+
+.
+ So basically there were able to show that 
+\begin_inset Formula $f_{B}>0.1$
+\end_inset
+
+ and this was incompatible with the earlier calculation we did.
+ 
+\end_layout
+
+\begin_layout Itemize
+CMBR has a radition with temperature 
+\begin_inset Formula $2.73$
+\end_inset
+
+K.
+ This gas was 
+\begin_inset Formula $10^{8}$
+\end_inset
+
+.
+ Ofcourse there's electrons in the high 
+\begin_inset Formula $T$
+\end_inset
+
+ gas and photons undergo an inverse compton (because electrons are high
+ energy here).
+ Thus in the direction of the clusters, you expect a reduction in the photon
+ intensity.
+ (ASK sir, didn't understand how this helps in 
+\end_layout
+
+\begin_layout Subsection
+Thursday
+\end_layout
+
+\begin_layout Itemize
+Distribution of galaxies is far from uniform; part of the reason is that
+ there's a flux cut-off (take spectra of galaxies brighter than a certain
+ amount).
+ For spectroscopic, you pick slightly bright.
+ 
+\begin_inset Formula $Z=0.15,$
+\end_inset
+
+ (median) takes you quite far (understand the graph: TODO: ask).
+ Close to uniform (ask).
+ 
+\end_layout
+
+\begin_layout Itemize
+CfA survey (projection of what they saw), apparent blue blue magnitude 15.5
+ (max), 15,000 km/s.
+ Each galxy had to be analysed separately.
+ This is before we had digital analysis.
+ A large points have almost no galaxy; 'finger of God effect'; the great
+ wall.
+ The entire structure is almost a 100 pc; overall area was small; homogenity
+ couldn't be challenged.
+ 
+\end_layout
+
+\begin_layout Itemize
+Count neighbours: Spherical shell of radius 
+\begin_inset Formula $r$
+\end_inset
+
+, 
+\begin_inset Formula $r+dr$
+\end_inset
+
+; number density is 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Then we expect the number of neighbours wil be 
+\begin_inset Formula $\left\langle N_{neigh}(r)\right\rangle =n4\pi r^{2}dr[1+\xi(r)]$
+\end_inset
+
+.
+ In general it will not hold.
+ So now if things were random, 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, in general 
+\begin_inset Formula $\xi(r)=\frac{N_{D}}{N_{R}}-1$
+\end_inset
+
+; 
+\begin_inset Formula $N_{R}$
+\end_inset
+
+ number of neighbours in random (still not fully clear; figure on your own)
+\begin_inset Newline newline
+\end_inset
+
+For 
+\begin_inset Formula $r<20$
+\end_inset
+
+ Mpc, 
+\begin_inset Formula $\xi(r)=(r/r_{0})^{-\gamma}$
+\end_inset
+
+, 
+\begin_inset Formula $r_{0}\sim5$
+\end_inset
+
+ Mpc, 
+\begin_inset Formula $\gamma=1.8$
+\end_inset
+
+.
+ The affinity falls rapidly with distance.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n(r)\rightarrow\tilde{n}(k)$
+\end_inset
+
+; Now 
+\begin_inset Formula $n(r)=\bar{n}(1+\delta(r))$
+\end_inset
+
+, where 
+\begin_inset Formula $\delta$
+\end_inset
+
+ is a density contrast.
+ 
+\begin_inset Formula $\tilde{n}(k)=\bar{n}\delta(k)$
+\end_inset
+
+ and 
+\begin_inset Formula $\left|\delta(k)\right|^{2}=\delta^{*}(k)\delta(k)$
+\end_inset
+
+ and so 
+\begin_inset Formula $P(k)=\left\langle \left|\delta(k)\right|^{2}\right\rangle _{\hat{k}}$
+\end_inset
+
+.
+ So you have a one dimensional power spectra 
+\begin_inset Formula $k^{2}p(k)dk$
+\end_inset
+
+ should give the answer; but we may use 
+\begin_inset Formula $k^{3}p(k)(dk/k)$
+\end_inset
+
+ to get a dimensionales object (
+\begin_inset Formula $k^{3}p(k)$
+\end_inset
+
+).
+\end_layout
+
+\end_body
+\end_document
