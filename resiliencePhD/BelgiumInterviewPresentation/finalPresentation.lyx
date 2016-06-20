@@ -1,0 +1,1720 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%\bibliographystyle{apsrev4-1}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman ccfonts
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 2cm
+\headsep 2cm
+\footskip 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Contextuality in a Deterministic Theory
+\end_layout
+
+\begin_layout Date
+Jun 20, 2016
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+MS Thesis: Motivation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Two theories: Quantum Mechanics (QM) & Bohmian Mechanics (BM).
+\end_layout
+
+\begin_layout Itemize
+Fundamental difference: BM is deterministic, viz.
+ positions (
+\begin_inset Formula $q$
+\end_inset
+
+) and momenta (
+\begin_inset Formula $p$
+\end_inset
+
+) are well defined.
+\end_layout
+
+\begin_layout Itemize
+Initial Aim: Construct a theoretical situation that defies determinism using
+ QM and analyse using BM.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Notation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+Notation: 
+\end_layout
+
+\begin_layout Definition
+(a) 
+\begin_inset Formula $\psi\in\mathcal{H}$
+\end_inset
+
+ would typically represent the quantum mechanical state of the system (assumed
+ pure),
+\end_layout
+
+\begin_layout Definition
+(b) 
+\begin_inset Formula $\hat{\mathcal{H}}$
+\end_inset
+
+ is defined to mean 
+\begin_inset Formula $\mathcal{H}\otimes\mathcal{H}^{\dagger}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Definition
+(c) 
+\begin_inset Formula $[\mathcal{H}]$
+\end_inset
+
+ is defined to mean 
+\begin_inset Formula $(\mathcal{H},\,\mathbb{R}^{\otimes})$
+\end_inset
+
+, which represents the state of the system including hidden variables, 
+\end_layout
+
+\begin_layout Definition
+(d) 
+\begin_inset Formula $[\psi]\in[\mathcal{H}]$
+\end_inset
+
+ will represent the state of the system, including hidden variables, 
+\end_layout
+
+\begin_layout Definition
+(e) a prediction map is 
+\begin_inset Formula $m:\hat{\mathcal{H}},[\mathcal{H}]\to\mathbb{R}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Definition
+(f) a sequence map is 
+\begin_inset Formula $s:\hat{\mathcal{H}},[\mathcal{H}],\mathbb{R}\to[\mathcal{H}]$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Definition
+(g) the set of all experimental setups is denoted by 
+\begin_inset Formula $\mathcal{E}$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Definition
+(h) a setup map is 
+\begin_inset Formula $e:\hat{\mathcal{H}}\to\mathcal{E}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Determinism Tests
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+GHZ
+\end_layout
+
+\end_inset
+
+ Let a map 
+\begin_inset Formula $m:\hat{\mathcal{H}}\to\mathbb{R}$
+\end_inset
+
+, be s.t.
+ (a) 
+\begin_inset Formula $m(\hat{\mathbb{I}})=1$
+\end_inset
+
+, (b) 
+\begin_inset Formula $m(f(\hat{A}_{1},\hat{A}_{2},\dots))=f(m(\hat{A}_{1}),m(\hat{A}_{2}),\dots)$
+\end_inset
+
+, for any arbitrary function 
+\begin_inset Formula $f$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{A}_{i}$
+\end_inset
+
+ are arbitrary Hermitian operators.
+ If 
+\begin_inset Formula $m$
+\end_inset
+
+ is assumed to describe the outcomes of measurements, then no 
+\begin_inset Formula $m$
+\end_inset
+
+ exists which is consistent with all predictions of Quantum Mechanics.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+
+\end_layout
+
+\begin_layout Standard
+Proof (GHZ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GHZ"
+
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Itemize
+3 observers with one particle each.
+ 
+\end_layout
+
+\begin_layout Itemize
+Two properties, 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+, with outcomes 
+\begin_inset Formula $\pm1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+State 
+\begin_inset Formula $\sqrt{2}\left|\chi_{G}\right\rangle =\left|000\right\rangle -\left|111\right\rangle $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\hat{A}:=\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{A}\left|\chi_{G}\right\rangle =\left|\chi_{G}\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}:=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\otimes\hat{\sigma}_{z}$
+\end_inset
+
+; 
+\begin_inset Formula $\implies m(\hat{A})=m(\hat{B})=m(\hat{C})=+1.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+m(\hat{A})m(\hat{B})m(\hat{C}) & = & 1\\
+\implies1=m(\hat{A}\hat{B}\hat{C}) & = & m(\hat{\sigma}_{x}\otimes\hat{\sigma}_{y}\hat{\sigma}_{x}\hat{\sigma}_{y}\otimes\hat{\sigma}_{x})\\
+ & = & m(\hat{\sigma}_{x}^{(1)})m(\hat{\sigma}_{y}^{(2)}\hat{\sigma}_{x}^{(2)}\hat{\sigma}_{y}^{(2)})m(\hat{\sigma}_{x}^{(3)})\\
+ & = & m(\hat{\sigma}_{x}^{(1)})m(\hat{\sigma}_{x}^{(2)})m(\hat{\sigma}_{x}^{(3)})\\
+ & = & m(\hat{D}\equiv\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\otimes\hat{\sigma}_{x}),
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+where 
+\begin_inset Formula $\hat{\sigma}_{x}^{(1)}\equiv\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}\otimes\hat{\mathbb{I}}$
+\end_inset
+
+ and so on.
+\end_layout
+
+\begin_layout Itemize
+However, 
+\begin_inset Formula $\hat{D}\left|\chi_{G}\right\rangle =-\left|\chi_{G}\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\implies m(\hat{D})=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Contradiction!
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Contextuality Tests
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+KS
+\end_layout
+
+\end_inset
+
+ Let a map 
+\begin_inset Formula $m:\hat{\mathcal{H}}\to\mathbb{R}$
+\end_inset
+
+, be s.t.
+ (a) 
+\begin_inset Formula $m(\hat{\mathbb{I}})=1$
+\end_inset
+
+, (b) 
+\begin_inset Formula $m(f(\hat{B}_{1},\hat{B}_{2},\dots))=f(m(\hat{B}_{1}),m(\hat{B}_{2}),\dots)$
+\end_inset
+
+, for any arbitrary function 
+\begin_inset Formula $f$
+\end_inset
+
+, where 
+\begin_inset Formula $\hat{B}_{i}$
+\end_inset
+
+ are mutually commuting Hermitian operators.
+ If 
+\begin_inset Formula $m$
+\end_inset
+
+ is assumed to describe the outcomes of measurements, then no 
+\begin_inset Formula $m$
+\end_inset
+
+ exists which is consistent with all predictions of Quantum Mechanics.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+Proof (new; 
+\begin_inset Formula $|\mathcal{H}|\ge6$
+\end_inset
+
+): GHZ generalized; Consider 
+\begin_inset Formula 
+\[
+\hat{H}_{ij}\doteq\left[\begin{array}{ccc}
+\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}\otimes\hat{\mathbb{I}}^{(a)} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y}\otimes\hat{\mathbb{I}}^{(2)} & \mathbb{\hat{I}}\otimes\mathbb{\hat{I}}\otimes\hat{\sigma}_{y}^{(3)}\\
+\hat{\sigma}_{y}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(1)} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}^{(b)} & \mathbb{\hat{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{y}^{(3)}\\
+\hat{\sigma}_{y}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(1)} & \mathbb{\hat{I}}\otimes\hat{\sigma}_{y}\otimes\hat{\mathbb{I}}^{(2)} & \mathbb{\hat{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{x}^{(c)}\\
+\hat{\sigma}_{x}\otimes\mathbb{\hat{I}}\otimes\hat{\mathbb{I}}^{(a)} & \mathbb{\hat{I}}\otimes\hat{\sigma}_{x}\otimes\hat{\mathbb{I}}^{(b)} & \hat{\mathbb{I}}\otimes\hat{\mathbb{I}}\otimes\hat{\sigma}_{x}^{(c)}
+\end{array}\right],
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $m(\hat{A})=m(\hat{H}_{11})m(\hat{H}_{12})m(\hat{H}_{13})$
+\end_inset
+
+ should be 
+\begin_inset Formula $+1$
+\end_inset
+
+ (similarly for row 2 and 3).
+ 
+\begin_inset Formula $m(\hat{D})=-1$
+\end_inset
+
+ imposes row 4 must be 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+H_{ij}\doteq\left[\begin{array}{ccc}
+1\\
+ & 1\\
+ &  & -1\\
+1 & 1 & -1
+\end{array}\right],H_{ij}\doteq\left[\begin{array}{ccc}
+1 & \pm1 & \pm1\\
+\pm1 & 1 & \pm1\\
+\pm1 & \pm1 & -1\\
+1 & 1 & -1
+\end{array}\right].
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof (Mermin's 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mermin"
+
+\end_inset
+
+; 
+\begin_inset Formula $\left|\mathcal{H}\right|\ge4$
+\end_inset
+
+): Consider 
+\begin_inset Formula 
+\[
+\hat{A}_{ij}\doteq\left[\begin{array}{ccc}
+\hat{\mathbb{I}}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\mathbb{I}} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\\
+\hat{\sigma}_{y}\otimes\hat{\mathbb{I}} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\\
+\hat{\sigma}_{y}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{z}\otimes\hat{\sigma}_{z}
+\end{array}\right],
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\hat{R}_{i}=\mathbb{I}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{C}_{j}=\mathbb{I}\,(j\neq3)$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{C}_{3}=-\mathbb{I}$
+\end_inset
+
+, (
+\begin_inset Formula $\forall\,i,j$
+\end_inset
+
+) where 
+\begin_inset Formula $\hat{R}_{i}\equiv\prod_{j}\hat{A}_{ij}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{C}_{j}\equiv\prod_{i}\hat{A}_{ij}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(a) No possible assignment can exist.
+ 
+\begin_inset Newline newline
+\end_inset
+
+(b) For any map 
+\begin_inset Formula $m$
+\end_inset
+
+, we'd have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle \hat{\chi}_{\text{PM}}\right\rangle =\left\langle \hat{R}_{1}\right\rangle +\left\langle \hat{R}_{2}\right\rangle +\left\langle \hat{R}_{3}\right\rangle +\left\langle \hat{C}_{1}\right\rangle +\left\langle \hat{C}_{2}\right\rangle -\left\langle \hat{C}_{3}\right\rangle \le4,
+\]
+
+\end_inset
+
+ whereas QM yields 
+\begin_inset Formula $\left\langle \hat{\chi}_{\text{PM}}\right\rangle =6\nleq4$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Proof (Kochen Specker's 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KochenSpecker"
+
+\end_inset
+
+; 
+\begin_inset Formula $\left|\mathcal{H}\right|\ge3$
+\end_inset
+
+); 
+\end_layout
+
+\begin_layout Definition
+A theory is non-contextual, if it provides a map 
+\begin_inset Formula $m:\hat{\mathcal{H}},[\mathcal{H}]\to\mathbb{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remark
+Non-contextual maps are not consistent with quantum mechanics.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bohmian Mechanics
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Condensed Introduction
+\series default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bohm1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A particle is associated with (1) a position, 
+\begin_inset Formula $q$
+\end_inset
+
+ & momentum, 
+\begin_inset Formula $p$
+\end_inset
+
+, precisely defined and (2) a wavefunction 
+\begin_inset Formula $\psi=Re^{iS/\hbar}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Postulates (one-dimensional): 
+\end_layout
+
+\begin_layout Enumerate
+Evolution of the wavefunction, is governed by Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"o
+\end_layout
+
+\end_inset
+
+dinger's equation: 
+\begin_inset Formula $i\hbar\partial\psi/\partial t=-(\hbar^{2}/2m)\nabla^{2}\psi+V\psi$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The particle is guided by the wavefunction: 
+\begin_inset Formula $\dot{q}=p/m$
+\end_inset
+
+ where 
+\begin_inset Formula $p=\nabla S=\hbar\text{Im}(\nabla\psi/\psi)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The initial distribution of the particles is given by 
+\begin_inset Formula $\rho(x)=\left|\psi\right|^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+NB: 
+\begin_inset Formula $\frac{R^{2}\nabla S}{m}=\frac{\hbar}{2mi}(\psi^{*}\overset{\leftrightarrow}{\nabla}\psi)=j$
+\end_inset
+
+ (the probability current density) 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\left|\psi(t)\right|^{2}$
+\end_inset
+
+ holds 
+\begin_inset Formula $\forall\,t$
+\end_inset
+
+ if it holds initially.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/expDoubleSlit.png
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Experimentally observed average single-photon trajectories.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In the case of single-particle quantum mechanics, the trajectories measured
+ in this fashion reproduce those predicted in the Bohm–de Broglie interpretation
+ of quantum mechanics
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kocsis1170"
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Experimentally-observed-average"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For 
+\begin_inset Formula $N$
+\end_inset
+
+ interacting particles, 
+\begin_inset Formula $p_{i}=\nabla_{i}S(q_{1},q_{2},\dots,q_{N})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+NB: BM is an explicitly non-local, but complete description.
+ 
+\end_layout
+
+\begin_layout Itemize
+Spins can also be included in BM.
+\begin_inset Newline newline
+\end_inset
+
+For a spinor, say 
+\begin_inset Formula $\psi\equiv(\psi_{+},\psi_{-})^{T}$
+\end_inset
+
+, 
+\begin_inset Formula $p=\hbar\text{Im}((\psi,\nabla\psi)/(\psi,\psi))$
+\end_inset
+
+ where 
+\begin_inset Formula $(.,.)$
+\end_inset
+
+ represents inner product in the spin space 
+\begin_inset Formula $\mathbb{C}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/msThesis/msThesisLyX/Chapter1/Figs/Vectors/sg.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+Contour plot of 
+\begin_inset Formula $\left|\Psi(q_{x},t)\right|^{2}$
+\end_inset
+
+ plotted for various 
+\begin_inset Formula $t=q_{z}/v_{z}$
+\end_inset
+
+, illustrating a Stern-Gerlach measurement.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Contour-plot-of-Psi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Formula $\exists$
+\end_inset
+
+ a (Bohmian) map 
+\begin_inset Formula $m_{B}:\hat{\mathcal{H}},[\mathcal{H}],\mathcal{E}\to\mathbb{R}$
+\end_inset
+
+, and a sequence map 
+\begin_inset Formula $s$
+\end_inset
+
+, s.t.
+ if 
+\begin_inset Formula $m_{B}$
+\end_inset
+
+ & 
+\begin_inset Formula $s$
+\end_inset
+
+ are assumed to describe the outcomes of measurements & the resultant state
+ respectively, then they are consistent with all predictions of QM.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Proposition
+For discrete 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a map 
+\begin_inset Formula $e:\hat{\mathcal{H}}\to\mathcal{E}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Proposition
+The Bohmian map, 
+\begin_inset Formula $m_{B}$
+\end_inset
+
+ can be restricted to a prediction map, we call `Bohmian prediction map'
+ as 
+\begin_inset Formula $m(\hat{\mathcal{H}},[\mathcal{H}])=m_{B}(\hat{\mathcal{H}},[\mathcal{H}],e(\hat{\mathcal{H}}))$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Multiplicativity
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Definition
+A prediction map 
+\begin_inset Formula $m$
+\end_inset
+
+ is 
+\emph on
+multiplicative 
+\emph default
+iff 
+\begin_inset Formula 
+\[
+m(f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{N}),[\psi])=f(m(\hat{B}_{1},[\psi]),m(\hat{B}_{2},[\psi]),\dots m(\hat{B}_{N},[\psi])),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{B}_{i}\in\hat{\mathcal{H}}$
+\end_inset
+
+ are arbitrary mutually commuting operators, 
+\begin_inset Formula $f:\hat{\mathcal{H}}^{\otimes N}\to\mathcal{\hat{H}}$
+\end_inset
+
+ and 
+\begin_inset Formula $[\psi]\in[\mathcal{H}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Definition
+A 
+\emph on
+non-
+\emph default
+multiplicative
+\emph on
+ 
+\emph default
+map is one that is not multiplicative.
+ 
+\end_layout
+
+\begin_layout Proposition
+The Bohmian prediction map, 
+\begin_inset Formula $m$
+\end_inset
+
+ must be non-multiplicative.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Definition
+A prediction map 
+\begin_inset Formula $m$
+\end_inset
+
+ is 
+\emph on
+sequentially multiplicative 
+\emph default
+for a given sequence map 
+\begin_inset Formula $s$
+\end_inset
+
+, iff 
+\begin_inset Formula 
+\[
+m(f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{N}),[\psi_{1}])=f(m(\hat{B}_{1},[\psi_{k_{1}}]),m(\hat{B}_{2},[\psi_{k_{2}}]),\dots,m(\hat{B}_{N},[\psi_{k_{N}}])),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{k}=(k_{1},k_{2},\dots,k_{N})\in\{(1,2,3\dots N),(2,1,3\dots N)+\text{ permutations, making }N!\text{ terms}\}$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{B}_{i}\in\hat{\mathcal{H}}$
+\end_inset
+
+ are arbitrary mutually commuting observables, 
+\begin_inset Formula $[\psi_{i}]\in[\mathcal{H}]$
+\end_inset
+
+, 
+\begin_inset Formula $f:\hat{\mathcal{H}}^{\otimes N}\to\mathcal{\hat{H}}$
+\end_inset
+
+ and 
+\begin_inset Formula $[\psi_{k+1}]\equiv s(\hat{B}_{k},[\psi_{k}],m(\hat{B}_{k},[\psi_{k}]))$
+\end_inset
+
+, 
+\begin_inset Formula $\forall\,[\psi_{1}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Proposition
+A prediction map 
+\begin_inset Formula $m$
+\end_inset
+
+ must be sequentially multiplicative for a sequence map 
+\begin_inset Formula $s$
+\end_inset
+
+, for states 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ s.t.
+ a measurement of 
+\begin_inset Formula $f(\hat{B}_{1},\hat{B}_{2},\dots\hat{B}_{N})$
+\end_inset
+
+ yields repeatable results, to be consistent with quantum mechanics.
+ Here 
+\begin_inset Formula $\hat{B}_{i}\in\hat{\mathcal{H}}$
+\end_inset
+
+ are mutually commuting observables and 
+\begin_inset Formula $f:\hat{\mathcal{H}}^{\otimes N}\to\mathcal{\hat{H}}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Toy-Model
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Peres Mermin Square: 
+\begin_inset Formula 
+\[
+\hat{A}_{ij}\doteq\left[\begin{array}{ccc}
+\hat{\mathbb{I}}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\mathbb{I}} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{x}\\
+\hat{\sigma}_{y}\otimes\hat{\mathbb{I}} & \hat{\mathbb{I}}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{y}\otimes\hat{\sigma}_{y}\\
+\hat{\sigma}_{y}\otimes\hat{\sigma}_{x} & \hat{\sigma}_{x}\otimes\hat{\sigma}_{y} & \hat{\sigma}_{z}\otimes\hat{\sigma}_{z}
+\end{array}\right].
+\]
+
+\end_inset
+
+The assignments are made by a three step process.
+\end_layout
+
+\begin_layout Enumerate
+Initial State: Choose an appropriate initial state 
+\begin_inset Formula $\left|\psi\right\rangle $
+\end_inset
+
+ (say 
+\begin_inset Formula $\left|00\right\rangle $
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Hidden Variable (HV): Toss a coin and assign 
+\begin_inset Formula $c=+1$
+\end_inset
+
+ for heads, else assign 
+\begin_inset Formula $c=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Predictions/Assignments: For an operator 
+\begin_inset Formula $\hat{p}'\in\{\hat{A}_{ij},\hat{R}_{i},\hat{C}_{j}\,(\forall\,i,j)\}$
+\end_inset
+
+ check if 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, s.t.
+ 
+\begin_inset Formula $\hat{p}'\left|\psi\right\rangle =\lambda\left|\psi\right\rangle $
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\exists$
+\end_inset
+
+ a 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, then assign 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ as the value.
+ Else, assign 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Update: Say 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ was observed.
+ If 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+ is s.t.
+ 
+\begin_inset Formula $\hat{p}\left|\psi\right\rangle =\lambda\left|\psi\right\rangle $
+\end_inset
+
+, then leave the state unchanged.
+ Else, find 
+\begin_inset Formula $\left|p_{\pm}\right\rangle $
+\end_inset
+
+ (eigenkets of 
+\begin_inset Formula $\hat{p}$
+\end_inset
+
+), s.t.
+ 
+\begin_inset Formula $\hat{p}\left|p_{\pm}\right\rangle =\pm\left|p_{\pm}\right\rangle $
+\end_inset
+
+ and update the state 
+\begin_inset Formula $\left|\psi\right\rangle \to\left|p_{c}\right\rangle $
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tiny{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{ccc}
+i=1 & i=2 & i=3\\
+\left|00\right\rangle  & \left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}\\
+c=-1 & c=-1 & c=+1\\
+\\
+m_{1}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{2}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
+-1 & -1 & -1\\
+-1 & -1 & -1\\
+-1 & -1 & +1
+\end{array}\right] & m_{3}(\hat{A}_{ij})\doteq\left[\begin{array}{ccc}
++1 & +1 & +1\\
++1 & +1 & -1\\
++1 & +1 & +1
+\end{array}\right]\\
+\\
+m_{1}(\hat{R}_{i}),m_{1}(\hat{C}_{j})=+1\,(j\neq3) & m_{2}(\hat{R}_{i}),m_{2}(\hat{C}_{j})=+1\,(j\neq3) & m_{3}(\hat{R}_{i}),m_{3}(\hat{C}_{j})=+1\,(j\neq3)\\
+m_{1}(\hat{C}_{3})=-1 & m_{2}(\hat{C}_{3})=-1 & m_{3}(\hat{C}_{3})=-1\\
+\\
+\hat{A}_{13}=\hat{\sigma}_{z}\otimes\hat{\sigma}_{z};m_{1}(\hat{A}_{13})=+1 & \quad\hat{A}_{23}=\hat{\sigma}_{y}\otimes\hat{\sigma}_{y};m_{2}(\hat{A}_{23})=-1\quad & \hat{A}_{33}=\hat{\sigma}_{x}\otimes\hat{\sigma}_{x};m_{3}(\hat{A}_{33})=+1\\
+\\
+\left|00\right\rangle  & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}} & \frac{\left|00\right\rangle +\left|11\right\rangle }{\sqrt{2}}
+\end{array}\label{eq:toyModel}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Remark
+Observe that the Bohmian map 
+\begin_inset Formula $m_{B}$
+\end_inset
+
+ is contextual, but the Bohmian prediction map 
+\begin_inset Formula $m$
+\end_inset
+
+ is non-contextual.
+ Similarly the toy-model was also non-contextual.
+\end_layout
+
+\begin_layout Separator
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Contextuality is not a necessary feature of Quantum Mechanics.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Summary of Results
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bohmian Mechanics
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Generalized the Hamiltonian based measurement scheme to continuous variables
+\end_layout
+
+\begin_layout Itemize
+Analytic/graphical proof of consistency check using position measurements
+ 
+\end_layout
+
+\begin_layout Itemize
+Analytic/graphical solution to measuring entangled spins using SG & using
+ the Hamiltonian scheme 
+\end_layout
+
+\begin_layout Itemize
+Alternative proof of spins can't be associated with particles, and must
+ only be a property of the wavefunction
+\end_layout
+
+\begin_layout Itemize
+BM simulator with many trajectories (one particle, one dimensional, arbitrary
+ potential)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Tests of Determinism and Contextuality
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Optimized the phase space GHZ test
+\end_layout
+
+\begin_layout Itemize
+GHZ 
+\begin_inset Formula $\to$
+\end_inset
+
+ a test of contextuality 
+\end_layout
+
+\begin_layout Itemize
+PM extension to phase space (independently re-discovered)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The Contextuality situation
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+BM was shown consistent with PM & restricted BM was argued to be non-contextual
+ 
+\end_layout
+
+\begin_layout Itemize
+`Multiplicativity' and `Sequential Multiplicativity' identified, defined
+ and proven where they hold
+\end_layout
+
+\begin_layout Itemize
+Demonstrated `non-multiplicativity' as an alternative to contextuality,
+ by constructing a toy model 
+\end_layout
+
+\begin_layout Itemize
+Proposed the `discretely c-ingle' HV theory to non-contextually explain
+ spins
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/atul/Documents/gitHub/msThesis/msThesisLyX/Chapter5/Figs/Vector/flow.pdf
+	lyxscale 50
+	width 65col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Overview of work done during the semesters.
+ The bold faced titles represent new results.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "references"
+options "amsalpha"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
