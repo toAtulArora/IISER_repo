@@ -2,7 +2,7 @@
 \lyxformat 474
 \begin_document
 \begin_header
-\textclass lettre
+\textclass letter
 \use_default_options true
 \maintain_unincluded_children false
 \language british
@@ -114,11 +114,11 @@ B-1050 Bruxelles - BELGIQUE
 \end_layout
 
 \begin_layout Date
-July 13, 2016
+Dated: July 13, 2016
 \end_layout
 
 \begin_layout Subject
-Application for enrolment into the PhD programme at ULB
+Subject: Application for enrolment into the PhD programme at ULB
 \end_layout
 
 \begin_layout Opening
