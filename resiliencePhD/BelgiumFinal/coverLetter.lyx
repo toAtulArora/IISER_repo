@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass letter
+\begin_preamble
+\usepackage{url}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language british
@@ -137,7 +140,7 @@ ique de Bruxelles.
  I have enclosed herewith the formal PhD application, taken from the official
  website
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 as given here 
