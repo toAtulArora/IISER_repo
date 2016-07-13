@@ -101,7 +101,50 @@ The broad goal of the research would be to construct techniques for quantifying
  interest and will be explored further in this project.
  Further, a more general notion, that of contextuality, has been introduced
  as a tool to study cryptography only recently.
- Extension of known qu
+ One possible direction could be extension of known quantum algorithms for
+ cryptography which rely on entanglement, to achieve higher robustness and
+ ease of implementation, using contextuality as a resource.
+ 
+\end_layout
+
+\begin_layout Standard
+Continuous variable quantum computing has been gaining momentum lately.
+ Cryptographic applications of the same are of particular interest.
+ Recent work on successful extension of Bell's inequality to using continuous
+ spectrum observables might prove useful to this effect.
+ Typical cryptography protocols discretise time which is in stark contrast
+ with physical systems which evolve under a Hamiltonian with time as a continuou
+s parameter.
+ This paradigm is expected to prove itself to be a useful tool for advancing
+ cryptographic primitives.
+ Quantum Information Complexity will perhaps serve as a second such tool
+ for the aforesaid purpose.
+ Here complexity is quantified using Shannon's notion of information.
+ The difficulty of course is that this is a classical notion and when extended
+ to quantum physics, the definition ceases to be unique.
+ It is felt that using the framework of continuous time protocols an appropriate
+ definition can be arrived at.
+\end_layout
+
+\begin_layout Standard
+An immediate and specific goal of this project would be to construct a quantum
+ algorithm for a distrustful coin toss: the problem of sharing the outcome
+ of an unbiased coin, among two physically separated distrustful players.
+ This problem is of particular interest because classically, no unconditionally
+ secure protocol exists, viz.
+ a player with unbounded computational power can always bias the results.
+ However, using the magic of mathematical analysis, it has been proven )
+ that an unconditionally secure protocol exists within the purview of quantum
+ mechanics.
+ As a remark I might state that Dr J.
+ Roland (who has agreed to supervise my work), has given an alternate proof
+ to a related problem.
+ The issue with the proof of the aforesaid is that it is not-constructive
+ and therefore yields no hints into solving this problem.
+ This has consequently been an open problem for 9 years but due to preliminary
+ results obtained by Dr J.
+ Roland's team this specific problem will hopefully get solved as a part
+ of this research project.
 \end_layout
 
 \end_body
