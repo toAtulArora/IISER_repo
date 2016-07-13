@@ -108,7 +108,11 @@ The broad goal of the research would be to construct techniques for quantifying
 \end_layout
 
 \begin_layout Standard
-
+Continuous variable quantum computing has been gaining momentum lately.
+ Cryptographic applications of the same are of particular interest.
+ Recent work on successful extension of Bell's inequality to using continuous
+ spectrum observables might prove useful to this effect.
+ 
 \end_layout
 
 \end_body
