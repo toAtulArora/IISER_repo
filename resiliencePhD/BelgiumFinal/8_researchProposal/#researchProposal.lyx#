@@ -31,7 +31,7 @@
 \spacing onehalf
 \use_hyperref false
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -84,7 +84,24 @@ Research Proposal: On Quantum Cryptography Primitives
 \end_layout
 
 \begin_layout Standard
-Quantum information 
+The broad goal of the research would be to construct techniques for quantifying
+ advantages of and performing cryptography using quantum physics.
+ Quantum physics has peculiar properties which distinguishes it from behaviour
+ of macroscopic objects.
+ Bell was among the first to describe a physical situation which classical
+ physics can not explain, unless we allow super luminal (faster than light)
+ communication.
+ Entanglement is a property of a quantum system which is necessary for the
+ aforesaid result to hold, which has been experimentally verified.
+ Consequently, entanglement has been studied as a resource and has been
+ applied to quantum cryptography, specifically to quantum key distribution.
+ The use of Bell's inequality, as they are called, to quantify communication
+ complexity has been explored.
+ The relation between non-locality and cryptography, therefore, is of key
+ interest and will be explored further in this project.
+ Further, a more general notion, that of contextuality, has been introduced
+ as a tool to study cryptography only recently.
+ Extension of known qu
 \end_layout
 
 \end_body
