@@ -128,8 +128,9 @@ s parameter.
 
 \begin_layout Standard
 An immediate and specific goal of this project would be to construct a quantum
- algorithm for a distrustful coin toss: the problem of sharing the outcome
- of an unbiased coin, among two physically separated distrustful players.
+ algorithm for a known cryptography primitive, a distrustful coin toss:
+ the problem of sharing the outcome of an unbiased coin, among two physically
+ separated distrustful players.
  This problem is of particular interest because classically, no unconditionally
  secure protocol exists, viz.
  a player with unbounded computational power can always bias the results.
