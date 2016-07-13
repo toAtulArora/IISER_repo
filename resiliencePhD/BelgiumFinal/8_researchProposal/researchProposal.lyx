@@ -117,6 +117,18 @@ Continuous variable quantum computing has been gaining momentum lately.
 s parameter.
  This paradigm is expected to prove itself to be a useful tool for advancing
  cryptographic primitives.
+ Quantum Information Complexity will perhaps serve as a second such tool
+ for the aforesaid purpose.
+ Here complexity is quantified using Shannon's notion of information.
+ The difficulty of course is that this is a classical notion and when extended
+ to quantum physics, the definition ceases to be unique.
+ It is felt that using the framework of continuous time protocols an appropriate
+ definition can be arrived at.
+\end_layout
+
+\begin_layout Standard
+An immediate and specific goal of this project would be to construct a quantum
+ algorithm for a distrustful coin toss; 
 \end_layout
 
 \end_body
