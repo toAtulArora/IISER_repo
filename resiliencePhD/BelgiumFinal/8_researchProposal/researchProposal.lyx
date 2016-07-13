@@ -93,7 +93,18 @@ The broad goal of the research would be to construct techniques for quantifying
  communication.
  Entanglement is a property of a quantum system which is necessary for the
  aforesaid result to hold, which has been experimentally verified.
- Consequently, entanglement must be
+ Consequently, entanglement has been studied as a resource and has been
+ applied to quantum cryptography, specifically to quantum key distribution.
+ The use of Bell's inequality, as they are called, to quantify communication
+ complexity has been explored.
+ The relation between non-locality and cryptography, therefore, is of key
+ interest and will be explored further in this project.
+ Further, a more general notion, that of contextuality, has been introduced
+ as a tool to study cryptography only recently.
+ One possible direction could be extension of known quantum algorithms for
+ cryptography which rely on entanglement, to achieve higher robustness and
+ ease of implementation, using contextuality as a resource.
+ 
 \end_layout
 
 \end_body
