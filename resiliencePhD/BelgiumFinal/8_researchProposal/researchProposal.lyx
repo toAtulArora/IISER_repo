@@ -84,7 +84,11 @@ Research Proposal: On Quantum Cryptography Primitives
 \end_layout
 
 \begin_layout Standard
-
+The broad goal of the research would be to construct techniques for quantifying
+ advantages of and performing cryptography using quantum physics.
+ Quantum physics has peculiar properties which distinguishes it from behaviour
+ of macroscopic objects.
+ 
 \end_layout
 
 \end_body
