@@ -128,7 +128,9 @@ s parameter.
 
 \begin_layout Standard
 An immediate and specific goal of this project would be to construct a quantum
- algorithm for a distrustful coin toss: the problem of 
+ algorithm for a distrustful coin toss: the problem of sharing the outcome
+ of an unbiased coin, among two physically separated distrustful pairs.
+ 
 \end_layout
 
 \end_body
