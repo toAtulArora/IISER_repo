@@ -112,6 +112,9 @@ Continuous variable quantum computing has been gaining momentum lately.
  Cryptographic applications of the same are of particular interest.
  Recent work on successful extension of Bell's inequality to using continuous
  spectrum observables might prove useful to this effect.
+ Typical cryptography protocols discretise time which is in stark contrast
+ with physical systems which evolve under a Hamiltonian with time as a continuou
+s parameter.
  
 \end_layout
 
