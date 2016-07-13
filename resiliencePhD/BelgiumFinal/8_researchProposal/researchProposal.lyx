@@ -115,7 +115,8 @@ Continuous variable quantum computing has been gaining momentum lately.
  Typical cryptography protocols discretise time which is in stark contrast
  with physical systems which evolve under a Hamiltonian with time as a continuou
 s parameter.
- 
+ This paradigm is expected to prove itself to be a useful tool for advancing
+ cryptographic primitives.
 \end_layout
 
 \end_body
